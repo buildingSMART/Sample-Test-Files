@@ -10,12 +10,12 @@ To organize examples the provider can create nested subfolders.
 For each example there are following files:  
 
 
-1. *ExampleName***.ifc**: The IFC4 file is an example with NURBS
-2. *ExampleName***.facet.ifc**: The file shows the same example in a tessellated of facet way (IFC4 ReferenceView or IFC2x3)
-3.	(Optionally) *ExampleName***.md**: Remarks and responses to the example about import problems etc.
+1. *ExampleName* **.ifc**: The IFC4 file is an example with NURBS
+2. *ExampleName* **.facet.ifc**: The file shows the same example in a tessellated of facet way (IFC4 ReferenceView or IFC2x3)
+3.	(Optionally) *ExampleName* **.md**: Remarks and responses to the example about import problems etc.
 
 ## Requirements and recommendations to the examples providers
-To create an application subfolder please make a pull request with *Application***.md** file that contains application name, export state, site and contact data.  
+To create an application subfolder please make a pull request with *Application* **.md** file that contains application name, export state, site and contact data.  
 
 To add an example please make a pull request with 2 IFC files with the same name, containing NURBS and facet representations.    
 If you have any remark to the example, add the .md file.  
