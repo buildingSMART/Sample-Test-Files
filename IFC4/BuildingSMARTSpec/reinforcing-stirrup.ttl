@@ -1,0 +1,1664 @@
+# baseURI: http://linkedbuildingdata.net/ifc/resources20190323_145518/
+# imports: http://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL
+
+@prefix ifcowl:  <http://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#> .
+@prefix inst:  <http://linkedbuildingdata.net/ifc/resources20190323_145518/> .
+@prefix list:  <https://w3id.org/list#> .
+@prefix express:  <https://w3id.org/express#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+
+inst:   rdf:type     owl:Ontology ;
+        owl:imports  ifcowl: .
+
+inst:IfcApplication_1
+        rdf:type  ifcowl:IfcApplication .
+
+inst:IfcOrganization_2
+        rdf:type  ifcowl:IfcOrganization .
+
+inst:IfcApplication_1
+        ifcowl:applicationDeveloper_IfcApplication  inst:IfcOrganization_2 .
+
+inst:IfcLabel_49  rdf:type  ifcowl:IfcLabel ;
+        express:hasString  "1.0.0.0" .
+
+inst:IfcApplication_1
+        ifcowl:version_IfcApplication  inst:IfcLabel_49 .
+
+inst:IfcLabel_50  rdf:type  ifcowl:IfcLabel ;
+        express:hasString  "ggRhinoIFC - Geometry Gym Plug-in for Rhino3d" .
+
+inst:IfcApplication_1
+        ifcowl:applicationFullName_IfcApplication  inst:IfcLabel_50 .
+
+inst:IfcIdentifier_51
+        rdf:type           ifcowl:IfcIdentifier ;
+        express:hasString  "ggRhinoIFC" .
+
+inst:IfcApplication_1
+        ifcowl:applicationIdentifier_IfcApplication  inst:IfcIdentifier_51 .
+
+inst:IfcLabel_52  rdf:type  ifcowl:IfcLabel ;
+        express:hasString  "Geometry Gym Pty Ltd" .
+
+inst:IfcOrganization_2
+        ifcowl:name_IfcOrganization  inst:IfcLabel_52 .
+
+inst:IfcPersonAndOrganization_3
+        rdf:type  ifcowl:IfcPersonAndOrganization .
+
+inst:IfcPerson_4  rdf:type  ifcowl:IfcPerson .
+
+inst:IfcPersonAndOrganization_3
+        ifcowl:thePerson_IfcPersonAndOrganization  inst:IfcPerson_4 .
+
+inst:IfcOrganization_5
+        rdf:type  ifcowl:IfcOrganization .
+
+inst:IfcPersonAndOrganization_3
+        ifcowl:theOrganization_IfcPersonAndOrganization  inst:IfcOrganization_5 .
+
+inst:IfcIdentifier_53
+        rdf:type           ifcowl:IfcIdentifier ;
+        express:hasString  "Jon" .
+
+inst:IfcPerson_4  ifcowl:identification_IfcPerson  inst:IfcIdentifier_53 ;
+        ifcowl:familyName_IfcPerson  inst:IfcIdentifier_53 .
+
+inst:IfcOrganization_5
+        ifcowl:name_IfcOrganization  inst:IfcLabel_52 .
+
+inst:IfcOwnerHistory_6
+        rdf:type  ifcowl:IfcOwnerHistory ;
+        ifcowl:owningUser_IfcOwnerHistory  inst:IfcPersonAndOrganization_3 ;
+        ifcowl:owningApplication_IfcOwnerHistory  inst:IfcApplication_1 ;
+        ifcowl:changeAction_IfcOwnerHistory  ifcowl:ADDED .
+
+inst:IfcTimeStamp_54  rdf:type  ifcowl:IfcTimeStamp ;
+        express:hasInteger  1418084875 .
+
+inst:IfcOwnerHistory_6
+        ifcowl:lastModifiedDate_IfcOwnerHistory  inst:IfcTimeStamp_54 ;
+        ifcowl:creationDate_IfcOwnerHistory  inst:IfcTimeStamp_54 .
+
+inst:IfcGeometricRepresentationContext_7
+        rdf:type  ifcowl:IfcGeometricRepresentationContext .
+
+inst:IfcLabel_55  rdf:type  ifcowl:IfcLabel ;
+        express:hasString  "Model" .
+
+inst:IfcGeometricRepresentationContext_7
+        ifcowl:contextType_IfcRepresentationContext  inst:IfcLabel_55 .
+
+inst:IfcDimensionCount_56
+        rdf:type            ifcowl:IfcDimensionCount ;
+        express:hasInteger  3 .
+
+inst:IfcGeometricRepresentationContext_7
+        ifcowl:coordinateSpaceDimension_IfcGeometricRepresentationContext  inst:IfcDimensionCount_56 .
+
+inst:IfcReal_57  rdf:type  ifcowl:IfcReal ;
+        express:hasDouble  "0.0001"^^xsd:double .
+
+inst:IfcGeometricRepresentationContext_7
+        ifcowl:precision_IfcGeometricRepresentationContext  inst:IfcReal_57 .
+
+inst:IfcAxis2Placement3D_8
+        rdf:type  ifcowl:IfcAxis2Placement3D .
+
+inst:IfcGeometricRepresentationContext_7
+        ifcowl:worldCoordinateSystem_IfcGeometricRepresentationContext  inst:IfcAxis2Placement3D_8 .
+
+inst:IfcDirection_10  rdf:type  ifcowl:IfcDirection .
+
+inst:IfcGeometricRepresentationContext_7
+        ifcowl:trueNorth_IfcGeometricRepresentationContext  inst:IfcDirection_10 .
+
+inst:IfcCartesianPoint_9
+        rdf:type  ifcowl:IfcCartesianPoint .
+
+inst:IfcAxis2Placement3D_8
+        ifcowl:location_IfcPlacement  inst:IfcCartesianPoint_9 .
+
+inst:IfcLengthMeasure_List_58
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcCartesianPoint_9
+        ifcowl:coordinates_IfcCartesianPoint  inst:IfcLengthMeasure_List_58 .
+
+inst:IfcLengthMeasure_List_59
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_60
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_61
+        rdf:type           ifcowl:IfcLengthMeasure ;
+        express:hasDouble  "0.0"^^xsd:double .
+
+inst:IfcLengthMeasure_List_58
+        list:hasContents  inst:IfcLengthMeasure_61 ;
+        list:hasNext      inst:IfcLengthMeasure_List_59 .
+
+inst:IfcLengthMeasure_List_59
+        list:hasContents  inst:IfcLengthMeasure_61 ;
+        list:hasNext      inst:IfcLengthMeasure_List_60 .
+
+inst:IfcLengthMeasure_List_60
+        list:hasContents  inst:IfcLengthMeasure_61 .
+
+inst:IfcReal_List_62  rdf:type  ifcowl:IfcReal_List .
+
+inst:IfcDirection_10  ifcowl:directionRatios_IfcDirection  inst:IfcReal_List_62 .
+
+inst:IfcReal_List_63  rdf:type  ifcowl:IfcReal_List .
+
+inst:IfcReal_List_62  list:hasContents  inst:IfcLengthMeasure_61 ;
+        list:hasNext      inst:IfcReal_List_63 .
+
+inst:IfcReal_64  rdf:type  ifcowl:IfcReal ;
+        express:hasDouble  "1.0"^^xsd:double .
+
+inst:IfcReal_List_63  list:hasContents  inst:IfcReal_64 .
+
+inst:IfcGeometricRepresentationSubContext_11
+        rdf:type  ifcowl:IfcGeometricRepresentationSubContext .
+
+inst:IfcLabel_65  rdf:type  ifcowl:IfcLabel ;
+        express:hasString  "Axis" .
+
+inst:IfcGeometricRepresentationSubContext_11
+        ifcowl:contextIdentifier_IfcRepresentationContext  inst:IfcLabel_65 ;
+        ifcowl:contextType_IfcRepresentationContext  inst:IfcLabel_55 ;
+        ifcowl:parentContext_IfcGeometricRepresentationSubContext  inst:IfcGeometricRepresentationContext_7 ;
+        ifcowl:targetView_IfcGeometricRepresentationSubContext  ifcowl:MODEL_VIEW .
+
+inst:IfcGeometricRepresentationSubContext_12
+        rdf:type  ifcowl:IfcGeometricRepresentationSubContext .
+
+inst:IfcLabel_66  rdf:type  ifcowl:IfcLabel ;
+        express:hasString  "Body" .
+
+inst:IfcGeometricRepresentationSubContext_12
+        ifcowl:contextIdentifier_IfcRepresentationContext  inst:IfcLabel_66 ;
+        ifcowl:contextType_IfcRepresentationContext  inst:IfcLabel_55 ;
+        ifcowl:parentContext_IfcGeometricRepresentationSubContext  inst:IfcGeometricRepresentationContext_7 ;
+        ifcowl:targetView_IfcGeometricRepresentationSubContext  ifcowl:MODEL_VIEW .
+
+inst:IfcGeometricRepresentationContext_13
+        rdf:type  ifcowl:IfcGeometricRepresentationContext ;
+        ifcowl:contextType_IfcRepresentationContext  inst:IfcLabel_55 ;
+        ifcowl:coordinateSpaceDimension_IfcGeometricRepresentationContext  inst:IfcDimensionCount_56 ;
+        ifcowl:precision_IfcGeometricRepresentationContext  inst:IfcReal_57 ;
+        ifcowl:worldCoordinateSystem_IfcGeometricRepresentationContext  inst:IfcAxis2Placement3D_8 .
+
+inst:IfcDirection_14  rdf:type  ifcowl:IfcDirection .
+
+inst:IfcGeometricRepresentationContext_13
+        ifcowl:trueNorth_IfcGeometricRepresentationContext  inst:IfcDirection_14 .
+
+inst:IfcReal_List_67  rdf:type  ifcowl:IfcReal_List .
+
+inst:IfcDirection_14  ifcowl:directionRatios_IfcDirection  inst:IfcReal_List_67 .
+
+inst:IfcReal_List_68  rdf:type  ifcowl:IfcReal_List .
+
+inst:IfcReal_List_67  list:hasContents  inst:IfcLengthMeasure_61 ;
+        list:hasNext      inst:IfcReal_List_68 .
+
+inst:IfcReal_List_68  list:hasContents  inst:IfcReal_64 .
+
+inst:IfcBuilding_50  rdf:type  ifcowl:IfcBuilding .
+
+inst:IfcGloballyUniqueId_69
+        rdf:type           ifcowl:IfcGloballyUniqueId ;
+        express:hasString  "0WoLgLOcf80OfpMfE5JDJy" .
+
+inst:IfcBuilding_50  ifcowl:globalId_IfcRoot  inst:IfcGloballyUniqueId_69 .
+
+inst:IfcLabel_70  rdf:type  ifcowl:IfcLabel ;
+        express:hasString  "IfcBuilding" .
+
+inst:IfcBuilding_50  ifcowl:name_IfcRoot  inst:IfcLabel_70 .
+
+inst:IfcLocalPlacement_51
+        rdf:type  ifcowl:IfcLocalPlacement .
+
+inst:IfcBuilding_50  ifcowl:objectPlacement_IfcProduct  inst:IfcLocalPlacement_51 ;
+        ifcowl:compositionType_IfcSpatialStructureElement  ifcowl:ELEMENT .
+
+inst:IfcPostalAddress_57
+        rdf:type  ifcowl:IfcPostalAddress .
+
+inst:IfcBuilding_50  ifcowl:buildingAddress_IfcBuilding  inst:IfcPostalAddress_57 .
+
+inst:IfcAxis2Placement3D_52
+        rdf:type  ifcowl:IfcAxis2Placement3D .
+
+inst:IfcLocalPlacement_51
+        ifcowl:relativePlacement_IfcLocalPlacement  inst:IfcAxis2Placement3D_52 .
+
+inst:IfcCartesianPoint_53
+        rdf:type  ifcowl:IfcCartesianPoint .
+
+inst:IfcAxis2Placement3D_52
+        ifcowl:location_IfcPlacement  inst:IfcCartesianPoint_53 .
+
+inst:IfcLengthMeasure_List_71
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcCartesianPoint_53
+        ifcowl:coordinates_IfcCartesianPoint  inst:IfcLengthMeasure_List_71 .
+
+inst:IfcLengthMeasure_List_72
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_73
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_71
+        list:hasContents  inst:IfcLengthMeasure_61 ;
+        list:hasNext      inst:IfcLengthMeasure_List_72 .
+
+inst:IfcLengthMeasure_List_72
+        list:hasContents  inst:IfcLengthMeasure_61 ;
+        list:hasNext      inst:IfcLengthMeasure_List_73 .
+
+inst:IfcLengthMeasure_List_73
+        list:hasContents  inst:IfcLengthMeasure_61 .
+
+inst:IfcRelContainedInSpatialStructure_54
+        rdf:type  ifcowl:IfcRelContainedInSpatialStructure .
+
+inst:IfcGloballyUniqueId_74
+        rdf:type           ifcowl:IfcGloballyUniqueId ;
+        express:hasString  "1UK80jTi5Ff9jgVJzyecRb" .
+
+inst:IfcRelContainedInSpatialStructure_54
+        ifcowl:globalId_IfcRoot  inst:IfcGloballyUniqueId_74 .
+
+inst:IfcLabel_75  rdf:type  ifcowl:IfcLabel ;
+        express:hasString  "Building" .
+
+inst:IfcRelContainedInSpatialStructure_54
+        ifcowl:name_IfcRoot  inst:IfcLabel_75 .
+
+inst:IfcText_76  rdf:type  ifcowl:IfcText ;
+        express:hasString  "Building Container for Elements" .
+
+inst:IfcRelContainedInSpatialStructure_54
+        ifcowl:description_IfcRoot  inst:IfcText_76 .
+
+inst:IfcReinforcingBar_220
+        rdf:type  ifcowl:IfcReinforcingBar .
+
+inst:IfcRelContainedInSpatialStructure_54
+        ifcowl:relatedElements_IfcRelContainedInSpatialStructure  inst:IfcReinforcingBar_220 ;
+        ifcowl:relatingStructure_IfcRelContainedInSpatialStructure  inst:IfcBuilding_50 .
+
+inst:IfcLocalPlacement_55
+        rdf:type  ifcowl:IfcLocalPlacement ;
+        ifcowl:placementRelTo_IfcLocalPlacement  inst:IfcLocalPlacement_51 ;
+        ifcowl:relativePlacement_IfcLocalPlacement  inst:IfcAxis2Placement3D_52 .
+
+inst:IfcLabel_77  rdf:type  ifcowl:IfcLabel ;
+        express:hasString  "Unknown" .
+
+inst:IfcPostalAddress_57
+        ifcowl:region_IfcPostalAddress  inst:IfcLabel_77 .
+
+inst:IfcDocumentReference_200
+        rdf:type  ifcowl:IfcDocumentReference .
+
+inst:IfcIdentifier_78
+        rdf:type           ifcowl:IfcIdentifier ;
+        express:hasString  "MyReinforcementCode" .
+
+inst:IfcDocumentReference_200
+        ifcowl:identification_IfcExternalReference  inst:IfcIdentifier_78 .
+
+inst:IfcLabel_79  rdf:type  ifcowl:IfcLabel ;
+        express:hasString  "MyCodeISO3766" .
+
+inst:IfcDocumentReference_200
+        ifcowl:name_IfcExternalReference  inst:IfcLabel_79 .
+
+inst:IfcRelAssociatesDocument_201
+        rdf:type  ifcowl:IfcRelAssociatesDocument .
+
+inst:IfcGloballyUniqueId_80
+        rdf:type           ifcowl:IfcGloballyUniqueId ;
+        express:hasString  "23vj62OUfDfg63sHB1nX6x" .
+
+inst:IfcRelAssociatesDocument_201
+        ifcowl:globalId_IfcRoot  inst:IfcGloballyUniqueId_80 .
+
+inst:IfcProject_100  rdf:type  ifcowl:IfcProject .
+
+inst:IfcRelAssociatesDocument_201
+        ifcowl:relatedObjects_IfcRelAssociates  inst:IfcProject_100 ;
+        ifcowl:relatingDocument_IfcRelAssociatesDocument  inst:IfcDocumentReference_200 .
+
+inst:IfcMaterial_202  rdf:type  ifcowl:IfcMaterial .
+
+inst:IfcLabel_81  rdf:type  ifcowl:IfcLabel ;
+        express:hasString  "ReinforcingSteel" .
+
+inst:IfcMaterial_202  ifcowl:name_IfcMaterial  inst:IfcLabel_81 .
+
+inst:IfcRelAssociatesMaterial_203
+        rdf:type  ifcowl:IfcRelAssociatesMaterial .
+
+inst:IfcGloballyUniqueId_82
+        rdf:type           ifcowl:IfcGloballyUniqueId ;
+        express:hasString  "3asHesm0T6gxQ0aGbrsMIX" .
+
+inst:IfcRelAssociatesMaterial_203
+        ifcowl:globalId_IfcRoot  inst:IfcGloballyUniqueId_82 .
+
+inst:IfcLabel_83  rdf:type  ifcowl:IfcLabel ;
+        express:hasString  "MatAssoc" .
+
+inst:IfcRelAssociatesMaterial_203
+        ifcowl:name_IfcRoot  inst:IfcLabel_83 .
+
+inst:IfcText_84  rdf:type  ifcowl:IfcText ;
+        express:hasString  "Material Associates" .
+
+inst:IfcRelAssociatesMaterial_203
+        ifcowl:description_IfcRoot  inst:IfcText_84 .
+
+inst:IfcReinforcingBarType_212
+        rdf:type  ifcowl:IfcReinforcingBarType .
+
+inst:IfcRelAssociatesMaterial_203
+        ifcowl:relatedObjects_IfcRelAssociates  inst:IfcReinforcingBarType_212 ;
+        ifcowl:relatingMaterial_IfcRelAssociatesMaterial  inst:IfcMaterial_202 .
+
+inst:IfcIndexedPolyCurve_205
+        rdf:type  ifcowl:IfcIndexedPolyCurve .
+
+inst:IfcCartesianPointList3D_206
+        rdf:type  ifcowl:IfcCartesianPointList3D .
+
+inst:IfcIndexedPolyCurve_205
+        ifcowl:points_IfcIndexedPolyCurve  inst:IfcCartesianPointList3D_206 .
+
+inst:IfcLineIndex_85  rdf:type  ifcowl:IfcLineIndex .
+
+inst:IfcLineIndex_86  rdf:type  ifcowl:IfcLineIndex .
+
+inst:IfcPositiveInteger_87
+        rdf:type            ifcowl:IfcPositiveInteger ;
+        express:hasInteger  1 .
+
+inst:IfcLineIndex_85  list:hasContents  inst:IfcPositiveInteger_87 ;
+        list:hasNext      inst:IfcLineIndex_86 .
+
+inst:IfcPositiveInteger_88
+        rdf:type            ifcowl:IfcPositiveInteger ;
+        express:hasInteger  2 .
+
+inst:IfcLineIndex_86  list:hasContents  inst:IfcPositiveInteger_88 .
+
+inst:IfcArcIndex_89  rdf:type  ifcowl:IfcArcIndex .
+
+inst:IfcArcIndex_90  rdf:type  ifcowl:IfcArcIndex .
+
+inst:IfcArcIndex_91  rdf:type  ifcowl:IfcArcIndex .
+
+inst:IfcArcIndex_89  list:hasContents  inst:IfcPositiveInteger_88 ;
+        list:hasNext      inst:IfcArcIndex_90 .
+
+inst:IfcArcIndex_90  list:hasContents  inst:IfcDimensionCount_56 ;
+        list:hasNext      inst:IfcArcIndex_91 .
+
+inst:IfcPositiveInteger_92
+        rdf:type            ifcowl:IfcPositiveInteger ;
+        express:hasInteger  4 .
+
+inst:IfcArcIndex_91  list:hasContents  inst:IfcPositiveInteger_92 .
+
+inst:IfcLineIndex_93  rdf:type  ifcowl:IfcLineIndex .
+
+inst:IfcLineIndex_94  rdf:type  ifcowl:IfcLineIndex .
+
+inst:IfcLineIndex_93  list:hasContents  inst:IfcPositiveInteger_92 ;
+        list:hasNext      inst:IfcLineIndex_94 .
+
+inst:IfcPositiveInteger_95
+        rdf:type            ifcowl:IfcPositiveInteger ;
+        express:hasInteger  5 .
+
+inst:IfcLineIndex_94  list:hasContents  inst:IfcPositiveInteger_95 .
+
+inst:IfcArcIndex_96  rdf:type  ifcowl:IfcArcIndex .
+
+inst:IfcArcIndex_97  rdf:type  ifcowl:IfcArcIndex .
+
+inst:IfcArcIndex_98  rdf:type  ifcowl:IfcArcIndex .
+
+inst:IfcArcIndex_96  list:hasContents  inst:IfcPositiveInteger_95 ;
+        list:hasNext      inst:IfcArcIndex_97 .
+
+inst:IfcPositiveInteger_99
+        rdf:type            ifcowl:IfcPositiveInteger ;
+        express:hasInteger  6 .
+
+inst:IfcArcIndex_97  list:hasContents  inst:IfcPositiveInteger_99 ;
+        list:hasNext      inst:IfcArcIndex_98 .
+
+inst:IfcPositiveInteger_100
+        rdf:type            ifcowl:IfcPositiveInteger ;
+        express:hasInteger  7 .
+
+inst:IfcArcIndex_98  list:hasContents  inst:IfcPositiveInteger_100 .
+
+inst:IfcLineIndex_101
+        rdf:type  ifcowl:IfcLineIndex .
+
+inst:IfcLineIndex_102
+        rdf:type  ifcowl:IfcLineIndex .
+
+inst:IfcLineIndex_101
+        list:hasContents  inst:IfcPositiveInteger_100 ;
+        list:hasNext      inst:IfcLineIndex_102 .
+
+inst:IfcPositiveInteger_103
+        rdf:type            ifcowl:IfcPositiveInteger ;
+        express:hasInteger  8 .
+
+inst:IfcLineIndex_102
+        list:hasContents  inst:IfcPositiveInteger_103 .
+
+inst:IfcArcIndex_104  rdf:type  ifcowl:IfcArcIndex .
+
+inst:IfcArcIndex_105  rdf:type  ifcowl:IfcArcIndex .
+
+inst:IfcArcIndex_106  rdf:type  ifcowl:IfcArcIndex .
+
+inst:IfcArcIndex_104  list:hasContents  inst:IfcPositiveInteger_103 ;
+        list:hasNext      inst:IfcArcIndex_105 .
+
+inst:IfcPositiveInteger_107
+        rdf:type            ifcowl:IfcPositiveInteger ;
+        express:hasInteger  9 .
+
+inst:IfcArcIndex_105  list:hasContents  inst:IfcPositiveInteger_107 ;
+        list:hasNext      inst:IfcArcIndex_106 .
+
+inst:IfcPositiveInteger_108
+        rdf:type            ifcowl:IfcPositiveInteger ;
+        express:hasInteger  10 .
+
+inst:IfcArcIndex_106  list:hasContents  inst:IfcPositiveInteger_108 .
+
+inst:IfcLineIndex_109
+        rdf:type  ifcowl:IfcLineIndex .
+
+inst:IfcLineIndex_110
+        rdf:type  ifcowl:IfcLineIndex .
+
+inst:IfcLineIndex_109
+        list:hasContents  inst:IfcPositiveInteger_108 ;
+        list:hasNext      inst:IfcLineIndex_110 .
+
+inst:IfcPositiveInteger_111
+        rdf:type            ifcowl:IfcPositiveInteger ;
+        express:hasInteger  11 .
+
+inst:IfcLineIndex_110
+        list:hasContents  inst:IfcPositiveInteger_111 .
+
+inst:IfcArcIndex_112  rdf:type  ifcowl:IfcArcIndex .
+
+inst:IfcArcIndex_113  rdf:type  ifcowl:IfcArcIndex .
+
+inst:IfcArcIndex_114  rdf:type  ifcowl:IfcArcIndex .
+
+inst:IfcArcIndex_112  list:hasContents  inst:IfcPositiveInteger_111 ;
+        list:hasNext      inst:IfcArcIndex_113 .
+
+inst:IfcPositiveInteger_115
+        rdf:type            ifcowl:IfcPositiveInteger ;
+        express:hasInteger  12 .
+
+inst:IfcArcIndex_113  list:hasContents  inst:IfcPositiveInteger_115 ;
+        list:hasNext      inst:IfcArcIndex_114 .
+
+inst:IfcPositiveInteger_116
+        rdf:type            ifcowl:IfcPositiveInteger ;
+        express:hasInteger  13 .
+
+inst:IfcArcIndex_114  list:hasContents  inst:IfcPositiveInteger_116 .
+
+inst:IfcLineIndex_117
+        rdf:type  ifcowl:IfcLineIndex .
+
+inst:IfcLineIndex_118
+        rdf:type  ifcowl:IfcLineIndex .
+
+inst:IfcLineIndex_117
+        list:hasContents  inst:IfcPositiveInteger_116 ;
+        list:hasNext      inst:IfcLineIndex_118 .
+
+inst:IfcPositiveInteger_119
+        rdf:type            ifcowl:IfcPositiveInteger ;
+        express:hasInteger  14 .
+
+inst:IfcLineIndex_118
+        list:hasContents  inst:IfcPositiveInteger_119 .
+
+inst:IfcArcIndex_120  rdf:type  ifcowl:IfcArcIndex .
+
+inst:IfcArcIndex_121  rdf:type  ifcowl:IfcArcIndex .
+
+inst:IfcArcIndex_122  rdf:type  ifcowl:IfcArcIndex .
+
+inst:IfcArcIndex_120  list:hasContents  inst:IfcPositiveInteger_119 ;
+        list:hasNext      inst:IfcArcIndex_121 .
+
+inst:IfcPositiveInteger_123
+        rdf:type            ifcowl:IfcPositiveInteger ;
+        express:hasInteger  15 .
+
+inst:IfcArcIndex_121  list:hasContents  inst:IfcPositiveInteger_123 ;
+        list:hasNext      inst:IfcArcIndex_122 .
+
+inst:IfcPositiveInteger_124
+        rdf:type            ifcowl:IfcPositiveInteger ;
+        express:hasInteger  16 .
+
+inst:IfcArcIndex_122  list:hasContents  inst:IfcPositiveInteger_124 .
+
+inst:IfcLineIndex_125
+        rdf:type  ifcowl:IfcLineIndex .
+
+inst:IfcLineIndex_126
+        rdf:type  ifcowl:IfcLineIndex .
+
+inst:IfcLineIndex_125
+        list:hasContents  inst:IfcPositiveInteger_124 ;
+        list:hasNext      inst:IfcLineIndex_126 .
+
+inst:IfcPositiveInteger_127
+        rdf:type            ifcowl:IfcPositiveInteger ;
+        express:hasInteger  17 .
+
+inst:IfcLineIndex_126
+        list:hasContents  inst:IfcPositiveInteger_127 .
+
+inst:IfcArcIndex_128  rdf:type  ifcowl:IfcArcIndex .
+
+inst:IfcArcIndex_129  rdf:type  ifcowl:IfcArcIndex .
+
+inst:IfcArcIndex_130  rdf:type  ifcowl:IfcArcIndex .
+
+inst:IfcArcIndex_128  list:hasContents  inst:IfcPositiveInteger_127 ;
+        list:hasNext      inst:IfcArcIndex_129 .
+
+inst:IfcPositiveInteger_131
+        rdf:type            ifcowl:IfcPositiveInteger ;
+        express:hasInteger  18 .
+
+inst:IfcArcIndex_129  list:hasContents  inst:IfcPositiveInteger_131 ;
+        list:hasNext      inst:IfcArcIndex_130 .
+
+inst:IfcPositiveInteger_132
+        rdf:type            ifcowl:IfcPositiveInteger ;
+        express:hasInteger  19 .
+
+inst:IfcArcIndex_130  list:hasContents  inst:IfcPositiveInteger_132 .
+
+inst:IfcLineIndex_133
+        rdf:type  ifcowl:IfcLineIndex .
+
+inst:IfcLineIndex_134
+        rdf:type  ifcowl:IfcLineIndex .
+
+inst:IfcLineIndex_133
+        list:hasContents  inst:IfcPositiveInteger_132 ;
+        list:hasNext      inst:IfcLineIndex_134 .
+
+inst:IfcPositiveInteger_135
+        rdf:type            ifcowl:IfcPositiveInteger ;
+        express:hasInteger  20 .
+
+inst:IfcLineIndex_134
+        list:hasContents  inst:IfcPositiveInteger_135 .
+
+inst:IfcSegmentIndexSelect_List_136
+        rdf:type  ifcowl:IfcSegmentIndexSelect_List .
+
+inst:IfcIndexedPolyCurve_205
+        ifcowl:segments_IfcIndexedPolyCurve  inst:IfcSegmentIndexSelect_List_136 .
+
+inst:IfcSegmentIndexSelect_List_136
+        list:hasContents  inst:IfcLineIndex_85 ;
+        list:hasNext      inst:IfcSegmentIndexSelect_List_137 .
+
+inst:IfcSegmentIndexSelect_List_137
+        rdf:type          ifcowl:IfcSegmentIndexSelect_List ;
+        list:hasContents  inst:IfcArcIndex_89 ;
+        list:hasNext      inst:IfcSegmentIndexSelect_List_138 .
+
+inst:IfcSegmentIndexSelect_List_138
+        rdf:type          ifcowl:IfcSegmentIndexSelect_List ;
+        list:hasContents  inst:IfcLineIndex_93 ;
+        list:hasNext      inst:IfcSegmentIndexSelect_List_139 .
+
+inst:IfcSegmentIndexSelect_List_139
+        rdf:type          ifcowl:IfcSegmentIndexSelect_List ;
+        list:hasContents  inst:IfcArcIndex_96 ;
+        list:hasNext      inst:IfcSegmentIndexSelect_List_140 .
+
+inst:IfcSegmentIndexSelect_List_140
+        rdf:type          ifcowl:IfcSegmentIndexSelect_List ;
+        list:hasContents  inst:IfcLineIndex_101 ;
+        list:hasNext      inst:IfcSegmentIndexSelect_List_141 .
+
+inst:IfcSegmentIndexSelect_List_141
+        rdf:type          ifcowl:IfcSegmentIndexSelect_List ;
+        list:hasContents  inst:IfcArcIndex_104 ;
+        list:hasNext      inst:IfcSegmentIndexSelect_List_142 .
+
+inst:IfcSegmentIndexSelect_List_142
+        rdf:type          ifcowl:IfcSegmentIndexSelect_List ;
+        list:hasContents  inst:IfcLineIndex_109 ;
+        list:hasNext      inst:IfcSegmentIndexSelect_List_143 .
+
+inst:IfcSegmentIndexSelect_List_143
+        rdf:type          ifcowl:IfcSegmentIndexSelect_List ;
+        list:hasContents  inst:IfcArcIndex_112 ;
+        list:hasNext      inst:IfcSegmentIndexSelect_List_144 .
+
+inst:IfcSegmentIndexSelect_List_144
+        rdf:type          ifcowl:IfcSegmentIndexSelect_List ;
+        list:hasContents  inst:IfcLineIndex_117 ;
+        list:hasNext      inst:IfcSegmentIndexSelect_List_145 .
+
+inst:IfcSegmentIndexSelect_List_145
+        rdf:type          ifcowl:IfcSegmentIndexSelect_List ;
+        list:hasContents  inst:IfcArcIndex_120 ;
+        list:hasNext      inst:IfcSegmentIndexSelect_List_146 .
+
+inst:IfcSegmentIndexSelect_List_146
+        rdf:type          ifcowl:IfcSegmentIndexSelect_List ;
+        list:hasContents  inst:IfcLineIndex_125 ;
+        list:hasNext      inst:IfcSegmentIndexSelect_List_147 .
+
+inst:IfcSegmentIndexSelect_List_147
+        rdf:type          ifcowl:IfcSegmentIndexSelect_List ;
+        list:hasContents  inst:IfcArcIndex_128 ;
+        list:hasNext      inst:IfcSegmentIndexSelect_List_148 .
+
+inst:IfcSegmentIndexSelect_List_148
+        rdf:type          ifcowl:IfcSegmentIndexSelect_List ;
+        list:hasContents  inst:IfcLineIndex_133 .
+
+inst:IfcLengthMeasure_List_149
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_150
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_151
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_152
+        rdf:type           ifcowl:IfcLengthMeasure ;
+        express:hasDouble  "-69.0"^^xsd:double .
+
+inst:IfcLengthMeasure_List_149
+        list:hasContents  inst:IfcLengthMeasure_152 ;
+        list:hasNext      inst:IfcLengthMeasure_List_150 .
+
+inst:IfcLengthMeasure_List_150
+        list:hasContents  inst:IfcLengthMeasure_61 ;
+        list:hasNext      inst:IfcLengthMeasure_List_151 .
+
+inst:IfcLengthMeasure_153
+        rdf:type           ifcowl:IfcLengthMeasure ;
+        express:hasDouble  "-122.0"^^xsd:double .
+
+inst:IfcLengthMeasure_List_151
+        list:hasContents  inst:IfcLengthMeasure_153 .
+
+inst:IfcLengthMeasure_List_154
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_155
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_156
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_154
+        list:hasContents  inst:IfcLengthMeasure_152 ;
+        list:hasNext      inst:IfcLengthMeasure_List_155 .
+
+inst:IfcLengthMeasure_List_155
+        list:hasContents  inst:IfcLengthMeasure_61 ;
+        list:hasNext      inst:IfcLengthMeasure_List_156 .
+
+inst:IfcLengthMeasure_157
+        rdf:type           ifcowl:IfcLengthMeasure ;
+        express:hasDouble  "-79.0"^^xsd:double .
+
+inst:IfcLengthMeasure_List_156
+        list:hasContents  inst:IfcLengthMeasure_157 .
+
+inst:IfcLengthMeasure_List_158
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_159
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_160
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_161
+        rdf:type           ifcowl:IfcLengthMeasure ;
+        express:hasDouble  "-54.9411254969544"^^xsd:double .
+
+inst:IfcLengthMeasure_List_158
+        list:hasContents  inst:IfcLengthMeasure_161 ;
+        list:hasNext      inst:IfcLengthMeasure_List_159 .
+
+inst:IfcLengthMeasure_List_159
+        list:hasContents  inst:IfcLengthMeasure_61 ;
+        list:hasNext      inst:IfcLengthMeasure_List_160 .
+
+inst:IfcLengthMeasure_162
+        rdf:type           ifcowl:IfcLengthMeasure ;
+        express:hasDouble  "-45.0588745030457"^^xsd:double .
+
+inst:IfcLengthMeasure_List_160
+        list:hasContents  inst:IfcLengthMeasure_162 .
+
+inst:IfcLengthMeasure_List_163
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_164
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_165
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_166
+        rdf:type           ifcowl:IfcLengthMeasure ;
+        express:hasDouble  "-21.0000000000001"^^xsd:double .
+
+inst:IfcLengthMeasure_List_163
+        list:hasContents  inst:IfcLengthMeasure_166 ;
+        list:hasNext      inst:IfcLengthMeasure_List_164 .
+
+inst:IfcLengthMeasure_List_164
+        list:hasContents  inst:IfcLengthMeasure_61 ;
+        list:hasNext      inst:IfcLengthMeasure_List_165 .
+
+inst:IfcLengthMeasure_167
+        rdf:type           ifcowl:IfcLengthMeasure ;
+        express:hasDouble  "-31.0"^^xsd:double .
+
+inst:IfcLengthMeasure_List_165
+        list:hasContents  inst:IfcLengthMeasure_167 .
+
+inst:IfcLengthMeasure_List_168
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_169
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_170
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_171
+        rdf:type           ifcowl:IfcLengthMeasure ;
+        express:hasDouble  "21.0"^^xsd:double .
+
+inst:IfcLengthMeasure_List_168
+        list:hasContents  inst:IfcLengthMeasure_171 ;
+        list:hasNext      inst:IfcLengthMeasure_List_169 .
+
+inst:IfcLengthMeasure_List_169
+        list:hasContents  inst:IfcLengthMeasure_61 ;
+        list:hasNext      inst:IfcLengthMeasure_List_170 .
+
+inst:IfcLengthMeasure_List_170
+        list:hasContents  inst:IfcLengthMeasure_167 .
+
+inst:IfcLengthMeasure_List_172
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_173
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_174
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_175
+        rdf:type           ifcowl:IfcLengthMeasure ;
+        express:hasDouble  "54.9411254969543"^^xsd:double .
+
+inst:IfcLengthMeasure_List_172
+        list:hasContents  inst:IfcLengthMeasure_175 ;
+        list:hasNext      inst:IfcLengthMeasure_List_173 .
+
+inst:IfcLengthMeasure_List_173
+        list:hasContents  inst:IfcLengthMeasure_61 ;
+        list:hasNext      inst:IfcLengthMeasure_List_174 .
+
+inst:IfcLengthMeasure_176
+        rdf:type           ifcowl:IfcLengthMeasure ;
+        express:hasDouble  "-45.0588745030456"^^xsd:double .
+
+inst:IfcLengthMeasure_List_174
+        list:hasContents  inst:IfcLengthMeasure_176 .
+
+inst:IfcLengthMeasure_List_177
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_178
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_179
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_180
+        rdf:type           ifcowl:IfcLengthMeasure ;
+        express:hasDouble  "69.0"^^xsd:double .
+
+inst:IfcLengthMeasure_List_177
+        list:hasContents  inst:IfcLengthMeasure_180 ;
+        list:hasNext      inst:IfcLengthMeasure_List_178 .
+
+inst:IfcLengthMeasure_List_178
+        list:hasContents  inst:IfcLengthMeasure_61 ;
+        list:hasNext      inst:IfcLengthMeasure_List_179 .
+
+inst:IfcLengthMeasure_181
+        rdf:type           ifcowl:IfcLengthMeasure ;
+        express:hasDouble  "-78.9999999999999"^^xsd:double .
+
+inst:IfcLengthMeasure_List_179
+        list:hasContents  inst:IfcLengthMeasure_181 .
+
+inst:IfcLengthMeasure_List_182
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_183
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_184
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_182
+        list:hasContents  inst:IfcLengthMeasure_180 ;
+        list:hasNext      inst:IfcLengthMeasure_List_183 .
+
+inst:IfcLengthMeasure_185
+        rdf:type           ifcowl:IfcLengthMeasure ;
+        express:hasDouble  "0.00000000000000089"^^xsd:double .
+
+inst:IfcLengthMeasure_List_183
+        list:hasContents  inst:IfcLengthMeasure_185 ;
+        list:hasNext      inst:IfcLengthMeasure_List_184 .
+
+inst:IfcLengthMeasure_186
+        rdf:type           ifcowl:IfcLengthMeasure ;
+        express:hasDouble  "-321.0"^^xsd:double .
+
+inst:IfcLengthMeasure_List_184
+        list:hasContents  inst:IfcLengthMeasure_186 .
+
+inst:IfcLengthMeasure_List_187
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_188
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_189
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_190
+        rdf:type           ifcowl:IfcLengthMeasure ;
+        express:hasDouble  "54.993978595716"^^xsd:double .
+
+inst:IfcLengthMeasure_List_187
+        list:hasContents  inst:IfcLengthMeasure_190 ;
+        list:hasNext      inst:IfcLengthMeasure_List_188 .
+
+inst:IfcLengthMeasure_191
+        rdf:type           ifcowl:IfcLengthMeasure ;
+        express:hasDouble  "1.21791490472038"^^xsd:double .
+
+inst:IfcLengthMeasure_List_188
+        list:hasContents  inst:IfcLengthMeasure_191 ;
+        list:hasNext      inst:IfcLengthMeasure_List_189 .
+
+inst:IfcLengthMeasure_192
+        rdf:type           ifcowl:IfcLengthMeasure ;
+        express:hasDouble  "-354.941125496954"^^xsd:double .
+
+inst:IfcLengthMeasure_List_189
+        list:hasContents  inst:IfcLengthMeasure_192 .
+
+inst:IfcLengthMeasure_List_193
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_194
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_195
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_196
+        rdf:type           ifcowl:IfcLengthMeasure ;
+        express:hasDouble  "21.1804517666064"^^xsd:double .
+
+inst:IfcLengthMeasure_List_193
+        list:hasContents  inst:IfcLengthMeasure_196 ;
+        list:hasNext      inst:IfcLengthMeasure_List_194 .
+
+inst:IfcLengthMeasure_197
+        rdf:type           ifcowl:IfcLengthMeasure ;
+        express:hasDouble  "4.1582215855126"^^xsd:double .
+
+inst:IfcLengthMeasure_List_194
+        list:hasContents  inst:IfcLengthMeasure_197 ;
+        list:hasNext      inst:IfcLengthMeasure_List_195 .
+
+inst:IfcLengthMeasure_198
+        rdf:type           ifcowl:IfcLengthMeasure ;
+        express:hasDouble  "-369.0"^^xsd:double .
+
+inst:IfcLengthMeasure_List_195
+        list:hasContents  inst:IfcLengthMeasure_198 .
+
+inst:IfcLengthMeasure_List_199
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_200
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_201
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_202
+        rdf:type           ifcowl:IfcLengthMeasure ;
+        express:hasDouble  "-20.6616529376114"^^xsd:double .
+
+inst:IfcLengthMeasure_List_199
+        list:hasContents  inst:IfcLengthMeasure_202 ;
+        list:hasNext      inst:IfcLengthMeasure_List_200 .
+
+inst:IfcLengthMeasure_203
+        rdf:type           ifcowl:IfcLengthMeasure ;
+        express:hasDouble  "7.79666547283599"^^xsd:double .
+
+inst:IfcLengthMeasure_List_200
+        list:hasContents  inst:IfcLengthMeasure_203 ;
+        list:hasNext      inst:IfcLengthMeasure_List_201 .
+
+inst:IfcLengthMeasure_List_201
+        list:hasContents  inst:IfcLengthMeasure_198 .
+
+inst:IfcLengthMeasure_List_204
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_205
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_206
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_207
+        rdf:type           ifcowl:IfcLengthMeasure ;
+        express:hasDouble  "-54.4751797667207"^^xsd:double .
+
+inst:IfcLengthMeasure_List_204
+        list:hasContents  inst:IfcLengthMeasure_207 ;
+        list:hasNext      inst:IfcLengthMeasure_List_205 .
+
+inst:IfcLengthMeasure_208
+        rdf:type           ifcowl:IfcLengthMeasure ;
+        express:hasDouble  "10.7369721536282"^^xsd:double .
+
+inst:IfcLengthMeasure_List_205
+        list:hasContents  inst:IfcLengthMeasure_208 ;
+        list:hasNext      inst:IfcLengthMeasure_List_206 .
+
+inst:IfcLengthMeasure_List_206
+        list:hasContents  inst:IfcLengthMeasure_192 .
+
+inst:IfcLengthMeasure_List_209
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_210
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_211
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_212
+        rdf:type           ifcowl:IfcLengthMeasure ;
+        express:hasDouble  "-68.4812011710042"^^xsd:double .
+
+inst:IfcLengthMeasure_List_209
+        list:hasContents  inst:IfcLengthMeasure_212 ;
+        list:hasNext      inst:IfcLengthMeasure_List_210 .
+
+inst:IfcLengthMeasure_213
+        rdf:type           ifcowl:IfcLengthMeasure ;
+        express:hasDouble  "11.9548870583485"^^xsd:double .
+
+inst:IfcLengthMeasure_List_210
+        list:hasContents  inst:IfcLengthMeasure_213 ;
+        list:hasNext      inst:IfcLengthMeasure_List_211 .
+
+inst:IfcLengthMeasure_214
+        rdf:type           ifcowl:IfcLengthMeasure ;
+        express:hasDouble  "-320.999999999999"^^xsd:double .
+
+inst:IfcLengthMeasure_List_211
+        list:hasContents  inst:IfcLengthMeasure_214 .
+
+inst:IfcLengthMeasure_List_215
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_216
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_217
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_215
+        list:hasContents  inst:IfcLengthMeasure_152 ;
+        list:hasNext      inst:IfcLengthMeasure_List_216 .
+
+inst:IfcLengthMeasure_218
+        rdf:type           ifcowl:IfcLengthMeasure ;
+        express:hasDouble  "12.0"^^xsd:double .
+
+inst:IfcLengthMeasure_List_216
+        list:hasContents  inst:IfcLengthMeasure_218 ;
+        list:hasNext      inst:IfcLengthMeasure_List_217 .
+
+inst:IfcLengthMeasure_List_217
+        list:hasContents  inst:IfcLengthMeasure_157 .
+
+inst:IfcLengthMeasure_List_219
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_220
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_221
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_219
+        list:hasContents  inst:IfcLengthMeasure_161 ;
+        list:hasNext      inst:IfcLengthMeasure_List_220 .
+
+inst:IfcLengthMeasure_List_220
+        list:hasContents  inst:IfcLengthMeasure_218 ;
+        list:hasNext      inst:IfcLengthMeasure_List_221 .
+
+inst:IfcLengthMeasure_List_221
+        list:hasContents  inst:IfcLengthMeasure_162 .
+
+inst:IfcLengthMeasure_List_222
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_223
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_224
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_222
+        list:hasContents  inst:IfcLengthMeasure_166 ;
+        list:hasNext      inst:IfcLengthMeasure_List_223 .
+
+inst:IfcLengthMeasure_List_223
+        list:hasContents  inst:IfcLengthMeasure_218 ;
+        list:hasNext      inst:IfcLengthMeasure_List_224 .
+
+inst:IfcLengthMeasure_List_224
+        list:hasContents  inst:IfcLengthMeasure_167 .
+
+inst:IfcLengthMeasure_List_225
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_226
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_227
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_225
+        list:hasContents  inst:IfcLengthMeasure_171 ;
+        list:hasNext      inst:IfcLengthMeasure_List_226 .
+
+inst:IfcLengthMeasure_List_226
+        list:hasContents  inst:IfcLengthMeasure_218 ;
+        list:hasNext      inst:IfcLengthMeasure_List_227 .
+
+inst:IfcLengthMeasure_List_227
+        list:hasContents  inst:IfcLengthMeasure_167 .
+
+inst:IfcLengthMeasure_List_228
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_229
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_230
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_228
+        list:hasContents  inst:IfcLengthMeasure_175 ;
+        list:hasNext      inst:IfcLengthMeasure_List_229 .
+
+inst:IfcLengthMeasure_List_229
+        list:hasContents  inst:IfcLengthMeasure_218 ;
+        list:hasNext      inst:IfcLengthMeasure_List_230 .
+
+inst:IfcLengthMeasure_List_230
+        list:hasContents  inst:IfcLengthMeasure_176 .
+
+inst:IfcLengthMeasure_List_231
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_232
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_233
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_231
+        list:hasContents  inst:IfcLengthMeasure_180 ;
+        list:hasNext      inst:IfcLengthMeasure_List_232 .
+
+inst:IfcLengthMeasure_List_232
+        list:hasContents  inst:IfcLengthMeasure_218 ;
+        list:hasNext      inst:IfcLengthMeasure_List_233 .
+
+inst:IfcLengthMeasure_List_233
+        list:hasContents  inst:IfcLengthMeasure_181 .
+
+inst:IfcLengthMeasure_List_234
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_235
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_236
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_234
+        list:hasContents  inst:IfcLengthMeasure_152 ;
+        list:hasNext      inst:IfcLengthMeasure_List_235 .
+
+inst:IfcLengthMeasure_List_235
+        list:hasContents  inst:IfcLengthMeasure_61 ;
+        list:hasNext      inst:IfcLengthMeasure_List_236 .
+
+inst:IfcLengthMeasure_List_236
+        list:hasContents  inst:IfcLengthMeasure_153 .
+
+inst:IfcLengthMeasure_List_List_237
+        rdf:type  ifcowl:IfcLengthMeasure_List_List .
+
+inst:IfcCartesianPointList3D_206
+        ifcowl:coordList_IfcCartesianPointList3D  inst:IfcLengthMeasure_List_List_237 .
+
+inst:IfcLengthMeasure_List_List_237
+        list:hasContents  inst:IfcLengthMeasure_List_149 ;
+        list:hasNext      inst:IfcLengthMeasure_List_List_238 .
+
+inst:IfcLengthMeasure_List_List_238
+        rdf:type          ifcowl:IfcLengthMeasure_List_List ;
+        list:hasContents  inst:IfcLengthMeasure_List_154 ;
+        list:hasNext      inst:IfcLengthMeasure_List_List_239 .
+
+inst:IfcLengthMeasure_List_List_239
+        rdf:type          ifcowl:IfcLengthMeasure_List_List ;
+        list:hasContents  inst:IfcLengthMeasure_List_158 ;
+        list:hasNext      inst:IfcLengthMeasure_List_List_240 .
+
+inst:IfcLengthMeasure_List_List_240
+        rdf:type          ifcowl:IfcLengthMeasure_List_List ;
+        list:hasContents  inst:IfcLengthMeasure_List_163 ;
+        list:hasNext      inst:IfcLengthMeasure_List_List_241 .
+
+inst:IfcLengthMeasure_List_List_241
+        rdf:type          ifcowl:IfcLengthMeasure_List_List ;
+        list:hasContents  inst:IfcLengthMeasure_List_168 ;
+        list:hasNext      inst:IfcLengthMeasure_List_List_242 .
+
+inst:IfcLengthMeasure_List_List_242
+        rdf:type          ifcowl:IfcLengthMeasure_List_List ;
+        list:hasContents  inst:IfcLengthMeasure_List_172 ;
+        list:hasNext      inst:IfcLengthMeasure_List_List_243 .
+
+inst:IfcLengthMeasure_List_List_243
+        rdf:type          ifcowl:IfcLengthMeasure_List_List ;
+        list:hasContents  inst:IfcLengthMeasure_List_177 ;
+        list:hasNext      inst:IfcLengthMeasure_List_List_244 .
+
+inst:IfcLengthMeasure_List_List_244
+        rdf:type          ifcowl:IfcLengthMeasure_List_List ;
+        list:hasContents  inst:IfcLengthMeasure_List_182 ;
+        list:hasNext      inst:IfcLengthMeasure_List_List_245 .
+
+inst:IfcLengthMeasure_List_List_245
+        rdf:type          ifcowl:IfcLengthMeasure_List_List ;
+        list:hasContents  inst:IfcLengthMeasure_List_187 ;
+        list:hasNext      inst:IfcLengthMeasure_List_List_246 .
+
+inst:IfcLengthMeasure_List_List_246
+        rdf:type          ifcowl:IfcLengthMeasure_List_List ;
+        list:hasContents  inst:IfcLengthMeasure_List_193 ;
+        list:hasNext      inst:IfcLengthMeasure_List_List_247 .
+
+inst:IfcLengthMeasure_List_List_247
+        rdf:type          ifcowl:IfcLengthMeasure_List_List ;
+        list:hasContents  inst:IfcLengthMeasure_List_199 ;
+        list:hasNext      inst:IfcLengthMeasure_List_List_248 .
+
+inst:IfcLengthMeasure_List_List_248
+        rdf:type          ifcowl:IfcLengthMeasure_List_List ;
+        list:hasContents  inst:IfcLengthMeasure_List_204 ;
+        list:hasNext      inst:IfcLengthMeasure_List_List_249 .
+
+inst:IfcLengthMeasure_List_List_249
+        rdf:type          ifcowl:IfcLengthMeasure_List_List ;
+        list:hasContents  inst:IfcLengthMeasure_List_209 ;
+        list:hasNext      inst:IfcLengthMeasure_List_List_250 .
+
+inst:IfcLengthMeasure_List_List_250
+        rdf:type          ifcowl:IfcLengthMeasure_List_List ;
+        list:hasContents  inst:IfcLengthMeasure_List_215 ;
+        list:hasNext      inst:IfcLengthMeasure_List_List_251 .
+
+inst:IfcLengthMeasure_List_List_251
+        rdf:type          ifcowl:IfcLengthMeasure_List_List ;
+        list:hasContents  inst:IfcLengthMeasure_List_219 ;
+        list:hasNext      inst:IfcLengthMeasure_List_List_252 .
+
+inst:IfcLengthMeasure_List_List_252
+        rdf:type          ifcowl:IfcLengthMeasure_List_List ;
+        list:hasContents  inst:IfcLengthMeasure_List_222 ;
+        list:hasNext      inst:IfcLengthMeasure_List_List_253 .
+
+inst:IfcLengthMeasure_List_List_253
+        rdf:type          ifcowl:IfcLengthMeasure_List_List ;
+        list:hasContents  inst:IfcLengthMeasure_List_225 ;
+        list:hasNext      inst:IfcLengthMeasure_List_List_254 .
+
+inst:IfcLengthMeasure_List_List_254
+        rdf:type          ifcowl:IfcLengthMeasure_List_List ;
+        list:hasContents  inst:IfcLengthMeasure_List_228 ;
+        list:hasNext      inst:IfcLengthMeasure_List_List_255 .
+
+inst:IfcLengthMeasure_List_List_255
+        rdf:type          ifcowl:IfcLengthMeasure_List_List ;
+        list:hasContents  inst:IfcLengthMeasure_List_231 ;
+        list:hasNext      inst:IfcLengthMeasure_List_List_256 .
+
+inst:IfcLengthMeasure_List_List_256
+        rdf:type          ifcowl:IfcLengthMeasure_List_List ;
+        list:hasContents  inst:IfcLengthMeasure_List_234 .
+
+inst:IfcSweptDiskSolid_207
+        rdf:type  ifcowl:IfcSweptDiskSolid ;
+        ifcowl:directrix_IfcSweptDiskSolid  inst:IfcIndexedPolyCurve_205 .
+
+inst:IfcPositiveLengthMeasure_257
+        rdf:type           ifcowl:IfcPositiveLengthMeasure ;
+        express:hasDouble  "6.0"^^xsd:double .
+
+inst:IfcSweptDiskSolid_207
+        ifcowl:radius_IfcSweptDiskSolid  inst:IfcPositiveLengthMeasure_257 .
+
+inst:IfcRepresentationMap_208
+        rdf:type  ifcowl:IfcRepresentationMap .
+
+inst:IfcAxis2Placement3D_209
+        rdf:type  ifcowl:IfcAxis2Placement3D .
+
+inst:IfcRepresentationMap_208
+        ifcowl:mappingOrigin_IfcRepresentationMap  inst:IfcAxis2Placement3D_209 .
+
+inst:IfcShapeRepresentation_211
+        rdf:type  ifcowl:IfcShapeRepresentation .
+
+inst:IfcRepresentationMap_208
+        ifcowl:mappedRepresentation_IfcRepresentationMap  inst:IfcShapeRepresentation_211 .
+
+inst:IfcCartesianPoint_210
+        rdf:type  ifcowl:IfcCartesianPoint .
+
+inst:IfcAxis2Placement3D_209
+        ifcowl:location_IfcPlacement  inst:IfcCartesianPoint_210 .
+
+inst:IfcLengthMeasure_List_258
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcCartesianPoint_210
+        ifcowl:coordinates_IfcCartesianPoint  inst:IfcLengthMeasure_List_258 .
+
+inst:IfcLengthMeasure_List_259
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_260
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_258
+        list:hasContents  inst:IfcLengthMeasure_61 ;
+        list:hasNext      inst:IfcLengthMeasure_List_259 .
+
+inst:IfcLengthMeasure_List_259
+        list:hasContents  inst:IfcLengthMeasure_61 ;
+        list:hasNext      inst:IfcLengthMeasure_List_260 .
+
+inst:IfcLengthMeasure_List_260
+        list:hasContents  inst:IfcLengthMeasure_61 .
+
+inst:IfcShapeRepresentation_211
+        ifcowl:contextOfItems_IfcRepresentation  inst:IfcGeometricRepresentationSubContext_12 ;
+        ifcowl:representationIdentifier_IfcRepresentation  inst:IfcLabel_66 .
+
+inst:IfcLabel_261  rdf:type  ifcowl:IfcLabel ;
+        express:hasString  "AdvancedSweptSolid" .
+
+inst:IfcShapeRepresentation_211
+        ifcowl:representationType_IfcRepresentation  inst:IfcLabel_261 ;
+        ifcowl:items_IfcRepresentation  inst:IfcSweptDiskSolid_207 .
+
+inst:IfcGloballyUniqueId_262
+        rdf:type           ifcowl:IfcGloballyUniqueId ;
+        express:hasString  "3dAMwbGE92VuH_d2LLFmoy" .
+
+inst:IfcReinforcingBarType_212
+        ifcowl:globalId_IfcRoot  inst:IfcGloballyUniqueId_262 .
+
+inst:IfcLabel_263  rdf:type  ifcowl:IfcLabel ;
+        express:hasString  "12 Diameter Ligature" .
+
+inst:IfcReinforcingBarType_212
+        ifcowl:name_IfcRoot  inst:IfcLabel_263 .
+
+inst:IfcRepresentationMap_List_264
+        rdf:type  ifcowl:IfcRepresentationMap_List .
+
+inst:IfcReinforcingBarType_212
+        ifcowl:representationMaps_IfcTypeProduct  inst:IfcRepresentationMap_List_264 .
+
+inst:IfcRepresentationMap_List_264
+        list:hasContents  inst:IfcRepresentationMap_208 .
+
+inst:IfcReinforcingBarType_212
+        ifcowl:predefinedType_IfcReinforcingBarType  ifcowl:LIGATURE ;
+        ifcowl:nominalDiameter_IfcReinforcingBarType  inst:IfcLengthMeasure_218 .
+
+inst:IfcAreaMeasure_265
+        rdf:type           ifcowl:IfcAreaMeasure ;
+        express:hasDouble  "113.097335529233"^^xsd:double .
+
+inst:IfcReinforcingBarType_212
+        ifcowl:crossSectionArea_IfcReinforcingBarType  inst:IfcAreaMeasure_265 .
+
+inst:IfcPositiveLengthMeasure_266
+        rdf:type           ifcowl:IfcPositiveLengthMeasure ;
+        express:hasDouble  "1150.0"^^xsd:double .
+
+inst:IfcReinforcingBarType_212
+        ifcowl:barLength_IfcReinforcingBarType  inst:IfcPositiveLengthMeasure_266 ;
+        ifcowl:barSurface_IfcReinforcingBarType  ifcowl:TEXTURED .
+
+inst:IfcRelDefinesByType_213
+        rdf:type  ifcowl:IfcRelDefinesByType .
+
+inst:IfcGloballyUniqueId_267
+        rdf:type           ifcowl:IfcGloballyUniqueId ;
+        express:hasString  "0KX7K6Ekv7YvL4uzxaJvJ8" .
+
+inst:IfcRelDefinesByType_213
+        ifcowl:globalId_IfcRoot  inst:IfcGloballyUniqueId_267 ;
+        ifcowl:name_IfcRoot      inst:IfcLabel_263 ;
+        ifcowl:relatedObjects_IfcRelDefinesByType  inst:IfcReinforcingBar_220 ;
+        ifcowl:relatingType_IfcRelDefinesByType  inst:IfcReinforcingBarType_212 .
+
+inst:IfcDirection_214
+        rdf:type  ifcowl:IfcDirection .
+
+inst:IfcReal_List_268
+        rdf:type  ifcowl:IfcReal_List .
+
+inst:IfcDirection_214
+        ifcowl:directionRatios_IfcDirection  inst:IfcReal_List_268 .
+
+inst:IfcReal_List_269
+        rdf:type  ifcowl:IfcReal_List .
+
+inst:IfcReal_List_270
+        rdf:type  ifcowl:IfcReal_List .
+
+inst:IfcReal_List_268
+        list:hasContents  inst:IfcReal_64 ;
+        list:hasNext      inst:IfcReal_List_269 .
+
+inst:IfcReal_List_269
+        list:hasContents  inst:IfcLengthMeasure_61 ;
+        list:hasNext      inst:IfcReal_List_270 .
+
+inst:IfcReal_List_270
+        list:hasContents  inst:IfcLengthMeasure_61 .
+
+inst:IfcDirection_215
+        rdf:type  ifcowl:IfcDirection .
+
+inst:IfcReal_List_271
+        rdf:type  ifcowl:IfcReal_List .
+
+inst:IfcDirection_215
+        ifcowl:directionRatios_IfcDirection  inst:IfcReal_List_271 .
+
+inst:IfcReal_List_272
+        rdf:type  ifcowl:IfcReal_List .
+
+inst:IfcReal_List_273
+        rdf:type  ifcowl:IfcReal_List .
+
+inst:IfcReal_List_271
+        list:hasContents  inst:IfcLengthMeasure_61 ;
+        list:hasNext      inst:IfcReal_List_272 .
+
+inst:IfcReal_List_272
+        list:hasContents  inst:IfcReal_64 ;
+        list:hasNext      inst:IfcReal_List_273 .
+
+inst:IfcReal_List_273
+        list:hasContents  inst:IfcLengthMeasure_61 .
+
+inst:IfcCartesianPoint_216
+        rdf:type  ifcowl:IfcCartesianPoint .
+
+inst:IfcLengthMeasure_List_274
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcCartesianPoint_216
+        ifcowl:coordinates_IfcCartesianPoint  inst:IfcLengthMeasure_List_274 .
+
+inst:IfcLengthMeasure_List_275
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_276
+        rdf:type  ifcowl:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_274
+        list:hasContents  inst:IfcLengthMeasure_61 ;
+        list:hasNext      inst:IfcLengthMeasure_List_275 .
+
+inst:IfcLengthMeasure_List_275
+        list:hasContents  inst:IfcLengthMeasure_61 ;
+        list:hasNext      inst:IfcLengthMeasure_List_276 .
+
+inst:IfcLengthMeasure_List_276
+        list:hasContents  inst:IfcLengthMeasure_61 .
+
+inst:IfcCartesianTransformationOperator3D_217
+        rdf:type  ifcowl:IfcCartesianTransformationOperator3D ;
+        ifcowl:axis1_IfcCartesianTransformationOperator  inst:IfcDirection_214 ;
+        ifcowl:axis2_IfcCartesianTransformationOperator  inst:IfcDirection_215 ;
+        ifcowl:localOrigin_IfcCartesianTransformationOperator  inst:IfcCartesianPoint_216 ;
+        ifcowl:scale_IfcCartesianTransformationOperator  inst:IfcReal_64 .
+
+inst:IfcDirection_218
+        rdf:type  ifcowl:IfcDirection .
+
+inst:IfcCartesianTransformationOperator3D_217
+        ifcowl:axis3_IfcCartesianTransformationOperator3D  inst:IfcDirection_218 .
+
+inst:IfcReal_List_277
+        rdf:type  ifcowl:IfcReal_List .
+
+inst:IfcDirection_218
+        ifcowl:directionRatios_IfcDirection  inst:IfcReal_List_277 .
+
+inst:IfcReal_List_278
+        rdf:type  ifcowl:IfcReal_List .
+
+inst:IfcReal_List_279
+        rdf:type  ifcowl:IfcReal_List .
+
+inst:IfcReal_List_277
+        list:hasContents  inst:IfcLengthMeasure_61 ;
+        list:hasNext      inst:IfcReal_List_278 .
+
+inst:IfcReal_List_278
+        list:hasContents  inst:IfcLengthMeasure_61 ;
+        list:hasNext      inst:IfcReal_List_279 .
+
+inst:IfcReal_List_279
+        list:hasContents  inst:IfcReal_64 .
+
+inst:IfcMappedItem_219
+        rdf:type  ifcowl:IfcMappedItem ;
+        ifcowl:mappingSource_IfcMappedItem  inst:IfcRepresentationMap_208 ;
+        ifcowl:mappingTarget_IfcMappedItem  inst:IfcCartesianTransformationOperator3D_217 .
+
+inst:IfcGloballyUniqueId_280
+        rdf:type           ifcowl:IfcGloballyUniqueId ;
+        express:hasString  "381QpY9RP89gKaSFbzIfbP" .
+
+inst:IfcReinforcingBar_220
+        ifcowl:globalId_IfcRoot  inst:IfcGloballyUniqueId_280 ;
+        ifcowl:objectPlacement_IfcProduct  inst:IfcLocalPlacement_55 .
+
+inst:IfcProductDefinitionShape_221
+        rdf:type  ifcowl:IfcProductDefinitionShape .
+
+inst:IfcReinforcingBar_220
+        ifcowl:representation_IfcProduct  inst:IfcProductDefinitionShape_221 .
+
+inst:IfcRepresentation_List_281
+        rdf:type  ifcowl:IfcRepresentation_List .
+
+inst:IfcProductDefinitionShape_221
+        ifcowl:representations_IfcProductRepresentation  inst:IfcRepresentation_List_281 .
+
+inst:IfcShapeRepresentation_222
+        rdf:type  ifcowl:IfcShapeRepresentation .
+
+inst:IfcRepresentation_List_281
+        list:hasContents  inst:IfcShapeRepresentation_222 .
+
+inst:IfcShapeRepresentation_222
+        ifcowl:contextOfItems_IfcRepresentation  inst:IfcGeometricRepresentationSubContext_12 ;
+        ifcowl:representationIdentifier_IfcRepresentation  inst:IfcLabel_66 .
+
+inst:IfcLabel_282  rdf:type  ifcowl:IfcLabel ;
+        express:hasString  "MappedRepresentation" .
+
+inst:IfcShapeRepresentation_222
+        ifcowl:representationType_IfcRepresentation  inst:IfcLabel_282 ;
+        ifcowl:items_IfcRepresentation  inst:IfcMappedItem_219 .
+
+inst:IfcGloballyUniqueId_283
+        rdf:type           ifcowl:IfcGloballyUniqueId ;
+        express:hasString  "1BOGo$cBv9ePqXvg1A7XlA" .
+
+inst:IfcProject_100  ifcowl:globalId_IfcRoot  inst:IfcGloballyUniqueId_283 ;
+        ifcowl:ownerHistory_IfcRoot  inst:IfcOwnerHistory_6 .
+
+inst:IfcLabel_284  rdf:type  ifcowl:IfcLabel ;
+        express:hasString  "IfcProject" .
+
+inst:IfcProject_100  ifcowl:name_IfcRoot  inst:IfcLabel_284 ;
+        ifcowl:longName_IfcContext  inst:IfcLabel_284 .
+
+inst:IfcLabel_285  rdf:type  ifcowl:IfcLabel ;
+        express:hasString  "" .
+
+inst:IfcProject_100  ifcowl:phase_IfcContext  inst:IfcLabel_285 ;
+        ifcowl:representationContexts_IfcContext  inst:IfcGeometricRepresentationContext_13 .
+
+inst:IfcUnitAssignment_101
+        rdf:type  ifcowl:IfcUnitAssignment .
+
+inst:IfcProject_100  ifcowl:unitsInContext_IfcContext  inst:IfcUnitAssignment_101 .
+
+inst:IfcSIUnit_102  rdf:type  ifcowl:IfcSIUnit .
+
+inst:IfcUnitAssignment_101
+        ifcowl:units_IfcUnitAssignment  inst:IfcSIUnit_102 .
+
+inst:IfcSIUnit_103  rdf:type  ifcowl:IfcSIUnit .
+
+inst:IfcUnitAssignment_101
+        ifcowl:units_IfcUnitAssignment  inst:IfcSIUnit_103 .
+
+inst:IfcSIUnit_104  rdf:type  ifcowl:IfcSIUnit .
+
+inst:IfcUnitAssignment_101
+        ifcowl:units_IfcUnitAssignment  inst:IfcSIUnit_104 .
+
+inst:IfcSIUnit_102  ifcowl:unitType_IfcNamedUnit  ifcowl:LENGTHUNIT ;
+        ifcowl:prefix_IfcSIUnit       ifcowl:MILLI ;
+        ifcowl:name_IfcSIUnit         ifcowl:METRE .
+
+inst:IfcSIUnit_103  ifcowl:unitType_IfcNamedUnit  ifcowl:PLANEANGLEUNIT ;
+        ifcowl:name_IfcSIUnit         ifcowl:RADIAN .
+
+inst:IfcSIUnit_104  ifcowl:unitType_IfcNamedUnit  ifcowl:TIMEUNIT ;
+        ifcowl:name_IfcSIUnit         ifcowl:SECOND .
+
+inst:IfcRelAggregates_105
+        rdf:type  ifcowl:IfcRelAggregates .
+
+inst:IfcGloballyUniqueId_286
+        rdf:type           ifcowl:IfcGloballyUniqueId ;
+        express:hasString  "27SF9JXCv0IfCGc6IOUgDJ" .
+
+inst:IfcRelAggregates_105
+        ifcowl:globalId_IfcRoot  inst:IfcGloballyUniqueId_286 .
+
+inst:IfcLabel_287  rdf:type  ifcowl:IfcLabel ;
+        express:hasString  "Project Container" .
+
+inst:IfcRelAggregates_105
+        ifcowl:name_IfcRoot  inst:IfcLabel_287 .
+
+inst:IfcText_288  rdf:type  ifcowl:IfcText ;
+        express:hasString  "Project Container for Buildings" .
+
+inst:IfcRelAggregates_105
+        ifcowl:description_IfcRoot  inst:IfcText_288 ;
+        ifcowl:relatingObject_IfcRelAggregates  inst:IfcProject_100 ;
+        ifcowl:relatedObjects_IfcRelAggregates  inst:IfcBuilding_50 .
