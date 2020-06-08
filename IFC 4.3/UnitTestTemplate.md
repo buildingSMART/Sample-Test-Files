@@ -1,6 +1,5 @@
 
-# <topic>\_<nr>
----
+## *topic\_nr*
 
 ### Intent
 
@@ -25,7 +24,7 @@ Following files correspond to this scenario:
 |-----------------------------------|-------------------------------------------|
 | *filename*                        | *short description*                       |
 
----
+
 ## Instructions
 
 - Your task is to replace all *italic* elements with your content.
@@ -34,11 +33,11 @@ Following files correspond to this scenario:
  so that no line length surpasses 100 characters (see this sentence as an example).
 
 - Please name the files according to this schema:
-`UT_<topic>_<nr>[_additional enumeration for files of same sort].<fileending>`.
-Example: `UT_GeoRef_1_2.png` is the 2nd figure of the 1st UT within the Georeferencing topic.
+`UT_topic_nr[_additional enumeration for files of same sort].fileending`.
+> Example: `UT_GeoRef_1_2.png` is the 2nd figure of the 1st UT within the Georeferencing topic.
 
-- Please put all files (including this one) in a folder named `<topic>_<nr>`
- and rename this file to `README.md`.
+- Please put all files (including this one) in a folder named `topic_nr`
+ and rename this file to `readme.md`.
 
 - Delete this instructions section.
 
