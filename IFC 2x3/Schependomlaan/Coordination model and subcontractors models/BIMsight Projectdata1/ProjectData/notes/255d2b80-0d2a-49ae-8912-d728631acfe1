@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Note xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" SchemaVersion="6">
+  <Identifier>project://notes/255d2b80-0d2a-49ae-8912-d728631acfe1</Identifier>
+  <Owner>01ce8b42-aae1-4aab-bcca-cd612c2cd72d</Owner>
+  <Tags>STAAL</Tags>
+  <Timestamp>2015-02-26T08:58:29.3876848Z</Timestamp>
+  <Status>Default</Status>
+  <Text>#01 ROOD= in vloer haarspelden 10-500 1000mm lang vastgelast aan ligger.</Text>
+  <Created>2015-02-26T08:51:27.1394642Z</Created>
+  <Topic />
+  <Type>Opmerking</Type>
+  <IsPrivate>true</IsPrivate>
+</Note>

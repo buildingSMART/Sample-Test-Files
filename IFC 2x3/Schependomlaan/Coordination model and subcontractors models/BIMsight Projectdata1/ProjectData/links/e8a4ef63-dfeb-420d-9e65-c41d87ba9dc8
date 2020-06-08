@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Link xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" SchemaVersion="6">
+  <Identifier>project://links/e8a4ef63-dfeb-420d-9e65-c41d87ba9dc8</Identifier>
+  <Owner>01ce8b42-aae1-4aab-bcca-cd612c2cd72d</Owner>
+  <Tags />
+  <Timestamp>2015-04-01T06:35:15.0011556Z</Timestamp>
+  <Status>Default</Status>
+  <TypeName>modelfingerprints</TypeName>
+  <From>project://modelreferences/8b279e2b-68cd-4de8-8c8e-de9822efe6f1</From>
+  <To>
+    <string>a6a59292cbfc60d4ed38e55490c947f0</string>
+  </To>
+</Link>

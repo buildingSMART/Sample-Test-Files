@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Link xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" SchemaVersion="6">
+  <Identifier>project://links/4c385322-721e-4f08-9217-bcecbb68fd42</Identifier>
+  <Owner>01ce8b42-aae1-4aab-bcca-cd612c2cd72d</Owner>
+  <Tags />
+  <Timestamp>2015-02-26T09:08:08.5545957Z</Timestamp>
+  <Status>Default</Status>
+  <TypeName>parts</TypeName>
+  <From>project://notes/cc2d6f72-41fc-497d-a45b-0739d71015d6</From>
+  <To>
+    <string>project://modelreferences/338a3cbc-181e-4dc3-a958-fe330c0d24f6/0xLB3VjGz7yAsJkJdhlGq4</string>
+  </To>
+</Link>

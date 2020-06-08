@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Note xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" SchemaVersion="6">
+  <Identifier>project://notes/e8be671f-98f6-4baf-9200-2eee48b73be8</Identifier>
+  <Owner>01ce8b42-aae1-4aab-bcca-cd612c2cd72d</Owner>
+  <Tags>STAAL</Tags>
+  <Timestamp>2015-02-26T09:11:37.1464528Z</Timestamp>
+  <Status>Default</Status>
+  <Text>#09 In geslecteerde kolommen graag gaten rond 8mm hoh 300mm meenemen ivm spouwankers en koppeling HSB</Text>
+  <Created>2015-02-26T09:11:37.1464528Z</Created>
+  <Topic />
+  <Type>Opmerking</Type>
+  <IsPrivate>true</IsPrivate>
+</Note>
