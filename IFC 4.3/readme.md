@@ -19,5 +19,6 @@ Any text editor will do,
 
 ### I wish to participate with my own example files.
 
-Contact `technical@buildingsmart.org` and `infrastructure@buildingsmart.org` for details.
+Take note of the readme files and submit a pull request.
+Contact `technical@buildingsmart.org` or `infrastructure@buildingsmart.org` (depending on the type of file) for help.
 
