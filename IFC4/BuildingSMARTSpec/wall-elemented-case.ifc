@@ -175,7 +175,7 @@ DATA;
 /* The wall occurrence is an instance of the wall type, and aggregates instantiations of all components */
 #123= IFCWALLELEMENTEDCASE('2ucZRLBGP4uxZW$9i1VAZ8',$,'Wall #1',$,$,#153,#154,$,.MOVABLE.);
 #153= IFCLOCALPLACEMENT(#50,#159);
-#154= IFCPRODUCTDEFINITIONSHAPE($,$,(#160,#161));
+#154= IFCPRODUCTDEFINITIONSHAPE($,$,(#160));
 #159= IFCAXIS2PLACEMENT3D(#162,#163,#164);
 #160= IFCSHAPEREPRESENTATION(#2,'Axis','Curve2D',(#165));
 #162= IFCCARTESIANPOINT((48.,48.,0.));

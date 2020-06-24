@@ -75,7 +75,7 @@ DATA;
 /* defines the beam beam type with the material profile set as a joint profile definition         */
 /* ---------------------------------------------------------------------------------------------- */
 #61= IFCMATERIAL('S355JR',$,$);
-#64= IFCMATERIALPROFILE('IPE600',$,#61,#91,0.0,$);
+#64= IFCMATERIALPROFILE('IPE600',$,#61,#91,0,$);
 #66= IFCMATERIALPROFILESET('IPE600',$,(#64),$);
 #67= IFCRELASSOCIATESMATERIAL('3PFUE_ra50QPK6oFLEA8Ou',#6,'MatAssoc','Material Associates',(#68),#66);
 #68= IFCBEAMTYPE('2CyAyxh0X9FRePLOg4w1qS',#6,'IPE600',$,$,$,$,$,$,.BEAM.);

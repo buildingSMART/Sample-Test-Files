@@ -1,0 +1,3614 @@
+{
+  "type" : "IfcProject",
+  "globalId" : "8bb92bd5-8057-4791-ab43-7bc24b58fef5",
+  "name" : {
+    "type" : "IfcLabel",
+    "value" : "Project"
+  },
+  "isDecomposedBy" : {
+    "type" : "IfcRelAggregates",
+    "globalId" : "acdf9445-05d5-4fff-9726-f790c02285cd",
+    "relatedObjects" : [ {
+      "type" : "IfcSite",
+      "globalId" : "424eb936-0cdc-4fba-9c00-18ba08428520",
+      "name" : {
+        "type" : "IfcLabel",
+        "value" : "Site #1"
+      },
+      "objectPlacement" : {
+        "type" : "IfcLocalPlacement",
+        "globalId" : "2439958d-4942-4a7f-b0ff-404db6520c64",
+        "relativePlacement" : {
+          "type" : "IfcAxis2Placement3D",
+          "location" : {
+            "type" : "IfcCartesianPoint",
+            "coordinates" : [ {
+              "type" : "IfcLengthMeasure",
+              "value" : 0.0
+            }, {
+              "type" : "IfcLengthMeasure",
+              "value" : 0.0
+            }, {
+              "type" : "IfcLengthMeasure",
+              "value" : 0.0
+            } ]
+          }
+        }
+      },
+      "representation" : {
+        "type" : "IfcProductDefinitionShape",
+        "globalId" : "38e9af97-85d2-44d8-95ad-a67f04a861a9",
+        "representations" : [ {
+          "type" : "IfcShapeRepresentation",
+          "globalId" : "d65f8238-51cf-414c-8855-b2ddbeada1a0",
+          "contextOfItems" : {
+            "type" : "IfcGeometricRepresentationContext",
+            "globalId" : "08f5f970-146f-4998-9957-454d5ade3b30",
+            "contextIdentifier" : {
+              "type" : "IfcLabel",
+              "value" : "3D"
+            },
+            "contextType" : {
+              "type" : "IfcLabel",
+              "value" : "Model"
+            },
+            "coordinateSpaceDimension" : {
+              "type" : "IfcDimensionCount",
+              "value" : 3
+            },
+            "precision" : {
+              "type" : "IfcReal",
+              "value" : 1.0E-5
+            },
+            "worldCoordinateSystem" : {
+              "type" : "IfcAxis2Placement3D",
+              "location" : {
+                "type" : "IfcCartesianPoint",
+                "coordinates" : [ {
+                  "type" : "IfcLengthMeasure",
+                  "value" : 0.0
+                }, {
+                  "type" : "IfcLengthMeasure",
+                  "value" : 0.0
+                }, {
+                  "type" : "IfcLengthMeasure",
+                  "value" : 0.0
+                } ]
+              }
+            }
+          },
+          "representationIdentifier" : {
+            "type" : "IfcLabel",
+            "value" : "FootPrint"
+          },
+          "representationType" : {
+            "type" : "IfcLabel",
+            "value" : "GeometricCurveSet"
+          },
+          "items" : [ {
+            "type" : "IfcGeometricCurveSet",
+            "elements" : [ {
+              "type" : "IfcPolyline",
+              "points" : [ {
+                "type" : "IfcCartesianPoint",
+                "coordinates" : [ {
+                  "type" : "IfcLengthMeasure",
+                  "value" : 0.0
+                }, {
+                  "type" : "IfcLengthMeasure",
+                  "value" : 0.0
+                } ]
+              }, {
+                "type" : "IfcCartesianPoint",
+                "coordinates" : [ {
+                  "type" : "IfcLengthMeasure",
+                  "value" : 40.0
+                }, {
+                  "type" : "IfcLengthMeasure",
+                  "value" : 0.0
+                } ]
+              }, {
+                "type" : "IfcCartesianPoint",
+                "coordinates" : [ {
+                  "type" : "IfcLengthMeasure",
+                  "value" : 40.0
+                }, {
+                  "type" : "IfcLengthMeasure",
+                  "value" : 20.0
+                } ]
+              }, {
+                "type" : "IfcCartesianPoint",
+                "coordinates" : [ {
+                  "type" : "IfcLengthMeasure",
+                  "value" : 0.0
+                }, {
+                  "type" : "IfcLengthMeasure",
+                  "value" : 20.0
+                } ]
+              }, {
+                "type" : "IfcCartesianPoint",
+                "coordinates" : [ {
+                  "type" : "IfcLengthMeasure",
+                  "value" : 0.0
+                }, {
+                  "type" : "IfcLengthMeasure",
+                  "value" : 0.0
+                } ]
+              } ]
+            } ]
+          } ]
+        } ]
+      },
+      "containsElements" : [ {
+        "type" : "IfcRelContainedInSpatialStructure",
+        "globalId" : "91fd8f98-7bd4-4905-a782-f164b98e3feb",
+        "relatedElements" : [ {
+          "type" : "IfcMember",
+          "globalId" : "d4fafa8f-3f87-44ff-bc24-e9a672c02168",
+          "isTypedBy" : [ {
+            "type" : "IfcRelDefinesByType",
+            "globalId" : "802153a9-ae1e-4404-87d1-c9db4a77f9cc",
+            "relatingType" : {
+              "type" : "IfcMemberType",
+              "globalId" : "4aab78a8-3d43-4ee1-bc53-23341a283cca",
+              "hasContext" : [ {
+                "type" : "IfcRelDeclares",
+                "globalId" : "51c1dfed-8361-42d9-9b4b-a549c4e28980",
+                "relatedDefinitions" : [ "4aab78a8-3d43-4ee1-bc53-23341a283cca" ]
+              } ],
+              "representationMaps" : [ {
+                "type" : "IfcRepresentationMap",
+                "globalId" : "e49a69be-0a53-458d-961e-2d0bbf390c09",
+                "mappingOrigin" : {
+                  "type" : "IfcAxis2Placement3D",
+                  "location" : {
+                    "type" : "IfcCartesianPoint",
+                    "coordinates" : [ {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 0.0
+                    }, {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 0.0
+                    }, {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 0.0
+                    } ]
+                  }
+                },
+                "mappedRepresentation" : {
+                  "type" : "IfcShapeRepresentation",
+                  "globalId" : "4a59b28f-4691-47db-a6e8-950b03524481",
+                  "contextOfItems" : "08f5f970-146f-4998-9957-454d5ade3b30",
+                  "representationIdentifier" : {
+                    "type" : "IfcLabel",
+                    "value" : "Body"
+                  },
+                  "representationType" : {
+                    "type" : "IfcLabel",
+                    "value" : "Tessellation"
+                  },
+                  "items" : [ {
+                    "type" : "IfcTriangulatedFaceSet",
+                    "coordinates" : {
+                      "type" : "IfcCartesianPointList3D",
+                      "globalId" : "c03b7ac8-8c43-4e1b-9433-508d52625645",
+                      "coordList" : [ {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 4.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 2.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 1.84775906502257
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.76536686473018
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 1.4142135623731
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 1.41421356237309
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.76536686473018
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 1.84775906502257
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 1.22460635382238E-16
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 2.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -0.765366864730179
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 1.84775906502257
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -1.41421356237309
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 1.4142135623731
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -1.84775906502257
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.76536686473018
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -2.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 2.44921270764475E-16
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -1.84775906502257
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -0.765366864730179
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -1.4142135623731
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -1.41421356237309
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -0.765366864730181
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -1.84775906502257
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -3.67381906146713E-16
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -2.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.76536686473018
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -1.84775906502257
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 1.41421356237309
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -1.4142135623731
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 1.84775906502257
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -0.765366864730181
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 2.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -4.89842541528951E-16
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 2.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 4.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 1.84775906502257
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.76536686473018
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 4.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 1.4142135623731
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 1.41421356237309
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 4.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.76536686473018
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 1.84775906502257
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 4.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 1.22460635382238E-16
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 2.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 4.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -0.765366864730179
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 1.84775906502257
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 4.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -1.41421356237309
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 1.4142135623731
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 4.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -1.84775906502257
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.76536686473018
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 4.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -2.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 2.44921270764475E-16
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 4.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -1.84775906502257
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -0.765366864730179
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 4.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -1.4142135623731
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -1.41421356237309
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 4.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -0.765366864730181
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -1.84775906502257
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 4.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -3.67381906146713E-16
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -2.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 4.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.76536686473018
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -1.84775906502257
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 4.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 1.41421356237309
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -1.4142135623731
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 4.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 1.84775906502257
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -0.765366864730181
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 4.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 2.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -4.89842541528951E-16
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 4.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 2.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 1.84775906502257
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.76536686473018
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 1.4142135623731
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 1.41421356237309
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.76536686473018
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 1.84775906502257
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 1.22460635382238E-16
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 2.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -0.765366864730179
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 1.84775906502257
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -1.41421356237309
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 1.4142135623731
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -1.84775906502257
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.76536686473018
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -2.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 2.44921270764475E-16
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -1.84775906502257
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -0.765366864730179
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -1.4142135623731
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -1.41421356237309
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -0.765366864730181
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -1.84775906502257
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -3.67381906146713E-16
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -2.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.76536686473018
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -1.84775906502257
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 1.41421356237309
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -1.4142135623731
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 1.84775906502257
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -0.765366864730181
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 2.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -4.89842541528951E-16
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 2.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 4.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 1.84775906502257
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.76536686473018
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 4.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 1.4142135623731
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 1.41421356237309
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 4.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.76536686473018
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 1.84775906502257
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 4.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 1.22460635382238E-16
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 2.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 4.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -0.765366864730179
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 1.84775906502257
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 4.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -1.41421356237309
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 1.4142135623731
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 4.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -1.84775906502257
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.76536686473018
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 4.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -2.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 2.44921270764475E-16
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 4.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -1.84775906502257
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -0.765366864730179
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 4.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -1.4142135623731
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -1.41421356237309
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 4.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -0.765366864730181
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -1.84775906502257
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 4.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -3.67381906146713E-16
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -2.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 4.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.76536686473018
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -1.84775906502257
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 4.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 1.41421356237309
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -1.4142135623731
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 4.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 1.84775906502257
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -0.765366864730181
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 4.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 2.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -4.89842541528951E-16
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 4.0
+                        } ]
+                      } ]
+                    },
+                    "normals" : [ {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : -1.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 1.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : -1.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : -1.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : -1.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : -1.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : -1.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : -1.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : -1.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : -1.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : -1.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : -1.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : -1.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : -1.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : -1.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : -1.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : -1.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : -1.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : -1.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 1.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 1.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 1.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 1.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 1.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 1.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 1.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 1.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 1.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 1.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 1.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 1.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 1.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 1.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 1.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 1.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 1.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : 1.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.923879532511287
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.38268343236509
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.707106781186548
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.707106781186547
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.38268343236509
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.923879532511287
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : 6.12303176911189E-17
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 1.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : -0.38268343236509
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.923879532511287
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : -0.707106781186547
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.707106781186548
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : -0.923879532511287
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.38268343236509
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : -1.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 1.22460635382238E-16
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : -0.923879532511287
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : -0.38268343236509
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : -0.707106781186548
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : -0.707106781186547
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : -0.38268343236509
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : -0.923879532511287
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : -1.83690953073357E-16
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : -1.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.38268343236509
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : -0.923879532511287
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.707106781186547
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : -0.707106781186548
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.923879532511287
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : -0.38268343236509
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : 1.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : -2.44921270764475E-16
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : 1.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.923879532511287
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.38268343236509
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.707106781186548
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.707106781186547
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.38268343236509
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.923879532511287
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : 6.12303176911189E-17
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 1.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : -0.38268343236509
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.923879532511287
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : -0.707106781186547
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.707106781186548
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : -0.923879532511287
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.38268343236509
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : -1.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 1.22460635382238E-16
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : -0.923879532511287
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : -0.38268343236509
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : -0.707106781186548
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : -0.707106781186547
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : -0.38268343236509
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : -0.923879532511287
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : -1.83690953073357E-16
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : -1.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.38268343236509
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : -0.923879532511287
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.707106781186547
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : -0.707106781186548
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.923879532511287
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : -0.38268343236509
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      } ]
+                    }, {
+                      "parameterValues" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : 1.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : -2.44921270764475E-16
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      } ]
+                    } ],
+                    "closed" : {
+                      "type" : "IfcBoolean",
+                      "value" : false
+                    },
+                    "coordIndex" : [ {
+                      "positiveIntegers" : [ {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 1
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 4
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 3
+                      } ]
+                    }, {
+                      "positiveIntegers" : [ {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 38
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 54
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 37
+                      } ]
+                    }, {
+                      "positiveIntegers" : [ {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 38
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 55
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 54
+                      } ]
+                    }, {
+                      "positiveIntegers" : [ {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 2
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 20
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 21
+                      } ]
+                    }, {
+                      "positiveIntegers" : [ {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 1
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 5
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 4
+                      } ]
+                    }, {
+                      "positiveIntegers" : [ {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 39
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 55
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 38
+                      } ]
+                    }, {
+                      "positiveIntegers" : [ {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 39
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 56
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 55
+                      } ]
+                    }, {
+                      "positiveIntegers" : [ {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 2
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 21
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 22
+                      } ]
+                    }, {
+                      "positiveIntegers" : [ {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 1
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 6
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 5
+                      } ]
+                    }, {
+                      "positiveIntegers" : [ {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 40
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 56
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 39
+                      } ]
+                    }, {
+                      "positiveIntegers" : [ {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 40
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 57
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 56
+                      } ]
+                    }, {
+                      "positiveIntegers" : [ {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 2
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 22
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 23
+                      } ]
+                    }, {
+                      "positiveIntegers" : [ {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 1
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 7
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 6
+                      } ]
+                    }, {
+                      "positiveIntegers" : [ {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 41
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 57
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 40
+                      } ]
+                    }, {
+                      "positiveIntegers" : [ {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 41
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 58
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 57
+                      } ]
+                    }, {
+                      "positiveIntegers" : [ {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 2
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 23
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 24
+                      } ]
+                    }, {
+                      "positiveIntegers" : [ {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 1
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 8
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 7
+                      } ]
+                    }, {
+                      "positiveIntegers" : [ {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 42
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 58
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 41
+                      } ]
+                    }, {
+                      "positiveIntegers" : [ {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 42
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 59
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 58
+                      } ]
+                    }, {
+                      "positiveIntegers" : [ {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 2
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 24
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 25
+                      } ]
+                    }, {
+                      "positiveIntegers" : [ {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 1
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 9
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 8
+                      } ]
+                    }, {
+                      "positiveIntegers" : [ {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 43
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 59
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 42
+                      } ]
+                    }, {
+                      "positiveIntegers" : [ {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 43
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 60
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 59
+                      } ]
+                    }, {
+                      "positiveIntegers" : [ {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 2
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 25
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 26
+                      } ]
+                    }, {
+                      "positiveIntegers" : [ {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 1
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 10
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 9
+                      } ]
+                    }, {
+                      "positiveIntegers" : [ {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 44
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 60
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 43
+                      } ]
+                    }, {
+                      "positiveIntegers" : [ {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 44
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 61
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 60
+                      } ]
+                    }, {
+                      "positiveIntegers" : [ {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 2
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 26
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 27
+                      } ]
+                    }, {
+                      "positiveIntegers" : [ {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 1
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 11
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 10
+                      } ]
+                    }, {
+                      "positiveIntegers" : [ {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 45
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 61
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 44
+                      } ]
+                    }, {
+                      "positiveIntegers" : [ {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 45
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 62
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 61
+                      } ]
+                    }, {
+                      "positiveIntegers" : [ {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 2
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 27
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 28
+                      } ]
+                    }, {
+                      "positiveIntegers" : [ {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 1
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 12
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 11
+                      } ]
+                    }, {
+                      "positiveIntegers" : [ {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 46
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 62
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 45
+                      } ]
+                    }, {
+                      "positiveIntegers" : [ {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 46
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 63
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 62
+                      } ]
+                    }, {
+                      "positiveIntegers" : [ {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 2
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 28
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 29
+                      } ]
+                    }, {
+                      "positiveIntegers" : [ {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 1
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 13
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 12
+                      } ]
+                    }, {
+                      "positiveIntegers" : [ {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 47
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 63
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 46
+                      } ]
+                    }, {
+                      "positiveIntegers" : [ {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 47
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 64
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 63
+                      } ]
+                    }, {
+                      "positiveIntegers" : [ {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 2
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 29
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 30
+                      } ]
+                    }, {
+                      "positiveIntegers" : [ {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 1
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 14
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 13
+                      } ]
+                    }, {
+                      "positiveIntegers" : [ {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 48
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 64
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 47
+                      } ]
+                    }, {
+                      "positiveIntegers" : [ {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 48
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 65
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 64
+                      } ]
+                    }, {
+                      "positiveIntegers" : [ {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 2
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 30
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 31
+                      } ]
+                    }, {
+                      "positiveIntegers" : [ {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 1
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 15
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 14
+                      } ]
+                    }, {
+                      "positiveIntegers" : [ {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 49
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 65
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 48
+                      } ]
+                    }, {
+                      "positiveIntegers" : [ {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 49
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 66
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 65
+                      } ]
+                    }, {
+                      "positiveIntegers" : [ {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 2
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 31
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 32
+                      } ]
+                    }, {
+                      "positiveIntegers" : [ {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 1
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 16
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 15
+                      } ]
+                    }, {
+                      "positiveIntegers" : [ {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 50
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 66
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 49
+                      } ]
+                    }, {
+                      "positiveIntegers" : [ {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 50
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 67
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 66
+                      } ]
+                    }, {
+                      "positiveIntegers" : [ {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 2
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 32
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 33
+                      } ]
+                    }, {
+                      "positiveIntegers" : [ {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 1
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 17
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 16
+                      } ]
+                    }, {
+                      "positiveIntegers" : [ {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 51
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 67
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 50
+                      } ]
+                    }, {
+                      "positiveIntegers" : [ {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 51
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 68
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 67
+                      } ]
+                    }, {
+                      "positiveIntegers" : [ {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 2
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 33
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 34
+                      } ]
+                    }, {
+                      "positiveIntegers" : [ {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 1
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 18
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 17
+                      } ]
+                    }, {
+                      "positiveIntegers" : [ {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 52
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 68
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 51
+                      } ]
+                    }, {
+                      "positiveIntegers" : [ {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 52
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 69
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 68
+                      } ]
+                    }, {
+                      "positiveIntegers" : [ {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 2
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 34
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 35
+                      } ]
+                    }, {
+                      "positiveIntegers" : [ {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 1
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 19
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 18
+                      } ]
+                    }, {
+                      "positiveIntegers" : [ {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 53
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 69
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 52
+                      } ]
+                    }, {
+                      "positiveIntegers" : [ {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 53
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 70
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 69
+                      } ]
+                    }, {
+                      "positiveIntegers" : [ {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 2
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 35
+                      }, {
+                        "type" : "IfcPositiveInteger",
+                        "value" : 36
+                      } ]
+                    } ]
+                  } ]
+                }
+              } ],
+              "predefinedType" : "POST"
+            }
+          } ],
+          "objectPlacement" : {
+            "type" : "IfcLocalPlacement",
+            "globalId" : "28d37359-7403-4dbd-9785-2f4f884b8a8c",
+            "placementRelTo" : "2439958d-4942-4a7f-b0ff-404db6520c64",
+            "relativePlacement" : {
+              "type" : "IfcAxis2Placement3D",
+              "location" : {
+                "type" : "IfcCartesianPoint",
+                "coordinates" : [ {
+                  "type" : "IfcLengthMeasure",
+                  "value" : 1.92970621585846
+                }, {
+                  "type" : "IfcLengthMeasure",
+                  "value" : 1.9296875
+                }, {
+                  "type" : "IfcLengthMeasure",
+                  "value" : 0.0
+                } ]
+              },
+              "axis" : {
+                "type" : "IfcDirection",
+                "directionRatios" : [ {
+                  "type" : "IfcReal",
+                  "value" : 0.0
+                }, {
+                  "type" : "IfcReal",
+                  "value" : 0.0
+                }, {
+                  "type" : "IfcReal",
+                  "value" : 1.0
+                } ]
+              },
+              "refDirection" : {
+                "type" : "IfcDirection",
+                "directionRatios" : [ {
+                  "type" : "IfcReal",
+                  "value" : 1.0
+                }, {
+                  "type" : "IfcReal",
+                  "value" : 0.0
+                }, {
+                  "type" : "IfcReal",
+                  "value" : 0.0
+                } ]
+              }
+            }
+          },
+          "representation" : {
+            "type" : "IfcProductDefinitionShape",
+            "globalId" : "05126a8a-a25f-4d3d-9120-2fa8d6f2da57",
+            "representations" : [ {
+              "type" : "IfcShapeRepresentation",
+              "globalId" : "e76e791b-35a0-4230-aa3e-a826d5610589",
+              "contextOfItems" : "08f5f970-146f-4998-9957-454d5ade3b30",
+              "representationIdentifier" : {
+                "type" : "IfcLabel",
+                "value" : "Body"
+              },
+              "representationType" : {
+                "type" : "IfcLabel",
+                "value" : "MappedRepresentation"
+              },
+              "items" : [ {
+                "type" : "IfcMappedItem",
+                "mappingSource" : "e49a69be-0a53-458d-961e-2d0bbf390c09",
+                "mappingTarget" : {
+                  "type" : "IfcCartesianTransformationOperator3D",
+                  "localOrigin" : {
+                    "type" : "IfcCartesianPoint",
+                    "coordinates" : [ {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 0.0
+                    }, {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 0.0
+                    }, {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 0.0
+                    } ]
+                  },
+                  "scale" : {
+                    "type" : "IfcReal",
+                    "value" : 1.0
+                  }
+                }
+              } ]
+            } ]
+          }
+        } ]
+      } ],
+      "compositionType" : "ELEMENT"
+    } ]
+  },
+  "representationContexts" : [ "08f5f970-146f-4998-9957-454d5ade3b30", {
+    "type" : "IfcGeometricRepresentationContext",
+    "globalId" : "b6a6227f-ae29-4bde-82a0-d257f7e2a7ce",
+    "contextIdentifier" : {
+      "type" : "IfcLabel",
+      "value" : "2D"
+    },
+    "contextType" : {
+      "type" : "IfcLabel",
+      "value" : "Plan"
+    },
+    "coordinateSpaceDimension" : {
+      "type" : "IfcDimensionCount",
+      "value" : 2
+    },
+    "precision" : {
+      "type" : "IfcReal",
+      "value" : 1.0E-5
+    },
+    "worldCoordinateSystem" : {
+      "type" : "IfcAxis2Placement3D",
+      "location" : {
+        "type" : "IfcCartesianPoint",
+        "coordinates" : [ {
+          "type" : "IfcLengthMeasure",
+          "value" : 0.0
+        }, {
+          "type" : "IfcLengthMeasure",
+          "value" : 0.0
+        }, {
+          "type" : "IfcLengthMeasure",
+          "value" : 0.0
+        } ]
+      }
+    }
+  } ],
+  "unitsInContext" : {
+    "units" : [ {
+      "type" : "IfcSIUnit",
+      "globalId" : "9c8f088a-580d-4b50-8414-d4adffd330ae",
+      "dimensions" : {
+        "lengthExponent" : 0,
+        "massExponent" : 0,
+        "timeExponent" : 0,
+        "electricCurrentExponent" : 1,
+        "thermodynamicTemperatureExponent" : 0,
+        "amountOfSubstanceExponent" : 0,
+        "luminousIntensityExponent" : 0
+      },
+      "unitType" : "ELECTRICCURRENTUNIT",
+      "name" : "AMPERE"
+    }, {
+      "type" : "IfcSIUnit",
+      "globalId" : "8fd03215-0c1d-41ac-8627-962af2e2d00b",
+      "dimensions" : {
+        "lengthExponent" : 1,
+        "massExponent" : 1,
+        "timeExponent" : -2,
+        "electricCurrentExponent" : 0,
+        "thermodynamicTemperatureExponent" : 0,
+        "amountOfSubstanceExponent" : 0,
+        "luminousIntensityExponent" : 0
+      },
+      "unitType" : "FORCEUNIT",
+      "name" : "NEWTON"
+    }, {
+      "type" : "IfcSIUnit",
+      "globalId" : "c65cb177-782a-4919-b4fc-7fa4501b55c0",
+      "unitType" : "MAGNETICFLUXUNIT",
+      "name" : "WEBER"
+    }, {
+      "type" : "IfcDerivedUnit",
+      "elements" : [ {
+        "unit" : "8fd03215-0c1d-41ac-8627-962af2e2d00b",
+        "exponent" : 1
+      }, {
+        "unit" : {
+          "type" : "IfcSIUnit",
+          "globalId" : "0b8dfffc-e804-4968-8e49-f58d21b45912",
+          "dimensions" : {
+            "lengthExponent" : 1,
+            "massExponent" : 0,
+            "timeExponent" : 0,
+            "electricCurrentExponent" : 0,
+            "thermodynamicTemperatureExponent" : 0,
+            "amountOfSubstanceExponent" : 0,
+            "luminousIntensityExponent" : 0
+          },
+          "unitType" : "LENGTHUNIT",
+          "name" : "METRE"
+        },
+        "exponent" : -1
+      } ],
+      "unitType" : "LINEARFORCEUNIT"
+    }, {
+      "type" : "IfcDerivedUnit",
+      "elements" : [ {
+        "unit" : "0b8dfffc-e804-4968-8e49-f58d21b45912",
+        "exponent" : 1
+      }, {
+        "unit" : {
+          "type" : "IfcSIUnit",
+          "globalId" : "838041ed-5dcd-4cdc-8de3-b4305e3f6061",
+          "dimensions" : {
+            "lengthExponent" : 0,
+            "massExponent" : 0,
+            "timeExponent" : 1,
+            "electricCurrentExponent" : 0,
+            "thermodynamicTemperatureExponent" : 0,
+            "amountOfSubstanceExponent" : 0,
+            "luminousIntensityExponent" : 0
+          },
+          "unitType" : "TIMEUNIT",
+          "name" : "SECOND"
+        },
+        "exponent" : -1
+      } ],
+      "unitType" : "LINEARVELOCITYUNIT"
+    }, {
+      "type" : "IfcDerivedUnit",
+      "elements" : [ {
+        "unit" : {
+          "type" : "IfcSIUnit",
+          "globalId" : "776805b1-0137-4f4b-9d71-201b57c270a1",
+          "dimensions" : {
+            "lengthExponent" : 0,
+            "massExponent" : 1,
+            "timeExponent" : 0,
+            "electricCurrentExponent" : 0,
+            "thermodynamicTemperatureExponent" : 0,
+            "amountOfSubstanceExponent" : 0,
+            "luminousIntensityExponent" : 0
+          },
+          "unitType" : "MASSUNIT",
+          "name" : "GRAM"
+        },
+        "exponent" : 1
+      }, {
+        "unit" : {
+          "type" : "IfcSIUnit",
+          "globalId" : "99e0f362-b0b0-48bb-b734-123cc14908f1",
+          "dimensions" : {
+            "lengthExponent" : 3,
+            "massExponent" : 0,
+            "timeExponent" : 0,
+            "electricCurrentExponent" : 0,
+            "thermodynamicTemperatureExponent" : 0,
+            "amountOfSubstanceExponent" : 0,
+            "luminousIntensityExponent" : 0
+          },
+          "unitType" : "VOLUMEUNIT",
+          "name" : "CUBIC_METRE"
+        },
+        "exponent" : -1
+      } ],
+      "unitType" : "IONCONCENTRATIONUNIT"
+    }, {
+      "type" : "IfcDerivedUnit",
+      "elements" : [ {
+        "unit" : {
+          "type" : "IfcSIUnit",
+          "globalId" : "4e72c553-b03d-4335-84fc-135d42c350f6",
+          "dimensions" : {
+            "lengthExponent" : 0,
+            "massExponent" : 1,
+            "timeExponent" : 0,
+            "electricCurrentExponent" : 0,
+            "thermodynamicTemperatureExponent" : 0,
+            "amountOfSubstanceExponent" : 0,
+            "luminousIntensityExponent" : 0
+          },
+          "unitType" : "MASSUNIT",
+          "prefix" : "KILO",
+          "name" : "GRAM"
+        },
+        "exponent" : 1
+      }, {
+        "unit" : "838041ed-5dcd-4cdc-8de3-b4305e3f6061",
+        "exponent" : -1
+      } ],
+      "unitType" : "MASSFLOWRATEUNIT"
+    }, {
+      "type" : "IfcSIUnit",
+      "globalId" : "74fe8d5a-fc4a-408c-9b61-cb0bb1d45687",
+      "dimensions" : {
+        "lengthExponent" : 0,
+        "massExponent" : 0,
+        "timeExponent" : 1,
+        "electricCurrentExponent" : 1,
+        "thermodynamicTemperatureExponent" : 0,
+        "amountOfSubstanceExponent" : 0,
+        "luminousIntensityExponent" : 0
+      },
+      "unitType" : "ELECTRICCHARGEUNIT",
+      "name" : "COULOMB"
+    }, {
+      "type" : "IfcDerivedUnit",
+      "elements" : [ {
+        "unit" : "8fd03215-0c1d-41ac-8627-962af2e2d00b",
+        "exponent" : 1
+      }, {
+        "unit" : "0b8dfffc-e804-4968-8e49-f58d21b45912",
+        "exponent" : 1
+      }, {
+        "unit" : "0b8dfffc-e804-4968-8e49-f58d21b45912",
+        "exponent" : -1
+      } ],
+      "unitType" : "LINEARMOMENTUNIT"
+    }, {
+      "type" : "IfcSIUnit",
+      "globalId" : "d78e211d-4ee8-4092-a046-97dc0f6509d1",
+      "dimensions" : {
+        "lengthExponent" : 0,
+        "massExponent" : 1,
+        "timeExponent" : -2,
+        "electricCurrentExponent" : -1,
+        "thermodynamicTemperatureExponent" : 0,
+        "amountOfSubstanceExponent" : 0,
+        "luminousIntensityExponent" : 0
+      },
+      "unitType" : "MAGNETICFLUXDENSITYUNIT",
+      "name" : "TESLA"
+    }, {
+      "type" : "IfcDerivedUnit",
+      "elements" : [ {
+        "unit" : "0b8dfffc-e804-4968-8e49-f58d21b45912",
+        "exponent" : 1
+      }, {
+        "unit" : "838041ed-5dcd-4cdc-8de3-b4305e3f6061",
+        "exponent" : -1
+      }, {
+        "unit" : "838041ed-5dcd-4cdc-8de3-b4305e3f6061",
+        "exponent" : -1
+      } ],
+      "unitType" : "ACCELERATIONUNIT"
+    }, {
+      "type" : "IfcDerivedUnit",
+      "elements" : [ {
+        "unit" : "0b8dfffc-e804-4968-8e49-f58d21b45912",
+        "exponent" : 6
+      } ],
+      "unitType" : "WARPINGCONSTANTUNIT"
+    }, {
+      "type" : "IfcDerivedUnit",
+      "elements" : [ {
+        "unit" : {
+          "type" : "IfcSIUnit",
+          "globalId" : "88ba5787-38a7-4466-b858-f81010d357eb",
+          "dimensions" : {
+            "lengthExponent" : 2,
+            "massExponent" : 0,
+            "timeExponent" : -2,
+            "electricCurrentExponent" : 0,
+            "thermodynamicTemperatureExponent" : 0,
+            "amountOfSubstanceExponent" : 0,
+            "luminousIntensityExponent" : 0
+          },
+          "unitType" : "ABSORBEDDOSEUNIT",
+          "name" : "GRAY"
+        },
+        "exponent" : -1
+      }, {
+        "unit" : "99e0f362-b0b0-48bb-b734-123cc14908f1",
+        "exponent" : 1
+      } ],
+      "unitType" : "ISOTHERMALMOISTURECAPACITYUNIT"
+    }, {
+      "type" : "IfcDerivedUnit",
+      "elements" : [ {
+        "unit" : {
+          "type" : "IfcSIUnit",
+          "globalId" : "0d0b4924-8e02-4c47-a476-f79bde6732d0",
+          "dimensions" : {
+            "lengthExponent" : 2,
+            "massExponent" : 1,
+            "timeExponent" : -3,
+            "electricCurrentExponent" : 0,
+            "thermodynamicTemperatureExponent" : 0,
+            "amountOfSubstanceExponent" : 0,
+            "luminousIntensityExponent" : 0
+          },
+          "unitType" : "POWERUNIT",
+          "prefix" : "PICO",
+          "name" : "WATT"
+        },
+        "exponent" : 0
+      } ],
+      "unitType" : "SOUNDPOWERUNIT"
+    }, {
+      "type" : "IfcSIUnit",
+      "globalId" : "2feef7f7-034d-4e1e-9461-fa5cb8ad464a",
+      "dimensions" : {
+        "lengthExponent" : 0,
+        "massExponent" : 0,
+        "timeExponent" : -1,
+        "electricCurrentExponent" : 0,
+        "thermodynamicTemperatureExponent" : 0,
+        "amountOfSubstanceExponent" : 0,
+        "luminousIntensityExponent" : 0
+      },
+      "unitType" : "RADIOACTIVITYUNIT",
+      "name" : "BECQUEREL"
+    }, {
+      "type" : "IfcSIUnit",
+      "globalId" : "f58a7e8c-64df-4842-9710-2d8a4ef08b9b",
+      "dimensions" : {
+        "lengthExponent" : -2,
+        "massExponent" : -1,
+        "timeExponent" : 3,
+        "electricCurrentExponent" : 2,
+        "thermodynamicTemperatureExponent" : 0,
+        "amountOfSubstanceExponent" : 0,
+        "luminousIntensityExponent" : 0
+      },
+      "unitType" : "ELECTRICCONDUCTANCEUNIT",
+      "name" : "SIEMENS"
+    }, {
+      "type" : "IfcSIUnit",
+      "globalId" : "09996c5c-452b-4d28-9c66-fdf6b154addd",
+      "dimensions" : {
+        "lengthExponent" : 2,
+        "massExponent" : 1,
+        "timeExponent" : -2,
+        "electricCurrentExponent" : 0,
+        "thermodynamicTemperatureExponent" : 0,
+        "amountOfSubstanceExponent" : 0,
+        "luminousIntensityExponent" : 0
+      },
+      "unitType" : "ENERGYUNIT",
+      "name" : "JOULE"
+    }, {
+      "type" : "IfcDerivedUnit",
+      "elements" : [ {
+        "unit" : "838041ed-5dcd-4cdc-8de3-b4305e3f6061",
+        "exponent" : -1
+      }, {
+        "unit" : "99e0f362-b0b0-48bb-b734-123cc14908f1",
+        "exponent" : 1
+      } ],
+      "unitType" : "MOISTUREDIFFUSIVITYUNIT"
+    }, {
+      "type" : "IfcDerivedUnit",
+      "elements" : [ {
+        "unit" : "8fd03215-0c1d-41ac-8627-962af2e2d00b",
+        "exponent" : 1
+      }, {
+        "unit" : "99e0f362-b0b0-48bb-b734-123cc14908f1",
+        "exponent" : -1
+      } ],
+      "unitType" : "MODULUSOFSUBGRADEREACTIONUNIT"
+    }, {
+      "type" : "IfcSIUnit",
+      "globalId" : "95b58951-2dc8-4270-b121-6e9c5358a8de",
+      "dimensions" : {
+        "lengthExponent" : 2,
+        "massExponent" : 1,
+        "timeExponent" : -3,
+        "electricCurrentExponent" : -1,
+        "thermodynamicTemperatureExponent" : 0,
+        "amountOfSubstanceExponent" : 0,
+        "luminousIntensityExponent" : 0
+      },
+      "unitType" : "ELECTRICVOLTAGEUNIT",
+      "name" : "VOLT"
+    }, {
+      "type" : "IfcSIUnit",
+      "globalId" : "37c39976-8534-4961-abb5-16ce0f3e34e1",
+      "dimensions" : {
+        "lengthExponent" : 0,
+        "massExponent" : 0,
+        "timeExponent" : -1,
+        "electricCurrentExponent" : 0,
+        "thermodynamicTemperatureExponent" : 0,
+        "amountOfSubstanceExponent" : 0,
+        "luminousIntensityExponent" : 0
+      },
+      "unitType" : "FREQUENCYUNIT",
+      "name" : "HERTZ"
+    }, {
+      "type" : "IfcDerivedUnit",
+      "elements" : [ {
+        "unit" : {
+          "type" : "IfcSIUnit",
+          "globalId" : "fb8a5f62-c6fd-4399-9dae-4e6d104b774e",
+          "dimensions" : {
+            "lengthExponent" : 0,
+            "massExponent" : 0,
+            "timeExponent" : 0,
+            "electricCurrentExponent" : 0,
+            "thermodynamicTemperatureExponent" : 0,
+            "amountOfSubstanceExponent" : 1,
+            "luminousIntensityExponent" : 0
+          },
+          "unitType" : "AMOUNTOFSUBSTANCEUNIT",
+          "name" : "MOLE"
+        },
+        "exponent" : -1
+      }, {
+        "unit" : "776805b1-0137-4f4b-9d71-201b57c270a1",
+        "exponent" : 1
+      } ],
+      "unitType" : "MOLECULARWEIGHTUNIT"
+    }, {
+      "type" : "IfcDerivedUnit",
+      "elements" : [ {
+        "unit" : "0b8dfffc-e804-4968-8e49-f58d21b45912",
+        "exponent" : 2
+      }, {
+        "unit" : "8fd03215-0c1d-41ac-8627-962af2e2d00b",
+        "exponent" : 1
+      } ],
+      "unitType" : "WARPINGMOMENTUNIT"
+    }, {
+      "type" : "IfcDerivedUnit",
+      "elements" : [ {
+        "unit" : "8fd03215-0c1d-41ac-8627-962af2e2d00b",
+        "exponent" : 1
+      }, {
+        "unit" : {
+          "type" : "IfcConversionBasedUnit",
+          "globalId" : "7b2b17e9-9524-4eed-8d63-20158475a386",
+          "dimensions" : {
+            "lengthExponent" : 0,
+            "massExponent" : 0,
+            "timeExponent" : 0,
+            "electricCurrentExponent" : 0,
+            "thermodynamicTemperatureExponent" : 0,
+            "amountOfSubstanceExponent" : 0,
+            "luminousIntensityExponent" : 0
+          },
+          "unitType" : "PLANEANGLEUNIT",
+          "name" : "degree",
+          "conversionFactor" : {
+            "type" : "IfcMeasureWithUnit",
+            "valueComponent" : {
+              "type" : "IfcPlaneAngleMeasure",
+              "value" : 0.0174532925199433
+            },
+            "unitComponent" : {
+              "type" : "IfcSIUnit",
+              "globalId" : "0a2f62dd-fc28-4c39-979b-21f1af57b9db",
+              "dimensions" : {
+                "lengthExponent" : 0,
+                "massExponent" : 0,
+                "timeExponent" : 0,
+                "electricCurrentExponent" : 0,
+                "thermodynamicTemperatureExponent" : 0,
+                "amountOfSubstanceExponent" : 0,
+                "luminousIntensityExponent" : 0
+              },
+              "unitType" : "PLANEANGLEUNIT",
+              "name" : "RADIAN"
+            }
+          }
+        },
+        "exponent" : -1
+      }, {
+        "unit" : "0b8dfffc-e804-4968-8e49-f58d21b45912",
+        "exponent" : -1
+      }, {
+        "unit" : "0b8dfffc-e804-4968-8e49-f58d21b45912",
+        "exponent" : 1
+      } ],
+      "unitType" : "MODULUSOFROTATIONALSUBGRADEREACTIONUNIT"
+    }, {
+      "type" : "IfcSIUnit",
+      "globalId" : "6bfd9841-4447-4820-951c-05ec059554d4",
+      "dimensions" : {
+        "lengthExponent" : -2,
+        "massExponent" : 0,
+        "timeExponent" : 0,
+        "electricCurrentExponent" : 0,
+        "thermodynamicTemperatureExponent" : 0,
+        "amountOfSubstanceExponent" : 0,
+        "luminousIntensityExponent" : 1
+      },
+      "unitType" : "ILLUMINANCEUNIT",
+      "name" : "LUX"
+    }, {
+      "type" : "IfcDerivedUnit",
+      "elements" : [ {
+        "unit" : "99e0f362-b0b0-48bb-b734-123cc14908f1",
+        "exponent" : -1
+      }, {
+        "unit" : "4e72c553-b03d-4335-84fc-135d42c350f6",
+        "exponent" : 1
+      } ],
+      "unitType" : "MASSDENSITYUNIT"
+    }, "99e0f362-b0b0-48bb-b734-123cc14908f1", {
+      "type" : "IfcDerivedUnit",
+      "elements" : [ {
+        "unit" : "0b8dfffc-e804-4968-8e49-f58d21b45912",
+        "exponent" : 1
+      }, {
+        "unit" : "8fd03215-0c1d-41ac-8627-962af2e2d00b",
+        "exponent" : 1
+      }, {
+        "unit" : "7b2b17e9-9524-4eed-8d63-20158475a386",
+        "exponent" : -1
+      } ],
+      "unitType" : "ROTATIONALSTIFFNESSUNIT"
+    }, {
+      "type" : "IfcDerivedUnit",
+      "elements" : [ {
+        "unit" : "7b2b17e9-9524-4eed-8d63-20158475a386",
+        "exponent" : 1
+      }, {
+        "unit" : "838041ed-5dcd-4cdc-8de3-b4305e3f6061",
+        "exponent" : -1
+      } ],
+      "unitType" : "ANGULARVELOCITYUNIT"
+    }, {
+      "type" : "IfcDerivedUnit",
+      "elements" : [ {
+        "unit" : "0b8dfffc-e804-4968-8e49-f58d21b45912",
+        "exponent" : 3
+      } ],
+      "unitType" : "SECTIONMODULUSUNIT"
+    }, {
+      "type" : "IfcSIUnit",
+      "globalId" : "bcf3835d-b17c-4dca-8a45-21cbf43f04d2",
+      "dimensions" : {
+        "lengthExponent" : 2,
+        "massExponent" : 1,
+        "timeExponent" : -3,
+        "electricCurrentExponent" : -2,
+        "thermodynamicTemperatureExponent" : 0,
+        "amountOfSubstanceExponent" : 0,
+        "luminousIntensityExponent" : 0
+      },
+      "unitType" : "ELECTRICRESISTANCEUNIT",
+      "name" : "OHM"
+    }, {
+      "type" : "IfcDerivedUnit",
+      "elements" : [ {
+        "unit" : {
+          "type" : "IfcSIUnit",
+          "globalId" : "329e05a8-159c-40f6-bdc3-bbe60e8fc852",
+          "dimensions" : {
+            "lengthExponent" : 2,
+            "massExponent" : 1,
+            "timeExponent" : -3,
+            "electricCurrentExponent" : 0,
+            "thermodynamicTemperatureExponent" : 0,
+            "amountOfSubstanceExponent" : 0,
+            "luminousIntensityExponent" : 0
+          },
+          "unitType" : "POWERUNIT",
+          "name" : "WATT"
+        },
+        "exponent" : 1
+      }, {
+        "unit" : {
+          "type" : "IfcSIUnit",
+          "globalId" : "05be96fb-f1ae-4429-80d0-d0e1ae3b46a2",
+          "dimensions" : {
+            "lengthExponent" : 2,
+            "massExponent" : 0,
+            "timeExponent" : 0,
+            "electricCurrentExponent" : 0,
+            "thermodynamicTemperatureExponent" : 0,
+            "amountOfSubstanceExponent" : 0,
+            "luminousIntensityExponent" : 0
+          },
+          "unitType" : "AREAUNIT",
+          "name" : "SQUARE_METRE"
+        },
+        "exponent" : -1
+      } ],
+      "unitType" : "HEATFLUXDENSITYUNIT"
+    }, {
+      "type" : "IfcDerivedUnit",
+      "elements" : [ {
+        "unit" : "0b8dfffc-e804-4968-8e49-f58d21b45912",
+        "exponent" : -1
+      }, {
+        "unit" : {
+          "type" : "IfcSIUnit",
+          "globalId" : "d374a387-cd32-4795-b358-20610a9fd60e",
+          "dimensions" : {
+            "lengthExponent" : 0,
+            "massExponent" : 0,
+            "timeExponent" : 0,
+            "electricCurrentExponent" : 0,
+            "thermodynamicTemperatureExponent" : 1,
+            "amountOfSubstanceExponent" : 0,
+            "luminousIntensityExponent" : 0
+          },
+          "unitType" : "THERMODYNAMICTEMPERATUREUNIT",
+          "name" : "KELVIN"
+        },
+        "exponent" : 1
+      } ],
+      "unitType" : "TEMPERATUREGRADIENTUNIT"
+    }, {
+      "type" : "IfcDerivedUnit",
+      "elements" : [ {
+        "unit" : "838041ed-5dcd-4cdc-8de3-b4305e3f6061",
+        "exponent" : -1
+      } ],
+      "unitType" : "ROTATIONALFREQUENCYUNIT"
+    }, {
+      "type" : "IfcDerivedUnit",
+      "elements" : [ {
+        "unit" : "838041ed-5dcd-4cdc-8de3-b4305e3f6061",
+        "exponent" : -1
+      }, {
+        "unit" : "4e72c553-b03d-4335-84fc-135d42c350f6",
+        "exponent" : 1
+      }, {
+        "unit" : "0b8dfffc-e804-4968-8e49-f58d21b45912",
+        "exponent" : -1
+      } ],
+      "unitType" : "VAPORPERMEABILITYUNIT"
+    }, {
+      "type" : "IfcDerivedUnit",
+      "elements" : [ {
+        "unit" : "838041ed-5dcd-4cdc-8de3-b4305e3f6061",
+        "exponent" : -1
+      } ],
+      "unitType" : "INTEGERCOUNTRATEUNIT"
+    }, {
+      "type" : "IfcDerivedUnit",
+      "elements" : [ {
+        "unit" : "0b8dfffc-e804-4968-8e49-f58d21b45912",
+        "exponent" : -1
+      }, {
+        "unit" : "4e72c553-b03d-4335-84fc-135d42c350f6",
+        "exponent" : 1
+      } ],
+      "unitType" : "MASSPERLENGTHUNIT"
+    }, {
+      "type" : "IfcDerivedUnit",
+      "elements" : [ {
+        "unit" : "d374a387-cd32-4795-b358-20610a9fd60e",
+        "exponent" : 1
+      }, {
+        "unit" : "838041ed-5dcd-4cdc-8de3-b4305e3f6061",
+        "exponent" : -1
+      } ],
+      "unitType" : "TEMPERATURERATEOFCHANGEUNIT"
+    }, {
+      "type" : "IfcDerivedUnit",
+      "elements" : [ {
+        "unit" : "838041ed-5dcd-4cdc-8de3-b4305e3f6061",
+        "exponent" : -1
+      }, {
+        "unit" : "99e0f362-b0b0-48bb-b734-123cc14908f1",
+        "exponent" : 1
+      } ],
+      "unitType" : "VOLUMETRICFLOWRATEUNIT"
+    }, {
+      "type" : "IfcDerivedUnit",
+      "elements" : [ {
+        "unit" : "09996c5c-452b-4d28-9c66-fdf6b154addd",
+        "exponent" : 1
+      }, {
+        "unit" : "4e72c553-b03d-4335-84fc-135d42c350f6",
+        "exponent" : -1
+      } ],
+      "unitType" : "HEATINGVALUEUNIT"
+    }, {
+      "type" : "IfcMonetaryUnit",
+      "currency" : "USD"
+    }, {
+      "type" : "IfcDerivedUnit",
+      "elements" : [ {
+        "unit" : "329e05a8-159c-40f6-bdc3-bbe60e8fc852",
+        "exponent" : 1
+      }, {
+        "unit" : "05be96fb-f1ae-4429-80d0-d0e1ae3b46a2",
+        "exponent" : -1
+      }, {
+        "unit" : "d374a387-cd32-4795-b358-20610a9fd60e",
+        "exponent" : 1
+      } ],
+      "unitType" : "THERMALTRANSMITTANCEUNIT"
+    }, "4e72c553-b03d-4335-84fc-135d42c350f6", {
+      "type" : "IfcDerivedUnit",
+      "elements" : [ {
+        "unit" : "7b2b17e9-9524-4eed-8d63-20158475a386",
+        "exponent" : 1
+      } ],
+      "unitType" : "COMPOUNDPLANEANGLEUNIT"
+    }, {
+      "type" : "IfcDerivedUnit",
+      "elements" : [ {
+        "unit" : "0b8dfffc-e804-4968-8e49-f58d21b45912",
+        "exponent" : -1
+      }, {
+        "unit" : "8fd03215-0c1d-41ac-8627-962af2e2d00b",
+        "exponent" : 1
+      } ],
+      "unitType" : "LINEARSTIFFNESSUNIT"
+    }, "838041ed-5dcd-4cdc-8de3-b4305e3f6061", {
+      "type" : "IfcSIUnit",
+      "globalId" : "eb153300-868f-463f-8f27-8a24efb41753",
+      "dimensions" : {
+        "lengthExponent" : -1,
+        "massExponent" : 1,
+        "timeExponent" : -2,
+        "electricCurrentExponent" : 0,
+        "thermodynamicTemperatureExponent" : 0,
+        "amountOfSubstanceExponent" : 0,
+        "luminousIntensityExponent" : 0
+      },
+      "unitType" : "PRESSUREUNIT",
+      "name" : "PASCAL"
+    }, {
+      "type" : "IfcDerivedUnit",
+      "elements" : [ {
+        "unit" : "0b8dfffc-e804-4968-8e49-f58d21b45912",
+        "exponent" : 4
+      } ],
+      "unitType" : "MOMENTOFINERTIAUNIT"
+    }, "0b8dfffc-e804-4968-8e49-f58d21b45912", {
+      "type" : "IfcDerivedUnit",
+      "elements" : [ {
+        "unit" : "0b8dfffc-e804-4968-8e49-f58d21b45912",
+        "exponent" : 5
+      } ],
+      "unitType" : "SECTIONAREAINTEGRALUNIT"
+    }, {
+      "type" : "IfcDerivedUnit",
+      "elements" : [ {
+        "unit" : "d374a387-cd32-4795-b358-20610a9fd60e",
+        "exponent" : -1
+      } ],
+      "unitType" : "THERMALEXPANSIONCOEFFICIENTUNIT"
+    }, {
+      "type" : "IfcDerivedUnit",
+      "elements" : [ {
+        "unit" : "05be96fb-f1ae-4429-80d0-d0e1ae3b46a2",
+        "exponent" : 1
+      }, {
+        "unit" : "d374a387-cd32-4795-b358-20610a9fd60e",
+        "exponent" : 1
+      }, {
+        "unit" : "329e05a8-159c-40f6-bdc3-bbe60e8fc852",
+        "exponent" : -1
+      } ],
+      "unitType" : "THERMALRESISTANCEUNIT"
+    }, {
+      "type" : "IfcDerivedUnit",
+      "elements" : [ {
+        "unit" : "7b2b17e9-9524-4eed-8d63-20158475a386",
+        "exponent" : 1
+      }, {
+        "unit" : "0b8dfffc-e804-4968-8e49-f58d21b45912",
+        "exponent" : -1
+      } ],
+      "unitType" : "CURVATUREUNIT"
+    }, {
+      "type" : "IfcDerivedUnit",
+      "elements" : [ {
+        "unit" : "eb153300-868f-463f-8f27-8a24efb41753",
+        "exponent" : 1
+      }, {
+        "unit" : "838041ed-5dcd-4cdc-8de3-b4305e3f6061",
+        "exponent" : 1
+      } ],
+      "unitType" : "DYNAMICVISCOSITYUNIT"
+    }, {
+      "type" : "IfcDerivedUnit",
+      "elements" : [ {
+        "unit" : "05be96fb-f1ae-4429-80d0-d0e1ae3b46a2",
+        "exponent" : -1
+      }, {
+        "unit" : "8fd03215-0c1d-41ac-8627-962af2e2d00b",
+        "exponent" : 1
+      } ],
+      "unitType" : "PLANARFORCEUNIT"
+    }, {
+      "type" : "IfcDerivedUnit",
+      "elements" : [ {
+        "unit" : "d374a387-cd32-4795-b358-20610a9fd60e",
+        "exponent" : -1
+      }, {
+        "unit" : "05be96fb-f1ae-4429-80d0-d0e1ae3b46a2",
+        "exponent" : -1
+      }, {
+        "unit" : "329e05a8-159c-40f6-bdc3-bbe60e8fc852",
+        "exponent" : 1
+      } ],
+      "unitType" : "THERMALADMITTANCEUNIT"
+    }, {
+      "type" : "IfcSIUnit",
+      "globalId" : "f079a75e-c9c9-4ce1-a359-a6b8f96ed531",
+      "dimensions" : {
+        "lengthExponent" : 0,
+        "massExponent" : 0,
+        "timeExponent" : 0,
+        "electricCurrentExponent" : 0,
+        "thermodynamicTemperatureExponent" : 0,
+        "amountOfSubstanceExponent" : 0,
+        "luminousIntensityExponent" : 1
+      },
+      "unitType" : "LUMINOUSFLUXUNIT",
+      "name" : "LUMEN"
+    }, {
+      "type" : "IfcSIUnit",
+      "globalId" : "8737c2f8-6bdd-46a0-8e29-eaba08a9a45d",
+      "dimensions" : {
+        "lengthExponent" : 0,
+        "massExponent" : 0,
+        "timeExponent" : 0,
+        "electricCurrentExponent" : 0,
+        "thermodynamicTemperatureExponent" : 0,
+        "amountOfSubstanceExponent" : 0,
+        "luminousIntensityExponent" : 1
+      },
+      "unitType" : "LUMINOUSINTENSITYUNIT",
+      "name" : "CANDELA"
+    }, {
+      "type" : "IfcSIUnit",
+      "globalId" : "55aa23ea-8c1e-4bb2-849d-41bdf408c81f",
+      "dimensions" : {
+        "lengthExponent" : 0,
+        "massExponent" : 0,
+        "timeExponent" : 0,
+        "electricCurrentExponent" : 0,
+        "thermodynamicTemperatureExponent" : 1,
+        "amountOfSubstanceExponent" : 0,
+        "luminousIntensityExponent" : 0
+      },
+      "unitType" : "THERMODYNAMICTEMPERATUREUNIT",
+      "name" : "DEGREE_CELSIUS"
+    }, {
+      "type" : "IfcDerivedUnit",
+      "elements" : [ {
+        "unit" : "f079a75e-c9c9-4ce1-a359-a6b8f96ed531",
+        "exponent" : -1
+      }, {
+        "unit" : "8737c2f8-6bdd-46a0-8e29-eaba08a9a45d",
+        "exponent" : 1
+      } ],
+      "unitType" : "LUMINOUSINTENSITYDISTRIBUTIONUNIT"
+    }, "05be96fb-f1ae-4429-80d0-d0e1ae3b46a2", {
+      "type" : "IfcDerivedUnit",
+      "elements" : [ {
+        "unit" : "d374a387-cd32-4795-b358-20610a9fd60e",
+        "exponent" : -1
+      }, {
+        "unit" : "4e72c553-b03d-4335-84fc-135d42c350f6",
+        "exponent" : -1
+      }, {
+        "unit" : "09996c5c-452b-4d28-9c66-fdf6b154addd",
+        "exponent" : 1
+      } ],
+      "unitType" : "SPECIFICHEATCAPACITYUNIT"
+    }, {
+      "type" : "IfcDerivedUnit",
+      "elements" : [ {
+        "unit" : "05be96fb-f1ae-4429-80d0-d0e1ae3b46a2",
+        "exponent" : -1
+      }, {
+        "unit" : "8fd03215-0c1d-41ac-8627-962af2e2d00b",
+        "exponent" : 1
+      } ],
+      "unitType" : "MODULUSOFLINEARSUBGRADEREACTIONUNIT"
+    }, {
+      "type" : "IfcDerivedUnit",
+      "elements" : [ {
+        "unit" : {
+          "type" : "IfcSIUnit",
+          "globalId" : "eaeb98e3-ee49-4936-a661-d11cae04b284",
+          "dimensions" : {
+            "lengthExponent" : -1,
+            "massExponent" : 1,
+            "timeExponent" : -2,
+            "electricCurrentExponent" : 0,
+            "thermodynamicTemperatureExponent" : 0,
+            "amountOfSubstanceExponent" : 0,
+            "luminousIntensityExponent" : 0
+          },
+          "unitType" : "PRESSUREUNIT",
+          "prefix" : "MICRO",
+          "name" : "PASCAL"
+        },
+        "exponent" : 0
+      } ],
+      "unitType" : "SOUNDPRESSUREUNIT"
+    }, {
+      "type" : "IfcDerivedUnit",
+      "elements" : [ {
+        "unit" : "838041ed-5dcd-4cdc-8de3-b4305e3f6061",
+        "exponent" : -1
+      }, {
+        "unit" : "05be96fb-f1ae-4429-80d0-d0e1ae3b46a2",
+        "exponent" : 1
+      } ],
+      "unitType" : "KINEMATICVISCOSITYUNIT"
+    }, "7b2b17e9-9524-4eed-8d63-20158475a386", {
+      "type" : "IfcDerivedUnit",
+      "elements" : [ {
+        "unit" : "4e72c553-b03d-4335-84fc-135d42c350f6",
+        "exponent" : 1
+      }, {
+        "unit" : "05be96fb-f1ae-4429-80d0-d0e1ae3b46a2",
+        "exponent" : -1
+      } ],
+      "unitType" : "ROTATIONALMASSUNIT"
+    }, {
+      "type" : "IfcDerivedUnit",
+      "elements" : [ {
+        "unit" : "0b8dfffc-e804-4968-8e49-f58d21b45912",
+        "exponent" : 1
+      }, {
+        "unit" : "8fd03215-0c1d-41ac-8627-962af2e2d00b",
+        "exponent" : 1
+      } ],
+      "unitType" : "TORQUEUNIT"
+    }, "88ba5787-38a7-4466-b858-f81010d357eb", {
+      "type" : "IfcSIUnit",
+      "globalId" : "94fbcd24-085f-4852-a666-b78c89909ef3",
+      "dimensions" : {
+        "lengthExponent" : 2,
+        "massExponent" : 1,
+        "timeExponent" : -2,
+        "electricCurrentExponent" : -2,
+        "thermodynamicTemperatureExponent" : 0,
+        "amountOfSubstanceExponent" : 0,
+        "luminousIntensityExponent" : 0
+      },
+      "unitType" : "INDUCTANCEUNIT",
+      "name" : "HENRY"
+    }, {
+      "type" : "IfcSIUnit",
+      "globalId" : "4b092407-628d-4c79-893d-e66a6bc5cdf2",
+      "dimensions" : {
+        "lengthExponent" : -2,
+        "massExponent" : -1,
+        "timeExponent" : 4,
+        "electricCurrentExponent" : 2,
+        "thermodynamicTemperatureExponent" : 0,
+        "amountOfSubstanceExponent" : 0,
+        "luminousIntensityExponent" : 0
+      },
+      "unitType" : "ELECTRICCAPACITANCEUNIT",
+      "name" : "FARAD"
+    }, "fb8a5f62-c6fd-4399-9dae-4e6d104b774e", {
+      "type" : "IfcDerivedUnit",
+      "elements" : [ {
+        "unit" : "eb153300-868f-463f-8f27-8a24efb41753",
+        "exponent" : 1
+      } ],
+      "unitType" : "MODULUSOFELASTICITYUNIT"
+    }, {
+      "type" : "IfcSIUnit",
+      "globalId" : "aca13ac4-bf33-4955-bfa4-ba70717e07a6",
+      "dimensions" : {
+        "lengthExponent" : 2,
+        "massExponent" : 0,
+        "timeExponent" : -2,
+        "electricCurrentExponent" : 0,
+        "thermodynamicTemperatureExponent" : 0,
+        "amountOfSubstanceExponent" : 0,
+        "luminousIntensityExponent" : 0
+      },
+      "unitType" : "DOSEEQUIVALENTUNIT",
+      "name" : "SIEVERT"
+    }, {
+      "type" : "IfcSIUnit",
+      "globalId" : "492bfde4-048e-43fe-992f-6edf6be1d571",
+      "dimensions" : {
+        "lengthExponent" : 0,
+        "massExponent" : 0,
+        "timeExponent" : 0,
+        "electricCurrentExponent" : 0,
+        "thermodynamicTemperatureExponent" : 0,
+        "amountOfSubstanceExponent" : 0,
+        "luminousIntensityExponent" : 0
+      },
+      "unitType" : "SOLIDANGLEUNIT",
+      "name" : "STERADIAN"
+    }, {
+      "type" : "IfcDerivedUnit",
+      "elements" : [ {
+        "unit" : "eb153300-868f-463f-8f27-8a24efb41753",
+        "exponent" : 1
+      } ],
+      "unitType" : "SHEARMODULUSUNIT"
+    }, {
+      "type" : "IfcDerivedUnit",
+      "elements" : [ {
+        "unit" : "d374a387-cd32-4795-b358-20610a9fd60e",
+        "exponent" : -1
+      }, {
+        "unit" : "329e05a8-159c-40f6-bdc3-bbe60e8fc852",
+        "exponent" : 1
+      }, {
+        "unit" : "0b8dfffc-e804-4968-8e49-f58d21b45912",
+        "exponent" : -1
+      } ],
+      "unitType" : "THERMALCONDUCTANCEUNIT"
+    }, "329e05a8-159c-40f6-bdc3-bbe60e8fc852" ]
+  },
+  "declares" : [ "51c1dfed-8361-42d9-9b4b-a549c4e28980" ]
+}
