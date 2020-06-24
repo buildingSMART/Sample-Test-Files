@@ -5,7 +5,7 @@
 
 This test set includes the example files from the buildingSMART examples included originally in the official specification at https://technical.buildingsmart.org/standards/ifc/ifc-schema-specifications/. The set started from the original SPF files that were included in the spec. Errors in those files were corrected. For each STEP file, corresponding RDF graphs (in TTL syntax), JSON and XML are provided, offering means to compare content in various syntaxes.
 
-Original files are attributed to Jon Mirtschin (geometryGym) and Tim Chipman (Constructivity). Converted files are obtained through the software in https://github.com/pipauwel/IFCtoRDF and https://github.com/pipauwel/IFC.JAVA.
+Original files are attributed to Jon Mirtschin (geometryGym) and Tim Chipman (Constructivity). Converted files are obtained through the software in https://github.com/pipauwel/IFCtoRDF and https://github.com/pipauwel/IFC.JAVA. In case of errors or remarks, please contact p.pauwels@tue.nl or, better, leave an issue in this repository.
 
 ### Prerequisites
 
