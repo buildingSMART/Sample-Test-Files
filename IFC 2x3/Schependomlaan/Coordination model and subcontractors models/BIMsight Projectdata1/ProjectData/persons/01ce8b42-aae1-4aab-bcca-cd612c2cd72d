@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Person xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" SchemaVersion="6">
+  <Identifier>01ce8b42-aae1-4aab-bcca-cd612c2cd72d</Identifier>
+  <Owner>01ce8b42-aae1-4aab-bcca-cd612c2cd72d</Owner>
+  <Tags />
+  <Timestamp>2015-01-05T12:07:57.2520623Z</Timestamp>
+  <Status>Default</Status>
+  <DisplayName>Ligtvoet Joep</DisplayName>
+  <Email>jligtvoet@hb-oss.nl</Email>
+</Person>
