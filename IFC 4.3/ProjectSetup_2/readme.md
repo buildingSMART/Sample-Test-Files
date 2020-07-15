@@ -1,10 +1,14 @@
 
-# UT: Project Set Up - 2
+# UT: ProjectSetup_2
 
 ### Intent
 
 This scenario introduces simple owner history. 
-- It sets the history of `IfcProject` to have been produced by Stefan Jaud with Sublime Text.
+
+It sets the history of `IfcProject` to have been produced 
+- by Stefan Jaud 
+- with Sublime Text
+- on 2020-07-15 at 20:00:00 UTC
 
 ### Prerequisites
 
@@ -33,8 +37,8 @@ Following files correspond to this scenario:
 
 | Filename                          | Description                               |
 |-----------------------------------|-------------------------------------------|
-| `UT_ModelSetup_2.ifc`           | the IFC document							|
-| `UT_ModelSetup_2.png`			| a screen dump of owner history			|
+| `UT_ModelSetup_2.ifc`           | the IFC document                          |
+| `UT_ModelSetup_2.png`           | a screen dump of owner history            |
 
 ### Additional explanation
 
