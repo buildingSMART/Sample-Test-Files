@@ -1,11 +1,12 @@
 
-# UT: Project Set Up - 1
+# UT: ProjectSetup_1
 
 ### Intent
 
 This scenario encapsulates the model set up with correct units and project context. 
 - It sets the units of the project to SI or conversion based units.
-- It contains a project **Boilerplate** with GUID=`2DAvEupIz0HQr73cMaawtY` that establishes the bare minimum of an IFC file exchange.
+- It contains a project *"Boilerplate"* with GUID=`2DAvEupIz0HQr73cMaawtY` 
+   that establishes the bare minimum of an IFC file exchange.
 - It establishes one geometric context for geometries.
 
 ### Prerequisites
@@ -34,7 +35,7 @@ Following files correspond to this scenario:
 
 | Filename                          | Description                               |
 |-----------------------------------|-------------------------------------------|
-| `UT_ModelSetup_1.ifc`             | the IFC document							|
+| `UT_ModelSetup_1.ifc`           | the IFC document                          |
 
 ### Additional explanation
 
