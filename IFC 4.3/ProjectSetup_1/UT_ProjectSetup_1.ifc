@@ -1,12 +1,12 @@
 ISO-10303-21;
 
 /* ------- This file was produced manually for IFC Infra Extension Deployment project. --------- */
-/* ------- The file should be come with a README.md with supplementing info. ------------------- */
+/* ------- The file should come with a README.md with supplementing info. ---------------------- */
 /* ------- Stefan Jaud, stefan.jaud@tum.de, 2020.07.15. ---------------------------------------- */
 
 HEADER;
 FILE_DESCRIPTION ((''), '2;1');
-FILE_NAME ('UT_ProjectSetup_1.ifc', '2020-07-15T18:00:00', (''), (''), 'Stefan Jaud manually', 'SublimeText 3.0', '');
+FILE_NAME ('UT_ProjectSetup_1.ifc', '2020-07-15T18:00:00', ('Stefan Jaud'), ('bSI Infra Extension Deployment project'), 'manual text editing', 'SublimeText 3.0', 'GitHub pull request');
 FILE_SCHEMA (('IFC4X3_RC1'));
 ENDSEC;
 
