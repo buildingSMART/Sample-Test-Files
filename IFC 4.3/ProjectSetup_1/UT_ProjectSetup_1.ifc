@@ -5,7 +5,7 @@ ISO-10303-21;
 /* ------- Stefan Jaud, stefan.jaud@tum.de, 2020.07.15. ---------------------------------------- */
 
 HEADER;
-FILE_DESCRIPTION (('ViewDefinition [NotDefinedYet]'), '2;1');
+FILE_DESCRIPTION ((''), '2;1');
 FILE_NAME ('UT_ProjectSetup_1.ifc', '2020-07-15T18:00:00', (''), (''), 'Stefan Jaud manually', 'SublimeText 3.0', '');
 FILE_SCHEMA (('IFC4X3_RC1'));
 ENDSEC;
