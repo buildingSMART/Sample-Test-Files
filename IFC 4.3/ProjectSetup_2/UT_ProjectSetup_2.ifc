@@ -24,7 +24,7 @@ DATA;
 #19 = IFCSIUNIT(*, .AREAUNIT., $, .SQUARE_METRE.);
 #20 = IFCSIUNIT(*, .VOLUMEUNIT., $, .CUBIC_METRE.);
 #22 = IFCSIUNIT(*, .PLANEANGLEUNIT., $, .RADIAN.);
-#23 = IFCMEASUREWITHUNIT(IFCPLANEANGLEMEASURE(1.5707963267949E-2), #22);
+#23 = IFCMEASUREWITHUNIT(IFCPLANEANGLEMEASURE(0.017453292519943295), #22);
 #24 = IFCCONVERSIONBASEDUNIT(#1, .PLANEANGLEUNIT., 'degree', #23);
 #25 = IFCSIUNIT(*, .MASSUNIT., .KILO., .GRAM.);
 #26 = IFCSIUNIT(*, .TIMEUNIT., $, .SECOND.);
@@ -41,7 +41,7 @@ DATA;
 #8 = IFCPOSTALADDRESS(.OFFICE., $, $, $, ('Arcisstra\X2\00DF\X0\e 21'), $, 'M\X2\00FC\X0\nchen', 'Bayern', '80333', 'Deutschland');
 /* ------- Testing some special characters: LaTeX code: \v{S} ---------------------------------- */
 #9 = IFCPERSON($, 'Jaud', '\X2\0160\X0\tefan', $, $, $, (#7), (#8));
-#10 = IFCORGANIZATION($, 'TUM', $, (#7), (#8));
+#10 = IFCORGANIZATION($, 'bSI', $, (#7), (#8));
 #11 = IFCPERSONANDORGANIZATION(#9, #10, (#7));
 #12 = IFCACTORROLE(.USERDEFINED., 'Validation lead', $);
 /* ------- Testing some special characters: LaTeX code: {\ss} and \"{u} ------------------------ */
