@@ -16,6 +16,7 @@ DATA;
 #1 = IFCDIMENSIONALEXPONENTS(0, 0, 0, 0, 0, 0, 0);
 #2 = IFCDIRECTION((1., 0., 0.));
 #3 = IFCDIRECTION((0., 1., 0.));
+#4 = IFCDIRECTION((0., 0., 1.));
 #5 = IFCCARTESIANPOINT((0., 0., 0.));
 /* ------ Added a reference to owner history to the IfcProject --------------------------------- */
 #16 = IFCPROJECT('2DAvEupIz0HQr73cMaawtY', #6, 'BoilerPlate', 'The bare minimum of an IFC file exchange with no content, only boilerplate code.', $, $, $, (#28), #17);
