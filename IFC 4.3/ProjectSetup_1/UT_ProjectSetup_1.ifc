@@ -1,0 +1,50 @@
+ISO-10303-21;
+
+/* ------- This file was produced manually for IFC Infra Extension Deployment project. --------- */
+/* ------- The file should come with a README.md with supplementing info. ---------------------- */
+/* ------- Stefan Jaud, stefan.jaud@tum.de, 2020.07.15. ---------------------------------------- */
+
+HEADER;
+FILE_DESCRIPTION (('ViewDefinition []'), '2;1');
+FILE_NAME ('UT_ProjectSetup_1.ifc', '2020-07-15T18:00:00', ('Stefan Jaud'), ('bSI Infra Extension Deployment project'), 'manual text editing', 'SublimeText 3.0', 'GitHub pull request');
+FILE_SCHEMA (('IFC4X3_RC1'));
+ENDSEC;
+
+DATA;
+
+/* ------- General definitions ----------------------------------------------------------------- */
+#1 = IFCDIMENSIONALEXPONENTS(0, 0, 0, 0, 0, 0, 0);
+/* ------- Reusable X direction ---------------------------------------------------------------- */
+#2 = IFCDIRECTION((1., 0., 0.));
+/* ------- Reusable Y direction ---------------------------------------------------------------- */
+#3 = IFCDIRECTION((0., 1., 0.));
+/* ------- Reusable Z direction ---------------------------------------------------------------- */
+#4 = IFCDIRECTION((0., 0., 1.));
+/* ------- Reusable origin --------------------------------------------------------------------- */
+#5 = IFCCARTESIANPOINT((0., 0., 0.));
+
+/* ------- IfcProject is the top most element in the project structure ------------------------- */
+#16 = IFCPROJECT('2DAvEupIz0HQr73cMaawtY', $, 'BoilerPlate', 'The bare minimum of an IFC file exchange with no content, only boilerplate code.', $, $, $, (#28), #17);
+
+/* ------- IfcUnitAssignment defines the global units for measures and values ------------------ */
+/* ------- when the units are not otherwise defined -------------------------------------------- */
+#17 = IFCUNITASSIGNMENT((#18, #19, #20, #24, #25, #26, #27));
+#18 = IFCSIUNIT(*, .LENGTHUNIT., $, .METRE.);
+#19 = IFCSIUNIT(*, .AREAUNIT., $, .SQUARE_METRE.);
+#20 = IFCSIUNIT(*, .VOLUMEUNIT., $, .CUBIC_METRE.);
+
+/* ------- Example of non-SI unit used for angles: degree instead of radian -------------------- */
+#22 = IFCSIUNIT(*, .PLANEANGLEUNIT., $, .RADIAN.);
+#23 = IFCMEASUREWITHUNIT(IFCPLANEANGLEMEASURE(0.017453292519943295), #22);
+#24 = IFCCONVERSIONBASEDUNIT(#1, .PLANEANGLEUNIT., 'degree', #23);
+
+#25 = IFCSIUNIT(*, .MASSUNIT., .KILO., .GRAM.);
+#26 = IFCSIUNIT(*, .TIMEUNIT., $, .SECOND.);
+#27 = IFCMONETARYUNIT('EUR');
+
+/* ------- IfcGeometricRepresentationContext is the global context of the geometry ------------- */
+#28 = IFCGEOMETRICREPRESENTATIONCONTEXT($, 'Model', 3, 1.E-6, #29, #3);
+#29 = IFCAXIS2PLACEMENT3D(#5, #4, #2);
+
+ENDSEC;
+END-ISO-10303-21;
