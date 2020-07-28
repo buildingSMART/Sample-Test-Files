@@ -20,6 +20,18 @@ This scenario covers the following concepts and/or IFC entities:
 - georeferencing metadata
   - `IfcMapConversion`
   - `IfcProjectedCRS`
+- construction site context 
+  - start of the project structure
+  - `IfcSite`
+  - `IfcRelAggregates`
+- placement
+  - `IfcLocalPlacement`
+- product representation
+  - `IfcProductDefinitionShape`
+  - `IfcShapeRepresentation`
+- representation
+  - `IfcTriangulatedFaceSet`
+  - `IfcCartesianPointList3D`
 
 ### Supporting files
 
