@@ -26,6 +26,8 @@ This scenario covers the following concepts and/or IFC entities:
   - `IfcRelAggregates`
 - placement
   - `IfcLocalPlacement`
+- product
+  - `IfcSolidStratum`
 - product representation
   - `IfcProductDefinitionShape`
   - `IfcShapeRepresentation`

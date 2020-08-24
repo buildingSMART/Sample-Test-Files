@@ -55,6 +55,14 @@ DATA;
 #42= IFCTRIANGULATEDFACESET(#43,$,.F.,((1,2,3),(1,3,4)),$);
 #43= IFCCARTESIANPOINTLIST3D(((-500.,-500.,0.),(500.,-500.,0.),(500.,500.,0.),(-500.,500.,0.)),$);
 
+/* ------ IfcSolidStratum represents the top most layer of terrain ----------------------------- */
+#50 = IFCSOLIDSTRATUM('27H$neCQf1NwtmczxBInPR', $, $, $, $, #53, #40, $);
+/* ------ Spatial inclusion in the project ----------------------------------------------------- */
+#51 = IFCRELCONTAINEDINSPATIALSTRUCTURE('3Hu7f6BmT14B_XS9yS78Jq', $, $, $, #32, (#50));
+/* ------ Placement is relative to that of IfcSite according to the spatial structure ---------- */
+/* ------ The way it is modelled, there is no offset and no rotation. -------------------------- */
+#52 = IFCAXIS2PLACEMENT3D(#5, #4, #2);
+#53 = IFCLOCALPLACEMENT(#29, #52);
 
 ENDSEC;
 END-ISO-10303-21;
