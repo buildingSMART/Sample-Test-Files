@@ -1,10 +1,9 @@
 
 # Georeferencing_1
----
 
 ### Intent
 
-This scenario encapsulates the model set up with correct units and georeferencing. 
+This scenario encapsulates the model set up with correct georeferencing. 
 
 It puts the project’s base point at the entrance to the Technical University of Munich,
  aligns the coordinate axes with East and North,
@@ -13,20 +12,28 @@ It puts the project’s base point at the entrance to the Technical University o
 ### Prerequisites
 
 This scenario builds upon following other scenarios:
-- none
+- ProjectSetup_1
 
 ### Content
 
 This scenario covers the following concepts and/or IFC entities:
-- project structure
-  - `IfcProject`
-  - `IfcSite`
-- default unit assignment
-  - `IfcUnitAssignment`
-  - `IfcSIUnit`
 - georeferencing metadata
   - `IfcMapConversion`
   - `IfcProjectedCRS`
+- construction site context 
+  - start of the project structure
+  - `IfcSite`
+  - `IfcRelAggregates`
+- placement
+  - `IfcLocalPlacement`
+- product
+  - `IfcSolidStratum`
+- product representation
+  - `IfcProductDefinitionShape`
+  - `IfcShapeRepresentation`
+- representation
+  - `IfcTriangulatedFaceSet`
+  - `IfcCartesianPointList3D`
 
 ### Supporting files
 
