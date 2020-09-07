@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<LandXML xmlns="http://www.landxml.org/schema/LandXML-1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.landxml.org/schema/LandXML-1.2 http://www.landxml.org/schema/LandXML-1.2/LandXML-1.2.xsd" version="1.2" date="2019-07-09" time="10:59:16">
+	<Project name="Proyecto"/>
+		<Units>
+			<Metric areaUnit="squareMeter" linearUnit="meter" volumeUnit="cubicMeter" temperatureUnit="celsius" pressureUnit="mmHG" angularUnit="grads" directionUnit="grads"/>
+		</Units>
+		<Application name="MDT" version="8.0" manufacturer="Aplitop S.L" manufacturerURL="www.aplitop.com">
+			<Author createdBy="Javi"/>
+		</Application>
+	<Project name="Alignment_0"/>
+
+	<Alignments>
+		<Alignment name="Horizontal" staStart="0.000" length="507.067">
+			<CoordGeom>
+				<Line staStart="0.000000" length="10.000000" dir="102.44211605">
+					<Start>4084594.132145 335085.957822</Start>
+					<End>4084593.748632 335095.950465</End>
+				</Line>
+				<Curve rot="ccw" radius="25.000000" staStart="10.000000" length="39.840637" crvType="arc" chord="35.75659360" dirStart="102.44211605" dirEnd="0.98876586">
+					<Start>4084593.748632 335095.950465</Start>
+					<Center>4084618.730240 335096.909247</Center>
+					<End>4084618.341969 335121.906232</End>
+				</Curve>
+				<Spiral staStart="49.840637" radiusStart="25.000000" radiusEnd="INF" rot="ccw" spiType="clothoid" length="9.000000" tanLong="6.01021454" tanShort="3.00928815">
+					<Start>4084618.341969 335121.906232</Start>
+					<PI>4084621.350894 335121.952969</PI>
+					<End>4084627.280004 335120.968928</End>
+				</Spiral>
+				<Spiral staStart="58.840637" radiusStart="INF" radiusEnd="22.000000" rot="cw" spiType="clothoid" length="10.227273" tanLong="6.83757767" tanShort="3.42673047">
+					<Start>4084627.280004 335120.968928</Start>
+					<PI>4084634.025312 335119.849425</PI>
+					<End>4084637.444130 335120.082159</End>
+				</Spiral>
+				<Curve rot="cw" radius="22.000000" staStart="69.067910" length="45.654456" crvType="arc" chord="37.89224840" dirStart="4.32707368" dirEnd="136.43857110">
+					<Start>4084637.444130 335120.082159</Start>
+					<Center>4084635.949951 335142.031360</Center>
+					<End>4084654.443516 335153.947234</End>
+				</Curve>
+				<Spiral staStart="114.722366" radiusStart="22.000000" radiusEnd="INF" rot="cw" spiType="clothoid" length="18.181818" tanLong="12.23143001" tanShort="6.16092965">
+					<Start>4084654.443516 335153.947234</Start>
+					<PI>4084651.106568 335159.126214</PI>
+					<End>4084640.910411 335165.882415</End>
+				</Spiral>
+				<Line staStart="132.904184" length="63.595525" dir="162.74517326">
+					<Start>4084640.910411 335165.882415</Start>
+					<End>4084587.896987 335201.010293</End>
+				</Line>
+				<Spiral	staStart="196.499710" radiusStart="INF" radiusEnd="50.000000" rot="ccw" spiType="clothoid" length="40.500000" tanLong="27.23568170" tanShort="13.71451383">
+					<Start>4084587.896987 335201.010293</Start>
+					<PI>4084565.193240 335216.054303</PI>
+					<End>4084557.670490 335227.521478</End>
+				</Spiral>
+				<Curve rot="ccw" radius="50.000000" staStart="236.999710" length="79.337855" crvType="arc" chord="71.27271879" dirStart="136.96207249" dirEnd="35.94597856">
+					<Start>4084557.670490 335227.521478</Start>
+					<Center>4084599.477205 335254.947717</Center>
+					<End>4084572.721698 335297.186833</End>
+				</Curve>
+				<Spiral staStart="316.337564" radiusStart="50.000000" radiusEnd="INF" rot="ccw" spiType="clothoid" length="32.000000" tanLong="21.44889462" tanShort="10.77180114">
+					<Start>4084572.721698 335297.186833</Start>
+					<PI>4084581.821525 335302.950933</PI>
+					<End>4084602.631780 335308.145967</End>
+				</Spiral>
+				<Line staStart="348.337564" length="12.395206" dir="15.57414585">
+					<Start>4084602.631780 335308.145967</Start>
+					<End>4084614.657919 335311.148150</End>
+				</Line>
+				<Spiral staStart="360.732770" radiusStart="INF" radiusEnd="60.000000" rot="cw" spiType="clothoid" length="41.666667" tanLong="27.95524996" tanShort="14.05036972">
+					<Start>4084614.657919 335311.148150</Start>
+					<PI>4084641.780802 335317.919058</PI>
+					<End>4084653.441263 335325.757842</End>
+				</Spiral>
+				<Curve rot="cw" radius="60.000000" staStart="402.399437" length="27.606585" crvType="arc" chord="27.36371456" dirStart="37.67899905" dirEnd="66.97049569">
+					<Start>4084653.441263 335325.757842</Start>
+					<Center>4084619.966910 335375.552095</Center>
+					<End>4084672.071018 335345.800424</End>
+				</Curve>
+				<Spiral staStart="430.006022" radiusStart="60.000000" radiusEnd="INF" rot="cw" spiType="clothoid" length="41.666667" tanLong="27.95524996" tanShort="14.05036972">
+					<Start>4084672.071018 335345.800424</Start>
+					<PI>4084679.038051 335358.001791</PI>
+					<End>4084683.811774 335385.546437</End>
+				</Spiral>
+				<Line staStart="471.672689" length="35.394123" dir="89.07534889">
+					<Start>4084683.811774 335385.546437</Start>
+					<End>4084689.855782 335420.420696</End>
+				</Line>
+			</CoordGeom>
+			<Profile>
+				<ProfAlign name="Vertical">
+					<PVI>0.000 365.800</PVI>
+					<ParaCurve length="129.487">79.000 372.000</ParaCurve>
+					<ParaCurve length="47.922">467.000 346.000</ParaCurve>
+					<PVI>507.067 350.700</PVI>
+				</ProfAlign>
+			</Profile>
+		</Alignment>
+	</Alignments>
+</LandXML>
