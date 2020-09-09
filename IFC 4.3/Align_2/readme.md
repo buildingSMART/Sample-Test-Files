@@ -2,7 +2,21 @@
 
 ### Intent
 
-*This scenario shows an alignment with zero length circular curve between clothoids, zero length line segment between cuves, and a transition curve between two circular curves. Those zero length elements are not present in ifc file, they are just a concept.*
+*This scenario shows an alignment with zero length circular curve between clothoids, zero length line segment between cuves, and a transition curve between two circular curves. Those zero length elements are not present in ifc file, they are just a concept, but some software vendors include those zero length elements in data files.*
+
+| Element | Length | Entity in file |
+|----|----|----|
+| straight | 688.338m  | `#31` |
+| clothoid | 834.767m  | `#34` |
+| arc      | 0m        | `None`|
+| clothoid | 1099.370m | `#37` |
+| straight | 0m        | `None`|
+| clothoid | 928.817m  | `#40` |
+| arc	   | 393.904m  | `#43` |
+| clothoid | 646.649m  | `#46` |
+| arc      | 497.872m  | `#49` |
+| clothoid | 461.366m  | `#52` |
+| straight | 100m      | `#55` |
 
 ### Prerequisites
 
@@ -12,9 +26,9 @@ This scenario builds upon following other scenarios:
 ### Content
 
 This scenario covers the following concepts and/or IFC entities:
-- *In 1523.105 station, there is a zero length circular curve with 1103..685 radius*
+- *In 1523.105 station, there is a zero length circular curve with 1103.685 radius*
 - *In 2622.475 station, there is a zero length segment*
-- *In 3945.196 station, there is a Clothoid with 972.837 starting radius and 1387.185 end radius*
+- *In 3945.196 station, there is a Clothoid with 972.837 starting radius and 1387.185 end radius (`#46)*
 
 ### Supporting files
 

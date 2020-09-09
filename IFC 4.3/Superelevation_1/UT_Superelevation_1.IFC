@@ -5,7 +5,7 @@ ISO-10303-21;
 HEADER;
 FILE_DESCRIPTION(('ViewDefinition []'),'2;1');
 FILE_NAME('Superelevation_1.IFC','2019-11-14T13:19:46',(),(),'IfcOpenShell 0.5.0-dev','IfcOpenShell 0.5.0-dev','');
-FILE_SCHEMA(('IFC4X3DRAFT1'));
+FILE_SCHEMA(('IFC4x3_RC1'));
 ENDSEC;
 DATA;
 #1=IFCPERSON($,$,$,$,$,$,$,$);
