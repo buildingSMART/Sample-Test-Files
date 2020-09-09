@@ -6,7 +6,7 @@ HEADER;
 FILE_DESCRIPTION (('ViewDefinition []'), '2;1');
 
 FILE_NAME('Align_1.IFC','2019-07-09T11:20:44',(),(),'IfcOpenShell 0.5.0-dev','IfcOpenShell 0.5.0-dev','');
-FILE_SCHEMA(('IFC4'));
+FILE_SCHEMA(('IFC4x3_RC1'));
 ENDSEC;
 DATA;
 #1=IFCPERSON($,$,'Javier Nadal',$,$,$,$,$);
