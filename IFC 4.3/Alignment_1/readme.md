@@ -1,18 +1,15 @@
 
-# Georeferencing_1
+# Alignment
 
 ### Intent
 
-This scenario encapsulates the model set up with correct georeferencing. 
+This scenario includes an export of an designed alginment (horizontal and vertical). The second file includes the same alignment and additional an OffsetCurveByDistance. There are also properties attached to the horizontal alignment.
 
-It puts the project’s base point at the entrance to the Technical University of Munich,
- aligns the coordinate axes with East and North,
- and sets the units of the project to SI units. 
 
 ### Prerequisites
 
 This scenario builds upon following other scenarios:
-- ProjectSetup_1
+- none
 
 ### Content
 
@@ -23,17 +20,23 @@ This scenario covers the following concepts and/or IFC entities:
 - construction site context 
   - start of the project structure
   - `IfcSite`
-  - `IfcRelAggregates`
 - placement
   - `IfcLocalPlacement`
 - product
-  - `IfcSolidStratum`
+  - `IfcAlignment`
+  - `IfcOffsetCurveByDistances`
 - product representation
   - `IfcProductDefinitionShape`
   - `IfcShapeRepresentation`
+  - `IFCPROPERTYSINGLEVALUE`
 - representation
-  - `IfcTriangulatedFaceSet`
-  - `IfcCartesianPointList3D`
+  - `IFCALIGNMENT2DHORIZONTAL`
+  - `IFCALIGNMENT2DVERTICAL`
+  - `IFCALIGNMENTCURVE`
+  - `IFCTRANSITIONCURVESEGMENT2D`
+  - `IFCLINESEGMENT2D`
+  - `IFCCARTESIANPOINT`
+  
 
 ### Supporting files
 
@@ -41,6 +44,7 @@ Following files correspond to this scenario:
 
 | Filename                          | Description                               |
 |-----------------------------------|-------------------------------------------|
-| `UT_GeoRef_1.ifc`                 | the exported content as IFC document      |
-| `UT_GeoRef_1_1.png`               | screen shot of the entrance to TUM from BayernAtlas |
-| `UT_GeoRef_1_2.jpg`               | schematic representation of georeferencing entities |
+| `Alignment-3D.ifc`                 | the exported content as IFC document      |
+| `Alignment-3D+OffsetCurve.ifc`     | the exported content as IFC document|
+| `Alignment-3D.jpg`                 | screenshot of the alignment-3d.ifc in DESITE md pro |
+| `Properties.jpg`                 | screenshot of the properties in DESITE md pro |
