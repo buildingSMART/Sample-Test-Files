@@ -47,3 +47,4 @@ Following files correspond to this scenario:
 | `Alignment-3D.ifc`                 | the exported content as IFC document      |
 | `Alignment-3D+OffsetCurve.ifc`     | the exported content as IFC document|
 | `Alignment-3D.jpg`                 | screenshot of the alignment-3d.ifc in DESITE md pro |
+| `Properties.jpg`                 | screenshot of the properties in DESITE md pro |
