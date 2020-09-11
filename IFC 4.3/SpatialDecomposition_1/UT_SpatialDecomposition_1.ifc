@@ -1,17 +1,27 @@
 ISO-10303-21;
+
+/* ------- Created with GeometryGymIFC package ------------------------------------------------- */
+/* ------- The file should come with a README.md with supplementing info. ---------------------- */
+/* ------- Sebastian Esser, sebastian.esser@tum.de, 2020.09.11. -------------------------------- */
+
 HEADER;
-FILE_DESCRIPTION(('ViewDefinition [Ifc4X3NotAssigned]'),'2;1');
+FILE_DESCRIPTION(('ViewDefinition []'),'2;1');
 FILE_NAME(
-/* name */ 'IFC4X3RC1_spatialDecomposition.ifc',
+/* name */ 'UT_SpatialDecomposition_1.ifc',
 /* time_stamp */ '2020-09-11T11:01:49',
 /* author */ ('Sebastian Esser'),
-/* organization */ ('Unknown'),
+/* organization */ ('Technical University of Munich, Chair of Computational Modeling and Simulation'),
 /* preprocessor_version */ 'GeometryGymIFC v0.1.0.0 by Geometry Gym Pty Ltd built 2020-09-10T11:12:12',
 /* originating_system */ 'ConsoleCreateSpatialStructure v1.0.0.0',
 /* authorization */ 'None');
 
 FILE_SCHEMA (('IFC4X3RC1'));
 ENDSEC;
+
+/* IFC InfraDeployment  */
+/* Author: Sebastian Esser; Technical University of Munich, Chair of Computational Modeling and Simulation. In cooperation with Autodesk. */
+/* Mail: sebastian.esser@tum.de */
+/* github: seb-esser */
 
 DATA;
 #1= IFCCARTESIANPOINT((0.0,0.0,0.0));
@@ -29,7 +39,7 @@ DATA;
 #13= IFCLOCALPLACEMENT($,#12);
 #14= IFCSITE('0aAHDdpVrDm89jEVEtXtO2',#20,'sampleSite',$,$,#13,$,$,$,$,$,$,$,$);
 #15= IFCPERSON('Sebastian Esser','Sebastian Esser',$,$,$,$,$,$);
-#16= IFCORGANIZATION($,'Unknown',$,$,$);
+#16= IFCORGANIZATION($,'Technical University of Munich, Chair of Computational Modeling and Simulation',$,$,$);
 #17= IFCPERSONANDORGANIZATION(#15,#16,$);
 #18= IFCAPPLICATION(#19,'0.1.0.0','ConsoleCreateSpatialStructure v1.0.0.0','ConsoleCreateSpatialStructure v1.0.0.0');
 #19= IFCORGANIZATION($,'Geometry Gym Pty Ltd',$,$,$);

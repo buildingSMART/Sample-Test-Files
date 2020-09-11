@@ -1,44 +1,29 @@
 
-## *topic\_nr*
+## SpatialDecomposition_1
 
 ### Intent
 
-*Include a short description of the unit test scenario(s).*
+The given scenario showcases options to combine `IfcFacility` and `IfcFacilityPart` instances. 
 
 ### Prerequisites
 
 This scenario builds upon following other scenarios:
-- *list other scenarios that should be supported before this one*
+- ProjectSetup_1
 
 ### Content
 
 This scenario covers the following concepts and/or IFC entities:
-- *list IFC concepts covered*
-- *list IFC entities specifically addressed*
+- Spatial decomposition using `IfcFacility` and `IfcFacilityPart` + corresponding SELECTS
 
 ### Supporting files
 
 Following files correspond to this scenario:
 
-| Filename                          | Description                               |
-|-----------------------------------|-------------------------------------------|
-| *filename*                        | *short description*                       |
+| Filename                          | Description                                      |
+|-----------------------------------|--------------------------------------------------|
+| UT_SpatialDecomposition_1.ifc     | The resulting/desired IFC model using IFC4X3_RC1 |
+| UT_SpatialDecomposition_1_1.png   | the intended structure in the FZK Viewer         |
 
 
-## Instructions
-
-- Your task is to replace all *italic* elements with your content.
-
-- In order to be more version control friendly, please split longer sentences in lines,
- so that no line length surpasses 100 characters (see this sentence as an example).
-
-- Please name the files according to this schema:
-`UT_topic_nr[_additional enumeration for files of same sort].fileending`.
-> Example: `UT_GeoRef_1_2.png` is the 2nd figure of the 1st UT within the Georeferencing topic.
-
-- Please put all files (including this one) in a folder named `topic_nr`
- and rename this file to `readme.md`.
-
-- Delete this instructions section.
-
-- Create a [pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork) to the main repository.
+## Sample code
+pushed to [GeometryGymIFCExamples](https://github.com/GeometryGym/GeometryGymIFCExamples) 
