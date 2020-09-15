@@ -1,0 +1,70 @@
+ISO-10303-21;
+HEADER;
+FILE_DESCRIPTION(('ViewDefinition []'),'2;1');
+FILE_NAME(
+/* name */ 'AlignmentWithSpanAnnotation.ifc',
+/* time_stamp */ '2020-09-15T08:25:20',
+/* author */ ('Sebastian Esser'),
+/* organization */ ('Chair of Computational Modeling and Simulation, Technical University of Munich'),
+/* preprocessor_version */ 'GeometryGymIFC v0.1.1.0 by Geometry Gym Pty Ltd built 2020-09-11T22:57:18',
+/* originating_system */ 'ConsoleCreateSpanAnnotation v1.0.0.0',
+/* authorization */ 'None');
+
+FILE_SCHEMA (('IFC4X3RC1'));
+ENDSEC;
+
+DATA;
+/* INFRA DEPLOYMENT  */
+/* Author: Sebastian Esser; Technical University of Munich, Chair of Computational Modeling and Simulation and Autodesk. sebastian.esser@tum.de */
+
+/* --- --- --- --- --- --- --- --- */
+
+#1= IFCCARTESIANPOINT((0.0,0.0,0.0));
+#2= IFCDIRECTION((1.0,0.0,0.0));
+#3= IFCDIRECTION((0.0,1.0,0.0));
+#4= IFCDIRECTION((0.0,0.0,1.0));
+#5= IFCAXIS2PLACEMENT3D(#1,$,$);
+#6= IFCCARTESIANPOINT((0.0,0.0));
+#7= IFCAXIS2PLACEMENT2D(#6,$);
+#8= IFCSIUNIT(*,.LENGTHUNIT.,$,.METRE.);
+#9= IFCSIUNIT(*,.AREAUNIT.,$,.SQUARE_METRE.);
+#10= IFCSIUNIT(*,.VOLUMEUNIT.,$,.CUBIC_METRE.);
+#11= IFCCARTESIANPOINT((0.0,0.0,0.0));
+#12= IFCAXIS2PLACEMENT3D(#11,#4,#2);
+#13= IFCLOCALPLACEMENT($,#12);
+#14= IFCSITE('2uNrTEYOHDdew7XJFtggIf',#20,'SiteA',$,$,#13,$,$,$,$,$,$,$,$);
+#15= IFCPERSON('Sebastian','Esser',$,$,$,$,$,$);
+#16= IFCORGANIZATION($,'Chair of Computational Modeling and Simulation, Technical University of Munich',$,$,$);
+#17= IFCPERSONANDORGANIZATION(#15,#16,$);
+#18= IFCAPPLICATION(#19,'0.1.1.0','ConsoleCreateSpanAnnotation v1.0.0.0','ConsoleCreateSpanAnnotation v1.0.0.0');
+#19= IFCORGANIZATION($,'Geometry Gym Pty Ltd',$,$,$);
+#20= IFCOWNERHISTORY(#17,#18,$,.ADDED.,1600151120,$,$,1600151120);
+#21= IFCRELCONTAINEDINSPATIALSTRUCTURE('0gQgAd_jD2bAXF3rcaejBQ',#20,'Site','Site Container for Elements',(#35),#14);
+#23= IFCPROJECT('2kBy0Me590bAE01H2e7BCb',#20,'SampleProject with a span annotation',$,$,$,$,$,#24);
+#24= IFCUNITASSIGNMENT((#8,#9,#10,#25,#26));
+#25= IFCSIUNIT(*,.PLANEANGLEUNIT.,$,.RADIAN.);
+#26= IFCSIUNIT(*,.TIMEUNIT.,$,.SECOND.);
+#27= IFCRELAGGREGATES('0yiyIJYebFGACaTXgHlNcS',#20,$,$,#23,(#14));
+#28= IFCCARTESIANPOINT((2.0,3.0));
+#29= IFCCIRCULARARCSEGMENT2D(#28,0.0,580.0776,400.0,.T.);
+#30= IFCALIGNMENT2DHORIZONTALSEGMENT($,$,$,#29);
+#31= IFCALIGNMENT2DVERSEGLINE($,$,$,0.0,580.0776,1.25,0.0);
+#32= IFCALIGNMENT2DHORIZONTAL($,(#30));
+#33= IFCALIGNMENT2DVERTICAL((#31));
+#34= IFCALIGNMENTCURVE(#32,#33,$);
+#35= IFCALIGNMENT('0slGmWwCHBTwOiVqzuS_fZ',#20,'sampleAlignment','some basic alignment data to demonstrate an IfcAnnotation with some IfcSpanPlacement',$,#38,$,#34,$);
+#36= IFCCARTESIANPOINT((0.0,0.0,0.0));
+#37= IFCAXIS2PLACEMENT3D(#36,$,$);
+#38= IFCLOCALPLACEMENT($,#37);
+#39= IFCANNOTATION('36LaqinHL2I8yJbRpbxatY',#20,'DesignSpeed','annotate the given alignment curve with some speed values','Magic',#42,$);
+#40= IFCRELAGGREGATES('1HzNGEvrXFBAujvb88ukbA',#20,$,$,#35,(#39));
+#41= IFCDISTANCEEXPRESSION(35.0,$,$,$,.F.);
+#42= IFCLINEARSPANPLACEMENT($,#34,#41,$,$,285.0);
+#43= IFCPROPERTYSINGLEVALUE('CargoSpeed',$,IFCREAL(80.0),$);
+#44= IFCPROPERTYSINGLEVALUE('DesignSpeed',$,IFCREAL(160.0),$);
+#45= IFCPROPERTYSET('3rlxeJAgT4JOnfpRorgpF_',#20,'PSET_SpeedData',$,(#43,#44));
+#46= IFCRELDEFINESBYPROPERTIES('3QB20dNCj4Fu98jw9z5kIZ',#20,$,$,(#39),#45);
+ENDSEC;
+
+END-ISO-10303-21;
+
