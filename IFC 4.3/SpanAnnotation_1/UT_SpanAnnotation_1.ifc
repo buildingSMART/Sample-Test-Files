@@ -10,7 +10,7 @@ FILE_NAME(
 /* originating_system */ 'ConsoleCreateSpanAnnotation v1.0.0.0',
 /* authorization */ 'None');
 
-FILE_SCHEMA (('IFC4X3RC1'));
+FILE_SCHEMA (('IFC4X3_RC1'));
 ENDSEC;
 
 DATA;
@@ -72,4 +72,3 @@ DATA;
 ENDSEC;
 
 END-ISO-10303-21;
-
