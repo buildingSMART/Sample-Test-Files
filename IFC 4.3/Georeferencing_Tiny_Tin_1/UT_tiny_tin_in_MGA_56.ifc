@@ -29,7 +29,7 @@ DATA;
 #22 = IFCMAPCONVERSION(#14, #21, 0., 0., 0., 1., 0., 1.);
 #23 = IFCSITE('2_$LqFwhrElv$jrhYYj9A2', #2, 'Default Site', 'Description of Default Site', $, #15, $, $, .ELEMENT., $, $, $, $, $);
 #24 = IFCRELAGGREGATES('3iLDj9mYb82A6se0A0HaK1', #2, 'ProjectContainer', 'ProjectContainer for Sites', #1, (#23));
-#25 = IFCBUILDING('17MWGb$P5Dn9Ujq7lL$KyC', #2, 'tin tiny', 'Description of tin tiny', $, #15, $, $, .ELEMENT., $, $, $);
+#25 = IFCFACILITY('17MWGb$P5Dn9Ujq7lL$KyC', #2, 'tin tiny', 'Description of tin tiny', $, #15, $, $, .ELEMENT., $, $, $);
 #26 = IFCRELAGGREGATES('21xvfhPK16RPMDYQ_Rkz0x', #2, 'SiteContainer', 'SiteContainer For All Models', #23, (#25));
 #27 = IFCRELCONTAINEDINSPATIALSTRUCTURE('3geWd5OXrFmAshPrUsCf4f', #2, 'Building Container', 'BuildingContainer for Elements', (#28), #25);
 #28 = IFCSOLIDSTRATUM('2sf9i08jX2Z8ywxMMqm$Ie', #2, 'tiny', '12d Tin', 'Tin', #15, #29, $, .TERRAIN.);
