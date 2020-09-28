@@ -13,7 +13,7 @@ This scenario builds upon following other scenarios:
 ### Content
 
 This scenario covers the following concepts and/or IFC entities:
-- *IfcEventElement (Superelevation type)*
+- *IfcAnnotation (SuperelevationEvent type)*
 - *IfcLinearPlacement related to IfcAlignment*
 - *IfcRoad with one IfcFacilityPart (SEGMENT)*
 
