@@ -22,7 +22,7 @@ This scenario builds upon following other scenarios:
 
 This scenario covers the extra following concepts and/or IFC entities:
 
-Internala hole in the tin
+Internal hole in the tin
 
 ### Supporting files
 
