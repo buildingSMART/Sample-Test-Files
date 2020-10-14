@@ -7,7 +7,7 @@
 
  IfcMapConversion places the data in the correct map coordinates.
 
- Since 2000, Australia the Authorities have stipulated that all Road and Rail Infrastructure are done in full MGA map coordinates.  
+ Since 2000, in Australia the Authorities have stipulated that all Road and Rail Infrastructure are done in full MGA map coordinates.  
  Previously it was MGA94 but due the continental drift, it is now MGA2020
 
 ### Intent
