@@ -1,23 +1,25 @@
 
-# Tin_1
+# UT: Tin_1
 
 ### Intent
 
-IFC 4x3 RC1
-This scenario has a simple tin with just one colour for all the triangles. 
-The ifc file was written by 12d Model. 
+This scenario has a simple TIN with some holes/voids. 
+
+The IFC file was written by 12d Model. 
 
 ### Prerequisites
 
 This scenario builds upon following other scenarios:
-- None
+- ProjectSetup_1
 
 ### Content
 
 This scenario covers the following concepts and/or IFC entities:
 
-- ifcTriangulatedIrregularNetwork
-- ifcSolidStratum
+- `IfcTriangulatedIrregularNetwork`
+  - triangles have flags -2 / -1 / 7
+- `IfcSolidStratum`
+  - has geometry assigned
 
 ### Supporting files
 
@@ -25,6 +27,6 @@ Following files correspond to this scenario:
 
 | Filename                          | Description                               |
 |-----------------------------------|-------------------------------------------|
-| `UT_Tin_1_Simple_tin.ifc`         | the exported content as IFC document      |
-| `UT_Tin_1_Simple_tin.png`         | screen shot from 12d Model                |
+| `UT_Tin_1.ifc`                    | the exported content as IFC document      |
+| `UT_Tin_1.png`                    | screen shot from 12d Model                |
 
