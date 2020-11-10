@@ -16,10 +16,21 @@ This scenario builds upon following other scenarios:
 
 This scenario covers the following concepts and/or IFC entities:
 
-- `IfcTriangulatedIrregularNetwork`
-  - triangles have flags -2 / -1 / 7
-- `IfcSolidStratum`
-  - has geometry assigned
+- construction site context 
+  - start of the project structure
+  - `IfcSite`
+  - `IfcRelAggregates`
+- placement
+  - `IfcLocalPlacement`
+- product
+  - `IfcSolidStratum`
+- product representation
+  - `IfcProductDefinitionShape`
+  - `IfcShapeRepresentation`
+- representation
+  - `IfcTriangulatedIrregularNetwork`
+    - triangles have flags -2 / -1 / 7
+  - `IfcCartesianPointList3D`
 
 ### Supporting files
 
