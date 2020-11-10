@@ -27,4 +27,3 @@ Following files correspond to this scenario:
 |------------------------------|-------------------------------------------|
 | `UT_Small_Tin_1.ifc`         | the exported content as IFC document      |
 | `UT_Small_Tin_1.png`         | screen shot from 12d Model                |
-
