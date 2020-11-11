@@ -25,7 +25,7 @@ DATA;
 #18 = IFCDIRECTION((0., 0., 1.));
 #19 = IFCDIRECTION((1., 0., 0.));
 #20 = IFCDIRECTION((0., 1., 0.));
-#21 = IFCPROJECTEDCRS('EPSG:28356', 'MGA94 Zone 56 and AHD', 'EPSG:4283', 'EPSG:5711', 'MGA', '55', #10);
+#21 = IFCPROJECTEDCRS('EPSG:28356', 'MGA94 Zone 56 and AHD', 'EPSG:4283', 'EPSG:5711', 'MGA', '56', #10);
 #22 = IFCMAPCONVERSION(#14, #21, 0., 0., 0., 1., 0., 1.);
 #23 = IFCSITE('2X_UJtenz2RgXdwlBYKJqY', #2, 'Default Site', 'Description of Default Site', $, #15, $, $, .ELEMENT., $, $, $, $, $);
 #24 = IFCRELAGGREGATES('2h8MYwl699gR67iCaf2S6Y', #2, 'ProjectContainer', 'ProjectContainer for Sites', #1, (#23));
