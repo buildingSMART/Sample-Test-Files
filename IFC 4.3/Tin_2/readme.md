@@ -27,5 +27,6 @@ Following files correspond to this scenario:
 | Filename                     | Description                               |
 |------------------------------|-------------------------------------------|
 | `UT_Tin_2.ifc`               | the exported content as IFC document      |
-| `UT_Tin_2.png`               | screen shot from 12d Model                |
+| `UT_Tin_2_1.png`             | screen shot from 12d Model                |
+| `UT_Tin_2_2.png`             | screen shot from OpenInfraPlatform with clearly seen break lines   |
 
