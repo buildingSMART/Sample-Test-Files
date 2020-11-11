@@ -33,5 +33,6 @@ Following files correspond to this scenario:
 | Filename                          | Description                               |
 |-----------------------------------|-------------------------------------------|
 | `UT_Tiny_tin_in_MGA_56.ifc`       | the exported content as IFC document      |
-| `UT_Tiny_tin_in_MGA_56.png`       | screen shot from 12d Model                |
+| `UT_Tin_3_1.png`                  | screen shot from 12d Model                |
+| `UT_Tin_3_2.png`                  | screen shot from OIP                      |
 
