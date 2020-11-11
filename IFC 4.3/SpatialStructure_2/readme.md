@@ -26,6 +26,6 @@ Following files correspond to this scenario:
 
 | Filename                             | Description                               |
 |--------------------------------------|-------------------------------------------|
-| `SptialStructure_2.ifc`              | IFC file with the content                 |
-| `SptialStructure_2.png`              | picture showing the structure             |
+| `SpatialStructure_2.ifc`             | IFC file with the content                 |
+| `SpatialStructure_2.png`             | picture showing the structure             |
 | `IR\_SLBH-AM\_SpatialBreakdown.pptx` | diagram showing the structure             |
