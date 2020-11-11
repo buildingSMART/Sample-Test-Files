@@ -18,7 +18,7 @@ This scenario covers the following concepts and/or IFC entities:
 - spatial structure
   - `IfcSite`
   - `IfcBridge`
-  - `IfcBridgePart`
+  - `IfcFacilityPart` with correct `PredefinedType`
 
 ### Supporting files
 
