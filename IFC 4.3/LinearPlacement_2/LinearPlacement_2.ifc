@@ -2,7 +2,7 @@ ISO-10303-21;
 HEADER;
 FILE_DESCRIPTION (('ViewDefinition []'), '2;1');
 FILE_NAME ('', '2020-02-02T10:55:51', (''), (''), 'Processor version 0.0.0.0', 'Brain', '');
-FILE_SCHEMA (('IFC4X3_RC1'));
+FILE_SCHEMA (('IFC4X3_RC2'));
 ENDSEC;
 DATA;
 
@@ -12,10 +12,11 @@ DATA;
 /* github: seb-esser */
 
 /* Please note: This sample is partially hand-coded and may contain (major) mistakes. */
-/* Version: 01 */
+/* Version: 02 */
+/* Update 01->02: updating from _RC1 to _RC2 by Stefan Jaud; see entities #1000+ */
 
-/* !!! Manually upgraded from IFC4x1 to IFC4x3_RC1 !! */
-/* Basic concepts of alignments and linear referencing are based on IFC4x1. Current proposals around CANT alignment are not taken into consideration yet. */
+/* !!! Manually upgraded from IFC4x1 to IFC4x3_RC2 !! */
+/* Basic concepts of alignments and linear referencing are based on IFC4x3_RC2. */
 /* The chosen values for the sleeper positions might not be aligned with common approaches (i.e., 1m might be wrong in reality!) */
 /* --- --- --- --- --- --- --- --- */
 
