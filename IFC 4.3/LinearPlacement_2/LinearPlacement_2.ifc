@@ -38,6 +38,11 @@ DATA;
 #14=IFCCARTESIANPOINT((0.,0.,0.));
 #15=IFCGEOMETRICREPRESENTATIONCONTEXT($,'GeometricRepresentationContext',3,$,#13,$);
 
+#1002=IFCOWNERHISTORY(#5,#6,$,.MODIFIED.,1580680952,#1005,#1006,0);
+#1003=IFCPERSON($,'Jaud','Stefan',$,$,$,$,$);
+#1005=IFCPERSONANDORGANIZATION(#1003,#4,$);
+#1006=IFCAPPLICATION(#4,'3.0','Sublime Text','notDefined');
+
 /* -- site -- */
 #16=IFCSITE('2yJVWSbBL4o8jgoIGLXXIa',#2,'SleeperSite','SiteItem',$,#12,$,$,$,$,$,0.,$,$);
 #17=IFCRELAGGREGATES('2PpVQkRczD6ubpe3Te4Uxa',#2,$,$,#1,(#16));
