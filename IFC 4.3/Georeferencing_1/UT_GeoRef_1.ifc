@@ -39,6 +39,7 @@ DATA;
 /* ------- MapConversion provides information about the global-to-local transformation --------- */
 #31 = IFCMAPCONVERSION(#28, #30, 4468005., 5334600., 515., 1., 0., 1.);
 
+/* ------- UT Tin_1 ---------------------------------------------------------------------------- */
 /* ------- IfcSite is the top most element in the spatial structure ---------------------------- */
 #32 = IFCSITE('27H$neCQf1NwtmczxBInPR', $, $, $, $, #33, #40, $, .ELEMENT., $, $, $, $, $);
 /* ------- The IfcSite's placement is the top-most placement and uses the same ----------------- */
