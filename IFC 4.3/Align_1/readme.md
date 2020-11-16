@@ -7,8 +7,7 @@
 
 ### Prerequisites
 
-This scenario builds upon following other scenarios:
-- *GeoRef_1*
+No prerequisites
 
 ### Content
 
@@ -16,8 +15,8 @@ This scenario covers the following concepts and/or IFC entities:
 - *Element aggregation (IfcAlignment is included in IfcSite)*
 - *IfcAlignment*
 - *IfcAlignmentCurve*
-- *IfcAlignment2DHorizontal (IfcLineSegment2D, IfcTransitionCurveSegment2D and IfcCircularSegment2D)*
-- *IfcAlignment2DVertical (IfcAlignment2DVerSegLine and IfcAlignment2DVerSegParabolicArc)*
+- *IfcAlignmentHorizontal (IfcAlignmentHorizontalSegment of types LINE, CIRCULARARC and CLOTHOID)*
+- *IfcAlignmentVertical (IfcAlignmentVerticalSegment of types CONSTANTGRADIENT and PARABOLICARC)*
 
 ### Supporting files
 
