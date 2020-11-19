@@ -1,0 +1,1696 @@
+<IfcProject type="IfcProject" globalId="b27498a2-95cd-4b7a-aaf7-a3b98a9a5bde">
+  <ownerHistory type="IfcOwnerHistory" globalId="5e7e2b74-e0b2-453a-8434-1ee2b2af43f5" changeAction="ADDED">
+    <owningUser type="IfcPersonAndOrganization" globalId="d1f2713d-4774-4331-80c3-73bfafa87441">
+      <thePerson type="IfcPerson" globalId="6e244e20-2558-4810-94ef-b2b5e52aa451">
+        <familyName type="IfcLabel" value="Jon"/>
+      </thePerson>
+      <theOrganization type="IfcOrganization" globalId="42277686-f233-46f0-9bfa-56f9626ef3d3">
+        <name type="IfcLabel" value="UNKNOWN"/>
+      </theOrganization>
+    </owningUser>
+    <owningApplication>
+      <applicationDeveloper type="IfcOrganization" globalId="f87fbf63-4c3d-46f3-bacb-51dbb7eaa246">
+        <name type="IfcLabel" value="Geometry Gym Pty Ltd"/>
+      </applicationDeveloper>
+      <version type="IfcLabel" value="0.5.35.0"/>
+      <applicationFullName type="IfcLabel" value="ssiRhinoIFC - Geometry Gym Plug-in for Rhino3d"/>
+      <applicationIdentifier type="IfcIdentifier" value="ssiRhinoIFC"/>
+    </owningApplication>
+    <lastModifiedDate type="IfcTimeStamp" value="1338465163"/>
+    <creationDate type="IfcTimeStamp" value="1338465163"/>
+  </ownerHistory>
+  <name type="IfcLabel" value="Grasshopper Project"/>
+  <isDecomposedBy type="IfcRelAggregates" globalId="8c0568ec-574e-4208-8330-e82da31da658">
+    <description type="IfcText" value="Project Container for Buildings"/>
+    <ownerHistory>5e7e2b74-e0b2-453a-8434-1ee2b2af43f5</ownerHistory>
+    <name type="IfcLabel" value="Project Container"/>
+    <relatedObjects>
+      <IfcObjectDefinition type="IfcBuilding" globalId="f4f72f0c-67c0-4cde-97c2-0c76efa09ff7">
+        <description type="IfcText" value="GH Building"/>
+        <compositionType>ELEMENT</compositionType>
+        <ownerHistory>5e7e2b74-e0b2-453a-8434-1ee2b2af43f5</ownerHistory>
+        <name type="IfcLabel" value="Grasshopper Building"/>
+        <objectPlacement type="IfcLocalPlacement" globalId="4a5af279-b8bb-4846-8a70-61424a23826f">
+          <relativePlacement type="IfcAxis2Placement3D">
+            <location type="IfcCartesianPoint">
+              <coordinates>
+                <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+              </coordinates>
+            </location>
+            <axis type="IfcDirection">
+              <directionRatios>
+                <IfcReal type="IfcReal" value="0.0"/>
+                <IfcReal type="IfcReal" value="0.0"/>
+                <IfcReal type="IfcReal" value="1.0"/>
+              </directionRatios>
+            </axis>
+            <refDirection type="IfcDirection">
+              <directionRatios>
+                <IfcReal type="IfcReal" value="1.0"/>
+                <IfcReal type="IfcReal" value="0.0"/>
+                <IfcReal type="IfcReal" value="0.0"/>
+              </directionRatios>
+            </refDirection>
+          </relativePlacement>
+        </objectPlacement>
+        <containsElements>
+          <IfcRelContainedInSpatialStructure type="IfcRelContainedInSpatialStructure" globalId="15baecb3-6625-477c-a5d6-56b8cdb6ebb4">
+            <description type="IfcText" value="Building Container for Elements"/>
+            <ownerHistory>5e7e2b74-e0b2-453a-8434-1ee2b2af43f5</ownerHistory>
+            <name type="IfcLabel" value="Building"/>
+            <relatedElements>
+              <IfcProduct type="IfcBuildingElementProxy" globalId="6b58b9d8-ba0b-4782-b302-bb9aa3cc410f" predefinedType="NOTDEFINED">
+                <ownerHistory>5e7e2b74-e0b2-453a-8434-1ee2b2af43f5</ownerHistory>
+                <name type="IfcLabel" value="BuildingElementProxy"/>
+                <objectPlacement type="IfcLocalPlacement" globalId="e85b6e79-eeeb-45dd-901e-477e4859a8ff">
+                  <relativePlacement type="IfcAxis2Placement3D">
+                    <location type="IfcCartesianPoint">
+                      <coordinates>
+                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                      </coordinates>
+                    </location>
+                    <axis type="IfcDirection">
+                      <directionRatios>
+                        <IfcReal type="IfcReal" value="0.0"/>
+                        <IfcReal type="IfcReal" value="0.0"/>
+                        <IfcReal type="IfcReal" value="1.0"/>
+                      </directionRatios>
+                    </axis>
+                    <refDirection type="IfcDirection">
+                      <directionRatios>
+                        <IfcReal type="IfcReal" value="1.0"/>
+                        <IfcReal type="IfcReal" value="0.0"/>
+                        <IfcReal type="IfcReal" value="0.0"/>
+                      </directionRatios>
+                    </refDirection>
+                  </relativePlacement>
+                </objectPlacement>
+                <representation type="IfcProductDefinitionShape">
+                  <representations>
+                    <IfcRepresentation type="IfcShapeRepresentation">
+                      <contextOfItems type="IfcGeometricRepresentationContext" globalId="ff987b6a-51e4-4d63-8e56-8c1945718f24">
+                        <worldCoordinateSystem type="IfcAxis2Placement3D">
+                          <location type="IfcCartesianPoint">
+                            <coordinates>
+                              <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                              <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                              <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                            </coordinates>
+                          </location>
+                          <axis type="IfcDirection">
+                            <directionRatios>
+                              <IfcReal type="IfcReal" value="0.0"/>
+                              <IfcReal type="IfcReal" value="0.0"/>
+                              <IfcReal type="IfcReal" value="1.0"/>
+                            </directionRatios>
+                          </axis>
+                          <refDirection type="IfcDirection">
+                            <directionRatios>
+                              <IfcReal type="IfcReal" value="1.0"/>
+                              <IfcReal type="IfcReal" value="0.0"/>
+                              <IfcReal type="IfcReal" value="0.0"/>
+                            </directionRatios>
+                          </refDirection>
+                        </worldCoordinateSystem>
+                        <contextIdentifier type="IfcLabel" value="Body"/>
+                        <contextType type="IfcLabel" value="Model"/>
+                        <coordinateSpaceDimension type="IfcDimensionCount" value="3"/>
+                        <precision type="IfcReal" value="1.0E-5"/>
+                        <trueNorth type="IfcDirection">
+                          <directionRatios>
+                            <IfcReal type="IfcReal" value="0.0"/>
+                            <IfcReal type="IfcReal" value="1.0"/>
+                          </directionRatios>
+                        </trueNorth>
+                      </contextOfItems>
+                      <representationIdentifier type="IfcLabel" value="Body"/>
+                      <representationType type="IfcLabel" value="AdvancedBrep"/>
+                      <items>
+                        <IfcRepresentationItem type="IfcAdvancedBrep">
+                          <outer type="IfcClosedShell">
+                            <cfsFaces>
+                              <IfcFace type="IfcAdvancedFace">
+                                <bounds>
+                                  <IfcFaceBound type="IfcFaceOuterBound">
+                                    <bound type="IfcEdgeLoop">
+                                      <edgeList>
+                                        <IfcOrientedEdge type="IfcOrientedEdge">
+                                          <edgeElement type="IfcEdgeCurve">
+                                            <edgeStart type="IfcVertexPoint">
+                                              <vertexGeometry type="IfcCartesianPoint">
+                                                <coordinates>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.5"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                                </coordinates>
+                                              </vertexGeometry>
+                                            </edgeStart>
+                                            <edgeEnd type="IfcVertexPoint">
+                                              <vertexGeometry type="IfcCartesianPoint">
+                                                <coordinates>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-0.683012701892219"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-0.183012701892219"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="1.0"/>
+                                                </coordinates>
+                                              </vertexGeometry>
+                                            </edgeEnd>
+                                            <edgeGeometry type="IfcPolyline">
+                                              <points>
+                                                <IfcCartesianPoint type="IfcCartesianPoint">
+                                                  <coordinates>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.5"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                                  </coordinates>
+                                                </IfcCartesianPoint>
+                                                <IfcCartesianPoint type="IfcCartesianPoint">
+                                                  <coordinates>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="-0.683012701892219"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="-0.183012701892219"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="1.0"/>
+                                                  </coordinates>
+                                                </IfcCartesianPoint>
+                                              </points>
+                                            </edgeGeometry>
+                                            <sameSense type="IfcBoolean" value="false"/>
+                                          </edgeElement>
+                                          <orientation type="IfcBoolean" value="false"/>
+                                        </IfcOrientedEdge>
+                                        <IfcOrientedEdge type="IfcOrientedEdge">
+                                          <edgeElement type="IfcEdgeCurve">
+                                            <edgeStart type="IfcVertexPoint">
+                                              <vertexGeometry type="IfcCartesianPoint">
+                                                <coordinates>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-0.683012701892219"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-0.183012701892219"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="1.0"/>
+                                                </coordinates>
+                                              </vertexGeometry>
+                                            </edgeStart>
+                                            <edgeEnd type="IfcVertexPoint">
+                                              <vertexGeometry type="IfcCartesianPoint">
+                                                <coordinates>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.183012701892219"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-0.683012701892219"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="1.0"/>
+                                                </coordinates>
+                                              </vertexGeometry>
+                                            </edgeEnd>
+                                            <edgeGeometry type="IfcPolyline">
+                                              <points>
+                                                <IfcCartesianPoint type="IfcCartesianPoint">
+                                                  <coordinates>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="-0.683012701892219"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="-0.183012701892219"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="1.0"/>
+                                                  </coordinates>
+                                                </IfcCartesianPoint>
+                                                <IfcCartesianPoint type="IfcCartesianPoint">
+                                                  <coordinates>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.183012701892219"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="-0.683012701892219"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="1.0"/>
+                                                  </coordinates>
+                                                </IfcCartesianPoint>
+                                              </points>
+                                            </edgeGeometry>
+                                            <sameSense type="IfcBoolean" value="false"/>
+                                          </edgeElement>
+                                          <orientation type="IfcBoolean" value="false"/>
+                                        </IfcOrientedEdge>
+                                        <IfcOrientedEdge type="IfcOrientedEdge">
+                                          <edgeElement type="IfcEdgeCurve">
+                                            <edgeStart type="IfcVertexPoint">
+                                              <vertexGeometry type="IfcCartesianPoint">
+                                                <coordinates>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                                </coordinates>
+                                              </vertexGeometry>
+                                            </edgeStart>
+                                            <edgeEnd type="IfcVertexPoint">
+                                              <vertexGeometry type="IfcCartesianPoint">
+                                                <coordinates>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.183012701892219"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-0.683012701892219"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="1.0"/>
+                                                </coordinates>
+                                              </vertexGeometry>
+                                            </edgeEnd>
+                                            <edgeGeometry type="IfcPolyline">
+                                              <points>
+                                                <IfcCartesianPoint type="IfcCartesianPoint">
+                                                  <coordinates>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                                  </coordinates>
+                                                </IfcCartesianPoint>
+                                                <IfcCartesianPoint type="IfcCartesianPoint">
+                                                  <coordinates>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.183012701892219"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="-0.683012701892219"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="1.0"/>
+                                                  </coordinates>
+                                                </IfcCartesianPoint>
+                                              </points>
+                                            </edgeGeometry>
+                                            <sameSense type="IfcBoolean" value="false"/>
+                                          </edgeElement>
+                                          <orientation type="IfcBoolean" value="false"/>
+                                        </IfcOrientedEdge>
+                                        <IfcOrientedEdge type="IfcOrientedEdge">
+                                          <edgeElement type="IfcEdgeCurve">
+                                            <edgeStart type="IfcVertexPoint">
+                                              <vertexGeometry type="IfcCartesianPoint">
+                                                <coordinates>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                                </coordinates>
+                                              </vertexGeometry>
+                                            </edgeStart>
+                                            <edgeEnd type="IfcVertexPoint">
+                                              <vertexGeometry type="IfcCartesianPoint">
+                                                <coordinates>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.5"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                                </coordinates>
+                                              </vertexGeometry>
+                                            </edgeEnd>
+                                            <edgeGeometry type="IfcPolyline">
+                                              <points>
+                                                <IfcCartesianPoint type="IfcCartesianPoint">
+                                                  <coordinates>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                                  </coordinates>
+                                                </IfcCartesianPoint>
+                                                <IfcCartesianPoint type="IfcCartesianPoint">
+                                                  <coordinates>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.5"/>
+                                                  </coordinates>
+                                                </IfcCartesianPoint>
+                                              </points>
+                                            </edgeGeometry>
+                                            <sameSense type="IfcBoolean" value="false"/>
+                                          </edgeElement>
+                                          <orientation type="IfcBoolean" value="false"/>
+                                        </IfcOrientedEdge>
+                                      </edgeList>
+                                    </bound>
+                                    <orientation type="IfcBoolean" value="false"/>
+                                  </IfcFaceBound>
+                                </bounds>
+                                <faceSurface type="IfcBSplineSurfaceWithKnots" surfaceForm="UNSPECIFIED" knotSpec="UNSPECIFIED">
+                                  <umultiplicities>
+                                    <umultiplicities type="IfcInteger" value="4"/>
+                                    <umultiplicities type="IfcInteger" value="4"/>
+                                  </umultiplicities>
+                                  <vmultiplicities>
+                                    <vmultiplicities type="IfcInteger" value="2"/>
+                                    <vmultiplicities type="IfcInteger" value="2"/>
+                                  </vmultiplicities>
+                                  <uknots>
+                                    <uknots type="IfcParameterValue" value="0.0"/>
+                                    <uknots type="IfcParameterValue" value="1224.74487139159"/>
+                                  </uknots>
+                                  <vknots>
+                                    <vknots type="IfcParameterValue" value="3.0"/>
+                                    <vknots type="IfcParameterValue" value="4.0"/>
+                                  </vknots>
+                                  <vclosed type="IfcLogical" value="false"/>
+                                  <uclosed type="IfcLogical" value="false"/>
+                                  <udegree type="IfcInteger" value="3"/>
+                                  <vdegree type="IfcInteger" value="1"/>
+                                  <uDegree type="IfcInteger" value="3"/>
+                                  <vDegree type="IfcInteger" value="1"/>
+                                  <controlPointsList>
+                                    <IfcCartesianPoint type="IfcCartesianPoint">
+                                      <coordinates>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.5"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                      </coordinates>
+                                    </IfcCartesianPoint>
+                                    <IfcCartesianPoint type="IfcCartesianPoint">
+                                      <coordinates>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                      </coordinates>
+                                    </IfcCartesianPoint>
+                                    <IfcCartesianPoint type="IfcCartesianPoint">
+                                      <coordinates>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="-0.561004233964073"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.27232909936926"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.333333333333333"/>
+                                      </coordinates>
+                                    </IfcCartesianPoint>
+                                    <IfcCartesianPoint type="IfcCartesianPoint">
+                                      <coordinates>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="-0.27232909936926"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="-0.561004233964073"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.333333333333333"/>
+                                      </coordinates>
+                                    </IfcCartesianPoint>
+                                    <IfcCartesianPoint type="IfcCartesianPoint">
+                                      <coordinates>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="-0.622008467928146"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.0446581987385206"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.666666666666667"/>
+                                      </coordinates>
+                                    </IfcCartesianPoint>
+                                    <IfcCartesianPoint type="IfcCartesianPoint">
+                                      <coordinates>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="-0.0446581987385206"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="-0.622008467928146"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.666666666666667"/>
+                                      </coordinates>
+                                    </IfcCartesianPoint>
+                                    <IfcCartesianPoint type="IfcCartesianPoint">
+                                      <coordinates>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="-0.683012701892219"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="-0.183012701892219"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="1.0"/>
+                                      </coordinates>
+                                    </IfcCartesianPoint>
+                                    <IfcCartesianPoint type="IfcCartesianPoint">
+                                      <coordinates>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.183012701892219"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="-0.683012701892219"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="1.0"/>
+                                      </coordinates>
+                                    </IfcCartesianPoint>
+                                  </controlPointsList>
+                                  <uClosed type="IfcLogical" value="false"/>
+                                  <vClosed type="IfcLogical" value="false"/>
+                                  <selfIntersect type="IfcLogical" value="false"/>
+                                  <uMultiplicities>
+                                    <uMultiplicity type="IfcInteger" value="4"/>
+                                    <uMultiplicity type="IfcInteger" value="4"/>
+                                  </uMultiplicities>
+                                  <vMultiplicities>
+                                    <vMultiplicity type="IfcInteger" value="2"/>
+                                    <vMultiplicity type="IfcInteger" value="2"/>
+                                  </vMultiplicities>
+                                  <uKnots>
+                                    <uKnot type="IfcParameterValue" value="0.0"/>
+                                    <uKnot type="IfcParameterValue" value="1224.74487139159"/>
+                                  </uKnots>
+                                  <vKnots>
+                                    <vKnot type="IfcParameterValue" value="3.0"/>
+                                    <vKnot type="IfcParameterValue" value="4.0"/>
+                                  </vKnots>
+                                </faceSurface>
+                                <sameSense type="IfcBoolean" value="false"/>
+                              </IfcFace>
+                              <IfcFace type="IfcAdvancedFace">
+                                <bounds>
+                                  <IfcFaceBound type="IfcFaceOuterBound">
+                                    <bound type="IfcEdgeLoop">
+                                      <edgeList>
+                                        <IfcOrientedEdge type="IfcOrientedEdge">
+                                          <edgeElement type="IfcEdgeCurve">
+                                            <edgeStart type="IfcVertexPoint">
+                                              <vertexGeometry type="IfcCartesianPoint">
+                                                <coordinates>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.5"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                                </coordinates>
+                                              </vertexGeometry>
+                                            </edgeStart>
+                                            <edgeEnd type="IfcVertexPoint">
+                                              <vertexGeometry type="IfcCartesianPoint">
+                                                <coordinates>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                                </coordinates>
+                                              </vertexGeometry>
+                                            </edgeEnd>
+                                            <edgeGeometry type="IfcPolyline">
+                                              <points>
+                                                <IfcCartesianPoint type="IfcCartesianPoint">
+                                                  <coordinates>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.5"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                                  </coordinates>
+                                                </IfcCartesianPoint>
+                                                <IfcCartesianPoint type="IfcCartesianPoint">
+                                                  <coordinates>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                                  </coordinates>
+                                                </IfcCartesianPoint>
+                                              </points>
+                                            </edgeGeometry>
+                                            <sameSense type="IfcBoolean" value="false"/>
+                                          </edgeElement>
+                                          <orientation type="IfcBoolean" value="false"/>
+                                        </IfcOrientedEdge>
+                                        <IfcOrientedEdge type="IfcOrientedEdge">
+                                          <edgeElement type="IfcEdgeCurve">
+                                            <edgeStart type="IfcVertexPoint">
+                                              <vertexGeometry type="IfcCartesianPoint">
+                                                <coordinates>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                                </coordinates>
+                                              </vertexGeometry>
+                                            </edgeStart>
+                                            <edgeEnd type="IfcVertexPoint">
+                                              <vertexGeometry type="IfcCartesianPoint">
+                                                <coordinates>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.183012701892219"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-0.683012701892219"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="1.0"/>
+                                                </coordinates>
+                                              </vertexGeometry>
+                                            </edgeEnd>
+                                            <edgeGeometry type="IfcPolyline">
+                                              <points>
+                                                <IfcCartesianPoint type="IfcCartesianPoint">
+                                                  <coordinates>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                                  </coordinates>
+                                                </IfcCartesianPoint>
+                                                <IfcCartesianPoint type="IfcCartesianPoint">
+                                                  <coordinates>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.183012701892219"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="-0.683012701892219"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="1.0"/>
+                                                  </coordinates>
+                                                </IfcCartesianPoint>
+                                              </points>
+                                            </edgeGeometry>
+                                            <sameSense type="IfcBoolean" value="false"/>
+                                          </edgeElement>
+                                          <orientation type="IfcBoolean" value="false"/>
+                                        </IfcOrientedEdge>
+                                        <IfcOrientedEdge type="IfcOrientedEdge">
+                                          <edgeElement type="IfcEdgeCurve">
+                                            <edgeStart type="IfcVertexPoint">
+                                              <vertexGeometry type="IfcCartesianPoint">
+                                                <coordinates>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.183012701892219"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-0.683012701892219"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="1.0"/>
+                                                </coordinates>
+                                              </vertexGeometry>
+                                            </edgeStart>
+                                            <edgeEnd type="IfcVertexPoint">
+                                              <vertexGeometry type="IfcCartesianPoint">
+                                                <coordinates>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.683012701892219"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.183012701892219"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="1.0"/>
+                                                </coordinates>
+                                              </vertexGeometry>
+                                            </edgeEnd>
+                                            <edgeGeometry type="IfcPolyline">
+                                              <points>
+                                                <IfcCartesianPoint type="IfcCartesianPoint">
+                                                  <coordinates>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.183012701892219"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="-0.683012701892219"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="1.0"/>
+                                                  </coordinates>
+                                                </IfcCartesianPoint>
+                                                <IfcCartesianPoint type="IfcCartesianPoint">
+                                                  <coordinates>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.683012701892219"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.183012701892219"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="1.0"/>
+                                                  </coordinates>
+                                                </IfcCartesianPoint>
+                                              </points>
+                                            </edgeGeometry>
+                                            <sameSense type="IfcBoolean" value="false"/>
+                                          </edgeElement>
+                                          <orientation type="IfcBoolean" value="false"/>
+                                        </IfcOrientedEdge>
+                                        <IfcOrientedEdge type="IfcOrientedEdge">
+                                          <edgeElement type="IfcEdgeCurve">
+                                            <edgeStart type="IfcVertexPoint">
+                                              <vertexGeometry type="IfcCartesianPoint">
+                                                <coordinates>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.5"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                                </coordinates>
+                                              </vertexGeometry>
+                                            </edgeStart>
+                                            <edgeEnd type="IfcVertexPoint">
+                                              <vertexGeometry type="IfcCartesianPoint">
+                                                <coordinates>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.683012701892219"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.183012701892219"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="1.0"/>
+                                                </coordinates>
+                                              </vertexGeometry>
+                                            </edgeEnd>
+                                            <edgeGeometry type="IfcPolyline">
+                                              <points>
+                                                <IfcCartesianPoint type="IfcCartesianPoint">
+                                                  <coordinates>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.5"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                                  </coordinates>
+                                                </IfcCartesianPoint>
+                                                <IfcCartesianPoint type="IfcCartesianPoint">
+                                                  <coordinates>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.683012701892219"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.183012701892219"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="1.0"/>
+                                                  </coordinates>
+                                                </IfcCartesianPoint>
+                                              </points>
+                                            </edgeGeometry>
+                                            <sameSense type="IfcBoolean" value="false"/>
+                                          </edgeElement>
+                                          <orientation type="IfcBoolean" value="false"/>
+                                        </IfcOrientedEdge>
+                                      </edgeList>
+                                    </bound>
+                                    <orientation type="IfcBoolean" value="false"/>
+                                  </IfcFaceBound>
+                                </bounds>
+                                <faceSurface type="IfcBSplineSurfaceWithKnots" surfaceForm="UNSPECIFIED" knotSpec="UNSPECIFIED">
+                                  <umultiplicities>
+                                    <umultiplicities type="IfcInteger" value="4"/>
+                                    <umultiplicities type="IfcInteger" value="4"/>
+                                  </umultiplicities>
+                                  <vmultiplicities>
+                                    <vmultiplicities type="IfcInteger" value="2"/>
+                                    <vmultiplicities type="IfcInteger" value="2"/>
+                                  </vmultiplicities>
+                                  <uknots>
+                                    <uknots type="IfcParameterValue" value="0.0"/>
+                                    <uknots type="IfcParameterValue" value="1224.74487139159"/>
+                                  </uknots>
+                                  <vknots>
+                                    <vknots type="IfcParameterValue" value="0.0"/>
+                                    <vknots type="IfcParameterValue" value="1.0"/>
+                                  </vknots>
+                                  <vclosed type="IfcLogical" value="false"/>
+                                  <uclosed type="IfcLogical" value="false"/>
+                                  <udegree type="IfcInteger" value="3"/>
+                                  <vdegree type="IfcInteger" value="1"/>
+                                  <uDegree type="IfcInteger" value="3"/>
+                                  <vDegree type="IfcInteger" value="1"/>
+                                  <controlPointsList>
+                                    <IfcCartesianPoint type="IfcCartesianPoint">
+                                      <coordinates>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                      </coordinates>
+                                    </IfcCartesianPoint>
+                                    <IfcCartesianPoint type="IfcCartesianPoint">
+                                      <coordinates>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.5"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                      </coordinates>
+                                    </IfcCartesianPoint>
+                                    <IfcCartesianPoint type="IfcCartesianPoint">
+                                      <coordinates>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="-0.27232909936926"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="-0.561004233964073"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.333333333333333"/>
+                                      </coordinates>
+                                    </IfcCartesianPoint>
+                                    <IfcCartesianPoint type="IfcCartesianPoint">
+                                      <coordinates>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.561004233964073"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="-0.27232909936926"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.333333333333333"/>
+                                      </coordinates>
+                                    </IfcCartesianPoint>
+                                    <IfcCartesianPoint type="IfcCartesianPoint">
+                                      <coordinates>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="-0.0446581987385206"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="-0.622008467928146"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.666666666666667"/>
+                                      </coordinates>
+                                    </IfcCartesianPoint>
+                                    <IfcCartesianPoint type="IfcCartesianPoint">
+                                      <coordinates>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.622008467928146"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="-0.0446581987385206"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.666666666666667"/>
+                                      </coordinates>
+                                    </IfcCartesianPoint>
+                                    <IfcCartesianPoint type="IfcCartesianPoint">
+                                      <coordinates>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.183012701892219"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="-0.683012701892219"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="1.0"/>
+                                      </coordinates>
+                                    </IfcCartesianPoint>
+                                    <IfcCartesianPoint type="IfcCartesianPoint">
+                                      <coordinates>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.683012701892219"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.183012701892219"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="1.0"/>
+                                      </coordinates>
+                                    </IfcCartesianPoint>
+                                  </controlPointsList>
+                                  <uClosed type="IfcLogical" value="false"/>
+                                  <vClosed type="IfcLogical" value="false"/>
+                                  <selfIntersect type="IfcLogical" value="false"/>
+                                  <uMultiplicities>
+                                    <uMultiplicity type="IfcInteger" value="4"/>
+                                    <uMultiplicity type="IfcInteger" value="4"/>
+                                  </uMultiplicities>
+                                  <vMultiplicities>
+                                    <vMultiplicity type="IfcInteger" value="2"/>
+                                    <vMultiplicity type="IfcInteger" value="2"/>
+                                  </vMultiplicities>
+                                  <uKnots>
+                                    <uKnot type="IfcParameterValue" value="0.0"/>
+                                    <uKnot type="IfcParameterValue" value="1224.74487139159"/>
+                                  </uKnots>
+                                  <vKnots>
+                                    <vKnot type="IfcParameterValue" value="0.0"/>
+                                    <vKnot type="IfcParameterValue" value="1.0"/>
+                                  </vKnots>
+                                </faceSurface>
+                                <sameSense type="IfcBoolean" value="false"/>
+                              </IfcFace>
+                              <IfcFace type="IfcAdvancedFace">
+                                <bounds>
+                                  <IfcFaceBound type="IfcFaceOuterBound">
+                                    <bound type="IfcEdgeLoop">
+                                      <edgeList>
+                                        <IfcOrientedEdge type="IfcOrientedEdge">
+                                          <edgeElement type="IfcEdgeCurve">
+                                            <edgeStart type="IfcVertexPoint">
+                                              <vertexGeometry type="IfcCartesianPoint">
+                                                <coordinates>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-0.683012701892219"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-0.183012701892219"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="1.0"/>
+                                                </coordinates>
+                                              </vertexGeometry>
+                                            </edgeStart>
+                                            <edgeEnd type="IfcVertexPoint">
+                                              <vertexGeometry type="IfcCartesianPoint">
+                                                <coordinates>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.183012701892219"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-0.683012701892219"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="1.0"/>
+                                                </coordinates>
+                                              </vertexGeometry>
+                                            </edgeEnd>
+                                            <edgeGeometry type="IfcPolyline">
+                                              <points>
+                                                <IfcCartesianPoint type="IfcCartesianPoint">
+                                                  <coordinates>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="-0.683012701892219"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="-0.183012701892219"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="1.0"/>
+                                                  </coordinates>
+                                                </IfcCartesianPoint>
+                                                <IfcCartesianPoint type="IfcCartesianPoint">
+                                                  <coordinates>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.183012701892219"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="-0.683012701892219"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="1.0"/>
+                                                  </coordinates>
+                                                </IfcCartesianPoint>
+                                              </points>
+                                            </edgeGeometry>
+                                            <sameSense type="IfcBoolean" value="false"/>
+                                          </edgeElement>
+                                          <orientation type="IfcBoolean" value="false"/>
+                                        </IfcOrientedEdge>
+                                        <IfcOrientedEdge type="IfcOrientedEdge">
+                                          <edgeElement type="IfcEdgeCurve">
+                                            <edgeStart type="IfcVertexPoint">
+                                              <vertexGeometry type="IfcCartesianPoint">
+                                                <coordinates>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.183012701892219"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-0.683012701892219"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="1.0"/>
+                                                </coordinates>
+                                              </vertexGeometry>
+                                            </edgeStart>
+                                            <edgeEnd type="IfcVertexPoint">
+                                              <vertexGeometry type="IfcCartesianPoint">
+                                                <coordinates>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.683012701892219"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.183012701892219"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="1.0"/>
+                                                </coordinates>
+                                              </vertexGeometry>
+                                            </edgeEnd>
+                                            <edgeGeometry type="IfcPolyline">
+                                              <points>
+                                                <IfcCartesianPoint type="IfcCartesianPoint">
+                                                  <coordinates>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.183012701892219"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="-0.683012701892219"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="1.0"/>
+                                                  </coordinates>
+                                                </IfcCartesianPoint>
+                                                <IfcCartesianPoint type="IfcCartesianPoint">
+                                                  <coordinates>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.683012701892219"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.183012701892219"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="1.0"/>
+                                                  </coordinates>
+                                                </IfcCartesianPoint>
+                                              </points>
+                                            </edgeGeometry>
+                                            <sameSense type="IfcBoolean" value="false"/>
+                                          </edgeElement>
+                                          <orientation type="IfcBoolean" value="false"/>
+                                        </IfcOrientedEdge>
+                                        <IfcOrientedEdge type="IfcOrientedEdge">
+                                          <edgeElement type="IfcEdgeCurve">
+                                            <edgeStart type="IfcVertexPoint">
+                                              <vertexGeometry type="IfcCartesianPoint">
+                                                <coordinates>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.683012701892219"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.183012701892219"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="1.0"/>
+                                                </coordinates>
+                                              </vertexGeometry>
+                                            </edgeStart>
+                                            <edgeEnd type="IfcVertexPoint">
+                                              <vertexGeometry type="IfcCartesianPoint">
+                                                <coordinates>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-0.183012701892219"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.683012701892219"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="1.0"/>
+                                                </coordinates>
+                                              </vertexGeometry>
+                                            </edgeEnd>
+                                            <edgeGeometry type="IfcPolyline">
+                                              <points>
+                                                <IfcCartesianPoint type="IfcCartesianPoint">
+                                                  <coordinates>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.683012701892219"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.183012701892219"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="1.0"/>
+                                                  </coordinates>
+                                                </IfcCartesianPoint>
+                                                <IfcCartesianPoint type="IfcCartesianPoint">
+                                                  <coordinates>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="-0.183012701892219"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.683012701892219"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="1.0"/>
+                                                  </coordinates>
+                                                </IfcCartesianPoint>
+                                              </points>
+                                            </edgeGeometry>
+                                            <sameSense type="IfcBoolean" value="false"/>
+                                          </edgeElement>
+                                          <orientation type="IfcBoolean" value="false"/>
+                                        </IfcOrientedEdge>
+                                        <IfcOrientedEdge type="IfcOrientedEdge">
+                                          <edgeElement type="IfcEdgeCurve">
+                                            <edgeStart type="IfcVertexPoint">
+                                              <vertexGeometry type="IfcCartesianPoint">
+                                                <coordinates>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-0.183012701892219"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.683012701892219"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="1.0"/>
+                                                </coordinates>
+                                              </vertexGeometry>
+                                            </edgeStart>
+                                            <edgeEnd type="IfcVertexPoint">
+                                              <vertexGeometry type="IfcCartesianPoint">
+                                                <coordinates>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-0.683012701892219"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-0.183012701892219"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="1.0"/>
+                                                </coordinates>
+                                              </vertexGeometry>
+                                            </edgeEnd>
+                                            <edgeGeometry type="IfcPolyline">
+                                              <points>
+                                                <IfcCartesianPoint type="IfcCartesianPoint">
+                                                  <coordinates>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="-0.183012701892219"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.683012701892219"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="1.0"/>
+                                                  </coordinates>
+                                                </IfcCartesianPoint>
+                                                <IfcCartesianPoint type="IfcCartesianPoint">
+                                                  <coordinates>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="-0.683012701892219"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="-0.183012701892219"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="1.0"/>
+                                                  </coordinates>
+                                                </IfcCartesianPoint>
+                                              </points>
+                                            </edgeGeometry>
+                                            <sameSense type="IfcBoolean" value="false"/>
+                                          </edgeElement>
+                                          <orientation type="IfcBoolean" value="false"/>
+                                        </IfcOrientedEdge>
+                                      </edgeList>
+                                    </bound>
+                                    <orientation type="IfcBoolean" value="false"/>
+                                  </IfcFaceBound>
+                                </bounds>
+                                <faceSurface type="IfcPlane">
+                                  <position type="IfcAxis2Placement3D">
+                                    <location type="IfcCartesianPoint">
+                                      <coordinates>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="-0.683012701892219"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="-0.183012701892219"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="1.0"/>
+                                      </coordinates>
+                                    </location>
+                                    <axis type="IfcDirection">
+                                      <directionRatios>
+                                        <IfcReal type="IfcReal" value="0.0"/>
+                                        <IfcReal type="IfcReal" value="0.0"/>
+                                        <IfcReal type="IfcReal" value="1.0"/>
+                                      </directionRatios>
+                                    </axis>
+                                    <refDirection type="IfcDirection">
+                                      <directionRatios>
+                                        <IfcReal type="IfcReal" value="-0.5"/>
+                                        <IfcReal type="IfcReal" value="-0.8660254"/>
+                                        <IfcReal type="IfcReal" value="0.0"/>
+                                      </directionRatios>
+                                    </refDirection>
+                                  </position>
+                                </faceSurface>
+                                <sameSense type="IfcBoolean" value="false"/>
+                              </IfcFace>
+                              <IfcFace type="IfcAdvancedFace">
+                                <bounds>
+                                  <IfcFaceBound type="IfcFaceOuterBound">
+                                    <bound type="IfcEdgeLoop">
+                                      <edgeList>
+                                        <IfcOrientedEdge type="IfcOrientedEdge">
+                                          <edgeElement type="IfcEdgeCurve">
+                                            <edgeStart type="IfcVertexPoint">
+                                              <vertexGeometry type="IfcCartesianPoint">
+                                                <coordinates>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.5"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.5"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                                </coordinates>
+                                              </vertexGeometry>
+                                            </edgeStart>
+                                            <edgeEnd type="IfcVertexPoint">
+                                              <vertexGeometry type="IfcCartesianPoint">
+                                                <coordinates>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.5"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                                </coordinates>
+                                              </vertexGeometry>
+                                            </edgeEnd>
+                                            <edgeGeometry type="IfcPolyline">
+                                              <points>
+                                                <IfcCartesianPoint type="IfcCartesianPoint">
+                                                  <coordinates>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.5"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.5"/>
+                                                  </coordinates>
+                                                </IfcCartesianPoint>
+                                                <IfcCartesianPoint type="IfcCartesianPoint">
+                                                  <coordinates>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.5"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                                  </coordinates>
+                                                </IfcCartesianPoint>
+                                              </points>
+                                            </edgeGeometry>
+                                            <sameSense type="IfcBoolean" value="false"/>
+                                          </edgeElement>
+                                          <orientation type="IfcBoolean" value="false"/>
+                                        </IfcOrientedEdge>
+                                        <IfcOrientedEdge type="IfcOrientedEdge">
+                                          <edgeElement type="IfcEdgeCurve">
+                                            <edgeStart type="IfcVertexPoint">
+                                              <vertexGeometry type="IfcCartesianPoint">
+                                                <coordinates>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.5"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                                </coordinates>
+                                              </vertexGeometry>
+                                            </edgeStart>
+                                            <edgeEnd type="IfcVertexPoint">
+                                              <vertexGeometry type="IfcCartesianPoint">
+                                                <coordinates>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.683012701892219"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.183012701892219"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="1.0"/>
+                                                </coordinates>
+                                              </vertexGeometry>
+                                            </edgeEnd>
+                                            <edgeGeometry type="IfcPolyline">
+                                              <points>
+                                                <IfcCartesianPoint type="IfcCartesianPoint">
+                                                  <coordinates>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.5"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                                  </coordinates>
+                                                </IfcCartesianPoint>
+                                                <IfcCartesianPoint type="IfcCartesianPoint">
+                                                  <coordinates>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.683012701892219"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.183012701892219"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="1.0"/>
+                                                  </coordinates>
+                                                </IfcCartesianPoint>
+                                              </points>
+                                            </edgeGeometry>
+                                            <sameSense type="IfcBoolean" value="false"/>
+                                          </edgeElement>
+                                          <orientation type="IfcBoolean" value="false"/>
+                                        </IfcOrientedEdge>
+                                        <IfcOrientedEdge type="IfcOrientedEdge">
+                                          <edgeElement type="IfcEdgeCurve">
+                                            <edgeStart type="IfcVertexPoint">
+                                              <vertexGeometry type="IfcCartesianPoint">
+                                                <coordinates>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.683012701892219"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.183012701892219"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="1.0"/>
+                                                </coordinates>
+                                              </vertexGeometry>
+                                            </edgeStart>
+                                            <edgeEnd type="IfcVertexPoint">
+                                              <vertexGeometry type="IfcCartesianPoint">
+                                                <coordinates>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-0.183012701892219"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.683012701892219"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="1.0"/>
+                                                </coordinates>
+                                              </vertexGeometry>
+                                            </edgeEnd>
+                                            <edgeGeometry type="IfcPolyline">
+                                              <points>
+                                                <IfcCartesianPoint type="IfcCartesianPoint">
+                                                  <coordinates>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.683012701892219"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.183012701892219"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="1.0"/>
+                                                  </coordinates>
+                                                </IfcCartesianPoint>
+                                                <IfcCartesianPoint type="IfcCartesianPoint">
+                                                  <coordinates>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="-0.183012701892219"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.683012701892219"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="1.0"/>
+                                                  </coordinates>
+                                                </IfcCartesianPoint>
+                                              </points>
+                                            </edgeGeometry>
+                                            <sameSense type="IfcBoolean" value="false"/>
+                                          </edgeElement>
+                                          <orientation type="IfcBoolean" value="false"/>
+                                        </IfcOrientedEdge>
+                                        <IfcOrientedEdge type="IfcOrientedEdge">
+                                          <edgeElement type="IfcEdgeCurve">
+                                            <edgeStart type="IfcVertexPoint">
+                                              <vertexGeometry type="IfcCartesianPoint">
+                                                <coordinates>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.5"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.5"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                                </coordinates>
+                                              </vertexGeometry>
+                                            </edgeStart>
+                                            <edgeEnd type="IfcVertexPoint">
+                                              <vertexGeometry type="IfcCartesianPoint">
+                                                <coordinates>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-0.183012701892219"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.683012701892219"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="1.0"/>
+                                                </coordinates>
+                                              </vertexGeometry>
+                                            </edgeEnd>
+                                            <edgeGeometry type="IfcPolyline">
+                                              <points>
+                                                <IfcCartesianPoint type="IfcCartesianPoint">
+                                                  <coordinates>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.5"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.5"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                                  </coordinates>
+                                                </IfcCartesianPoint>
+                                                <IfcCartesianPoint type="IfcCartesianPoint">
+                                                  <coordinates>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="-0.183012701892219"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.683012701892219"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="1.0"/>
+                                                  </coordinates>
+                                                </IfcCartesianPoint>
+                                              </points>
+                                            </edgeGeometry>
+                                            <sameSense type="IfcBoolean" value="false"/>
+                                          </edgeElement>
+                                          <orientation type="IfcBoolean" value="false"/>
+                                        </IfcOrientedEdge>
+                                      </edgeList>
+                                    </bound>
+                                    <orientation type="IfcBoolean" value="false"/>
+                                  </IfcFaceBound>
+                                </bounds>
+                                <faceSurface type="IfcBSplineSurfaceWithKnots" surfaceForm="UNSPECIFIED" knotSpec="UNSPECIFIED">
+                                  <umultiplicities>
+                                    <umultiplicities type="IfcInteger" value="4"/>
+                                    <umultiplicities type="IfcInteger" value="4"/>
+                                  </umultiplicities>
+                                  <vmultiplicities>
+                                    <vmultiplicities type="IfcInteger" value="2"/>
+                                    <vmultiplicities type="IfcInteger" value="2"/>
+                                  </vmultiplicities>
+                                  <uknots>
+                                    <uknots type="IfcParameterValue" value="0.0"/>
+                                    <uknots type="IfcParameterValue" value="1224.74487139159"/>
+                                  </uknots>
+                                  <vknots>
+                                    <vknots type="IfcParameterValue" value="1.0"/>
+                                    <vknots type="IfcParameterValue" value="2.0"/>
+                                  </vknots>
+                                  <vclosed type="IfcLogical" value="false"/>
+                                  <uclosed type="IfcLogical" value="false"/>
+                                  <udegree type="IfcInteger" value="3"/>
+                                  <vdegree type="IfcInteger" value="1"/>
+                                  <uDegree type="IfcInteger" value="3"/>
+                                  <vDegree type="IfcInteger" value="1"/>
+                                  <controlPointsList>
+                                    <IfcCartesianPoint type="IfcCartesianPoint">
+                                      <coordinates>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.5"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                      </coordinates>
+                                    </IfcCartesianPoint>
+                                    <IfcCartesianPoint type="IfcCartesianPoint">
+                                      <coordinates>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.5"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.5"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                      </coordinates>
+                                    </IfcCartesianPoint>
+                                    <IfcCartesianPoint type="IfcCartesianPoint">
+                                      <coordinates>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.561004233964073"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="-0.27232909936926"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.333333333333333"/>
+                                      </coordinates>
+                                    </IfcCartesianPoint>
+                                    <IfcCartesianPoint type="IfcCartesianPoint">
+                                      <coordinates>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.27232909936926"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.561004233964073"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.333333333333333"/>
+                                      </coordinates>
+                                    </IfcCartesianPoint>
+                                    <IfcCartesianPoint type="IfcCartesianPoint">
+                                      <coordinates>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.622008467928146"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="-0.0446581987385206"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.666666666666667"/>
+                                      </coordinates>
+                                    </IfcCartesianPoint>
+                                    <IfcCartesianPoint type="IfcCartesianPoint">
+                                      <coordinates>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.0446581987385206"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.622008467928146"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.666666666666667"/>
+                                      </coordinates>
+                                    </IfcCartesianPoint>
+                                    <IfcCartesianPoint type="IfcCartesianPoint">
+                                      <coordinates>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.683012701892219"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.183012701892219"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="1.0"/>
+                                      </coordinates>
+                                    </IfcCartesianPoint>
+                                    <IfcCartesianPoint type="IfcCartesianPoint">
+                                      <coordinates>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="-0.183012701892219"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.683012701892219"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="1.0"/>
+                                      </coordinates>
+                                    </IfcCartesianPoint>
+                                  </controlPointsList>
+                                  <uClosed type="IfcLogical" value="false"/>
+                                  <vClosed type="IfcLogical" value="false"/>
+                                  <selfIntersect type="IfcLogical" value="false"/>
+                                  <uMultiplicities>
+                                    <uMultiplicity type="IfcInteger" value="4"/>
+                                    <uMultiplicity type="IfcInteger" value="4"/>
+                                  </uMultiplicities>
+                                  <vMultiplicities>
+                                    <vMultiplicity type="IfcInteger" value="2"/>
+                                    <vMultiplicity type="IfcInteger" value="2"/>
+                                  </vMultiplicities>
+                                  <uKnots>
+                                    <uKnot type="IfcParameterValue" value="0.0"/>
+                                    <uKnot type="IfcParameterValue" value="1224.74487139159"/>
+                                  </uKnots>
+                                  <vKnots>
+                                    <vKnot type="IfcParameterValue" value="1.0"/>
+                                    <vKnot type="IfcParameterValue" value="2.0"/>
+                                  </vKnots>
+                                </faceSurface>
+                                <sameSense type="IfcBoolean" value="false"/>
+                              </IfcFace>
+                              <IfcFace type="IfcAdvancedFace">
+                                <bounds>
+                                  <IfcFaceBound type="IfcFaceOuterBound">
+                                    <bound type="IfcEdgeLoop">
+                                      <edgeList>
+                                        <IfcOrientedEdge type="IfcOrientedEdge">
+                                          <edgeElement type="IfcEdgeCurve">
+                                            <edgeStart type="IfcVertexPoint">
+                                              <vertexGeometry type="IfcCartesianPoint">
+                                                <coordinates>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                                </coordinates>
+                                              </vertexGeometry>
+                                            </edgeStart>
+                                            <edgeEnd type="IfcVertexPoint">
+                                              <vertexGeometry type="IfcCartesianPoint">
+                                                <coordinates>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.5"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                                </coordinates>
+                                              </vertexGeometry>
+                                            </edgeEnd>
+                                            <edgeGeometry type="IfcPolyline">
+                                              <points>
+                                                <IfcCartesianPoint type="IfcCartesianPoint">
+                                                  <coordinates>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                                  </coordinates>
+                                                </IfcCartesianPoint>
+                                                <IfcCartesianPoint type="IfcCartesianPoint">
+                                                  <coordinates>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.5"/>
+                                                  </coordinates>
+                                                </IfcCartesianPoint>
+                                              </points>
+                                            </edgeGeometry>
+                                            <sameSense type="IfcBoolean" value="false"/>
+                                          </edgeElement>
+                                          <orientation type="IfcBoolean" value="false"/>
+                                        </IfcOrientedEdge>
+                                        <IfcOrientedEdge type="IfcOrientedEdge">
+                                          <edgeElement type="IfcEdgeCurve">
+                                            <edgeStart type="IfcVertexPoint">
+                                              <vertexGeometry type="IfcCartesianPoint">
+                                                <coordinates>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.5"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                                </coordinates>
+                                              </vertexGeometry>
+                                            </edgeStart>
+                                            <edgeEnd type="IfcVertexPoint">
+                                              <vertexGeometry type="IfcCartesianPoint">
+                                                <coordinates>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.5"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.5"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                                </coordinates>
+                                              </vertexGeometry>
+                                            </edgeEnd>
+                                            <edgeGeometry type="IfcPolyline">
+                                              <points>
+                                                <IfcCartesianPoint type="IfcCartesianPoint">
+                                                  <coordinates>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.5"/>
+                                                  </coordinates>
+                                                </IfcCartesianPoint>
+                                                <IfcCartesianPoint type="IfcCartesianPoint">
+                                                  <coordinates>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.5"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.5"/>
+                                                  </coordinates>
+                                                </IfcCartesianPoint>
+                                              </points>
+                                            </edgeGeometry>
+                                            <sameSense type="IfcBoolean" value="false"/>
+                                          </edgeElement>
+                                          <orientation type="IfcBoolean" value="false"/>
+                                        </IfcOrientedEdge>
+                                        <IfcOrientedEdge type="IfcOrientedEdge">
+                                          <edgeElement type="IfcEdgeCurve">
+                                            <edgeStart type="IfcVertexPoint">
+                                              <vertexGeometry type="IfcCartesianPoint">
+                                                <coordinates>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.5"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.5"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                                </coordinates>
+                                              </vertexGeometry>
+                                            </edgeStart>
+                                            <edgeEnd type="IfcVertexPoint">
+                                              <vertexGeometry type="IfcCartesianPoint">
+                                                <coordinates>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.5"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                                </coordinates>
+                                              </vertexGeometry>
+                                            </edgeEnd>
+                                            <edgeGeometry type="IfcPolyline">
+                                              <points>
+                                                <IfcCartesianPoint type="IfcCartesianPoint">
+                                                  <coordinates>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.5"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.5"/>
+                                                  </coordinates>
+                                                </IfcCartesianPoint>
+                                                <IfcCartesianPoint type="IfcCartesianPoint">
+                                                  <coordinates>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.5"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                                  </coordinates>
+                                                </IfcCartesianPoint>
+                                              </points>
+                                            </edgeGeometry>
+                                            <sameSense type="IfcBoolean" value="false"/>
+                                          </edgeElement>
+                                          <orientation type="IfcBoolean" value="false"/>
+                                        </IfcOrientedEdge>
+                                        <IfcOrientedEdge type="IfcOrientedEdge">
+                                          <edgeElement type="IfcEdgeCurve">
+                                            <edgeStart type="IfcVertexPoint">
+                                              <vertexGeometry type="IfcCartesianPoint">
+                                                <coordinates>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.5"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                                </coordinates>
+                                              </vertexGeometry>
+                                            </edgeStart>
+                                            <edgeEnd type="IfcVertexPoint">
+                                              <vertexGeometry type="IfcCartesianPoint">
+                                                <coordinates>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                                </coordinates>
+                                              </vertexGeometry>
+                                            </edgeEnd>
+                                            <edgeGeometry type="IfcPolyline">
+                                              <points>
+                                                <IfcCartesianPoint type="IfcCartesianPoint">
+                                                  <coordinates>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.5"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                                  </coordinates>
+                                                </IfcCartesianPoint>
+                                                <IfcCartesianPoint type="IfcCartesianPoint">
+                                                  <coordinates>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                                  </coordinates>
+                                                </IfcCartesianPoint>
+                                              </points>
+                                            </edgeGeometry>
+                                            <sameSense type="IfcBoolean" value="false"/>
+                                          </edgeElement>
+                                          <orientation type="IfcBoolean" value="false"/>
+                                        </IfcOrientedEdge>
+                                      </edgeList>
+                                    </bound>
+                                    <orientation type="IfcBoolean" value="false"/>
+                                  </IfcFaceBound>
+                                </bounds>
+                                <faceSurface type="IfcPlane">
+                                  <position type="IfcAxis2Placement3D">
+                                    <location type="IfcCartesianPoint">
+                                      <coordinates>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                      </coordinates>
+                                    </location>
+                                    <axis type="IfcDirection">
+                                      <directionRatios>
+                                        <IfcReal type="IfcReal" value="0.0"/>
+                                        <IfcReal type="IfcReal" value="0.0"/>
+                                        <IfcReal type="IfcReal" value="-1.0"/>
+                                      </directionRatios>
+                                    </axis>
+                                    <refDirection type="IfcDirection">
+                                      <directionRatios>
+                                        <IfcReal type="IfcReal" value="1.0"/>
+                                        <IfcReal type="IfcReal" value="0.0"/>
+                                        <IfcReal type="IfcReal" value="0.0"/>
+                                      </directionRatios>
+                                    </refDirection>
+                                  </position>
+                                </faceSurface>
+                                <sameSense type="IfcBoolean" value="false"/>
+                              </IfcFace>
+                              <IfcFace type="IfcAdvancedFace">
+                                <bounds>
+                                  <IfcFaceBound type="IfcFaceOuterBound">
+                                    <bound type="IfcEdgeLoop">
+                                      <edgeList>
+                                        <IfcOrientedEdge type="IfcOrientedEdge">
+                                          <edgeElement type="IfcEdgeCurve">
+                                            <edgeStart type="IfcVertexPoint">
+                                              <vertexGeometry type="IfcCartesianPoint">
+                                                <coordinates>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.5"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                                </coordinates>
+                                              </vertexGeometry>
+                                            </edgeStart>
+                                            <edgeEnd type="IfcVertexPoint">
+                                              <vertexGeometry type="IfcCartesianPoint">
+                                                <coordinates>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.5"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.5"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                                </coordinates>
+                                              </vertexGeometry>
+                                            </edgeEnd>
+                                            <edgeGeometry type="IfcPolyline">
+                                              <points>
+                                                <IfcCartesianPoint type="IfcCartesianPoint">
+                                                  <coordinates>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.5"/>
+                                                  </coordinates>
+                                                </IfcCartesianPoint>
+                                                <IfcCartesianPoint type="IfcCartesianPoint">
+                                                  <coordinates>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.5"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.5"/>
+                                                  </coordinates>
+                                                </IfcCartesianPoint>
+                                              </points>
+                                            </edgeGeometry>
+                                            <sameSense type="IfcBoolean" value="false"/>
+                                          </edgeElement>
+                                          <orientation type="IfcBoolean" value="false"/>
+                                        </IfcOrientedEdge>
+                                        <IfcOrientedEdge type="IfcOrientedEdge">
+                                          <edgeElement type="IfcEdgeCurve">
+                                            <edgeStart type="IfcVertexPoint">
+                                              <vertexGeometry type="IfcCartesianPoint">
+                                                <coordinates>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.5"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.5"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                                </coordinates>
+                                              </vertexGeometry>
+                                            </edgeStart>
+                                            <edgeEnd type="IfcVertexPoint">
+                                              <vertexGeometry type="IfcCartesianPoint">
+                                                <coordinates>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-0.183012701892219"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.683012701892219"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="1.0"/>
+                                                </coordinates>
+                                              </vertexGeometry>
+                                            </edgeEnd>
+                                            <edgeGeometry type="IfcPolyline">
+                                              <points>
+                                                <IfcCartesianPoint type="IfcCartesianPoint">
+                                                  <coordinates>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.5"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.5"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                                  </coordinates>
+                                                </IfcCartesianPoint>
+                                                <IfcCartesianPoint type="IfcCartesianPoint">
+                                                  <coordinates>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="-0.183012701892219"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.683012701892219"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="1.0"/>
+                                                  </coordinates>
+                                                </IfcCartesianPoint>
+                                              </points>
+                                            </edgeGeometry>
+                                            <sameSense type="IfcBoolean" value="false"/>
+                                          </edgeElement>
+                                          <orientation type="IfcBoolean" value="false"/>
+                                        </IfcOrientedEdge>
+                                        <IfcOrientedEdge type="IfcOrientedEdge">
+                                          <edgeElement type="IfcEdgeCurve">
+                                            <edgeStart type="IfcVertexPoint">
+                                              <vertexGeometry type="IfcCartesianPoint">
+                                                <coordinates>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-0.183012701892219"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.683012701892219"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="1.0"/>
+                                                </coordinates>
+                                              </vertexGeometry>
+                                            </edgeStart>
+                                            <edgeEnd type="IfcVertexPoint">
+                                              <vertexGeometry type="IfcCartesianPoint">
+                                                <coordinates>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-0.683012701892219"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-0.183012701892219"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="1.0"/>
+                                                </coordinates>
+                                              </vertexGeometry>
+                                            </edgeEnd>
+                                            <edgeGeometry type="IfcPolyline">
+                                              <points>
+                                                <IfcCartesianPoint type="IfcCartesianPoint">
+                                                  <coordinates>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="-0.183012701892219"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.683012701892219"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="1.0"/>
+                                                  </coordinates>
+                                                </IfcCartesianPoint>
+                                                <IfcCartesianPoint type="IfcCartesianPoint">
+                                                  <coordinates>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="-0.683012701892219"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="-0.183012701892219"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="1.0"/>
+                                                  </coordinates>
+                                                </IfcCartesianPoint>
+                                              </points>
+                                            </edgeGeometry>
+                                            <sameSense type="IfcBoolean" value="false"/>
+                                          </edgeElement>
+                                          <orientation type="IfcBoolean" value="false"/>
+                                        </IfcOrientedEdge>
+                                        <IfcOrientedEdge type="IfcOrientedEdge">
+                                          <edgeElement type="IfcEdgeCurve">
+                                            <edgeStart type="IfcVertexPoint">
+                                              <vertexGeometry type="IfcCartesianPoint">
+                                                <coordinates>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.5"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                                </coordinates>
+                                              </vertexGeometry>
+                                            </edgeStart>
+                                            <edgeEnd type="IfcVertexPoint">
+                                              <vertexGeometry type="IfcCartesianPoint">
+                                                <coordinates>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-0.683012701892219"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-0.183012701892219"/>
+                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="1.0"/>
+                                                </coordinates>
+                                              </vertexGeometry>
+                                            </edgeEnd>
+                                            <edgeGeometry type="IfcPolyline">
+                                              <points>
+                                                <IfcCartesianPoint type="IfcCartesianPoint">
+                                                  <coordinates>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.5"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                                  </coordinates>
+                                                </IfcCartesianPoint>
+                                                <IfcCartesianPoint type="IfcCartesianPoint">
+                                                  <coordinates>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="-0.683012701892219"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="-0.183012701892219"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="1.0"/>
+                                                  </coordinates>
+                                                </IfcCartesianPoint>
+                                              </points>
+                                            </edgeGeometry>
+                                            <sameSense type="IfcBoolean" value="false"/>
+                                          </edgeElement>
+                                          <orientation type="IfcBoolean" value="false"/>
+                                        </IfcOrientedEdge>
+                                      </edgeList>
+                                    </bound>
+                                    <orientation type="IfcBoolean" value="false"/>
+                                  </IfcFaceBound>
+                                </bounds>
+                                <faceSurface type="IfcBSplineSurfaceWithKnots" surfaceForm="UNSPECIFIED" knotSpec="UNSPECIFIED">
+                                  <umultiplicities>
+                                    <umultiplicities type="IfcInteger" value="4"/>
+                                    <umultiplicities type="IfcInteger" value="4"/>
+                                  </umultiplicities>
+                                  <vmultiplicities>
+                                    <vmultiplicities type="IfcInteger" value="2"/>
+                                    <vmultiplicities type="IfcInteger" value="2"/>
+                                  </vmultiplicities>
+                                  <uknots>
+                                    <uknots type="IfcParameterValue" value="0.0"/>
+                                    <uknots type="IfcParameterValue" value="1224.74487139159"/>
+                                  </uknots>
+                                  <vknots>
+                                    <vknots type="IfcParameterValue" value="2.0"/>
+                                    <vknots type="IfcParameterValue" value="3.0"/>
+                                  </vknots>
+                                  <vclosed type="IfcLogical" value="false"/>
+                                  <uclosed type="IfcLogical" value="false"/>
+                                  <udegree type="IfcInteger" value="3"/>
+                                  <vdegree type="IfcInteger" value="1"/>
+                                  <uDegree type="IfcInteger" value="3"/>
+                                  <vDegree type="IfcInteger" value="1"/>
+                                  <controlPointsList>
+                                    <IfcCartesianPoint type="IfcCartesianPoint">
+                                      <coordinates>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.5"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.5"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                      </coordinates>
+                                    </IfcCartesianPoint>
+                                    <IfcCartesianPoint type="IfcCartesianPoint">
+                                      <coordinates>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.5"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                      </coordinates>
+                                    </IfcCartesianPoint>
+                                    <IfcCartesianPoint type="IfcCartesianPoint">
+                                      <coordinates>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.27232909936926"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.561004233964073"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.333333333333333"/>
+                                      </coordinates>
+                                    </IfcCartesianPoint>
+                                    <IfcCartesianPoint type="IfcCartesianPoint">
+                                      <coordinates>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="-0.561004233964073"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.27232909936926"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.333333333333333"/>
+                                      </coordinates>
+                                    </IfcCartesianPoint>
+                                    <IfcCartesianPoint type="IfcCartesianPoint">
+                                      <coordinates>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.0446581987385206"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.622008467928146"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.666666666666667"/>
+                                      </coordinates>
+                                    </IfcCartesianPoint>
+                                    <IfcCartesianPoint type="IfcCartesianPoint">
+                                      <coordinates>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="-0.622008467928146"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.0446581987385206"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.666666666666667"/>
+                                      </coordinates>
+                                    </IfcCartesianPoint>
+                                    <IfcCartesianPoint type="IfcCartesianPoint">
+                                      <coordinates>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="-0.183012701892219"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.683012701892219"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="1.0"/>
+                                      </coordinates>
+                                    </IfcCartesianPoint>
+                                    <IfcCartesianPoint type="IfcCartesianPoint">
+                                      <coordinates>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="-0.683012701892219"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="-0.183012701892219"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="1.0"/>
+                                      </coordinates>
+                                    </IfcCartesianPoint>
+                                  </controlPointsList>
+                                  <uClosed type="IfcLogical" value="false"/>
+                                  <vClosed type="IfcLogical" value="false"/>
+                                  <selfIntersect type="IfcLogical" value="false"/>
+                                  <uMultiplicities>
+                                    <uMultiplicity type="IfcInteger" value="4"/>
+                                    <uMultiplicity type="IfcInteger" value="4"/>
+                                  </uMultiplicities>
+                                  <vMultiplicities>
+                                    <vMultiplicity type="IfcInteger" value="2"/>
+                                    <vMultiplicity type="IfcInteger" value="2"/>
+                                  </vMultiplicities>
+                                  <uKnots>
+                                    <uKnot type="IfcParameterValue" value="0.0"/>
+                                    <uKnot type="IfcParameterValue" value="1224.74487139159"/>
+                                  </uKnots>
+                                  <vKnots>
+                                    <vKnot type="IfcParameterValue" value="2.0"/>
+                                    <vKnot type="IfcParameterValue" value="3.0"/>
+                                  </vKnots>
+                                </faceSurface>
+                                <sameSense type="IfcBoolean" value="false"/>
+                              </IfcFace>
+                            </cfsFaces>
+                          </outer>
+                        </IfcRepresentationItem>
+                      </items>
+                    </IfcRepresentation>
+                  </representations>
+                </representation>
+              </IfcProduct>
+            </relatedElements>
+          </IfcRelContainedInSpatialStructure>
+        </containsElements>
+      </IfcObjectDefinition>
+    </relatedObjects>
+  </isDecomposedBy>
+  <longName type="IfcLabel" value="Grasshopper Project"/>
+  <representationContexts>
+    <IfcRepresentationContext>ff987b6a-51e4-4d63-8e56-8c1945718f24</IfcRepresentationContext>
+  </representationContexts>
+  <unitsInContext>
+    <units>
+      <IfcUnit type="IfcSIUnit" globalId="7ad96e46-ae12-4426-a8c2-cb33cb0dcedc">
+        <dimensions lengthExponent="1" massExponent="0" timeExponent="0" electricCurrentExponent="0" thermodynamicTemperatureExponent="0" amountOfSubstanceExponent="0" luminousIntensityExponent="0"/>
+        <unitType>LENGTHUNIT</unitType>
+        <name>METRE</name>
+      </IfcUnit>
+      <IfcUnit type="IfcSIUnit" globalId="114e3756-bb40-4bf3-a3be-313450185908">
+        <dimensions lengthExponent="2" massExponent="0" timeExponent="0" electricCurrentExponent="0" thermodynamicTemperatureExponent="0" amountOfSubstanceExponent="0" luminousIntensityExponent="0"/>
+        <unitType>AREAUNIT</unitType>
+        <name>SQUARE_METRE</name>
+      </IfcUnit>
+      <IfcUnit type="IfcSIUnit" globalId="4e512c87-6a34-4317-9f3b-d9dcc5102274">
+        <dimensions lengthExponent="3" massExponent="0" timeExponent="0" electricCurrentExponent="0" thermodynamicTemperatureExponent="0" amountOfSubstanceExponent="0" luminousIntensityExponent="0"/>
+        <unitType>VOLUMEUNIT</unitType>
+        <name>CUBIC_METRE</name>
+      </IfcUnit>
+      <IfcUnit type="IfcSIUnit" globalId="27a76efe-aec2-4edb-b2ed-ebdee1054d7f">
+        <dimensions lengthExponent="0" massExponent="0" timeExponent="0" electricCurrentExponent="0" thermodynamicTemperatureExponent="0" amountOfSubstanceExponent="0" luminousIntensityExponent="0"/>
+        <unitType>PLANEANGLEUNIT</unitType>
+        <name>RADIAN</name>
+      </IfcUnit>
+    </units>
+  </unitsInContext>
+</IfcProject>

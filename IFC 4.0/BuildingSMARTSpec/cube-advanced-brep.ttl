@@ -1,0 +1,2442 @@
+# baseURI: http://linkedbuildingdata.net/ifc/resources20200624_184152/
+# imports: http://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL
+
+@prefix ifc:  <http://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#> .
+@prefix inst:  <http://linkedbuildingdata.net/ifc/resources20200624_184152/> .
+@prefix list:  <https://w3id.org/list#> .
+@prefix express:  <https://w3id.org/express#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+
+inst:   rdf:type     owl:Ontology ;
+        owl:imports  ifc: .
+
+inst:IfcApplication_1
+        rdf:type  ifc:IfcApplication .
+
+inst:IfcOrganization_2
+        rdf:type  ifc:IfcOrganization .
+
+inst:IfcApplication_1
+        ifc:applicationDeveloper_IfcApplication  inst:IfcOrganization_2 .
+
+inst:IfcLabel_182  rdf:type  ifc:IfcLabel ;
+        express:hasString  "0.5.35.0" .
+
+inst:IfcApplication_1
+        ifc:version_IfcApplication  inst:IfcLabel_182 .
+
+inst:IfcLabel_183  rdf:type  ifc:IfcLabel ;
+        express:hasString  "ssiRhinoIFC - Geometry Gym Plug-in for Rhino3d" .
+
+inst:IfcApplication_1
+        ifc:applicationFullName_IfcApplication  inst:IfcLabel_183 .
+
+inst:IfcIdentifier_184
+        rdf:type           ifc:IfcIdentifier ;
+        express:hasString  "ssiRhinoIFC" .
+
+inst:IfcApplication_1
+        ifc:applicationIdentifier_IfcApplication  inst:IfcIdentifier_184 .
+
+inst:IfcLabel_185  rdf:type  ifc:IfcLabel ;
+        express:hasString  "Geometry Gym Pty Ltd" .
+
+inst:IfcOrganization_2
+        ifc:name_IfcOrganization  inst:IfcLabel_185 .
+
+inst:IfcPersonAndOrganization_3
+        rdf:type  ifc:IfcPersonAndOrganization .
+
+inst:IfcPerson_4  rdf:type  ifc:IfcPerson .
+
+inst:IfcPersonAndOrganization_3
+        ifc:thePerson_IfcPersonAndOrganization  inst:IfcPerson_4 .
+
+inst:IfcOrganization_5
+        rdf:type  ifc:IfcOrganization .
+
+inst:IfcPersonAndOrganization_3
+        ifc:theOrganization_IfcPersonAndOrganization  inst:IfcOrganization_5 .
+
+inst:IfcLabel_186  rdf:type  ifc:IfcLabel ;
+        express:hasString  "Jon" .
+
+inst:IfcPerson_4  ifc:familyName_IfcPerson  inst:IfcLabel_186 .
+
+inst:IfcLabel_187  rdf:type  ifc:IfcLabel ;
+        express:hasString  "UNKNOWN" .
+
+inst:IfcOrganization_5
+        ifc:name_IfcOrganization  inst:IfcLabel_187 .
+
+inst:IfcOwnerHistory_6
+        rdf:type                        ifc:IfcOwnerHistory ;
+        ifc:owningUser_IfcOwnerHistory  inst:IfcPersonAndOrganization_3 ;
+        ifc:owningApplication_IfcOwnerHistory  inst:IfcApplication_1 ;
+        ifc:changeAction_IfcOwnerHistory  ifc:ADDED .
+
+inst:IfcTimeStamp_188
+        rdf:type            ifc:IfcTimeStamp ;
+        express:hasInteger  1338465163 .
+
+inst:IfcOwnerHistory_6
+        ifc:lastModifiedDate_IfcOwnerHistory  inst:IfcTimeStamp_188 ;
+        ifc:creationDate_IfcOwnerHistory  inst:IfcTimeStamp_188 .
+
+inst:IfcCartesianPoint_7
+        rdf:type  ifc:IfcCartesianPoint .
+
+inst:IfcLengthMeasure_List_189
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcCartesianPoint_7
+        ifc:coordinates_IfcCartesianPoint  inst:IfcLengthMeasure_List_189 .
+
+inst:IfcLengthMeasure_List_190
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_191
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_192
+        rdf:type           ifc:IfcLengthMeasure ;
+        express:hasDouble  "0.0"^^xsd:double .
+
+inst:IfcLengthMeasure_List_189
+        list:hasContents  inst:IfcLengthMeasure_192 ;
+        list:hasNext      inst:IfcLengthMeasure_List_190 .
+
+inst:IfcLengthMeasure_List_190
+        list:hasContents  inst:IfcLengthMeasure_192 ;
+        list:hasNext      inst:IfcLengthMeasure_List_191 .
+
+inst:IfcLengthMeasure_List_191
+        list:hasContents  inst:IfcLengthMeasure_192 .
+
+inst:IfcDirection_8  rdf:type  ifc:IfcDirection .
+
+inst:IfcReal_List_193
+        rdf:type  ifc:IfcReal_List .
+
+inst:IfcDirection_8  ifc:directionRatios_IfcDirection  inst:IfcReal_List_193 .
+
+inst:IfcReal_List_194
+        rdf:type  ifc:IfcReal_List .
+
+inst:IfcReal_List_195
+        rdf:type  ifc:IfcReal_List .
+
+inst:IfcReal_196  rdf:type  ifc:IfcReal ;
+        express:hasDouble  "1.0"^^xsd:double .
+
+inst:IfcReal_List_193
+        list:hasContents  inst:IfcReal_196 ;
+        list:hasNext      inst:IfcReal_List_194 .
+
+inst:IfcReal_List_194
+        list:hasContents  inst:IfcLengthMeasure_192 ;
+        list:hasNext      inst:IfcReal_List_195 .
+
+inst:IfcReal_List_195
+        list:hasContents  inst:IfcLengthMeasure_192 .
+
+inst:IfcDirection_9  rdf:type  ifc:IfcDirection .
+
+inst:IfcReal_List_197
+        rdf:type  ifc:IfcReal_List .
+
+inst:IfcDirection_9  ifc:directionRatios_IfcDirection  inst:IfcReal_List_197 .
+
+inst:IfcReal_List_198
+        rdf:type  ifc:IfcReal_List .
+
+inst:IfcReal_List_199
+        rdf:type  ifc:IfcReal_List .
+
+inst:IfcReal_List_197
+        list:hasContents  inst:IfcLengthMeasure_192 ;
+        list:hasNext      inst:IfcReal_List_198 .
+
+inst:IfcReal_List_198
+        list:hasContents  inst:IfcReal_196 ;
+        list:hasNext      inst:IfcReal_List_199 .
+
+inst:IfcReal_List_199
+        list:hasContents  inst:IfcLengthMeasure_192 .
+
+inst:IfcDirection_10  rdf:type  ifc:IfcDirection .
+
+inst:IfcReal_List_200
+        rdf:type  ifc:IfcReal_List .
+
+inst:IfcDirection_10  ifc:directionRatios_IfcDirection  inst:IfcReal_List_200 .
+
+inst:IfcReal_List_201
+        rdf:type  ifc:IfcReal_List .
+
+inst:IfcReal_List_202
+        rdf:type  ifc:IfcReal_List .
+
+inst:IfcReal_List_200
+        list:hasContents  inst:IfcLengthMeasure_192 ;
+        list:hasNext      inst:IfcReal_List_201 .
+
+inst:IfcReal_List_201
+        list:hasContents  inst:IfcLengthMeasure_192 ;
+        list:hasNext      inst:IfcReal_List_202 .
+
+inst:IfcReal_List_202
+        list:hasContents  inst:IfcReal_196 .
+
+inst:IfcAxis2Placement3D_11
+        rdf:type                      ifc:IfcAxis2Placement3D ;
+        ifc:location_IfcPlacement     inst:IfcCartesianPoint_7 ;
+        ifc:axis_IfcAxis2Placement3D  inst:IfcDirection_10 ;
+        ifc:refDirection_IfcAxis2Placement3D  inst:IfcDirection_8 .
+
+inst:IfcAxis2Placement2D_12
+        rdf:type  ifc:IfcAxis2Placement2D .
+
+inst:IfcCartesianPoint_13
+        rdf:type  ifc:IfcCartesianPoint .
+
+inst:IfcAxis2Placement2D_12
+        ifc:location_IfcPlacement  inst:IfcCartesianPoint_13 .
+
+inst:IfcLengthMeasure_List_203
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcCartesianPoint_13
+        ifc:coordinates_IfcCartesianPoint  inst:IfcLengthMeasure_List_203 .
+
+inst:IfcLengthMeasure_List_204
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_203
+        list:hasContents  inst:IfcLengthMeasure_192 ;
+        list:hasNext      inst:IfcLengthMeasure_List_204 .
+
+inst:IfcLengthMeasure_List_204
+        list:hasContents  inst:IfcLengthMeasure_192 .
+
+inst:IfcGeometricRepresentationContext_15
+        rdf:type  ifc:IfcGeometricRepresentationContext .
+
+inst:IfcLabel_205  rdf:type  ifc:IfcLabel ;
+        express:hasString  "Body" .
+
+inst:IfcGeometricRepresentationContext_15
+        ifc:contextIdentifier_IfcRepresentationContext  inst:IfcLabel_205 .
+
+inst:IfcLabel_206  rdf:type  ifc:IfcLabel ;
+        express:hasString  "Model" .
+
+inst:IfcGeometricRepresentationContext_15
+        ifc:contextType_IfcRepresentationContext  inst:IfcLabel_206 .
+
+inst:IfcDimensionCount_207
+        rdf:type            ifc:IfcDimensionCount ;
+        express:hasInteger  3 .
+
+inst:IfcGeometricRepresentationContext_15
+        ifc:coordinateSpaceDimension_IfcGeometricRepresentationContext  inst:IfcDimensionCount_207 .
+
+inst:IfcReal_208  rdf:type  ifc:IfcReal ;
+        express:hasDouble  "0.00001"^^xsd:double .
+
+inst:IfcGeometricRepresentationContext_15
+        ifc:precision_IfcGeometricRepresentationContext  inst:IfcReal_208 ;
+        ifc:worldCoordinateSystem_IfcGeometricRepresentationContext  inst:IfcAxis2Placement3D_11 .
+
+inst:IfcDirection_16  rdf:type  ifc:IfcDirection .
+
+inst:IfcGeometricRepresentationContext_15
+        ifc:trueNorth_IfcGeometricRepresentationContext  inst:IfcDirection_16 .
+
+inst:IfcReal_List_209
+        rdf:type  ifc:IfcReal_List .
+
+inst:IfcDirection_16  ifc:directionRatios_IfcDirection  inst:IfcReal_List_209 .
+
+inst:IfcReal_List_210
+        rdf:type  ifc:IfcReal_List .
+
+inst:IfcReal_List_209
+        list:hasContents  inst:IfcLengthMeasure_192 ;
+        list:hasNext      inst:IfcReal_List_210 .
+
+inst:IfcReal_List_210
+        list:hasContents  inst:IfcReal_196 .
+
+inst:IfcSIUnit_17  rdf:type        ifc:IfcSIUnit ;
+        ifc:unitType_IfcNamedUnit  ifc:LENGTHUNIT ;
+        ifc:name_IfcSIUnit         ifc:METRE .
+
+inst:IfcSIUnit_18  rdf:type        ifc:IfcSIUnit ;
+        ifc:unitType_IfcNamedUnit  ifc:AREAUNIT ;
+        ifc:name_IfcSIUnit         ifc:SQUARE_METRE .
+
+inst:IfcSIUnit_19  rdf:type        ifc:IfcSIUnit ;
+        ifc:unitType_IfcNamedUnit  ifc:VOLUMEUNIT ;
+        ifc:name_IfcSIUnit         ifc:CUBIC_METRE .
+
+inst:IfcBuilding_21  rdf:type  ifc:IfcBuilding .
+
+inst:IfcGloballyUniqueId_211
+        rdf:type           ifc:IfcGloballyUniqueId ;
+        express:hasString  "3qzoyCPy1CtfV237Rle9$t" .
+
+inst:IfcBuilding_21  ifc:globalId_IfcRoot  inst:IfcGloballyUniqueId_211 ;
+        ifc:ownerHistory_IfcRoot  inst:IfcOwnerHistory_6 .
+
+inst:IfcLabel_212  rdf:type  ifc:IfcLabel ;
+        express:hasString  "Grasshopper Building" .
+
+inst:IfcBuilding_21  ifc:name_IfcRoot  inst:IfcLabel_212 .
+
+inst:IfcText_213  rdf:type  ifc:IfcText ;
+        express:hasString  "GH Building" .
+
+inst:IfcBuilding_21  ifc:description_IfcRoot  inst:IfcText_213 .
+
+inst:IfcLocalPlacement_22
+        rdf:type  ifc:IfcLocalPlacement .
+
+inst:IfcBuilding_21  ifc:objectPlacement_IfcProduct  inst:IfcLocalPlacement_22 ;
+        ifc:compositionType_IfcSpatialStructureElement  ifc:ELEMENT .
+
+inst:IfcLocalPlacement_22
+        ifc:relativePlacement_IfcLocalPlacement  inst:IfcAxis2Placement3D_11 .
+
+inst:IfcRelContainedInSpatialStructure_23
+        rdf:type  ifc:IfcRelContainedInSpatialStructure .
+
+inst:IfcGloballyUniqueId_214
+        rdf:type           ifc:IfcGloballyUniqueId ;
+        express:hasString  "0LkkopPYL7VANMLhZDjkkq" .
+
+inst:IfcRelContainedInSpatialStructure_23
+        ifc:globalId_IfcRoot      inst:IfcGloballyUniqueId_214 ;
+        ifc:ownerHistory_IfcRoot  inst:IfcOwnerHistory_6 .
+
+inst:IfcLabel_215  rdf:type  ifc:IfcLabel ;
+        express:hasString  "Building" .
+
+inst:IfcRelContainedInSpatialStructure_23
+        ifc:name_IfcRoot  inst:IfcLabel_215 .
+
+inst:IfcText_216  rdf:type  ifc:IfcText ;
+        express:hasString  "Building Container for Elements" .
+
+inst:IfcRelContainedInSpatialStructure_23
+        ifc:description_IfcRoot  inst:IfcText_216 .
+
+inst:IfcBuildingElementProxy_181
+        rdf:type  ifc:IfcBuildingElementProxy .
+
+inst:IfcRelContainedInSpatialStructure_23
+        ifc:relatedElements_IfcRelContainedInSpatialStructure  inst:IfcBuildingElementProxy_181 ;
+        ifc:relatingStructure_IfcRelContainedInSpatialStructure  inst:IfcBuilding_21 .
+
+inst:IfcProject_25  rdf:type  ifc:IfcProject .
+
+inst:IfcGloballyUniqueId_217
+        rdf:type           ifc:IfcGloballyUniqueId ;
+        express:hasString  "2oT9YYbSrBUghtexcAcblU" .
+
+inst:IfcProject_25  ifc:globalId_IfcRoot  inst:IfcGloballyUniqueId_217 ;
+        ifc:ownerHistory_IfcRoot  inst:IfcOwnerHistory_6 .
+
+inst:IfcLabel_218  rdf:type  ifc:IfcLabel ;
+        express:hasString  "Grasshopper Project" .
+
+inst:IfcProject_25  ifc:name_IfcRoot  inst:IfcLabel_218 ;
+        ifc:longName_IfcContext  inst:IfcLabel_218 ;
+        ifc:representationContexts_IfcContext  inst:IfcGeometricRepresentationContext_15 .
+
+inst:IfcUnitAssignment_26
+        rdf:type  ifc:IfcUnitAssignment .
+
+inst:IfcProject_25  ifc:unitsInContext_IfcContext  inst:IfcUnitAssignment_26 .
+
+inst:IfcUnitAssignment_26
+        ifc:units_IfcUnitAssignment  inst:IfcSIUnit_17 ;
+        ifc:units_IfcUnitAssignment  inst:IfcSIUnit_18 ;
+        ifc:units_IfcUnitAssignment  inst:IfcSIUnit_19 .
+
+inst:IfcSIUnit_27  rdf:type  ifc:IfcSIUnit .
+
+inst:IfcUnitAssignment_26
+        ifc:units_IfcUnitAssignment  inst:IfcSIUnit_27 .
+
+inst:IfcSIUnit_27  ifc:unitType_IfcNamedUnit  ifc:PLANEANGLEUNIT ;
+        ifc:name_IfcSIUnit         ifc:RADIAN .
+
+inst:IfcRelAggregates_28
+        rdf:type  ifc:IfcRelAggregates .
+
+inst:IfcGloballyUniqueId_219
+        rdf:type           ifc:IfcGloballyUniqueId ;
+        express:hasString  "2C1MZiLqv228Cmw2sZ7QPO" .
+
+inst:IfcRelAggregates_28
+        ifc:globalId_IfcRoot      inst:IfcGloballyUniqueId_219 ;
+        ifc:ownerHistory_IfcRoot  inst:IfcOwnerHistory_6 .
+
+inst:IfcLabel_220  rdf:type  ifc:IfcLabel ;
+        express:hasString  "Project Container" .
+
+inst:IfcRelAggregates_28
+        ifc:name_IfcRoot  inst:IfcLabel_220 .
+
+inst:IfcText_221  rdf:type  ifc:IfcText ;
+        express:hasString  "Project Container for Buildings" .
+
+inst:IfcRelAggregates_28
+        ifc:description_IfcRoot  inst:IfcText_221 ;
+        ifc:relatingObject_IfcRelAggregates  inst:IfcProject_25 ;
+        ifc:relatedObjects_IfcRelAggregates  inst:IfcBuilding_21 .
+
+inst:IfcClosedShell_29
+        rdf:type  ifc:IfcClosedShell .
+
+inst:IfcAdvancedFace_104
+        rdf:type  ifc:IfcAdvancedFace .
+
+inst:IfcClosedShell_29
+        ifc:cfsFaces_IfcConnectedFaceSet  inst:IfcAdvancedFace_104 .
+
+inst:IfcAdvancedFace_115
+        rdf:type  ifc:IfcAdvancedFace .
+
+inst:IfcClosedShell_29
+        ifc:cfsFaces_IfcConnectedFaceSet  inst:IfcAdvancedFace_115 .
+
+inst:IfcAdvancedFace_131
+        rdf:type  ifc:IfcAdvancedFace .
+
+inst:IfcClosedShell_29
+        ifc:cfsFaces_IfcConnectedFaceSet  inst:IfcAdvancedFace_131 .
+
+inst:IfcAdvancedFace_147
+        rdf:type  ifc:IfcAdvancedFace .
+
+inst:IfcClosedShell_29
+        ifc:cfsFaces_IfcConnectedFaceSet  inst:IfcAdvancedFace_147 .
+
+inst:IfcAdvancedFace_163
+        rdf:type  ifc:IfcAdvancedFace .
+
+inst:IfcClosedShell_29
+        ifc:cfsFaces_IfcConnectedFaceSet  inst:IfcAdvancedFace_163 .
+
+inst:IfcAdvancedFace_179
+        rdf:type  ifc:IfcAdvancedFace .
+
+inst:IfcClosedShell_29
+        ifc:cfsFaces_IfcConnectedFaceSet  inst:IfcAdvancedFace_179 .
+
+inst:IfcVertexPoint_30
+        rdf:type  ifc:IfcVertexPoint .
+
+inst:IfcCartesianPoint_31
+        rdf:type  ifc:IfcCartesianPoint .
+
+inst:IfcVertexPoint_30
+        ifc:vertexGeometry_IfcVertexPoint  inst:IfcCartesianPoint_31 .
+
+inst:IfcLengthMeasure_List_222
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcCartesianPoint_31
+        ifc:coordinates_IfcCartesianPoint  inst:IfcLengthMeasure_List_222 .
+
+inst:IfcLengthMeasure_List_223
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_224
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_225
+        rdf:type           ifc:IfcLengthMeasure ;
+        express:hasDouble  "-0.5"^^xsd:double .
+
+inst:IfcLengthMeasure_List_222
+        list:hasContents  inst:IfcLengthMeasure_225 ;
+        list:hasNext      inst:IfcLengthMeasure_List_223 .
+
+inst:IfcLengthMeasure_List_223
+        list:hasContents  inst:IfcLengthMeasure_225 ;
+        list:hasNext      inst:IfcLengthMeasure_List_224 .
+
+inst:IfcLengthMeasure_List_224
+        list:hasContents  inst:IfcLengthMeasure_192 .
+
+inst:IfcVertexPoint_32
+        rdf:type  ifc:IfcVertexPoint .
+
+inst:IfcCartesianPoint_33
+        rdf:type  ifc:IfcCartesianPoint .
+
+inst:IfcVertexPoint_32
+        ifc:vertexGeometry_IfcVertexPoint  inst:IfcCartesianPoint_33 .
+
+inst:IfcLengthMeasure_List_226
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcCartesianPoint_33
+        ifc:coordinates_IfcCartesianPoint  inst:IfcLengthMeasure_List_226 .
+
+inst:IfcLengthMeasure_List_227
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_228
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_229
+        rdf:type           ifc:IfcLengthMeasure ;
+        express:hasDouble  "0.5"^^xsd:double .
+
+inst:IfcLengthMeasure_List_226
+        list:hasContents  inst:IfcLengthMeasure_229 ;
+        list:hasNext      inst:IfcLengthMeasure_List_227 .
+
+inst:IfcLengthMeasure_List_227
+        list:hasContents  inst:IfcLengthMeasure_225 ;
+        list:hasNext      inst:IfcLengthMeasure_List_228 .
+
+inst:IfcLengthMeasure_List_228
+        list:hasContents  inst:IfcLengthMeasure_192 .
+
+inst:IfcVertexPoint_34
+        rdf:type  ifc:IfcVertexPoint .
+
+inst:IfcCartesianPoint_35
+        rdf:type  ifc:IfcCartesianPoint .
+
+inst:IfcVertexPoint_34
+        ifc:vertexGeometry_IfcVertexPoint  inst:IfcCartesianPoint_35 .
+
+inst:IfcLengthMeasure_List_230
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcCartesianPoint_35
+        ifc:coordinates_IfcCartesianPoint  inst:IfcLengthMeasure_List_230 .
+
+inst:IfcLengthMeasure_List_231
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_232
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_230
+        list:hasContents  inst:IfcLengthMeasure_229 ;
+        list:hasNext      inst:IfcLengthMeasure_List_231 .
+
+inst:IfcLengthMeasure_List_231
+        list:hasContents  inst:IfcLengthMeasure_229 ;
+        list:hasNext      inst:IfcLengthMeasure_List_232 .
+
+inst:IfcLengthMeasure_List_232
+        list:hasContents  inst:IfcLengthMeasure_192 .
+
+inst:IfcVertexPoint_36
+        rdf:type  ifc:IfcVertexPoint .
+
+inst:IfcCartesianPoint_37
+        rdf:type  ifc:IfcCartesianPoint .
+
+inst:IfcVertexPoint_36
+        ifc:vertexGeometry_IfcVertexPoint  inst:IfcCartesianPoint_37 .
+
+inst:IfcLengthMeasure_List_233
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcCartesianPoint_37
+        ifc:coordinates_IfcCartesianPoint  inst:IfcLengthMeasure_List_233 .
+
+inst:IfcLengthMeasure_List_234
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_235
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_233
+        list:hasContents  inst:IfcLengthMeasure_225 ;
+        list:hasNext      inst:IfcLengthMeasure_List_234 .
+
+inst:IfcLengthMeasure_List_234
+        list:hasContents  inst:IfcLengthMeasure_229 ;
+        list:hasNext      inst:IfcLengthMeasure_List_235 .
+
+inst:IfcLengthMeasure_List_235
+        list:hasContents  inst:IfcLengthMeasure_192 .
+
+inst:IfcVertexPoint_38
+        rdf:type  ifc:IfcVertexPoint .
+
+inst:IfcCartesianPoint_39
+        rdf:type  ifc:IfcCartesianPoint .
+
+inst:IfcVertexPoint_38
+        ifc:vertexGeometry_IfcVertexPoint  inst:IfcCartesianPoint_39 .
+
+inst:IfcLengthMeasure_List_236
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcCartesianPoint_39
+        ifc:coordinates_IfcCartesianPoint  inst:IfcLengthMeasure_List_236 .
+
+inst:IfcLengthMeasure_List_237
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_238
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_239
+        rdf:type           ifc:IfcLengthMeasure ;
+        express:hasDouble  "-0.683012701892219"^^xsd:double .
+
+inst:IfcLengthMeasure_List_236
+        list:hasContents  inst:IfcLengthMeasure_239 ;
+        list:hasNext      inst:IfcLengthMeasure_List_237 .
+
+inst:IfcLengthMeasure_240
+        rdf:type           ifc:IfcLengthMeasure ;
+        express:hasDouble  "-0.183012701892219"^^xsd:double .
+
+inst:IfcLengthMeasure_List_237
+        list:hasContents  inst:IfcLengthMeasure_240 ;
+        list:hasNext      inst:IfcLengthMeasure_List_238 .
+
+inst:IfcLengthMeasure_List_238
+        list:hasContents  inst:IfcReal_196 .
+
+inst:IfcVertexPoint_40
+        rdf:type  ifc:IfcVertexPoint .
+
+inst:IfcCartesianPoint_41
+        rdf:type  ifc:IfcCartesianPoint .
+
+inst:IfcVertexPoint_40
+        ifc:vertexGeometry_IfcVertexPoint  inst:IfcCartesianPoint_41 .
+
+inst:IfcLengthMeasure_List_241
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcCartesianPoint_41
+        ifc:coordinates_IfcCartesianPoint  inst:IfcLengthMeasure_List_241 .
+
+inst:IfcLengthMeasure_List_242
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_243
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_241
+        list:hasContents  inst:IfcLengthMeasure_240 ;
+        list:hasNext      inst:IfcLengthMeasure_List_242 .
+
+inst:IfcLengthMeasure_244
+        rdf:type           ifc:IfcLengthMeasure ;
+        express:hasDouble  "0.683012701892219"^^xsd:double .
+
+inst:IfcLengthMeasure_List_242
+        list:hasContents  inst:IfcLengthMeasure_244 ;
+        list:hasNext      inst:IfcLengthMeasure_List_243 .
+
+inst:IfcLengthMeasure_List_243
+        list:hasContents  inst:IfcReal_196 .
+
+inst:IfcVertexPoint_42
+        rdf:type  ifc:IfcVertexPoint .
+
+inst:IfcCartesianPoint_43
+        rdf:type  ifc:IfcCartesianPoint .
+
+inst:IfcVertexPoint_42
+        ifc:vertexGeometry_IfcVertexPoint  inst:IfcCartesianPoint_43 .
+
+inst:IfcLengthMeasure_List_245
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcCartesianPoint_43
+        ifc:coordinates_IfcCartesianPoint  inst:IfcLengthMeasure_List_245 .
+
+inst:IfcLengthMeasure_List_246
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_247
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_245
+        list:hasContents  inst:IfcLengthMeasure_244 ;
+        list:hasNext      inst:IfcLengthMeasure_List_246 .
+
+inst:IfcLengthMeasure_248
+        rdf:type           ifc:IfcLengthMeasure ;
+        express:hasDouble  "0.183012701892219"^^xsd:double .
+
+inst:IfcLengthMeasure_List_246
+        list:hasContents  inst:IfcLengthMeasure_248 ;
+        list:hasNext      inst:IfcLengthMeasure_List_247 .
+
+inst:IfcLengthMeasure_List_247
+        list:hasContents  inst:IfcReal_196 .
+
+inst:IfcVertexPoint_44
+        rdf:type  ifc:IfcVertexPoint .
+
+inst:IfcCartesianPoint_45
+        rdf:type  ifc:IfcCartesianPoint .
+
+inst:IfcVertexPoint_44
+        ifc:vertexGeometry_IfcVertexPoint  inst:IfcCartesianPoint_45 .
+
+inst:IfcLengthMeasure_List_249
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcCartesianPoint_45
+        ifc:coordinates_IfcCartesianPoint  inst:IfcLengthMeasure_List_249 .
+
+inst:IfcLengthMeasure_List_250
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_251
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_249
+        list:hasContents  inst:IfcLengthMeasure_248 ;
+        list:hasNext      inst:IfcLengthMeasure_List_250 .
+
+inst:IfcLengthMeasure_List_250
+        list:hasContents  inst:IfcLengthMeasure_239 ;
+        list:hasNext      inst:IfcLengthMeasure_List_251 .
+
+inst:IfcLengthMeasure_List_251
+        list:hasContents  inst:IfcReal_196 .
+
+inst:IfcCartesianPoint_46
+        rdf:type  ifc:IfcCartesianPoint .
+
+inst:IfcLengthMeasure_List_252
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcCartesianPoint_46
+        ifc:coordinates_IfcCartesianPoint  inst:IfcLengthMeasure_List_252 .
+
+inst:IfcLengthMeasure_List_253
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_252
+        list:hasContents  inst:IfcLengthMeasure_225 ;
+        list:hasNext      inst:IfcLengthMeasure_List_253 .
+
+inst:IfcLengthMeasure_List_253
+        list:hasContents  inst:IfcLengthMeasure_229 .
+
+inst:IfcCartesianPoint_47
+        rdf:type  ifc:IfcCartesianPoint .
+
+inst:IfcLengthMeasure_List_254
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcCartesianPoint_47
+        ifc:coordinates_IfcCartesianPoint  inst:IfcLengthMeasure_List_254 .
+
+inst:IfcLengthMeasure_List_255
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_254
+        list:hasContents  inst:IfcLengthMeasure_225 ;
+        list:hasNext      inst:IfcLengthMeasure_List_255 .
+
+inst:IfcLengthMeasure_List_255
+        list:hasContents  inst:IfcLengthMeasure_225 .
+
+inst:IfcPolyline_48  rdf:type  ifc:IfcPolyline .
+
+inst:IfcCartesianPoint_List_256
+        rdf:type  ifc:IfcCartesianPoint_List .
+
+inst:IfcPolyline_48  ifc:points_IfcPolyline  inst:IfcCartesianPoint_List_256 .
+
+inst:IfcCartesianPoint_List_257
+        rdf:type  ifc:IfcCartesianPoint_List .
+
+inst:IfcCartesianPoint_List_256
+        list:hasContents  inst:IfcCartesianPoint_47 ;
+        list:hasNext      inst:IfcCartesianPoint_List_257 .
+
+inst:IfcCartesianPoint_List_257
+        list:hasContents  inst:IfcCartesianPoint_46 .
+
+inst:IfcEdgeCurve_49  rdf:type         ifc:IfcEdgeCurve ;
+        ifc:edgeStart_IfcEdge          inst:IfcVertexPoint_30 ;
+        ifc:edgeEnd_IfcEdge            inst:IfcVertexPoint_36 ;
+        ifc:edgeGeometry_IfcEdgeCurve  inst:IfcPolyline_48 .
+
+inst:IfcBoolean_258  rdf:type  ifc:IfcBoolean ;
+        express:hasBoolean  true .
+
+inst:IfcEdgeCurve_49  ifc:sameSense_IfcEdgeCurve  inst:IfcBoolean_258 .
+
+inst:IfcCartesianPoint_51
+        rdf:type  ifc:IfcCartesianPoint .
+
+inst:IfcLengthMeasure_List_259
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcCartesianPoint_51
+        ifc:coordinates_IfcCartesianPoint  inst:IfcLengthMeasure_List_259 .
+
+inst:IfcLengthMeasure_List_260
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_259
+        list:hasContents  inst:IfcLengthMeasure_229 ;
+        list:hasNext      inst:IfcLengthMeasure_List_260 .
+
+inst:IfcLengthMeasure_List_260
+        list:hasContents  inst:IfcLengthMeasure_225 .
+
+inst:IfcPolyline_52  rdf:type  ifc:IfcPolyline .
+
+inst:IfcCartesianPoint_List_261
+        rdf:type  ifc:IfcCartesianPoint_List .
+
+inst:IfcPolyline_52  ifc:points_IfcPolyline  inst:IfcCartesianPoint_List_261 .
+
+inst:IfcCartesianPoint_List_262
+        rdf:type  ifc:IfcCartesianPoint_List .
+
+inst:IfcCartesianPoint_List_261
+        list:hasContents  inst:IfcCartesianPoint_51 ;
+        list:hasNext      inst:IfcCartesianPoint_List_262 .
+
+inst:IfcCartesianPoint_List_262
+        list:hasContents  inst:IfcCartesianPoint_47 .
+
+inst:IfcEdgeCurve_53  rdf:type         ifc:IfcEdgeCurve ;
+        ifc:edgeStart_IfcEdge          inst:IfcVertexPoint_32 ;
+        ifc:edgeEnd_IfcEdge            inst:IfcVertexPoint_30 ;
+        ifc:edgeGeometry_IfcEdgeCurve  inst:IfcPolyline_52 ;
+        ifc:sameSense_IfcEdgeCurve     inst:IfcBoolean_258 .
+
+inst:IfcCartesianPoint_55
+        rdf:type  ifc:IfcCartesianPoint .
+
+inst:IfcLengthMeasure_List_263
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcCartesianPoint_55
+        ifc:coordinates_IfcCartesianPoint  inst:IfcLengthMeasure_List_263 .
+
+inst:IfcLengthMeasure_List_264
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_263
+        list:hasContents  inst:IfcLengthMeasure_229 ;
+        list:hasNext      inst:IfcLengthMeasure_List_264 .
+
+inst:IfcLengthMeasure_List_264
+        list:hasContents  inst:IfcLengthMeasure_229 .
+
+inst:IfcPolyline_56  rdf:type  ifc:IfcPolyline .
+
+inst:IfcCartesianPoint_List_265
+        rdf:type  ifc:IfcCartesianPoint_List .
+
+inst:IfcPolyline_56  ifc:points_IfcPolyline  inst:IfcCartesianPoint_List_265 .
+
+inst:IfcCartesianPoint_List_266
+        rdf:type  ifc:IfcCartesianPoint_List .
+
+inst:IfcCartesianPoint_List_265
+        list:hasContents  inst:IfcCartesianPoint_55 ;
+        list:hasNext      inst:IfcCartesianPoint_List_266 .
+
+inst:IfcCartesianPoint_List_266
+        list:hasContents  inst:IfcCartesianPoint_51 .
+
+inst:IfcEdgeCurve_57  rdf:type         ifc:IfcEdgeCurve ;
+        ifc:edgeStart_IfcEdge          inst:IfcVertexPoint_34 ;
+        ifc:edgeEnd_IfcEdge            inst:IfcVertexPoint_32 ;
+        ifc:edgeGeometry_IfcEdgeCurve  inst:IfcPolyline_56 ;
+        ifc:sameSense_IfcEdgeCurve     inst:IfcBoolean_258 .
+
+inst:IfcPolyline_60  rdf:type  ifc:IfcPolyline .
+
+inst:IfcCartesianPoint_List_267
+        rdf:type  ifc:IfcCartesianPoint_List .
+
+inst:IfcPolyline_60  ifc:points_IfcPolyline  inst:IfcCartesianPoint_List_267 .
+
+inst:IfcCartesianPoint_List_268
+        rdf:type  ifc:IfcCartesianPoint_List .
+
+inst:IfcCartesianPoint_List_267
+        list:hasContents  inst:IfcCartesianPoint_46 ;
+        list:hasNext      inst:IfcCartesianPoint_List_268 .
+
+inst:IfcCartesianPoint_List_268
+        list:hasContents  inst:IfcCartesianPoint_55 .
+
+inst:IfcEdgeCurve_61  rdf:type         ifc:IfcEdgeCurve ;
+        ifc:edgeStart_IfcEdge          inst:IfcVertexPoint_36 ;
+        ifc:edgeEnd_IfcEdge            inst:IfcVertexPoint_34 ;
+        ifc:edgeGeometry_IfcEdgeCurve  inst:IfcPolyline_60 ;
+        ifc:sameSense_IfcEdgeCurve     inst:IfcBoolean_258 .
+
+inst:IfcPolyline_64  rdf:type  ifc:IfcPolyline .
+
+inst:IfcCartesianPoint_List_269
+        rdf:type  ifc:IfcCartesianPoint_List .
+
+inst:IfcPolyline_64  ifc:points_IfcPolyline  inst:IfcCartesianPoint_List_269 .
+
+inst:IfcCartesianPoint_List_270
+        rdf:type  ifc:IfcCartesianPoint_List .
+
+inst:IfcCartesianPoint_List_269
+        list:hasContents  inst:IfcCartesianPoint_39 ;
+        list:hasNext      inst:IfcCartesianPoint_List_270 .
+
+inst:IfcCartesianPoint_List_270
+        list:hasContents  inst:IfcCartesianPoint_45 .
+
+inst:IfcEdgeCurve_65  rdf:type         ifc:IfcEdgeCurve ;
+        ifc:edgeStart_IfcEdge          inst:IfcVertexPoint_38 ;
+        ifc:edgeEnd_IfcEdge            inst:IfcVertexPoint_44 ;
+        ifc:edgeGeometry_IfcEdgeCurve  inst:IfcPolyline_64 ;
+        ifc:sameSense_IfcEdgeCurve     inst:IfcBoolean_258 .
+
+inst:IfcPolyline_68  rdf:type  ifc:IfcPolyline .
+
+inst:IfcCartesianPoint_List_271
+        rdf:type  ifc:IfcCartesianPoint_List .
+
+inst:IfcPolyline_68  ifc:points_IfcPolyline  inst:IfcCartesianPoint_List_271 .
+
+inst:IfcCartesianPoint_List_272
+        rdf:type  ifc:IfcCartesianPoint_List .
+
+inst:IfcCartesianPoint_List_271
+        list:hasContents  inst:IfcCartesianPoint_41 ;
+        list:hasNext      inst:IfcCartesianPoint_List_272 .
+
+inst:IfcCartesianPoint_List_272
+        list:hasContents  inst:IfcCartesianPoint_39 .
+
+inst:IfcEdgeCurve_69  rdf:type         ifc:IfcEdgeCurve ;
+        ifc:edgeStart_IfcEdge          inst:IfcVertexPoint_40 ;
+        ifc:edgeEnd_IfcEdge            inst:IfcVertexPoint_38 ;
+        ifc:edgeGeometry_IfcEdgeCurve  inst:IfcPolyline_68 ;
+        ifc:sameSense_IfcEdgeCurve     inst:IfcBoolean_258 .
+
+inst:IfcPolyline_72  rdf:type  ifc:IfcPolyline .
+
+inst:IfcCartesianPoint_List_273
+        rdf:type  ifc:IfcCartesianPoint_List .
+
+inst:IfcPolyline_72  ifc:points_IfcPolyline  inst:IfcCartesianPoint_List_273 .
+
+inst:IfcCartesianPoint_List_274
+        rdf:type  ifc:IfcCartesianPoint_List .
+
+inst:IfcCartesianPoint_List_273
+        list:hasContents  inst:IfcCartesianPoint_43 ;
+        list:hasNext      inst:IfcCartesianPoint_List_274 .
+
+inst:IfcCartesianPoint_List_274
+        list:hasContents  inst:IfcCartesianPoint_41 .
+
+inst:IfcEdgeCurve_73  rdf:type         ifc:IfcEdgeCurve ;
+        ifc:edgeStart_IfcEdge          inst:IfcVertexPoint_42 ;
+        ifc:edgeEnd_IfcEdge            inst:IfcVertexPoint_40 ;
+        ifc:edgeGeometry_IfcEdgeCurve  inst:IfcPolyline_72 ;
+        ifc:sameSense_IfcEdgeCurve     inst:IfcBoolean_258 .
+
+inst:IfcPolyline_76  rdf:type  ifc:IfcPolyline .
+
+inst:IfcCartesianPoint_List_275
+        rdf:type  ifc:IfcCartesianPoint_List .
+
+inst:IfcPolyline_76  ifc:points_IfcPolyline  inst:IfcCartesianPoint_List_275 .
+
+inst:IfcCartesianPoint_List_276
+        rdf:type  ifc:IfcCartesianPoint_List .
+
+inst:IfcCartesianPoint_List_275
+        list:hasContents  inst:IfcCartesianPoint_45 ;
+        list:hasNext      inst:IfcCartesianPoint_List_276 .
+
+inst:IfcCartesianPoint_List_276
+        list:hasContents  inst:IfcCartesianPoint_43 .
+
+inst:IfcEdgeCurve_77  rdf:type         ifc:IfcEdgeCurve ;
+        ifc:edgeStart_IfcEdge          inst:IfcVertexPoint_44 ;
+        ifc:edgeEnd_IfcEdge            inst:IfcVertexPoint_42 ;
+        ifc:edgeGeometry_IfcEdgeCurve  inst:IfcPolyline_76 ;
+        ifc:sameSense_IfcEdgeCurve     inst:IfcBoolean_258 .
+
+inst:IfcPolyline_80  rdf:type  ifc:IfcPolyline .
+
+inst:IfcCartesianPoint_List_277
+        rdf:type  ifc:IfcCartesianPoint_List .
+
+inst:IfcPolyline_80  ifc:points_IfcPolyline  inst:IfcCartesianPoint_List_277 .
+
+inst:IfcCartesianPoint_List_278
+        rdf:type  ifc:IfcCartesianPoint_List .
+
+inst:IfcCartesianPoint_List_277
+        list:hasContents  inst:IfcCartesianPoint_31 ;
+        list:hasNext      inst:IfcCartesianPoint_List_278 .
+
+inst:IfcCartesianPoint_List_278
+        list:hasContents  inst:IfcCartesianPoint_45 .
+
+inst:IfcEdgeCurve_81  rdf:type         ifc:IfcEdgeCurve ;
+        ifc:edgeStart_IfcEdge          inst:IfcVertexPoint_30 ;
+        ifc:edgeEnd_IfcEdge            inst:IfcVertexPoint_44 ;
+        ifc:edgeGeometry_IfcEdgeCurve  inst:IfcPolyline_80 ;
+        ifc:sameSense_IfcEdgeCurve     inst:IfcBoolean_258 .
+
+inst:IfcPolyline_84  rdf:type  ifc:IfcPolyline .
+
+inst:IfcCartesianPoint_List_279
+        rdf:type  ifc:IfcCartesianPoint_List .
+
+inst:IfcPolyline_84  ifc:points_IfcPolyline  inst:IfcCartesianPoint_List_279 .
+
+inst:IfcCartesianPoint_List_280
+        rdf:type  ifc:IfcCartesianPoint_List .
+
+inst:IfcCartesianPoint_List_279
+        list:hasContents  inst:IfcCartesianPoint_33 ;
+        list:hasNext      inst:IfcCartesianPoint_List_280 .
+
+inst:IfcCartesianPoint_List_280
+        list:hasContents  inst:IfcCartesianPoint_43 .
+
+inst:IfcEdgeCurve_85  rdf:type         ifc:IfcEdgeCurve ;
+        ifc:edgeStart_IfcEdge          inst:IfcVertexPoint_32 ;
+        ifc:edgeEnd_IfcEdge            inst:IfcVertexPoint_42 ;
+        ifc:edgeGeometry_IfcEdgeCurve  inst:IfcPolyline_84 ;
+        ifc:sameSense_IfcEdgeCurve     inst:IfcBoolean_258 .
+
+inst:IfcPolyline_88  rdf:type  ifc:IfcPolyline .
+
+inst:IfcCartesianPoint_List_281
+        rdf:type  ifc:IfcCartesianPoint_List .
+
+inst:IfcPolyline_88  ifc:points_IfcPolyline  inst:IfcCartesianPoint_List_281 .
+
+inst:IfcCartesianPoint_List_282
+        rdf:type  ifc:IfcCartesianPoint_List .
+
+inst:IfcCartesianPoint_List_281
+        list:hasContents  inst:IfcCartesianPoint_35 ;
+        list:hasNext      inst:IfcCartesianPoint_List_282 .
+
+inst:IfcCartesianPoint_List_282
+        list:hasContents  inst:IfcCartesianPoint_41 .
+
+inst:IfcEdgeCurve_89  rdf:type         ifc:IfcEdgeCurve ;
+        ifc:edgeStart_IfcEdge          inst:IfcVertexPoint_34 ;
+        ifc:edgeEnd_IfcEdge            inst:IfcVertexPoint_40 ;
+        ifc:edgeGeometry_IfcEdgeCurve  inst:IfcPolyline_88 ;
+        ifc:sameSense_IfcEdgeCurve     inst:IfcBoolean_258 .
+
+inst:IfcPolyline_92  rdf:type  ifc:IfcPolyline .
+
+inst:IfcCartesianPoint_List_283
+        rdf:type  ifc:IfcCartesianPoint_List .
+
+inst:IfcPolyline_92  ifc:points_IfcPolyline  inst:IfcCartesianPoint_List_283 .
+
+inst:IfcCartesianPoint_List_284
+        rdf:type  ifc:IfcCartesianPoint_List .
+
+inst:IfcCartesianPoint_List_283
+        list:hasContents  inst:IfcCartesianPoint_37 ;
+        list:hasNext      inst:IfcCartesianPoint_List_284 .
+
+inst:IfcCartesianPoint_List_284
+        list:hasContents  inst:IfcCartesianPoint_39 .
+
+inst:IfcEdgeCurve_93  rdf:type         ifc:IfcEdgeCurve ;
+        ifc:edgeStart_IfcEdge          inst:IfcVertexPoint_36 ;
+        ifc:edgeEnd_IfcEdge            inst:IfcVertexPoint_38 ;
+        ifc:edgeGeometry_IfcEdgeCurve  inst:IfcPolyline_92 ;
+        ifc:sameSense_IfcEdgeCurve     inst:IfcBoolean_258 .
+
+inst:IfcOrientedEdge_94
+        rdf:type  ifc:IfcOrientedEdge ;
+        ifc:edgeElement_IfcOrientedEdge  inst:IfcEdgeCurve_49 ;
+        ifc:orientation_IfcOrientedEdge  inst:IfcBoolean_258 .
+
+inst:IfcOrientedEdge_95
+        rdf:type  ifc:IfcOrientedEdge ;
+        ifc:edgeElement_IfcOrientedEdge  inst:IfcEdgeCurve_61 ;
+        ifc:orientation_IfcOrientedEdge  inst:IfcBoolean_258 .
+
+inst:IfcOrientedEdge_96
+        rdf:type  ifc:IfcOrientedEdge ;
+        ifc:edgeElement_IfcOrientedEdge  inst:IfcEdgeCurve_57 ;
+        ifc:orientation_IfcOrientedEdge  inst:IfcBoolean_258 .
+
+inst:IfcOrientedEdge_97
+        rdf:type  ifc:IfcOrientedEdge ;
+        ifc:edgeElement_IfcOrientedEdge  inst:IfcEdgeCurve_53 ;
+        ifc:orientation_IfcOrientedEdge  inst:IfcBoolean_258 .
+
+inst:IfcEdgeLoop_98  rdf:type  ifc:IfcEdgeLoop .
+
+inst:IfcOrientedEdge_List_285
+        rdf:type  ifc:IfcOrientedEdge_List .
+
+inst:IfcEdgeLoop_98  ifc:edgeList_IfcEdgeLoop  inst:IfcOrientedEdge_List_285 .
+
+inst:IfcOrientedEdge_List_286
+        rdf:type  ifc:IfcOrientedEdge_List .
+
+inst:IfcOrientedEdge_List_287
+        rdf:type  ifc:IfcOrientedEdge_List .
+
+inst:IfcOrientedEdge_List_288
+        rdf:type  ifc:IfcOrientedEdge_List .
+
+inst:IfcOrientedEdge_List_285
+        list:hasContents  inst:IfcOrientedEdge_94 ;
+        list:hasNext      inst:IfcOrientedEdge_List_286 .
+
+inst:IfcOrientedEdge_List_286
+        list:hasContents  inst:IfcOrientedEdge_95 ;
+        list:hasNext      inst:IfcOrientedEdge_List_287 .
+
+inst:IfcOrientedEdge_List_287
+        list:hasContents  inst:IfcOrientedEdge_96 ;
+        list:hasNext      inst:IfcOrientedEdge_List_288 .
+
+inst:IfcOrientedEdge_List_288
+        list:hasContents  inst:IfcOrientedEdge_97 .
+
+inst:IfcFaceOuterBound_99
+        rdf:type                      ifc:IfcFaceOuterBound ;
+        ifc:bound_IfcFaceBound        inst:IfcEdgeLoop_98 ;
+        ifc:orientation_IfcFaceBound  inst:IfcBoolean_258 .
+
+inst:IfcPlane_100  rdf:type  ifc:IfcPlane .
+
+inst:IfcAxis2Placement3D_101
+        rdf:type  ifc:IfcAxis2Placement3D .
+
+inst:IfcPlane_100  ifc:position_IfcElementarySurface  inst:IfcAxis2Placement3D_101 .
+
+inst:IfcAxis2Placement3D_101
+        ifc:location_IfcPlacement  inst:IfcCartesianPoint_31 .
+
+inst:IfcDirection_103
+        rdf:type  ifc:IfcDirection .
+
+inst:IfcAxis2Placement3D_101
+        ifc:axis_IfcAxis2Placement3D  inst:IfcDirection_103 ;
+        ifc:refDirection_IfcAxis2Placement3D  inst:IfcDirection_8 .
+
+inst:IfcReal_List_289
+        rdf:type  ifc:IfcReal_List .
+
+inst:IfcDirection_103
+        ifc:directionRatios_IfcDirection  inst:IfcReal_List_289 .
+
+inst:IfcReal_List_290
+        rdf:type  ifc:IfcReal_List .
+
+inst:IfcReal_List_291
+        rdf:type  ifc:IfcReal_List .
+
+inst:IfcReal_List_289
+        list:hasContents  inst:IfcLengthMeasure_192 ;
+        list:hasNext      inst:IfcReal_List_290 .
+
+inst:IfcReal_List_290
+        list:hasContents  inst:IfcLengthMeasure_192 ;
+        list:hasNext      inst:IfcReal_List_291 .
+
+inst:IfcReal_292  rdf:type  ifc:IfcReal ;
+        express:hasDouble  "-1.0"^^xsd:double .
+
+inst:IfcReal_List_291
+        list:hasContents  inst:IfcReal_292 .
+
+inst:IfcAdvancedFace_104
+        ifc:bounds_IfcFace              inst:IfcFaceOuterBound_99 ;
+        ifc:faceSurface_IfcFaceSurface  inst:IfcPlane_100 ;
+        ifc:sameSense_IfcFaceSurface    inst:IfcBoolean_258 .
+
+inst:IfcOrientedEdge_105
+        rdf:type  ifc:IfcOrientedEdge ;
+        ifc:edgeElement_IfcOrientedEdge  inst:IfcEdgeCurve_65 ;
+        ifc:orientation_IfcOrientedEdge  inst:IfcBoolean_258 .
+
+inst:IfcOrientedEdge_106
+        rdf:type  ifc:IfcOrientedEdge ;
+        ifc:edgeElement_IfcOrientedEdge  inst:IfcEdgeCurve_77 ;
+        ifc:orientation_IfcOrientedEdge  inst:IfcBoolean_258 .
+
+inst:IfcOrientedEdge_107
+        rdf:type  ifc:IfcOrientedEdge ;
+        ifc:edgeElement_IfcOrientedEdge  inst:IfcEdgeCurve_73 ;
+        ifc:orientation_IfcOrientedEdge  inst:IfcBoolean_258 .
+
+inst:IfcOrientedEdge_108
+        rdf:type  ifc:IfcOrientedEdge ;
+        ifc:edgeElement_IfcOrientedEdge  inst:IfcEdgeCurve_69 ;
+        ifc:orientation_IfcOrientedEdge  inst:IfcBoolean_258 .
+
+inst:IfcEdgeLoop_109  rdf:type  ifc:IfcEdgeLoop .
+
+inst:IfcOrientedEdge_List_293
+        rdf:type  ifc:IfcOrientedEdge_List .
+
+inst:IfcEdgeLoop_109  ifc:edgeList_IfcEdgeLoop  inst:IfcOrientedEdge_List_293 .
+
+inst:IfcOrientedEdge_List_294
+        rdf:type  ifc:IfcOrientedEdge_List .
+
+inst:IfcOrientedEdge_List_295
+        rdf:type  ifc:IfcOrientedEdge_List .
+
+inst:IfcOrientedEdge_List_296
+        rdf:type  ifc:IfcOrientedEdge_List .
+
+inst:IfcOrientedEdge_List_293
+        list:hasContents  inst:IfcOrientedEdge_105 ;
+        list:hasNext      inst:IfcOrientedEdge_List_294 .
+
+inst:IfcOrientedEdge_List_294
+        list:hasContents  inst:IfcOrientedEdge_106 ;
+        list:hasNext      inst:IfcOrientedEdge_List_295 .
+
+inst:IfcOrientedEdge_List_295
+        list:hasContents  inst:IfcOrientedEdge_107 ;
+        list:hasNext      inst:IfcOrientedEdge_List_296 .
+
+inst:IfcOrientedEdge_List_296
+        list:hasContents  inst:IfcOrientedEdge_108 .
+
+inst:IfcFaceOuterBound_110
+        rdf:type                      ifc:IfcFaceOuterBound ;
+        ifc:bound_IfcFaceBound        inst:IfcEdgeLoop_109 ;
+        ifc:orientation_IfcFaceBound  inst:IfcBoolean_258 .
+
+inst:IfcPlane_111  rdf:type  ifc:IfcPlane .
+
+inst:IfcAxis2Placement3D_112
+        rdf:type  ifc:IfcAxis2Placement3D .
+
+inst:IfcPlane_111  ifc:position_IfcElementarySurface  inst:IfcAxis2Placement3D_112 .
+
+inst:IfcAxis2Placement3D_112
+        ifc:location_IfcPlacement     inst:IfcCartesianPoint_39 ;
+        ifc:axis_IfcAxis2Placement3D  inst:IfcDirection_10 .
+
+inst:IfcDirection_114
+        rdf:type  ifc:IfcDirection .
+
+inst:IfcAxis2Placement3D_112
+        ifc:refDirection_IfcAxis2Placement3D  inst:IfcDirection_114 .
+
+inst:IfcReal_List_297
+        rdf:type  ifc:IfcReal_List .
+
+inst:IfcDirection_114
+        ifc:directionRatios_IfcDirection  inst:IfcReal_List_297 .
+
+inst:IfcReal_List_298
+        rdf:type  ifc:IfcReal_List .
+
+inst:IfcReal_List_299
+        rdf:type  ifc:IfcReal_List .
+
+inst:IfcReal_List_297
+        list:hasContents  inst:IfcLengthMeasure_225 ;
+        list:hasNext      inst:IfcReal_List_298 .
+
+inst:IfcReal_300  rdf:type  ifc:IfcReal ;
+        express:hasDouble  "-0.8660254"^^xsd:double .
+
+inst:IfcReal_List_298
+        list:hasContents  inst:IfcReal_300 ;
+        list:hasNext      inst:IfcReal_List_299 .
+
+inst:IfcReal_List_299
+        list:hasContents  inst:IfcLengthMeasure_192 .
+
+inst:IfcAdvancedFace_115
+        ifc:bounds_IfcFace              inst:IfcFaceOuterBound_110 ;
+        ifc:faceSurface_IfcFaceSurface  inst:IfcPlane_111 ;
+        ifc:sameSense_IfcFaceSurface    inst:IfcBoolean_258 .
+
+inst:IfcOrientedEdge_116
+        rdf:type  ifc:IfcOrientedEdge ;
+        ifc:edgeElement_IfcOrientedEdge  inst:IfcEdgeCurve_93 ;
+        ifc:orientation_IfcOrientedEdge  inst:IfcBoolean_258 .
+
+inst:IfcOrientedEdge_118
+        rdf:type  ifc:IfcOrientedEdge ;
+        ifc:edgeElement_IfcOrientedEdge  inst:IfcEdgeCurve_81 .
+
+inst:IfcBoolean_301  rdf:type  ifc:IfcBoolean ;
+        express:hasBoolean  false .
+
+inst:IfcOrientedEdge_118
+        ifc:orientation_IfcOrientedEdge  inst:IfcBoolean_301 .
+
+inst:IfcEdgeLoop_120  rdf:type  ifc:IfcEdgeLoop .
+
+inst:IfcOrientedEdge_List_302
+        rdf:type  ifc:IfcOrientedEdge_List .
+
+inst:IfcEdgeLoop_120  ifc:edgeList_IfcEdgeLoop  inst:IfcOrientedEdge_List_302 .
+
+inst:IfcOrientedEdge_List_303
+        rdf:type  ifc:IfcOrientedEdge_List .
+
+inst:IfcOrientedEdge_List_304
+        rdf:type  ifc:IfcOrientedEdge_List .
+
+inst:IfcOrientedEdge_List_305
+        rdf:type  ifc:IfcOrientedEdge_List .
+
+inst:IfcOrientedEdge_List_302
+        list:hasContents  inst:IfcOrientedEdge_116 ;
+        list:hasNext      inst:IfcOrientedEdge_List_303 .
+
+inst:IfcOrientedEdge_List_303
+        list:hasContents  inst:IfcOrientedEdge_105 ;
+        list:hasNext      inst:IfcOrientedEdge_List_304 .
+
+inst:IfcOrientedEdge_List_304
+        list:hasContents  inst:IfcOrientedEdge_118 ;
+        list:hasNext      inst:IfcOrientedEdge_List_305 .
+
+inst:IfcOrientedEdge_List_305
+        list:hasContents  inst:IfcOrientedEdge_94 .
+
+inst:IfcFaceOuterBound_121
+        rdf:type                      ifc:IfcFaceOuterBound ;
+        ifc:bound_IfcFaceBound        inst:IfcEdgeLoop_120 ;
+        ifc:orientation_IfcFaceBound  inst:IfcBoolean_258 .
+
+inst:IfcBSplineSurfaceWithKnots_122
+        rdf:type                       ifc:IfcBSplineSurfaceWithKnots ;
+        ifc:uDegree_IfcBSplineSurface  inst:IfcDimensionCount_207 .
+
+inst:IfcInteger_306  rdf:type  ifc:IfcInteger ;
+        express:hasInteger  1 .
+
+inst:IfcBSplineSurfaceWithKnots_122
+        ifc:vDegree_IfcBSplineSurface  inst:IfcInteger_306 .
+
+inst:IfcCartesianPoint_List_307
+        rdf:type  ifc:IfcCartesianPoint_List .
+
+inst:IfcCartesianPoint_List_308
+        rdf:type  ifc:IfcCartesianPoint_List .
+
+inst:IfcCartesianPoint_List_307
+        list:hasContents  inst:IfcCartesianPoint_37 ;
+        list:hasNext      inst:IfcCartesianPoint_List_308 .
+
+inst:IfcCartesianPoint_List_308
+        list:hasContents  inst:IfcCartesianPoint_31 .
+
+inst:IfcCartesianPoint_List_311
+        rdf:type  ifc:IfcCartesianPoint_List .
+
+inst:IfcCartesianPoint_List_312
+        rdf:type  ifc:IfcCartesianPoint_List .
+
+inst:IfcCartesianPoint_125
+        rdf:type  ifc:IfcCartesianPoint .
+
+inst:IfcCartesianPoint_List_311
+        list:hasContents  inst:IfcCartesianPoint_125 ;
+        list:hasNext      inst:IfcCartesianPoint_List_312 .
+
+inst:IfcCartesianPoint_126
+        rdf:type  ifc:IfcCartesianPoint .
+
+inst:IfcCartesianPoint_List_312
+        list:hasContents  inst:IfcCartesianPoint_126 .
+
+inst:IfcCartesianPoint_List_315
+        rdf:type  ifc:IfcCartesianPoint_List .
+
+inst:IfcCartesianPoint_List_316
+        rdf:type  ifc:IfcCartesianPoint_List .
+
+inst:IfcCartesianPoint_127
+        rdf:type  ifc:IfcCartesianPoint .
+
+inst:IfcCartesianPoint_List_315
+        list:hasContents  inst:IfcCartesianPoint_127 ;
+        list:hasNext      inst:IfcCartesianPoint_List_316 .
+
+inst:IfcCartesianPoint_128
+        rdf:type  ifc:IfcCartesianPoint .
+
+inst:IfcCartesianPoint_List_316
+        list:hasContents  inst:IfcCartesianPoint_128 .
+
+inst:IfcCartesianPoint_List_319
+        rdf:type  ifc:IfcCartesianPoint_List .
+
+inst:IfcCartesianPoint_List_320
+        rdf:type  ifc:IfcCartesianPoint_List .
+
+inst:IfcCartesianPoint_List_319
+        list:hasContents  inst:IfcCartesianPoint_39 ;
+        list:hasNext      inst:IfcCartesianPoint_List_320 .
+
+inst:IfcCartesianPoint_List_320
+        list:hasContents  inst:IfcCartesianPoint_45 .
+
+inst:IfcCartesianPoint_List_List_323
+        rdf:type  ifc:IfcCartesianPoint_List_List .
+
+inst:IfcBSplineSurfaceWithKnots_122
+        ifc:controlPointsList_IfcBSplineSurface  inst:IfcCartesianPoint_List_List_323 .
+
+inst:IfcCartesianPoint_List_List_323
+        list:hasContents  inst:IfcCartesianPoint_List_307 ;
+        list:hasNext      inst:IfcCartesianPoint_List_List_324 .
+
+inst:IfcCartesianPoint_List_List_324
+        rdf:type          ifc:IfcCartesianPoint_List_List ;
+        list:hasContents  inst:IfcCartesianPoint_List_311 ;
+        list:hasNext      inst:IfcCartesianPoint_List_List_325 .
+
+inst:IfcCartesianPoint_List_List_325
+        rdf:type          ifc:IfcCartesianPoint_List_List ;
+        list:hasContents  inst:IfcCartesianPoint_List_315 ;
+        list:hasNext      inst:IfcCartesianPoint_List_List_326 .
+
+inst:IfcCartesianPoint_List_List_326
+        rdf:type          ifc:IfcCartesianPoint_List_List ;
+        list:hasContents  inst:IfcCartesianPoint_List_319 .
+
+inst:IfcBSplineSurfaceWithKnots_122
+        ifc:surfaceForm_IfcBSplineSurface  ifc:UNSPECIFIED .
+
+inst:IfcLogical_327  rdf:type  ifc:IfcLogical ;
+        express:hasLogical  express:FALSE .
+
+inst:IfcBSplineSurfaceWithKnots_122
+        ifc:uClosed_IfcBSplineSurface  inst:IfcLogical_327 ;
+        ifc:vClosed_IfcBSplineSurface  inst:IfcLogical_327 .
+
+inst:IfcLogical_328  rdf:type  ifc:IfcLogical ;
+        express:hasLogical  express:UNKNOWN .
+
+inst:IfcBSplineSurfaceWithKnots_122
+        ifc:selfIntersect_IfcBSplineSurface  inst:IfcLogical_328 .
+
+inst:IfcInteger_List_329
+        rdf:type  ifc:IfcInteger_List .
+
+inst:IfcBSplineSurfaceWithKnots_122
+        ifc:uMultiplicities_IfcBSplineSurfaceWithKnots  inst:IfcInteger_List_329 .
+
+inst:IfcInteger_List_330
+        rdf:type  ifc:IfcInteger_List .
+
+inst:IfcInteger_331  rdf:type  ifc:IfcInteger ;
+        express:hasInteger  4 .
+
+inst:IfcInteger_List_329
+        list:hasContents  inst:IfcInteger_331 ;
+        list:hasNext      inst:IfcInteger_List_330 .
+
+inst:IfcInteger_List_330
+        list:hasContents  inst:IfcInteger_331 .
+
+inst:IfcInteger_List_332
+        rdf:type  ifc:IfcInteger_List .
+
+inst:IfcBSplineSurfaceWithKnots_122
+        ifc:vMultiplicities_IfcBSplineSurfaceWithKnots  inst:IfcInteger_List_332 .
+
+inst:IfcInteger_List_333
+        rdf:type  ifc:IfcInteger_List .
+
+inst:IfcInteger_334  rdf:type  ifc:IfcInteger ;
+        express:hasInteger  2 .
+
+inst:IfcInteger_List_332
+        list:hasContents  inst:IfcInteger_334 ;
+        list:hasNext      inst:IfcInteger_List_333 .
+
+inst:IfcInteger_List_333
+        list:hasContents  inst:IfcInteger_334 .
+
+inst:IfcParameterValue_List_335
+        rdf:type  ifc:IfcParameterValue_List .
+
+inst:IfcBSplineSurfaceWithKnots_122
+        ifc:uKnots_IfcBSplineSurfaceWithKnots  inst:IfcParameterValue_List_335 .
+
+inst:IfcParameterValue_List_336
+        rdf:type  ifc:IfcParameterValue_List .
+
+inst:IfcParameterValue_List_335
+        list:hasContents  inst:IfcLengthMeasure_192 ;
+        list:hasNext      inst:IfcParameterValue_List_336 .
+
+inst:IfcParameterValue_337
+        rdf:type           ifc:IfcParameterValue ;
+        express:hasDouble  "1224.74487139159"^^xsd:double .
+
+inst:IfcParameterValue_List_336
+        list:hasContents  inst:IfcParameterValue_337 .
+
+inst:IfcParameterValue_List_338
+        rdf:type  ifc:IfcParameterValue_List .
+
+inst:IfcBSplineSurfaceWithKnots_122
+        ifc:vKnots_IfcBSplineSurfaceWithKnots  inst:IfcParameterValue_List_338 .
+
+inst:IfcParameterValue_List_339
+        rdf:type  ifc:IfcParameterValue_List .
+
+inst:IfcParameterValue_340
+        rdf:type           ifc:IfcParameterValue ;
+        express:hasDouble  "3.0"^^xsd:double .
+
+inst:IfcParameterValue_List_338
+        list:hasContents  inst:IfcParameterValue_340 ;
+        list:hasNext      inst:IfcParameterValue_List_339 .
+
+inst:IfcParameterValue_341
+        rdf:type           ifc:IfcParameterValue ;
+        express:hasDouble  "4.0"^^xsd:double .
+
+inst:IfcParameterValue_List_339
+        list:hasContents  inst:IfcParameterValue_341 .
+
+inst:IfcBSplineSurfaceWithKnots_122
+        ifc:knotSpec_IfcBSplineSurfaceWithKnots  ifc:UNSPECIFIED .
+
+inst:IfcLengthMeasure_List_342
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcCartesianPoint_125
+        ifc:coordinates_IfcCartesianPoint  inst:IfcLengthMeasure_List_342 .
+
+inst:IfcLengthMeasure_List_343
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_344
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_345
+        rdf:type           ifc:IfcLengthMeasure ;
+        express:hasDouble  "-0.561004233964073"^^xsd:double .
+
+inst:IfcLengthMeasure_List_342
+        list:hasContents  inst:IfcLengthMeasure_345 ;
+        list:hasNext      inst:IfcLengthMeasure_List_343 .
+
+inst:IfcLengthMeasure_346
+        rdf:type           ifc:IfcLengthMeasure ;
+        express:hasDouble  "0.27232909936926"^^xsd:double .
+
+inst:IfcLengthMeasure_List_343
+        list:hasContents  inst:IfcLengthMeasure_346 ;
+        list:hasNext      inst:IfcLengthMeasure_List_344 .
+
+inst:IfcLengthMeasure_347
+        rdf:type           ifc:IfcLengthMeasure ;
+        express:hasDouble  "0.333333333333333"^^xsd:double .
+
+inst:IfcLengthMeasure_List_344
+        list:hasContents  inst:IfcLengthMeasure_347 .
+
+inst:IfcLengthMeasure_List_348
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcCartesianPoint_126
+        ifc:coordinates_IfcCartesianPoint  inst:IfcLengthMeasure_List_348 .
+
+inst:IfcLengthMeasure_List_349
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_350
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_351
+        rdf:type           ifc:IfcLengthMeasure ;
+        express:hasDouble  "-0.27232909936926"^^xsd:double .
+
+inst:IfcLengthMeasure_List_348
+        list:hasContents  inst:IfcLengthMeasure_351 ;
+        list:hasNext      inst:IfcLengthMeasure_List_349 .
+
+inst:IfcLengthMeasure_List_349
+        list:hasContents  inst:IfcLengthMeasure_345 ;
+        list:hasNext      inst:IfcLengthMeasure_List_350 .
+
+inst:IfcLengthMeasure_List_350
+        list:hasContents  inst:IfcLengthMeasure_347 .
+
+inst:IfcLengthMeasure_List_352
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcCartesianPoint_127
+        ifc:coordinates_IfcCartesianPoint  inst:IfcLengthMeasure_List_352 .
+
+inst:IfcLengthMeasure_List_353
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_354
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_355
+        rdf:type           ifc:IfcLengthMeasure ;
+        express:hasDouble  "-0.622008467928146"^^xsd:double .
+
+inst:IfcLengthMeasure_List_352
+        list:hasContents  inst:IfcLengthMeasure_355 ;
+        list:hasNext      inst:IfcLengthMeasure_List_353 .
+
+inst:IfcLengthMeasure_356
+        rdf:type           ifc:IfcLengthMeasure ;
+        express:hasDouble  "0.0446581987385206"^^xsd:double .
+
+inst:IfcLengthMeasure_List_353
+        list:hasContents  inst:IfcLengthMeasure_356 ;
+        list:hasNext      inst:IfcLengthMeasure_List_354 .
+
+inst:IfcLengthMeasure_357
+        rdf:type           ifc:IfcLengthMeasure ;
+        express:hasDouble  "0.666666666666667"^^xsd:double .
+
+inst:IfcLengthMeasure_List_354
+        list:hasContents  inst:IfcLengthMeasure_357 .
+
+inst:IfcLengthMeasure_List_358
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcCartesianPoint_128
+        ifc:coordinates_IfcCartesianPoint  inst:IfcLengthMeasure_List_358 .
+
+inst:IfcLengthMeasure_List_359
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_360
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_361
+        rdf:type           ifc:IfcLengthMeasure ;
+        express:hasDouble  "-0.0446581987385206"^^xsd:double .
+
+inst:IfcLengthMeasure_List_358
+        list:hasContents  inst:IfcLengthMeasure_361 ;
+        list:hasNext      inst:IfcLengthMeasure_List_359 .
+
+inst:IfcLengthMeasure_List_359
+        list:hasContents  inst:IfcLengthMeasure_355 ;
+        list:hasNext      inst:IfcLengthMeasure_List_360 .
+
+inst:IfcLengthMeasure_List_360
+        list:hasContents  inst:IfcLengthMeasure_357 .
+
+inst:IfcAdvancedFace_131
+        ifc:bounds_IfcFace              inst:IfcFaceOuterBound_121 ;
+        ifc:faceSurface_IfcFaceSurface  inst:IfcBSplineSurfaceWithKnots_122 ;
+        ifc:sameSense_IfcFaceSurface    inst:IfcBoolean_301 .
+
+inst:IfcOrientedEdge_133
+        rdf:type  ifc:IfcOrientedEdge ;
+        ifc:edgeElement_IfcOrientedEdge  inst:IfcEdgeCurve_81 ;
+        ifc:orientation_IfcOrientedEdge  inst:IfcBoolean_258 .
+
+inst:IfcOrientedEdge_135
+        rdf:type  ifc:IfcOrientedEdge ;
+        ifc:edgeElement_IfcOrientedEdge  inst:IfcEdgeCurve_85 ;
+        ifc:orientation_IfcOrientedEdge  inst:IfcBoolean_301 .
+
+inst:IfcEdgeLoop_136  rdf:type  ifc:IfcEdgeLoop .
+
+inst:IfcOrientedEdge_List_362
+        rdf:type  ifc:IfcOrientedEdge_List .
+
+inst:IfcEdgeLoop_136  ifc:edgeList_IfcEdgeLoop  inst:IfcOrientedEdge_List_362 .
+
+inst:IfcOrientedEdge_List_363
+        rdf:type  ifc:IfcOrientedEdge_List .
+
+inst:IfcOrientedEdge_List_364
+        rdf:type  ifc:IfcOrientedEdge_List .
+
+inst:IfcOrientedEdge_List_365
+        rdf:type  ifc:IfcOrientedEdge_List .
+
+inst:IfcOrientedEdge_List_362
+        list:hasContents  inst:IfcOrientedEdge_97 ;
+        list:hasNext      inst:IfcOrientedEdge_List_363 .
+
+inst:IfcOrientedEdge_List_363
+        list:hasContents  inst:IfcOrientedEdge_133 ;
+        list:hasNext      inst:IfcOrientedEdge_List_364 .
+
+inst:IfcOrientedEdge_List_364
+        list:hasContents  inst:IfcOrientedEdge_106 ;
+        list:hasNext      inst:IfcOrientedEdge_List_365 .
+
+inst:IfcOrientedEdge_List_365
+        list:hasContents  inst:IfcOrientedEdge_135 .
+
+inst:IfcFaceOuterBound_137
+        rdf:type                      ifc:IfcFaceOuterBound ;
+        ifc:bound_IfcFaceBound        inst:IfcEdgeLoop_136 ;
+        ifc:orientation_IfcFaceBound  inst:IfcBoolean_258 .
+
+inst:IfcBSplineSurfaceWithKnots_138
+        rdf:type                       ifc:IfcBSplineSurfaceWithKnots ;
+        ifc:uDegree_IfcBSplineSurface  inst:IfcDimensionCount_207 ;
+        ifc:vDegree_IfcBSplineSurface  inst:IfcInteger_306 .
+
+inst:IfcCartesianPoint_List_366
+        rdf:type  ifc:IfcCartesianPoint_List .
+
+inst:IfcCartesianPoint_List_367
+        rdf:type  ifc:IfcCartesianPoint_List .
+
+inst:IfcCartesianPoint_List_366
+        list:hasContents  inst:IfcCartesianPoint_31 ;
+        list:hasNext      inst:IfcCartesianPoint_List_367 .
+
+inst:IfcCartesianPoint_List_367
+        list:hasContents  inst:IfcCartesianPoint_33 .
+
+inst:IfcCartesianPoint_List_370
+        rdf:type  ifc:IfcCartesianPoint_List .
+
+inst:IfcCartesianPoint_List_371
+        rdf:type  ifc:IfcCartesianPoint_List .
+
+inst:IfcCartesianPoint_List_370
+        list:hasContents  inst:IfcCartesianPoint_126 ;
+        list:hasNext      inst:IfcCartesianPoint_List_371 .
+
+inst:IfcCartesianPoint_142
+        rdf:type  ifc:IfcCartesianPoint .
+
+inst:IfcCartesianPoint_List_371
+        list:hasContents  inst:IfcCartesianPoint_142 .
+
+inst:IfcCartesianPoint_List_374
+        rdf:type  ifc:IfcCartesianPoint_List .
+
+inst:IfcCartesianPoint_List_375
+        rdf:type  ifc:IfcCartesianPoint_List .
+
+inst:IfcCartesianPoint_List_374
+        list:hasContents  inst:IfcCartesianPoint_128 ;
+        list:hasNext      inst:IfcCartesianPoint_List_375 .
+
+inst:IfcCartesianPoint_144
+        rdf:type  ifc:IfcCartesianPoint .
+
+inst:IfcCartesianPoint_List_375
+        list:hasContents  inst:IfcCartesianPoint_144 .
+
+inst:IfcCartesianPoint_List_378
+        rdf:type  ifc:IfcCartesianPoint_List .
+
+inst:IfcCartesianPoint_List_379
+        rdf:type  ifc:IfcCartesianPoint_List .
+
+inst:IfcCartesianPoint_List_378
+        list:hasContents  inst:IfcCartesianPoint_45 ;
+        list:hasNext      inst:IfcCartesianPoint_List_379 .
+
+inst:IfcCartesianPoint_List_379
+        list:hasContents  inst:IfcCartesianPoint_43 .
+
+inst:IfcCartesianPoint_List_List_382
+        rdf:type  ifc:IfcCartesianPoint_List_List .
+
+inst:IfcBSplineSurfaceWithKnots_138
+        ifc:controlPointsList_IfcBSplineSurface  inst:IfcCartesianPoint_List_List_382 .
+
+inst:IfcCartesianPoint_List_List_382
+        list:hasContents  inst:IfcCartesianPoint_List_366 ;
+        list:hasNext      inst:IfcCartesianPoint_List_List_383 .
+
+inst:IfcCartesianPoint_List_List_383
+        rdf:type          ifc:IfcCartesianPoint_List_List ;
+        list:hasContents  inst:IfcCartesianPoint_List_370 ;
+        list:hasNext      inst:IfcCartesianPoint_List_List_384 .
+
+inst:IfcCartesianPoint_List_List_384
+        rdf:type          ifc:IfcCartesianPoint_List_List ;
+        list:hasContents  inst:IfcCartesianPoint_List_374 ;
+        list:hasNext      inst:IfcCartesianPoint_List_List_385 .
+
+inst:IfcCartesianPoint_List_List_385
+        rdf:type          ifc:IfcCartesianPoint_List_List ;
+        list:hasContents  inst:IfcCartesianPoint_List_378 .
+
+inst:IfcBSplineSurfaceWithKnots_138
+        ifc:surfaceForm_IfcBSplineSurface  ifc:UNSPECIFIED ;
+        ifc:uClosed_IfcBSplineSurface  inst:IfcLogical_327 ;
+        ifc:vClosed_IfcBSplineSurface  inst:IfcLogical_327 ;
+        ifc:selfIntersect_IfcBSplineSurface  inst:IfcLogical_328 .
+
+inst:IfcInteger_List_386
+        rdf:type  ifc:IfcInteger_List .
+
+inst:IfcBSplineSurfaceWithKnots_138
+        ifc:uMultiplicities_IfcBSplineSurfaceWithKnots  inst:IfcInteger_List_386 .
+
+inst:IfcInteger_List_387
+        rdf:type  ifc:IfcInteger_List .
+
+inst:IfcInteger_List_386
+        list:hasContents  inst:IfcInteger_331 ;
+        list:hasNext      inst:IfcInteger_List_387 .
+
+inst:IfcInteger_List_387
+        list:hasContents  inst:IfcInteger_331 .
+
+inst:IfcInteger_List_388
+        rdf:type  ifc:IfcInteger_List .
+
+inst:IfcBSplineSurfaceWithKnots_138
+        ifc:vMultiplicities_IfcBSplineSurfaceWithKnots  inst:IfcInteger_List_388 .
+
+inst:IfcInteger_List_389
+        rdf:type  ifc:IfcInteger_List .
+
+inst:IfcInteger_List_388
+        list:hasContents  inst:IfcInteger_334 ;
+        list:hasNext      inst:IfcInteger_List_389 .
+
+inst:IfcInteger_List_389
+        list:hasContents  inst:IfcInteger_334 .
+
+inst:IfcParameterValue_List_390
+        rdf:type  ifc:IfcParameterValue_List .
+
+inst:IfcBSplineSurfaceWithKnots_138
+        ifc:uKnots_IfcBSplineSurfaceWithKnots  inst:IfcParameterValue_List_390 .
+
+inst:IfcParameterValue_List_391
+        rdf:type  ifc:IfcParameterValue_List .
+
+inst:IfcParameterValue_List_390
+        list:hasContents  inst:IfcLengthMeasure_192 ;
+        list:hasNext      inst:IfcParameterValue_List_391 .
+
+inst:IfcParameterValue_List_391
+        list:hasContents  inst:IfcParameterValue_337 .
+
+inst:IfcParameterValue_List_392
+        rdf:type  ifc:IfcParameterValue_List .
+
+inst:IfcBSplineSurfaceWithKnots_138
+        ifc:vKnots_IfcBSplineSurfaceWithKnots  inst:IfcParameterValue_List_392 .
+
+inst:IfcParameterValue_List_393
+        rdf:type  ifc:IfcParameterValue_List .
+
+inst:IfcParameterValue_List_392
+        list:hasContents  inst:IfcLengthMeasure_192 ;
+        list:hasNext      inst:IfcParameterValue_List_393 .
+
+inst:IfcParameterValue_List_393
+        list:hasContents  inst:IfcReal_196 .
+
+inst:IfcBSplineSurfaceWithKnots_138
+        ifc:knotSpec_IfcBSplineSurfaceWithKnots  ifc:UNSPECIFIED .
+
+inst:IfcLengthMeasure_List_394
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcCartesianPoint_142
+        ifc:coordinates_IfcCartesianPoint  inst:IfcLengthMeasure_List_394 .
+
+inst:IfcLengthMeasure_List_395
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_396
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_397
+        rdf:type           ifc:IfcLengthMeasure ;
+        express:hasDouble  "0.561004233964073"^^xsd:double .
+
+inst:IfcLengthMeasure_List_394
+        list:hasContents  inst:IfcLengthMeasure_397 ;
+        list:hasNext      inst:IfcLengthMeasure_List_395 .
+
+inst:IfcLengthMeasure_List_395
+        list:hasContents  inst:IfcLengthMeasure_351 ;
+        list:hasNext      inst:IfcLengthMeasure_List_396 .
+
+inst:IfcLengthMeasure_List_396
+        list:hasContents  inst:IfcLengthMeasure_347 .
+
+inst:IfcLengthMeasure_List_398
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcCartesianPoint_144
+        ifc:coordinates_IfcCartesianPoint  inst:IfcLengthMeasure_List_398 .
+
+inst:IfcLengthMeasure_List_399
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_400
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_401
+        rdf:type           ifc:IfcLengthMeasure ;
+        express:hasDouble  "0.622008467928146"^^xsd:double .
+
+inst:IfcLengthMeasure_List_398
+        list:hasContents  inst:IfcLengthMeasure_401 ;
+        list:hasNext      inst:IfcLengthMeasure_List_399 .
+
+inst:IfcLengthMeasure_List_399
+        list:hasContents  inst:IfcLengthMeasure_361 ;
+        list:hasNext      inst:IfcLengthMeasure_List_400 .
+
+inst:IfcLengthMeasure_List_400
+        list:hasContents  inst:IfcLengthMeasure_357 .
+
+inst:IfcAdvancedFace_147
+        ifc:bounds_IfcFace              inst:IfcFaceOuterBound_137 ;
+        ifc:faceSurface_IfcFaceSurface  inst:IfcBSplineSurfaceWithKnots_138 ;
+        ifc:sameSense_IfcFaceSurface    inst:IfcBoolean_301 .
+
+inst:IfcOrientedEdge_149
+        rdf:type  ifc:IfcOrientedEdge ;
+        ifc:edgeElement_IfcOrientedEdge  inst:IfcEdgeCurve_85 ;
+        ifc:orientation_IfcOrientedEdge  inst:IfcBoolean_258 .
+
+inst:IfcOrientedEdge_151
+        rdf:type  ifc:IfcOrientedEdge ;
+        ifc:edgeElement_IfcOrientedEdge  inst:IfcEdgeCurve_89 ;
+        ifc:orientation_IfcOrientedEdge  inst:IfcBoolean_301 .
+
+inst:IfcEdgeLoop_152  rdf:type  ifc:IfcEdgeLoop .
+
+inst:IfcOrientedEdge_List_402
+        rdf:type  ifc:IfcOrientedEdge_List .
+
+inst:IfcEdgeLoop_152  ifc:edgeList_IfcEdgeLoop  inst:IfcOrientedEdge_List_402 .
+
+inst:IfcOrientedEdge_List_403
+        rdf:type  ifc:IfcOrientedEdge_List .
+
+inst:IfcOrientedEdge_List_404
+        rdf:type  ifc:IfcOrientedEdge_List .
+
+inst:IfcOrientedEdge_List_405
+        rdf:type  ifc:IfcOrientedEdge_List .
+
+inst:IfcOrientedEdge_List_402
+        list:hasContents  inst:IfcOrientedEdge_96 ;
+        list:hasNext      inst:IfcOrientedEdge_List_403 .
+
+inst:IfcOrientedEdge_List_403
+        list:hasContents  inst:IfcOrientedEdge_149 ;
+        list:hasNext      inst:IfcOrientedEdge_List_404 .
+
+inst:IfcOrientedEdge_List_404
+        list:hasContents  inst:IfcOrientedEdge_107 ;
+        list:hasNext      inst:IfcOrientedEdge_List_405 .
+
+inst:IfcOrientedEdge_List_405
+        list:hasContents  inst:IfcOrientedEdge_151 .
+
+inst:IfcFaceOuterBound_153
+        rdf:type                      ifc:IfcFaceOuterBound ;
+        ifc:bound_IfcFaceBound        inst:IfcEdgeLoop_152 ;
+        ifc:orientation_IfcFaceBound  inst:IfcBoolean_258 .
+
+inst:IfcBSplineSurfaceWithKnots_154
+        rdf:type                       ifc:IfcBSplineSurfaceWithKnots ;
+        ifc:uDegree_IfcBSplineSurface  inst:IfcDimensionCount_207 ;
+        ifc:vDegree_IfcBSplineSurface  inst:IfcInteger_306 .
+
+inst:IfcCartesianPoint_List_406
+        rdf:type  ifc:IfcCartesianPoint_List .
+
+inst:IfcCartesianPoint_List_407
+        rdf:type  ifc:IfcCartesianPoint_List .
+
+inst:IfcCartesianPoint_List_406
+        list:hasContents  inst:IfcCartesianPoint_33 ;
+        list:hasNext      inst:IfcCartesianPoint_List_407 .
+
+inst:IfcCartesianPoint_List_407
+        list:hasContents  inst:IfcCartesianPoint_35 .
+
+inst:IfcCartesianPoint_List_410
+        rdf:type  ifc:IfcCartesianPoint_List .
+
+inst:IfcCartesianPoint_List_411
+        rdf:type  ifc:IfcCartesianPoint_List .
+
+inst:IfcCartesianPoint_List_410
+        list:hasContents  inst:IfcCartesianPoint_142 ;
+        list:hasNext      inst:IfcCartesianPoint_List_411 .
+
+inst:IfcCartesianPoint_158
+        rdf:type  ifc:IfcCartesianPoint .
+
+inst:IfcCartesianPoint_List_411
+        list:hasContents  inst:IfcCartesianPoint_158 .
+
+inst:IfcCartesianPoint_List_414
+        rdf:type  ifc:IfcCartesianPoint_List .
+
+inst:IfcCartesianPoint_List_415
+        rdf:type  ifc:IfcCartesianPoint_List .
+
+inst:IfcCartesianPoint_List_414
+        list:hasContents  inst:IfcCartesianPoint_144 ;
+        list:hasNext      inst:IfcCartesianPoint_List_415 .
+
+inst:IfcCartesianPoint_160
+        rdf:type  ifc:IfcCartesianPoint .
+
+inst:IfcCartesianPoint_List_415
+        list:hasContents  inst:IfcCartesianPoint_160 .
+
+inst:IfcCartesianPoint_List_418
+        rdf:type  ifc:IfcCartesianPoint_List .
+
+inst:IfcCartesianPoint_List_419
+        rdf:type  ifc:IfcCartesianPoint_List .
+
+inst:IfcCartesianPoint_List_418
+        list:hasContents  inst:IfcCartesianPoint_43 ;
+        list:hasNext      inst:IfcCartesianPoint_List_419 .
+
+inst:IfcCartesianPoint_List_419
+        list:hasContents  inst:IfcCartesianPoint_41 .
+
+inst:IfcCartesianPoint_List_List_422
+        rdf:type  ifc:IfcCartesianPoint_List_List .
+
+inst:IfcBSplineSurfaceWithKnots_154
+        ifc:controlPointsList_IfcBSplineSurface  inst:IfcCartesianPoint_List_List_422 .
+
+inst:IfcCartesianPoint_List_List_422
+        list:hasContents  inst:IfcCartesianPoint_List_406 ;
+        list:hasNext      inst:IfcCartesianPoint_List_List_423 .
+
+inst:IfcCartesianPoint_List_List_423
+        rdf:type          ifc:IfcCartesianPoint_List_List ;
+        list:hasContents  inst:IfcCartesianPoint_List_410 ;
+        list:hasNext      inst:IfcCartesianPoint_List_List_424 .
+
+inst:IfcCartesianPoint_List_List_424
+        rdf:type          ifc:IfcCartesianPoint_List_List ;
+        list:hasContents  inst:IfcCartesianPoint_List_414 ;
+        list:hasNext      inst:IfcCartesianPoint_List_List_425 .
+
+inst:IfcCartesianPoint_List_List_425
+        rdf:type          ifc:IfcCartesianPoint_List_List ;
+        list:hasContents  inst:IfcCartesianPoint_List_418 .
+
+inst:IfcBSplineSurfaceWithKnots_154
+        ifc:surfaceForm_IfcBSplineSurface  ifc:UNSPECIFIED ;
+        ifc:uClosed_IfcBSplineSurface  inst:IfcLogical_327 ;
+        ifc:vClosed_IfcBSplineSurface  inst:IfcLogical_327 ;
+        ifc:selfIntersect_IfcBSplineSurface  inst:IfcLogical_328 .
+
+inst:IfcInteger_List_426
+        rdf:type  ifc:IfcInteger_List .
+
+inst:IfcBSplineSurfaceWithKnots_154
+        ifc:uMultiplicities_IfcBSplineSurfaceWithKnots  inst:IfcInteger_List_426 .
+
+inst:IfcInteger_List_427
+        rdf:type  ifc:IfcInteger_List .
+
+inst:IfcInteger_List_426
+        list:hasContents  inst:IfcInteger_331 ;
+        list:hasNext      inst:IfcInteger_List_427 .
+
+inst:IfcInteger_List_427
+        list:hasContents  inst:IfcInteger_331 .
+
+inst:IfcInteger_List_428
+        rdf:type  ifc:IfcInteger_List .
+
+inst:IfcBSplineSurfaceWithKnots_154
+        ifc:vMultiplicities_IfcBSplineSurfaceWithKnots  inst:IfcInteger_List_428 .
+
+inst:IfcInteger_List_429
+        rdf:type  ifc:IfcInteger_List .
+
+inst:IfcInteger_List_428
+        list:hasContents  inst:IfcInteger_334 ;
+        list:hasNext      inst:IfcInteger_List_429 .
+
+inst:IfcInteger_List_429
+        list:hasContents  inst:IfcInteger_334 .
+
+inst:IfcParameterValue_List_430
+        rdf:type  ifc:IfcParameterValue_List .
+
+inst:IfcBSplineSurfaceWithKnots_154
+        ifc:uKnots_IfcBSplineSurfaceWithKnots  inst:IfcParameterValue_List_430 .
+
+inst:IfcParameterValue_List_431
+        rdf:type  ifc:IfcParameterValue_List .
+
+inst:IfcParameterValue_List_430
+        list:hasContents  inst:IfcLengthMeasure_192 ;
+        list:hasNext      inst:IfcParameterValue_List_431 .
+
+inst:IfcParameterValue_List_431
+        list:hasContents  inst:IfcParameterValue_337 .
+
+inst:IfcParameterValue_List_432
+        rdf:type  ifc:IfcParameterValue_List .
+
+inst:IfcBSplineSurfaceWithKnots_154
+        ifc:vKnots_IfcBSplineSurfaceWithKnots  inst:IfcParameterValue_List_432 .
+
+inst:IfcParameterValue_List_433
+        rdf:type  ifc:IfcParameterValue_List .
+
+inst:IfcParameterValue_List_432
+        list:hasContents  inst:IfcReal_196 ;
+        list:hasNext      inst:IfcParameterValue_List_433 .
+
+inst:IfcParameterValue_434
+        rdf:type           ifc:IfcParameterValue ;
+        express:hasDouble  "2.0"^^xsd:double .
+
+inst:IfcParameterValue_List_433
+        list:hasContents  inst:IfcParameterValue_434 .
+
+inst:IfcBSplineSurfaceWithKnots_154
+        ifc:knotSpec_IfcBSplineSurfaceWithKnots  ifc:UNSPECIFIED .
+
+inst:IfcLengthMeasure_List_435
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcCartesianPoint_158
+        ifc:coordinates_IfcCartesianPoint  inst:IfcLengthMeasure_List_435 .
+
+inst:IfcLengthMeasure_List_436
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_437
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_435
+        list:hasContents  inst:IfcLengthMeasure_346 ;
+        list:hasNext      inst:IfcLengthMeasure_List_436 .
+
+inst:IfcLengthMeasure_List_436
+        list:hasContents  inst:IfcLengthMeasure_397 ;
+        list:hasNext      inst:IfcLengthMeasure_List_437 .
+
+inst:IfcLengthMeasure_List_437
+        list:hasContents  inst:IfcLengthMeasure_347 .
+
+inst:IfcLengthMeasure_List_438
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcCartesianPoint_160
+        ifc:coordinates_IfcCartesianPoint  inst:IfcLengthMeasure_List_438 .
+
+inst:IfcLengthMeasure_List_439
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_440
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_438
+        list:hasContents  inst:IfcLengthMeasure_356 ;
+        list:hasNext      inst:IfcLengthMeasure_List_439 .
+
+inst:IfcLengthMeasure_List_439
+        list:hasContents  inst:IfcLengthMeasure_401 ;
+        list:hasNext      inst:IfcLengthMeasure_List_440 .
+
+inst:IfcLengthMeasure_List_440
+        list:hasContents  inst:IfcLengthMeasure_357 .
+
+inst:IfcAdvancedFace_163
+        ifc:bounds_IfcFace              inst:IfcFaceOuterBound_153 ;
+        ifc:faceSurface_IfcFaceSurface  inst:IfcBSplineSurfaceWithKnots_154 ;
+        ifc:sameSense_IfcFaceSurface    inst:IfcBoolean_301 .
+
+inst:IfcOrientedEdge_165
+        rdf:type  ifc:IfcOrientedEdge ;
+        ifc:edgeElement_IfcOrientedEdge  inst:IfcEdgeCurve_89 ;
+        ifc:orientation_IfcOrientedEdge  inst:IfcBoolean_258 .
+
+inst:IfcOrientedEdge_167
+        rdf:type  ifc:IfcOrientedEdge ;
+        ifc:edgeElement_IfcOrientedEdge  inst:IfcEdgeCurve_93 ;
+        ifc:orientation_IfcOrientedEdge  inst:IfcBoolean_301 .
+
+inst:IfcEdgeLoop_168  rdf:type  ifc:IfcEdgeLoop .
+
+inst:IfcOrientedEdge_List_441
+        rdf:type  ifc:IfcOrientedEdge_List .
+
+inst:IfcEdgeLoop_168  ifc:edgeList_IfcEdgeLoop  inst:IfcOrientedEdge_List_441 .
+
+inst:IfcOrientedEdge_List_442
+        rdf:type  ifc:IfcOrientedEdge_List .
+
+inst:IfcOrientedEdge_List_443
+        rdf:type  ifc:IfcOrientedEdge_List .
+
+inst:IfcOrientedEdge_List_444
+        rdf:type  ifc:IfcOrientedEdge_List .
+
+inst:IfcOrientedEdge_List_441
+        list:hasContents  inst:IfcOrientedEdge_95 ;
+        list:hasNext      inst:IfcOrientedEdge_List_442 .
+
+inst:IfcOrientedEdge_List_442
+        list:hasContents  inst:IfcOrientedEdge_165 ;
+        list:hasNext      inst:IfcOrientedEdge_List_443 .
+
+inst:IfcOrientedEdge_List_443
+        list:hasContents  inst:IfcOrientedEdge_108 ;
+        list:hasNext      inst:IfcOrientedEdge_List_444 .
+
+inst:IfcOrientedEdge_List_444
+        list:hasContents  inst:IfcOrientedEdge_167 .
+
+inst:IfcFaceOuterBound_169
+        rdf:type                      ifc:IfcFaceOuterBound ;
+        ifc:bound_IfcFaceBound        inst:IfcEdgeLoop_168 ;
+        ifc:orientation_IfcFaceBound  inst:IfcBoolean_258 .
+
+inst:IfcBSplineSurfaceWithKnots_170
+        rdf:type                       ifc:IfcBSplineSurfaceWithKnots ;
+        ifc:uDegree_IfcBSplineSurface  inst:IfcDimensionCount_207 ;
+        ifc:vDegree_IfcBSplineSurface  inst:IfcInteger_306 .
+
+inst:IfcCartesianPoint_List_445
+        rdf:type  ifc:IfcCartesianPoint_List .
+
+inst:IfcCartesianPoint_List_446
+        rdf:type  ifc:IfcCartesianPoint_List .
+
+inst:IfcCartesianPoint_List_445
+        list:hasContents  inst:IfcCartesianPoint_35 ;
+        list:hasNext      inst:IfcCartesianPoint_List_446 .
+
+inst:IfcCartesianPoint_List_446
+        list:hasContents  inst:IfcCartesianPoint_37 .
+
+inst:IfcCartesianPoint_List_449
+        rdf:type  ifc:IfcCartesianPoint_List .
+
+inst:IfcCartesianPoint_List_450
+        rdf:type  ifc:IfcCartesianPoint_List .
+
+inst:IfcCartesianPoint_List_449
+        list:hasContents  inst:IfcCartesianPoint_158 ;
+        list:hasNext      inst:IfcCartesianPoint_List_450 .
+
+inst:IfcCartesianPoint_List_450
+        list:hasContents  inst:IfcCartesianPoint_125 .
+
+inst:IfcCartesianPoint_List_453
+        rdf:type  ifc:IfcCartesianPoint_List .
+
+inst:IfcCartesianPoint_List_454
+        rdf:type  ifc:IfcCartesianPoint_List .
+
+inst:IfcCartesianPoint_List_453
+        list:hasContents  inst:IfcCartesianPoint_160 ;
+        list:hasNext      inst:IfcCartesianPoint_List_454 .
+
+inst:IfcCartesianPoint_List_454
+        list:hasContents  inst:IfcCartesianPoint_127 .
+
+inst:IfcCartesianPoint_List_457
+        rdf:type  ifc:IfcCartesianPoint_List .
+
+inst:IfcCartesianPoint_List_458
+        rdf:type  ifc:IfcCartesianPoint_List .
+
+inst:IfcCartesianPoint_List_457
+        list:hasContents  inst:IfcCartesianPoint_41 ;
+        list:hasNext      inst:IfcCartesianPoint_List_458 .
+
+inst:IfcCartesianPoint_List_458
+        list:hasContents  inst:IfcCartesianPoint_39 .
+
+inst:IfcCartesianPoint_List_List_461
+        rdf:type  ifc:IfcCartesianPoint_List_List .
+
+inst:IfcBSplineSurfaceWithKnots_170
+        ifc:controlPointsList_IfcBSplineSurface  inst:IfcCartesianPoint_List_List_461 .
+
+inst:IfcCartesianPoint_List_List_461
+        list:hasContents  inst:IfcCartesianPoint_List_445 ;
+        list:hasNext      inst:IfcCartesianPoint_List_List_462 .
+
+inst:IfcCartesianPoint_List_List_462
+        rdf:type          ifc:IfcCartesianPoint_List_List ;
+        list:hasContents  inst:IfcCartesianPoint_List_449 ;
+        list:hasNext      inst:IfcCartesianPoint_List_List_463 .
+
+inst:IfcCartesianPoint_List_List_463
+        rdf:type          ifc:IfcCartesianPoint_List_List ;
+        list:hasContents  inst:IfcCartesianPoint_List_453 ;
+        list:hasNext      inst:IfcCartesianPoint_List_List_464 .
+
+inst:IfcCartesianPoint_List_List_464
+        rdf:type          ifc:IfcCartesianPoint_List_List ;
+        list:hasContents  inst:IfcCartesianPoint_List_457 .
+
+inst:IfcBSplineSurfaceWithKnots_170
+        ifc:surfaceForm_IfcBSplineSurface  ifc:UNSPECIFIED ;
+        ifc:uClosed_IfcBSplineSurface  inst:IfcLogical_327 ;
+        ifc:vClosed_IfcBSplineSurface  inst:IfcLogical_327 ;
+        ifc:selfIntersect_IfcBSplineSurface  inst:IfcLogical_328 .
+
+inst:IfcInteger_List_465
+        rdf:type  ifc:IfcInteger_List .
+
+inst:IfcBSplineSurfaceWithKnots_170
+        ifc:uMultiplicities_IfcBSplineSurfaceWithKnots  inst:IfcInteger_List_465 .
+
+inst:IfcInteger_List_466
+        rdf:type  ifc:IfcInteger_List .
+
+inst:IfcInteger_List_465
+        list:hasContents  inst:IfcInteger_331 ;
+        list:hasNext      inst:IfcInteger_List_466 .
+
+inst:IfcInteger_List_466
+        list:hasContents  inst:IfcInteger_331 .
+
+inst:IfcInteger_List_467
+        rdf:type  ifc:IfcInteger_List .
+
+inst:IfcBSplineSurfaceWithKnots_170
+        ifc:vMultiplicities_IfcBSplineSurfaceWithKnots  inst:IfcInteger_List_467 .
+
+inst:IfcInteger_List_468
+        rdf:type  ifc:IfcInteger_List .
+
+inst:IfcInteger_List_467
+        list:hasContents  inst:IfcInteger_334 ;
+        list:hasNext      inst:IfcInteger_List_468 .
+
+inst:IfcInteger_List_468
+        list:hasContents  inst:IfcInteger_334 .
+
+inst:IfcParameterValue_List_469
+        rdf:type  ifc:IfcParameterValue_List .
+
+inst:IfcBSplineSurfaceWithKnots_170
+        ifc:uKnots_IfcBSplineSurfaceWithKnots  inst:IfcParameterValue_List_469 .
+
+inst:IfcParameterValue_List_470
+        rdf:type  ifc:IfcParameterValue_List .
+
+inst:IfcParameterValue_List_469
+        list:hasContents  inst:IfcLengthMeasure_192 ;
+        list:hasNext      inst:IfcParameterValue_List_470 .
+
+inst:IfcParameterValue_List_470
+        list:hasContents  inst:IfcParameterValue_337 .
+
+inst:IfcParameterValue_List_471
+        rdf:type  ifc:IfcParameterValue_List .
+
+inst:IfcBSplineSurfaceWithKnots_170
+        ifc:vKnots_IfcBSplineSurfaceWithKnots  inst:IfcParameterValue_List_471 .
+
+inst:IfcParameterValue_List_472
+        rdf:type  ifc:IfcParameterValue_List .
+
+inst:IfcParameterValue_List_471
+        list:hasContents  inst:IfcParameterValue_434 ;
+        list:hasNext      inst:IfcParameterValue_List_472 .
+
+inst:IfcParameterValue_List_472
+        list:hasContents  inst:IfcParameterValue_340 .
+
+inst:IfcBSplineSurfaceWithKnots_170
+        ifc:knotSpec_IfcBSplineSurfaceWithKnots  ifc:UNSPECIFIED .
+
+inst:IfcAdvancedFace_179
+        ifc:bounds_IfcFace              inst:IfcFaceOuterBound_169 ;
+        ifc:faceSurface_IfcFaceSurface  inst:IfcBSplineSurfaceWithKnots_170 ;
+        ifc:sameSense_IfcFaceSurface    inst:IfcBoolean_301 .
+
+inst:IfcAdvancedBrep_180
+        rdf:type                        ifc:IfcAdvancedBrep ;
+        ifc:outer_IfcManifoldSolidBrep  inst:IfcClosedShell_29 .
+
+inst:IfcGloballyUniqueId_473
+        rdf:type           ifc:IfcGloballyUniqueId ;
+        express:hasString  "1hMBdOkWj7WhC2kvgZp44F" .
+
+inst:IfcBuildingElementProxy_181
+        ifc:globalId_IfcRoot      inst:IfcGloballyUniqueId_473 ;
+        ifc:ownerHistory_IfcRoot  inst:IfcOwnerHistory_6 .
+
+inst:IfcLabel_474  rdf:type  ifc:IfcLabel ;
+        express:hasString  "BuildingElementProxy" .
+
+inst:IfcBuildingElementProxy_181
+        ifc:name_IfcRoot                inst:IfcLabel_474 ;
+        ifc:objectPlacement_IfcProduct  inst:IfcLocalPlacement_22 .
+
+inst:IfcProductDefinitionShape_182
+        rdf:type  ifc:IfcProductDefinitionShape .
+
+inst:IfcBuildingElementProxy_181
+        ifc:representation_IfcProduct  inst:IfcProductDefinitionShape_182 ;
+        ifc:predefinedType_IfcBuildingElementProxy  ifc:NOTDEFINED .
+
+inst:IfcRepresentation_List_475
+        rdf:type  ifc:IfcRepresentation_List .
+
+inst:IfcProductDefinitionShape_182
+        ifc:representations_IfcProductRepresentation  inst:IfcRepresentation_List_475 .
+
+inst:IfcShapeRepresentation_183
+        rdf:type  ifc:IfcShapeRepresentation .
+
+inst:IfcRepresentation_List_475
+        list:hasContents  inst:IfcShapeRepresentation_183 .
+
+inst:IfcShapeRepresentation_183
+        ifc:contextOfItems_IfcRepresentation  inst:IfcGeometricRepresentationContext_15 ;
+        ifc:representationIdentifier_IfcRepresentation  inst:IfcLabel_205 .
+
+inst:IfcLabel_476  rdf:type  ifc:IfcLabel ;
+        express:hasString  "AdvancedBrep" .
+
+inst:IfcShapeRepresentation_183
+        ifc:representationType_IfcRepresentation  inst:IfcLabel_476 ;
+        ifc:items_IfcRepresentation  inst:IfcAdvancedBrep_180 .

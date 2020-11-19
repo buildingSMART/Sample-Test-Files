@@ -1,0 +1,1022 @@
+<IfcProject type="IfcProject" globalId="1ab4b6cf-1fc5-4c76-b111-6cf0d060f077">
+  <ownerHistory type="IfcOwnerHistory" globalId="1cb45f8a-9f2c-4d42-88f8-2dfeb07b7bd9" state="READWRITE" changeAction="NOCHANGE">
+    <owningUser type="IfcPersonAndOrganization" globalId="df9d1f5e-4b1c-4bf1-a9f0-bec9ad5eb24b">
+      <thePerson type="IfcPerson" globalId="adb76633-82dd-474b-bb14-017e580cb37d">
+        <identification type="IfcIdentifier" value="Tim"/>
+      </thePerson>
+      <theOrganization type="IfcOrganization" globalId="72201999-47b8-4035-b0cf-6148a2ef418a">
+        <name type="IfcLabel" value="Tim-PC"/>
+      </theOrganization>
+    </owningUser>
+    <owningApplication>
+      <applicationDeveloper type="IfcOrganization" globalId="43b7c598-ce08-46c9-aaba-27d6a34d6844">
+        <name type="IfcLabel" value="Constructivity.com LLC"/>
+      </applicationDeveloper>
+      <version type="IfcLabel" value="0.8"/>
+      <applicationFullName type="IfcLabel" value="Constructivity"/>
+      <applicationIdentifier type="IfcIdentifier" value="CONSTRUCTIVITY"/>
+    </owningApplication>
+    <creationDate type="IfcTimeStamp" value="1320677205"/>
+  </ownerHistory>
+  <name type="IfcLabel" value="Project"/>
+  <declares>
+    <IfcRelDeclares type="IfcRelDeclares" globalId="4fd6bb83-0630-4231-b270-2e5ca7f4984e">
+      <ownerHistory>1cb45f8a-9f2c-4d42-88f8-2dfeb07b7bd9</ownerHistory>
+      <name type="IfcLabel" value="GROUP"/>
+      <relatedDefinitions>
+        <IfcDefinitionSelect type="IfcStructuralAnalysisModel" globalId="1f8a8db0-ede4-4f5e-8f42-196c93ec53c3" predefinedType="NOTDEFINED">
+          <ownerHistory>1cb45f8a-9f2c-4d42-88f8-2dfeb07b7bd9</ownerHistory>
+          <name type="IfcLabel" value="Structural Analysis #1"/>
+          <hasContext>
+            <IfcRelDeclares>4fd6bb83-0630-4231-b270-2e5ca7f4984e</IfcRelDeclares>
+          </hasContext>
+          <isGroupedBy>
+            <IfcRelAssignsToGroup type="IfcRelAssignsToGroup" globalId="f034d2a6-e032-40fc-a172-d6badee44d39" relatedObjectsType="PRODUCT">
+              <ownerHistory>1cb45f8a-9f2c-4d42-88f8-2dfeb07b7bd9</ownerHistory>
+              <relatedObjects>
+                <IfcObjectDefinition type="IfcStructuralCurveMember" globalId="ed7959c7-e2c2-434d-886f-177d6ecea75d" predefinedType="RIGID_JOINED_MEMBER">
+                  <ownerHistory>1cb45f8a-9f2c-4d42-88f8-2dfeb07b7bd9</ownerHistory>
+                  <name type="IfcLabel" value="Curve Member #2"/>
+                  <hasAssignments>
+                    <IfcRelAssigns>f034d2a6-e032-40fc-a172-d6badee44d39</IfcRelAssigns>
+                  </hasAssignments>
+                  <hasAssociations>
+                    <IfcRelAssociates type="IfcRelAssociatesMaterial" globalId="01b9f85d-26b9-4730-8017-d1ba6f8e33c9">
+                      <relatingMaterial type="IfcMaterialProfileSetUsage">
+                        <forProfileSet type="IfcMaterialProfileSet" globalId="77e312bd-6833-43a6-a9ac-1506dee37040">
+                          <materialProfiles>
+                            <IfcMaterialProfile type="IfcMaterialProfile" globalId="d427129d-8448-4e3a-98cb-4b16a7dbb722">
+                              <material type="IfcMaterial" globalId="21fc85a6-72bc-4506-9d46-acd61e3d9ea0">
+                                <hasProperties>
+                                  <IfcMaterialProperties type="IfcMaterialProperties">
+                                    <name type="IfcIdentifier" value="Pset_MaterialCommon"/>
+                                    <properties>
+                                      <IfcProperty type="IfcPropertySingleValue">
+                                        <nominalValue type="IfcMassDensityMeasure" value="0.0"/>
+                                        <name type="IfcIdentifier" value="MassDensity"/>
+                                      </IfcProperty>
+                                    </properties>
+                                  </IfcMaterialProperties>
+                                  <IfcMaterialProperties type="IfcMaterialProperties">
+                                    <name type="IfcIdentifier" value="Pset_MaterialMechanical"/>
+                                    <properties>
+                                      <IfcProperty type="IfcPropertySingleValue">
+                                        <nominalValue type="IfcModulusOfElasticityMeasure" value="0.0"/>
+                                        <name type="IfcIdentifier" value="ShearModulus"/>
+                                      </IfcProperty>
+                                      <IfcProperty type="IfcPropertySingleValue">
+                                        <nominalValue type="IfcModulusOfElasticityMeasure" value="0.0"/>
+                                        <name type="IfcIdentifier" value="YoungModulus"/>
+                                      </IfcProperty>
+                                    </properties>
+                                  </IfcMaterialProperties>
+                                </hasProperties>
+                                <name type="IfcLabel" value="ASTM A36"/>
+                                <category type="IfcLabel" value="Steel"/>
+                              </material>
+                              <profile type="IfcIShapeProfileDef" profileType="AREA">
+                                <profileName type="IfcLabel" value="W10X30"/>
+                                <hasProperties>
+                                  <IfcProfileProperties type="IfcProfileProperties">
+                                    <name type="IfcIdentifier" value="Pset_ProfileMechanical"/>
+                                    <properties>
+                                      <IfcProperty type="IfcPropertySingleValue">
+                                        <nominalValue type="IfcMassPerLengthMeasure" value="0.0"/>
+                                        <name type="IfcIdentifier" value="MassPerLength"/>
+                                      </IfcProperty>
+                                      <IfcProperty type="IfcPropertySingleValue">
+                                        <nominalValue type="IfcMomentOfInertiaMeasure" value="16.7"/>
+                                        <name type="IfcIdentifier" value="MomentOfInertiaZ"/>
+                                      </IfcProperty>
+                                      <IfcProperty type="IfcPropertySingleValue">
+                                        <nominalValue type="IfcAreaMeasure" value="8.84"/>
+                                        <name type="IfcIdentifier" value="CrossSectionArea"/>
+                                      </IfcProperty>
+                                      <IfcProperty type="IfcPropertySingleValue">
+                                        <nominalValue type="IfcSectionModulusMeasure" value="0.622"/>
+                                        <name type="IfcIdentifier" value="TorsionalSectionModulus"/>
+                                      </IfcProperty>
+                                      <IfcProperty type="IfcPropertySingleValue">
+                                        <nominalValue type="IfcMomentOfInertiaMeasure" value="170.0"/>
+                                        <name type="IfcIdentifier" value="MomentOfInertiaY"/>
+                                      </IfcProperty>
+                                    </properties>
+                                  </IfcProfileProperties>
+                                </hasProperties>
+                                <overallWidth type="IfcPositiveLengthMeasure" value="5.81"/>
+                                <overallDepth type="IfcPositiveLengthMeasure" value="10.5"/>
+                                <webThickness type="IfcPositiveLengthMeasure" value="0.3"/>
+                                <flangeThickness type="IfcPositiveLengthMeasure" value="0.51"/>
+                                <filletRadius type="IfcNonNegativeLengthMeasure" value="0.125"/>
+                              </profile>
+                            </IfcMaterialProfile>
+                          </materialProfiles>
+                        </forProfileSet>
+                      </relatingMaterial>
+                      <ownerHistory>1cb45f8a-9f2c-4d42-88f8-2dfeb07b7bd9</ownerHistory>
+                    </IfcRelAssociates>
+                  </hasAssociations>
+                  <representation type="IfcProductDefinitionShape" globalId="f4bf6ccc-55c8-4a19-804e-3054b3a873b4">
+                    <representations>
+                      <IfcRepresentation type="IfcTopologyRepresentation" globalId="22489183-4a7c-4ce4-ba02-27a3e0599ff6">
+                        <contextOfItems type="IfcGeometricRepresentationContext" globalId="c14a833f-68fb-4584-9327-0eaffb4ad973">
+                          <worldCoordinateSystem type="IfcAxis2Placement3D">
+                            <location type="IfcCartesianPoint">
+                              <coordinates>
+                                <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                              </coordinates>
+                            </location>
+                          </worldCoordinateSystem>
+                          <contextIdentifier type="IfcLabel" value="3D"/>
+                          <contextType type="IfcLabel" value="Model"/>
+                          <coordinateSpaceDimension type="IfcDimensionCount" value="3"/>
+                          <precision type="IfcReal" value="1.0E-5"/>
+                        </contextOfItems>
+                        <representationIdentifier type="IfcLabel" value="Reference"/>
+                        <representationType type="IfcLabel" value="Edge"/>
+                        <items>
+                          <IfcRepresentationItem type="IfcEdge">
+                            <edgeStart type="IfcVertexPoint">
+                              <vertexGeometry type="IfcCartesianPoint">
+                                <coordinates>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="192.0"/>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                </coordinates>
+                              </vertexGeometry>
+                            </edgeStart>
+                            <edgeEnd type="IfcVertexPoint">
+                              <vertexGeometry type="IfcCartesianPoint">
+                                <coordinates>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="192.0"/>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="120.0"/>
+                                </coordinates>
+                              </vertexGeometry>
+                            </edgeEnd>
+                          </IfcRepresentationItem>
+                        </items>
+                      </IfcRepresentation>
+                    </representations>
+                  </representation>
+                  <assignedStructuralActivity>
+                    <IfcRelConnectsStructuralActivity type="IfcRelConnectsStructuralActivity" globalId="834166e0-fa6a-47dc-a186-1f52a0b9a60c" relatingElement="ed7959c7-e2c2-434d-886f-177d6ecea75d">
+                      <ownerHistory>1cb45f8a-9f2c-4d42-88f8-2dfeb07b7bd9</ownerHistory>
+                      <relatedStructuralActivity type="IfcStructuralCurveReaction" globalId="550dddd5-f3c6-4ef6-ab81-7fce4dd60b11" globalOrLocal="GLOBAL_COORDS" predefinedType="DISCRETE">
+                        <ownerHistory>1cb45f8a-9f2c-4d42-88f8-2dfeb07b7bd9</ownerHistory>
+                        <hasAssignments>
+                          <IfcRelAssigns type="IfcRelAssignsToGroup" globalId="a75c5ace-d556-49f4-b028-1712bff1d00f" relatedObjectsType="PRODUCT">
+                            <ownerHistory>1cb45f8a-9f2c-4d42-88f8-2dfeb07b7bd9</ownerHistory>
+                            <relatedObjects>
+                              <IfcObjectDefinition type="IfcStructuralCurveReaction" globalId="b6db89b6-0358-4852-a2e8-98a718eaa727" globalOrLocal="GLOBAL_COORDS" predefinedType="DISCRETE">
+                                <ownerHistory>1cb45f8a-9f2c-4d42-88f8-2dfeb07b7bd9</ownerHistory>
+                                <hasAssignments>
+                                  <IfcRelAssigns>a75c5ace-d556-49f4-b028-1712bff1d00f</IfcRelAssigns>
+                                </hasAssignments>
+                                <appliedLoad type="IfcStructuralLoadConfiguration">
+                                  <name type="IfcLabel" value="Member End Reactions"/>
+                                  <values>
+                                    <IfcStructuralLoadOrResult type="IfcStructuralLoadSingleForce">
+                                      <name type="IfcLabel" value="Head"/>
+                                      <forceX type="IfcForceMeasure" value="1422.69473557039"/>
+                                      <forceY type="IfcForceMeasure" value="0.0"/>
+                                      <forceZ type="IfcForceMeasure" value="2278.52222225513"/>
+                                      <momentX type="IfcTorqueMeasure" value="0.0"/>
+                                      <momentY type="IfcTorqueMeasure" value="-104030.36194645"/>
+                                      <momentZ type="IfcTorqueMeasure" value="0.0"/>
+                                    </IfcStructuralLoadOrResult>
+                                    <IfcStructuralLoadOrResult type="IfcStructuralLoadSingleForce">
+                                      <name type="IfcLabel" value="Tail"/>
+                                      <forceX type="IfcForceMeasure" value="-1422.69473557039"/>
+                                      <forceY type="IfcForceMeasure" value="0.0"/>
+                                      <forceZ type="IfcForceMeasure" value="7321.47777774487"/>
+                                      <momentX type="IfcTorqueMeasure" value="0.0"/>
+                                      <momentY type="IfcTorqueMeasure" value="127353.857770554"/>
+                                      <momentZ type="IfcTorqueMeasure" value="0.0"/>
+                                    </IfcStructuralLoadOrResult>
+                                  </values>
+                                </appliedLoad>
+                                <assignedToStructuralItem>
+                                  <IfcRelConnectsStructuralActivity type="IfcRelConnectsStructuralActivity" globalId="77c10c15-4a97-4fc4-ba60-effdec90309b">
+                                    <relatingElement type="IfcStructuralCurveMember" globalId="85e4e807-3bdd-4b77-9f45-9a55e0f6b67f" predefinedType="RIGID_JOINED_MEMBER">
+                                      <ownerHistory>1cb45f8a-9f2c-4d42-88f8-2dfeb07b7bd9</ownerHistory>
+                                      <name type="IfcLabel" value="Curve Member #3"/>
+                                      <hasAssignments>
+                                        <IfcRelAssigns>f034d2a6-e032-40fc-a172-d6badee44d39</IfcRelAssigns>
+                                      </hasAssignments>
+                                      <hasAssociations>
+                                        <IfcRelAssociates>01b9f85d-26b9-4730-8017-d1ba6f8e33c9</IfcRelAssociates>
+                                      </hasAssociations>
+                                      <representation type="IfcProductDefinitionShape" globalId="4f34e191-452b-4693-ae3e-341b200613cb">
+                                        <representations>
+                                          <IfcRepresentation type="IfcTopologyRepresentation" globalId="33a42246-23a1-4632-aeab-3c6b5b10cde3">
+                                            <contextOfItems>c14a833f-68fb-4584-9327-0eaffb4ad973</contextOfItems>
+                                            <representationIdentifier type="IfcLabel" value="Reference"/>
+                                            <representationType type="IfcLabel" value="Edge"/>
+                                            <items>
+                                              <IfcRepresentationItem type="IfcEdge">
+                                                <edgeStart type="IfcVertexPoint">
+                                                  <vertexGeometry type="IfcCartesianPoint">
+                                                    <coordinates>
+                                                      <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                                      <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                                      <IfcLengthMeasure type="IfcLengthMeasure" value="120.0"/>
+                                                    </coordinates>
+                                                  </vertexGeometry>
+                                                </edgeStart>
+                                                <edgeEnd type="IfcVertexPoint">
+                                                  <vertexGeometry type="IfcCartesianPoint">
+                                                    <coordinates>
+                                                      <IfcLengthMeasure type="IfcLengthMeasure" value="192.0"/>
+                                                      <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                                      <IfcLengthMeasure type="IfcLengthMeasure" value="120.0"/>
+                                                    </coordinates>
+                                                  </vertexGeometry>
+                                                </edgeEnd>
+                                              </IfcRepresentationItem>
+                                            </items>
+                                          </IfcRepresentation>
+                                        </representations>
+                                      </representation>
+                                      <assignedStructuralActivity>
+                                        <IfcRelConnectsStructuralActivity type="IfcRelConnectsStructuralActivity" globalId="21e75c99-cd89-443d-9d90-2e36bfceadca" relatingElement="85e4e807-3bdd-4b77-9f45-9a55e0f6b67f">
+                                          <ownerHistory>1cb45f8a-9f2c-4d42-88f8-2dfeb07b7bd9</ownerHistory>
+                                          <relatedStructuralActivity type="IfcStructuralCurveAction" globalId="a073a43c-576d-4f5c-a25d-558d3eb29f27" globalOrLocal="GLOBAL_COORDS" predefinedType="LINEAR">
+                                            <ownerHistory>1cb45f8a-9f2c-4d42-88f8-2dfeb07b7bd9</ownerHistory>
+                                            <name type="IfcLabel" value="Structural Curve Action #1"/>
+                                            <hasAssignments>
+                                              <IfcRelAssigns type="IfcRelAssignsToGroup" globalId="98f2a854-4ae5-4316-8377-7a4bdab68da8" relatedObjectsType="PRODUCT">
+                                                <ownerHistory>1cb45f8a-9f2c-4d42-88f8-2dfeb07b7bd9</ownerHistory>
+                                                <relatedObjects>
+                                                  <IfcObjectDefinition>a073a43c-576d-4f5c-a25d-558d3eb29f27</IfcObjectDefinition>
+                                                </relatedObjects>
+                                                <relatingGroup type="IfcStructuralLoadCase" globalId="a9e44363-a621-45a3-bea1-21a37c227c3a" predefinedType="LOAD_CASE" actionType="NOTDEFINED" actionSource="NOTDEFINED">
+                                                  <ownerHistory>1cb45f8a-9f2c-4d42-88f8-2dfeb07b7bd9</ownerHistory>
+                                                  <name type="IfcLabel" value="Structural Load Case #1"/>
+                                                  <isGroupedBy>
+                                                    <IfcRelAssignsToGroup>98f2a854-4ae5-4316-8377-7a4bdab68da8</IfcRelAssignsToGroup>
+                                                  </isGroupedBy>
+                                                  <coefficient type="IfcRatioMeasure" value="1.0"/>
+                                                  <sourceOfResultGroup>
+                                                    <IfcStructuralResultGroup type="IfcStructuralResultGroup" globalId="f15079f0-0f82-4e8a-bc8b-4587721c614a" theoryType="FIRST_ORDER_THEORY">
+                                                      <ownerHistory>1cb45f8a-9f2c-4d42-88f8-2dfeb07b7bd9</ownerHistory>
+                                                      <isGroupedBy>
+                                                        <IfcRelAssignsToGroup>a75c5ace-d556-49f4-b028-1712bff1d00f</IfcRelAssignsToGroup>
+                                                      </isGroupedBy>
+                                                      <resultForLoadGroup>a9e44363-a621-45a3-bea1-21a37c227c3a</resultForLoadGroup>
+                                                      <isLinear type="IfcBoolean" value="false"/>
+                                                    </IfcStructuralResultGroup>
+                                                  </sourceOfResultGroup>
+                                                  <selfWeightCoefficients>
+                                                    <IfcRatioMeasure type="IfcRatioMeasure" value="0.0"/>
+                                                    <IfcRatioMeasure type="IfcRatioMeasure" value="0.0"/>
+                                                    <IfcRatioMeasure type="IfcRatioMeasure" value="0.0"/>
+                                                  </selfWeightCoefficients>
+                                                </relatingGroup>
+                                              </IfcRelAssigns>
+                                            </hasAssignments>
+                                            <appliedLoad type="IfcStructuralLoadConfiguration">
+                                              <values>
+                                                <IfcStructuralLoadOrResult type="IfcStructuralLoadLinearForce">
+                                                  <name type="IfcLabel" value="Nominal"/>
+                                                  <linearForceZ type="IfcLinearForceMeasure" value="-100.0"/>
+                                                </IfcStructuralLoadOrResult>
+                                                <IfcStructuralLoadOrResult type="IfcStructuralLoadLinearForce">
+                                                  <name type="IfcLabel" value="Nominal"/>
+                                                  <linearForceZ type="IfcLinearForceMeasure" value="-100.0"/>
+                                                </IfcStructuralLoadOrResult>
+                                              </values>
+                                            </appliedLoad>
+                                            <assignedToStructuralItem>
+                                              <IfcRelConnectsStructuralActivity>21e75c99-cd89-443d-9d90-2e36bfceadca</IfcRelConnectsStructuralActivity>
+                                            </assignedToStructuralItem>
+                                            <destabilizingLoad type="IfcBoolean" value="false"/>
+                                          </relatedStructuralActivity>
+                                        </IfcRelConnectsStructuralActivity>
+                                        <IfcRelConnectsStructuralActivity>77c10c15-4a97-4fc4-ba60-effdec90309b</IfcRelConnectsStructuralActivity>
+                                      </assignedStructuralActivity>
+                                      <connectedBy>
+                                        <IfcRelConnectsStructuralMember type="IfcRelConnectsStructuralMember" globalId="e20e08e3-f5f0-4685-afc1-e8e8d582d4e1">
+                                          <ownerHistory>1cb45f8a-9f2c-4d42-88f8-2dfeb07b7bd9</ownerHistory>
+                                          <relatingStructuralMember>85e4e807-3bdd-4b77-9f45-9a55e0f6b67f</relatingStructuralMember>
+                                          <relatedStructuralConnection type="IfcStructuralPointConnection" globalId="124756e9-1a49-4a8f-a37c-d87c47a65702">
+                                            <ownerHistory>1cb45f8a-9f2c-4d42-88f8-2dfeb07b7bd9</ownerHistory>
+                                            <name type="IfcLabel" value="Point Connection #4"/>
+                                            <hasAssignments>
+                                              <IfcRelAssigns>f034d2a6-e032-40fc-a172-d6badee44d39</IfcRelAssigns>
+                                            </hasAssignments>
+                                            <representation type="IfcProductDefinitionShape" globalId="c6974a6e-0d10-41c5-8495-53c9a04452a0">
+                                              <representations>
+                                                <IfcRepresentation type="IfcTopologyRepresentation" globalId="f978fac5-b8da-410a-8128-c61c355884b0">
+                                                  <contextOfItems>c14a833f-68fb-4584-9327-0eaffb4ad973</contextOfItems>
+                                                  <representationIdentifier type="IfcLabel" value="Reference"/>
+                                                  <representationType type="IfcLabel" value="Vertex"/>
+                                                  <items>
+                                                    <IfcRepresentationItem type="IfcVertexPoint">
+                                                      <vertexGeometry type="IfcCartesianPoint">
+                                                        <coordinates>
+                                                          <IfcLengthMeasure type="IfcLengthMeasure" value="192.0"/>
+                                                          <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                                          <IfcLengthMeasure type="IfcLengthMeasure" value="120.0"/>
+                                                        </coordinates>
+                                                      </vertexGeometry>
+                                                    </IfcRepresentationItem>
+                                                  </items>
+                                                </IfcRepresentation>
+                                              </representations>
+                                            </representation>
+                                            <assignedStructuralActivity>
+                                              <IfcRelConnectsStructuralActivity type="IfcRelConnectsStructuralActivity" globalId="b8b92c47-059d-427f-ade6-29a15066c21d" relatingElement="124756e9-1a49-4a8f-a37c-d87c47a65702">
+                                                <ownerHistory>1cb45f8a-9f2c-4d42-88f8-2dfeb07b7bd9</ownerHistory>
+                                                <relatedStructuralActivity type="IfcStructuralPointReaction" globalId="c3182228-4421-447c-aa00-6079c60f1f52" globalOrLocal="GLOBAL_COORDS">
+                                                  <ownerHistory>1cb45f8a-9f2c-4d42-88f8-2dfeb07b7bd9</ownerHistory>
+                                                  <hasAssignments>
+                                                    <IfcRelAssigns>a75c5ace-d556-49f4-b028-1712bff1d00f</IfcRelAssigns>
+                                                  </hasAssignments>
+                                                  <appliedLoad type="IfcStructuralLoadSingleDisplacement">
+                                                    <displacementX type="IfcLengthMeasure" value="-0.00119575654821984"/>
+                                                    <displacementY type="IfcLengthMeasure" value="0.0"/>
+                                                    <displacementZ type="IfcLengthMeasure" value="-2.42365937540883E-4"/>
+                                                    <rotationalDisplacementRX type="IfcPlaneAngleMeasure" value="0.0"/>
+                                                    <rotationalDisplacementRY type="IfcPlaneAngleMeasure" value="-6.94996291089951E-5"/>
+                                                    <rotationalDisplacementRZ type="IfcPlaneAngleMeasure" value="0.0"/>
+                                                  </appliedLoad>
+                                                  <assignedToStructuralItem>
+                                                    <IfcRelConnectsStructuralActivity>b8b92c47-059d-427f-ade6-29a15066c21d</IfcRelConnectsStructuralActivity>
+                                                  </assignedToStructuralItem>
+                                                </relatedStructuralActivity>
+                                              </IfcRelConnectsStructuralActivity>
+                                            </assignedStructuralActivity>
+                                            <connectsStructuralMembers>
+                                              <IfcRelConnectsStructuralMember>e20e08e3-f5f0-4685-afc1-e8e8d582d4e1</IfcRelConnectsStructuralMember>
+                                              <IfcRelConnectsStructuralMember type="IfcRelConnectsStructuralMember" globalId="7f3436b6-7cbb-42ba-912c-7b316b78ee02">
+                                                <ownerHistory>1cb45f8a-9f2c-4d42-88f8-2dfeb07b7bd9</ownerHistory>
+                                                <relatingStructuralMember>ed7959c7-e2c2-434d-886f-177d6ecea75d</relatingStructuralMember>
+                                                <relatedStructuralConnection>124756e9-1a49-4a8f-a37c-d87c47a65702</relatedStructuralConnection>
+                                              </IfcRelConnectsStructuralMember>
+                                            </connectsStructuralMembers>
+                                          </relatedStructuralConnection>
+                                        </IfcRelConnectsStructuralMember>
+                                        <IfcRelConnectsStructuralMember type="IfcRelConnectsStructuralMember" globalId="e37bc4dd-8d64-4ea3-9271-b4aa1735a79d">
+                                          <ownerHistory>1cb45f8a-9f2c-4d42-88f8-2dfeb07b7bd9</ownerHistory>
+                                          <relatingStructuralMember>85e4e807-3bdd-4b77-9f45-9a55e0f6b67f</relatingStructuralMember>
+                                          <relatedStructuralConnection type="IfcStructuralPointConnection" globalId="b0986b25-3c21-4845-94b3-770d2a18d72f">
+                                            <ownerHistory>1cb45f8a-9f2c-4d42-88f8-2dfeb07b7bd9</ownerHistory>
+                                            <name type="IfcLabel" value="Point Connection #2"/>
+                                            <hasAssignments>
+                                              <IfcRelAssigns>f034d2a6-e032-40fc-a172-d6badee44d39</IfcRelAssigns>
+                                            </hasAssignments>
+                                            <representation type="IfcProductDefinitionShape" globalId="38f4c897-104d-4714-a662-42807b0fd16f">
+                                              <representations>
+                                                <IfcRepresentation type="IfcTopologyRepresentation" globalId="ce6542e1-8a7d-4021-bb44-0fdd109f725b">
+                                                  <contextOfItems>c14a833f-68fb-4584-9327-0eaffb4ad973</contextOfItems>
+                                                  <representationIdentifier type="IfcLabel" value="Reference"/>
+                                                  <representationType type="IfcLabel" value="Vertex"/>
+                                                  <items>
+                                                    <IfcRepresentationItem type="IfcVertexPoint">
+                                                      <vertexGeometry type="IfcCartesianPoint">
+                                                        <coordinates>
+                                                          <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                                          <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                                          <IfcLengthMeasure type="IfcLengthMeasure" value="120.0"/>
+                                                        </coordinates>
+                                                      </vertexGeometry>
+                                                    </IfcRepresentationItem>
+                                                  </items>
+                                                </IfcRepresentation>
+                                              </representations>
+                                            </representation>
+                                            <assignedStructuralActivity>
+                                              <IfcRelConnectsStructuralActivity type="IfcRelConnectsStructuralActivity" globalId="ac90d837-d65c-4680-9769-37ba76b2e491" relatingElement="b0986b25-3c21-4845-94b3-770d2a18d72f">
+                                                <ownerHistory>1cb45f8a-9f2c-4d42-88f8-2dfeb07b7bd9</ownerHistory>
+                                                <relatedStructuralActivity type="IfcStructuralPointReaction" globalId="a1ef2949-8ca7-4fa1-ac15-c78c6da843bf" globalOrLocal="GLOBAL_COORDS">
+                                                  <ownerHistory>1cb45f8a-9f2c-4d42-88f8-2dfeb07b7bd9</ownerHistory>
+                                                  <hasAssignments>
+                                                    <IfcRelAssigns>a75c5ace-d556-49f4-b028-1712bff1d00f</IfcRelAssigns>
+                                                  </hasAssignments>
+                                                  <appliedLoad type="IfcStructuralLoadSingleDisplacement">
+                                                    <displacementX type="IfcLengthMeasure" value="-0.00112040278567376"/>
+                                                    <displacementY type="IfcLengthMeasure" value="0.0"/>
+                                                    <displacementZ type="IfcLengthMeasure" value="-7.54271659073925E-5"/>
+                                                    <rotationalDisplacementRX type="IfcPlaneAngleMeasure" value="0.0"/>
+                                                    <rotationalDisplacementRY type="IfcPlaneAngleMeasure" value="3.08969735441016E-5"/>
+                                                    <rotationalDisplacementRZ type="IfcPlaneAngleMeasure" value="0.0"/>
+                                                  </appliedLoad>
+                                                  <assignedToStructuralItem>
+                                                    <IfcRelConnectsStructuralActivity>ac90d837-d65c-4680-9769-37ba76b2e491</IfcRelConnectsStructuralActivity>
+                                                  </assignedToStructuralItem>
+                                                </relatedStructuralActivity>
+                                              </IfcRelConnectsStructuralActivity>
+                                            </assignedStructuralActivity>
+                                            <connectsStructuralMembers>
+                                              <IfcRelConnectsStructuralMember type="IfcRelConnectsStructuralMember" globalId="5032f507-9ba7-4803-bf73-8f890abd0873">
+                                                <ownerHistory>1cb45f8a-9f2c-4d42-88f8-2dfeb07b7bd9</ownerHistory>
+                                                <relatingStructuralMember type="IfcStructuralCurveMember" globalId="e886f8c8-9b6d-4ae6-9492-85fe8cfaa7d9" predefinedType="RIGID_JOINED_MEMBER">
+                                                  <ownerHistory>1cb45f8a-9f2c-4d42-88f8-2dfeb07b7bd9</ownerHistory>
+                                                  <name type="IfcLabel" value="Curve Member #1"/>
+                                                  <hasAssignments>
+                                                    <IfcRelAssigns>f034d2a6-e032-40fc-a172-d6badee44d39</IfcRelAssigns>
+                                                  </hasAssignments>
+                                                  <hasAssociations>
+                                                    <IfcRelAssociates>01b9f85d-26b9-4730-8017-d1ba6f8e33c9</IfcRelAssociates>
+                                                  </hasAssociations>
+                                                  <representation type="IfcProductDefinitionShape" globalId="c214b1c9-99b1-4ca3-8ab8-24278ff67580">
+                                                    <representations>
+                                                      <IfcRepresentation type="IfcTopologyRepresentation" globalId="cc0e8393-7c30-40f3-a75f-4372d7443132">
+                                                        <contextOfItems>c14a833f-68fb-4584-9327-0eaffb4ad973</contextOfItems>
+                                                        <representationIdentifier type="IfcLabel" value="Reference"/>
+                                                        <representationType type="IfcLabel" value="Edge"/>
+                                                        <items>
+                                                          <IfcRepresentationItem type="IfcEdge">
+                                                            <edgeStart type="IfcVertexPoint">
+                                                              <vertexGeometry type="IfcCartesianPoint">
+                                                                <coordinates>
+                                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                                                </coordinates>
+                                                              </vertexGeometry>
+                                                            </edgeStart>
+                                                            <edgeEnd type="IfcVertexPoint">
+                                                              <vertexGeometry type="IfcCartesianPoint">
+                                                                <coordinates>
+                                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                                                  <IfcLengthMeasure type="IfcLengthMeasure" value="120.0"/>
+                                                                </coordinates>
+                                                              </vertexGeometry>
+                                                            </edgeEnd>
+                                                          </IfcRepresentationItem>
+                                                        </items>
+                                                      </IfcRepresentation>
+                                                    </representations>
+                                                  </representation>
+                                                  <assignedStructuralActivity>
+                                                    <IfcRelConnectsStructuralActivity type="IfcRelConnectsStructuralActivity" globalId="b97711e1-338d-46d8-bf2c-decd49909b6d" relatingElement="e886f8c8-9b6d-4ae6-9492-85fe8cfaa7d9">
+                                                      <ownerHistory>1cb45f8a-9f2c-4d42-88f8-2dfeb07b7bd9</ownerHistory>
+                                                      <relatedStructuralActivity type="IfcStructuralCurveReaction" globalId="1c4478a6-4a0d-4b21-a11f-9a0b69873c71" globalOrLocal="GLOBAL_COORDS" predefinedType="DISCRETE">
+                                                        <ownerHistory>1cb45f8a-9f2c-4d42-88f8-2dfeb07b7bd9</ownerHistory>
+                                                        <hasAssignments>
+                                                          <IfcRelAssigns>a75c5ace-d556-49f4-b028-1712bff1d00f</IfcRelAssigns>
+                                                        </hasAssignments>
+                                                        <appliedLoad type="IfcStructuralLoadConfiguration">
+                                                          <name type="IfcLabel" value="Member End Reactions"/>
+                                                          <values>
+                                                            <IfcStructuralLoadOrResult type="IfcStructuralLoadSingleForce">
+                                                              <name type="IfcLabel" value="Head"/>
+                                                              <forceX type="IfcForceMeasure" value="2278.52897011915"/>
+                                                              <forceY type="IfcForceMeasure" value="0.0"/>
+                                                              <forceZ type="IfcForceMeasure" value="-1422.66326629449"/>
+                                                              <momentX type="IfcTorqueMeasure" value="0.0"/>
+                                                              <momentY type="IfcTorqueMeasure" value="66694.8548930371"/>
+                                                              <momentZ type="IfcTorqueMeasure" value="0.0"/>
+                                                            </IfcStructuralLoadOrResult>
+                                                            <IfcStructuralLoadOrResult type="IfcStructuralLoadSingleForce">
+                                                              <name type="IfcLabel" value="Tail"/>
+                                                              <forceX type="IfcForceMeasure" value="-2278.52897011915"/>
+                                                              <forceY type="IfcForceMeasure" value="0.0"/>
+                                                              <forceZ type="IfcForceMeasure" value="1422.66326629449"/>
+                                                              <momentX type="IfcTorqueMeasure" value="0.0"/>
+                                                              <momentY type="IfcTorqueMeasure" value="104027.289932507"/>
+                                                              <momentZ type="IfcTorqueMeasure" value="0.0"/>
+                                                            </IfcStructuralLoadOrResult>
+                                                          </values>
+                                                        </appliedLoad>
+                                                        <assignedToStructuralItem>
+                                                          <IfcRelConnectsStructuralActivity>b97711e1-338d-46d8-bf2c-decd49909b6d</IfcRelConnectsStructuralActivity>
+                                                        </assignedToStructuralItem>
+                                                      </relatedStructuralActivity>
+                                                    </IfcRelConnectsStructuralActivity>
+                                                  </assignedStructuralActivity>
+                                                  <connectedBy>
+                                                    <IfcRelConnectsStructuralMember type="IfcRelConnectsStructuralMember" globalId="a327a1c0-4f83-4e7b-b19d-c6aa95382e9e">
+                                                      <ownerHistory>1cb45f8a-9f2c-4d42-88f8-2dfeb07b7bd9</ownerHistory>
+                                                      <relatingStructuralMember>e886f8c8-9b6d-4ae6-9492-85fe8cfaa7d9</relatingStructuralMember>
+                                                      <relatedStructuralConnection type="IfcStructuralPointConnection" globalId="c50c9a4a-7f82-46b0-8c0f-d409aa7b4a12">
+                                                        <ownerHistory>1cb45f8a-9f2c-4d42-88f8-2dfeb07b7bd9</ownerHistory>
+                                                        <name type="IfcLabel" value="Point Connection #1"/>
+                                                        <hasAssignments>
+                                                          <IfcRelAssigns>f034d2a6-e032-40fc-a172-d6badee44d39</IfcRelAssigns>
+                                                        </hasAssignments>
+                                                        <representation type="IfcProductDefinitionShape" globalId="1e65f75b-2faa-46b7-bf7b-63f1e095e723">
+                                                          <representations>
+                                                            <IfcRepresentation type="IfcTopologyRepresentation" globalId="69a8a226-0c5d-4574-b55d-354c0d82768b">
+                                                              <contextOfItems>c14a833f-68fb-4584-9327-0eaffb4ad973</contextOfItems>
+                                                              <representationIdentifier type="IfcLabel" value="Reference"/>
+                                                              <representationType type="IfcLabel" value="Vertex"/>
+                                                              <items>
+                                                                <IfcRepresentationItem type="IfcVertexPoint">
+                                                                  <vertexGeometry type="IfcCartesianPoint">
+                                                                    <coordinates>
+                                                                      <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                                                      <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                                                      <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                                                    </coordinates>
+                                                                  </vertexGeometry>
+                                                                </IfcRepresentationItem>
+                                                              </items>
+                                                            </IfcRepresentation>
+                                                          </representations>
+                                                        </representation>
+                                                        <assignedStructuralActivity>
+                                                          <IfcRelConnectsStructuralActivity type="IfcRelConnectsStructuralActivity" globalId="af026b4b-4d14-48c7-b3cb-d90ecd51ca6c" relatingElement="c50c9a4a-7f82-46b0-8c0f-d409aa7b4a12">
+                                                            <ownerHistory>1cb45f8a-9f2c-4d42-88f8-2dfeb07b7bd9</ownerHistory>
+                                                            <relatedStructuralActivity type="IfcStructuralPointReaction" globalId="5f4b8709-bfd1-4078-9ff6-9610b720c725" globalOrLocal="GLOBAL_COORDS">
+                                                              <ownerHistory>1cb45f8a-9f2c-4d42-88f8-2dfeb07b7bd9</ownerHistory>
+                                                              <hasAssignments>
+                                                                <IfcRelAssigns>a75c5ace-d556-49f4-b028-1712bff1d00f</IfcRelAssigns>
+                                                              </hasAssignments>
+                                                              <appliedLoad type="IfcStructuralLoadSingleForce">
+                                                                <forceX type="IfcForceMeasure" value="1422.66326629449"/>
+                                                                <forceY type="IfcForceMeasure" value="0.0"/>
+                                                                <forceZ type="IfcForceMeasure" value="2278.52897011915"/>
+                                                                <momentX type="IfcTorqueMeasure" value="0.0"/>
+                                                                <momentY type="IfcTorqueMeasure" value="66694.8548930371"/>
+                                                                <momentZ type="IfcTorqueMeasure" value="0.0"/>
+                                                              </appliedLoad>
+                                                              <assignedToStructuralItem>
+                                                                <IfcRelConnectsStructuralActivity>af026b4b-4d14-48c7-b3cb-d90ecd51ca6c</IfcRelConnectsStructuralActivity>
+                                                              </assignedToStructuralItem>
+                                                            </relatedStructuralActivity>
+                                                          </IfcRelConnectsStructuralActivity>
+                                                          <IfcRelConnectsStructuralActivity type="IfcRelConnectsStructuralActivity" globalId="b17fa269-3d65-4140-86b8-b10c616273ab" relatingElement="c50c9a4a-7f82-46b0-8c0f-d409aa7b4a12">
+                                                            <ownerHistory>1cb45f8a-9f2c-4d42-88f8-2dfeb07b7bd9</ownerHistory>
+                                                            <relatedStructuralActivity type="IfcStructuralPointReaction" globalId="0cb09f93-1ec5-4daf-82f7-89140ece677a" globalOrLocal="GLOBAL_COORDS">
+                                                              <ownerHistory>1cb45f8a-9f2c-4d42-88f8-2dfeb07b7bd9</ownerHistory>
+                                                              <hasAssignments>
+                                                                <IfcRelAssigns>a75c5ace-d556-49f4-b028-1712bff1d00f</IfcRelAssigns>
+                                                              </hasAssignments>
+                                                              <appliedLoad type="IfcStructuralLoadSingleDisplacement">
+                                                                <displacementX type="IfcLengthMeasure" value="0.0"/>
+                                                                <displacementY type="IfcLengthMeasure" value="0.0"/>
+                                                                <displacementZ type="IfcLengthMeasure" value="0.0"/>
+                                                                <rotationalDisplacementRX type="IfcPlaneAngleMeasure" value="0.0"/>
+                                                                <rotationalDisplacementRY type="IfcPlaneAngleMeasure" value="0.0"/>
+                                                                <rotationalDisplacementRZ type="IfcPlaneAngleMeasure" value="0.0"/>
+                                                              </appliedLoad>
+                                                              <assignedToStructuralItem>
+                                                                <IfcRelConnectsStructuralActivity>b17fa269-3d65-4140-86b8-b10c616273ab</IfcRelConnectsStructuralActivity>
+                                                              </assignedToStructuralItem>
+                                                            </relatedStructuralActivity>
+                                                          </IfcRelConnectsStructuralActivity>
+                                                        </assignedStructuralActivity>
+                                                        <appliedCondition type="IfcBoundaryNodeCondition">
+                                                          <translationalStiffnessX type="IfcBoolean" value="false"/>
+                                                          <translationalStiffnessY type="IfcBoolean" value="false"/>
+                                                          <translationalStiffnessZ type="IfcBoolean" value="false"/>
+                                                          <rotationalStiffnessX type="IfcBoolean" value="false"/>
+                                                          <rotationalStiffnessY type="IfcBoolean" value="false"/>
+                                                          <rotationalStiffnessZ type="IfcBoolean" value="false"/>
+                                                          <name type="IfcLabel" value="Fixed"/>
+                                                        </appliedCondition>
+                                                        <connectsStructuralMembers>
+                                                          <IfcRelConnectsStructuralMember>a327a1c0-4f83-4e7b-b19d-c6aa95382e9e</IfcRelConnectsStructuralMember>
+                                                        </connectsStructuralMembers>
+                                                      </relatedStructuralConnection>
+                                                    </IfcRelConnectsStructuralMember>
+                                                    <IfcRelConnectsStructuralMember>5032f507-9ba7-4803-bf73-8f890abd0873</IfcRelConnectsStructuralMember>
+                                                  </connectedBy>
+                                                  <axis type="IfcDirection">
+                                                    <directionRatios>
+                                                      <IfcReal type="IfcReal" value="1.0"/>
+                                                      <IfcReal type="IfcReal" value="0.0"/>
+                                                      <IfcReal type="IfcReal" value="0.0"/>
+                                                    </directionRatios>
+                                                  </axis>
+                                                </relatingStructuralMember>
+                                                <relatedStructuralConnection>b0986b25-3c21-4845-94b3-770d2a18d72f</relatedStructuralConnection>
+                                              </IfcRelConnectsStructuralMember>
+                                              <IfcRelConnectsStructuralMember>e37bc4dd-8d64-4ea3-9271-b4aa1735a79d</IfcRelConnectsStructuralMember>
+                                            </connectsStructuralMembers>
+                                          </relatedStructuralConnection>
+                                        </IfcRelConnectsStructuralMember>
+                                      </connectedBy>
+                                      <axis type="IfcDirection">
+                                        <directionRatios>
+                                          <IfcReal type="IfcReal" value="0.0"/>
+                                          <IfcReal type="IfcReal" value="0.0"/>
+                                          <IfcReal type="IfcReal" value="1.0"/>
+                                        </directionRatios>
+                                      </axis>
+                                    </relatingElement>
+                                    <ownerHistory>1cb45f8a-9f2c-4d42-88f8-2dfeb07b7bd9</ownerHistory>
+                                    <relatedStructuralActivity>b6db89b6-0358-4852-a2e8-98a718eaa727</relatedStructuralActivity>
+                                  </IfcRelConnectsStructuralActivity>
+                                </assignedToStructuralItem>
+                              </IfcObjectDefinition>
+                              <IfcObjectDefinition>0cb09f93-1ec5-4daf-82f7-89140ece677a</IfcObjectDefinition>
+                              <IfcObjectDefinition>5f4b8709-bfd1-4078-9ff6-9610b720c725</IfcObjectDefinition>
+                              <IfcObjectDefinition>1c4478a6-4a0d-4b21-a11f-9a0b69873c71</IfcObjectDefinition>
+                              <IfcObjectDefinition type="IfcStructuralPointReaction" globalId="a2d2b770-edae-46f8-a699-2a690e186878" globalOrLocal="GLOBAL_COORDS">
+                                <ownerHistory>1cb45f8a-9f2c-4d42-88f8-2dfeb07b7bd9</ownerHistory>
+                                <hasAssignments>
+                                  <IfcRelAssigns>a75c5ace-d556-49f4-b028-1712bff1d00f</IfcRelAssigns>
+                                </hasAssignments>
+                                <appliedLoad type="IfcStructuralLoadSingleDisplacement">
+                                  <displacementX type="IfcLengthMeasure" value="0.0"/>
+                                  <displacementY type="IfcLengthMeasure" value="0.0"/>
+                                  <displacementZ type="IfcLengthMeasure" value="0.0"/>
+                                  <rotationalDisplacementRX type="IfcPlaneAngleMeasure" value="0.0"/>
+                                  <rotationalDisplacementRY type="IfcPlaneAngleMeasure" value="0.0"/>
+                                  <rotationalDisplacementRZ type="IfcPlaneAngleMeasure" value="0.0"/>
+                                </appliedLoad>
+                                <assignedToStructuralItem>
+                                  <IfcRelConnectsStructuralActivity type="IfcRelConnectsStructuralActivity" globalId="3c43c56a-7097-4388-9346-7f7aa69cab9c">
+                                    <relatingElement type="IfcStructuralPointConnection" globalId="67d2c0e4-79a6-43f2-8eba-170e243c116b">
+                                      <ownerHistory>1cb45f8a-9f2c-4d42-88f8-2dfeb07b7bd9</ownerHistory>
+                                      <name type="IfcLabel" value="Point Connection #3"/>
+                                      <hasAssignments>
+                                        <IfcRelAssigns>f034d2a6-e032-40fc-a172-d6badee44d39</IfcRelAssigns>
+                                      </hasAssignments>
+                                      <representation type="IfcProductDefinitionShape" globalId="22791a21-4015-43a6-bdad-ce65078a27d7">
+                                        <representations>
+                                          <IfcRepresentation type="IfcTopologyRepresentation" globalId="8f4c983c-d52e-46cc-a33c-595871f110b3">
+                                            <contextOfItems>c14a833f-68fb-4584-9327-0eaffb4ad973</contextOfItems>
+                                            <representationIdentifier type="IfcLabel" value="Reference"/>
+                                            <representationType type="IfcLabel" value="Vertex"/>
+                                            <items>
+                                              <IfcRepresentationItem type="IfcVertexPoint">
+                                                <vertexGeometry type="IfcCartesianPoint">
+                                                  <coordinates>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="192.0"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                                  </coordinates>
+                                                </vertexGeometry>
+                                              </IfcRepresentationItem>
+                                            </items>
+                                          </IfcRepresentation>
+                                        </representations>
+                                      </representation>
+                                      <assignedStructuralActivity>
+                                        <IfcRelConnectsStructuralActivity>3c43c56a-7097-4388-9346-7f7aa69cab9c</IfcRelConnectsStructuralActivity>
+                                        <IfcRelConnectsStructuralActivity type="IfcRelConnectsStructuralActivity" globalId="20af5902-63fe-49ea-8668-49e1924b05da" relatingElement="67d2c0e4-79a6-43f2-8eba-170e243c116b">
+                                          <ownerHistory>1cb45f8a-9f2c-4d42-88f8-2dfeb07b7bd9</ownerHistory>
+                                          <relatedStructuralActivity type="IfcStructuralPointReaction" globalId="6507d584-e11f-48a3-be80-a79490e7341a" globalOrLocal="GLOBAL_COORDS">
+                                            <ownerHistory>1cb45f8a-9f2c-4d42-88f8-2dfeb07b7bd9</ownerHistory>
+                                            <hasAssignments>
+                                              <IfcRelAssigns>a75c5ace-d556-49f4-b028-1712bff1d00f</IfcRelAssigns>
+                                            </hasAssignments>
+                                            <appliedLoad type="IfcStructuralLoadSingleForce">
+                                              <forceX type="IfcForceMeasure" value="-1422.73493120008"/>
+                                              <forceY type="IfcForceMeasure" value="0.0"/>
+                                              <forceZ type="IfcForceMeasure" value="7321.47102988085"/>
+                                              <momentX type="IfcTorqueMeasure" value="0.0"/>
+                                              <momentY type="IfcTorqueMeasure" value="-43375.4476654014"/>
+                                              <momentZ type="IfcTorqueMeasure" value="0.0"/>
+                                            </appliedLoad>
+                                            <assignedToStructuralItem>
+                                              <IfcRelConnectsStructuralActivity>20af5902-63fe-49ea-8668-49e1924b05da</IfcRelConnectsStructuralActivity>
+                                            </assignedToStructuralItem>
+                                          </relatedStructuralActivity>
+                                        </IfcRelConnectsStructuralActivity>
+                                      </assignedStructuralActivity>
+                                      <appliedCondition type="IfcBoundaryNodeCondition">
+                                        <translationalStiffnessX type="IfcBoolean" value="false"/>
+                                        <translationalStiffnessY type="IfcBoolean" value="false"/>
+                                        <translationalStiffnessZ type="IfcBoolean" value="false"/>
+                                        <rotationalStiffnessX type="IfcBoolean" value="false"/>
+                                        <rotationalStiffnessY type="IfcBoolean" value="false"/>
+                                        <rotationalStiffnessZ type="IfcBoolean" value="false"/>
+                                        <name type="IfcLabel" value="Fixed"/>
+                                      </appliedCondition>
+                                      <connectsStructuralMembers>
+                                        <IfcRelConnectsStructuralMember type="IfcRelConnectsStructuralMember" globalId="3507b4fc-b8ba-4161-889e-c479dbdc3356">
+                                          <ownerHistory>1cb45f8a-9f2c-4d42-88f8-2dfeb07b7bd9</ownerHistory>
+                                          <relatingStructuralMember>ed7959c7-e2c2-434d-886f-177d6ecea75d</relatingStructuralMember>
+                                          <relatedStructuralConnection>67d2c0e4-79a6-43f2-8eba-170e243c116b</relatedStructuralConnection>
+                                        </IfcRelConnectsStructuralMember>
+                                      </connectsStructuralMembers>
+                                    </relatingElement>
+                                    <ownerHistory>1cb45f8a-9f2c-4d42-88f8-2dfeb07b7bd9</ownerHistory>
+                                    <relatedStructuralActivity>a2d2b770-edae-46f8-a699-2a690e186878</relatedStructuralActivity>
+                                  </IfcRelConnectsStructuralActivity>
+                                </assignedToStructuralItem>
+                              </IfcObjectDefinition>
+                              <IfcObjectDefinition>6507d584-e11f-48a3-be80-a79490e7341a</IfcObjectDefinition>
+                              <IfcObjectDefinition>c3182228-4421-447c-aa00-6079c60f1f52</IfcObjectDefinition>
+                              <IfcObjectDefinition>550dddd5-f3c6-4ef6-ab81-7fce4dd60b11</IfcObjectDefinition>
+                              <IfcObjectDefinition>a1ef2949-8ca7-4fa1-ac15-c78c6da843bf</IfcObjectDefinition>
+                            </relatedObjects>
+                            <relatingGroup>f15079f0-0f82-4e8a-bc8b-4587721c614a</relatingGroup>
+                          </IfcRelAssigns>
+                        </hasAssignments>
+                        <appliedLoad type="IfcStructuralLoadConfiguration">
+                          <name type="IfcLabel" value="Member End Reactions"/>
+                          <values>
+                            <IfcStructuralLoadOrResult type="IfcStructuralLoadSingleForce">
+                              <name type="IfcLabel" value="Head"/>
+                              <forceX type="IfcForceMeasure" value="7321.47102988085"/>
+                              <forceY type="IfcForceMeasure" value="0.0"/>
+                              <forceZ type="IfcForceMeasure" value="1422.73493120008"/>
+                              <momentX type="IfcTorqueMeasure" value="0.0"/>
+                              <momentY type="IfcTorqueMeasure" value="-43375.4476654014"/>
+                              <momentZ type="IfcTorqueMeasure" value="0.0"/>
+                            </IfcStructuralLoadOrResult>
+                            <IfcStructuralLoadOrResult type="IfcStructuralLoadSingleForce">
+                              <name type="IfcLabel" value="Tail"/>
+                              <forceX type="IfcForceMeasure" value="-7321.47102988085"/>
+                              <forceY type="IfcForceMeasure" value="0.0"/>
+                              <forceZ type="IfcForceMeasure" value="-1422.73493120008"/>
+                              <momentX type="IfcTorqueMeasure" value="0.0"/>
+                              <momentY type="IfcTorqueMeasure" value="-127343.989381682"/>
+                              <momentZ type="IfcTorqueMeasure" value="0.0"/>
+                            </IfcStructuralLoadOrResult>
+                          </values>
+                        </appliedLoad>
+                        <assignedToStructuralItem>
+                          <IfcRelConnectsStructuralActivity>834166e0-fa6a-47dc-a186-1f52a0b9a60c</IfcRelConnectsStructuralActivity>
+                        </assignedToStructuralItem>
+                      </relatedStructuralActivity>
+                    </IfcRelConnectsStructuralActivity>
+                  </assignedStructuralActivity>
+                  <connectedBy>
+                    <IfcRelConnectsStructuralMember>7f3436b6-7cbb-42ba-912c-7b316b78ee02</IfcRelConnectsStructuralMember>
+                    <IfcRelConnectsStructuralMember>3507b4fc-b8ba-4161-889e-c479dbdc3356</IfcRelConnectsStructuralMember>
+                  </connectedBy>
+                  <axis type="IfcDirection">
+                    <directionRatios>
+                      <IfcReal type="IfcReal" value="1.0"/>
+                      <IfcReal type="IfcReal" value="0.0"/>
+                      <IfcReal type="IfcReal" value="0.0"/>
+                    </directionRatios>
+                  </axis>
+                </IfcObjectDefinition>
+                <IfcObjectDefinition>c50c9a4a-7f82-46b0-8c0f-d409aa7b4a12</IfcObjectDefinition>
+                <IfcObjectDefinition>124756e9-1a49-4a8f-a37c-d87c47a65702</IfcObjectDefinition>
+                <IfcObjectDefinition>85e4e807-3bdd-4b77-9f45-9a55e0f6b67f</IfcObjectDefinition>
+                <IfcObjectDefinition>b0986b25-3c21-4845-94b3-770d2a18d72f</IfcObjectDefinition>
+                <IfcObjectDefinition>e886f8c8-9b6d-4ae6-9492-85fe8cfaa7d9</IfcObjectDefinition>
+                <IfcObjectDefinition>67d2c0e4-79a6-43f2-8eba-170e243c116b</IfcObjectDefinition>
+              </relatedObjects>
+              <relatingGroup>1f8a8db0-ede4-4f5e-8f42-196c93ec53c3</relatingGroup>
+            </IfcRelAssignsToGroup>
+          </isGroupedBy>
+          <orientationOf2DPlane type="IfcAxis2Placement3D">
+            <location type="IfcCartesianPoint">
+              <coordinates>
+                <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+              </coordinates>
+            </location>
+          </orientationOf2DPlane>
+          <loadedBy>
+            <IfcStructuralLoadGroup>a9e44363-a621-45a3-bea1-21a37c227c3a</IfcStructuralLoadGroup>
+          </loadedBy>
+          <hasResults>
+            <IfcStructuralResultGroup>f15079f0-0f82-4e8a-bc8b-4587721c614a</IfcStructuralResultGroup>
+          </hasResults>
+          <sharedPlacement type="IfcLocalPlacement" globalId="c8cce985-0a37-4b39-8360-cbd0e5d58657">
+            <relativePlacement type="IfcAxis2Placement3D">
+              <location type="IfcCartesianPoint">
+                <coordinates>
+                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                </coordinates>
+              </location>
+            </relativePlacement>
+          </sharedPlacement>
+        </IfcDefinitionSelect>
+      </relatedDefinitions>
+    </IfcRelDeclares>
+  </declares>
+  <representationContexts>
+    <IfcRepresentationContext type="IfcGeometricRepresentationContext" globalId="e34f8092-7736-4be0-92da-a529b1b9637d">
+      <worldCoordinateSystem type="IfcAxis2Placement3D">
+        <location type="IfcCartesianPoint">
+          <coordinates>
+            <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+            <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+            <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+          </coordinates>
+        </location>
+      </worldCoordinateSystem>
+      <contextIdentifier type="IfcLabel" value="2D"/>
+      <contextType type="IfcLabel" value="Plan"/>
+      <coordinateSpaceDimension type="IfcDimensionCount" value="2"/>
+      <precision type="IfcReal" value="1.0E-5"/>
+    </IfcRepresentationContext>
+    <IfcRepresentationContext>c14a833f-68fb-4584-9327-0eaffb4ad973</IfcRepresentationContext>
+  </representationContexts>
+  <unitsInContext>
+    <units>
+      <IfcUnit type="IfcDerivedUnit" unitType="SHEARMODULUSUNIT">
+        <elements>
+          <IfcDerivedUnitElement exponent="1">
+            <unit type="IfcConversionBasedUnit" globalId="7bc9a114-d365-418b-8be2-3b1de5ddc310">
+              <dimensions lengthExponent="-1" massExponent="1" timeExponent="-2" electricCurrentExponent="0" thermodynamicTemperatureExponent="0" amountOfSubstanceExponent="0" luminousIntensityExponent="0"/>
+              <unitType>PRESSUREUNIT</unitType>
+              <name>pound-force per square inch</name>
+              <conversionFactor type="IfcMeasureWithUnit">
+                <valueComponent type="IfcPressureMeasure" value="6894.7572932"/>
+                <unitComponent type="IfcSIUnit" globalId="fb1cd558-1194-4e9e-8eab-20c982295eb9">
+                  <dimensions lengthExponent="-1" massExponent="1" timeExponent="-2" electricCurrentExponent="0" thermodynamicTemperatureExponent="0" amountOfSubstanceExponent="0" luminousIntensityExponent="0"/>
+                  <unitType>PRESSUREUNIT</unitType>
+                  <name>PASCAL</name>
+                </unitComponent>
+              </conversionFactor>
+            </unit>
+          </IfcDerivedUnitElement>
+        </elements>
+      </IfcUnit>
+      <IfcUnit type="IfcDerivedUnit" unitType="MOMENTOFINERTIAUNIT">
+        <elements>
+          <IfcDerivedUnitElement exponent="4">
+            <unit type="IfcConversionBasedUnit" globalId="863035e1-30b7-4efa-8c94-1811d4bfc0ef">
+              <dimensions lengthExponent="1" massExponent="0" timeExponent="0" electricCurrentExponent="0" thermodynamicTemperatureExponent="0" amountOfSubstanceExponent="0" luminousIntensityExponent="0"/>
+              <unitType>LENGTHUNIT</unitType>
+              <name>inch</name>
+              <conversionFactor type="IfcMeasureWithUnit">
+                <valueComponent type="IfcLengthMeasure" value="0.0254"/>
+                <unitComponent type="IfcSIUnit" globalId="d8507808-3802-408d-837e-8bcf892e4695">
+                  <dimensions lengthExponent="1" massExponent="0" timeExponent="0" electricCurrentExponent="0" thermodynamicTemperatureExponent="0" amountOfSubstanceExponent="0" luminousIntensityExponent="0"/>
+                  <unitType>LENGTHUNIT</unitType>
+                  <name>METRE</name>
+                </unitComponent>
+              </conversionFactor>
+            </unit>
+          </IfcDerivedUnitElement>
+        </elements>
+      </IfcUnit>
+      <IfcUnit type="IfcDerivedUnit" unitType="PLANARFORCEUNIT">
+        <elements>
+          <IfcDerivedUnitElement exponent="-1">
+            <unit type="IfcConversionBasedUnit" globalId="5248fd3b-e326-489b-933a-72e4de89e9f3">
+              <dimensions lengthExponent="2" massExponent="0" timeExponent="0" electricCurrentExponent="0" thermodynamicTemperatureExponent="0" amountOfSubstanceExponent="0" luminousIntensityExponent="0"/>
+              <unitType>AREAUNIT</unitType>
+              <name>square inch</name>
+              <conversionFactor type="IfcMeasureWithUnit">
+                <valueComponent type="IfcAreaMeasure" value="6.452E-4"/>
+                <unitComponent type="IfcSIUnit" globalId="b49a1e90-7800-4cef-833d-46b587eebd94">
+                  <dimensions lengthExponent="2" massExponent="0" timeExponent="0" electricCurrentExponent="0" thermodynamicTemperatureExponent="0" amountOfSubstanceExponent="0" luminousIntensityExponent="0"/>
+                  <unitType>AREAUNIT</unitType>
+                  <name>SQUARE_METRE</name>
+                </unitComponent>
+              </conversionFactor>
+            </unit>
+          </IfcDerivedUnitElement>
+          <IfcDerivedUnitElement exponent="1">
+            <unit type="IfcConversionBasedUnit" globalId="b3a41aff-b1b0-4948-b1f6-b09e08cc2ea8">
+              <dimensions lengthExponent="1" massExponent="1" timeExponent="-2" electricCurrentExponent="0" thermodynamicTemperatureExponent="0" amountOfSubstanceExponent="0" luminousIntensityExponent="0"/>
+              <unitType>FORCEUNIT</unitType>
+              <name>pound-force</name>
+              <conversionFactor type="IfcMeasureWithUnit">
+                <valueComponent type="IfcMassMeasure" value="0.0"/>
+                <unitComponent type="IfcSIUnit" globalId="5b5227ff-4f10-4256-a4ba-6301712919d5">
+                  <dimensions lengthExponent="1" massExponent="1" timeExponent="-2" electricCurrentExponent="0" thermodynamicTemperatureExponent="0" amountOfSubstanceExponent="0" luminousIntensityExponent="0"/>
+                  <unitType>FORCEUNIT</unitType>
+                  <name>NEWTON</name>
+                </unitComponent>
+              </conversionFactor>
+            </unit>
+          </IfcDerivedUnitElement>
+        </elements>
+      </IfcUnit>
+      <IfcUnit type="IfcDerivedUnit" unitType="LINEARSTIFFNESSUNIT">
+        <elements>
+          <IfcDerivedUnitElement exponent="1">
+            <unit>b3a41aff-b1b0-4948-b1f6-b09e08cc2ea8</unit>
+          </IfcDerivedUnitElement>
+          <IfcDerivedUnitElement exponent="-1">
+            <unit>863035e1-30b7-4efa-8c94-1811d4bfc0ef</unit>
+          </IfcDerivedUnitElement>
+        </elements>
+      </IfcUnit>
+      <IfcUnit type="IfcDerivedUnit" unitType="MASSPERLENGTHUNIT">
+        <elements>
+          <IfcDerivedUnitElement exponent="1">
+            <unit type="IfcConversionBasedUnit" globalId="e290fd55-db88-4e00-9d91-09029ce9497a">
+              <dimensions lengthExponent="0" massExponent="1" timeExponent="0" electricCurrentExponent="0" thermodynamicTemperatureExponent="0" amountOfSubstanceExponent="0" luminousIntensityExponent="0"/>
+              <unitType>MASSUNIT</unitType>
+              <name>pound</name>
+              <conversionFactor type="IfcMeasureWithUnit">
+                <valueComponent type="IfcMassMeasure" value="0.0"/>
+                <unitComponent type="IfcSIUnit" globalId="cd15d667-b787-4290-a35f-579b4de46389">
+                  <dimensions lengthExponent="0" massExponent="1" timeExponent="0" electricCurrentExponent="0" thermodynamicTemperatureExponent="0" amountOfSubstanceExponent="0" luminousIntensityExponent="0"/>
+                  <unitType>MASSUNIT</unitType>
+                  <prefix>KILO</prefix>
+                  <name>GRAM</name>
+                </unitComponent>
+              </conversionFactor>
+            </unit>
+          </IfcDerivedUnitElement>
+          <IfcDerivedUnitElement exponent="-1">
+            <unit>863035e1-30b7-4efa-8c94-1811d4bfc0ef</unit>
+          </IfcDerivedUnitElement>
+        </elements>
+      </IfcUnit>
+      <IfcUnit>b3a41aff-b1b0-4948-b1f6-b09e08cc2ea8</IfcUnit>
+      <IfcUnit>e290fd55-db88-4e00-9d91-09029ce9497a</IfcUnit>
+      <IfcUnit type="IfcDerivedUnit" unitType="MODULUSOFELASTICITYUNIT">
+        <elements>
+          <IfcDerivedUnitElement exponent="1">
+            <unit>7bc9a114-d365-418b-8be2-3b1de5ddc310</unit>
+          </IfcDerivedUnitElement>
+        </elements>
+      </IfcUnit>
+      <IfcUnit>7bc9a114-d365-418b-8be2-3b1de5ddc310</IfcUnit>
+      <IfcUnit type="IfcDerivedUnit" unitType="SECTIONMODULUSUNIT">
+        <elements>
+          <IfcDerivedUnitElement exponent="3">
+            <unit>863035e1-30b7-4efa-8c94-1811d4bfc0ef</unit>
+          </IfcDerivedUnitElement>
+        </elements>
+      </IfcUnit>
+      <IfcUnit type="IfcDerivedUnit" unitType="SECTIONAREAINTEGRALUNIT">
+        <elements>
+          <IfcDerivedUnitElement exponent="5">
+            <unit>863035e1-30b7-4efa-8c94-1811d4bfc0ef</unit>
+          </IfcDerivedUnitElement>
+        </elements>
+      </IfcUnit>
+      <IfcUnit>863035e1-30b7-4efa-8c94-1811d4bfc0ef</IfcUnit>
+      <IfcUnit type="IfcDerivedUnit" unitType="ROTATIONALMASSUNIT">
+        <elements>
+          <IfcDerivedUnitElement exponent="1">
+            <unit>e290fd55-db88-4e00-9d91-09029ce9497a</unit>
+          </IfcDerivedUnitElement>
+          <IfcDerivedUnitElement exponent="-1">
+            <unit>5248fd3b-e326-489b-933a-72e4de89e9f3</unit>
+          </IfcDerivedUnitElement>
+        </elements>
+      </IfcUnit>
+      <IfcUnit type="IfcConversionBasedUnit" globalId="0b76816c-943f-4121-9fb0-1e57481963c5">
+        <dimensions lengthExponent="3" massExponent="0" timeExponent="0" electricCurrentExponent="0" thermodynamicTemperatureExponent="0" amountOfSubstanceExponent="0" luminousIntensityExponent="0"/>
+        <unitType>VOLUMEUNIT</unitType>
+        <name>cubic inch</name>
+        <conversionFactor type="IfcMeasureWithUnit">
+          <valueComponent type="IfcVolumeMeasure" value="1.639E-5"/>
+          <unitComponent type="IfcSIUnit" globalId="a9858ef6-ea87-47d5-b0ba-31c038b9f787">
+            <dimensions lengthExponent="3" massExponent="0" timeExponent="0" electricCurrentExponent="0" thermodynamicTemperatureExponent="0" amountOfSubstanceExponent="0" luminousIntensityExponent="0"/>
+            <unitType>VOLUMEUNIT</unitType>
+            <name>CUBIC_METRE</name>
+          </unitComponent>
+        </conversionFactor>
+      </IfcUnit>
+      <IfcUnit type="IfcDerivedUnit" unitType="MASSDENSITYUNIT">
+        <elements>
+          <IfcDerivedUnitElement exponent="1">
+            <unit>e290fd55-db88-4e00-9d91-09029ce9497a</unit>
+          </IfcDerivedUnitElement>
+          <IfcDerivedUnitElement exponent="-1">
+            <unit>0b76816c-943f-4121-9fb0-1e57481963c5</unit>
+          </IfcDerivedUnitElement>
+        </elements>
+      </IfcUnit>
+      <IfcUnit type="IfcDerivedUnit" unitType="LINEARFORCEUNIT">
+        <elements>
+          <IfcDerivedUnitElement exponent="-1">
+            <unit>863035e1-30b7-4efa-8c94-1811d4bfc0ef</unit>
+          </IfcDerivedUnitElement>
+          <IfcDerivedUnitElement exponent="1">
+            <unit>b3a41aff-b1b0-4948-b1f6-b09e08cc2ea8</unit>
+          </IfcDerivedUnitElement>
+        </elements>
+      </IfcUnit>
+      <IfcUnit type="IfcDerivedUnit" unitType="LINEARMOMENTUNIT">
+        <elements>
+          <IfcDerivedUnitElement exponent="1">
+            <unit>b3a41aff-b1b0-4948-b1f6-b09e08cc2ea8</unit>
+          </IfcDerivedUnitElement>
+          <IfcDerivedUnitElement exponent="1">
+            <unit>863035e1-30b7-4efa-8c94-1811d4bfc0ef</unit>
+          </IfcDerivedUnitElement>
+          <IfcDerivedUnitElement exponent="-1">
+            <unit>863035e1-30b7-4efa-8c94-1811d4bfc0ef</unit>
+          </IfcDerivedUnitElement>
+        </elements>
+      </IfcUnit>
+      <IfcUnit type="IfcDerivedUnit" unitType="ROTATIONALSTIFFNESSUNIT">
+        <elements>
+          <IfcDerivedUnitElement exponent="1">
+            <unit>863035e1-30b7-4efa-8c94-1811d4bfc0ef</unit>
+          </IfcDerivedUnitElement>
+          <IfcDerivedUnitElement exponent="1">
+            <unit>b3a41aff-b1b0-4948-b1f6-b09e08cc2ea8</unit>
+          </IfcDerivedUnitElement>
+          <IfcDerivedUnitElement exponent="-1">
+            <unit type="IfcConversionBasedUnit" globalId="d852fd5d-c6ae-4f94-afe3-0952f401c5b9">
+              <dimensions lengthExponent="0" massExponent="0" timeExponent="0" electricCurrentExponent="0" thermodynamicTemperatureExponent="0" amountOfSubstanceExponent="0" luminousIntensityExponent="0"/>
+              <unitType>PLANEANGLEUNIT</unitType>
+              <name>degree</name>
+              <conversionFactor type="IfcMeasureWithUnit">
+                <valueComponent type="IfcPlaneAngleMeasure" value="0.0174532925199433"/>
+                <unitComponent type="IfcSIUnit" globalId="770371ca-4720-4165-9eb0-e1212cdf8723">
+                  <dimensions lengthExponent="0" massExponent="0" timeExponent="0" electricCurrentExponent="0" thermodynamicTemperatureExponent="0" amountOfSubstanceExponent="0" luminousIntensityExponent="0"/>
+                  <unitType>PLANEANGLEUNIT</unitType>
+                  <name>RADIAN</name>
+                </unitComponent>
+              </conversionFactor>
+            </unit>
+          </IfcDerivedUnitElement>
+        </elements>
+      </IfcUnit>
+      <IfcUnit>5248fd3b-e326-489b-933a-72e4de89e9f3</IfcUnit>
+      <IfcUnit>d852fd5d-c6ae-4f94-afe3-0952f401c5b9</IfcUnit>
+    </units>
+  </unitsInContext>
+</IfcProject>
