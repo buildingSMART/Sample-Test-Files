@@ -1,7 +1,7 @@
 
 # Dataset Duplex Apartment
 
-Description:
+**Description:**
 
 A two story, duplex apartment building. In addition to the architectural model, discipline-specific models are created to simulate what might be created by engineering consultants on a much larger project. 
 
