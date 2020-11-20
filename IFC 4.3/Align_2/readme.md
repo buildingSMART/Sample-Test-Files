@@ -6,17 +6,17 @@
 
 | Element | Length | Entity in file |
 |----|----|----|
-| straight | 688.338m  | `#31` |
-| clothoid | 834.767m  | `#34` |
+| straight | 688.338m  | `#50` |
+| clothoid | 834.767m  | `#36` |
 | arc      | 0m        | `None`|
-| clothoid | 1099.370m | `#37` |
+| clothoid | 1099.370m | `#38` |
 | straight | 0m        | `None`|
 | clothoid | 928.817m  | `#40` |
-| arc	   | 393.904m  | `#43` |
-| clothoid | 646.649m  | `#46` |
-| arc      | 497.872m  | `#49` |
-| clothoid | 461.366m  | `#52` |
-| straight | 100m      | `#55` |
+| arc	   | 393.904m  | `#42` |
+| clothoid | 646.649m  | `#44` |
+| arc      | 497.872m  | `#46` |
+| clothoid | 461.366m  | `#58` |
+| straight | 100m      | `#52` |
 
 ### Prerequisites
 
