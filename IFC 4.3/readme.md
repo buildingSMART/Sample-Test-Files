@@ -16,6 +16,7 @@ An example is provided [here](Georeferencing_1/readme.md).
 - [Fork](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/working-with-forks) this repository. 
 Make changes. 
 Create a [pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork) to the main repository.
+  - For a brief summary of `git` process, see [here](https://github.com/tumcms/Open-Infra-Platform/blob/development/Documentation/markdown/GitProcess.md). There are also a lot of online tutorials available.
 
 ## FAQ
 
@@ -30,3 +31,6 @@ Any text editor will do,
 Take note of the readme files and submit a pull request.
 Contact `technical@buildingsmart.org` or `infrastructure@buildingsmart.org` (depending on the type of file) for help.
 
+### I would like to include *.* files to the example files for reference (asked [here](https://github.com/buildingSMART/Sample-Test-Files/issues/17)).
+
+Yes, of course. You can include multiple JPEGs if you see fit. Or IFC4 RV files. Or DWGs. Or PDFs. You should add anything that allows the other party to understand what is present in the IFC4x3 file.

@@ -1,0 +1,1805 @@
+{
+  "type" : "IfcProject",
+  "globalId" : "2fb45857-e9ac-4660-8943-604b07b54025",
+  "ownerHistory" : {
+    "type" : "IfcOwnerHistory",
+    "globalId" : "f974430e-88e1-4772-a724-5ca7d6e0ddb3",
+    "owningUser" : {
+      "type" : "IfcPersonAndOrganization",
+      "globalId" : "5addc637-1158-47df-b45e-4b81ccfc066f",
+      "thePerson" : {
+        "type" : "IfcPerson",
+        "globalId" : "dcda2919-dbcd-41ea-84ef-e67a0499a193",
+        "identification" : {
+          "type" : "IfcIdentifier",
+          "value" : "Tim"
+        }
+      },
+      "theOrganization" : {
+        "type" : "IfcOrganization",
+        "globalId" : "55f45f9f-6755-4c3f-89bd-1250c19f9b61",
+        "name" : {
+          "type" : "IfcLabel",
+          "value" : "Tim-PC"
+        }
+      }
+    },
+    "owningApplication" : {
+      "applicationDeveloper" : {
+        "type" : "IfcOrganization",
+        "globalId" : "341b20a7-311c-4ad5-a69d-588252462746",
+        "name" : {
+          "type" : "IfcLabel",
+          "value" : "Constructivity.com LLC"
+        }
+      },
+      "version" : {
+        "type" : "IfcLabel",
+        "value" : "0.9.1"
+      },
+      "applicationFullName" : {
+        "type" : "IfcLabel",
+        "value" : "Constructivity"
+      },
+      "applicationIdentifier" : {
+        "type" : "IfcIdentifier",
+        "value" : "CONSTRUCTIVITY"
+      }
+    },
+    "state" : "READWRITE",
+    "changeAction" : "NOTDEFINED",
+    "creationDate" : {
+      "type" : "IfcTimeStamp",
+      "value" : 1321055806
+    }
+  },
+  "name" : {
+    "type" : "IfcLabel",
+    "value" : "Project"
+  },
+  "isDecomposedBy" : {
+    "type" : "IfcRelAggregates",
+    "globalId" : "f427ca64-046f-49e9-88d1-b05ac99f5128",
+    "ownerHistory" : "f974430e-88e1-4772-a724-5ca7d6e0ddb3",
+    "relatedObjects" : [ {
+      "type" : "IfcBuilding",
+      "globalId" : "6d313a7d-0bf7-4f08-947f-80599436ab30",
+      "ownerHistory" : "f974430e-88e1-4772-a724-5ca7d6e0ddb3",
+      "containsElements" : [ {
+        "type" : "IfcRelContainedInSpatialStructure",
+        "globalId" : "b6d6bd0e-d0c8-44c4-a16b-530f15ecd61f",
+        "ownerHistory" : "f974430e-88e1-4772-a724-5ca7d6e0ddb3",
+        "relatedElements" : [ {
+          "type" : "IfcDuctSegment",
+          "globalId" : "dd08c94f-f7a6-40b5-90da-042c4b0733f8",
+          "ownerHistory" : "f974430e-88e1-4772-a724-5ca7d6e0ddb3",
+          "name" : {
+            "type" : "IfcLabel",
+            "value" : "Duct Segment #1"
+          },
+          "isNestedBy" : [ {
+            "type" : "IfcRelNests",
+            "globalId" : "b175304f-ae1c-47de-9f9e-5ad529c9326b",
+            "ownerHistory" : "f974430e-88e1-4772-a724-5ca7d6e0ddb3",
+            "relatedObjects" : [ {
+              "type" : "IfcDistributionPort",
+              "globalId" : "cf2d93e9-5c1a-430f-a485-27450eb62d4a",
+              "ownerHistory" : "f974430e-88e1-4772-a724-5ca7d6e0ddb3",
+              "name" : {
+                "type" : "IfcLabel",
+                "value" : "In"
+              },
+              "description" : {
+                "type" : "IfcText",
+                "value" : "The end of the duct segment at the flow inlet."
+              },
+              "objectPlacement" : {
+                "type" : "IfcLocalPlacement",
+                "globalId" : "82b40b66-acde-4d06-8761-2b46092026f7",
+                "placementRelTo" : {
+                  "type" : "IfcLocalPlacement",
+                  "globalId" : "378136f7-2fd9-41a7-b46d-15564e2f66f2",
+                  "placementRelTo" : {
+                    "type" : "IfcLocalPlacement",
+                    "globalId" : "89773468-b3a4-4682-ba0e-18ff8625429f",
+                    "placementRelTo" : {
+                      "type" : "IfcLocalPlacement",
+                      "globalId" : "ae56c2ff-b077-4fd4-8528-e6e354aea9ff",
+                      "relativePlacement" : {
+                        "type" : "IfcAxis2Placement3D",
+                        "location" : {
+                          "type" : "IfcCartesianPoint",
+                          "coordinates" : [ {
+                            "type" : "IfcLengthMeasure",
+                            "value" : 0.0
+                          }, {
+                            "type" : "IfcLengthMeasure",
+                            "value" : 0.0
+                          }, {
+                            "type" : "IfcLengthMeasure",
+                            "value" : 0.0
+                          } ]
+                        }
+                      }
+                    },
+                    "relativePlacement" : {
+                      "type" : "IfcAxis2Placement3D",
+                      "location" : {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 12.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 12.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 4.0
+                        } ]
+                      }
+                    }
+                  },
+                  "relativePlacement" : {
+                    "type" : "IfcAxis2Placement3D",
+                    "location" : {
+                      "type" : "IfcCartesianPoint",
+                      "coordinates" : [ {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      } ]
+                    },
+                    "axis" : {
+                      "type" : "IfcDirection",
+                      "directionRatios" : [ {
+                        "type" : "IfcReal",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcReal",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcReal",
+                        "value" : 1.0
+                      } ]
+                    },
+                    "refDirection" : {
+                      "type" : "IfcDirection",
+                      "directionRatios" : [ {
+                        "type" : "IfcReal",
+                        "value" : 1.0
+                      }, {
+                        "type" : "IfcReal",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcReal",
+                        "value" : 0.0
+                      } ]
+                    }
+                  }
+                },
+                "relativePlacement" : {
+                  "type" : "IfcAxis2Placement3D",
+                  "location" : {
+                    "type" : "IfcCartesianPoint",
+                    "coordinates" : [ {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 0.0
+                    }, {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 0.0
+                    }, {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 0.0
+                    } ]
+                  },
+                  "axis" : {
+                    "type" : "IfcDirection",
+                    "directionRatios" : [ {
+                      "type" : "IfcReal",
+                      "value" : 0.0
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 0.0
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : -1.0
+                    } ]
+                  },
+                  "refDirection" : {
+                    "type" : "IfcDirection",
+                    "directionRatios" : [ {
+                      "type" : "IfcReal",
+                      "value" : 1.0
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 0.0
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 0.0
+                    } ]
+                  }
+                }
+              },
+              "flowDirection" : "SINK",
+              "predefinedType" : "DUCT",
+              "systemType" : "AIRCONDITIONING"
+            }, {
+              "type" : "IfcDistributionPort",
+              "globalId" : "5be728ce-3061-4edd-9471-ccf3440f1c68",
+              "ownerHistory" : "f974430e-88e1-4772-a724-5ca7d6e0ddb3",
+              "name" : {
+                "type" : "IfcLabel",
+                "value" : "Out"
+              },
+              "description" : {
+                "type" : "IfcText",
+                "value" : "The end of the duct segment at the flow outlet."
+              },
+              "objectPlacement" : {
+                "type" : "IfcLocalPlacement",
+                "globalId" : "bb64c7a8-5ae7-4c0f-a83d-94aadaf7363b",
+                "placementRelTo" : "378136f7-2fd9-41a7-b46d-15564e2f66f2",
+                "relativePlacement" : {
+                  "type" : "IfcAxis2Placement3D",
+                  "location" : {
+                    "type" : "IfcCartesianPoint",
+                    "coordinates" : [ {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 0.0
+                    }, {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 0.0
+                    }, {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 24.0
+                    } ]
+                  }
+                }
+              },
+              "connectedTo" : [ {
+                "type" : "IfcRelConnectsPorts",
+                "globalId" : "229fc988-e700-418c-93f0-52150398730e",
+                "ownerHistory" : "f974430e-88e1-4772-a724-5ca7d6e0ddb3",
+                "relatingPort" : "5be728ce-3061-4edd-9471-ccf3440f1c68",
+                "relatedPort" : {
+                  "type" : "IfcDistributionPort",
+                  "globalId" : "1f45e60b-c79b-4422-977b-82adb1b73462",
+                  "ownerHistory" : "f974430e-88e1-4772-a724-5ca7d6e0ddb3",
+                  "name" : {
+                    "type" : "IfcLabel",
+                    "value" : "Inlet"
+                  },
+                  "objectPlacement" : "89773468-b3a4-4682-ba0e-18ff8625429f",
+                  "connectedFrom" : [ "229fc988-e700-418c-93f0-52150398730e" ],
+                  "flowDirection" : "SINK",
+                  "predefinedType" : "DUCT",
+                  "systemType" : "AIRCONDITIONING"
+                }
+              } ],
+              "flowDirection" : "SOURCE",
+              "predefinedType" : "DUCT",
+              "systemType" : "AIRCONDITIONING"
+            } ]
+          } ],
+          "hasAssociations" : [ {
+            "type" : "IfcRelAssociatesMaterial",
+            "globalId" : "6581d0c5-5995-48ca-96f3-cf254e6a7ca6",
+            "ownerHistory" : "f974430e-88e1-4772-a724-5ca7d6e0ddb3",
+            "name" : {
+              "type" : "IfcLabel",
+              "value" : "IfcDuctSegment"
+            },
+            "relatingMaterial" : {
+              "type" : "IfcMaterialProfileSetUsage",
+              "forProfileSet" : {
+                "type" : "IfcMaterialProfileSet",
+                "globalId" : "01a139f7-cd27-45a6-a45a-5a197ec98ab2",
+                "name" : {
+                  "type" : "IfcLabel",
+                  "value" : "Duct Segment"
+                },
+                "materialProfiles" : [ {
+                  "type" : "IfcMaterialProfileWithOffsets",
+                  "globalId" : "224742c4-c4db-405e-ab44-663ae46843bf",
+                  "name" : {
+                    "type" : "IfcLabel",
+                    "value" : "Body"
+                  },
+                  "material" : {
+                    "type" : "IfcMaterial",
+                    "globalId" : "0d6bcfdb-6a49-4588-a248-054bf967dd9c",
+                    "name" : {
+                      "type" : "IfcLabel",
+                      "value" : "Aluminum"
+                    },
+                    "category" : {
+                      "type" : "IfcLabel",
+                      "value" : "Aluminum"
+                    }
+                  },
+                  "profile" : {
+                    "type" : "IfcCircleHollowProfileDef",
+                    "profileType" : "AREA",
+                    "radius" : {
+                      "type" : "IfcPositiveLengthMeasure",
+                      "value" : 6.0
+                    },
+                    "wallThickness" : {
+                      "type" : "IfcPositiveLengthMeasure",
+                      "value" : 0.125
+                    }
+                  },
+                  "offsetValues" : [ {
+                    "type" : "IfcLengthMeasure",
+                    "value" : 0.0
+                  }, {
+                    "type" : "IfcLengthMeasure",
+                    "value" : 0.0
+                  } ]
+                } ]
+              },
+              "cardinalPoint" : {
+                "type" : "IfcCardinalPointReference",
+                "value" : 5
+              },
+              "referenceExtent" : {
+                "type" : "IfcPositiveLengthMeasure",
+                "value" : 96.0
+              }
+            }
+          } ],
+          "objectPlacement" : "378136f7-2fd9-41a7-b46d-15564e2f66f2",
+          "representation" : {
+            "type" : "IfcProductDefinitionShape",
+            "representations" : [ {
+              "type" : "IfcShapeRepresentation",
+              "contextOfItems" : {
+                "type" : "IfcGeometricRepresentationContext",
+                "globalId" : "b30bd36c-6dc8-413f-a1a8-88091a2cba03",
+                "contextIdentifier" : {
+                  "type" : "IfcLabel",
+                  "value" : "3D"
+                },
+                "contextType" : {
+                  "type" : "IfcLabel",
+                  "value" : "Model"
+                },
+                "coordinateSpaceDimension" : {
+                  "type" : "IfcDimensionCount",
+                  "value" : 3
+                },
+                "precision" : {
+                  "type" : "IfcReal",
+                  "value" : 1.0E-5
+                },
+                "worldCoordinateSystem" : {
+                  "type" : "IfcAxis2Placement3D",
+                  "location" : {
+                    "type" : "IfcCartesianPoint",
+                    "coordinates" : [ {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 0.0
+                    }, {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 0.0
+                    }, {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 0.0
+                    } ]
+                  }
+                }
+              },
+              "representationIdentifier" : {
+                "type" : "IfcLabel",
+                "value" : "Axis"
+              },
+              "representationType" : {
+                "type" : "IfcLabel",
+                "value" : "Curve3D"
+              },
+              "items" : [ {
+                "type" : "IfcPolyline",
+                "points" : [ {
+                  "type" : "IfcCartesianPoint",
+                  "coordinates" : [ {
+                    "type" : "IfcLengthMeasure",
+                    "value" : 0.0
+                  }, {
+                    "type" : "IfcLengthMeasure",
+                    "value" : 0.0
+                  }, {
+                    "type" : "IfcLengthMeasure",
+                    "value" : 0.0
+                  } ]
+                }, {
+                  "type" : "IfcCartesianPoint",
+                  "coordinates" : [ {
+                    "type" : "IfcLengthMeasure",
+                    "value" : 0.0
+                  }, {
+                    "type" : "IfcLengthMeasure",
+                    "value" : 0.0
+                  }, {
+                    "type" : "IfcLengthMeasure",
+                    "value" : 24.0
+                  } ]
+                } ]
+              } ]
+            }, {
+              "type" : "IfcShapeRepresentation",
+              "contextOfItems" : "b30bd36c-6dc8-413f-a1a8-88091a2cba03",
+              "representationIdentifier" : {
+                "type" : "IfcLabel",
+                "value" : "Body"
+              },
+              "representationType" : {
+                "type" : "IfcLabel",
+                "value" : "SweptSolid"
+              },
+              "items" : [ {
+                "type" : "IfcExtrudedAreaSolid",
+                "sweptArea" : {
+                  "type" : "IfcCircleHollowProfileDef",
+                  "profileType" : "AREA",
+                  "radius" : {
+                    "type" : "IfcPositiveLengthMeasure",
+                    "value" : 6.0
+                  },
+                  "wallThickness" : {
+                    "type" : "IfcPositiveLengthMeasure",
+                    "value" : 0.125
+                  }
+                },
+                "position" : {
+                  "type" : "IfcAxis2Placement3D",
+                  "location" : {
+                    "type" : "IfcCartesianPoint",
+                    "coordinates" : [ {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 0.0
+                    }, {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 0.0
+                    }, {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 0.0
+                    } ]
+                  }
+                },
+                "extrudedDirection" : {
+                  "type" : "IfcDirection",
+                  "directionRatios" : [ {
+                    "type" : "IfcReal",
+                    "value" : 0.0
+                  }, {
+                    "type" : "IfcReal",
+                    "value" : 0.0
+                  }, {
+                    "type" : "IfcReal",
+                    "value" : 1.0
+                  } ]
+                },
+                "depth" : {
+                  "type" : "IfcPositiveLengthMeasure",
+                  "value" : 24.0
+                }
+              } ]
+            } ]
+          },
+          "predefinedType" : "FLEXIBLESEGMENT"
+        }, {
+          "type" : "IfcAirTerminal",
+          "globalId" : "703c0f93-955f-4bdc-a8c0-41e62f30f3bb",
+          "ownerHistory" : "f974430e-88e1-4772-a724-5ca7d6e0ddb3",
+          "isNestedBy" : [ {
+            "type" : "IfcRelNests",
+            "globalId" : "d295c148-65ff-4aa4-82ed-726e36ee8946",
+            "ownerHistory" : "f974430e-88e1-4772-a724-5ca7d6e0ddb3",
+            "relatedObjects" : [ "1f45e60b-c79b-4422-977b-82adb1b73462" ]
+          } ],
+          "isTypedBy" : [ {
+            "type" : "IfcRelDefinesByType",
+            "globalId" : "d7044d40-1a28-49c8-8b63-054f2c5e4599",
+            "ownerHistory" : "f974430e-88e1-4772-a724-5ca7d6e0ddb3",
+            "relatingType" : {
+              "type" : "IfcAirTerminalType",
+              "globalId" : "4f39c682-589e-4c1f-b8a0-8f34be56f32b",
+              "ownerHistory" : "f974430e-88e1-4772-a724-5ca7d6e0ddb3",
+              "name" : {
+                "type" : "IfcLabel",
+                "value" : "Acme Diffuser 1234"
+              },
+              "description" : {
+                "type" : "IfcText",
+                "value" : "Ceiling diffuser"
+              },
+              "isNestedBy" : [ {
+                "type" : "IfcRelNests",
+                "globalId" : "cabd6417-2941-4e84-ba8b-a5914b21807b",
+                "ownerHistory" : "f974430e-88e1-4772-a724-5ca7d6e0ddb3",
+                "relatedObjects" : [ {
+                  "type" : "IfcDistributionPort",
+                  "globalId" : "2f310718-4379-44c3-8146-81ca22e3d5ea",
+                  "ownerHistory" : "f974430e-88e1-4772-a724-5ca7d6e0ddb3",
+                  "name" : {
+                    "type" : "IfcLabel",
+                    "value" : "Inlet"
+                  },
+                  "isDefinedBy" : [ {
+                    "type" : "IfcRelDefinesByProperties",
+                    "globalId" : "a9410051-ebe6-430a-bbf7-dc459b59498f",
+                    "ownerHistory" : "f974430e-88e1-4772-a724-5ca7d6e0ddb3",
+                    "name" : {
+                      "type" : "IfcLabel",
+                      "value" : "Pset_DistributionPortCommon"
+                    },
+                    "relatingPropertyDefinition" : {
+                      "type" : "IfcPropertySet",
+                      "globalId" : "d69d1da5-3510-4bd5-a892-feeb64557164",
+                      "ownerHistory" : "f974430e-88e1-4772-a724-5ca7d6e0ddb3",
+                      "name" : {
+                        "type" : "IfcLabel",
+                        "value" : "Pset_DistributionPortCommon"
+                      },
+                      "description" : {
+                        "type" : "IfcText",
+                        "value" : "Common attributes attached to an instance of IfcDistributionPort."
+                      },
+                      "hasProperties" : [ {
+                        "type" : "IfcPropertySingleValue",
+                        "name" : {
+                          "type" : "IfcIdentifier",
+                          "value" : "ColorCode"
+                        },
+                        "description" : {
+                          "type" : "IfcText",
+                          "value" : "Name of a color for identifying the connector, if applicable."
+                        }
+                      }, {
+                        "type" : "IfcPropertySingleValue",
+                        "name" : {
+                          "type" : "IfcIdentifier",
+                          "value" : "PortNumber"
+                        },
+                        "description" : {
+                          "type" : "IfcText",
+                          "value" : "The port index for logically ordering the port within the containing element or element type."
+                        }
+                      } ]
+                    }
+                  }, {
+                    "type" : "IfcRelDefinesByProperties",
+                    "globalId" : "fc08b5c5-264b-47a1-aec9-d0d255e973f9",
+                    "ownerHistory" : "f974430e-88e1-4772-a724-5ca7d6e0ddb3",
+                    "name" : {
+                      "type" : "IfcLabel",
+                      "value" : "Pset_DistributionPortTypeAirConditioning"
+                    },
+                    "relatingPropertyDefinition" : {
+                      "type" : "IfcPropertySet",
+                      "globalId" : "440957e2-c596-460a-9b2a-307ddebe3c5d",
+                      "ownerHistory" : "f974430e-88e1-4772-a724-5ca7d6e0ddb3",
+                      "name" : {
+                        "type" : "IfcLabel",
+                        "value" : "Pset_DistributionPortTypeAirConditioning"
+                      },
+                      "hasProperties" : [ {
+                        "type" : "IfcPropertySingleValue",
+                        "name" : {
+                          "type" : "IfcIdentifier",
+                          "value" : "ConnectionSubType"
+                        }
+                      }, {
+                        "type" : "IfcPropertyBoundedValue",
+                        "name" : {
+                          "type" : "IfcIdentifier",
+                          "value" : "DryBulbTemperature"
+                        }
+                      }, {
+                        "type" : "IfcPropertySingleValue",
+                        "name" : {
+                          "type" : "IfcIdentifier",
+                          "value" : "NominalWidth"
+                        },
+                        "nominalValue" : {
+                          "type" : "IfcPositiveLengthMeasure",
+                          "value" : 12.0
+                        }
+                      }, {
+                        "type" : "IfcPropertyBoundedValue",
+                        "name" : {
+                          "type" : "IfcIdentifier",
+                          "value" : "Pressure"
+                        }
+                      }, {
+                        "type" : "IfcPropertyBoundedValue",
+                        "name" : {
+                          "type" : "IfcIdentifier",
+                          "value" : "WetBulbTemperature"
+                        }
+                      }, {
+                        "type" : "IfcPropertyBoundedValue",
+                        "name" : {
+                          "type" : "IfcIdentifier",
+                          "value" : "VolumetricFlowRate"
+                        }
+                      }, {
+                        "type" : "IfcPropertyEnumeratedValue",
+                        "name" : {
+                          "type" : "IfcIdentifier",
+                          "value" : "ConnectionType"
+                        },
+                        "enumerationValues" : [ {
+                          "type" : "IfcLabel",
+                          "value" : "OUTSIDESLEEVE"
+                        } ],
+                        "enumerationReference" : {
+                          "type" : "IfcPropertyEnumeration",
+                          "name" : {
+                            "type" : "IfcLabel",
+                            "value" : "PEnum_DuctConnectionType"
+                          },
+                          "enumerationValues" : [ {
+                            "type" : "IfcLabel",
+                            "value" : "BEADEDSLEEVE"
+                          }, {
+                            "type" : "IfcLabel",
+                            "value" : "COMPRESSION"
+                          }, {
+                            "type" : "IfcLabel",
+                            "value" : "CRIMP"
+                          }, {
+                            "type" : "IfcLabel",
+                            "value" : "DRAWBAND"
+                          }, {
+                            "type" : "IfcLabel",
+                            "value" : "DRIVESLIP"
+                          }, {
+                            "type" : "IfcLabel",
+                            "value" : "FLANGED"
+                          }, {
+                            "type" : "IfcLabel",
+                            "value" : "OUTSIDESLEEVE"
+                          }, {
+                            "type" : "IfcLabel",
+                            "value" : "SLIPON"
+                          }, {
+                            "type" : "IfcLabel",
+                            "value" : "SOLDERED"
+                          }, {
+                            "type" : "IfcLabel",
+                            "value" : "SSLIP"
+                          }, {
+                            "type" : "IfcLabel",
+                            "value" : "STANDINGSEAM"
+                          }, {
+                            "type" : "IfcLabel",
+                            "value" : "SWEDGE"
+                          }, {
+                            "type" : "IfcLabel",
+                            "value" : "WELDED"
+                          }, {
+                            "type" : "IfcLabel",
+                            "value" : "OTHER"
+                          }, {
+                            "type" : "IfcLabel",
+                            "value" : "NONE"
+                          }, {
+                            "type" : "IfcLabel",
+                            "value" : "USERDEFINED"
+                          }, {
+                            "type" : "IfcLabel",
+                            "value" : "NOTDEFINED"
+                          } ]
+                        }
+                      }, {
+                        "type" : "IfcPropertySingleValue",
+                        "name" : {
+                          "type" : "IfcIdentifier",
+                          "value" : "NominalHeight"
+                        },
+                        "nominalValue" : {
+                          "type" : "IfcPositiveLengthMeasure",
+                          "value" : 12.0
+                        }
+                      }, {
+                        "type" : "IfcPropertyBoundedValue",
+                        "name" : {
+                          "type" : "IfcIdentifier",
+                          "value" : "Velocity"
+                        }
+                      } ]
+                    }
+                  } ],
+                  "objectPlacement" : {
+                    "type" : "IfcLocalPlacement",
+                    "globalId" : "10403353-b585-4f28-aa34-1345fe5a29f9",
+                    "relativePlacement" : {
+                      "type" : "IfcAxis2Placement3D",
+                      "location" : {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 12.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 12.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 4.0
+                        } ]
+                      }
+                    }
+                  },
+                  "flowDirection" : "SINK",
+                  "predefinedType" : "DUCT",
+                  "systemType" : "AIRCONDITIONING"
+                } ]
+              } ],
+              "hasContext" : [ {
+                "type" : "IfcRelDeclares",
+                "globalId" : "004236a3-2486-4ac9-8dcb-19f0f4371e60",
+                "ownerHistory" : "f974430e-88e1-4772-a724-5ca7d6e0ddb3",
+                "relatedDefinitions" : [ "4f39c682-589e-4c1f-b8a0-8f34be56f32b", {
+                  "type" : "IfcProjectLibrary",
+                  "globalId" : "75a72ffd-1d99-4c92-8569-15c6104137c5",
+                  "ownerHistory" : "f974430e-88e1-4772-a724-5ca7d6e0ddb3",
+                  "name" : {
+                    "type" : "IfcLabel",
+                    "value" : "IFC4"
+                  },
+                  "hasContext" : [ "004236a3-2486-4ac9-8dcb-19f0f4371e60" ],
+                  "hasAssociations" : [ {
+                    "type" : "IfcRelAssociatesLibrary",
+                    "globalId" : "ee5fb088-7d36-42d6-9bf0-62ec799fc4f2",
+                    "ownerHistory" : "f974430e-88e1-4772-a724-5ca7d6e0ddb3",
+                    "relatingLibrary" : {
+                      "type" : "IfcLibraryReference",
+                      "identification" : {
+                        "type" : "IfcIdentifier",
+                        "value" : "1rfo$z7PbCaeLf5SOGGJV5"
+                      },
+                      "name" : {
+                        "type" : "IfcLabel",
+                        "value" : "IFC4"
+                      },
+                      "referencedLibrary" : {
+                        "type" : "IfcLibraryInformation",
+                        "name" : {
+                          "type" : "IfcLabel",
+                          "value" : "HVAC Product Type Library Example"
+                        },
+                        "versionDate" : {
+                          "type" : "IfcDateTime",
+                          "value" : "2011-11-11T23:49:28"
+                        },
+                        "location" : {
+                          "type" : "IfcURIReference",
+                          "value" : "IfcAirTerminalType.ifc"
+                        }
+                      }
+                    }
+                  } ]
+                } ]
+              } ],
+              "hasAssociations" : [ {
+                "type" : "IfcRelAssociatesLibrary",
+                "globalId" : "cddf3abe-3fa9-4b5f-9acd-ddc911c94ea6",
+                "ownerHistory" : "f974430e-88e1-4772-a724-5ca7d6e0ddb3",
+                "relatingLibrary" : {
+                  "type" : "IfcLibraryReference",
+                  "identification" : {
+                    "type" : "IfcIdentifier",
+                    "value" : "1FESQ2M9vC7xYWZpI_LlCh"
+                  },
+                  "name" : {
+                    "type" : "IfcLabel",
+                    "value" : "Acme Diffuser 1234"
+                  },
+                  "description" : {
+                    "type" : "IfcText",
+                    "value" : "Ceiling diffuser"
+                  },
+                  "referencedLibrary" : {
+                    "type" : "IfcLibraryInformation",
+                    "name" : {
+                      "type" : "IfcLabel",
+                      "value" : "HVAC Product Type Library Example"
+                    },
+                    "versionDate" : {
+                      "type" : "IfcDateTime",
+                      "value" : "2011-11-11T23:49:28"
+                    },
+                    "location" : {
+                      "type" : "IfcURIReference",
+                      "value" : "IfcAirTerminalType.ifc"
+                    }
+                  }
+                }
+              } ],
+              "hasPropertySets" : [ {
+                "type" : "IfcPropertySet",
+                "globalId" : "c46cb661-483e-412c-963c-797c8689b399",
+                "ownerHistory" : "f974430e-88e1-4772-a724-5ca7d6e0ddb3",
+                "name" : {
+                  "type" : "IfcLabel",
+                  "value" : "Pset_AirTerminalTypeCommon"
+                },
+                "hasProperties" : [ {
+                  "type" : "IfcPropertySingleValue",
+                  "name" : {
+                    "type" : "IfcIdentifier",
+                    "value" : "CoreSetHorizontal"
+                  }
+                }, {
+                  "type" : "IfcPropertyEnumeratedValue",
+                  "name" : {
+                    "type" : "IfcIdentifier",
+                    "value" : "FaceType"
+                  },
+                  "enumerationReference" : {
+                    "type" : "IfcPropertyEnumeration",
+                    "name" : {
+                      "type" : "IfcLabel",
+                      "value" : "PEnum_AirTerminalFaceType"
+                    },
+                    "enumerationValues" : [ {
+                      "type" : "IfcLabel",
+                      "value" : "FOURWAYPATTERN"
+                    }, {
+                      "type" : "IfcLabel",
+                      "value" : "SINGLEDEFLECTION"
+                    }, {
+                      "type" : "IfcLabel",
+                      "value" : "DOUBLEDEFLECTION"
+                    }, {
+                      "type" : "IfcLabel",
+                      "value" : "SIGHTPROOF"
+                    }, {
+                      "type" : "IfcLabel",
+                      "value" : "EGGCRATE"
+                    }, {
+                      "type" : "IfcLabel",
+                      "value" : "PERFORATED"
+                    }, {
+                      "type" : "IfcLabel",
+                      "value" : "LOUVERED"
+                    }, {
+                      "type" : "IfcLabel",
+                      "value" : "OTHER"
+                    }, {
+                      "type" : "IfcLabel",
+                      "value" : "NOTKNOWN"
+                    }, {
+                      "type" : "IfcLabel",
+                      "value" : "UNSET"
+                    } ]
+                  }
+                }, {
+                  "type" : "IfcPropertyEnumeratedValue",
+                  "name" : {
+                    "type" : "IfcIdentifier",
+                    "value" : "Status"
+                  },
+                  "enumerationReference" : {
+                    "type" : "IfcPropertyEnumeration",
+                    "name" : {
+                      "type" : "IfcLabel",
+                      "value" : "PEnum_Status"
+                    },
+                    "enumerationValues" : [ {
+                      "type" : "IfcLabel",
+                      "value" : "NEW"
+                    }, {
+                      "type" : "IfcLabel",
+                      "value" : "EXISTING"
+                    }, {
+                      "type" : "IfcLabel",
+                      "value" : "DEMOLISH"
+                    }, {
+                      "type" : "IfcLabel",
+                      "value" : "TEMPORARY"
+                    }, {
+                      "type" : "IfcLabel",
+                      "value" : "OTHER"
+                    }, {
+                      "type" : "IfcLabel",
+                      "value" : "NOTKNOWN"
+                    }, {
+                      "type" : "IfcLabel",
+                      "value" : "UNSET"
+                    } ]
+                  }
+                }, {
+                  "type" : "IfcPropertyBoundedValue",
+                  "name" : {
+                    "type" : "IfcIdentifier",
+                    "value" : "AirFlowrateRange"
+                  }
+                }, {
+                  "type" : "IfcPropertySingleValue",
+                  "name" : {
+                    "type" : "IfcIdentifier",
+                    "value" : "ThrowLength"
+                  }
+                }, {
+                  "type" : "IfcPropertySingleValue",
+                  "name" : {
+                    "type" : "IfcIdentifier",
+                    "value" : "Reference"
+                  }
+                }, {
+                  "type" : "IfcPropertySingleValue",
+                  "name" : {
+                    "type" : "IfcIdentifier",
+                    "value" : "SlotLength"
+                  }
+                }, {
+                  "type" : "IfcPropertySingleValue",
+                  "name" : {
+                    "type" : "IfcIdentifier",
+                    "value" : "NeckArea"
+                  }
+                }, {
+                  "type" : "IfcPropertyEnumeratedValue",
+                  "name" : {
+                    "type" : "IfcIdentifier",
+                    "value" : "DischargeDirection"
+                  },
+                  "enumerationReference" : {
+                    "type" : "IfcPropertyEnumeration",
+                    "name" : {
+                      "type" : "IfcLabel",
+                      "value" : "PEnum_AirTerminalDischargeDirection"
+                    },
+                    "enumerationValues" : [ {
+                      "type" : "IfcLabel",
+                      "value" : "PARALLEL"
+                    }, {
+                      "type" : "IfcLabel",
+                      "value" : "PERPENDICULAR"
+                    }, {
+                      "type" : "IfcLabel",
+                      "value" : "ADJUSTABLE"
+                    }, {
+                      "type" : "IfcLabel",
+                      "value" : "OTHER"
+                    }, {
+                      "type" : "IfcLabel",
+                      "value" : "NOTKNOWN"
+                    }, {
+                      "type" : "IfcLabel",
+                      "value" : "UNSET"
+                    } ]
+                  }
+                }, {
+                  "type" : "IfcPropertyEnumeratedValue",
+                  "name" : {
+                    "type" : "IfcIdentifier",
+                    "value" : "CoreType"
+                  },
+                  "enumerationReference" : {
+                    "type" : "IfcPropertyEnumeration",
+                    "name" : {
+                      "type" : "IfcLabel",
+                      "value" : "PEnum_AirTerminalCoreType"
+                    },
+                    "enumerationValues" : [ {
+                      "type" : "IfcLabel",
+                      "value" : "SHUTTERBLADE"
+                    }, {
+                      "type" : "IfcLabel",
+                      "value" : "CURVEDBLADE"
+                    }, {
+                      "type" : "IfcLabel",
+                      "value" : "REMOVABLE"
+                    }, {
+                      "type" : "IfcLabel",
+                      "value" : "REVERSIBLE"
+                    }, {
+                      "type" : "IfcLabel",
+                      "value" : "NONE"
+                    }, {
+                      "type" : "IfcLabel",
+                      "value" : "OTHER"
+                    }, {
+                      "type" : "IfcLabel",
+                      "value" : "NOTKNOWN"
+                    }, {
+                      "type" : "IfcLabel",
+                      "value" : "UNSET"
+                    } ]
+                  }
+                }, {
+                  "type" : "IfcPropertySingleValue",
+                  "name" : {
+                    "type" : "IfcIdentifier",
+                    "value" : "SlotWidth"
+                  }
+                }, {
+                  "type" : "IfcPropertySingleValue",
+                  "name" : {
+                    "type" : "IfcIdentifier",
+                    "value" : "AirDiffusionPerformanceIndex"
+                  }
+                }, {
+                  "type" : "IfcPropertySingleValue",
+                  "name" : {
+                    "type" : "IfcIdentifier",
+                    "value" : "HasSoundAttenuator"
+                  }
+                }, {
+                  "type" : "IfcPropertySingleValue",
+                  "name" : {
+                    "type" : "IfcIdentifier",
+                    "value" : "NumberOfSlots"
+                  }
+                }, {
+                  "type" : "IfcPropertyTableValue",
+                  "name" : {
+                    "type" : "IfcIdentifier",
+                    "value" : "AirFlowrateVersusFlowControlElement"
+                  }
+                }, {
+                  "type" : "IfcPropertyBoundedValue",
+                  "name" : {
+                    "type" : "IfcIdentifier",
+                    "value" : "TemperatureRange"
+                  }
+                }, {
+                  "type" : "IfcPropertyEnumeratedValue",
+                  "name" : {
+                    "type" : "IfcIdentifier",
+                    "value" : "FlowPattern"
+                  },
+                  "enumerationReference" : {
+                    "type" : "IfcPropertyEnumeration",
+                    "name" : {
+                      "type" : "IfcLabel",
+                      "value" : "PEnum_AirTerminalFlowPattern"
+                    },
+                    "enumerationValues" : [ {
+                      "type" : "IfcLabel",
+                      "value" : "LINEARSINGLE"
+                    }, {
+                      "type" : "IfcLabel",
+                      "value" : "LINEARDOUBLE"
+                    }, {
+                      "type" : "IfcLabel",
+                      "value" : "LINEARFOURWAY"
+                    }, {
+                      "type" : "IfcLabel",
+                      "value" : "RADIAL"
+                    }, {
+                      "type" : "IfcLabel",
+                      "value" : "SWIRL"
+                    }, {
+                      "type" : "IfcLabel",
+                      "value" : "DISPLACMENT"
+                    }, {
+                      "type" : "IfcLabel",
+                      "value" : "COMPACTJET"
+                    }, {
+                      "type" : "IfcLabel",
+                      "value" : "OTHER"
+                    }, {
+                      "type" : "IfcLabel",
+                      "value" : "NOTKNOWN"
+                    }, {
+                      "type" : "IfcLabel",
+                      "value" : "UNSET"
+                    } ]
+                  }
+                }, {
+                  "type" : "IfcPropertySingleValue",
+                  "name" : {
+                    "type" : "IfcIdentifier",
+                    "value" : "HasThermalInsulation"
+                  }
+                }, {
+                  "type" : "IfcPropertyEnumeratedValue",
+                  "name" : {
+                    "type" : "IfcIdentifier",
+                    "value" : "Shape"
+                  },
+                  "enumerationValues" : [ {
+                    "type" : "IfcLabel",
+                    "value" : "SQUARE"
+                  } ],
+                  "enumerationReference" : {
+                    "type" : "IfcPropertyEnumeration",
+                    "name" : {
+                      "type" : "IfcLabel",
+                      "value" : "PEnum_AirTerminalShape"
+                    },
+                    "enumerationValues" : [ {
+                      "type" : "IfcLabel",
+                      "value" : "ROUND"
+                    }, {
+                      "type" : "IfcLabel",
+                      "value" : "RECTANGULAR"
+                    }, {
+                      "type" : "IfcLabel",
+                      "value" : "SQUARE"
+                    }, {
+                      "type" : "IfcLabel",
+                      "value" : "SLOT"
+                    }, {
+                      "type" : "IfcLabel",
+                      "value" : "OTHER"
+                    }, {
+                      "type" : "IfcLabel",
+                      "value" : "NOTKNOWN"
+                    }, {
+                      "type" : "IfcLabel",
+                      "value" : "UNSET"
+                    } ]
+                  }
+                }, {
+                  "type" : "IfcPropertyEnumeratedValue",
+                  "name" : {
+                    "type" : "IfcIdentifier",
+                    "value" : "MountingType"
+                  },
+                  "enumerationReference" : {
+                    "type" : "IfcPropertyEnumeration",
+                    "name" : {
+                      "type" : "IfcLabel",
+                      "value" : "PEnum_AirTerminalMountingType"
+                    },
+                    "enumerationValues" : [ {
+                      "type" : "IfcLabel",
+                      "value" : "SURFACE"
+                    }, {
+                      "type" : "IfcLabel",
+                      "value" : "FLATFLUSH"
+                    }, {
+                      "type" : "IfcLabel",
+                      "value" : "LAYIN"
+                    }, {
+                      "type" : "IfcLabel",
+                      "value" : "OTHER"
+                    }, {
+                      "type" : "IfcLabel",
+                      "value" : "NOTKNOWN"
+                    }, {
+                      "type" : "IfcLabel",
+                      "value" : "UNSET"
+                    } ]
+                  }
+                }, {
+                  "type" : "IfcPropertySingleValue",
+                  "name" : {
+                    "type" : "IfcIdentifier",
+                    "value" : "FinishColor"
+                  }
+                }, {
+                  "type" : "IfcPropertyEnumeratedValue",
+                  "name" : {
+                    "type" : "IfcIdentifier",
+                    "value" : "FlowControlType"
+                  },
+                  "enumerationReference" : {
+                    "type" : "IfcPropertyEnumeration",
+                    "name" : {
+                      "type" : "IfcLabel",
+                      "value" : "PEnum_AirTerminalFlowControlType"
+                    },
+                    "enumerationValues" : [ {
+                      "type" : "IfcLabel",
+                      "value" : "DAMPER"
+                    }, {
+                      "type" : "IfcLabel",
+                      "value" : "BELLOWS"
+                    }, {
+                      "type" : "IfcLabel",
+                      "value" : "NONE"
+                    }, {
+                      "type" : "IfcLabel",
+                      "value" : "OTHER"
+                    }, {
+                      "type" : "IfcLabel",
+                      "value" : "NOTKNOWN"
+                    }, {
+                      "type" : "IfcLabel",
+                      "value" : "UNSET"
+                    } ]
+                  }
+                }, {
+                  "type" : "IfcPropertyEnumeratedValue",
+                  "name" : {
+                    "type" : "IfcIdentifier",
+                    "value" : "FinishType"
+                  },
+                  "enumerationReference" : {
+                    "type" : "IfcPropertyEnumeration",
+                    "name" : {
+                      "type" : "IfcLabel",
+                      "value" : "PEnum_AirTerminalFinishType"
+                    },
+                    "enumerationValues" : [ {
+                      "type" : "IfcLabel",
+                      "value" : "ANNODIZED"
+                    }, {
+                      "type" : "IfcLabel",
+                      "value" : "PAINTED"
+                    }, {
+                      "type" : "IfcLabel",
+                      "value" : "NONE"
+                    }, {
+                      "type" : "IfcLabel",
+                      "value" : "OTHER"
+                    }, {
+                      "type" : "IfcLabel",
+                      "value" : "NOTKNOWN"
+                    }, {
+                      "type" : "IfcLabel",
+                      "value" : "UNSET"
+                    } ]
+                  }
+                }, {
+                  "type" : "IfcPropertySingleValue",
+                  "name" : {
+                    "type" : "IfcIdentifier",
+                    "value" : "HasIntegralControl"
+                  }
+                }, {
+                  "type" : "IfcPropertySingleValue",
+                  "name" : {
+                    "type" : "IfcIdentifier",
+                    "value" : "CoreSetVertical"
+                  }
+                }, {
+                  "type" : "IfcPropertySingleValue",
+                  "name" : {
+                    "type" : "IfcIdentifier",
+                    "value" : "EffectiveArea"
+                  }
+                } ]
+              }, {
+                "type" : "IfcPropertySet",
+                "globalId" : "95580094-1679-4fb0-b7dd-ce97aa631bc4",
+                "ownerHistory" : "f974430e-88e1-4772-a724-5ca7d6e0ddb3",
+                "name" : {
+                  "type" : "IfcLabel",
+                  "value" : "Pset_ManufacturerTypeInformation"
+                },
+                "hasProperties" : [ {
+                  "type" : "IfcPropertySingleValue",
+                  "name" : {
+                    "type" : "IfcIdentifier",
+                    "value" : "ArticleNumber"
+                  }
+                }, {
+                  "type" : "IfcPropertySingleValue",
+                  "name" : {
+                    "type" : "IfcIdentifier",
+                    "value" : "ModelLabel"
+                  },
+                  "nominalValue" : {
+                    "type" : "IfcLabel",
+                    "value" : "Ceiling Diffuser"
+                  }
+                }, {
+                  "type" : "IfcPropertySingleValue",
+                  "name" : {
+                    "type" : "IfcIdentifier",
+                    "value" : "GlobalTradeItemNumber"
+                  }
+                }, {
+                  "type" : "IfcPropertyEnumeratedValue",
+                  "name" : {
+                    "type" : "IfcIdentifier",
+                    "value" : "AssemblyPlace"
+                  },
+                  "enumerationValues" : [ {
+                    "type" : "IfcLabel",
+                    "value" : "FACTORY"
+                  } ],
+                  "enumerationReference" : {
+                    "type" : "IfcPropertyEnumeration",
+                    "name" : {
+                      "type" : "IfcLabel",
+                      "value" : "PEnum_AssemblyPlace"
+                    },
+                    "enumerationValues" : [ {
+                      "type" : "IfcLabel",
+                      "value" : "FACTORY"
+                    }, {
+                      "type" : "IfcLabel",
+                      "value" : "OFFSITE"
+                    }, {
+                      "type" : "IfcLabel",
+                      "value" : "SITE"
+                    }, {
+                      "type" : "IfcLabel",
+                      "value" : "OTHER"
+                    }, {
+                      "type" : "IfcLabel",
+                      "value" : "NOTKNOWN"
+                    }, {
+                      "type" : "IfcLabel",
+                      "value" : "UNSET"
+                    } ]
+                  }
+                }, {
+                  "type" : "IfcPropertySingleValue",
+                  "name" : {
+                    "type" : "IfcIdentifier",
+                    "value" : "ModelReference"
+                  },
+                  "nominalValue" : {
+                    "type" : "IfcLabel",
+                    "value" : "1234"
+                  }
+                }, {
+                  "type" : "IfcPropertySingleValue",
+                  "name" : {
+                    "type" : "IfcIdentifier",
+                    "value" : "ProductionYear"
+                  },
+                  "nominalValue" : {
+                    "type" : "IfcLabel",
+                    "value" : "2011"
+                  }
+                }, {
+                  "type" : "IfcPropertySingleValue",
+                  "name" : {
+                    "type" : "IfcIdentifier",
+                    "value" : "Manufacturer"
+                  },
+                  "nominalValue" : {
+                    "type" : "IfcLabel",
+                    "value" : "Acme"
+                  }
+                } ]
+              } ],
+              "representationMaps" : [ {
+                "type" : "IfcRepresentationMap",
+                "mappingOrigin" : {
+                  "type" : "IfcAxis2Placement3D",
+                  "location" : {
+                    "type" : "IfcCartesianPoint",
+                    "coordinates" : [ {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 0.0
+                    }, {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 0.0
+                    }, {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 0.0
+                    } ]
+                  }
+                },
+                "mappedRepresentation" : {
+                  "type" : "IfcShapeRepresentation",
+                  "contextOfItems" : "b30bd36c-6dc8-413f-a1a8-88091a2cba03",
+                  "representationIdentifier" : {
+                    "type" : "IfcLabel",
+                    "value" : "Body"
+                  },
+                  "representationType" : {
+                    "type" : "IfcLabel",
+                    "value" : "AdvancedSweptSolid"
+                  },
+                  "items" : [ {
+                    "type" : "IfcExtrudedAreaSolidTapered",
+                    "sweptArea" : {
+                      "type" : "IfcRectangleHollowProfileDef",
+                      "profileType" : "AREA",
+                      "xDim" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 24.0
+                      },
+                      "yDim" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 24.0
+                      },
+                      "wallThickness" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 2.0
+                      },
+                      "innerFilletRadius" : {
+                        "type" : "IfcNonNegativeLengthMeasure",
+                        "value" : 10.0
+                      },
+                      "outerFilletRadius" : {
+                        "type" : "IfcNonNegativeLengthMeasure",
+                        "value" : 0.0
+                      }
+                    },
+                    "position" : {
+                      "type" : "IfcAxis2Placement3D",
+                      "location" : {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 12.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 12.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        } ]
+                      }
+                    },
+                    "extrudedDirection" : {
+                      "type" : "IfcDirection",
+                      "directionRatios" : [ {
+                        "type" : "IfcReal",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcReal",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcReal",
+                        "value" : 1.0
+                      } ]
+                    },
+                    "depth" : {
+                      "type" : "IfcPositiveLengthMeasure",
+                      "value" : 4.0
+                    },
+                    "endSweptArea" : {
+                      "type" : "IfcDerivedProfileDef",
+                      "profileType" : "AREA",
+                      "parentProfile" : {
+                        "type" : "IfcRectangleHollowProfileDef",
+                        "profileType" : "AREA",
+                        "xDim" : {
+                          "type" : "IfcPositiveLengthMeasure",
+                          "value" : 24.0
+                        },
+                        "yDim" : {
+                          "type" : "IfcPositiveLengthMeasure",
+                          "value" : 24.0
+                        },
+                        "wallThickness" : {
+                          "type" : "IfcPositiveLengthMeasure",
+                          "value" : 2.0
+                        },
+                        "innerFilletRadius" : {
+                          "type" : "IfcNonNegativeLengthMeasure",
+                          "value" : 10.0
+                        },
+                        "outerFilletRadius" : {
+                          "type" : "IfcNonNegativeLengthMeasure",
+                          "value" : 0.0
+                        }
+                      },
+                      "operator" : {
+                        "type" : "IfcCartesianTransformationOperator2D",
+                        "localOrigin" : {
+                          "type" : "IfcCartesianPoint",
+                          "coordinates" : [ {
+                            "type" : "IfcLengthMeasure",
+                            "value" : 0.0
+                          }, {
+                            "type" : "IfcLengthMeasure",
+                            "value" : 0.0
+                          } ]
+                        },
+                        "scale" : {
+                          "type" : "IfcReal",
+                          "value" : 0.5
+                        }
+                      }
+                    }
+                  } ]
+                }
+              } ],
+              "predefinedType" : "DIFFUSER"
+            }
+          } ],
+          "objectPlacement" : "ae56c2ff-b077-4fd4-8528-e6e354aea9ff",
+          "representation" : {
+            "type" : "IfcProductDefinitionShape",
+            "representations" : [ {
+              "type" : "IfcShapeRepresentation",
+              "contextOfItems" : "b30bd36c-6dc8-413f-a1a8-88091a2cba03",
+              "representationIdentifier" : {
+                "type" : "IfcLabel",
+                "value" : "Body"
+              },
+              "representationType" : {
+                "type" : "IfcLabel",
+                "value" : "MappedRepresentation"
+              },
+              "items" : [ {
+                "type" : "IfcMappedItem",
+                "mappingSource" : {
+                  "type" : "IfcRepresentationMap",
+                  "mappingOrigin" : {
+                    "type" : "IfcAxis2Placement3D",
+                    "location" : {
+                      "type" : "IfcCartesianPoint",
+                      "coordinates" : [ {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      } ]
+                    }
+                  },
+                  "mappedRepresentation" : {
+                    "type" : "IfcShapeRepresentation",
+                    "contextOfItems" : "b30bd36c-6dc8-413f-a1a8-88091a2cba03",
+                    "representationIdentifier" : {
+                      "type" : "IfcLabel",
+                      "value" : "Body"
+                    },
+                    "representationType" : {
+                      "type" : "IfcLabel",
+                      "value" : "AdvancedSweptSolid"
+                    },
+                    "items" : [ {
+                      "type" : "IfcExtrudedAreaSolidTapered",
+                      "sweptArea" : {
+                        "type" : "IfcRectangleHollowProfileDef",
+                        "profileType" : "AREA",
+                        "xDim" : {
+                          "type" : "IfcPositiveLengthMeasure",
+                          "value" : 24.0
+                        },
+                        "yDim" : {
+                          "type" : "IfcPositiveLengthMeasure",
+                          "value" : 24.0
+                        },
+                        "wallThickness" : {
+                          "type" : "IfcPositiveLengthMeasure",
+                          "value" : 2.0
+                        },
+                        "innerFilletRadius" : {
+                          "type" : "IfcNonNegativeLengthMeasure",
+                          "value" : 10.0
+                        },
+                        "outerFilletRadius" : {
+                          "type" : "IfcNonNegativeLengthMeasure",
+                          "value" : 0.0
+                        }
+                      },
+                      "position" : {
+                        "type" : "IfcAxis2Placement3D",
+                        "location" : {
+                          "type" : "IfcCartesianPoint",
+                          "coordinates" : [ {
+                            "type" : "IfcLengthMeasure",
+                            "value" : 12.0
+                          }, {
+                            "type" : "IfcLengthMeasure",
+                            "value" : 12.0
+                          }, {
+                            "type" : "IfcLengthMeasure",
+                            "value" : 0.0
+                          } ]
+                        }
+                      },
+                      "extrudedDirection" : {
+                        "type" : "IfcDirection",
+                        "directionRatios" : [ {
+                          "type" : "IfcReal",
+                          "value" : 0.0
+                        }, {
+                          "type" : "IfcReal",
+                          "value" : 0.0
+                        }, {
+                          "type" : "IfcReal",
+                          "value" : 1.0
+                        } ]
+                      },
+                      "depth" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 4.0
+                      },
+                      "endSweptArea" : {
+                        "type" : "IfcDerivedProfileDef",
+                        "profileType" : "AREA",
+                        "parentProfile" : {
+                          "type" : "IfcRectangleHollowProfileDef",
+                          "profileType" : "AREA",
+                          "xDim" : {
+                            "type" : "IfcPositiveLengthMeasure",
+                            "value" : 24.0
+                          },
+                          "yDim" : {
+                            "type" : "IfcPositiveLengthMeasure",
+                            "value" : 24.0
+                          },
+                          "wallThickness" : {
+                            "type" : "IfcPositiveLengthMeasure",
+                            "value" : 2.0
+                          },
+                          "innerFilletRadius" : {
+                            "type" : "IfcNonNegativeLengthMeasure",
+                            "value" : 10.0
+                          },
+                          "outerFilletRadius" : {
+                            "type" : "IfcNonNegativeLengthMeasure",
+                            "value" : 0.0
+                          }
+                        },
+                        "operator" : {
+                          "type" : "IfcCartesianTransformationOperator2D",
+                          "localOrigin" : {
+                            "type" : "IfcCartesianPoint",
+                            "coordinates" : [ {
+                              "type" : "IfcLengthMeasure",
+                              "value" : 0.0
+                            }, {
+                              "type" : "IfcLengthMeasure",
+                              "value" : 0.0
+                            } ]
+                          },
+                          "scale" : {
+                            "type" : "IfcReal",
+                            "value" : 0.5
+                          }
+                        }
+                      }
+                    } ]
+                  }
+                },
+                "mappingTarget" : {
+                  "type" : "IfcCartesianTransformationOperator3D",
+                  "localOrigin" : {
+                    "type" : "IfcCartesianPoint",
+                    "coordinates" : [ {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 0.0
+                    }, {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 0.0
+                    }, {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 0.0
+                    } ]
+                  },
+                  "scale" : {
+                    "type" : "IfcReal",
+                    "value" : 1.0
+                  }
+                }
+              } ]
+            } ]
+          },
+          "predefinedType" : "NOTDEFINED"
+        } ]
+      } ],
+      "compositionType" : "ELEMENT"
+    } ]
+  },
+  "representationContexts" : [ "b30bd36c-6dc8-413f-a1a8-88091a2cba03", {
+    "type" : "IfcGeometricRepresentationContext",
+    "globalId" : "2daed28b-271f-467a-8cef-f23fd2fb9553",
+    "contextIdentifier" : {
+      "type" : "IfcLabel",
+      "value" : "2D"
+    },
+    "contextType" : {
+      "type" : "IfcLabel",
+      "value" : "Plan"
+    },
+    "coordinateSpaceDimension" : {
+      "type" : "IfcDimensionCount",
+      "value" : 2
+    },
+    "precision" : {
+      "type" : "IfcReal",
+      "value" : 1.0E-5
+    },
+    "worldCoordinateSystem" : {
+      "type" : "IfcAxis2Placement3D",
+      "location" : {
+        "type" : "IfcCartesianPoint",
+        "coordinates" : [ {
+          "type" : "IfcLengthMeasure",
+          "value" : 0.0
+        }, {
+          "type" : "IfcLengthMeasure",
+          "value" : 0.0
+        }, {
+          "type" : "IfcLengthMeasure",
+          "value" : 0.0
+        } ]
+      }
+    }
+  } ],
+  "unitsInContext" : {
+    "units" : [ {
+      "type" : "IfcConversionBasedUnit",
+      "globalId" : "9ef15480-188d-416d-ac83-d5264570e721",
+      "dimensions" : {
+        "lengthExponent" : 1,
+        "massExponent" : 0,
+        "timeExponent" : 0,
+        "electricCurrentExponent" : 0,
+        "thermodynamicTemperatureExponent" : 0,
+        "amountOfSubstanceExponent" : 0,
+        "luminousIntensityExponent" : 0
+      },
+      "unitType" : "LENGTHUNIT",
+      "name" : "inch",
+      "conversionFactor" : {
+        "type" : "IfcMeasureWithUnit",
+        "valueComponent" : {
+          "type" : "IfcLengthMeasure",
+          "value" : 0.0254
+        },
+        "unitComponent" : {
+          "type" : "IfcSIUnit",
+          "globalId" : "62f88cfe-5be3-4b8c-aa76-e3f62dee9885",
+          "dimensions" : {
+            "lengthExponent" : 1,
+            "massExponent" : 0,
+            "timeExponent" : 0,
+            "electricCurrentExponent" : 0,
+            "thermodynamicTemperatureExponent" : 0,
+            "amountOfSubstanceExponent" : 0,
+            "luminousIntensityExponent" : 0
+          },
+          "unitType" : "LENGTHUNIT",
+          "name" : "METRE"
+        }
+      }
+    } ]
+  },
+  "declares" : [ {
+    "type" : "IfcRelDeclares",
+    "globalId" : "00e292ee-b6fa-44c5-83d1-869b6c1e8f4f",
+    "ownerHistory" : "f974430e-88e1-4772-a724-5ca7d6e0ddb3",
+    "relatedDefinitions" : [ {
+      "type" : "IfcProjectLibrary",
+      "globalId" : "2f493396-cbb5-48f1-900b-1f9d01b12b16",
+      "ownerHistory" : "f974430e-88e1-4772-a724-5ca7d6e0ddb3",
+      "name" : {
+        "type" : "IfcLabel",
+        "value" : "HVAC Product Type Library Example"
+      },
+      "description" : {
+        "type" : "IfcText",
+        "value" : "Demonstrates an air terminal type which may be instantiated in buildings within referencing files."
+      },
+      "hasContext" : [ "00e292ee-b6fa-44c5-83d1-869b6c1e8f4f" ],
+      "hasAssociations" : [ {
+        "type" : "IfcRelAssociatesLibrary",
+        "globalId" : "fe197d29-5144-4303-ad26-22fa0ad542a2",
+        "ownerHistory" : "f974430e-88e1-4772-a724-5ca7d6e0ddb3",
+        "relatingLibrary" : {
+          "type" : "IfcLibraryInformation",
+          "name" : {
+            "type" : "IfcLabel",
+            "value" : "HVAC Product Type Library Example"
+          },
+          "versionDate" : {
+            "type" : "IfcDateTime",
+            "value" : "2011-11-11T23:49:28"
+          },
+          "location" : {
+            "type" : "IfcURIReference",
+            "value" : "IfcAirTerminalType.ifc"
+          }
+        }
+      } ],
+      "objectType" : {
+        "type" : "IfcLabel",
+        "value" : "ProductLibrary"
+      },
+      "representationContexts" : [ "b30bd36c-6dc8-413f-a1a8-88091a2cba03" ],
+      "unitsInContext" : {
+        "units" : [ "9ef15480-188d-416d-ac83-d5264570e721" ]
+      },
+      "declares" : [ "004236a3-2486-4ac9-8dcb-19f0f4371e60" ]
+    } ]
+  } ]
+}

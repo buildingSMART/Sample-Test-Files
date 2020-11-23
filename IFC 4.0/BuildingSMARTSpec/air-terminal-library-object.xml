@@ -1,0 +1,1331 @@
+<IfcProject type="IfcProject" globalId="ce9363d7-0416-40f5-a6e2-53ccc7408153">
+  <description type="IfcText" value="Demonstrates an air terminal type, which may be instantiated in buildings within referencing files."/>
+  <ownerHistory type="IfcOwnerHistory" globalId="c2d8c84f-23f5-44f8-b508-ba2c5967cffa" state="READWRITE" changeAction="NOTDEFINED">
+    <owningUser type="IfcPersonAndOrganization" globalId="99d89809-3af6-4c22-87e5-ff6a5560be55">
+      <thePerson type="IfcPerson" globalId="8ef50f46-62ab-4065-a8cc-60859352b305">
+        <identification type="IfcIdentifier" value="Tim"/>
+      </thePerson>
+      <theOrganization type="IfcOrganization" globalId="c1544245-a036-4b93-92aa-42547afc453d">
+        <name type="IfcLabel" value="Tim-PC"/>
+      </theOrganization>
+    </owningUser>
+    <owningApplication>
+      <applicationDeveloper type="IfcOrganization" globalId="53abb4f0-90f7-489d-8382-c5491421d5b3">
+        <name type="IfcLabel" value="Constructivity.com LLC"/>
+      </applicationDeveloper>
+      <version type="IfcLabel" value="0.9.1"/>
+      <applicationFullName type="IfcLabel" value="Constructivity"/>
+      <applicationIdentifier type="IfcIdentifier" value="CONSTRUCTIVITY"/>
+    </owningApplication>
+    <creationDate type="IfcTimeStamp" value="1321047295"/>
+  </ownerHistory>
+  <name type="IfcLabel" value="HVAC Product Type Library Example"/>
+  <declares>
+    <IfcRelDeclares type="IfcRelDeclares" globalId="3f97ef3c-c486-4e94-a7e5-a1d6380afb65">
+      <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+      <relatedDefinitions>
+        <IfcDefinitionSelect type="IfcAirTerminalType" globalId="4f39c682-589e-4c1f-b8a0-8f34be56f32b">
+          <description type="IfcText" value="Ceiling diffuser"/>
+          <predefinedType>DIFFUSER</predefinedType>
+          <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+          <name type="IfcLabel" value="Acme Diffuser 1234"/>
+          <isNestedBy>
+            <IfcRelNests type="IfcRelNests" globalId="7c65cf01-5cef-4ad9-a0f5-b92ff38b8b31">
+              <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+              <relatedObjects>
+                <IfcObjectDefinition type="IfcDistributionPort" globalId="2f310718-4379-44c3-8146-81ca22e3d5ea" flowDirection="SINK" predefinedType="DUCT" systemType="AIRCONDITIONING">
+                  <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+                  <name type="IfcLabel" value="Inlet"/>
+                  <isDefinedBy>
+                    <IfcRelDefinesByProperties type="IfcRelDefinesByProperties" globalId="28771d36-4644-460f-b919-ffc3e09daef7">
+                      <relatingPropertyDefinition type="IfcPropertySet" globalId="d69d1da5-3510-4bd5-a892-feeb64557164">
+                        <description type="IfcText" value="Common attributes attached to an instance of IfcDistributionPort."/>
+                        <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+                        <name type="IfcLabel" value="Pset_DistributionPortCommon"/>
+                        <isDefinedBy>
+                          <IfcRelDefinesByTemplate type="IfcRelDefinesByTemplate" globalId="8d286279-a6d0-422d-9475-e65613bec10c">
+                            <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+                            <relatedPropertySets>
+                              <IfcPropertySetDefinition>d69d1da5-3510-4bd5-a892-feeb64557164</IfcPropertySetDefinition>
+                            </relatedPropertySets>
+                            <relatingTemplate type="IfcPropertySetTemplate" globalId="8980b34b-4895-43de-a38a-a852bc09493b">
+                              <description type="IfcText" value="Common attributes attached to an instance of IfcDistributionPort."/>
+                              <templateType>PSET_OCCURRENCEDRIVEN</templateType>
+                              <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+                              <name type="IfcLabel" value="Pset_DistributionPortCommon"/>
+                              <hasContext>
+                                <IfcRelDeclares type="IfcRelDeclares" globalId="21bff64c-c636-4b08-b796-4e6b7f3fe6d7">
+                                  <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+                                  <name type="IfcLabel" value="PROJECT"/>
+                                  <relatedDefinitions>
+                                    <IfcDefinitionSelect type="IfcPropertySetTemplate" globalId="4a19b614-0ecb-4ae4-9111-d1509aa0e15f">
+                                      <description type="IfcText" value="Duct port occurrence attributes attached to an instance of IfcDistributionPort."/>
+                                      <templateType>PSET_OCCURRENCEDRIVEN</templateType>
+                                      <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+                                      <name type="IfcLabel" value="Pset_DistributionPortTypeAirConditioning"/>
+                                      <hasContext>
+                                        <IfcRelDeclares>21bff64c-c636-4b08-b796-4e6b7f3fe6d7</IfcRelDeclares>
+                                      </hasContext>
+                                      <hasAssociations>
+                                        <IfcRelAssociates type="IfcRelAssociatesLibrary" globalId="8dd0a49d-a462-43bc-85fd-8bdb45d47266">
+                                          <relatingLibrary type="IfcLibraryReference">
+                                            <identification type="IfcIdentifier" value="Pset_DistributionPortTypeAirConditioning"/>
+                                            <name type="IfcLabel" value="Pset_DistributionPortTypeAirConditioning"/>
+                                            <referencedLibrary type="IfcLibraryInformation">
+                                              <name type="IfcLabel" value="IFC4"/>
+                                              <publisher type="IfcOrganization" globalId="0223c0a2-caf6-4cf0-bfd3-dec8870e3e4a">
+                                                <name type="IfcLabel" value="Tim-PC"/>
+                                              </publisher>
+                                              <versionDate type="IfcDateTime" value="2011-09-26T20:52:24"/>
+                                              <location type="IfcURIReference" value="http://buildingsmart-tech.org/ifc/IFC2x4/rc3/html/annex/annex-a/ifc2x4_rc3-templates.ifc"/>
+                                            </referencedLibrary>
+                                          </relatingLibrary>
+                                          <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+                                        </IfcRelAssociates>
+                                      </hasAssociations>
+                                      <applicableEntity type="IfcIdentifier" value="IfcDistributionPort/AIRCONDITIONING"/>
+                                      <hasPropertyTemplates>
+                                        <IfcPropertyTemplate type="IfcSimplePropertyTemplate" globalId="ca737fd8-17c3-485e-85bf-d3ebdaf11827">
+                                          <description type="IfcText" value="Dry bulb temperature of the air."/>
+                                          <templateType>P_BOUNDEDVALUE</templateType>
+                                          <accessState>READWRITE</accessState>
+                                          <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+                                          <name type="IfcLabel" value="DryBulbTemperature"/>
+                                          <partOfPsetTemplate>
+                                            <IfcPropertySetTemplate>4a19b614-0ecb-4ae4-9111-d1509aa0e15f</IfcPropertySetTemplate>
+                                          </partOfPsetTemplate>
+                                          <primaryMeasureType type="IfcLabel" value="IfcThermodynamicTemperatureMeasure"/>
+                                          <secondaryMeasureType type="IfcLabel"/>
+                                        </IfcPropertyTemplate>
+                                        <IfcPropertyTemplate type="IfcSimplePropertyTemplate" globalId="ffa5c4f5-56e6-4982-8daa-dde807df9889">
+                                          <description type="IfcText" value="The end-style treatment of the duct port:\X\0A\X\0ABEADEDSLEEVE: Beaded Sleeve. \X\0ACOMPRESSION: Compression. \X\0ACRIMP: Crimp. \X\0ADRAWBAND: Drawband. \X\0ADRIVESLIP: Drive slip. \X\0AFLANGED: Flanged. \X\0AOUTSIDESLEEVE: Outside Sleeve. \X\0ASLIPON: Slipon. \X\0ASOLDERED: Soldered. \X\0ASSLIP: S-Slip. \X\0ASTANDINGSEAM: Standing seam. \X\0ASWEDGE: Swedge. \X\0AWELDED: Welded. \X\0AOTHER: Another type of end-style has been applied.\X\0ANONE: No end-style has been applied."/>
+                                          <templateType>P_ENUMERATEDVALUE</templateType>
+                                          <accessState>READWRITE</accessState>
+                                          <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+                                          <name type="IfcLabel" value="ConnectionType"/>
+                                          <partOfPsetTemplate>
+                                            <IfcPropertySetTemplate>4a19b614-0ecb-4ae4-9111-d1509aa0e15f</IfcPropertySetTemplate>
+                                          </partOfPsetTemplate>
+                                          <primaryMeasureType type="IfcLabel" value="IfcLabel"/>
+                                          <enumerators type="IfcPropertyEnumeration">
+                                            <name type="IfcLabel" value="PEnum_DuctConnectionType"/>
+                                            <enumerationValues>
+                                              <IfcValue type="IfcLabel" value="BEADEDSLEEVE"/>
+                                              <IfcValue type="IfcLabel" value="COMPRESSION"/>
+                                              <IfcValue type="IfcLabel" value="CRIMP"/>
+                                              <IfcValue type="IfcLabel" value="DRAWBAND"/>
+                                              <IfcValue type="IfcLabel" value="DRIVESLIP"/>
+                                              <IfcValue type="IfcLabel" value="FLANGED"/>
+                                              <IfcValue type="IfcLabel" value="OUTSIDESLEEVE"/>
+                                              <IfcValue type="IfcLabel" value="SLIPON"/>
+                                              <IfcValue type="IfcLabel" value="SOLDERED"/>
+                                              <IfcValue type="IfcLabel" value="SSLIP"/>
+                                              <IfcValue type="IfcLabel" value="STANDINGSEAM"/>
+                                              <IfcValue type="IfcLabel" value="SWEDGE"/>
+                                              <IfcValue type="IfcLabel" value="WELDED"/>
+                                              <IfcValue type="IfcLabel" value="OTHER"/>
+                                              <IfcValue type="IfcLabel" value="NONE"/>
+                                              <IfcValue type="IfcLabel" value="USERDEFINED"/>
+                                              <IfcValue type="IfcLabel" value="NOTDEFINED"/>
+                                            </enumerationValues>
+                                          </enumerators>
+                                        </IfcPropertyTemplate>
+                                        <IfcPropertyTemplate type="IfcSimplePropertyTemplate" globalId="e88b5620-6165-4058-a831-b14f4dfe5a88">
+                                          <description type="IfcText" value="The physical port connection subtype that further qualifies the ConnectionType."/>
+                                          <templateType>P_SINGLEVALUE</templateType>
+                                          <accessState>READWRITE</accessState>
+                                          <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+                                          <name type="IfcLabel" value="ConnectionSubType"/>
+                                          <partOfPsetTemplate>
+                                            <IfcPropertySetTemplate>4a19b614-0ecb-4ae4-9111-d1509aa0e15f</IfcPropertySetTemplate>
+                                          </partOfPsetTemplate>
+                                          <primaryMeasureType type="IfcLabel" value="IfcLabel"/>
+                                          <secondaryMeasureType type="IfcLabel"/>
+                                        </IfcPropertyTemplate>
+                                        <IfcPropertyTemplate type="IfcSimplePropertyTemplate" globalId="3237166c-9039-4910-9f5a-25263468380d">
+                                          <description type="IfcText" value="The volumetric flow rate of the fluid."/>
+                                          <templateType>P_BOUNDEDVALUE</templateType>
+                                          <accessState>READWRITE</accessState>
+                                          <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+                                          <name type="IfcLabel" value="VolumetricFlowRate"/>
+                                          <partOfPsetTemplate>
+                                            <IfcPropertySetTemplate>4a19b614-0ecb-4ae4-9111-d1509aa0e15f</IfcPropertySetTemplate>
+                                          </partOfPsetTemplate>
+                                          <primaryMeasureType type="IfcLabel" value="IfcVolumetricFlowRateMeasure"/>
+                                          <secondaryMeasureType type="IfcLabel"/>
+                                        </IfcPropertyTemplate>
+                                        <IfcPropertyTemplate type="IfcSimplePropertyTemplate" globalId="3513dad5-9dc9-44fd-a374-ddd8cabeed9e">
+                                          <description type="IfcText" value="The pressure of the fluid."/>
+                                          <templateType>P_BOUNDEDVALUE</templateType>
+                                          <accessState>READWRITE</accessState>
+                                          <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+                                          <name type="IfcLabel" value="Pressure"/>
+                                          <partOfPsetTemplate>
+                                            <IfcPropertySetTemplate>4a19b614-0ecb-4ae4-9111-d1509aa0e15f</IfcPropertySetTemplate>
+                                          </partOfPsetTemplate>
+                                          <primaryMeasureType type="IfcLabel" value="IfcPressureMeasure"/>
+                                          <secondaryMeasureType type="IfcLabel"/>
+                                        </IfcPropertyTemplate>
+                                        <IfcPropertyTemplate type="IfcSimplePropertyTemplate" globalId="22ff217f-49fc-4c2c-b896-ba9d0c849e02">
+                                          <description type="IfcText" value="The velocity of the fluid."/>
+                                          <templateType>P_BOUNDEDVALUE</templateType>
+                                          <accessState>READWRITE</accessState>
+                                          <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+                                          <name type="IfcLabel" value="Velocity"/>
+                                          <partOfPsetTemplate>
+                                            <IfcPropertySetTemplate>4a19b614-0ecb-4ae4-9111-d1509aa0e15f</IfcPropertySetTemplate>
+                                          </partOfPsetTemplate>
+                                          <primaryMeasureType type="IfcLabel" value="IfcLinearVelocityMeasure"/>
+                                          <secondaryMeasureType type="IfcLabel"/>
+                                        </IfcPropertyTemplate>
+                                        <IfcPropertyTemplate type="IfcSimplePropertyTemplate" globalId="5d1dd0ac-0c94-4962-9762-05d4a8d56953">
+                                          <description type="IfcText" value="The nominal height of the duct connection."/>
+                                          <templateType>P_SINGLEVALUE</templateType>
+                                          <accessState>READWRITE</accessState>
+                                          <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+                                          <name type="IfcLabel" value="NominalHeight"/>
+                                          <partOfPsetTemplate>
+                                            <IfcPropertySetTemplate>4a19b614-0ecb-4ae4-9111-d1509aa0e15f</IfcPropertySetTemplate>
+                                          </partOfPsetTemplate>
+                                          <primaryMeasureType type="IfcLabel" value="IfcPositiveLengthMeasure"/>
+                                          <secondaryMeasureType type="IfcLabel"/>
+                                        </IfcPropertyTemplate>
+                                        <IfcPropertyTemplate type="IfcSimplePropertyTemplate" globalId="77c36253-7a68-4816-8d26-52dd44af1021">
+                                          <description type="IfcText" value="Wet bulb temperature of the air."/>
+                                          <templateType>P_BOUNDEDVALUE</templateType>
+                                          <accessState>READWRITE</accessState>
+                                          <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+                                          <name type="IfcLabel" value="WetBulbTemperature"/>
+                                          <partOfPsetTemplate>
+                                            <IfcPropertySetTemplate>4a19b614-0ecb-4ae4-9111-d1509aa0e15f</IfcPropertySetTemplate>
+                                          </partOfPsetTemplate>
+                                          <primaryMeasureType type="IfcLabel" value="IfcThermodynamicTemperatureMeasure"/>
+                                          <secondaryMeasureType type="IfcLabel"/>
+                                        </IfcPropertyTemplate>
+                                        <IfcPropertyTemplate type="IfcSimplePropertyTemplate" globalId="de03c4be-c3cd-4977-8b88-1b5c6abf17b4">
+                                          <description type="IfcText" value="The nominal width or diameter of the duct connection."/>
+                                          <templateType>P_SINGLEVALUE</templateType>
+                                          <accessState>READWRITE</accessState>
+                                          <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+                                          <name type="IfcLabel" value="NominalWidth"/>
+                                          <partOfPsetTemplate>
+                                            <IfcPropertySetTemplate>4a19b614-0ecb-4ae4-9111-d1509aa0e15f</IfcPropertySetTemplate>
+                                          </partOfPsetTemplate>
+                                          <primaryMeasureType type="IfcLabel" value="IfcPositiveLengthMeasure"/>
+                                          <secondaryMeasureType type="IfcLabel"/>
+                                        </IfcPropertyTemplate>
+                                      </hasPropertyTemplates>
+                                      <defines>
+                                        <IfcRelDefinesByTemplate type="IfcRelDefinesByTemplate" globalId="b5e7c084-a055-4011-84b3-50b4bc90f176">
+                                          <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+                                          <relatedPropertySets>
+                                            <IfcPropertySetDefinition type="IfcPropertySet" globalId="440957e2-c596-460a-9b2a-307ddebe3c5d">
+                                              <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+                                              <name type="IfcLabel" value="Pset_DistributionPortTypeAirConditioning"/>
+                                              <isDefinedBy>
+                                                <IfcRelDefinesByTemplate>b5e7c084-a055-4011-84b3-50b4bc90f176</IfcRelDefinesByTemplate>
+                                              </isDefinedBy>
+                                              <hasProperties>
+                                                <IfcProperty type="IfcPropertyBoundedValue">
+                                                  <name type="IfcIdentifier" value="DryBulbTemperature"/>
+                                                </IfcProperty>
+                                                <IfcProperty type="IfcPropertySingleValue">
+                                                  <nominalValue type="IfcPositiveLengthMeasure" value="12.0"/>
+                                                  <name type="IfcIdentifier" value="NominalWidth"/>
+                                                </IfcProperty>
+                                                <IfcProperty type="IfcPropertySingleValue">
+                                                  <nominalValue type="IfcPositiveLengthMeasure" value="12.0"/>
+                                                  <name type="IfcIdentifier" value="NominalHeight"/>
+                                                </IfcProperty>
+                                                <IfcProperty type="IfcPropertyBoundedValue">
+                                                  <name type="IfcIdentifier" value="WetBulbTemperature"/>
+                                                </IfcProperty>
+                                                <IfcProperty type="IfcPropertyEnumeratedValue">
+                                                  <name type="IfcIdentifier" value="ConnectionType"/>
+                                                  <enumerationValues>
+                                                    <IfcValue type="IfcLabel" value="OUTSIDESLEEVE"/>
+                                                  </enumerationValues>
+                                                  <enumerationReference type="IfcPropertyEnumeration">
+                                                    <name type="IfcLabel" value="PEnum_DuctConnectionType"/>
+                                                    <enumerationValues>
+                                                      <IfcValue type="IfcLabel" value="BEADEDSLEEVE"/>
+                                                      <IfcValue type="IfcLabel" value="COMPRESSION"/>
+                                                      <IfcValue type="IfcLabel" value="CRIMP"/>
+                                                      <IfcValue type="IfcLabel" value="DRAWBAND"/>
+                                                      <IfcValue type="IfcLabel" value="DRIVESLIP"/>
+                                                      <IfcValue type="IfcLabel" value="FLANGED"/>
+                                                      <IfcValue type="IfcLabel" value="OUTSIDESLEEVE"/>
+                                                      <IfcValue type="IfcLabel" value="SLIPON"/>
+                                                      <IfcValue type="IfcLabel" value="SOLDERED"/>
+                                                      <IfcValue type="IfcLabel" value="SSLIP"/>
+                                                      <IfcValue type="IfcLabel" value="STANDINGSEAM"/>
+                                                      <IfcValue type="IfcLabel" value="SWEDGE"/>
+                                                      <IfcValue type="IfcLabel" value="WELDED"/>
+                                                      <IfcValue type="IfcLabel" value="OTHER"/>
+                                                      <IfcValue type="IfcLabel" value="NONE"/>
+                                                      <IfcValue type="IfcLabel" value="USERDEFINED"/>
+                                                      <IfcValue type="IfcLabel" value="NOTDEFINED"/>
+                                                    </enumerationValues>
+                                                  </enumerationReference>
+                                                </IfcProperty>
+                                                <IfcProperty type="IfcPropertyBoundedValue">
+                                                  <name type="IfcIdentifier" value="VolumetricFlowRate"/>
+                                                </IfcProperty>
+                                                <IfcProperty type="IfcPropertyBoundedValue">
+                                                  <name type="IfcIdentifier" value="Velocity"/>
+                                                </IfcProperty>
+                                                <IfcProperty type="IfcPropertyBoundedValue">
+                                                  <name type="IfcIdentifier" value="Pressure"/>
+                                                </IfcProperty>
+                                                <IfcProperty type="IfcPropertySingleValue">
+                                                  <name type="IfcIdentifier" value="ConnectionSubType"/>
+                                                </IfcProperty>
+                                              </hasProperties>
+                                            </IfcPropertySetDefinition>
+                                          </relatedPropertySets>
+                                          <relatingTemplate>4a19b614-0ecb-4ae4-9111-d1509aa0e15f</relatingTemplate>
+                                        </IfcRelDefinesByTemplate>
+                                      </defines>
+                                    </IfcDefinitionSelect>
+                                    <IfcDefinitionSelect>8980b34b-4895-43de-a38a-a852bc09493b</IfcDefinitionSelect>
+                                    <IfcDefinitionSelect type="IfcPropertySetTemplate" globalId="ad776a84-5aff-41ea-885a-8320b3e406a5">
+                                      <description type="IfcText" value="Air terminal type common attributes.\X\0ASoundLevel attribute deleted in IFC2x2 Pset Addendum: Use IfcSoundProperties instead."/>
+                                      <templateType>PSET_TYPEDRIVENOVERRIDE</templateType>
+                                      <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+                                      <name type="IfcLabel" value="Pset_AirTerminalTypeCommon"/>
+                                      <hasContext>
+                                        <IfcRelDeclares>21bff64c-c636-4b08-b796-4e6b7f3fe6d7</IfcRelDeclares>
+                                      </hasContext>
+                                      <hasAssociations>
+                                        <IfcRelAssociates type="IfcRelAssociatesLibrary" globalId="85255b67-3bcf-4c16-a985-5d44bd361b44">
+                                          <relatingLibrary type="IfcLibraryReference">
+                                            <identification type="IfcIdentifier" value="Pset_AirTerminalTypeCommon"/>
+                                            <name type="IfcLabel" value="Pset_AirTerminalTypeCommon"/>
+                                            <referencedLibrary type="IfcLibraryInformation">
+                                              <name type="IfcLabel" value="IFC4"/>
+                                              <publisher>0223c0a2-caf6-4cf0-bfd3-dec8870e3e4a</publisher>
+                                              <versionDate type="IfcDateTime" value="2011-09-26T20:52:24"/>
+                                              <location type="IfcURIReference" value="http://buildingsmart-tech.org/ifc/IFC2x4/rc3/html/annex/annex-a/ifc2x4_rc3-templates.ifc"/>
+                                            </referencedLibrary>
+                                          </relatingLibrary>
+                                          <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+                                        </IfcRelAssociates>
+                                      </hasAssociations>
+                                      <applicableEntity type="IfcIdentifier" value="IfcAirTerminal"/>
+                                      <hasPropertyTemplates>
+                                        <IfcPropertyTemplate type="IfcSimplePropertyTemplate" globalId="35a82085-4f6f-4791-9c1b-135d114d16db">
+                                          <description type="IfcText" value="Air flowrate range within which the air terminal is designed to operate."/>
+                                          <templateType>P_BOUNDEDVALUE</templateType>
+                                          <accessState>READWRITE</accessState>
+                                          <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+                                          <name type="IfcLabel" value="AirFlowrateRange"/>
+                                          <partOfPsetTemplate>
+                                            <IfcPropertySetTemplate>ad776a84-5aff-41ea-885a-8320b3e406a5</IfcPropertySetTemplate>
+                                          </partOfPsetTemplate>
+                                          <primaryMeasureType type="IfcLabel" value="IfcVolumetricFlowRateMeasure"/>
+                                          <secondaryMeasureType type="IfcLabel"/>
+                                        </IfcPropertyTemplate>
+                                        <IfcPropertyTemplate type="IfcSimplePropertyTemplate" globalId="d6fd7b9b-b5b9-4fd7-983a-9a206cf4fa04">
+                                          <description type="IfcText" value="Type of flow control element that may be included as a part of the construction of the air terminal."/>
+                                          <templateType>P_ENUMERATEDVALUE</templateType>
+                                          <accessState>READWRITE</accessState>
+                                          <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+                                          <name type="IfcLabel" value="FlowControlType"/>
+                                          <partOfPsetTemplate>
+                                            <IfcPropertySetTemplate>ad776a84-5aff-41ea-885a-8320b3e406a5</IfcPropertySetTemplate>
+                                          </partOfPsetTemplate>
+                                          <primaryMeasureType type="IfcLabel" value="IfcLabel"/>
+                                          <enumerators type="IfcPropertyEnumeration">
+                                            <name type="IfcLabel" value="PEnum_AirTerminalFlowControlType"/>
+                                            <enumerationValues>
+                                              <IfcValue type="IfcLabel" value="DAMPER"/>
+                                              <IfcValue type="IfcLabel" value="BELLOWS"/>
+                                              <IfcValue type="IfcLabel" value="NONE"/>
+                                              <IfcValue type="IfcLabel" value="OTHER"/>
+                                              <IfcValue type="IfcLabel" value="NOTKNOWN"/>
+                                              <IfcValue type="IfcLabel" value="UNSET"/>
+                                            </enumerationValues>
+                                          </enumerators>
+                                        </IfcPropertyTemplate>
+                                        <IfcPropertyTemplate type="IfcSimplePropertyTemplate" globalId="524d71b4-5c3b-4623-a257-b5a48a7224cf">
+                                          <description type="IfcText" value="Temperature range within which the air terminal is designed to operate."/>
+                                          <templateType>P_BOUNDEDVALUE</templateType>
+                                          <accessState>READWRITE</accessState>
+                                          <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+                                          <name type="IfcLabel" value="TemperatureRange"/>
+                                          <partOfPsetTemplate>
+                                            <IfcPropertySetTemplate>ad776a84-5aff-41ea-885a-8320b3e406a5</IfcPropertySetTemplate>
+                                          </partOfPsetTemplate>
+                                          <primaryMeasureType type="IfcLabel" value="IfcThermodynamicTemperatureMeasure"/>
+                                          <secondaryMeasureType type="IfcLabel"/>
+                                        </IfcPropertyTemplate>
+                                        <IfcPropertyTemplate type="IfcSimplePropertyTemplate" globalId="8834a0f5-2d03-4417-a491-2ad7eb6dfa71">
+                                          <description type="IfcText" value="The way the air terminal is mounted to the ceiling, wall, etc.\X\0A\X\0ASurface: mounted to the surface of something (e.g., wall, duct, etc.).\X\0AFlat flush: mounted flat and flush with a surface.\X\0ALay-in: mounted in a lay-in type ceiling (e.g., a dropped ceiling grid)."/>
+                                          <templateType>P_ENUMERATEDVALUE</templateType>
+                                          <accessState>READWRITE</accessState>
+                                          <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+                                          <name type="IfcLabel" value="MountingType"/>
+                                          <partOfPsetTemplate>
+                                            <IfcPropertySetTemplate>ad776a84-5aff-41ea-885a-8320b3e406a5</IfcPropertySetTemplate>
+                                          </partOfPsetTemplate>
+                                          <primaryMeasureType type="IfcLabel" value="IfcLabel"/>
+                                          <enumerators type="IfcPropertyEnumeration">
+                                            <name type="IfcLabel" value="PEnum_AirTerminalMountingType"/>
+                                            <enumerationValues>
+                                              <IfcValue type="IfcLabel" value="SURFACE"/>
+                                              <IfcValue type="IfcLabel" value="FLATFLUSH"/>
+                                              <IfcValue type="IfcLabel" value="LAYIN"/>
+                                              <IfcValue type="IfcLabel" value="OTHER"/>
+                                              <IfcValue type="IfcLabel" value="NOTKNOWN"/>
+                                              <IfcValue type="IfcLabel" value="UNSET"/>
+                                            </enumerationValues>
+                                          </enumerators>
+                                        </IfcPropertyTemplate>
+                                        <IfcPropertyTemplate type="IfcSimplePropertyTemplate" globalId="132e8e27-2777-456e-aea5-68a33bf678d1">
+                                          <description type="IfcText" value="The Air Diffusion Performance Index (ADPI) is used for cooling mode conditions. If several measurements of air velocity and air temperature are made throughout the occupied zone of a space, the ADPI is the percentage of locations where measurements were taken that meet the specifications for effective draft temperature and air velocity."/>
+                                          <templateType>P_SINGLEVALUE</templateType>
+                                          <accessState>READWRITE</accessState>
+                                          <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+                                          <name type="IfcLabel" value="AirDiffusionPerformanceIndex"/>
+                                          <partOfPsetTemplate>
+                                            <IfcPropertySetTemplate>ad776a84-5aff-41ea-885a-8320b3e406a5</IfcPropertySetTemplate>
+                                          </partOfPsetTemplate>
+                                          <primaryMeasureType type="IfcLabel" value="IfcReal"/>
+                                          <secondaryMeasureType type="IfcLabel"/>
+                                        </IfcPropertyTemplate>
+                                        <IfcPropertyTemplate type="IfcSimplePropertyTemplate" globalId="360d162c-2e3f-4547-8537-2f17b7ad17f1">
+                                          <description type="IfcText" value="Shape of the air terminal. Slot is typically a long narrow supply device with an aspect ratio generally greater than 10 to 1."/>
+                                          <templateType>P_ENUMERATEDVALUE</templateType>
+                                          <accessState>READWRITE</accessState>
+                                          <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+                                          <name type="IfcLabel" value="Shape"/>
+                                          <partOfPsetTemplate>
+                                            <IfcPropertySetTemplate>ad776a84-5aff-41ea-885a-8320b3e406a5</IfcPropertySetTemplate>
+                                          </partOfPsetTemplate>
+                                          <primaryMeasureType type="IfcLabel" value="IfcLabel"/>
+                                          <enumerators type="IfcPropertyEnumeration">
+                                            <name type="IfcLabel" value="PEnum_AirTerminalShape"/>
+                                            <enumerationValues>
+                                              <IfcValue type="IfcLabel" value="ROUND"/>
+                                              <IfcValue type="IfcLabel" value="RECTANGULAR"/>
+                                              <IfcValue type="IfcLabel" value="SQUARE"/>
+                                              <IfcValue type="IfcLabel" value="SLOT"/>
+                                              <IfcValue type="IfcLabel" value="OTHER"/>
+                                              <IfcValue type="IfcLabel" value="NOTKNOWN"/>
+                                              <IfcValue type="IfcLabel" value="UNSET"/>
+                                            </enumerationValues>
+                                          </enumerators>
+                                        </IfcPropertyTemplate>
+                                        <IfcPropertyTemplate type="IfcSimplePropertyTemplate" globalId="5e028f17-1a52-400a-8480-5a5ea77a7216">
+                                          <description type="IfcText" value="Number of slots."/>
+                                          <templateType>P_SINGLEVALUE</templateType>
+                                          <accessState>READWRITE</accessState>
+                                          <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+                                          <name type="IfcLabel" value="NumberOfSlots"/>
+                                          <partOfPsetTemplate>
+                                            <IfcPropertySetTemplate>ad776a84-5aff-41ea-885a-8320b3e406a5</IfcPropertySetTemplate>
+                                          </partOfPsetTemplate>
+                                          <primaryMeasureType type="IfcLabel" value="IfcInteger"/>
+                                          <secondaryMeasureType type="IfcLabel"/>
+                                        </IfcPropertyTemplate>
+                                        <IfcPropertyTemplate type="IfcSimplePropertyTemplate" globalId="6b5b093f-6ba5-4469-8dea-98e41c7f288e">
+                                          <description type="IfcText" value="If TRUE, the air terminal has sound attenuation."/>
+                                          <templateType>P_SINGLEVALUE</templateType>
+                                          <accessState>READWRITE</accessState>
+                                          <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+                                          <name type="IfcLabel" value="HasSoundAttenuator"/>
+                                          <partOfPsetTemplate>
+                                            <IfcPropertySetTemplate>ad776a84-5aff-41ea-885a-8320b3e406a5</IfcPropertySetTemplate>
+                                          </partOfPsetTemplate>
+                                          <primaryMeasureType type="IfcLabel" value="IfcBoolean"/>
+                                          <secondaryMeasureType type="IfcLabel"/>
+                                        </IfcPropertyTemplate>
+                                        <IfcPropertyTemplate type="IfcSimplePropertyTemplate" globalId="8b44d5ff-33a7-43c9-9b15-398f5634ec86">
+                                          <description type="IfcText" value="Identifies the way the core of the AirTerminal is constructed."/>
+                                          <templateType>P_ENUMERATEDVALUE</templateType>
+                                          <accessState>READWRITE</accessState>
+                                          <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+                                          <name type="IfcLabel" value="CoreType"/>
+                                          <partOfPsetTemplate>
+                                            <IfcPropertySetTemplate>ad776a84-5aff-41ea-885a-8320b3e406a5</IfcPropertySetTemplate>
+                                          </partOfPsetTemplate>
+                                          <primaryMeasureType type="IfcLabel" value="IfcLabel"/>
+                                          <enumerators type="IfcPropertyEnumeration">
+                                            <name type="IfcLabel" value="PEnum_AirTerminalCoreType"/>
+                                            <enumerationValues>
+                                              <IfcValue type="IfcLabel" value="SHUTTERBLADE"/>
+                                              <IfcValue type="IfcLabel" value="CURVEDBLADE"/>
+                                              <IfcValue type="IfcLabel" value="REMOVABLE"/>
+                                              <IfcValue type="IfcLabel" value="REVERSIBLE"/>
+                                              <IfcValue type="IfcLabel" value="NONE"/>
+                                              <IfcValue type="IfcLabel" value="OTHER"/>
+                                              <IfcValue type="IfcLabel" value="NOTKNOWN"/>
+                                              <IfcValue type="IfcLabel" value="UNSET"/>
+                                            </enumerationValues>
+                                          </enumerators>
+                                        </IfcPropertyTemplate>
+                                        <IfcPropertyTemplate type="IfcSimplePropertyTemplate" globalId="3c1cf942-e444-49a2-b339-a58084651581">
+                                          <description type="IfcText" value="Flow pattern."/>
+                                          <templateType>P_ENUMERATEDVALUE</templateType>
+                                          <accessState>READWRITE</accessState>
+                                          <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+                                          <name type="IfcLabel" value="FlowPattern"/>
+                                          <partOfPsetTemplate>
+                                            <IfcPropertySetTemplate>ad776a84-5aff-41ea-885a-8320b3e406a5</IfcPropertySetTemplate>
+                                          </partOfPsetTemplate>
+                                          <primaryMeasureType type="IfcLabel" value="IfcLabel"/>
+                                          <enumerators type="IfcPropertyEnumeration">
+                                            <name type="IfcLabel" value="PEnum_AirTerminalFlowPattern"/>
+                                            <enumerationValues>
+                                              <IfcValue type="IfcLabel" value="LINEARSINGLE"/>
+                                              <IfcValue type="IfcLabel" value="LINEARDOUBLE"/>
+                                              <IfcValue type="IfcLabel" value="LINEARFOURWAY"/>
+                                              <IfcValue type="IfcLabel" value="RADIAL"/>
+                                              <IfcValue type="IfcLabel" value="SWIRL"/>
+                                              <IfcValue type="IfcLabel" value="DISPLACMENT"/>
+                                              <IfcValue type="IfcLabel" value="COMPACTJET"/>
+                                              <IfcValue type="IfcLabel" value="OTHER"/>
+                                              <IfcValue type="IfcLabel" value="NOTKNOWN"/>
+                                              <IfcValue type="IfcLabel" value="UNSET"/>
+                                            </enumerationValues>
+                                          </enumerators>
+                                        </IfcPropertyTemplate>
+                                        <IfcPropertyTemplate type="IfcSimplePropertyTemplate" globalId="e9ce0c08-0b1f-49ad-a19d-52a1df3de049">
+                                          <description type="IfcText" value="Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used."/>
+                                          <templateType>P_SINGLEVALUE</templateType>
+                                          <accessState>READWRITE</accessState>
+                                          <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+                                          <name type="IfcLabel" value="Reference"/>
+                                          <partOfPsetTemplate>
+                                            <IfcPropertySetTemplate>ad776a84-5aff-41ea-885a-8320b3e406a5</IfcPropertySetTemplate>
+                                          </partOfPsetTemplate>
+                                          <primaryMeasureType type="IfcLabel" value="IfcIdentifier"/>
+                                          <secondaryMeasureType type="IfcLabel"/>
+                                        </IfcPropertyTemplate>
+                                        <IfcPropertyTemplate type="IfcSimplePropertyTemplate" globalId="452ad894-e19e-49bd-a26c-aaa7b340a90f">
+                                          <description type="IfcText" value="The horizontal or vertical axial distance an airstream travels after leaving an AirTerminal before the maximum stream velocity is reduced to a specified terminal velocity under isothermal conditions at the upper value of the AirFlowrateRange."/>
+                                          <templateType>P_SINGLEVALUE</templateType>
+                                          <accessState>READWRITE</accessState>
+                                          <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+                                          <name type="IfcLabel" value="ThrowLength"/>
+                                          <partOfPsetTemplate>
+                                            <IfcPropertySetTemplate>ad776a84-5aff-41ea-885a-8320b3e406a5</IfcPropertySetTemplate>
+                                          </partOfPsetTemplate>
+                                          <primaryMeasureType type="IfcLabel" value="IfcLengthMeasure"/>
+                                          <secondaryMeasureType type="IfcLabel"/>
+                                        </IfcPropertyTemplate>
+                                        <IfcPropertyTemplate type="IfcSimplePropertyTemplate" globalId="15ec7120-5783-4a4c-ba02-2632b2bb11f1">
+                                          <description type="IfcText" value="The finish color for the air terminal."/>
+                                          <templateType>P_SINGLEVALUE</templateType>
+                                          <accessState>READWRITE</accessState>
+                                          <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+                                          <name type="IfcLabel" value="FinishColor"/>
+                                          <partOfPsetTemplate>
+                                            <IfcPropertySetTemplate>ad776a84-5aff-41ea-885a-8320b3e406a5</IfcPropertySetTemplate>
+                                          </partOfPsetTemplate>
+                                          <primaryMeasureType type="IfcLabel" value="IfcLabel"/>
+                                          <secondaryMeasureType type="IfcLabel"/>
+                                        </IfcPropertyTemplate>
+                                        <IfcPropertyTemplate type="IfcSimplePropertyTemplate" globalId="bdfaac66-29f7-4725-8efa-3cb900aeee5e">
+                                          <description type="IfcText" value="If TRUE, a self powered temperature control is included in the AirTerminal."/>
+                                          <templateType>P_SINGLEVALUE</templateType>
+                                          <accessState>READWRITE</accessState>
+                                          <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+                                          <name type="IfcLabel" value="HasIntegralControl"/>
+                                          <partOfPsetTemplate>
+                                            <IfcPropertySetTemplate>ad776a84-5aff-41ea-885a-8320b3e406a5</IfcPropertySetTemplate>
+                                          </partOfPsetTemplate>
+                                          <primaryMeasureType type="IfcLabel" value="IfcBoolean"/>
+                                          <secondaryMeasureType type="IfcLabel"/>
+                                        </IfcPropertyTemplate>
+                                        <IfcPropertyTemplate type="IfcSimplePropertyTemplate" globalId="2f431ba9-f0a5-418b-a12f-96f1fd09fe4e">
+                                          <description type="IfcText" value="Degree of vertical (in the Y-axis of the LocalPlacement) blade set from the centerline."/>
+                                          <templateType>P_SINGLEVALUE</templateType>
+                                          <accessState>READWRITE</accessState>
+                                          <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+                                          <name type="IfcLabel" value="CoreSetVertical"/>
+                                          <partOfPsetTemplate>
+                                            <IfcPropertySetTemplate>ad776a84-5aff-41ea-885a-8320b3e406a5</IfcPropertySetTemplate>
+                                          </partOfPsetTemplate>
+                                          <primaryMeasureType type="IfcLabel" value="IfcPlaneAngleMeasure"/>
+                                          <secondaryMeasureType type="IfcLabel"/>
+                                        </IfcPropertyTemplate>
+                                        <IfcPropertyTemplate type="IfcSimplePropertyTemplate" globalId="a462f4ab-dcec-41f0-b2cc-d33e191bcab7">
+                                          <description type="IfcText" value="Air flowrate versus flow control element position at nominal pressure drop."/>
+                                          <templateType>P_TABLEVALUE</templateType>
+                                          <accessState>READWRITE</accessState>
+                                          <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+                                          <name type="IfcLabel" value="AirFlowrateVersusFlowControlElement"/>
+                                          <partOfPsetTemplate>
+                                            <IfcPropertySetTemplate>ad776a84-5aff-41ea-885a-8320b3e406a5</IfcPropertySetTemplate>
+                                          </partOfPsetTemplate>
+                                          <primaryMeasureType type="IfcLabel" value="IfcVolumetricFlowRateMeasure"/>
+                                          <secondaryMeasureType type="IfcLabel" value="IfcPositiveRatioMeasure"/>
+                                        </IfcPropertyTemplate>
+                                        <IfcPropertyTemplate type="IfcSimplePropertyTemplate" globalId="c025c437-60a6-4e24-9089-2a57463dde1f">
+                                          <description type="IfcText" value="Effective discharge area of the air terminal."/>
+                                          <templateType>P_SINGLEVALUE</templateType>
+                                          <accessState>READWRITE</accessState>
+                                          <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+                                          <name type="IfcLabel" value="EffectiveArea"/>
+                                          <partOfPsetTemplate>
+                                            <IfcPropertySetTemplate>ad776a84-5aff-41ea-885a-8320b3e406a5</IfcPropertySetTemplate>
+                                          </partOfPsetTemplate>
+                                          <primaryMeasureType type="IfcLabel" value="IfcAreaMeasure"/>
+                                          <secondaryMeasureType type="IfcLabel"/>
+                                        </IfcPropertyTemplate>
+                                        <IfcPropertyTemplate type="IfcSimplePropertyTemplate" globalId="a7a95863-3b62-4003-9f77-40b4b523e932">
+                                          <description type="IfcText" value="Neck area of the air terminal."/>
+                                          <templateType>P_SINGLEVALUE</templateType>
+                                          <accessState>READWRITE</accessState>
+                                          <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+                                          <name type="IfcLabel" value="NeckArea"/>
+                                          <partOfPsetTemplate>
+                                            <IfcPropertySetTemplate>ad776a84-5aff-41ea-885a-8320b3e406a5</IfcPropertySetTemplate>
+                                          </partOfPsetTemplate>
+                                          <primaryMeasureType type="IfcLabel" value="IfcAreaMeasure"/>
+                                          <secondaryMeasureType type="IfcLabel"/>
+                                        </IfcPropertyTemplate>
+                                        <IfcPropertyTemplate type="IfcSimplePropertyTemplate" globalId="5482c216-9e11-443f-b8de-63ae30adda29">
+                                          <description type="IfcText" value="If TRUE, the air terminal has thermal insulation."/>
+                                          <templateType>P_SINGLEVALUE</templateType>
+                                          <accessState>READWRITE</accessState>
+                                          <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+                                          <name type="IfcLabel" value="HasThermalInsulation"/>
+                                          <partOfPsetTemplate>
+                                            <IfcPropertySetTemplate>ad776a84-5aff-41ea-885a-8320b3e406a5</IfcPropertySetTemplate>
+                                          </partOfPsetTemplate>
+                                          <primaryMeasureType type="IfcLabel" value="IfcBoolean"/>
+                                          <secondaryMeasureType type="IfcLabel"/>
+                                        </IfcPropertyTemplate>
+                                        <IfcPropertyTemplate type="IfcSimplePropertyTemplate" globalId="ece68a95-34d3-4f10-bb48-a3461c773452">
+                                          <description type="IfcText" value="Degree of horizontal (in the X-axis of the LocalPlacement) blade set from the centerline."/>
+                                          <templateType>P_SINGLEVALUE</templateType>
+                                          <accessState>READWRITE</accessState>
+                                          <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+                                          <name type="IfcLabel" value="CoreSetHorizontal"/>
+                                          <partOfPsetTemplate>
+                                            <IfcPropertySetTemplate>ad776a84-5aff-41ea-885a-8320b3e406a5</IfcPropertySetTemplate>
+                                          </partOfPsetTemplate>
+                                          <primaryMeasureType type="IfcLabel" value="IfcPlaneAngleMeasure"/>
+                                          <secondaryMeasureType type="IfcLabel"/>
+                                        </IfcPropertyTemplate>
+                                        <IfcPropertyTemplate type="IfcSimplePropertyTemplate" globalId="f60984b1-c56f-4f45-adbf-503a2fafe0eb">
+                                          <description type="IfcText" value="Slot width."/>
+                                          <templateType>P_SINGLEVALUE</templateType>
+                                          <accessState>READWRITE</accessState>
+                                          <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+                                          <name type="IfcLabel" value="SlotWidth"/>
+                                          <partOfPsetTemplate>
+                                            <IfcPropertySetTemplate>ad776a84-5aff-41ea-885a-8320b3e406a5</IfcPropertySetTemplate>
+                                          </partOfPsetTemplate>
+                                          <primaryMeasureType type="IfcLabel" value="IfcPositiveLengthMeasure"/>
+                                          <secondaryMeasureType type="IfcLabel"/>
+                                        </IfcPropertyTemplate>
+                                        <IfcPropertyTemplate type="IfcSimplePropertyTemplate" globalId="e698ec7d-20c9-4da2-b8a2-15ea50b57aee">
+                                          <description type="IfcText" value="Identifies how the terminal face of an AirTerminal is constructed."/>
+                                          <templateType>P_ENUMERATEDVALUE</templateType>
+                                          <accessState>READWRITE</accessState>
+                                          <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+                                          <name type="IfcLabel" value="FaceType"/>
+                                          <partOfPsetTemplate>
+                                            <IfcPropertySetTemplate>ad776a84-5aff-41ea-885a-8320b3e406a5</IfcPropertySetTemplate>
+                                          </partOfPsetTemplate>
+                                          <primaryMeasureType type="IfcLabel" value="IfcLabel"/>
+                                          <enumerators type="IfcPropertyEnumeration">
+                                            <name type="IfcLabel" value="PEnum_AirTerminalFaceType"/>
+                                            <enumerationValues>
+                                              <IfcValue type="IfcLabel" value="FOURWAYPATTERN"/>
+                                              <IfcValue type="IfcLabel" value="SINGLEDEFLECTION"/>
+                                              <IfcValue type="IfcLabel" value="DOUBLEDEFLECTION"/>
+                                              <IfcValue type="IfcLabel" value="SIGHTPROOF"/>
+                                              <IfcValue type="IfcLabel" value="EGGCRATE"/>
+                                              <IfcValue type="IfcLabel" value="PERFORATED"/>
+                                              <IfcValue type="IfcLabel" value="LOUVERED"/>
+                                              <IfcValue type="IfcLabel" value="OTHER"/>
+                                              <IfcValue type="IfcLabel" value="NOTKNOWN"/>
+                                              <IfcValue type="IfcLabel" value="UNSET"/>
+                                            </enumerationValues>
+                                          </enumerators>
+                                        </IfcPropertyTemplate>
+                                        <IfcPropertyTemplate type="IfcSimplePropertyTemplate" globalId="7c06e44b-1d9d-4cad-9e9d-a9afce31197f">
+                                          <description type="IfcText" value="Slot length."/>
+                                          <templateType>P_SINGLEVALUE</templateType>
+                                          <accessState>READWRITE</accessState>
+                                          <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+                                          <name type="IfcLabel" value="SlotLength"/>
+                                          <partOfPsetTemplate>
+                                            <IfcPropertySetTemplate>ad776a84-5aff-41ea-885a-8320b3e406a5</IfcPropertySetTemplate>
+                                          </partOfPsetTemplate>
+                                          <primaryMeasureType type="IfcLabel" value="IfcPositiveLengthMeasure"/>
+                                          <secondaryMeasureType type="IfcLabel"/>
+                                        </IfcPropertyTemplate>
+                                        <IfcPropertyTemplate type="IfcSimplePropertyTemplate" globalId="7540add2-e15b-4010-952d-c8a845bf902d">
+                                          <description type="IfcText" value="The type of finish for the air terminal."/>
+                                          <templateType>P_ENUMERATEDVALUE</templateType>
+                                          <accessState>READWRITE</accessState>
+                                          <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+                                          <name type="IfcLabel" value="FinishType"/>
+                                          <partOfPsetTemplate>
+                                            <IfcPropertySetTemplate>ad776a84-5aff-41ea-885a-8320b3e406a5</IfcPropertySetTemplate>
+                                          </partOfPsetTemplate>
+                                          <primaryMeasureType type="IfcLabel" value="IfcLabel"/>
+                                          <enumerators type="IfcPropertyEnumeration">
+                                            <name type="IfcLabel" value="PEnum_AirTerminalFinishType"/>
+                                            <enumerationValues>
+                                              <IfcValue type="IfcLabel" value="ANNODIZED"/>
+                                              <IfcValue type="IfcLabel" value="PAINTED"/>
+                                              <IfcValue type="IfcLabel" value="NONE"/>
+                                              <IfcValue type="IfcLabel" value="OTHER"/>
+                                              <IfcValue type="IfcLabel" value="NOTKNOWN"/>
+                                              <IfcValue type="IfcLabel" value="UNSET"/>
+                                            </enumerationValues>
+                                          </enumerators>
+                                        </IfcPropertyTemplate>
+                                        <IfcPropertyTemplate type="IfcSimplePropertyTemplate" globalId="e25d1437-06f1-41b6-a121-25a433f411ed">
+                                          <description type="IfcText" value="Discharge direction of the air terminal.\X\0A\X\0AParallel: discharges parallel to mounting surface designed so that flow attaches to the surface.\X\0APerpendicular:  discharges away from mounting surface.\X\0AAdjustable: both parallel and perpendicular discharge."/>
+                                          <templateType>P_ENUMERATEDVALUE</templateType>
+                                          <accessState>READWRITE</accessState>
+                                          <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+                                          <name type="IfcLabel" value="DischargeDirection"/>
+                                          <partOfPsetTemplate>
+                                            <IfcPropertySetTemplate>ad776a84-5aff-41ea-885a-8320b3e406a5</IfcPropertySetTemplate>
+                                          </partOfPsetTemplate>
+                                          <primaryMeasureType type="IfcLabel" value="IfcLabel"/>
+                                          <enumerators type="IfcPropertyEnumeration">
+                                            <name type="IfcLabel" value="PEnum_AirTerminalDischargeDirection"/>
+                                            <enumerationValues>
+                                              <IfcValue type="IfcLabel" value="PARALLEL"/>
+                                              <IfcValue type="IfcLabel" value="PERPENDICULAR"/>
+                                              <IfcValue type="IfcLabel" value="ADJUSTABLE"/>
+                                              <IfcValue type="IfcLabel" value="OTHER"/>
+                                              <IfcValue type="IfcLabel" value="NOTKNOWN"/>
+                                              <IfcValue type="IfcLabel" value="UNSET"/>
+                                            </enumerationValues>
+                                          </enumerators>
+                                        </IfcPropertyTemplate>
+                                        <IfcPropertyTemplate type="IfcSimplePropertyTemplate" globalId="22b48ad5-3414-4e6c-8fae-336161939d4f">
+                                          <description type="IfcText" value="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)."/>
+                                          <templateType>P_ENUMERATEDVALUE</templateType>
+                                          <accessState>READWRITE</accessState>
+                                          <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+                                          <name type="IfcLabel" value="Status"/>
+                                          <partOfPsetTemplate>
+                                            <IfcPropertySetTemplate>ad776a84-5aff-41ea-885a-8320b3e406a5</IfcPropertySetTemplate>
+                                          </partOfPsetTemplate>
+                                          <primaryMeasureType type="IfcLabel" value="IfcLabel"/>
+                                          <enumerators type="IfcPropertyEnumeration">
+                                            <name type="IfcLabel" value="PEnum_Status"/>
+                                            <enumerationValues>
+                                              <IfcValue type="IfcLabel" value="NEW"/>
+                                              <IfcValue type="IfcLabel" value="EXISTING"/>
+                                              <IfcValue type="IfcLabel" value="DEMOLISH"/>
+                                              <IfcValue type="IfcLabel" value="TEMPORARY"/>
+                                              <IfcValue type="IfcLabel" value="OTHER"/>
+                                              <IfcValue type="IfcLabel" value="NOTKNOWN"/>
+                                              <IfcValue type="IfcLabel" value="UNSET"/>
+                                            </enumerationValues>
+                                          </enumerators>
+                                        </IfcPropertyTemplate>
+                                      </hasPropertyTemplates>
+                                      <defines>
+                                        <IfcRelDefinesByTemplate type="IfcRelDefinesByTemplate" globalId="96c563da-b857-4866-9377-12d5e974d03c">
+                                          <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+                                          <relatedPropertySets>
+                                            <IfcPropertySetDefinition type="IfcPropertySet" globalId="c46cb661-483e-412c-963c-797c8689b399">
+                                              <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+                                              <name type="IfcLabel" value="Pset_AirTerminalTypeCommon"/>
+                                              <isDefinedBy>
+                                                <IfcRelDefinesByTemplate>96c563da-b857-4866-9377-12d5e974d03c</IfcRelDefinesByTemplate>
+                                              </isDefinedBy>
+                                              <hasProperties>
+                                                <IfcProperty type="IfcPropertySingleValue">
+                                                  <name type="IfcIdentifier" value="HasSoundAttenuator"/>
+                                                </IfcProperty>
+                                                <IfcProperty type="IfcPropertySingleValue">
+                                                  <name type="IfcIdentifier" value="AirDiffusionPerformanceIndex"/>
+                                                </IfcProperty>
+                                                <IfcProperty type="IfcPropertySingleValue">
+                                                  <name type="IfcIdentifier" value="NeckArea"/>
+                                                </IfcProperty>
+                                                <IfcProperty type="IfcPropertyEnumeratedValue">
+                                                  <name type="IfcIdentifier" value="FlowPattern"/>
+                                                  <enumerationReference type="IfcPropertyEnumeration">
+                                                    <name type="IfcLabel" value="PEnum_AirTerminalFlowPattern"/>
+                                                    <enumerationValues>
+                                                      <IfcValue type="IfcLabel" value="LINEARSINGLE"/>
+                                                      <IfcValue type="IfcLabel" value="LINEARDOUBLE"/>
+                                                      <IfcValue type="IfcLabel" value="LINEARFOURWAY"/>
+                                                      <IfcValue type="IfcLabel" value="RADIAL"/>
+                                                      <IfcValue type="IfcLabel" value="SWIRL"/>
+                                                      <IfcValue type="IfcLabel" value="DISPLACMENT"/>
+                                                      <IfcValue type="IfcLabel" value="COMPACTJET"/>
+                                                      <IfcValue type="IfcLabel" value="OTHER"/>
+                                                      <IfcValue type="IfcLabel" value="NOTKNOWN"/>
+                                                      <IfcValue type="IfcLabel" value="UNSET"/>
+                                                    </enumerationValues>
+                                                  </enumerationReference>
+                                                </IfcProperty>
+                                                <IfcProperty type="IfcPropertySingleValue">
+                                                  <name type="IfcIdentifier" value="NumberOfSlots"/>
+                                                </IfcProperty>
+                                                <IfcProperty type="IfcPropertySingleValue">
+                                                  <name type="IfcIdentifier" value="HasIntegralControl"/>
+                                                </IfcProperty>
+                                                <IfcProperty type="IfcPropertySingleValue">
+                                                  <name type="IfcIdentifier" value="HasThermalInsulation"/>
+                                                </IfcProperty>
+                                                <IfcProperty type="IfcPropertyEnumeratedValue">
+                                                  <name type="IfcIdentifier" value="FaceType"/>
+                                                  <enumerationReference type="IfcPropertyEnumeration">
+                                                    <name type="IfcLabel" value="PEnum_AirTerminalFaceType"/>
+                                                    <enumerationValues>
+                                                      <IfcValue type="IfcLabel" value="FOURWAYPATTERN"/>
+                                                      <IfcValue type="IfcLabel" value="SINGLEDEFLECTION"/>
+                                                      <IfcValue type="IfcLabel" value="DOUBLEDEFLECTION"/>
+                                                      <IfcValue type="IfcLabel" value="SIGHTPROOF"/>
+                                                      <IfcValue type="IfcLabel" value="EGGCRATE"/>
+                                                      <IfcValue type="IfcLabel" value="PERFORATED"/>
+                                                      <IfcValue type="IfcLabel" value="LOUVERED"/>
+                                                      <IfcValue type="IfcLabel" value="OTHER"/>
+                                                      <IfcValue type="IfcLabel" value="NOTKNOWN"/>
+                                                      <IfcValue type="IfcLabel" value="UNSET"/>
+                                                    </enumerationValues>
+                                                  </enumerationReference>
+                                                </IfcProperty>
+                                                <IfcProperty type="IfcPropertyEnumeratedValue">
+                                                  <name type="IfcIdentifier" value="FinishType"/>
+                                                  <enumerationReference type="IfcPropertyEnumeration">
+                                                    <name type="IfcLabel" value="PEnum_AirTerminalFinishType"/>
+                                                    <enumerationValues>
+                                                      <IfcValue type="IfcLabel" value="ANNODIZED"/>
+                                                      <IfcValue type="IfcLabel" value="PAINTED"/>
+                                                      <IfcValue type="IfcLabel" value="NONE"/>
+                                                      <IfcValue type="IfcLabel" value="OTHER"/>
+                                                      <IfcValue type="IfcLabel" value="NOTKNOWN"/>
+                                                      <IfcValue type="IfcLabel" value="UNSET"/>
+                                                    </enumerationValues>
+                                                  </enumerationReference>
+                                                </IfcProperty>
+                                                <IfcProperty type="IfcPropertySingleValue">
+                                                  <name type="IfcIdentifier" value="SlotWidth"/>
+                                                </IfcProperty>
+                                                <IfcProperty type="IfcPropertyBoundedValue">
+                                                  <name type="IfcIdentifier" value="AirFlowrateRange"/>
+                                                </IfcProperty>
+                                                <IfcProperty type="IfcPropertyEnumeratedValue">
+                                                  <name type="IfcIdentifier" value="CoreType"/>
+                                                  <enumerationReference type="IfcPropertyEnumeration">
+                                                    <name type="IfcLabel" value="PEnum_AirTerminalCoreType"/>
+                                                    <enumerationValues>
+                                                      <IfcValue type="IfcLabel" value="SHUTTERBLADE"/>
+                                                      <IfcValue type="IfcLabel" value="CURVEDBLADE"/>
+                                                      <IfcValue type="IfcLabel" value="REMOVABLE"/>
+                                                      <IfcValue type="IfcLabel" value="REVERSIBLE"/>
+                                                      <IfcValue type="IfcLabel" value="NONE"/>
+                                                      <IfcValue type="IfcLabel" value="OTHER"/>
+                                                      <IfcValue type="IfcLabel" value="NOTKNOWN"/>
+                                                      <IfcValue type="IfcLabel" value="UNSET"/>
+                                                    </enumerationValues>
+                                                  </enumerationReference>
+                                                </IfcProperty>
+                                                <IfcProperty type="IfcPropertySingleValue">
+                                                  <name type="IfcIdentifier" value="CoreSetHorizontal"/>
+                                                </IfcProperty>
+                                                <IfcProperty type="IfcPropertyEnumeratedValue">
+                                                  <name type="IfcIdentifier" value="DischargeDirection"/>
+                                                  <enumerationReference type="IfcPropertyEnumeration">
+                                                    <name type="IfcLabel" value="PEnum_AirTerminalDischargeDirection"/>
+                                                    <enumerationValues>
+                                                      <IfcValue type="IfcLabel" value="PARALLEL"/>
+                                                      <IfcValue type="IfcLabel" value="PERPENDICULAR"/>
+                                                      <IfcValue type="IfcLabel" value="ADJUSTABLE"/>
+                                                      <IfcValue type="IfcLabel" value="OTHER"/>
+                                                      <IfcValue type="IfcLabel" value="NOTKNOWN"/>
+                                                      <IfcValue type="IfcLabel" value="UNSET"/>
+                                                    </enumerationValues>
+                                                  </enumerationReference>
+                                                </IfcProperty>
+                                                <IfcProperty type="IfcPropertyEnumeratedValue">
+                                                  <name type="IfcIdentifier" value="MountingType"/>
+                                                  <enumerationReference type="IfcPropertyEnumeration">
+                                                    <name type="IfcLabel" value="PEnum_AirTerminalMountingType"/>
+                                                    <enumerationValues>
+                                                      <IfcValue type="IfcLabel" value="SURFACE"/>
+                                                      <IfcValue type="IfcLabel" value="FLATFLUSH"/>
+                                                      <IfcValue type="IfcLabel" value="LAYIN"/>
+                                                      <IfcValue type="IfcLabel" value="OTHER"/>
+                                                      <IfcValue type="IfcLabel" value="NOTKNOWN"/>
+                                                      <IfcValue type="IfcLabel" value="UNSET"/>
+                                                    </enumerationValues>
+                                                  </enumerationReference>
+                                                </IfcProperty>
+                                                <IfcProperty type="IfcPropertySingleValue">
+                                                  <name type="IfcIdentifier" value="CoreSetVertical"/>
+                                                </IfcProperty>
+                                                <IfcProperty type="IfcPropertyEnumeratedValue">
+                                                  <name type="IfcIdentifier" value="Shape"/>
+                                                  <enumerationValues>
+                                                    <IfcValue type="IfcLabel" value="SQUARE"/>
+                                                  </enumerationValues>
+                                                  <enumerationReference type="IfcPropertyEnumeration">
+                                                    <name type="IfcLabel" value="PEnum_AirTerminalShape"/>
+                                                    <enumerationValues>
+                                                      <IfcValue type="IfcLabel" value="ROUND"/>
+                                                      <IfcValue type="IfcLabel" value="RECTANGULAR"/>
+                                                      <IfcValue type="IfcLabel" value="SQUARE"/>
+                                                      <IfcValue type="IfcLabel" value="SLOT"/>
+                                                      <IfcValue type="IfcLabel" value="OTHER"/>
+                                                      <IfcValue type="IfcLabel" value="NOTKNOWN"/>
+                                                      <IfcValue type="IfcLabel" value="UNSET"/>
+                                                    </enumerationValues>
+                                                  </enumerationReference>
+                                                </IfcProperty>
+                                                <IfcProperty type="IfcPropertySingleValue">
+                                                  <name type="IfcIdentifier" value="Reference"/>
+                                                </IfcProperty>
+                                                <IfcProperty type="IfcPropertyBoundedValue">
+                                                  <name type="IfcIdentifier" value="TemperatureRange"/>
+                                                </IfcProperty>
+                                                <IfcProperty type="IfcPropertySingleValue">
+                                                  <name type="IfcIdentifier" value="FinishColor"/>
+                                                </IfcProperty>
+                                                <IfcProperty type="IfcPropertyEnumeratedValue">
+                                                  <name type="IfcIdentifier" value="FlowControlType"/>
+                                                  <enumerationReference type="IfcPropertyEnumeration">
+                                                    <name type="IfcLabel" value="PEnum_AirTerminalFlowControlType"/>
+                                                    <enumerationValues>
+                                                      <IfcValue type="IfcLabel" value="DAMPER"/>
+                                                      <IfcValue type="IfcLabel" value="BELLOWS"/>
+                                                      <IfcValue type="IfcLabel" value="NONE"/>
+                                                      <IfcValue type="IfcLabel" value="OTHER"/>
+                                                      <IfcValue type="IfcLabel" value="NOTKNOWN"/>
+                                                      <IfcValue type="IfcLabel" value="UNSET"/>
+                                                    </enumerationValues>
+                                                  </enumerationReference>
+                                                </IfcProperty>
+                                                <IfcProperty type="IfcPropertyEnumeratedValue">
+                                                  <name type="IfcIdentifier" value="Status"/>
+                                                  <enumerationReference type="IfcPropertyEnumeration">
+                                                    <name type="IfcLabel" value="PEnum_Status"/>
+                                                    <enumerationValues>
+                                                      <IfcValue type="IfcLabel" value="NEW"/>
+                                                      <IfcValue type="IfcLabel" value="EXISTING"/>
+                                                      <IfcValue type="IfcLabel" value="DEMOLISH"/>
+                                                      <IfcValue type="IfcLabel" value="TEMPORARY"/>
+                                                      <IfcValue type="IfcLabel" value="OTHER"/>
+                                                      <IfcValue type="IfcLabel" value="NOTKNOWN"/>
+                                                      <IfcValue type="IfcLabel" value="UNSET"/>
+                                                    </enumerationValues>
+                                                  </enumerationReference>
+                                                </IfcProperty>
+                                                <IfcProperty type="IfcPropertySingleValue">
+                                                  <name type="IfcIdentifier" value="ThrowLength"/>
+                                                </IfcProperty>
+                                                <IfcProperty type="IfcPropertyTableValue">
+                                                  <name type="IfcIdentifier" value="AirFlowrateVersusFlowControlElement"/>
+                                                </IfcProperty>
+                                                <IfcProperty type="IfcPropertySingleValue">
+                                                  <name type="IfcIdentifier" value="SlotLength"/>
+                                                </IfcProperty>
+                                                <IfcProperty type="IfcPropertySingleValue">
+                                                  <name type="IfcIdentifier" value="EffectiveArea"/>
+                                                </IfcProperty>
+                                              </hasProperties>
+                                            </IfcPropertySetDefinition>
+                                          </relatedPropertySets>
+                                          <relatingTemplate>ad776a84-5aff-41ea-885a-8320b3e406a5</relatingTemplate>
+                                        </IfcRelDefinesByTemplate>
+                                      </defines>
+                                    </IfcDefinitionSelect>
+                                    <IfcDefinitionSelect type="IfcPropertySetTemplate" globalId="3aeaeb12-e90f-40be-90a2-4a0e84527b6d">
+                                      <description type="IfcText" value="Defines characteristics of types (ranges) of manufactured products that may be given by the manufacturer. Note that the term 'manufactured' may also be used to refer to products that are supplied and identified by the supplier or that are assembled off site by a third party provider. \X\0AHISTORY: This property set replaces the entity IfcManufacturerInformation from previous IFC releases. IFC 2x4: AssemblyPlace property added."/>
+                                      <templateType>PSET_TYPEDRIVENOVERRIDE</templateType>
+                                      <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+                                      <name type="IfcLabel" value="Pset_ManufacturerTypeInformation"/>
+                                      <hasContext>
+                                        <IfcRelDeclares>21bff64c-c636-4b08-b796-4e6b7f3fe6d7</IfcRelDeclares>
+                                      </hasContext>
+                                      <hasAssociations>
+                                        <IfcRelAssociates type="IfcRelAssociatesLibrary" globalId="c9854d29-399d-4ec3-a330-4dd2b105d56e">
+                                          <relatingLibrary type="IfcLibraryReference">
+                                            <identification type="IfcIdentifier" value="Pset_ManufacturerTypeInformation"/>
+                                            <name type="IfcLabel" value="Pset_ManufacturerTypeInformation"/>
+                                            <referencedLibrary type="IfcLibraryInformation">
+                                              <name type="IfcLabel" value="IFC4"/>
+                                              <publisher>0223c0a2-caf6-4cf0-bfd3-dec8870e3e4a</publisher>
+                                              <versionDate type="IfcDateTime" value="2011-09-26T20:52:24"/>
+                                              <location type="IfcURIReference" value="http://buildingsmart-tech.org/ifc/IFC2x4/rc3/html/annex/annex-a/ifc2x4_rc3-templates.ifc"/>
+                                            </referencedLibrary>
+                                          </relatingLibrary>
+                                          <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+                                        </IfcRelAssociates>
+                                      </hasAssociations>
+                                      <applicableEntity type="IfcIdentifier" value="IfcElement"/>
+                                      <hasPropertyTemplates>
+                                        <IfcPropertyTemplate type="IfcSimplePropertyTemplate" globalId="2340a5ba-0fa3-4ee5-a501-a1700a2e49c0">
+                                          <description type="IfcText" value="The descriptive model name of the product model (or product line) as assigned by the manufacturer of the manufactured item."/>
+                                          <templateType>P_SINGLEVALUE</templateType>
+                                          <accessState>READWRITE</accessState>
+                                          <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+                                          <name type="IfcLabel" value="ModelLabel"/>
+                                          <partOfPsetTemplate>
+                                            <IfcPropertySetTemplate>3aeaeb12-e90f-40be-90a2-4a0e84527b6d</IfcPropertySetTemplate>
+                                          </partOfPsetTemplate>
+                                          <primaryMeasureType type="IfcLabel" value="IfcLabel"/>
+                                          <secondaryMeasureType type="IfcLabel"/>
+                                        </IfcPropertyTemplate>
+                                        <IfcPropertyTemplate type="IfcSimplePropertyTemplate" globalId="fad33fbe-592e-4144-93c7-976840a81679">
+                                          <description type="IfcText" value="The model number or designator of the product model (or product line) as assigned by the manufacturer of the manufactured item."/>
+                                          <templateType>P_SINGLEVALUE</templateType>
+                                          <accessState>READWRITE</accessState>
+                                          <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+                                          <name type="IfcLabel" value="ModelReference"/>
+                                          <partOfPsetTemplate>
+                                            <IfcPropertySetTemplate>3aeaeb12-e90f-40be-90a2-4a0e84527b6d</IfcPropertySetTemplate>
+                                          </partOfPsetTemplate>
+                                          <primaryMeasureType type="IfcLabel" value="IfcLabel"/>
+                                          <secondaryMeasureType type="IfcLabel"/>
+                                        </IfcPropertyTemplate>
+                                        <IfcPropertyTemplate type="IfcSimplePropertyTemplate" globalId="1cb586fe-2acf-413c-9f6c-948030652d40">
+                                          <description type="IfcText" value="The organization that manufactured and/or assembled the item."/>
+                                          <templateType>P_SINGLEVALUE</templateType>
+                                          <accessState>READWRITE</accessState>
+                                          <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+                                          <name type="IfcLabel" value="Manufacturer"/>
+                                          <partOfPsetTemplate>
+                                            <IfcPropertySetTemplate>3aeaeb12-e90f-40be-90a2-4a0e84527b6d</IfcPropertySetTemplate>
+                                          </partOfPsetTemplate>
+                                          <primaryMeasureType type="IfcLabel" value="IfcLabel"/>
+                                          <secondaryMeasureType type="IfcLabel"/>
+                                        </IfcPropertyTemplate>
+                                        <IfcPropertyTemplate type="IfcSimplePropertyTemplate" globalId="bd3be35b-fcf1-4280-aac8-9cb938787e77">
+                                          <description type="IfcText" value="The year of production of the manufactured item."/>
+                                          <templateType>P_SINGLEVALUE</templateType>
+                                          <accessState>READWRITE</accessState>
+                                          <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+                                          <name type="IfcLabel" value="ProductionYear"/>
+                                          <partOfPsetTemplate>
+                                            <IfcPropertySetTemplate>3aeaeb12-e90f-40be-90a2-4a0e84527b6d</IfcPropertySetTemplate>
+                                          </partOfPsetTemplate>
+                                          <primaryMeasureType type="IfcLabel" value="IfcLabel"/>
+                                          <secondaryMeasureType type="IfcLabel"/>
+                                        </IfcPropertyTemplate>
+                                        <IfcPropertyTemplate type="IfcSimplePropertyTemplate" globalId="1d1e6f95-2252-4efc-97c2-536bea2c9ee8">
+                                          <description type="IfcText" value="Enumeration defining where the assembly is intended to take place, either in a factory or on the building site."/>
+                                          <templateType>P_ENUMERATEDVALUE</templateType>
+                                          <accessState>READWRITE</accessState>
+                                          <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+                                          <name type="IfcLabel" value="AssemblyPlace"/>
+                                          <partOfPsetTemplate>
+                                            <IfcPropertySetTemplate>3aeaeb12-e90f-40be-90a2-4a0e84527b6d</IfcPropertySetTemplate>
+                                          </partOfPsetTemplate>
+                                          <primaryMeasureType type="IfcLabel" value="IfcLabel"/>
+                                          <enumerators type="IfcPropertyEnumeration">
+                                            <name type="IfcLabel" value="PEnum_AssemblyPlace"/>
+                                            <enumerationValues>
+                                              <IfcValue type="IfcLabel" value="FACTORY"/>
+                                              <IfcValue type="IfcLabel" value="OFFSITE"/>
+                                              <IfcValue type="IfcLabel" value="SITE"/>
+                                              <IfcValue type="IfcLabel" value="OTHER"/>
+                                              <IfcValue type="IfcLabel" value="NOTKNOWN"/>
+                                              <IfcValue type="IfcLabel" value="UNSET"/>
+                                            </enumerationValues>
+                                          </enumerators>
+                                        </IfcPropertyTemplate>
+                                        <IfcPropertyTemplate type="IfcSimplePropertyTemplate" globalId="76ab99e8-ded9-414f-b3b4-97dba60b6d0c">
+                                          <description type="IfcText" value="Article number or reference that is be applied to a configured product according to a standard scheme for article number definition as defined by the manufacturer. It is often used as the purchasing number."/>
+                                          <templateType>P_SINGLEVALUE</templateType>
+                                          <accessState>READWRITE</accessState>
+                                          <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+                                          <name type="IfcLabel" value="ArticleNumber"/>
+                                          <partOfPsetTemplate>
+                                            <IfcPropertySetTemplate>3aeaeb12-e90f-40be-90a2-4a0e84527b6d</IfcPropertySetTemplate>
+                                          </partOfPsetTemplate>
+                                          <primaryMeasureType type="IfcLabel" value="IfcIdentifier"/>
+                                          <secondaryMeasureType type="IfcLabel"/>
+                                        </IfcPropertyTemplate>
+                                        <IfcPropertyTemplate type="IfcSimplePropertyTemplate" globalId="e8470f04-90e1-4619-b571-da16b1981202">
+                                          <description type="IfcText" value="The Global Trade Item Number (GTIN) is an identifier for trade items developed by GS1 (www.gs1.org)."/>
+                                          <templateType>P_SINGLEVALUE</templateType>
+                                          <accessState>READWRITE</accessState>
+                                          <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+                                          <name type="IfcLabel" value="GlobalTradeItemNumber"/>
+                                          <partOfPsetTemplate>
+                                            <IfcPropertySetTemplate>3aeaeb12-e90f-40be-90a2-4a0e84527b6d</IfcPropertySetTemplate>
+                                          </partOfPsetTemplate>
+                                          <primaryMeasureType type="IfcLabel" value="IfcIdentifier"/>
+                                          <secondaryMeasureType type="IfcLabel"/>
+                                        </IfcPropertyTemplate>
+                                      </hasPropertyTemplates>
+                                      <defines>
+                                        <IfcRelDefinesByTemplate type="IfcRelDefinesByTemplate" globalId="6a8cfd1d-a203-4cb1-93e7-7ce36edd6f26">
+                                          <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+                                          <relatedPropertySets>
+                                            <IfcPropertySetDefinition type="IfcPropertySet" globalId="95580094-1679-4fb0-b7dd-ce97aa631bc4">
+                                              <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+                                              <name type="IfcLabel" value="Pset_ManufacturerTypeInformation"/>
+                                              <isDefinedBy>
+                                                <IfcRelDefinesByTemplate>6a8cfd1d-a203-4cb1-93e7-7ce36edd6f26</IfcRelDefinesByTemplate>
+                                              </isDefinedBy>
+                                              <hasProperties>
+                                                <IfcProperty type="IfcPropertySingleValue">
+                                                  <nominalValue type="IfcLabel" value="2011"/>
+                                                  <name type="IfcIdentifier" value="ProductionYear"/>
+                                                </IfcProperty>
+                                                <IfcProperty type="IfcPropertyEnumeratedValue">
+                                                  <name type="IfcIdentifier" value="AssemblyPlace"/>
+                                                  <enumerationValues>
+                                                    <IfcValue type="IfcLabel" value="FACTORY"/>
+                                                  </enumerationValues>
+                                                  <enumerationReference type="IfcPropertyEnumeration">
+                                                    <name type="IfcLabel" value="PEnum_AssemblyPlace"/>
+                                                    <enumerationValues>
+                                                      <IfcValue type="IfcLabel" value="FACTORY"/>
+                                                      <IfcValue type="IfcLabel" value="OFFSITE"/>
+                                                      <IfcValue type="IfcLabel" value="SITE"/>
+                                                      <IfcValue type="IfcLabel" value="OTHER"/>
+                                                      <IfcValue type="IfcLabel" value="NOTKNOWN"/>
+                                                      <IfcValue type="IfcLabel" value="UNSET"/>
+                                                    </enumerationValues>
+                                                  </enumerationReference>
+                                                </IfcProperty>
+                                                <IfcProperty type="IfcPropertySingleValue">
+                                                  <nominalValue type="IfcLabel" value="Ceiling Diffuser"/>
+                                                  <name type="IfcIdentifier" value="ModelLabel"/>
+                                                </IfcProperty>
+                                                <IfcProperty type="IfcPropertySingleValue">
+                                                  <nominalValue type="IfcLabel" value="1234"/>
+                                                  <name type="IfcIdentifier" value="ModelReference"/>
+                                                </IfcProperty>
+                                                <IfcProperty type="IfcPropertySingleValue">
+                                                  <name type="IfcIdentifier" value="GlobalTradeItemNumber"/>
+                                                </IfcProperty>
+                                                <IfcProperty type="IfcPropertySingleValue">
+                                                  <name type="IfcIdentifier" value="ArticleNumber"/>
+                                                </IfcProperty>
+                                                <IfcProperty type="IfcPropertySingleValue">
+                                                  <nominalValue type="IfcLabel" value="Acme"/>
+                                                  <name type="IfcIdentifier" value="Manufacturer"/>
+                                                </IfcProperty>
+                                              </hasProperties>
+                                            </IfcPropertySetDefinition>
+                                          </relatedPropertySets>
+                                          <relatingTemplate>3aeaeb12-e90f-40be-90a2-4a0e84527b6d</relatingTemplate>
+                                        </IfcRelDefinesByTemplate>
+                                      </defines>
+                                    </IfcDefinitionSelect>
+                                  </relatedDefinitions>
+                                </IfcRelDeclares>
+                              </hasContext>
+                              <hasAssociations>
+                                <IfcRelAssociates type="IfcRelAssociatesLibrary" globalId="8465b5c3-8b68-4a7d-90e9-3aa944f738d6">
+                                  <relatingLibrary type="IfcLibraryReference">
+                                    <identification type="IfcIdentifier" value="Pset_DistributionPortCommon"/>
+                                    <name type="IfcLabel" value="Pset_DistributionPortCommon"/>
+                                    <referencedLibrary type="IfcLibraryInformation">
+                                      <name type="IfcLabel" value="IFC4"/>
+                                      <publisher>0223c0a2-caf6-4cf0-bfd3-dec8870e3e4a</publisher>
+                                      <versionDate type="IfcDateTime" value="2011-09-26T20:52:24"/>
+                                      <location type="IfcURIReference" value="http://buildingsmart-tech.org/ifc/IFC2x4/rc3/html/annex/annex-a/ifc2x4_rc3-templates.ifc"/>
+                                    </referencedLibrary>
+                                  </relatingLibrary>
+                                  <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+                                </IfcRelAssociates>
+                              </hasAssociations>
+                              <applicableEntity type="IfcIdentifier" value="IfcDistributionPort"/>
+                              <hasPropertyTemplates>
+                                <IfcPropertyTemplate type="IfcSimplePropertyTemplate" globalId="fe955b5b-a740-43dd-9399-6694bf1b36e1">
+                                  <description type="IfcText" value="The port index for logically ordering the port within the containing element or element type."/>
+                                  <templateType>P_SINGLEVALUE</templateType>
+                                  <accessState>READWRITE</accessState>
+                                  <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+                                  <name type="IfcLabel" value="PortNumber"/>
+                                  <partOfPsetTemplate>
+                                    <IfcPropertySetTemplate>8980b34b-4895-43de-a38a-a852bc09493b</IfcPropertySetTemplate>
+                                  </partOfPsetTemplate>
+                                  <primaryMeasureType type="IfcLabel" value="IfcInteger"/>
+                                  <secondaryMeasureType type="IfcLabel"/>
+                                </IfcPropertyTemplate>
+                                <IfcPropertyTemplate type="IfcSimplePropertyTemplate" globalId="9f36a47d-b831-4adc-8072-5851a40fbc71">
+                                  <description type="IfcText" value="Name of a color for identifying the connector, if applicable."/>
+                                  <templateType>P_SINGLEVALUE</templateType>
+                                  <accessState>READWRITE</accessState>
+                                  <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+                                  <name type="IfcLabel" value="ColorCode"/>
+                                  <partOfPsetTemplate>
+                                    <IfcPropertySetTemplate>8980b34b-4895-43de-a38a-a852bc09493b</IfcPropertySetTemplate>
+                                  </partOfPsetTemplate>
+                                  <primaryMeasureType type="IfcLabel" value="IfcLabel"/>
+                                  <secondaryMeasureType type="IfcLabel"/>
+                                </IfcPropertyTemplate>
+                              </hasPropertyTemplates>
+                              <defines>
+                                <IfcRelDefinesByTemplate>8d286279-a6d0-422d-9475-e65613bec10c</IfcRelDefinesByTemplate>
+                              </defines>
+                            </relatingTemplate>
+                          </IfcRelDefinesByTemplate>
+                        </isDefinedBy>
+                        <hasProperties>
+                          <IfcProperty type="IfcPropertySingleValue">
+                            <name type="IfcIdentifier" value="PortNumber"/>
+                            <description type="IfcText" value="The port index for logically ordering the port within the containing element or element type."/>
+                          </IfcProperty>
+                          <IfcProperty type="IfcPropertySingleValue">
+                            <name type="IfcIdentifier" value="ColorCode"/>
+                            <description type="IfcText" value="Name of a color for identifying the connector, if applicable."/>
+                          </IfcProperty>
+                        </hasProperties>
+                      </relatingPropertyDefinition>
+                      <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+                      <name type="IfcLabel" value="Pset_DistributionPortCommon"/>
+                    </IfcRelDefinesByProperties>
+                    <IfcRelDefinesByProperties type="IfcRelDefinesByProperties" globalId="99afb10c-9f4f-4385-b966-72c9f96b6cd3" relatingPropertyDefinition="440957e2-c596-460a-9b2a-307ddebe3c5d">
+                      <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+                      <name type="IfcLabel" value="Pset_DistributionPortTypeAirConditioning"/>
+                    </IfcRelDefinesByProperties>
+                  </isDefinedBy>
+                  <objectPlacement type="IfcLocalPlacement" globalId="c50829bd-01dc-491c-8bee-a994a374d8ec">
+                    <relativePlacement type="IfcAxis2Placement3D">
+                      <location type="IfcCartesianPoint">
+                        <coordinates>
+                          <IfcLengthMeasure type="IfcLengthMeasure" value="12.0"/>
+                          <IfcLengthMeasure type="IfcLengthMeasure" value="12.0"/>
+                          <IfcLengthMeasure type="IfcLengthMeasure" value="4.0"/>
+                        </coordinates>
+                      </location>
+                    </relativePlacement>
+                  </objectPlacement>
+                </IfcObjectDefinition>
+              </relatedObjects>
+            </IfcRelNests>
+          </isNestedBy>
+          <hasContext>
+            <IfcRelDeclares>3f97ef3c-c486-4e94-a7e5-a1d6380afb65</IfcRelDeclares>
+          </hasContext>
+          <hasPropertySets>
+            <IfcPropertySetDefinition>95580094-1679-4fb0-b7dd-ce97aa631bc4</IfcPropertySetDefinition>
+            <IfcPropertySetDefinition>c46cb661-483e-412c-963c-797c8689b399</IfcPropertySetDefinition>
+          </hasPropertySets>
+          <representationMaps>
+            <IfcRepresentationMap type="IfcRepresentationMap">
+              <mappingOrigin type="IfcAxis2Placement3D">
+                <location type="IfcCartesianPoint">
+                  <coordinates>
+                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                  </coordinates>
+                </location>
+              </mappingOrigin>
+              <mappedRepresentation type="IfcShapeRepresentation">
+                <contextOfItems type="IfcGeometricRepresentationContext" globalId="382037ae-bb99-480c-81f6-7c58ce28a2b8">
+                  <worldCoordinateSystem type="IfcAxis2Placement3D">
+                    <location type="IfcCartesianPoint">
+                      <coordinates>
+                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                      </coordinates>
+                    </location>
+                  </worldCoordinateSystem>
+                  <contextIdentifier type="IfcLabel" value="3D"/>
+                  <contextType type="IfcLabel" value="Model"/>
+                  <coordinateSpaceDimension type="IfcDimensionCount" value="3"/>
+                  <precision type="IfcReal" value="1.0E-5"/>
+                </contextOfItems>
+                <representationIdentifier type="IfcLabel" value="Body"/>
+                <representationType type="IfcLabel" value="AdvancedSweptSolid"/>
+                <items>
+                  <IfcRepresentationItem type="IfcExtrudedAreaSolidTapered">
+                    <sweptArea type="IfcRectangleHollowProfileDef" profileType="AREA">
+                      <xDim type="IfcPositiveLengthMeasure" value="24.0"/>
+                      <yDim type="IfcPositiveLengthMeasure" value="24.0"/>
+                      <wallThickness type="IfcPositiveLengthMeasure" value="2.0"/>
+                      <innerFilletRadius type="IfcNonNegativeLengthMeasure" value="10.0"/>
+                      <outerFilletRadius type="IfcNonNegativeLengthMeasure" value="0.0"/>
+                    </sweptArea>
+                    <position type="IfcAxis2Placement3D">
+                      <location type="IfcCartesianPoint">
+                        <coordinates>
+                          <IfcLengthMeasure type="IfcLengthMeasure" value="12.0"/>
+                          <IfcLengthMeasure type="IfcLengthMeasure" value="12.0"/>
+                          <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                        </coordinates>
+                      </location>
+                    </position>
+                    <extrudedDirection type="IfcDirection">
+                      <directionRatios>
+                        <IfcReal type="IfcReal" value="0.0"/>
+                        <IfcReal type="IfcReal" value="0.0"/>
+                        <IfcReal type="IfcReal" value="1.0"/>
+                      </directionRatios>
+                    </extrudedDirection>
+                    <depth type="IfcPositiveLengthMeasure" value="4.0"/>
+                    <endSweptArea type="IfcDerivedProfileDef" profileType="AREA">
+                      <parentProfile type="IfcRectangleHollowProfileDef" profileType="AREA">
+                        <xDim type="IfcPositiveLengthMeasure" value="24.0"/>
+                        <yDim type="IfcPositiveLengthMeasure" value="24.0"/>
+                        <wallThickness type="IfcPositiveLengthMeasure" value="2.0"/>
+                        <innerFilletRadius type="IfcNonNegativeLengthMeasure" value="10.0"/>
+                        <outerFilletRadius type="IfcNonNegativeLengthMeasure" value="0.0"/>
+                      </parentProfile>
+                      <operator type="IfcCartesianTransformationOperator2D">
+                        <localOrigin type="IfcCartesianPoint">
+                          <coordinates>
+                            <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                            <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                          </coordinates>
+                        </localOrigin>
+                        <scale type="IfcReal" value="0.5"/>
+                      </operator>
+                    </endSweptArea>
+                  </IfcRepresentationItem>
+                </items>
+              </mappedRepresentation>
+            </IfcRepresentationMap>
+          </representationMaps>
+        </IfcDefinitionSelect>
+        <IfcDefinitionSelect type="IfcProjectLibrary" globalId="75a72ffd-1d99-4c92-8569-15c6104137c5">
+          <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+          <name type="IfcLabel" value="IFC4"/>
+          <declares>
+            <IfcRelDeclares>21bff64c-c636-4b08-b796-4e6b7f3fe6d7</IfcRelDeclares>
+          </declares>
+          <hasAssociations>
+            <IfcRelAssociates type="IfcRelAssociatesLibrary" globalId="8ae6b68d-57c1-4520-a3df-a0a5d987280b">
+              <relatingLibrary type="IfcLibraryInformation">
+                <name type="IfcLabel" value="IFC4"/>
+                <publisher>0223c0a2-caf6-4cf0-bfd3-dec8870e3e4a</publisher>
+                <versionDate type="IfcDateTime" value="2011-09-26T20:52:24"/>
+                <location type="IfcURIReference" value="http://buildingsmart-tech.org/ifc/IFC2x4/rc3/html/annex/annex-a/ifc2x4_rc3-templates.ifc"/>
+              </relatingLibrary>
+              <ownerHistory>c2d8c84f-23f5-44f8-b508-ba2c5967cffa</ownerHistory>
+            </IfcRelAssociates>
+          </hasAssociations>
+        </IfcDefinitionSelect>
+      </relatedDefinitions>
+    </IfcRelDeclares>
+  </declares>
+  <objectType type="IfcLabel" value="ProductLibrary"/>
+  <representationContexts>
+    <IfcRepresentationContext>382037ae-bb99-480c-81f6-7c58ce28a2b8</IfcRepresentationContext>
+  </representationContexts>
+  <unitsInContext>
+    <units>
+      <IfcUnit type="IfcConversionBasedUnit" globalId="21e9b0f5-8ffd-402b-ba77-7a037e249184">
+        <dimensions lengthExponent="1" massExponent="0" timeExponent="0" electricCurrentExponent="0" thermodynamicTemperatureExponent="0" amountOfSubstanceExponent="0" luminousIntensityExponent="0"/>
+        <unitType>LENGTHUNIT</unitType>
+        <name>inch</name>
+        <conversionFactor type="IfcMeasureWithUnit">
+          <valueComponent type="IfcLengthMeasure" value="0.0254"/>
+          <unitComponent type="IfcSIUnit" globalId="914558bf-c923-4b9d-85c5-d799885f6d21">
+            <dimensions lengthExponent="1" massExponent="0" timeExponent="0" electricCurrentExponent="0" thermodynamicTemperatureExponent="0" amountOfSubstanceExponent="0" luminousIntensityExponent="0"/>
+            <unitType>LENGTHUNIT</unitType>
+            <name>METRE</name>
+          </unitComponent>
+        </conversionFactor>
+      </IfcUnit>
+    </units>
+  </unitsInContext>
+</IfcProject>
