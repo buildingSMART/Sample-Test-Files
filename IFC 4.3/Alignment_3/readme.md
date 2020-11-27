@@ -29,16 +29,19 @@ This scenario builds upon following other scenarios:
 ### Content
 
 This scenario covers the following concepts and/or IFC entities:
-- Alignment concepts
+- Semantic alignment concepts
 	- `IfcAlignment`
-		- `IfcAlignmentCurve`
-			- `IfcAlignment2DHorinzontal`
-				- `IfcAlignment2DHorinzontalSegments`
-					- `IfcLineSegment2D`
-			- `IfcAlignment2DVertical`
-				- `IfcAlignment2DVerticalSegments`
-				 -	`IfcAlignment2DVerSegLine`
-
+	- `IfcAlignmentHorizontal`
+	- `IfcAlignmentVertical`
+	- `IfcAlignmentHorizontalSegment`
+	- `IfcAlignmentVerticalSegment`
+- Geometric alignment concepts
+	- `IfcGradientCurve`
+	- `IfcCompositeCurve`
+	- `IfcLine`
+- Placement concepts
+	- `IfcAxis2PlacementLinear`
+	- `IfcPointByDistanceExpression`
 
 ### Supporting files
 
