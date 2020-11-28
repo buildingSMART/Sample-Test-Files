@@ -38,6 +38,7 @@ This scenario covers the following concepts and/or IFC entities:
 - Geometric alignment concepts
 	- `IfcGradientCurve`
 	- `IfcCompositeCurve`
+	- `IfcCurveSegment`
 	- `IfcLine`
 - Placement concepts
 	- `IfcAxis2PlacementLinear`
