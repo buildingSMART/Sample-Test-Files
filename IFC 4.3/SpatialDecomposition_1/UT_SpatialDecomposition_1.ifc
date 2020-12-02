@@ -1,81 +1,65 @@
 ISO-10303-21;
-
-/* ------- Created with GeometryGymIFC package ------------------------------------------------- */
-/* ------- The file should come with a README.md with supplementing info. ---------------------- */
-/* ------- Sebastian Esser, sebastian.esser@tum.de, 2020.09.11. -------------------------------- */
-
 HEADER;
-FILE_DESCRIPTION(('ViewDefinition []'),'2;1');
+FILE_DESCRIPTION(('ViewDefinition [Ifc4X3NotAssigned]'),'2;1');
 FILE_NAME(
-/* name */ 'UT_SpatialDecomposition_1.ifc',
-/* time_stamp */ '2020-09-11T11:01:49',
+/* name */ 'IFC4X3RC1_spatialDecomposition.ifc',
+/* time_stamp */ '2020-12-02T11:42:58',
 /* author */ ('Sebastian Esser'),
-/* organization */ ('Technical University of Munich, Chair of Computational Modeling and Simulation'),
-/* preprocessor_version */ 'GeometryGymIFC v0.1.0.0 by Geometry Gym Pty Ltd built 2020-09-10T11:12:12',
+/* organization */ ('Unknown'),
+/* preprocessor_version */ 'GeometryGymIFC v0.1.4.0 by Geometry Gym Pty Ltd built 2020-11-12T09:32:58',
 /* originating_system */ 'ConsoleCreateSpatialStructure v1.0.0.0',
 /* authorization */ 'None');
 
-FILE_SCHEMA (('IFC4X3_RC1'));
+FILE_SCHEMA (('IFC4X3_RC2'));
 ENDSEC;
-
-/* IFC InfraDeployment  */
-/* Author: Sebastian Esser; Technical University of Munich, Chair of Computational Modeling and Simulation. In cooperation with Autodesk. */
-/* Mail: sebastian.esser@tum.de */
-/* github: seb-esser */
 
 DATA;
 #1= IFCCARTESIANPOINT((0.0,0.0,0.0));
-#2= IFCDIRECTION((1.0,0.0,0.0));
-#3= IFCDIRECTION((0.0,1.0,0.0));
-#4= IFCDIRECTION((0.0,0.0,1.0));
-#5= IFCAXIS2PLACEMENT3D(#1,$,$);
-#6= IFCCARTESIANPOINT((0.0,0.0));
-#7= IFCAXIS2PLACEMENT2D(#6,$);
-#8= IFCSIUNIT(*,.LENGTHUNIT.,$,.METRE.);
-#9= IFCSIUNIT(*,.AREAUNIT.,$,.SQUARE_METRE.);
-#10= IFCSIUNIT(*,.VOLUMEUNIT.,$,.CUBIC_METRE.);
-#11= IFCCARTESIANPOINT((0.0,0.0,0.0));
-#12= IFCAXIS2PLACEMENT3D(#11,#4,#2);
-#13= IFCLOCALPLACEMENT($,#12);
-#14= IFCSITE('0aAHDdpVrDm89jEVEtXtO2',#20,'sampleSite',$,$,#13,$,$,$,$,$,$,$,$);
-#15= IFCPERSON('Sebastian Esser','Sebastian Esser',$,$,$,$,$,$);
-#16= IFCORGANIZATION($,'Technical University of Munich, Chair of Computational Modeling and Simulation',$,$,$);
-#17= IFCPERSONANDORGANIZATION(#15,#16,$);
-#18= IFCAPPLICATION(#19,'0.1.0.0','ConsoleCreateSpatialStructure v1.0.0.0','ConsoleCreateSpatialStructure v1.0.0.0');
-#19= IFCORGANIZATION($,'Geometry Gym Pty Ltd',$,$,$);
-#20= IFCOWNERHISTORY(#17,#18,$,.ADDED.,1599814909,$,$,1599814909);
-#23= IFCPROJECT('0muHaJQlbBy938wz4rPdB_',#20,'myProject',$,$,$,$,$,#24);
-#24= IFCUNITASSIGNMENT((#8,#9,#10,#25,#26));
-#25= IFCSIUNIT(*,.PLANEANGLEUNIT.,$,.RADIAN.);
-#26= IFCSIUNIT(*,.TIMEUNIT.,$,.SECOND.);
-#27= IFCRELAGGREGATES('1ze7aKHAD5VepXhSWWwDge',#20,$,$,#23,(#14));
-#28= IFCCARTESIANPOINT((0.0,0.0,0.0));
-#29= IFCAXIS2PLACEMENT3D(#28,$,$);
-#30= IFCLOCALPLACEMENT(#13,#29);
-#31= IFCFACILITY('1RF$TyqhT0pP2e$LqVRAdw',#20,'TrafficWayA',$,$,#30,$,$,.COMPLEX.);
-#34= IFCRELAGGREGATES('34U6CZx_5B$hHEISgPuvbY',#20,$,$,#14,(#31,#57));
-#35= IFCCARTESIANPOINT((0.0,0.0,0.0));
-#36= IFCAXIS2PLACEMENT3D(#35,$,$);
-#37= IFCLOCALPLACEMENT(#30,#36);
-#38= IFCFACILITYPART('3PUx0cxfr9MPUHCinEDWQ2',#20,'myRoadPart01','TrafficWayA -> Segment 1',$,#37,$,$,$,IFCROADPARTTYPEENUM(.ROADSEGMENT.),.LONGITUDINAL.);
-#41= IFCRELAGGREGATES('3IWOYZWP92sP0NpU9Pge1g',#20,$,$,#31,(#38,#45,#51));
-#42= IFCCARTESIANPOINT((0.0,0.0,0.0));
-#43= IFCAXIS2PLACEMENT3D(#42,$,$);
-#44= IFCLOCALPLACEMENT(#30,#43);
-#45= IFCFACILITY('1xI3Ksj4HCpvyBBLJVRsn8',#20,'myBridge','TrafficWayA -> Segment 2',$,#44,$,$,$);
-#48= IFCCARTESIANPOINT((0.0,0.0,0.0));
-#49= IFCAXIS2PLACEMENT3D(#48,$,$);
-#50= IFCLOCALPLACEMENT(#30,#49);
-#51= IFCFACILITYPART('21qMfgpfH2lxA9jK1DE78Y',#20,'myRoadPart02','TrafficWayA -> Segment 3',$,#50,$,$,$,IFCROADPARTTYPEENUM(.ROADSEGMENT.),.LONGITUDINAL.);
-#54= IFCCARTESIANPOINT((0.0,0.0,0.0));
-#55= IFCAXIS2PLACEMENT3D(#54,$,$);
-#56= IFCLOCALPLACEMENT(#13,#55);
-#57= IFCFACILITY('2wIf45vCv8k9N_mWANTXvc',#20,'River',$,$,#56,$,$,$);
-#60= IFCCARTESIANPOINT((0.0,0.0,0.0));
-#61= IFCAXIS2PLACEMENT3D(#60,$,$);
-#62= IFCLOCALPLACEMENT(#56,#61);
-#63= IFCFACILITYPART('3yczsaPZzCMv2YTz6Ah91E',#20,'myRiver','River that passes under the bridge',$,#62,$,$,$,IFCMARINEPARTTYPEENUM(.WATERFIELD.),.LONGITUDINAL.);
-#66= IFCRELAGGREGATES('1YgB4CFvT0ru$63u0uqD_s',#20,$,$,#57,(#63));
+#2= IFCAXIS2PLACEMENT3D(#1,$,$);
+#3= IFCLOCALPLACEMENT($,#2);
+#4= IFCSITE('23LnfITqDD8BSvX6$mLj9t',#10,'sampleSite',$,$,#3,$,$,$,$,$,$,$,$);
+#5= IFCPERSON('Sebastian Esser','Sebastian Esser',$,$,$,$,$,$);
+#6= IFCORGANIZATION($,'Unknown',$,$,$);
+#7= IFCPERSONANDORGANIZATION(#5,#6,$);
+#8= IFCAPPLICATION(#9,'0.1.4.0','ConsoleCreateSpatialStructure v1.0.0.0','ConsoleCreateSpatialStructure v1.0.0.0');
+#9= IFCORGANIZATION($,'Geometry Gym Pty Ltd',$,$,$);
+#10= IFCOWNERHISTORY(#7,#8,$,.ADDED.,1606905778,$,$,1606905778);
+#11= IFCPROJECT('0$HxlfrKDCMxTKJ5dDFwVa',#10,'myProject',$,$,$,$,$,#12);
+#12= IFCUNITASSIGNMENT((#13,#14,#15,#16,#17));
+#13= IFCSIUNIT(*,.LENGTHUNIT.,$,.METRE.);
+#14= IFCSIUNIT(*,.AREAUNIT.,$,.SQUARE_METRE.);
+#15= IFCSIUNIT(*,.VOLUMEUNIT.,$,.CUBIC_METRE.);
+#16= IFCSIUNIT(*,.PLANEANGLEUNIT.,$,.RADIAN.);
+#17= IFCSIUNIT(*,.TIMEUNIT.,$,.SECOND.);
+#18= IFCRELAGGREGATES('1ELmhIp9P80QkmEM5RuiPz',#10,$,$,#11,(#4));
+#19= IFCCARTESIANPOINT((0.0,0.0,0.0));
+#20= IFCAXIS2PLACEMENT3D(#19,$,$);
+#21= IFCLOCALPLACEMENT(#3,#20);
+#22= IFCFACILITY('1_45ZlCCfBsef7TE9pDwQF',#10,'TrafficWayA',$,$,#21,$,$,.COMPLEX.);
+#23= IFCRELAGGREGATES('30xxoz_2r8jxHtElOoQuni',#10,$,$,#4,(#22,#40));
+#24= IFCCARTESIANPOINT((0.0,0.0,0.0));
+#25= IFCAXIS2PLACEMENT3D(#24,$,$);
+#26= IFCLOCALPLACEMENT(#21,#25);
+#27= IFCFACILITYPART('13E0fzdVb0QAY$KB0w5HS8',#10,'myRoadPart01','TrafficWayA -> Segment 1',$,#26,$,$,$,IFCROADPARTTYPEENUM(.ROADSEGMENT.),.LONGITUDINAL.);
+#28= IFCRELAGGREGATES('0SOOVX3lj4GOb7viYghKrH',#10,$,$,#22,(#27,#32,#36));
+#29= IFCCARTESIANPOINT((0.0,0.0,0.0));
+#30= IFCAXIS2PLACEMENT3D(#29,$,$);
+#31= IFCLOCALPLACEMENT(#21,#30);
+#32= IFCFACILITY('2Y2oRV7oT1m82v3uGf6jKJ',#10,'myBridge','TrafficWayA -> Segment 2',$,#31,$,$,$);
+#33= IFCCARTESIANPOINT((0.0,0.0,0.0));
+#34= IFCAXIS2PLACEMENT3D(#33,$,$);
+#35= IFCLOCALPLACEMENT(#21,#34);
+#36= IFCFACILITYPART('1ra6pWRbD18fEwOJ36SigM',#10,'myRoadPart02','TrafficWayA -> Segment 3',$,#35,$,$,$,IFCROADPARTTYPEENUM(.ROADSEGMENT.),.LONGITUDINAL.);
+#37= IFCCARTESIANPOINT((0.0,0.0,0.0));
+#38= IFCAXIS2PLACEMENT3D(#37,$,$);
+#39= IFCLOCALPLACEMENT(#3,#38);
+#40= IFCFACILITY('3QXXPR4Nz3jOkToYIaNHyu',#10,'River',$,$,#39,$,$,$);
+#41= IFCCARTESIANPOINT((0.0,0.0,0.0));
+#42= IFCAXIS2PLACEMENT3D(#41,$,$);
+#43= IFCLOCALPLACEMENT(#39,#42);
+#44= IFCFACILITYPART('1Ei_HGEiXAABHP9Hr0ESO4',#10,'myRiver','River that passes under the bridge',$,#43,$,$,$,IFCMARINEPARTTYPEENUM(.WATERFIELD.),.LONGITUDINAL.);
+#45= IFCRELAGGREGATES('275efIxLD8CRB2RceTtHRg',#10,$,$,#40,(#44));
 ENDSEC;
 
 END-ISO-10303-21;
+
