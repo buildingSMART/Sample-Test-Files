@@ -2,7 +2,7 @@ ISO-10303-21;
 HEADER;
 FILE_DESCRIPTION(('ViewDefinition [Ifc4X3NotAssigned]'),'2;1');
 FILE_NAME(
-/* name */ 'IFC4X3RC2_spatialDecomposition.ifc',
+/* name */ 'UT_SpatialDecomposition_1.ifc',
 /* time_stamp */ '2020-12-02T12:43:55',
 /* author */ ('Sebastian Esser'),
 /* organization */ ('Unknown'),
@@ -57,4 +57,3 @@ DATA;
 ENDSEC;
 
 END-ISO-10303-21;
-
