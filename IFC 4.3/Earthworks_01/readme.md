@@ -1,30 +1,36 @@
 
-## *topic\_nr*
+## Earthworks\_01
 
 ### Intent
 
-*Include a short description of the unit test scenario(s).*
-
-*Optional: if your data comes from a specific Storyline of the IFC Infrastructure Deployment Project, please include a link to the originating documentation here.*
+This unit test establishes a simple embankment of infrastructure facilities.
 
 ### Prerequisites
 
 This scenario builds upon following other scenarios:
-- *list other scenarios that should be supported before this one*
+- ProjectSetup_1
+- Tin_1
 
 ### Content
 
 This scenario covers the following concepts and/or IFC entities:
-- *list IFC concepts covered*
-- *list IFC entities specifically addressed*
+
+- 
+- IfcBuiltElement
+- IfcEarthworksElement
+- IfcEarthworksFill
+
+- IfcEarthworksFillTypeEnum
 
 ### Supporting files
 
 Following files correspond to this scenario:
 
-| Filename                          | Description                               |
-|-----------------------------------|-------------------------------------------|
-| *filename*                        | *short description*                       |
+| Filename             | Description                                                  |
+| -------------------- | ------------------------------------------------------------ |
+| UT_Earthworks_01.ifc | IFC file with content                                        |
+| UT_Earthworks_01.png | picture showing the TIN surface and embankment               |
+| UT_Earthworks_01.dwg | drawing file with BricsCAD TIN Surface<br />and Grading representing embankment |
 
 
 ## Instructions
