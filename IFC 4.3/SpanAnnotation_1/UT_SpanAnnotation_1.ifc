@@ -6,7 +6,7 @@ FILE_NAME(
 /* time_stamp */ '2020-12-02T18:59:05',
 /* author */ ('Sebastian Esser'),
 /* organization */ ('Unknown'),
-/* preprocessor_version */ 'GeometryGymIFC v0.1.4.0 by Geometry Gym Pty Ltd built 2020-11-12T09:32:58',
+/* preprocessor_version */ 'GeometryGymIFC v0.1.6.0 by Geometry Gym Pty Ltd built 2020-12-16T04:57:54',
 /* originating_system */ 'ConsoleCreateSpanAnnotation v1.0.0.0',
 /* authorization */ 'None');
 
@@ -17,9 +17,9 @@ DATA;
 #1= IFCCARTESIANPOINT((0.0,0.0,0.0));
 #2= IFCAXIS2PLACEMENT3D(#1,$,$);
 #3= IFCLOCALPLACEMENT($,#2);
-#4= IFCSITE('1LZp6F9Ef30QB88kwuTkeU',$,'SiteA',$,$,#3,$,$,$,$,$,$,$,$);
-#5= IFCPROJECT('1rDHlzAEnDIf54Uz6mzze6',$,'SampleProject with a span annotation',$,$,$,$,(#22),#6);
-#6= IFCUNITASSIGNMENT((#7,#8,#9,#10,#11));
+#4= IFCSITE('1wb6eTLAL6UeOi337QM34u',$,'SiteA',$,$,#3,$,$,$,$,$,$,$,$);
+#5= IFCPROJECT('25wz4Nr_P1Ah2o_iIVgRZl',$,'SampleProject with a span annotation',$,$,$,$,(#22),#6);
+#6= IFCUNITASSIGNMENT((#7,#8,#9,#10,#11,#47));
 #7= IFCSIUNIT(*,.LENGTHUNIT.,$,.METRE.);
 #8= IFCSIUNIT(*,.AREAUNIT.,$,.SQUARE_METRE.);
 #9= IFCSIUNIT(*,.VOLUMEUNIT.,$,.CUBIC_METRE.);
