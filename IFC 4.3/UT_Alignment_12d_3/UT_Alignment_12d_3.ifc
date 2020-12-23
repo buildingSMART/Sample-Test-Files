@@ -1,18 +1,30 @@
 ISO-10303-21;
 HEADER;
 FILE_DESCRIPTION (('ViewDefinition[]'), '2;1');
+<<<<<<< Updated upstream
 FILE_NAME ('UT_Alignment_12d_3.ifc', '2020-12-19T12:11:25', ('Lee Gregory'), ('12d Solutions - Ranch'), 'IFC Engine rev 1257', '12d Model 15.0 Alpha 408 [DEVELOP] INT Build 18-12-2020', '');
+=======
+FILE_NAME ('UT_Alignment_12d_3.ifc', '2020-12-23T13:48:41', ('Lee Gregory'), ('12d Solutions - Ranch'), 'IFC Engine rev 1257', '12d Model 15.0 Alpha 412', '');
+>>>>>>> Stashed changes
 FILE_SCHEMA (('IFC4X3_RC2'));
 ENDSEC;
 DATA;
 #1 = IFCPROJECT('2LJesmETv6W9jWXnI$q1Aj', #2, 'UT Alignment 12d  - 3', 'Alignment with left arc in HG  and crest parabola in VG', $, $, $, (#14), #9);
+<<<<<<< Updated upstream
 #2 = IFCOWNERHISTORY(#3, #8, $, .ADDED., $, $, $, 1608340285);
+=======
+#2 = IFCOWNERHISTORY(#3, #8, $, .ADDED., $, $, $, 1608691721);
+>>>>>>> Stashed changes
 #3 = IFCPERSONANDORGANIZATION(#4, #6, $);
 #4 = IFCPERSON($, 'Gregory', 'Lee', $, $, $, (#5), $);
 #5 = IFCACTORROLE(.CIVILENGINEER., 'Designer', $);
 #6 = IFCORGANIZATION($, '12d Solutions - Ranch', $, (#7), $);
 #7 = IFCACTORROLE(.CONSULTANT., 'Engineering', $);
+<<<<<<< Updated upstream
 #8 = IFCAPPLICATION(#6, '15.0 Alpha 408 [DEVELOP] INT Build 18-12-2020', '12d Model', '12d Model');
+=======
+#8 = IFCAPPLICATION(#6, '15.0 Alpha 412', '12d Model', '12d Model');
+>>>>>>> Stashed changes
 #9 = IFCUNITASSIGNMENT((#10, #11, #12, #13));
 #10 = IFCSIUNIT(*, .LENGTHUNIT., $, .METRE.);
 #11 = IFCSIUNIT(*, .AREAUNIT., $, .SQUARE_METRE.);
@@ -25,6 +37,7 @@ DATA;
 #18 = IFCDIRECTION((0., 0., 1.));
 #19 = IFCDIRECTION((1., 0., 0.));
 #20 = IFCDIRECTION((0., 1., 0.));
+<<<<<<< Updated upstream
 #21 = IFCSITE('3b4YN6oJD1Dg4Jqnu$Aj4w', #2, 'Default Site', 'Description of Default Site', $, #15, $, $, .ELEMENT., $, $, $, $, $);
 #22 = IFCRELAGGREGATES('0PQB5$e91F0QFWYuOBpq8V', #2, 'ProjectContainer', 'ProjectContainer for Sites', #1, (#21));
 #23 = IFCFACILITY('0oDPnxAmD44hlop_XFp0zx', #2, 'SA  with VG parabold', 'Description of SA  with VG parabold', $, #15, $, $, .ELEMENT.);
@@ -45,5 +58,25 @@ DATA;
 #38 = IFCALIGNMENTVERTICALSEGMENT($, $, 0., 43.244873922035, -2.13165086237824, 7.41263910362581E-2, 7.41263910362581E-2, $, .CONSTANTGRADIENT.);
 #39 = IFCALIGNMENTVERTICALSEGMENT($, $, 43.244873922035, 71.34205215593, 1.07393557228021, 7.41263910362581E-2, -6.85577132756017E-2, IFCPOSITIVELENGTHMEASURE(500.), .PARABOLICARC.);
 #40 = IFCALIGNMENTVERTICALSEGMENT($, $, 114.586926077965, 69.1267192285543, 1.27257602190036, -6.85577132756017E-2, -6.85577132756017E-2, $, .CONSTANTGRADIENT.);
+=======
+#21 = IFCSITE('06nWRy8rX7G8UoARDBUQm6', #2, 'Default Site', 'Description of Default Site', $, #15, $, $, .ELEMENT., $, $, $, $, $);
+#22 = IFCRELAGGREGATES('3meqx9DZn88fmfy2l1VS8i', #2, 'ProjectContainer', 'ProjectContainer for Sites', #1, (#21));
+#23 = IFCFACILITY('03fXyBRtTA9wD2v4RwKGD8', #2, 'SA  with VG parabold', 'Description of SA  with VG parabold', $, #15, $, $, .ELEMENT.);
+#24 = IFCRELAGGREGATES('2WrOm9_oX3ahh2rJ$eqRUo', #2, 'SiteContainer', 'SiteContainer For All Models', #21, (#23));
+#25 = IFCRELCONTAINEDINSPATIALSTRUCTURE('0$$CmwvvrDc9VVV_qWQKMD', #2, 'Building Container', 'BuildingContainer for Elements', (#26), #23);
+#26 = IFCALIGNMENT('1IFUPMChzE$w9QGiEGz3gh', $, 'RS01 VG parabola', '12d Alignment String', 'clothoid', $, $, $, $);
+#27 = IFCRELAGGREGATES('1C767X_HnEAuTDdRq4JlnJ', #2, '', '', #26, (#28, #35));
+#28 = IFCALIGNMENTHORIZONTAL('0O$4$JN4n0ZeVL6npJmWkj', #2, 'Horizontal Alignment', '12d Horizontal Alignment', $, $, $, 0., (#29, #31, #33));
+#29 = IFCALIGNMENTHORIZONTALSEGMENT($, $, #30, 0., 0., 0., 48.5550856436632, $, .LINE.);
+#30 = IFCCARTESIANPOINT((1000., 0.));
+#31 = IFCALIGNMENTHORIZONTALSEGMENT($, $, #32, 0., 150., 150., 99.1184532234729, $, .CIRCULARARC.);
+#32 = IFCCARTESIANPOINT((1048.55508564366, 0.));
+#33 = IFCALIGNMENTHORIZONTALSEGMENT($, $, #34, 6.60789688156485E-1, 0., 0., 36.0401064393832, $, .LINE.);
+#34 = IFCCARTESIANPOINT((1140.61616188048, 31.5738278837011));
+#35 = IFCALIGNMENTVERTICAL('0_7Y0nUlP3UhmSaZgAckNt', #2, 'Vertical Alignment', '12d Vertical Alignment', $, $, $, (#36, #37, #38));
+#36 = IFCALIGNMENTVERTICALSEGMENT($, $, 0., 43.244873922035, -2.13165086237824, 7.41263910362581E-2, 7.41263910362581E-2, $, .CONSTANTGRADIENT.);
+#37 = IFCALIGNMENTVERTICALSEGMENT($, $, 43.244873922035, 71.34205215593, 1.07393557228021, 7.41263910362581E-2, -6.85577132756017E-2, 500., .PARABOLICARC.);
+#38 = IFCALIGNMENTVERTICALSEGMENT($, $, 114.586926077965, 69.1267192285543, 1.27257602190036, -6.85577132756017E-2, -6.85577132756017E-2, $, .CONSTANTGRADIENT.);
+>>>>>>> Stashed changes
 ENDSEC;
 END-ISO-10303-21;
