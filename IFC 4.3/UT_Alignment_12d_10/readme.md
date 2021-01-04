@@ -3,7 +3,7 @@
 # An example where the vertical geometry (VG) starts before and ends after, the horizontal geometry (HG)
 #
 # Alignment with partial clothoid of decreasing radii between two left arcs, and vertical geometry
-# There is a start chainge of 0.
+# There is a start chainage of 0.
 # There is only the semantic definition and no ifc geometry 
 
 ### Intent
