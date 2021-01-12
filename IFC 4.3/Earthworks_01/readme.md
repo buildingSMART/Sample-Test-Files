@@ -14,30 +14,8 @@ This scenario builds upon following other scenarios:
 ### Content
 
 This scenario covers the following concepts and/or IFC entities:
-
 - IfcEarthworksFill
-- IfcGeographicElement
-- IfcTriangulatedIrregularNetwork
-- IfcCartesianPointList3D
 - IfcEarthworksFillTypeEnum
-- IfcSite
-- IfcProject
-- IfcOwnerHistory
-- IfcPersonAndOgranization
-- IfcPerson
-- IfcOrganization
-- IfcApplication
-- IfcGeometricRepresentationContext
-- IfcAxis2Placement3D
-- IfcCartesianPoint
-- IfcDirection
-- IfcUnitAssignment
-- IfcSIUnit
-- IfcLocalPlacement
-- IfcRelAggregates
-- IfcProductDefinitionShape
-- IfcShapeRepresentation
-- IfcRelContainedInSpatialStructure
 
 ### Supporting files
 
