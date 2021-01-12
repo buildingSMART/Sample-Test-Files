@@ -6,9 +6,18 @@
 Automatically generated IFC file from a corresponding test file in Civil 3D. 
 
 Converting the data given by the API of Civil into the IFC schema. Exports a
-corridor containing two different crosssections.
+corridor containing two different crosssections. The Road builds up on the Alignment
+corresponding to UT_Alignment_3.
 
-/* Info der Querschnitte noch einfügen*/
+Information for the Pavment of the Corridor:
+
+Cross Section 1:
+	- width 2.00[m]
+	- slope -3,00 [%]
+	
+Cross Section 2:
+	- width 3.60 [m]
+	- slope -2.00 [%]
 
 
 ### Prerequisites
