@@ -2,10 +2,10 @@ ISO-10303-21;
 HEADER;
 FILE_DESCRIPTION(('ViewDefinition [Ifc4X3NotAssigned]'),'2;1');
 FILE_NAME(
-/* name */ 'export\\sample_ifcroad.ifc',
+/* name */ 'UT_Road_1.ifc',
 /* time_stamp */ '2021-01-12T16:51:14',
 /* author */ ('stefan'),
-/* organization */ ('Unknown'),
+/* organization */ ('TUM Chair of Computational Modeling and Simulation'),
 /* preprocessor_version */ 'GeometryGymIFC v0.1.6.0 by Geometry Gym Pty Ltd built 2021-01-12T15:50:49',
 /* originating_system */ 'GeometryGymIFC v0.1.6.0',
 /* authorization */ 'None');
@@ -92,4 +92,3 @@ DATA;
 ENDSEC;
 
 END-ISO-10303-21;
-
