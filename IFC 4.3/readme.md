@@ -4,9 +4,9 @@ This folder is for IFC 4.3 files.
 
 > FILE_DESCRIPTION (('ViewDefinition []'), '2;1');
 
-**NOTE:** The current (2020.07.21.) correct version of IFC4.3 file schema in the physical file is `IFC4x3_RC1`, i.e.
+**NOTE:** The current (2021.01.13.) correct version of IFC4.3 file schema in the physical file is `IFC4x3_RC2`, i.e.
 
-> FILE_SCHEMA(('IFC4X3_RC1'));
+> FILE_SCHEMA(('IFC4X3_RC2'));
 
 ## Contribute
 
