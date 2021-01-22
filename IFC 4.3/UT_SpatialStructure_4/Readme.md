@@ -31,7 +31,7 @@ This scenario covers the following concepts and/or IFC entities:
 
 The figure below shows the extent of the IfcSite and its georeferenced location.
 
-![](./Figure 1 - Situation.PNG)
+![](./Figure%201%20-%20Situation.PNG)
 
 The figures below shows the spatial breakdown of the project into IfcFacility (blue) and IfcFacilityPart (turkoise).
 
