@@ -31,13 +31,13 @@ This scenario covers the following concepts and/or IFC entities:
 
 The figure below shows the extent of the IfcSite and its georeferenced location.
 
-![](.\Figure 1 - Situation.PNG)
+![](./Figure 1 - Situation.PNG)
 
 The figures below shows the spatial breakdown of the project into IfcFacility (blue) and IfcFacilityPart (turkoise).
 
-![](.\Figure 2 - Toivola_area_borders.JPG)
+![](./Figure 2 - Toivola_area_borders.JPG)
 
-![](.\Figure 3 - Toivola_area_borders2.JPG)
+![](./Figure 3 - Toivola_area_borders2.JPG)
 
 #### Project Breakdown
 
@@ -151,7 +151,7 @@ As such, the expected results are:
 
 For example, the application should be able to display something like what is shown in the picture below: 
 
-![](.\Figure 4 - result.png)
+![](./Figure 4 - result.png)
 
 ![](./Figure%202%20-%20result.png)
 
