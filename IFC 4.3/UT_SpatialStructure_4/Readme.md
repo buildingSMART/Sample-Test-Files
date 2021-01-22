@@ -151,9 +151,7 @@ As such, the expected results are:
 
 For example, the application should be able to display something like what is shown in the picture below: 
 
-![](./Figure 4 - result.png)
-
-![](./Figure%202%20-%20result.png)
+![](./Figure%204%20-%20result.png)
 
 ### Supporting files
 
