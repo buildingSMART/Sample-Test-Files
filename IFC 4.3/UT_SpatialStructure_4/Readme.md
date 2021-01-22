@@ -35,7 +35,7 @@ The figure below shows the extent of the IfcSite and its georeferenced location.
 
 The figures below shows the spatial breakdown of the project into IfcFacility (blue) and IfcFacilityPart (turkoise).
 
-![](./Figure 2 - Toivola_area_borders.JPG)
+![](./Figure%202%20-%20Toivola_area_borders.JPG)
 
 ![](./Figure 3 - Toivola_area_borders2.JPG)
 
