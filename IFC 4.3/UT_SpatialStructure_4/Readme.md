@@ -37,7 +37,7 @@ The figures below shows the spatial breakdown of the project into IfcFacility (b
 
 ![](./Figure%202%20-%20Toivola_area_borders.JPG)
 
-![](./Figure 3 - Toivola_area_borders2.JPG)
+![](./Figure%203%20-%20Toivola_area_borders2.JPG)
 
 #### Project Breakdown
 
