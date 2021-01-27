@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LandXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.landxml.org/schema/LandXML-1.2 http://www.landxml.org/schema/LandXML-1.2/LandXML-1.2.xsd" version="1.2" date="2021-01-26" time="11:00:46" readOnly="false" language="English" xmlns="http://www.landxml.org/schema/LandXML-1.2">
+  <Application name="VESTRA" desc="VESTRA" manufacturer="AKG Software Consulting GmbH" version="Build 054" manufacturerURL="www.akgsoftware.de" />
+  <Project name=UT_IfcAlignment_IfcCourse_IfcSectionedSolidHorizontel" />
+  <Units>
+    <Metric areaUnit="squareMeter" linearUnit="meter" volumeUnit="cubicMeter" angularUnit="decimal degrees" directionUnit="decimal degrees" temperatureUnit="celsius" pressureUnit="mmHG" />
+  </Units>
+  <Alignments name="Vestra">
+    <Alignment name="1 [Achse Nr. 1]" desc="1 [Achse Nr. 1]" length="14.142135623731" staStart="0">
+      <CoordGeom>
+        <Line dir="45" length="14.142135623731">
+          <Start>5454110 513210</Start>
+          <End>5454120 513220</End>
+        </Line>
+      </CoordGeom>
+      <Profile>
+        <ProfAlign name="GAx2Poly  Gradiente zu Achse 1">
+          <PVI>0 91</PVI>
+          <PVI>14.142 92</PVI>
+        </ProfAlign>
+      </Profile>
+      <CrossSects name="Querprofile zu Achse 1  Achse Nr. 1">
+        <CrossSect sta="0">
+          <CrossSectSurf name="51 ClosedProfile">
+            <PntList2D>0.0000 90.0000 -3.0000 89.9000 -3.0000 90.9000 0.0000 91.0000 3.0000 91.1000 3.0000 90.1000 0.0000 90.0000</PntList2D>
+          </CrossSectSurf>
+        </CrossSect>
+        <CrossSect sta="14.142">
+          <CrossSectSurf name="51 ClosedProfile">
+            <PntList2D>0.0000 91.0000 -3.0000 90.9000 -3.0000 91.9000 0.0000 92.0000 3.0000 92.1000 3.0000 91.1000 0.0000 91.0000</PntList2D>
+          </CrossSectSurf>
+        </CrossSect>
+      </CrossSects>
+    </Alignment>
+  </Alignments>
+</LandXML>
