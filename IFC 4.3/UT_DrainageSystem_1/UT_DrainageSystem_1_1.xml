@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<LandXML xmlns="http://www.inframodel.fi/inframodel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.inframodel.fi/inframodel https://buildingsmart.fi/infra/schema/4.0.3/inframodel.xsd"  date="2020-11-10" time="12:49:21" version="1.2" language="Finnish" readOnly="false">
+	<FeatureDictionary name="inframodel" version="4.0.3">
+		<DocFileRef name="Finnish Inframodel application documentation for LandXML v1.2" location="https://buildingsmart.fi/infra/inframodel/"/>
+	</FeatureDictionary>
+	<Units>
+		<Metric areaUnit="squareMeter" linearUnit="meter" volumeUnit="cubicMeter" temperatureUnit="celsius" pressureUnit="mmHG" velocityUnit="metersPerSecond" angularUnit="radians" directionUnit="radians" diameterUnit="meter" widthUnit="meter" heightUnit="meter" elevationUnit="meter"/>
+	</Units>
+	<CoordinateSystem epsgCode="3878" verticalCoordinateSystemName="3900" rotationAngle="0"/>
+	<Application name="Novapoint" manufacturer="Trimble" version="21.354.0.0" manufacturerURL="www.novapoint.com" timeStamp="2020-11-10T12:49:21">
+		<Author createdBy="FIMEOR" createdByEmail="Sweco" company="Sweco" companyURL=""/>
+	</Application>
+	<Project name="Vesihuolto" desc="Vesihuolto">
+		<Feature code="IM_codings" source="inframodel">
+			<Property label="terrainCoding" value="Tielaitos"/>
+			<Property label="surfaceCoding" value="Tielaitos"/>
+			<Property label="infraCoding" value="InfraBIM"/>
+			<Property label="proprietaryInfraCoding" value="Novapoint - FINLAND STANDARD"/>
+		</Feature>
+	</Project>
+	<PipeNetworks name="Vesihuolto">
+		<PipeNetwork name="Hulevesiviemäri" pipeNetType="storm" state="proposed">
+			<Structs>
+				<Struct name="10" desc="Hulevesikaivo H1" state="proposed" elevSump="124.984735" elevRim="126.944735">
+					<Center>6876920.244796 24525622.894716</Center>
+					<CircStruct diameter="0.6" desc="Hulevesikaivo H1" material="betoni" thickness="0.08"/>
+					<Invert elev="124.984735" flowDir="out" refPipe="8"/>
+					<Feature code="IM_struct" source="inframodel">
+						<Property label="structLabel" value="H1"/>
+						<Property label="rimType" value="umpi"/>
+						<Property label="heightDeposit" value="0.000"/>
+					</Feature>
+					<Feature code="IM_coding" source="inframodel">
+						<Property label="infraCoding" value="312320"/>
+						<Property label="infraCodingDesc" value="Tarkastuskaivot betonista"/>
+						<Property label="proprietaryInfraCoding" value=""/>
+						<Property label="proprietaryInfraCodingDesc" value=""/>
+					</Feature>
+				</Struct>
+				<Struct name="51" desc="Hulevesikaivo H2" state="proposed" elevSump="124.927521" elevRim="126.889169">
+					<Center>6876915.184007 24525638.859850</Center>
+					<CircStruct diameter="0.6" desc="Hulevesikaivo H2" material="betoni" thickness="0.08"/>
+					<Invert elev="124.927521" flowDir="out" refPipe="54"/>
+					<Invert elev="124.927521" flowDir="in" refPipe="8"/>
+					<Feature code="IM_struct" source="inframodel">
+						<Property label="structLabel" value="H2"/>
+						<Property label="rimType" value="umpi"/>
+						<Property label="heightDeposit" value="0.000"/>
+					</Feature>
+					<Feature code="IM_coding" source="inframodel">
+						<Property label="infraCoding" value="312320"/>
+						<Property label="infraCodingDesc" value="Tarkastuskaivot betonista"/>
+						<Property label="proprietaryInfraCoding" value=""/>
+						<Property label="proprietaryInfraCodingDesc" value=""/>
+					</Feature>
+				</Struct>
+				<Struct name="56" desc="Hulevesikaivo H3" state="proposed" elevSump="124.876312" elevRim="126.834577">
+					<Center>6876910.028752 24525648.981527</Center>
+					<CircStruct diameter="0.6" desc="Hulevesikaivo H3" material="betoni" thickness="0.08"/>
+					<Invert elev="124.876312" flowDir="out" refPipe="60"/>
+					<Invert elev="124.876312" flowDir="out" refPipe="109"/>
+					<Invert elev="124.876312" flowDir="in" refPipe="210"/>
+					<Invert elev="124.876312" flowDir="in" refPipe="54"/>
+					<Feature code="IM_struct" source="inframodel">
+						<Property label="structLabel" value="H3"/>
+						<Property label="rimType" value="umpi"/>
+						<Property label="heightDeposit" value="0.000"/>
+					</Feature>
+					<Feature code="IM_coding" source="inframodel">
+						<Property label="infraCoding" value="312320"/>
+						<Property label="infraCodingDesc" value="Tarkastuskaivot betonista"/>
+						<Property label="proprietaryInfraCoding" value=""/>
+						<Property label="proprietaryInfraCodingDesc" value=""/>
+					</Feature>
+				</Struct>
+				<Struct name="62" desc="Hulevesikaivo H4" state="proposed" elevSump="124.815732" elevRim="126.775732">
+					<Center>6876896.573181 24525670.103747</Center>
+					<CircStruct diameter="0.6" desc="Hulevesikaivo H4" material="betoni" thickness="0.08"/>
+					<Invert elev="124.815732" flowDir="in" refPipe="60"/>
+					<Feature code="IM_struct" source="inframodel">
+						<Property label="structLabel" value="H4"/>
+						<Property label="rimType" value="umpi"/>
+						<Property label="heightDeposit" value="0.000"/>
+					</Feature>
+					<Feature code="IM_coding" source="inframodel">
+						<Property label="infraCoding" value="312320"/>
+						<Property label="infraCodingDesc" value="Tarkastuskaivot betonista"/>
+						<Property label="proprietaryInfraCoding" value=""/>
+						<Property label="proprietaryInfraCodingDesc" value=""/>
+					</Feature>
+				</Struct>
+				<Struct name="111" desc="Hulevesikaivo H5" state="proposed" elevSump="123.944295" elevRim="126.5">
+					<Center>6876901.209494 24525641.880122</Center>
+					<CircStruct diameter="0.6" desc="Hulevesikaivo H5" material="betoni" thickness="0.08"/>
+					<Invert elev="123.944295" flowDir="in" refPipe="191"/>
+					<Invert elev="124.286302" flowDir="in" refPipe="109"/>
+					<Feature code="IM_struct" source="inframodel">
+						<Property label="structLabel" value="H5"/>
+						<Property label="rimType" value="umpi"/>
+						<Property label="heightDeposit" value="0.000"/>
+					</Feature>
+					<Feature code="IM_coding" source="inframodel">
+						<Property label="infraCoding" value="312320"/>
+						<Property label="infraCodingDesc" value="Tarkastuskaivot betonista"/>
+						<Property label="proprietaryInfraCoding" value=""/>
+						<Property label="proprietaryInfraCodingDesc" value=""/>
+					</Feature>
+				</Struct>
+				<Struct name="193" desc="Hulevesikaivo, ritiläkansi H6" state="proposed" elevSump="125.3" elevRim="126.466447">
+					<Center>6876902.576383 24525639.468084</Center>
+					<CircStruct diameter="0.8" desc="Hulevesikaivo, ritiläkansi H6" material="betoni" thickness="0.08"/>
+					<Invert elev="125.3" flowDir="out" refPipe="191"/>
+					<Feature code="IM_struct" source="inframodel">
+						<Property label="structLabel" value="H6"/>
+						<Property label="rimType" value="siivilä"/>
+						<Property label="heightDeposit" value="0.600"/>
+					</Feature>
+					<Feature code="IM_coding" source="inframodel">
+						<Property label="infraCoding" value="312320"/>
+						<Property label="infraCodingDesc" value="Tarkastuskaivot betonista"/>
+						<Property label="proprietaryInfraCoding" value=""/>
+						<Property label="proprietaryInfraCodingDesc" value=""/>
+					</Feature>
+				</Struct>
+				<Struct name="212" desc="Hulevesikaivo H7" state="proposed" elevSump="125.366183" elevRim="126.981401">
+					<Center>6876913.571764 24525650.141855</Center>
+					<CircStruct diameter="0.8" desc="Hulevesikaivo H7" material="betoni" thickness="0.08"/>
+					<Invert elev="125.366183" flowDir="out" refPipe="210"/>
+					<Feature code="IM_struct" source="inframodel">
+						<Property label="structLabel" value="H7"/>
+						<Property label="rimType" value="umpi"/>
+						<Property label="heightDeposit" value="0.162"/>
+					</Feature>
+					<Feature code="IM_coding" source="inframodel">
+						<Property label="infraCoding" value="312320"/>
+						<Property label="infraCodingDesc" value="Tarkastuskaivot betonista"/>
+						<Property label="proprietaryInfraCoding" value=""/>
+						<Property label="proprietaryInfraCodingDesc" value=""/>
+					</Feature>
+				</Struct>
+			</Structs>
+			<Pipes>
+				<Pipe name="8" state="proposed" refStart="10" refEnd="51" slope="0.3416159443">
+					<CircPipe diameter="0.4" desc="Kaivanto1 Johto 1 - 2 Hulevesiviemäri" material="betoni" thickness="0.06"/>
+					<Feature code="IM_pipe" source="inframodel">
+						<Property label="pressureClass" value="B"/>
+						<Property label="elevType" value="invert level"/>
+						<Property label="pipeStart" value="6876920.244796 24525622.894716 124.984735"/>
+						<Property label="pipeEnd" value="6876915.184007 24525638.859850 124.927521"/>
+					</Feature>
+					<Feature code="IM_coding" source="inframodel">
+						<Property label="infraCoding" value="312111"/>
+						<Property label="infraCodingDesc" value="Hulevesiviemärit (viettoviemäri) betonista"/>
+						<Property label="proprietaryInfraCoding" value=""/>
+						<Property label="proprietaryInfraCodingDesc" value=""/>
+					</Feature>
+				</Pipe>
+				<Pipe name="54" state="proposed" refStart="51" refEnd="56" slope="0.4508264230">
+					<CircPipe diameter="0.4" desc="Kaivanto1 Johto 2 - 3 Hulevesiviemäri" material="betoni" thickness="0.06"/>
+					<Feature code="IM_pipe" source="inframodel">
+						<Property label="pressureClass" value="B"/>
+						<Property label="elevType" value="invert level"/>
+						<Property label="pipeStart" value="6876915.184007 24525638.859850 124.927521"/>
+						<Property label="pipeEnd" value="6876910.028752 24525648.981527 124.876312"/>
+					</Feature>
+					<Feature code="IM_coding" source="inframodel">
+						<Property label="infraCoding" value="312111"/>
+						<Property label="infraCodingDesc" value="Hulevesiviemärit (viettoviemäri) betonista"/>
+						<Property label="proprietaryInfraCoding" value=""/>
+						<Property label="proprietaryInfraCodingDesc" value=""/>
+					</Feature>
+				</Pipe>
+				<Pipe name="60" state="proposed" refStart="56" refEnd="62" slope="0.2418945298">
+					<CircPipe diameter="0.4" desc="Kaivanto1 Johto 3 - 4 Hulevesiviemäri" material="betoni" thickness="0.06"/>
+					<Feature code="IM_pipe" source="inframodel">
+						<Property label="pressureClass" value="B"/>
+						<Property label="elevType" value="invert level"/>
+						<Property label="pipeStart" value="6876910.028752 24525648.981527 124.876312"/>
+						<Property label="pipeEnd" value="6876896.573181 24525670.103747 124.815732"/>
+					</Feature>
+					<Feature code="IM_coding" source="inframodel">
+						<Property label="infraCoding" value="312111"/>
+						<Property label="infraCodingDesc" value="Hulevesiviemärit (viettoviemäri) betonista"/>
+						<Property label="proprietaryInfraCoding" value=""/>
+						<Property label="proprietaryInfraCodingDesc" value=""/>
+					</Feature>
+				</Pipe>
+				<Pipe name="109" state="proposed" refStart="56" refEnd="111" slope="5.2188835004">
+					<CircPipe diameter="0.4" desc="Kaivanto2 Johto 3 - 5 Hulevesiviemäri" material="betoni" thickness="0.06"/>
+					<Feature code="IM_pipe" source="inframodel">
+						<Property label="pressureClass" value="B"/>
+						<Property label="elevType" value="invert level"/>
+						<Property label="pipeStart" value="6876910.014852 24525648.970629 124.876312"/>
+						<Property label="pipeEnd" value="6876901.209494 24525641.880122 124.286302"/>
+					</Feature>
+					<Feature code="IM_coding" source="inframodel">
+						<Property label="infraCoding" value="312111"/>
+						<Property label="infraCodingDesc" value="Hulevesiviemärit (viettoviemäri) betonista"/>
+						<Property label="proprietaryInfraCoding" value=""/>
+						<Property label="proprietaryInfraCodingDesc" value=""/>
+					</Feature>
+				</Pipe>
+				<Pipe name="191" state="proposed" refStart="193" refEnd="111" slope="48.8996971400">
+					<CircPipe diameter="0.239" desc="Kaivanto3 Johto 5 - 6 Hulevesiviemäri" material="PVC" thickness="0.0055"/>
+					<Feature code="IM_pipe" source="inframodel">
+						<Property label="pressureClass" value="PN6"/>
+						<Property label="elevType" value="invert level"/>
+						<Property label="pipeStart" value="6876902.576383 24525639.468084 125.300000"/>
+						<Property label="pipeEnd" value="6876901.209494 24525641.880122 123.944295"/>
+					</Feature>
+					<Feature code="IM_coding" source="inframodel">
+						<Property label="infraCoding" value="312112"/>
+						<Property label="infraCodingDesc" value="Hulevesiviemärit (viettoviemäri) muovista"/>
+						<Property label="proprietaryInfraCoding" value=""/>
+						<Property label="proprietaryInfraCodingDesc" value=""/>
+					</Feature>
+				</Pipe>
+				<Pipe name="210" state="proposed" refStart="212" refEnd="56" slope="13.2610372833">
+					<CircPipe diameter="0.239" desc="Kaivanto4 Johto 3 - 7 Hulevesiviemäri" material="PVC" thickness="0.0055"/>
+					<Feature code="IM_pipe" source="inframodel">
+						<Property label="pressureClass" value="PN6"/>
+						<Property label="elevType" value="invert level"/>
+						<Property label="pipeStart" value="6876913.571764 24525650.141855 125.366183"/>
+						<Property label="pipeEnd" value="6876910.058822 24525648.999342 124.876312"/>
+					</Feature>
+					<Feature code="IM_coding" source="inframodel">
+						<Property label="infraCoding" value="312112"/>
+						<Property label="infraCodingDesc" value="Hulevesiviemärit (viettoviemäri) muovista"/>
+						<Property label="proprietaryInfraCoding" value=""/>
+						<Property label="proprietaryInfraCodingDesc" value=""/>
+					</Feature>
+				</Pipe>
+			</Pipes>
+		</PipeNetwork>
+	</PipeNetworks>
+</LandXML>
