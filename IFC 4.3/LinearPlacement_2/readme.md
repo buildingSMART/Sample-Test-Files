@@ -4,27 +4,28 @@
 
 ### Intent
 
-This scenario demonstrates the usage of `IfcLinearPlacement` in combination with `IfcOrientationExpression` and `IfcDistanceExpression`
+This scenario demonstrates the usage of `IfcLinearPlacement`
+ in combination with `IfcAxis2PlacementLinear` and `IfcPointByDistanceExpression`.
 
 ### Prerequisites
 
 This scenario builds upon following other scenarios:
+- ProjectSetup_1
 - basic spatial structure containing an `IfcProject` and an `IfcSite` entity
 
 ### Content
 
-This scenario builds upon following scenarios:
+This scenario covers the following concepts and/or IFC entities:
 - project structure
   - `IfcProject`
   - `IfcSite`
-- default unit assignment
-  - `IfcUnitAssignment`
-  - `IfcSIUnit`
 - alignment
   - `IfcAlignment`
-- core spatial structure
-  - `IfcProject`
-  -  `IfcSite`
+  - `IfcGradientCurve`
+- linear placement
+  - `IfcLinearPlacement`
+  - `IfcAxis2PlacementLinear`
+  - `IfcPointByDistanceExpression`
 
 This scenario might be extended by the following concepts: 
 - GeoRef (see Georeferencing_1 scenario)
