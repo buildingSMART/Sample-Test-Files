@@ -3,19 +3,15 @@
 
 ### Intent
 
-This example demonstrates an IfcAnnotation placed with linear referencing methods (i.e. IfcLinearSpanPlacement). 
-The annotation adds additional semantic data to a given alignment curve. 
-Respecting the separation between geometric and semantic data, this approach enables the modeler to enrich a given alignment curve with further design values like cant deficiency or several speed values. 
+This example demonstrates an IfcAnnotation, which placement uses an `IfcLinearPlacement` on top of an alignment. 
 
-Possible feature request: 
-- Add new PSET definitions for speeds to prevent various naming conventions
+The annotation adds additional semantic data to a given alignment segments. 
 
 ### Prerequisites
 
 This scenario builds upon following other scenarios:
 - ProjectSetup
-- Alignment
-- LinearPlacement
+- Alignment according to IFC4x3_RC2
 
 ### Content
 
@@ -25,7 +21,7 @@ This scenario covers the following concepts and/or IFC entities:
 - `IfcAlignment` with basic horizontal and vertical segments
 - `IfcAnnotation`
 - `IfcPropertySet` with simple properties
-- `IfcLinearSpanPlacement` locating the `IfcAnnotation` based on the given `IfcAlignmentCurve`
+- `IfcLinearPlacement` positioning the `IfcAnnotation` 
 
 ### Supporting files
 
