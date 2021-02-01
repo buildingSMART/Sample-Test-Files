@@ -87,14 +87,17 @@ jobs:
     needs: filter
     name: check files from ${{ matrix.artfct }}
     if: ${{ matrix.cond }} == 'true'
+    env:
+      ADD: ${{ needs.filter.outputs.addifcs }}
+      MOD: ${{ needs.filter.outputs.modifcs }}
     strategy:
       matrix:
         include:
           artfct: "added.csv"
-          cond: ${{ needs.filter.outputs.addifcs }}
+          cond: $ADD
         include:
           artfct: "modified.csv"
-          cond: ${{ needs.filter.outputs.modifcs }}
+          cond: $MOD
     steps:
       - name: Verify the workspace context
         run: echo 'Workspace directory is ${{ github.workspace }}'
