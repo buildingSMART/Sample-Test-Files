@@ -27,16 +27,23 @@ jobs:
           echo '${{ steps.file_changes.outputs.files_modified}}'
           echo '${{ steps.file_changes.outputs.files_added}}'
           echo '${{ steps.file_changes.outputs.files_removed}}'
+      - name: Upload all files list
+        uses: actions/upload-artifact@v2
+        with:
+          name: all.csv
+          path: ${{ steps.file_changes.outputs.files}}
       - name: Upload added files list
         uses: actions/upload-artifact@v2
         with:
           name: added.csv
           path: ${{ steps.file_changes.outputs.files_added}}
+          if-no-files-found: ignore # 'warn' or 'error' are also available
       - name: Upload modified files list
         uses: actions/upload-artifact@v2
         with:
           name: modified.csv
           path: ${{ steps.file_changes.outputs.files_modified}}
+          if-no-files-found: ignore # 'warn' or 'error' are also available
   check:
     runs-on: windows-latest
     needs: [filter]
