@@ -29,7 +29,7 @@ DATA;
 #25 = IFCSIUNIT(*, .MASSUNIT., .KILO., .GRAM.);
 #26 = IFCSIUNIT(*, .TIMEUNIT., $, .SECOND.);
 #27 = IFCMONETARYUNIT('EUR');
-#28 = IFCGEOMETRICREPRESENTATIONCONTEXT($, 'Model', 3, 1.E-6, #29, #3);
+#28 = IFCGEOMETRICREPRESENTATIONCONTEXT($, 'Model', 3, 1.E-6, #29, #54);
 #29 = IFCAXIS2PLACEMENT3D(#5, #4, #2);
 
 /* ------- UT GeoRef_1 ------------------------------------------------------------------------- */
@@ -64,6 +64,9 @@ DATA;
 /* ------ The way it is modelled, there is no offset and no rotation. -------------------------- */
 #52 = IFCAXIS2PLACEMENT3D(#5, #4, #2);
 #53 = IFCLOCALPLACEMENT(#29, #52);
+
+/* ------ TrueNorth must be a 2D vector -------------------------------------------------------- */
+#54 = IFCDIRECTION((0.,1.));
 
 ENDSEC;
 END-ISO-10303-21;

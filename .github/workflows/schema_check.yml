@@ -40,44 +40,47 @@ jobs:
         run: |
           if [[ $HOME/files.csv ]] && cat $HOME/files.csv | grep -q .ifc; then 
             echo ::set-output name=HASIFCS::true; 
-            echo 'IFC changes determined!'
+            echo ::set-output name=ALL::$HOME/files.csv; 
+            echo 'IFC changes determined!';
           else 
             echo ::set-output name=HASIFCS::false; 
-            echo 'No IFC changes determined!'
+            echo 'No IFC changes determined!';
           fi
           if [[ $HOME/files_modified.csv ]] && cat $HOME/files_modified.csv | grep -q .ifc; then 
             echo ::set-output name=MODIFCS::true; 
-            echo 'IFC modifications determined!'
+            echo ::set-output name=MOD::$HOME/files_modified.csv; 
+            echo 'IFC modifications determined!';
           else 
             echo ::set-output name=MODIFCS::false; 
-            echo 'No IFC modifications determined!'
+            echo 'No IFC modifications determined!';
           fi
           if [[ $HOME/files_added.csv ]] && cat $HOME/files_added.csv | grep -q .ifc; then 
             echo ::set-output name=ADDEDIFCS::true; 
-            echo 'IFC additions determined!'
+            echo ::set-output name=ADD::$HOME/files_added.csv; 
+            echo 'IFC additions determined!';
           else 
             echo ::set-output name=ADDEDIFCS::false; 
-            echo 'No IFC additions determined!'
+            echo 'No IFC additions determined!';
           fi
       - name: Upload all files list
         if: ${{ steps.check_results.outputs.HASIFCS == 'true' }}
         uses: actions/upload-artifact@v2
         with:
           name: all.csv
-          path: ${HOME}/files.csv
+          path: ${{ steps.check_results.outputs.ALL }}
       - name: Upload added files list
         if: ${{ steps.check_results.outputs.ADDEDIFCS == 'true' }}
         uses: actions/upload-artifact@v2
         with:
           name: added.csv
-          path: ${HOME}/files_added.csv
+          path: ${{ steps.check_results.outputs.ADD }}
           if-no-files-found: ignore # 'warn' or 'error' are also available
       - name: Upload modified files list
         if: ${{ steps.check_results.outputs.MODIFCS == 'true' }}
         uses: actions/upload-artifact@v2
         with:
           name: modified.csv
-          path: ${HOME}/files_modified.csv
+          path: ${{ steps.check_results.outputs.MOD }}
           if-no-files-found: ignore # 'warn' or 'error' are also available
   check:
     runs-on: windows-latest
