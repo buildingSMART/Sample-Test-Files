@@ -1,7 +1,6 @@
 name: "IFC schema check"
 
 on:
-  push:
   pull_request:
     branches:
       - master
@@ -32,18 +31,25 @@ jobs:
           echo '${{ steps.file_changes.outputs.files_modified}}'
           echo '${{ steps.file_changes.outputs.files_added}}'
           echo '${{ steps.file_changes.outputs.files_removed}}'
+      - name: Check for IFC changes
+        id: check
+        run: |
+          if grep -q .ifc "${{ steps.file_changes.outputs.files}}"; then ::set-output name=HASIFCS::true; else ::set-output name=HASIFCS::false; fi
       - name: Upload all files list
+        if: ${{ steps.output_file.outputs.HASIFCS }}
         uses: actions/upload-artifact@v2
         with:
           name: all.csv
           path: ${{ steps.file_changes.outputs.files}}
       - name: Upload added files list
+        if: ${{ steps.output_file.outputs.HASIFCS }}
         uses: actions/upload-artifact@v2
         with:
           name: added.csv
           path: ${{ steps.file_changes.outputs.files_added}}
           if-no-files-found: ignore # 'warn' or 'error' are also available
       - name: Upload modified files list
+        if: ${{ steps.output_file.outputs.HASIFCS }}
         uses: actions/upload-artifact@v2
         with:
           name: modified.csv
