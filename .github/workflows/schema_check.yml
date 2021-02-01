@@ -12,6 +12,7 @@ jobs:
       hasifcs: ${{ steps.check_results.outputs.HASIFCS }}
       modifcs: ${{ steps.check_results.outputs.MODIFCS }}
       addifcs: ${{ steps.check_results.outputs.ADDEDIFCS }}
+      matrix: ${{ steps.set_matrix.outputs.matrix }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -82,6 +83,13 @@ jobs:
           name: modified.csv
           path: ${{ steps.check_results.outputs.MOD }}
           if-no-files-found: ignore # 'warn' or 'error' are also available
+      - name: Prepare build matrix
+        id: set_matrix
+        run: |
+          echo "set-output name=matrix::[{\"artfct\":\"added.csv\",\"cond\":\"${{ steps.check_results.outputs.ADDEDIFCS }}\"},{\"artfct\":\"modified.csv\",\"cond\":\"${{ steps.check_results.outputs.MODIFCS }}\"}]"
+      - name: Print build matrix
+        run: |
+          echo ${{ steps.set_matrix.outputs.matrix }}
   check: #TODO https://stackoverflow.com/questions/59977364/github-actions-how-use-strategy-matrix-with-script
     runs-on: windows-latest
     needs: filter
@@ -92,12 +100,8 @@ jobs:
       MOD: ${{ needs.filter.outputs.modifcs == 'true' }}
     strategy:
       matrix:
-        include:
-          artfct: "added.csv"
-          cond: $ADD
-        include:
-          artfct: "modified.csv"
-          cond: $MOD
+        cfg:
+          - ${{fromJson(needs.filter.outputs.matrix)}}
     steps:
       - name: Verify the workspace context
         run: echo 'Workspace directory is ${{ github.workspace }}'
