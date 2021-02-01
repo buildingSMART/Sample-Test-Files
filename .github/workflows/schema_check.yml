@@ -95,6 +95,10 @@ jobs:
         with:
           url: "https://bwsyncandshare.kit.edu/s/3morKMDHr6fciP5/download"
           target: checker.zip
+      - name: Logging location
+        run: |
+          dir .
+          dir download/
       - name: Unzip the checker
         run: |
           cmd /C (&"C:/Program Files/7-Zip/7z.exe" x -y -o"${{ github.workspace}}/checker" "${{ github.workspace}}/${{ steps.downloadfile.outputs.filename }}")
