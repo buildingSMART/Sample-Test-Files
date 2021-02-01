@@ -64,20 +64,20 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: all.csv
-          path: $HOME/files.csv
+          path: ${HOME}/files.csv
       - name: Upload added files list
         if: ${{ steps.check_results.outputs.ADDEDIFCS == 'true' }}
         uses: actions/upload-artifact@v2
         with:
           name: added.csv
-          path: $HOME/files_added.csv
+          path: ${HOME}/files_added.csv
           if-no-files-found: ignore # 'warn' or 'error' are also available
       - name: Upload modified files list
         if: ${{ steps.check_results.outputs.MODIFCS == 'true' }}
         uses: actions/upload-artifact@v2
         with:
           name: modified.csv
-          path: $HOME/files_modified.csv
+          path: ${HOME}/files_modified.csv
           if-no-files-found: ignore # 'warn' or 'error' are also available
   check:
     runs-on: windows-latest
@@ -86,16 +86,6 @@ jobs:
     steps:
       - name: Verify the workspace context
         run: echo 'Workspace directory is ${{ github.workspace }}'
-      - name: Load added files from filter job
-        uses: actions/download-artifact@v2
-        if: ${{ needs.filter.outputs.addifcs == 'true' }}
-        with:
-          name: added.csv
-      - name: Load modified files from filter job
-        uses: actions/download-artifact@v2
-        if: ${{ needs.filter.outputs.modifcs == 'true' }}
-        with:
-          name: modified.csv
       - uses: suisei-cn/actions-download-file@v1
         id: downloadfile  # Remember to give an ID if you need the output
         name: Download the file
@@ -106,8 +96,18 @@ jobs:
         uses: TonyBogdanov/zip@1.0
         with:
             args: unzip -qq ./IfcCheckingTool_Lite_V2.2_Build-90.zip -d ./checker
-      - name: Testing help
+      - name: Logging location
         run: |
           dir download
-          download/checker/ifcCheckingTool_Lite.exe /?
+          dir download/checker
+      - name: Load added files from filter job
+        uses: actions/download-artifact@v2
+        if: ${{ needs.filter.outputs.addifcs == 'true' }}
+        with:
+          name: added.csv
+      - name: Load modified files from filter job
+        uses: actions/download-artifact@v2
+        if: ${{ needs.filter.outputs.modifcs == 'true' }}
+        with:
+          name: modified.csv
 
