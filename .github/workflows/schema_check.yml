@@ -97,7 +97,7 @@ jobs:
           target: download/
       - name: Unzip the checker
         run: |
-          "C:/Program Files/7-Zip/7z.exe" e -y -o"${{ github.workspace}}/download" ./IfcCheckingTool_Lite_V2.2_Build-90.zip
+          start /max "C:/Program Files/7-Zip/7z.exe" e -y -o"${{ github.workspace}}/download" "${{ steps.downloadfile.outputs.filename }}"
       - name: Logging location
         run: |
           dir download
