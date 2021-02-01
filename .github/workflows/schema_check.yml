@@ -64,20 +64,20 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: all.csv
-          path: ${{ steps.file_changes.outputs.files}}
+          path: $HOME/files.csv
       - name: Upload added files list
         if: ${{ steps.check_results.outputs.ADDEDIFCS == 'true' }}
         uses: actions/upload-artifact@v2
         with:
           name: added.csv
-          path: ${{ steps.file_changes.outputs.files_added}}
+          path: $HOME/files_added.csv
           if-no-files-found: ignore # 'warn' or 'error' are also available
       - name: Upload modified files list
         if: ${{ steps.check_results.outputs.MODIFCS == 'true' }}
         uses: actions/upload-artifact@v2
         with:
           name: modified.csv
-          path: ${{ steps.file_changes.outputs.files_modified}}
+          path: $HOME/files_modified.csv
           if-no-files-found: ignore # 'warn' or 'error' are also available
   check:
     runs-on: windows-latest
@@ -96,13 +96,18 @@ jobs:
         if: ${{ needs.filter.outputs.modifcs == 'true' }}
         with:
           name: modified.csv
-      - name: Get KIT checker tool
-        uses: engineerd/configurator@v0.0.5
+      - uses: suisei-cn/actions-download-file@v1
+        id: downloadfile  # Remember to give an ID if you need the output
+        name: Download the file
         with:
-          name: "checker.exe"
           url: "https://bwsyncandshare.kit.edu/s/3morKMDHr6fciP5/download"
-          pathInArchive: "IfcChecker_KIT/ifcCheckingTool_Lite.exe"
+          target: download/
+      - name: Unzip the checker
+        uses: TonyBogdanov/zip@1.0
+        with:
+            args: unzip -qq ./IfcCheckingTool_Lite_V2.2_Build-90.zip -d ./checker
       - name: Testing help
         run: |
-          checker.exe /?
+          dir download
+          download/checker/ifcCheckingTool_Lite.exe /?
 

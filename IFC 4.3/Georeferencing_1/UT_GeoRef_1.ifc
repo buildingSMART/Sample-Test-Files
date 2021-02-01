@@ -57,7 +57,7 @@ DATA;
 #43= IFCCARTESIANPOINTLIST3D(((-500.,-500.,0.),(500.,-500.,0.),(500.,500.,0.),(-500.,500.,0.)),$);
 
 /* ------ IfcSolidStratum represents the top most layer of terrain ----------------------------- */
-#50 = IFCSOLIDSTRATUM('27H$neCQf1NwtmczxBInPR', $, $, $, $, #53, #40, $);
+#50 = IFCSOLIDSTRATUM('28H$neCQf1NwtmczxBInPR', $, $, $, $, #53, #40, $);
 /* ------ Spatial inclusion in the project ----------------------------------------------------- */
 #51 = IFCRELCONTAINEDINSPATIALSTRUCTURE('3Hu7f6BmT14B_XS9yS78Jq', $, $, $, #32, (#50));
 /* ------ Placement is relative to that of IfcSite according to the spatial structure ---------- */
