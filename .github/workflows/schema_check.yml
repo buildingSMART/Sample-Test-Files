@@ -38,21 +38,21 @@ jobs:
       - name: Check for IFC changes
         id: check_results
         run: |
-          if grep -q .ifc "${{ steps.file_changes.outputs.files}}"; then 
+          if cat ${{ steps.file_changes.outputs.files }} | grep -q .ifc; then 
             echo ::set-output name=HASIFCS::true; 
             echo 'IFC changes determined!'
           else 
             echo ::set-output name=HASIFCS::false; 
             echo 'No IFC changes determined!'
           fi
-          if grep -q .ifc "${{ steps.file_changes.outputs.files_modified}}"; then 
+          if cat ${{ steps.file_changes.outputs.files_modified }} | grep -q .ifc; then 
             echo ::set-output name=MODIFCS::true; 
             echo 'IFC modifications determined!'
           else 
             echo ::set-output name=MODIFCS::false; 
             echo 'No IFC modifications determined!'
           fi
-          if grep -q .ifc "${{ steps.file_changes.outputs.files_added}}"; then  
+          if cat ${{ steps.file_changes.outputs.files_added }} | grep -q .ifc; then 
             echo ::set-output name=ADDEDIFCS::true; 
             echo 'IFC additions determined!'
           else 
