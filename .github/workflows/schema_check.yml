@@ -99,10 +99,10 @@ jobs:
       - name: Get KIT checker tool
         uses: engineerd/configurator@v0.0.5
         with:
-          name: "ifcCheckingTool_Lite.exe"
+          name: "checker.exe"
           url: "https://bwsyncandshare.kit.edu/s/3morKMDHr6fciP5/download"
           pathInArchive: "IfcChecker_KIT/ifcCheckingTool_Lite.exe"
       - name: Testing help
         run: |
-          ifcCheckingTool_Lite.exe /?
+          checker.exe /?
 
