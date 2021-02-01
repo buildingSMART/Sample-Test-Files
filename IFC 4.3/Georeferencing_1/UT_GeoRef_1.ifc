@@ -63,7 +63,7 @@ DATA;
 /* ------ Placement is relative to that of IfcSite according to the spatial structure ---------- */
 /* ------ The way it is modelled, there is no offset and no rotation. -------------------------- */
 #52 = IFCAXIS2PLACEMENT3D(#5, #4, #2);
-#53 = IFCLOCALPLACEMENT(#29, #52);
+#53 = IFCLOCALPLACEMENT(#33, #52);
 
 /* ------ TrueNorth of the geometric context must be a 2D vector ------------------------------- */
 #54 = IFCDIRECTION((0.,1.));
