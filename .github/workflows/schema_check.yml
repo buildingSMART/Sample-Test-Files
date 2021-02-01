@@ -96,7 +96,7 @@ jobs:
     strategy:
       matrix: ${{fromJson(needs.filter.outputs.matrix)}}
     name: check files from ${{ matrix.artfct }}
-    if: ${{ matrix.cond == 'true' }}
+    if: ${{ matrix.cond }} == 'true'
     steps:
       - name: Verify the workspace context
         run: |
