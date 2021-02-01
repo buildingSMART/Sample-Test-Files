@@ -34,7 +34,11 @@ jobs:
       - name: Check for IFC changes
         id: check
         run: |
-          if grep -q .ifc "${{ steps.file_changes.outputs.files}}"; then ::set-output name=HASIFCS::true; else ::set-output name=HASIFCS::false; fi
+          if grep -q .ifc "${{ steps.file_changes.outputs.files}}"; then 
+            echo ::set-output name=HASIFCS::true; 
+          else 
+            echo ::set-output name=HASIFCS::false; 
+          fi
       - name: Upload all files list
         if: ${{ steps.output_file.outputs.HASIFCS }}
         uses: actions/upload-artifact@v2
