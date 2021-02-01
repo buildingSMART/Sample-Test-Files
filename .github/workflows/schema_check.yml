@@ -20,17 +20,16 @@ jobs:
         uses: trilom/file-changes-action@v1.2.4
         with:
           output: ','
-          fileOutput: ','
       - name: Logging
         run: |
           echo 'All files:'
-          cat $HOME/files.csv ; echo
+          cat $HOME/files.json ; echo
           echo 'Modified files:'
-          cat $HOME/files_modified.csv ; echo
+          cat $HOME/files_modified.json ; echo
           echo 'Added files:'
-          cat $HOME/files_added.csv ; echo
+          cat $HOME/files_added.json ; echo
           echo 'Removed files:'
-          cat $HOME/files_removed.csv ; echo
+          cat $HOME/files_removed.json ; echo
           echo 'Files: ' '${{ steps.file_changes.outputs.files}}'
           echo 'Modified: ''${{ steps.file_changes.outputs.files_modified}}'
           echo 'Added: ''${{ steps.file_changes.outputs.files_added}}'
@@ -38,25 +37,25 @@ jobs:
       - name: Check for IFC changes
         id: check_results
         run: |
-          if [[ $HOME/files.csv ]] && cat $HOME/files.csv | grep -q .ifc; then 
+          if [[ $HOME/files.json ]] && cat $HOME/files.json | grep -q .ifc; then 
             echo ::set-output name=HASIFCS::true; 
-            echo ::set-output name=ALL::$HOME/files.csv; 
+            echo ::set-output name=ALL::$HOME/files.json; 
             echo 'IFC changes determined!';
           else 
             echo ::set-output name=HASIFCS::false; 
             echo 'No IFC changes determined!';
           fi
-          if [[ $HOME/files_modified.csv ]] && cat $HOME/files_modified.csv | grep -q .ifc; then 
+          if [[ $HOME/files_modified.json ]] && cat $HOME/files_modified.json | grep -q .ifc; then 
             echo ::set-output name=MODIFCS::true; 
-            echo ::set-output name=MOD::$HOME/files_modified.csv; 
+            echo ::set-output name=MOD::$HOME/files_modified.json; 
             echo 'IFC modifications determined!';
           else 
             echo ::set-output name=MODIFCS::false; 
             echo 'No IFC modifications determined!';
           fi
-          if [[ $HOME/files_added.csv ]] && cat $HOME/files_added.csv | grep -q .ifc; then 
+          if [[ $HOME/files_added.json ]] && cat $HOME/files_added.json | grep -q .ifc; then 
             echo ::set-output name=ADDEDIFCS::true; 
-            echo ::set-output name=ADD::$HOME/files_added.csv; 
+            echo ::set-output name=ADD::$HOME/files_added.json; 
             echo 'IFC additions determined!';
           else 
             echo ::set-output name=ADDEDIFCS::false; 
@@ -66,20 +65,20 @@ jobs:
         if: ${{ steps.check_results.outputs.HASIFCS == 'true' }}
         uses: actions/upload-artifact@v2
         with:
-          name: all.csv
+          name: all.json
           path: ${{ steps.check_results.outputs.ALL }}
       - name: Upload added files list
         if: ${{ steps.check_results.outputs.ADDEDIFCS == 'true' }}
         uses: actions/upload-artifact@v2
         with:
-          name: added.csv
+          name: added.json
           path: ${{ steps.check_results.outputs.ADD }}
           if-no-files-found: ignore # 'warn' or 'error' are also available
       - name: Upload modified files list
         if: ${{ steps.check_results.outputs.MODIFCS == 'true' }}
         uses: actions/upload-artifact@v2
         with:
-          name: modified.csv
+          name: modified.json
           path: ${{ steps.check_results.outputs.MOD }}
           if-no-files-found: ignore # 'warn' or 'error' are also available
   check:
@@ -104,17 +103,23 @@ jobs:
         run: |
           Rename-Item -Path "${{ github.workspace}}/download/${{ steps.downloadfile.outputs.filename }}" -NewName "${{ steps.downloadfile.outputs.filename }}.zip"
           Expand-Archive -LiteralPath "${{ github.workspace}}/download/${{ steps.downloadfile.outputs.filename }}.zip" -DestinationPath "${{ github.workspace}}/checker"
-      - name: Logging location
+      - name: Logging checker
         run: |
           dir checker
       - name: Load added files from filter job
         uses: actions/download-artifact@v2
         if: ${{ needs.filter.outputs.addifcs == 'true' }}
         with:
-          name: added.csv
+          name: added.json
+      - name: Check added files
+        run: |
+          $data = ConvertFrom-Json .\added.json
+          foreach( $i in $data ) {
+            Write-Host $i
+          }
       - name: Load modified files from filter job
         uses: actions/download-artifact@v2
         if: ${{ needs.filter.outputs.modifcs == 'true' }}
         with:
-          name: modified.csv
+          name: modified.json
 
