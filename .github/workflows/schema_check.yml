@@ -56,20 +56,20 @@ jobs:
             echo 'No IFC additions determined!'
           fi
       - name: Upload all files list
-        if: ${{ steps.output_file.outputs.HASIFCS }}
+        if: ${{ steps.output_file.outputs.HASIFCS == 'true' }}
         uses: actions/upload-artifact@v2
         with:
           name: all.csv
           path: ${{ steps.file_changes.outputs.files}}
       - name: Upload added files list
-        if: ${{ steps.output_file.outputs.ADDEDIFCS }}
+        if: ${{ steps.output_file.outputs.ADDEDIFCS == 'true' }}
         uses: actions/upload-artifact@v2
         with:
           name: added.csv
           path: ${{ steps.file_changes.outputs.files_added}}
           if-no-files-found: ignore # 'warn' or 'error' are also available
       - name: Upload modified files list
-        if: ${{ steps.output_file.outputs.MODIFCS }}
+        if: ${{ steps.output_file.outputs.MODIFCS == 'true' }}
         uses: actions/upload-artifact@v2
         with:
           name: modified.csv
@@ -78,18 +78,18 @@ jobs:
   check:
     runs-on: windows-latest
     needs: [filter]
-    if: ${{ needs.filter.output_file.outputs.HASIFCS }}
+    if: ${{ needs.filter.output_file.outputs.HASIFCS == 'true' }}
     steps:
       - name: Verify the workspace context
         run: echo 'Workspace directory is ${{ github.workspace }}'
       - name: Load added files from filter job
         uses: actions/download-artifact@v2
-        if: ${{ needs.filter.output_file.outputs.ADDEDIFCS }}
+        if: ${{ needs.filter.output_file.outputs.ADDEDIFCS == 'true' }}
         with:
           name: added.csv
       - name: Load modified files from filter job
         uses: actions/download-artifact@v2
-        if: ${{ needs.filter.output_file.outputs.MODIFCS }}
+        if: ${{ needs.filter.output_file.outputs.MODIFCS == 'true' }}
         with:
           name: modified.csv
       - name: Get KIT checker tool
