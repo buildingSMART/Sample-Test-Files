@@ -20,17 +20,17 @@ jobs:
       - name: Logging
         run: |
           echo 'All files:'
-          cat $HOME/files.csv
+          cat $HOME/files.csv ; echo
           echo 'Modified files:'
-          cat $HOME/files_modified.csv
+          cat $HOME/files_modified.csv ; echo
           echo 'Added files:'
-          cat $HOME/files_added.csv
+          cat $HOME/files_added.csv ; echo
           echo 'Removed files:'
-          cat $HOME/files_removed.csv
-          echo '${{ steps.file_changes.outputs.files}}'
-          echo '${{ steps.file_changes.outputs.files_modified}}'
-          echo '${{ steps.file_changes.outputs.files_added}}'
-          echo '${{ steps.file_changes.outputs.files_removed}}'
+          cat $HOME/files_removed.csv ; echo
+          echo 'Files: ' '${{ steps.file_changes.outputs.files}}'
+          echo 'Modified: ''${{ steps.file_changes.outputs.files_modified}}'
+          echo 'Added: ''${{ steps.file_changes.outputs.files_added}}'
+          echo 'Removed: ''${{ steps.file_changes.outputs.files_removed}}'
       - name: Check for IFC changes
         id: check
         run: |
