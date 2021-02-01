@@ -97,7 +97,7 @@ jobs:
           target: download/
       - name: Unzip the checker
         run: |
-          start /max "C:/Program Files/7-Zip/7z.exe" e -y -o"${{ github.workspace}}/download" "${{ steps.downloadfile.outputs.filename }}"
+          start /max "C:/Program Files/7-Zip/7z" e -y -o"${{ github.workspace}}/download" "${{ steps.downloadfile.outputs.filename }}"
       - name: Logging location
         run: |
           dir download
