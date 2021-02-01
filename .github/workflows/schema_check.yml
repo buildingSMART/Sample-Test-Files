@@ -82,10 +82,18 @@ jobs:
           name: modified.csv
           path: ${{ steps.check_results.outputs.MOD }}
           if-no-files-found: ignore # 'warn' or 'error' are also available
-  check:
+  check: #TODO https://stackoverflow.com/questions/59977364/github-actions-how-use-strategy-matrix-with-script
     runs-on: windows-latest
-    needs: filter
-    if: ${{ needs.filter.outputs.hasifcs == 'true' }}
+    needs: filter from ${{ matrix.artfct }}
+    if: ${{ matrix.cond }} == 'true'
+    strategy:
+      matrix:
+        include:
+          artfct: "added.csv"
+          cond: ${{ needs.filter.outputs.addifcs }}
+        include:
+          artfct: "modified.csv"
+          cond: ${{ needs.filter.outputs.modifcs }}
     steps:
       - name: Verify the workspace context
         run: echo 'Workspace directory is ${{ github.workspace }}'
@@ -109,12 +117,7 @@ jobs:
           dir checker
       - name: Load added files from filter job
         uses: actions/download-artifact@v2
-        if: ${{ needs.filter.outputs.addifcs == 'true' }}
         with:
-          name: added.csv
-      - name: Load modified files from filter job
-        uses: actions/download-artifact@v2
-        if: ${{ needs.filter.outputs.modifcs == 'true' }}
-        with:
-          name: modified.csv
+          name: ${{ matrix.artfct }}
+          
 
