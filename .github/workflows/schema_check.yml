@@ -1,0 +1,63 @@
+name: "IFC schema check"
+
+on: 
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  filter:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Filter only changed files
+        id: file_changes
+        uses: trilom/file-changes-action@v1.2.4
+        with:
+          output: ','
+          fileOutput: ','
+      - name: Logging
+        run: |
+          cat $HOME/files.csv
+          cat $HOME/files_modified.csv
+          cat $HOME/files_added.csv
+          cat $HOME/files_removed.csv
+          echo '${{ steps.file_changes.outputs.files}}'
+          echo '${{ steps.file_changes.outputs.files_modified}}'
+          echo '${{ steps.file_changes.outputs.files_added}}'
+          echo '${{ steps.file_changes.outputs.files_removed}}'
+      - name: Upload added files list
+        uses: actions/upload-artifact@v2
+        with:
+          name: added.csv
+          path: ${{ steps.file_changes.outputs.files_added}}
+      - name: Upload modified files list
+        uses: actions/upload-artifact@v2
+        with:
+          name: modified.csv
+          path: ${{ steps.file_changes.outputs.files_modified}}
+  check:
+    runs-on: windows-latest
+    needs: [filter]
+    steps:
+      - name: Verify the workspace context
+        run: echo 'Workspace directory is ${{ github.workspace }}'
+      - name: Load added files from filter job
+        uses: actions/download-artifact@v2
+        with:
+          name: added.csv
+      - name: Load modified files from filter job
+        uses: actions/download-artifact@v2
+        with:
+          name: modified.csv
+      - name: Get KIT checker tool
+        uses: engineerd/configurator@v0.0.5
+        with:
+          name: "ifcCheckingTool_Lite.exe"
+          url: "https://bwsyncandshare.kit.edu/s/3morKMDHr6fciP5/download"
+          pathInArchive: "IfcChecker_KIT/ifcCheckingTool_Lite.exe"
+      - name: Testing help
+        run: |
+          ifcCheckingTool_Lite.exe /?
+
