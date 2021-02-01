@@ -84,7 +84,8 @@ jobs:
           if-no-files-found: ignore # 'warn' or 'error' are also available
   check: #TODO https://stackoverflow.com/questions/59977364/github-actions-how-use-strategy-matrix-with-script
     runs-on: windows-latest
-    needs: filter from ${{ matrix.artfct }}
+    needs: filter
+    name: check files from ${{ matrix.artfct }}
     if: ${{ matrix.cond }} == 'true'
     strategy:
       matrix:
@@ -119,5 +120,5 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: ${{ matrix.artfct }}
-          
+
 
