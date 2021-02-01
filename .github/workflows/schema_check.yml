@@ -1,6 +1,7 @@
 name: "IFC schema check"
 
-on: 
+on:
+  push:
   pull_request:
     branches:
       - master
