@@ -36,8 +36,24 @@ jobs:
         run: |
           if grep -q .ifc "${{ steps.file_changes.outputs.files}}"; then 
             echo ::set-output name=HASIFCS::true; 
+            echo 'IFC changes determined!'
           else 
             echo ::set-output name=HASIFCS::false; 
+            echo 'No IFC changes determined!'
+          fi
+          if grep -q .ifc "${{ steps.file_changes.outputs.files_modified}}"; then 
+            echo ::set-output name=MODIFCS::true; 
+            echo 'IFC modifications determined!'
+          else 
+            echo ::set-output name=MODIFCS::false; 
+            echo 'No IFC modifications determined!'
+          fi
+          if grep -q .ifc "${{ steps.file_changes.outputs.files_added}}"; then  
+            echo ::set-output name=ADDEDIFCS::true; 
+            echo 'IFC additions determined!'
+          else 
+            echo ::set-output name=ADDEDIFCS::false; 
+            echo 'No IFC additions determined!'
           fi
       - name: Upload all files list
         if: ${{ steps.output_file.outputs.HASIFCS }}
@@ -46,14 +62,14 @@ jobs:
           name: all.csv
           path: ${{ steps.file_changes.outputs.files}}
       - name: Upload added files list
-        if: ${{ steps.output_file.outputs.HASIFCS }}
+        if: ${{ steps.output_file.outputs.ADDEDIFCS }}
         uses: actions/upload-artifact@v2
         with:
           name: added.csv
           path: ${{ steps.file_changes.outputs.files_added}}
           if-no-files-found: ignore # 'warn' or 'error' are also available
       - name: Upload modified files list
-        if: ${{ steps.output_file.outputs.HASIFCS }}
+        if: ${{ steps.output_file.outputs.MODIFCS }}
         uses: actions/upload-artifact@v2
         with:
           name: modified.csv
@@ -62,15 +78,18 @@ jobs:
   check:
     runs-on: windows-latest
     needs: [filter]
+    if: ${{ needs.filter.output_file.outputs.HASIFCS }}
     steps:
       - name: Verify the workspace context
         run: echo 'Workspace directory is ${{ github.workspace }}'
       - name: Load added files from filter job
         uses: actions/download-artifact@v2
+        if: ${{ needs.filter.output_file.outputs.ADDEDIFCS }}
         with:
           name: added.csv
       - name: Load modified files from filter job
         uses: actions/download-artifact@v2
+        if: ${{ needs.filter.output_file.outputs.MODIFCS }}
         with:
           name: modified.csv
       - name: Get KIT checker tool
