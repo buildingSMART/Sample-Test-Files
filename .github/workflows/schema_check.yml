@@ -97,11 +97,10 @@ jobs:
           target: checker.zip
       - name: Unzip the checker
         run: |
-          cmd /C ("C:/Program Files/7-Zip/7z" x -y -o"${{ github.workspace}}/download" "${{ steps.downloadfile.outputs.filename }}")
+          cmd /C ("C:/Program Files/7-Zip/7z.exe" x -y -o"${{ github.workspace}}/checker" "${{ steps.downloadfile.outputs.filename }}")
       - name: Logging location
         run: |
-          dir download
-          dir download/checker
+          dir checker
       - name: Load added files from filter job
         uses: actions/download-artifact@v2
         if: ${{ needs.filter.outputs.addifcs == 'true' }}
