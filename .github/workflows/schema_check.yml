@@ -114,7 +114,7 @@ jobs:
       - name: List added files
         if: needs.filter.outputs.addifcs == 'true'
         run: |
-          $data = ConvertFrom-Json .\added.json
+          $data = ConvertFrom-Json ${{ github.workspace }}\added.json
           foreach( $i in $data ) {
             Write-Host $i
           }
@@ -126,7 +126,7 @@ jobs:
       - name: List modified files
         if: needs.filter.outputs.modifcs == 'true'
         run: |
-          $data = ConvertFrom-Json .\modified.json
+          $data = ConvertFrom-Json ${{ github.workspace }}\modified.json
           foreach( $i in $data ) {
             Write-Host $i
           }
