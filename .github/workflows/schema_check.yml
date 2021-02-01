@@ -108,10 +108,11 @@ jobs:
           dir checker
       - name: Load added files from filter job
         uses: actions/download-artifact@v2
-        if: ${{ needs.filter.outputs.addifcs == 'true' }}
+        if: needs.filter.outputs.addifcs == 'true'
         with:
           name: added.json
-      - name: Check added files
+      - name: List added files
+        if: needs.filter.outputs.addifcs == 'true'
         run: |
           $data = ConvertFrom-Json .\added.json
           foreach( $i in $data ) {
@@ -119,7 +120,14 @@ jobs:
           }
       - name: Load modified files from filter job
         uses: actions/download-artifact@v2
-        if: ${{ needs.filter.outputs.modifcs == 'true' }}
+        if: needs.filter.outputs.modifcs == 'true'
         with:
           name: modified.json
+      - name: List modified files
+        if: needs.filter.outputs.modifcs == 'true'
+        run: |
+          $data = ConvertFrom-Json .\modified.json
+          foreach( $i in $data ) {
+            Write-Host $i
+          }
 
