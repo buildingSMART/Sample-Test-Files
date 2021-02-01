@@ -96,9 +96,8 @@ jobs:
           url: "https://bwsyncandshare.kit.edu/s/3morKMDHr6fciP5/download"
           target: download/
       - name: Unzip the checker
-        uses: TonyBogdanov/zip@1.0
-        with:
-            args: unzip -qq ./IfcCheckingTool_Lite_V2.2_Build-90.zip -d ./checker
+        run: |
+          /c/Program Files/7-Zip/7z.exe e -y -o${{ github.workspace}}/download ./IfcCheckingTool_Lite_V2.2_Build-90.zip
       - name: Logging location
         run: |
           dir download
