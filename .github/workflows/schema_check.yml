@@ -100,8 +100,9 @@ jobs:
           dir .
           dir download/
       - name: Unzip the checker
+        shell: powershell
         run: |
-          cmd /C (&"C:/Program Files/7-Zip/7z" x -y -o"${{ github.workspace}}/checker" "${{ github.workspace}}/download/${{ steps.downloadfile.outputs.filename }}")
+          Expand-Archive -LiteralPath "${{ github.workspace}}/download/${{ steps.downloadfile.outputs.filename }}" -DestinationPath "${{ github.workspace}}/checker"
       - name: Logging location
         run: |
           dir checker
