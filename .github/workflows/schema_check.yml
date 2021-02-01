@@ -86,10 +86,10 @@ jobs:
     runs-on: windows-latest
     needs: filter
     name: check files from ${{ matrix.artfct }}
-    if: ${{ matrix.cond }} == 'true'
+    if: ${{ matrix.cond }}
     env:
-      ADD: ${{ needs.filter.outputs.addifcs }}
-      MOD: ${{ needs.filter.outputs.modifcs }}
+      ADD: ${{ needs.filter.outputs.addifcs == 'true' }}
+      MOD: ${{ needs.filter.outputs.modifcs == 'true' }}
     strategy:
       matrix:
         include:
