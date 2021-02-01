@@ -101,7 +101,7 @@ jobs:
           dir download/
       - name: Unzip the checker
         run: |
-          cmd /C (&"C:/Program Files/7-Zip/7z.exe" x -y -o"${{ github.workspace}}/checker" "${{ github.workspace}}/download/${{ steps.downloadfile.outputs.filename }}")
+          cmd /C (&"C:/Program Files/7-Zip/7z" x -y -o"${{ github.workspace}}/checker" "${{ github.workspace}}/download/${{ steps.downloadfile.outputs.filename }}")
       - name: Logging location
         run: |
           dir checker
