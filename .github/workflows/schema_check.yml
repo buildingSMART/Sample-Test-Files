@@ -20,9 +20,13 @@ jobs:
           fileOutput: ','
       - name: Logging
         run: |
+          echo 'All files:'
           cat $HOME/files.csv
+          echo 'Modified files:'
           cat $HOME/files_modified.csv
+          echo 'Added files:'
           cat $HOME/files_added.csv
+          echo 'Removed files:'
           cat $HOME/files_removed.csv
           echo '${{ steps.file_changes.outputs.files}}'
           echo '${{ steps.file_changes.outputs.files_modified}}'
