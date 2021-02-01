@@ -166,3 +166,4 @@ Following files correspond to this scenario:
 | `Figure 4 - result.png`                | picture showing possible result                              |
 | `Toivola_area_borders.dwg`             | dwg file as basis for figures 2 and 3                        |
 | `IFCTreeView.png`                      | picture showing file structure in IFCTreeView                |
+| `UT_SpatialStructure_4_12d_1.png'          | picture showing ifc file read into 12d Model using/not using IfcMapConversion  |
