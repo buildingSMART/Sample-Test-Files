@@ -8,6 +8,10 @@ on:
 jobs:
   filter:
     runs-on: ubuntu-latest
+    outputs:
+      hasifcs: ${{ steps.check_results.outputs.HASIFCS }}
+      modifcs: ${{ steps.check_results.outputs.MODIFCS }}
+      addifcs: ${{ steps.check_results.outputs.ADDEDIFCS }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -77,19 +81,19 @@ jobs:
           if-no-files-found: ignore # 'warn' or 'error' are also available
   check:
     runs-on: windows-latest
-    needs: [filter]
-    if: ${{ needs.filter.check_results.outputs.HASIFCS == 'true' }}
+    needs: filter
+    if: ${{ needs.filter.outputs.hasifcs == 'true' }}
     steps:
       - name: Verify the workspace context
         run: echo 'Workspace directory is ${{ github.workspace }}'
       - name: Load added files from filter job
         uses: actions/download-artifact@v2
-        if: ${{ needs.filter.check_results.outputs.ADDEDIFCS == 'true' }}
+        if: ${{ needs.filter.outputs.addifcs == 'true' }}
         with:
           name: added.csv
       - name: Load modified files from filter job
         uses: actions/download-artifact@v2
-        if: ${{ needs.filter.check_results.outputs.MODIFCS == 'true' }}
+        if: ${{ needs.filter.outputs.modifcs == 'true' }}
         with:
           name: modified.csv
       - name: Get KIT checker tool
