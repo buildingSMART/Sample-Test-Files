@@ -123,10 +123,14 @@ jobs:
         if: needs.filter.outputs.modifcs == 'true'
         with:
           name: modified.json
+      - name: Log modified
+        if: needs.filter.outputs.modifcs == 'true'
+        run: |
+          type "${{ github.workspace }}\modified.json"
       - name: List modified files
         if: needs.filter.outputs.modifcs == 'true'
         run: |
-          $data = ConvertFrom-Json ${{ github.workspace }}\modified.json
+          $data = ConvertFrom-Json "${{ github.workspace }}\modified.json"
           foreach( $i in $data ) {
             Write-Host $i
           }
