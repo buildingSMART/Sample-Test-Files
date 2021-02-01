@@ -86,25 +86,22 @@ jobs:
       - name: Prepare build matrix
         id: set_matrix
         run: |
-          echo "set-output name=matrix::[{\"artfct\":\"added.csv\",\"cond\":\"${{ steps.check_results.outputs.ADDEDIFCS }}\"},{\"artfct\":\"modified.csv\",\"cond\":\"${{ steps.check_results.outputs.MODIFCS }}\"}]"
+          echo "set-output name=matrix::{"include\":[{\"artfct\":\"added.csv\",\"cond\":\"${{ steps.check_results.outputs.ADDEDIFCS }}\"},{\"artfct\":\"modified.csv\",\"cond\":\"${{ steps.check_results.outputs.MODIFCS }}\"}]}"
       - name: Print build matrix
         run: |
           echo ${{ steps.set_matrix.outputs.matrix }}
   check: #TODO https://stackoverflow.com/questions/59977364/github-actions-how-use-strategy-matrix-with-script
     runs-on: windows-latest
     needs: filter
-    name: check files from ${{ matrix.artfct }}
-    if: ${{ matrix.cond }}
-    env:
-      ADD: ${{ needs.filter.outputs.addifcs == 'true' }}
-      MOD: ${{ needs.filter.outputs.modifcs == 'true' }}
     strategy:
-      matrix:
-        cfg:
-          - ${{fromJson(needs.filter.outputs.matrix)}}
+      matrix: ${{fromJson(needs.filter.outputs.matrix)}}
+    name: check files from ${{ matrix.artfct }}
+    if: ${{ matrix.cond == 'true' }}
     steps:
       - name: Verify the workspace context
-        run: echo 'Workspace directory is ${{ github.workspace }}'
+        run: |
+          echo 'Workspace directory is ${{ github.workspace }}'
+          echo "Checking files from ${{ matrix.artfct }}"
       - uses: suisei-cn/actions-download-file@v1
         id: downloadfile  # Remember to give an ID if you need the output
         name: Download the file
