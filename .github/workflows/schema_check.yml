@@ -132,7 +132,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: check
     if: needs.check.results.outputs.haslogs == 'true'
-      jobs:
+    steps:
       - name: Load log files from check
         uses: actions/download-artifact@v2
         with:
