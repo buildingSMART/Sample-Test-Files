@@ -172,6 +172,7 @@ jobs:
             [System.Xml.XmlDocument] $document = New-Object System.Xml.XmlDocument
             $document.load($_.FullName)
             $found_elements = $document.selectnodes($error_elements)
+            $total += $found_elements.count
             Write-Host $found_elements.count.ToString("n0") elements in $_.Name
           }
           if( $total -ge 1 ) {
