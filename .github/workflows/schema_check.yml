@@ -71,6 +71,8 @@ jobs:
     outputs:
       haslogs: ${{ steps.results.outputs.haslogs }}
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
       - name: Verify the workspace context
         run: echo 'Workspace directory is ${{ github.workspace }}'
       - uses: suisei-cn/actions-download-file@v1
@@ -99,13 +101,18 @@ jobs:
         if: needs.filter.outputs.addifcs == 'true'
         run: |
           $data = '${{ needs.filter.outputs.addjson }}' | ConvertFrom-Json
+          $cmnd = "${{ github.workspace }}\checker\ifcCheckingTool_Lite.exe"
           foreach( $i in $data ) {
             $filename = $("$i").Substring($("$i").LastIndexOf("/")+1)
-            Write-Host "Checking filename:" $("$filename") "writing to" $("${{ github.workspace }}\results\$filename.xml")
-            &"${{ github.workspace }}\checker\ifcCheckingTool_Lite.exe" $("${{ github.workspace }}\$i") /hidegui /xmlfile=$("${{ github.workspace }}\results\$filename.xml") 
+            Write-Host "Checking filename:" "$("$filename")" " --> writing to" "$("${{ github.workspace }}\results\$filename.xml")"
+            Write-Host "Running:" "${{ github.workspace }}\checker\ifcCheckingTool_Lite.exe" "$("${{ github.workspace }}\$i")" /hidegui /xmlfile="$("${{ github.workspace }}\results\$filename.xml")"
+            $ifcFilePath = $("${{ github.workspace }}\$i")
+            $xmlFilePath = $("${{ github.workspace }}\results\$filename.xml")
+            & $cmnd $ifcFilePath /hidegui /xmlfile=$xmlFilePath
+            Write-Host "Last exit code was:" $LASTEXITCODE
+            Copy-Item $ifcFilePath -Destination $("${{ github.workspace }}/results/$i")
           }
       - name: Check modified files
-        id: checking
         if: needs.filter.outputs.modifcs == 'true'
         run: |
           $data = '${{ needs.filter.outputs.modjson }}' | ConvertFrom-Json
