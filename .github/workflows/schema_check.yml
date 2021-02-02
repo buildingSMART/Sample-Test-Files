@@ -109,7 +109,7 @@ jobs:
             $ifcFilePath = $("${{ github.workspace }}\$i")
             $ifcCopyFilePath = $("${{ github.workspace }}\results\$filename")
             $xmlFilePath = $("${{ github.workspace }}\results\$filename.xml")
-            & $cmnd $ifcFilePath /hidegui /xmlfile=$xmlFilePath
+            & $cmnd $ifcFilePath /hidegui /xmlfile=$xmlFilePath | Out-Null
             Write-Host "Last exit code was:" "$LastExitCode"
             Copy-Item $ifcFilePath -Destination $ifcCopyFilePath
           }
@@ -164,12 +164,12 @@ jobs:
         id: counting
         run: |
           $total = 0
-          $error_elements = "//MVDReport//MVDMessageSet"
+          $error_elements = "./MVDReport/MVDMessageSet/MessageType[. = ERROR]"
           Get-ChildItem results -Filter "*.xml" | 
           Foreach-Object {
             [System.Xml.XmlDocument] $document = New-Object System.Xml.XmlDocument
             $document.load($_.FullName)
-            $found_elements = $document.selectnodes($element_xpath)
+            $found_elements = $document.selectnodes($error_elements)
             Write-Host $found_elements.count.ToString("n0") elements in $_.Name
           }
           if( $total -ge 1 ) {
