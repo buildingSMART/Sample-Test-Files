@@ -65,7 +65,9 @@ jobs:
     runs-on: windows-latest
     needs: filter
     if: ${{ needs.filter.outputs.hasifcs == 'true' }}
-    shell: pwsh
+    defaults:
+      run:
+        shell: pwsh
     steps:
       - name: Verify the workspace context
         run: echo 'Workspace directory is ${{ github.workspace }}'
