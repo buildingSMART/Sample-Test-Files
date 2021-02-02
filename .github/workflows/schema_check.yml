@@ -125,7 +125,7 @@ jobs:
             $ifcFilePath = $("${{ github.workspace }}\$i")
             $ifcCopyFilePath = $("${{ github.workspace }}\results\$filename")
             $xmlFilePath = $("${{ github.workspace }}\results\$filename.xml")
-            & $cmnd $ifcFilePath /hidegui /xmlfile=$xmlFilePath
+            & $cmnd $ifcFilePath /hidegui /xmlfile=$xmlFilePath | Out-Null
             Write-Host "Last exit code was:" "$LastExitCode"
             Copy-Item $ifcFilePath -Destination $ifcCopyFilePath
           }
@@ -160,11 +160,11 @@ jobs:
         run: |
           dir .
           dir results
-      - name: Parse logs
+      - name: Parse logs for errors
         id: counting
         run: |
           $total = 0
-          $error_elements = "./MVDReport/MVDMessageSet/MessageType[. = ERROR]"
+          $error_elements = "./MVDReport/MVDMessageSet/MessageType[. = 'ERROR']"
           Get-ChildItem results -Filter "*.xml" | 
           Foreach-Object {
             [System.Xml.XmlDocument] $document = New-Object System.Xml.XmlDocument
