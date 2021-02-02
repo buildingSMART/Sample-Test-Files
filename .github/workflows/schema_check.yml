@@ -112,7 +112,9 @@ jobs:
             $filename = $("$i").Substring($("$i").LastIndexOf("/")+1)
             Write-Host "Checking filename:" "$("$filename")" " --> writing to" "$("${{ github.workspace }}\results\$filename.xml")"
             Write-Host "Running:" "${{ github.workspace }}\checker\ifcCheckingTool_Lite.exe" "$("${{ github.workspace }}\$i")" /hidegui /xmlfile="$("${{ github.workspace }}\results\$filename.xml")"
-            & "$cmnd" $("`"${{ github.workspace }}\$i`"") /hidegui /xmlfile=$("`"${{ github.workspace }}\results\$filename.xml`"")
+            $ifcFilePath = $("${{ github.workspace }}\$i")
+            $xmlFilePath = $("${{ github.workspace }}\results\$filename.xml")
+            & $("$cmnd") $("`"$ifcFilePath`"") /hidegui /xmlfile=$("`"$xmlFilePath`"")
           }
       - name: Analyse results directory
         id: results
