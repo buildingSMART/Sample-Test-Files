@@ -109,8 +109,8 @@ jobs:
             $ifcFilePath = $("${{ github.workspace }}\$i")
             $xmlFilePath = $("${{ github.workspace }}\results\$filename.xml")
             & $cmnd $ifcFilePath /hidegui /xmlfile=$xmlFilePath
-            Write-Host "Last exit code was:" $?
-            Copy-Item $("$ifcFilePath") -Destination $("${{ github.workspace }}/results/$i")
+            Write-Host "Last exit code was:" $LastExitCode
+            Copy-Item "$("$ifcFilePath")" -Destination "$("${{ github.workspace }}/results/$i")"
           }
       - name: Check modified files
         if: needs.filter.outputs.modifcs == 'true'
@@ -124,8 +124,8 @@ jobs:
             $ifcFilePath = $("${{ github.workspace }}\$i")
             $xmlFilePath = $("${{ github.workspace }}\results\$filename.xml")
             & $cmnd $ifcFilePath /hidegui /xmlfile=$xmlFilePath
-            Write-Host "Last exit code was:" $?
-            Copy-Item $("$ifcFilePath") -Destination $("${{ github.workspace }}/results/$i")
+            Write-Host "Last exit code was:" $LastExitCode
+            Copy-Item "$("$ifcFilePath")" -Destination "$("${{ github.workspace }}/results/$i")"
           }
       - name: Analyse results directory
         id: results
@@ -162,7 +162,7 @@ jobs:
         id: counting
         run: |
           $total = 0
-          $error_elements = "//MVDReport.MVDMessageSet"
+          $error_elements = "//MVDReport//MVDMessageSet"
           Get-ChildItem results -Filter "*.xml" | 
           Foreach-Object {
             [System.Xml.XmlDocument] $document = New-Object System.Xml.XmlDocument
