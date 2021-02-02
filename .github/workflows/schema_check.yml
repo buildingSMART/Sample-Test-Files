@@ -144,6 +144,7 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: checking_results
+          path: checking_results
       - name: Dir files
         run: |
           dir .
