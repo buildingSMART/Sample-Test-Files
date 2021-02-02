@@ -107,8 +107,8 @@ jobs:
           $data = '${{ needs.filter.outputs.modjson }}' | ConvertFrom-Json
           foreach( $i in $data ) {
             $filename = $("$i").Substring($("$i").LastIndexOf("/")+1)
-            Write-Host "Running:" "${{ github.workspace }}\checker\ifcCheckingTool_Lite.exe" $("${{ github.workspace }}\$i") /hidegui /xmlfile=$("${{ github.workspace }}\results\$filename.xml")
-            Write-Host "Checking filename:" "$("$filename")" "writing to" "$("${{ github.workspace }}\results\$filename.xml")"
+            Write-Host "Checking filename:" "$("$filename")" " --> writing to" "$("${{ github.workspace }}\results\$filename.xml")"
+            Write-Host "Running:" "${{ github.workspace }}\checker\ifcCheckingTool_Lite.exe" "$("${{ github.workspace }}\$i")" /hidegui /xmlfile="$("${{ github.workspace }}\results\$filename.xml")"
             &"${{ github.workspace }}\checker\ifcCheckingTool_Lite.exe" "$("${{ github.workspace }}\$i")" /hidegui /xmlfile="$("${{ github.workspace }}\results\$filename.xml")"
           }
       - name: Analyse results directory
@@ -123,7 +123,7 @@ jobs:
             echo "::set-output name=haslogs::false"        
           }
       - name: Upload check results
-        if: needs.filter.outputs.modifcs == 'true' || needs.filter.outputs.addifcs == 'true'
+        if: (needs.filter.outputs.modifcs == 'true' || needs.filter.outputs.addifcs == 'true') && steps.results.outputs.haslogs == 'true'
         uses: actions/upload-artifact@v2
         with:
           name: checking_results
