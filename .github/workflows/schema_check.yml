@@ -105,16 +105,22 @@ jobs:
           Expand-Archive -LiteralPath "${{ github.workspace}}/download/${{ steps.downloadfile.outputs.filename }}.zip" -DestinationPath "${{ github.workspace}}/checker"
       - name: Logging checker
         run: |
+          mkdir results
           dir checker
       - name: Load added files from filter job
         uses: actions/download-artifact@v2
         if: needs.filter.outputs.addifcs == 'true'
         with:
           name: added.json
+      - name: Log Added
+        if: needs.filter.outputs.addifcs == 'true'
+        run: |
+          dir .
+          type "${{ github.workspace }}\files_added.json"
       - name: List added files
         if: needs.filter.outputs.addifcs == 'true'
         run: |
-          $data = ConvertFrom-Json ${{ github.workspace }}\added.json
+          $data = Get-Content -Raw -Path "${{ github.workspace }}\files_added.json" | ConvertFrom-Json
           foreach( $i in $data ) {
             Write-Host $i
           }
@@ -133,6 +139,12 @@ jobs:
         run: |
           $data = Get-Content -Raw -Path "${{ github.workspace }}\files_modified.json" | ConvertFrom-Json 
           foreach( $i in $data ) {
-            Write-Host $i
+            Write-Host "Checking: " $i
+            &"checker\ifcCheckingTool_Lite.exe" $i /hidegui /xmlfile="results/$i.log"
           }
+      - name: Dir currect directory
+        if: always()
+        run: |
+          dir .
+          dir results
 
