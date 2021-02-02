@@ -104,11 +104,11 @@ jobs:
           $cmnd = "${{ github.workspace }}\checker\ifcCheckingTool_Lite.exe"
           foreach( $i in $data ) {
             $filename = $("$i").Substring($("$i").LastIndexOf("/")+1)
-            Write-Host "Checking filename:" "$("$filename")" " --> writing to" "$("${{ github.workspace }}\results\$filename.xml")"
+            Write-Host "Checking filename:" "$("$filename")" " --> writing to" "$("${{ github.workspace }}\results\$filename.chkxml")"
             Write-Host "Running:" "${{ github.workspace }}\checker\ifcCheckingTool_Lite.exe" "$("${{ github.workspace }}\$i")" /hidegui /xmlfile="$("${{ github.workspace }}\results\$filename.xml")"
             $ifcFilePath = $("${{ github.workspace }}\$i")
             $ifcCopyFilePath = $("${{ github.workspace }}\results\$filename")
-            $xmlFilePath = $("${{ github.workspace }}\results\$filename.xml")
+            $xmlFilePath = $("${{ github.workspace }}\results\$filename.chkxml")
             & $cmnd $ifcFilePath /hidegui /xmlfile=$xmlFilePath | Out-Null
             Write-Host "Last exit code was:" "$LastExitCode"
             Copy-Item $ifcFilePath -Destination $ifcCopyFilePath
@@ -120,11 +120,11 @@ jobs:
           $cmnd = "${{ github.workspace }}\checker\ifcCheckingTool_Lite.exe"
           foreach( $i in $data ) {
             $filename = $("$i").Substring($("$i").LastIndexOf("/")+1)
-            Write-Host "Checking filename:" "$("$filename")" " --> writing to" "$("${{ github.workspace }}\results\$filename.xml")"
+            Write-Host "Checking filename:" "$("$filename")" " --> writing to" "$("${{ github.workspace }}\results\$filename.chkxml")"
             Write-Host "Running:" "${{ github.workspace }}\checker\ifcCheckingTool_Lite.exe" "$("${{ github.workspace }}\$i")" /hidegui /xmlfile="$("${{ github.workspace }}\results\$filename.xml")"
             $ifcFilePath = $("${{ github.workspace }}\$i")
             $ifcCopyFilePath = $("${{ github.workspace }}\results\$filename")
-            $xmlFilePath = $("${{ github.workspace }}\results\$filename.xml")
+            $xmlFilePath = $("${{ github.workspace }}\results\$filename.chkxml")
             & $cmnd $ifcFilePath /hidegui /xmlfile=$xmlFilePath | Out-Null
             Write-Host "Last exit code was:" "$LastExitCode"
             Copy-Item $ifcFilePath -Destination $ifcCopyFilePath
@@ -150,6 +150,8 @@ jobs:
     runs-on: windows-latest
     needs: check
     if: needs.check.outputs.haslogs == 'true'
+    outputs:
+      errors: ${{ steps.counting.outputs.logging }}
     steps:
       - name: Load log files from check
         uses: actions/download-artifact@v2
@@ -164,8 +166,8 @@ jobs:
         id: counting
         run: |
           $total = 0
-          $error_elements = "./MVDReport/MVDMessageSet/MessageType[. = 'ERROR']"
-          Get-ChildItem results -Filter "*.xml" | 
+          $error_elements = "./MVDReport/MVDMessageSet/MVDMessage/MessageType[. = 'ERROR']"
+          Get-ChildItem results -Filter "*.chkxml" | 
           Foreach-Object {
             [System.Xml.XmlDocument] $document = New-Object System.Xml.XmlDocument
             $document.load($_.FullName)
@@ -177,11 +179,15 @@ jobs:
           } else {
             echo "::set-output name=logging::false"            
           }
+  inform:
+    runs-on: ubuntu-latest
+    needs: validate
+    steps:
       - name: Fail validation
         uses: actions/github-script@v3
-        if: steps.counting.outputs.logging == 'true'
+        if: needs.validate.outputs.errors == 'true'
         with:
           script: |
-            core.setFailed('There have been error messages')
+            core.setFailed('There have been error messages. Please consult the reporting .chkxml files.')
 
 
