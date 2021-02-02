@@ -131,7 +131,7 @@ jobs:
       - name: List modified files
         if: needs.filter.outputs.modifcs == 'true'
         run: |
-          $data = ConvertFrom-Json "${{ github.workspace }}\files_modified.json"
+          $data = Get-Content -Raw -Path "${{ github.workspace }}\files_modified.json" | ConvertFrom-Json 
           foreach( $i in $data ) {
             Write-Host $i
           }
