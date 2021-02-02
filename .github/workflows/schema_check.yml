@@ -140,7 +140,7 @@ jobs:
           $data = Get-Content -Raw -Path "${{ github.workspace }}\files_modified.json" | ConvertFrom-Json 
           foreach( $i in $data ) {
             Write-Host "Checking: " $i
-            &"checker\ifcCheckingTool_Lite.exe" $i /hidegui /xmlfile="results/$i.log"
+            &"checker\ifcCheckingTool_Lite.exe" $($i) /hidegui /xmlfile="results/$($i).chkxml"
           }
       - name: Dir currect directory
         if: always()
