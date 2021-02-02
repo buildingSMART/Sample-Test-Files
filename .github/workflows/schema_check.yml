@@ -20,8 +20,6 @@ jobs:
       - name: Filter only changed files
         id: file_changes
         uses: trilom/file-changes-action@v1.2.4
-        with:
-          output: ','
       - name: Logging
         run: |
           echo 'All files:'
@@ -102,7 +100,7 @@ jobs:
             Write-Host "Checking filename:" $("$filename") "writing to" $("${{ github.workspace }}\results\$filename.xml")
             &"${{ github.workspace }}\checker\ifcCheckingTool_Lite.exe" $("${{ github.workspace }}\$i") /hidegui /xmlfile=$("${{ github.workspace }}\results\$filename.xml") 
           }
-      - name: List modified files
+      - name: Check modified files
         if: needs.filter.outputs.modifcs == 'true'
         run: |
           $data = ConvertFrom-Json(${{ needs.filter.outputs.modjson }})
