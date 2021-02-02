@@ -107,7 +107,7 @@ jobs:
             Write-Host "Checking filename:" "$("$filename")" " --> writing to" "$("${{ github.workspace }}\results\$filename.xml")"
             Write-Host "Running:" "${{ github.workspace }}\checker\ifcCheckingTool_Lite.exe" "$("${{ github.workspace }}\$i")" /hidegui /xmlfile="$("${{ github.workspace }}\results\$filename.xml")"
             $ifcFilePath = $("${{ github.workspace }}\$i")
-            $ifcCopyFilePath = $("${{ github.workspace }}\results\$i")
+            $ifcCopyFilePath = $("${{ github.workspace }}\results\$filename")
             $xmlFilePath = $("${{ github.workspace }}\results\$filename.xml")
             & $cmnd $ifcFilePath /hidegui /xmlfile=$xmlFilePath
             Write-Host "Last exit code was:" "$LastExitCode"
@@ -123,7 +123,7 @@ jobs:
             Write-Host "Checking filename:" "$("$filename")" " --> writing to" "$("${{ github.workspace }}\results\$filename.xml")"
             Write-Host "Running:" "${{ github.workspace }}\checker\ifcCheckingTool_Lite.exe" "$("${{ github.workspace }}\$i")" /hidegui /xmlfile="$("${{ github.workspace }}\results\$filename.xml")"
             $ifcFilePath = $("${{ github.workspace }}\$i")
-            $ifcCopyFilePath = $("${{ github.workspace }}\results\$i")
+            $ifcCopyFilePath = $("${{ github.workspace }}\results\$filename")
             $xmlFilePath = $("${{ github.workspace }}\results\$filename.xml")
             & $cmnd $ifcFilePath /hidegui /xmlfile=$xmlFilePath
             Write-Host "Last exit code was:" "$LastExitCode"
