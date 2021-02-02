@@ -124,8 +124,8 @@ jobs:
             $ifcFilePath = $("${{ github.workspace }}\$i")
             $xmlFilePath = $("${{ github.workspace }}\results\$filename.xml")
             & $cmnd $ifcFilePath /hidegui /xmlfile=$xmlFilePath
-            Write-Host "Last exit code was:" $LASTEXITCODE
-            Copy-Item $ifcFilePath -Destination $("${{ github.workspace }}/results/$i")
+            Write-Host "Last exit code was:" $?
+            Copy-Item $("$ifcFilePath") -Destination $("${{ github.workspace }}/results/$i")
           }
       - name: Analyse results directory
         id: results
