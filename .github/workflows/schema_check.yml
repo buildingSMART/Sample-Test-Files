@@ -127,12 +127,11 @@ jobs:
         if: needs.filter.outputs.modifcs == 'true'
         run: |
           dir .
-          dir modified
-          type "${{ github.workspace }}\modified\modified.json"
+          type "${{ github.workspace }}\files_modified.json"
       - name: List modified files
         if: needs.filter.outputs.modifcs == 'true'
         run: |
-          $data = ConvertFrom-Json "${{ github.workspace }}\modified.json"
+          $data = ConvertFrom-Json "${{ github.workspace }}\files_modified.json"
           foreach( $i in $data ) {
             Write-Host $i
           }
