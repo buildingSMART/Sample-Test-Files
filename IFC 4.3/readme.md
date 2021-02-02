@@ -38,3 +38,7 @@ Yes, of course. You can include multiple JPEGs if you see fit. Or IFC4 RV files.
 ### I have a question / comment / proposal regarding the documentation (resolved [here](https://github.com/buildingSMART/Sample-Test-Files/issues/92)).
 
 Please open an issue here: https://github.com/buildingSMART/IFC/issues.
+
+### How do I interpret the results from the checking procedure?
+
+Consult [schema check documentation](../docs/schema_check.md).

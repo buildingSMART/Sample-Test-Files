@@ -189,6 +189,6 @@ jobs:
         if: needs.validate.outputs.errors == 'true'
         with:
           script: |
-            core.setFailed('The IFC files have schema errors. Please consult the reporting .chkxml files provided in "checking_results" artifact below.')
+            core.setFailed('The IFC files have schema errors. Please consult the reporting .chkxml files provided within "checking_results" artifact (found at the bottom of summary).')
 
 

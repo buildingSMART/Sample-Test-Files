@@ -9,5 +9,9 @@ Please add your files by sending a pull request. Be aware that you are publishin
 Put your files in a seperate folder, and add a README.MD with additional information. Please add the MVD that was used during export, the date of export, a short description and the original author (copyright holder).
 E-mail technical@buildingsmart.org for any questions. 
 
+## FAQ
+
+Some FAQ have been collected [here](./IFC 4.3/readme.md).
+
 # Other sources
 Have a look at http://openifcmodel.cs.auckland.ac.nz/ for other IFC files and examples as well. 
