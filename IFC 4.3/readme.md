@@ -1,8 +1,8 @@
 This folder is for IFC 4.3 files. 
 
-**NOTE:** Since there are no official Model View Definitions defined for IFC4.3 yet (as of 2020.07.27.), the correct way to define this in the header section is `ViewDefinition []`, i.e.
+**NOTE:** There are no official Model View Definitions defined for IFC4.3 yet (as of 2021.02.02.). To avoid any errors vs schema checking, `ViewDefinition [Ifc4X3NotAssigned]` should be added in the header section of the file., i.e.
 
-> FILE_DESCRIPTION (('ViewDefinition []'), '2;1');
+> FILE_DESCRIPTION (('ViewDefinition [Ifc4X3NotAssigned]'), '2;1');
 
 **NOTE:** The current (2021.01.13.) correct version of IFC4.3 file schema in the physical file is `IFC4x3_RC2`, i.e.
 
