@@ -136,7 +136,7 @@ jobs:
           name: checking_results
           path: ${{ github.workspace }}\results
   validate:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     needs: check
     if: needs.check.outputs.haslogs == 'true'
     steps:
@@ -144,17 +144,17 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: checking_results
-          path: checking_results
+          path: results
       - name: Dir files
         run: |
           dir .
-          dir checking_results
+          dir results
       - name: Parse logs
         id: counting
         run: |
           $total = 0
           $error_elements = "//MVDReport.MVDMessageSet"
-          Get-ChildItem checking_results -Filter "*.xml" | 
+          Get-ChildItem results -Filter "*.xml" | 
           Foreach-Object {
             [System.Xml.XmlDocument] $document = New-Object System.Xml.XmlDocument
             $document.load($_.FullName)
