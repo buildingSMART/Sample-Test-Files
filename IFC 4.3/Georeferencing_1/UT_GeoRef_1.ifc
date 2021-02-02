@@ -5,7 +5,7 @@ ISO-10303-21;
 /* ------- Stefan Jaud, stefan.jaud@tum.de, 2020.07.27. ---------------------------------------- */
 
 HEADER;
-FILE_DESCRIPTION (('ViewDefinition []'), '2;1');
+FILE_DESCRIPTION (('ViewDefinition [Ifc4X3NotAssigned]'), '2;1');
 FILE_NAME ('UT_GeoRef_1.ifc', '2020-07-27T12:00:00', ('Stefan Jaud'), ('bSI Infra Extension Deployment project'), 'manual text editing', 'SublimeText 3.0', 'GitHub pull request');
 FILE_SCHEMA (('IFC4X3_RC2'));
 ENDSEC;
