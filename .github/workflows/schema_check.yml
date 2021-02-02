@@ -180,7 +180,7 @@ jobs:
           } else {
             echo "::set-output name=logging::false"            
           }
-  inform:
+  inform_should_not_fail:
     runs-on: ubuntu-latest
     needs: validate
     steps:
@@ -189,6 +189,6 @@ jobs:
         if: needs.validate.outputs.errors == 'true'
         with:
           script: |
-            core.setFailed('There have been error messages. Please consult the reporting .chkxml files.')
+            core.setFailed('The IFC files have schema errors. Please consult the reporting .chkxml files provided in "checking_results" artifact below.')
 
 
