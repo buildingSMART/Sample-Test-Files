@@ -94,7 +94,7 @@ jobs:
       - name: Check added files
         if: needs.filter.outputs.addifcs == 'true'
         run: |
-          $data = ConvertFrom-Json(${{ needs.filter.outputs.addjson }})
+          $data = '${{ needs.filter.outputs.addjson }}' | ConvertFrom-Json
           foreach( $i in $data ) {
             $filename = $("$i").Substring($("$i").LastIndexOf("/")+1)
             Write-Host "Checking filename:" $("$filename") "writing to" $("${{ github.workspace }}\results\$filename.xml")
@@ -103,7 +103,7 @@ jobs:
       - name: Check modified files
         if: needs.filter.outputs.modifcs == 'true'
         run: |
-          $data = ConvertFrom-Json(${{ needs.filter.outputs.modjson }})
+          $data = '${{ needs.filter.outputs.modjson }}' | ConvertFrom-Json
           foreach( $i in $data ) {
             $filename = $("$i").Substring($("$i").LastIndexOf("/")+1)
             Write-Host "Checking filename:" $("$filename") "writing to" $("${{ github.workspace }}\results\$filename.xml")
