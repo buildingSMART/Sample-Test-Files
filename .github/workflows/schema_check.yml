@@ -108,8 +108,8 @@ jobs:
           foreach( $i in $data ) {
             $filename = $("$i").Substring($("$i").LastIndexOf("/")+1)
             Write-Host "Running:" "${{ github.workspace }}\checker\ifcCheckingTool_Lite.exe" $("${{ github.workspace }}\$i") /hidegui /xmlfile=$("${{ github.workspace }}\results\$filename.xml")
-            Write-Host "Checking filename:" $("$filename") "writing to" $("${{ github.workspace }}\results\$filename.xml")
-            &"${{ github.workspace }}\checker\ifcCheckingTool_Lite.exe" $("${{ github.workspace }}\$i") /hidegui /xmlfile=$("${{ github.workspace }}\results\$filename.xml")
+            Write-Host "Checking filename:" "$("$filename")" "writing to" "$("${{ github.workspace }}\results\$filename.xml")"
+            &"${{ github.workspace }}\checker\ifcCheckingTool_Lite.exe" "$("${{ github.workspace }}\$i")" /hidegui /xmlfile="$("${{ github.workspace }}\results\$filename.xml")"
           }
       - name: Analyse results directory
         id: results
@@ -118,9 +118,9 @@ jobs:
           dir results
           $noOfResults = ( Get-ChildItem results | Measure-Object ).Count;
           if($noOfResults -ge 2){
-            echo ::set-output name=haslogs::true;
+            echo "::set-output name=haslogs::true"
           } else {
-            echo ::set-output name=haslogs::false;            
+            echo "::set-output name=haslogs::false"        
           }
       - name: Upload check results
         if: needs.filter.outputs.modifcs == 'true' || needs.filter.outputs.addifcs == 'true'
