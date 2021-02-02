@@ -103,10 +103,14 @@ jobs:
         run: |
           Rename-Item -Path "${{ github.workspace}}/download/${{ steps.downloadfile.outputs.filename }}" -NewName "${{ steps.downloadfile.outputs.filename }}.zip"
           Expand-Archive -LiteralPath "${{ github.workspace}}/download/${{ steps.downloadfile.outputs.filename }}.zip" -DestinationPath "${{ github.workspace}}/checker"
-      - name: Logging checker
+      - name: Logging checker directory
+        run: |
+          dir checker
+      - name: Prepare check results
+        if: needs.filter.outputs.modifcs == 'true' || needs.filter.outputs.addifcs == 'true'
         run: |
           mkdir results
-          dir checker
+          Copy-Item "${{ github.workspace }}/checker/MVDChecker.xsl" -Destination "${{ github.workspace }}/results/MVDChecker.xsl"
       - name: Load added files from filter job
         uses: actions/download-artifact@v2
         if: needs.filter.outputs.addifcs == 'true'
@@ -122,7 +126,9 @@ jobs:
         run: |
           $data = Get-Content -Raw -Path "${{ github.workspace }}\files_added.json" | ConvertFrom-Json
           foreach( $i in $data ) {
-            Write-Host $i
+            $filename = $("$i").Substring($("$i").LastIndexOf("/")+1)
+            Write-Host "Checking filename:" $("$filename") "writing to" $("${{ github.workspace }}\results\$filename.xml")
+            &"${{ github.workspace }}\checker\ifcCheckingTool_Lite.exe" $("${{ github.workspace }}\$i") /hidegui /xmlfile=$("${{ github.workspace }}\results\$filename.xml") 
           }
       - name: Load modified files from filter job
         uses: actions/download-artifact@v2
@@ -140,14 +146,18 @@ jobs:
           $data = Get-Content -Raw -Path "${{ github.workspace }}\files_modified.json" | ConvertFrom-Json 
           foreach( $i in $data ) {
             $filename = $("$i").Substring($("$i").LastIndexOf("/")+1)
-            Write-Host "Checking filename:" $("$filename")
-            Write-Host "Running:" "${{ github.workspace }}\checker\ifcCheckingTool_Lite.exe" $("${{ github.workspace }}\$i") /hidegui /xmlfile=$("${{ github.workspace }}\results\$filename.xml")
-            &"${{ github.workspace }}\checker\ifcCheckingTool_Lite.exe" $("${{ github.workspace }}\$i") /hidegui /xmlfile=$("${{ github.workspace }}\results\$filename.xml")
-            Write-Host "Checked:" $("${{ github.workspace }}\$i") "and wrote to" $("${{ github.workspace }}\results\$filename.xml")
+            Write-Host "Checking filename:" $("$filename") "writing to" $("${{ github.workspace }}\results\$filename.xml")
+            &"${{ github.workspace }}\checker\ifcCheckingTool_Lite.exe" $("${{ github.workspace }}\$i") /hidegui /xmlfile=$("${{ github.workspace }}\results\$filename.xml") 
           }
       - name: Dir currect directory
         if: always()
         run: |
           dir .
           dir results
+      - name: Upload check results
+        if: needs.filter.outputs.modifcs == 'true' || needs.filter.outputs.addifcs == 'true'
+        uses: actions/upload-artifact@v2
+        with:
+          name: checking_results
+          path: ${{ github.workspace }}\results
 
