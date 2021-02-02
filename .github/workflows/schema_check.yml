@@ -107,11 +107,12 @@ jobs:
         if: needs.filter.outputs.modifcs == 'true'
         run: |
           $data = '${{ needs.filter.outputs.modjson }}' | ConvertFrom-Json
+          $cmnd = "${{ github.workspace }}\checker\ifcCheckingTool_Lite.exe"
           foreach( $i in $data ) {
             $filename = $("$i").Substring($("$i").LastIndexOf("/")+1)
             Write-Host "Checking filename:" "$("$filename")" " --> writing to" "$("${{ github.workspace }}\results\$filename.xml")"
             Write-Host "Running:" "${{ github.workspace }}\checker\ifcCheckingTool_Lite.exe" "$("${{ github.workspace }}\$i")" /hidegui /xmlfile="$("${{ github.workspace }}\results\$filename.xml")"
-            &"`"${{ github.workspace }}\checker\ifcCheckingTool_Lite.exe`" `"$(${{ github.workspace }}\$i)`" /hidegui /xmlfile=`"$(${{ github.workspace }}\results\$filename.xml)`""
+            & "$cmnd" $("`"${{ github.workspace }}\$i`"") /hidegui /xmlfile=$("`"${{ github.workspace }}\results\$filename.xml`"")
           }
       - name: Analyse results directory
         id: results
