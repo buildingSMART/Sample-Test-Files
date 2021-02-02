@@ -126,7 +126,9 @@ jobs:
       - name: Log modified
         if: needs.filter.outputs.modifcs == 'true'
         run: |
-          type "${{ github.workspace }}\modified.json"
+          dir .
+          dir modified
+          type "${{ github.workspace }}\modified\modified.json"
       - name: List modified files
         if: needs.filter.outputs.modifcs == 'true'
         run: |
