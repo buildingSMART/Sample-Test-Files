@@ -139,7 +139,9 @@ jobs:
         run: |
           $data = Get-Content -Raw -Path "${{ github.workspace }}\files_modified.json" | ConvertFrom-Json 
           foreach( $i in $data ) {
-            &"${{ github.workspace }}\\checker\ifcCheckingTool_Lite.exe" $("$i") /hidegui /xmlfile=$("${{ github.workspace }}\results\$i.xml")
+            $filename = $("$i").Substring($("$i").LastIndexOf("/"))
+            Write-Host "Filename:" $("$filename")
+            &"${{ github.workspace }}\\checker\ifcCheckingTool_Lite.exe" $("$i") /hidegui /xmlfile=$("${{ github.workspace }}\results\$filename.xml")
             Write-Host "Checked:" $("$i") "and wrote to" $("\results\$i.xml")
           }
       - name: Dir currect directory
