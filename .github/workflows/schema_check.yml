@@ -104,6 +104,7 @@ jobs:
           $cmnd = "${{ github.workspace }}\checker\ifcCheckingTool_Lite.exe"
           foreach( $i in $data ) {
             $filename = $("$i").Substring($("$i").LastIndexOf("/")+1)
+            if( [IO.Path]::GetExtension($filename) -ne ".ifc" ) {continue}
             Write-Host "Checking filename:" "$("$filename")" " --> writing to" "$("${{ github.workspace }}\results\$filename.chkxml")"
             Write-Host "Running:" "${{ github.workspace }}\checker\ifcCheckingTool_Lite.exe" "$("${{ github.workspace }}\$i")" /hidegui /xmlfile="$("${{ github.workspace }}\results\$filename.xml")"
             $ifcFilePath = $("${{ github.workspace }}\$i")
@@ -120,6 +121,7 @@ jobs:
           $cmnd = "${{ github.workspace }}\checker\ifcCheckingTool_Lite.exe"
           foreach( $i in $data ) {
             $filename = $("$i").Substring($("$i").LastIndexOf("/")+1)
+            if( [IO.Path]::GetExtension($filename) -ne ".ifc" ) {continue}
             Write-Host "Checking filename:" "$("$filename")" " --> writing to" "$("${{ github.workspace }}\results\$filename.chkxml")"
             Write-Host "Running:" "${{ github.workspace }}\checker\ifcCheckingTool_Lite.exe" "$("${{ github.workspace }}\$i")" /hidegui /xmlfile="$("${{ github.workspace }}\results\$filename.xml")"
             $ifcFilePath = $("${{ github.workspace }}\$i")
