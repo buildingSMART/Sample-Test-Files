@@ -65,6 +65,7 @@ jobs:
     runs-on: windows-latest
     needs: filter
     if: ${{ needs.filter.outputs.hasifcs == 'true' }}
+    shell: pwsh
     steps:
       - name: Verify the workspace context
         run: echo 'Workspace directory is ${{ github.workspace }}'
@@ -79,7 +80,6 @@ jobs:
           dir .
           dir download/
       - name: Unzip the checker
-        shell: powershell
         run: |
           Rename-Item -Path "${{ github.workspace}}/download/${{ steps.downloadfile.outputs.filename }}" -NewName "${{ steps.downloadfile.outputs.filename }}.zip"
           Expand-Archive -LiteralPath "${{ github.workspace}}/download/${{ steps.downloadfile.outputs.filename }}.zip" -DestinationPath "${{ github.workspace}}/checker"
@@ -109,7 +109,7 @@ jobs:
             $filename = $("$i").Substring($("$i").LastIndexOf("/")+1)
             Write-Host "Checking filename:" "$("$filename")" " --> writing to" "$("${{ github.workspace }}\results\$filename.xml")"
             Write-Host "Running:" "${{ github.workspace }}\checker\ifcCheckingTool_Lite.exe" "$("${{ github.workspace }}\$i")" /hidegui /xmlfile="$("${{ github.workspace }}\results\$filename.xml")"
-            &"${{ github.workspace }}\checker\ifcCheckingTool_Lite.exe" "$("${{ github.workspace }}\$i")" /hidegui /xmlfile="$("${{ github.workspace }}\results\$filename.xml")"
+            &'\"${{ github.workspace }}\checker\ifcCheckingTool_Lite.exe\" $(\"${{ github.workspace }}\$i\") /hidegui /xmlfile=$(\"${{ github.workspace }}\results\$filename.xml\")'
           }
       - name: Analyse results directory
         id: results
