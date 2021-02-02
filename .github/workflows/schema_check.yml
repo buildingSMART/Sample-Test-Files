@@ -12,6 +12,8 @@ jobs:
       hasifcs: ${{ steps.check_results.outputs.HASIFCS }}
       modifcs: ${{ steps.check_results.outputs.MODIFCS }}
       addifcs: ${{ steps.check_results.outputs.ADDEDIFCS }}
+      addjson: ${{ steps.file_changes.outputs.files_added }}
+      modjson: ${{ steps.file_changes.outputs.files_modified }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -61,26 +63,6 @@ jobs:
             echo ::set-output name=ADDEDIFCS::false; 
             echo 'No IFC additions determined!';
           fi
-      - name: Upload all files list
-        if: ${{ steps.check_results.outputs.HASIFCS == 'true' }}
-        uses: actions/upload-artifact@v2
-        with:
-          name: all.json
-          path: ${{ steps.check_results.outputs.ALL }}
-      - name: Upload added files list
-        if: ${{ steps.check_results.outputs.ADDEDIFCS == 'true' }}
-        uses: actions/upload-artifact@v2
-        with:
-          name: added.json
-          path: ${{ steps.check_results.outputs.ADD }}
-          if-no-files-found: ignore # 'warn' or 'error' are also available
-      - name: Upload modified files list
-        if: ${{ steps.check_results.outputs.MODIFCS == 'true' }}
-        uses: actions/upload-artifact@v2
-        with:
-          name: modified.json
-          path: ${{ steps.check_results.outputs.MOD }}
-          if-no-files-found: ignore # 'warn' or 'error' are also available
   check:
     runs-on: windows-latest
     needs: filter
@@ -111,39 +93,19 @@ jobs:
         run: |
           mkdir results
           Copy-Item "${{ github.workspace }}/checker/MVDChecker.xsl" -Destination "${{ github.workspace }}/results/MVDChecker.xsl"
-      - name: Load added files from filter job
-        uses: actions/download-artifact@v2
-        if: needs.filter.outputs.addifcs == 'true'
-        with:
-          name: added.json
-      - name: Log Added
+      - name: Check added files
         if: needs.filter.outputs.addifcs == 'true'
         run: |
-          dir .
-          type "${{ github.workspace }}\files_added.json"
-      - name: List added files
-        if: needs.filter.outputs.addifcs == 'true'
-        run: |
-          $data = Get-Content -Raw -Path "${{ github.workspace }}\files_added.json" | ConvertFrom-Json
+          $data = ConvertFrom-Json(${{ needs.filter.outputs.addjson }})
           foreach( $i in $data ) {
             $filename = $("$i").Substring($("$i").LastIndexOf("/")+1)
             Write-Host "Checking filename:" $("$filename") "writing to" $("${{ github.workspace }}\results\$filename.xml")
             &"${{ github.workspace }}\checker\ifcCheckingTool_Lite.exe" $("${{ github.workspace }}\$i") /hidegui /xmlfile=$("${{ github.workspace }}\results\$filename.xml") 
           }
-      - name: Load modified files from filter job
-        uses: actions/download-artifact@v2
-        if: needs.filter.outputs.modifcs == 'true'
-        with:
-          name: modified.json
-      - name: Log modified
-        if: needs.filter.outputs.modifcs == 'true'
-        run: |
-          dir .
-          type "${{ github.workspace }}\files_modified.json"
       - name: List modified files
         if: needs.filter.outputs.modifcs == 'true'
         run: |
-          $data = Get-Content -Raw -Path "${{ github.workspace }}\files_modified.json" | ConvertFrom-Json 
+          $data = ConvertFrom-Json(${{ needs.filter.outputs.modjson }})
           foreach( $i in $data ) {
             $filename = $("$i").Substring($("$i").LastIndexOf("/")+1)
             Write-Host "Checking filename:" $("$filename") "writing to" $("${{ github.workspace }}\results\$filename.xml")
