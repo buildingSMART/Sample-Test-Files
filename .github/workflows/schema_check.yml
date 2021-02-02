@@ -139,10 +139,10 @@ jobs:
         run: |
           $data = Get-Content -Raw -Path "${{ github.workspace }}\files_modified.json" | ConvertFrom-Json 
           foreach( $i in $data ) {
-            $filename = $("$i").Substring($("$i").LastIndexOf("/"))
-            Write-Host "Filename:" $("$filename")
-            &"${{ github.workspace }}\\checker\ifcCheckingTool_Lite.exe" $("$i") /hidegui /xmlfile=$("${{ github.workspace }}\results\$filename.xml")
-            Write-Host "Checked:" $("$i") "and wrote to" $("\results\$i.xml")
+            $filename = $("$i").Substring($("$i").LastIndexOf("/")+1)
+            Write-Host "Checking filename:" $("$filename")
+            &"${{ github.workspace }}\\checker\ifcCheckingTool_Lite.exe" $("${{ github.workspace }}\$i") /hidegui /xmlfile=$("${{ github.workspace }}\results\$filename.xml")
+            Write-Host "Checked:" $("${{ github.workspace }}\$i") "and wrote to" $("${{ github.workspace }}\results\$filename.xml")
           }
       - name: Dir currect directory
         if: always()
