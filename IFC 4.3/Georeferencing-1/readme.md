@@ -21,11 +21,11 @@ This scenario builds upon following other scenarios:
 This scenario covers the following concepts and/or IFC entities:
 
 - georeferencing metadata
-  * `IfcMapConversion`
-  * `IfcProjectedCRS`
+    - `IfcMapConversion`
+    - `IfcProjectedCRS`
 - representation of `IfcSolidStratum`:
-  * `IfcTriangulatedFaceSet`
-  * `IfcCartesianPointList3D`
+    - `IfcTriangulatedFaceSet`
+    - `IfcCartesianPointList3D`
 
 ### Supporting files
 
