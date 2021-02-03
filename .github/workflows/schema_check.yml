@@ -184,7 +184,7 @@ jobs:
           echo '${{ needs.filter.outputs.allchangedfiles }}' >allFiles.json
           allFiles='${{ needs.filter.outputs.allchangedfiles }}'
           echo "allFiles = " $allFiles "${allFiles}"
-          total=0;
+          let total=0;
           for line in $( jq -c '.[]' <<< '${allFiles}' ); do \
             echo $line
             echo ".${line##*.}"
@@ -193,12 +193,13 @@ jobs:
               echo $line; \
               var=$(awk -f "${{ github.workspace }}/.github/md_check.awk" "${{ github.workspace }}/$line" >"${{ github.workspace }}/md_results/log${total}.log")
               echo "return code was " '$var'
+              let total++
             fi \
           done
           cat allFiles.json
           echo "::set-output name=logging::true"
           ls -la
-          ls -la results/
+          ls -la md_results/
   inform-md:
     runs-on: ubuntu-latest
     needs: check-md
