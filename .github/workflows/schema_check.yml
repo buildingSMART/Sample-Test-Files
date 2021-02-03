@@ -173,24 +173,25 @@ jobs:
       - name: Verify the workspace context
         run: echo 'Workspace directory is ${{ github.workspace }}'
       - name: Set env json
-        run: echo "ALL_JSON='${{ needs.filter.outputs.allchangedfiles }}'" >> $GITHUB_ENV
+        run: echo 'ALL_JSON="'"${{ needs.filter.outputs.allchangedfiles }}"'"' >> $GITHUB_ENV
       - name: Check MD files
         id: checking
         shell: bash
         run: |
           echo '${{ needs.filter.outputs.allchangedfiles }}' >allFiles.json
           allFiles='${{ needs.filter.outputs.allchangedfiles }}'
+          echo "allFiles = " $allFiles "${allFiles}"
           for line in $( jq -c '.[]' <<< "${allFiles}" ); do \
             echo $line
             echo ".${line##*.}"
             if [ ".${line##*.}" == '.md"' ]; \
             then \
               echo $line; \
+              var=$(awk -f "${{ github.workspace }}/.github/md_check.awk" "${{ github.workspace }}/$line" >"${{ github.workspace }}/results/$line.log")
+              echo "return code was " '$var'
             fi \
-          done \
-            >allmds.txt
+          done
           cat allFiles.json
-          cat allmds.txt
           echo "::set-output name=logging::true"
   inform-md:
     runs-on: ubuntu-latest
