@@ -175,8 +175,7 @@ jobs:
       - name: Check MD files
         id: checking
         run: |
-          '${{ needs.filter.outputs.allchangedfiles }}' >allChanged.txt
-          allChanged.txt | \
+          echo '${{ needs.filter.outputs.allchangedfiles }}' | \
             jq '.[]' | \
             while (read line || [[ -n $line ]]); \
             do \

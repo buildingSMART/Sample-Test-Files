@@ -42,7 +42,9 @@ The reason(s) for failing are provided in the `IFC_check_results` [artifact](#Ar
 Similarly, if the [last MD checking step](#last-md) fails, the MD files do not comply with the guidelines.
 The reason(s) are provided in the `MD_check_result` [artifact](#Artifacts).
 
-If all steps pass successfully, there are no (known) schema issues with the provided IFC files.
+If all steps pass successfully, there are:
+- no (known) schema issues with the provided IFC files
+- no errors in MD files according to the guidelines
 
 ### Artifacts
 
