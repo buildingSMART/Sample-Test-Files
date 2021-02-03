@@ -12,18 +12,20 @@ It puts the project’s base point at the entrance to the Technical University o
 ### Prerequisites
 
 This scenario builds upon following other scenarios:
+
 - ProjectSetup-1
 - Tin-1
 
 ### Content
 
 This scenario covers the following concepts and/or IFC entities:
+
 - georeferencing metadata
-  - `IfcMapConversion`
-  - `IfcProjectedCRS`
+  * `IfcMapConversion`
+  * `IfcProjectedCRS`
 - representation of `IfcSolidStratum`:
-  - `IfcTriangulatedFaceSet`
-  - `IfcCartesianPointList3D`
+  * `IfcTriangulatedFaceSet`
+  * `IfcCartesianPointList3D`
 
 ### Supporting files
 
