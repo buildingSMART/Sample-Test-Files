@@ -177,13 +177,14 @@ jobs:
         shell: bash
         run: |
           echo '${{ needs.filter.outputs.allchangedfiles }}' > allFiles.txt
-          for line in $( cat allFiles.txt | jq '.[]'); do \
-              if [ ".${line##*.}" == ".md" ]; \
-              then \
-                echo $line; \
-              fi \
-            done \
+          for line in $( jq '.[]' <<< '${{ needs.filter.outputs.allchangedfiles }}' ); do \
+            if [ ".${line##*.}" == ".md" ]; \
+            then \
+              echo $line; \
+            fi \
+          done \
             > allmds.txt
+          cat allFiles.txt
           cat allmds.txt
           echo "::set-output name=logging::true"
   inform-md:
