@@ -173,7 +173,8 @@ jobs:
       - name: Verify the workspace context
         run: echo 'Workspace directory is ${{ github.workspace }}'
       - name: Prepare directory
-        mkdir md_results
+        run: |
+          mkdir md_results
       - name: Set env json
         run: echo 'ALL_JSON="'"${{ needs.filter.outputs.allchangedfiles }}"'"' >> $GITHUB_ENV
       - name: Check MD files
