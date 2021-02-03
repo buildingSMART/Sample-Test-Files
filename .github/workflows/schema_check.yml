@@ -172,12 +172,14 @@ jobs:
         uses: actions/checkout@v2
       - name: Verify the workspace context
         run: echo 'Workspace directory is ${{ github.workspace }}'
+      - name: Set env json
+        run: echo "ALL_JSON='${{ needs.filter.outputs.allchangedfiles }}'" >> $GITHUB_ENV
       - name: Check MD files
         id: checking
         shell: bash
         run: |
-          echo '${{ needs.filter.outputs.allchangedfiles }}' > allFiles.json
-          for line in $( jq '.[]' allFiles.json ); do \
+          echo '${{ needs.filter.outputs.allchangedfiles }}' >allFiles.json
+          for line in $( jq '.[]' <<< "$ALL_JSON" ); do \
             echo $line
             echo ".${line##*.}"
             if [ ".${line##*.}" == ".md" ]; \
