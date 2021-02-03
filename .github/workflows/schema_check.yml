@@ -176,7 +176,7 @@ jobs:
         id: checking
         shell: bash
         run: |
-          $allFiles = '${{ needs.filter.outputs.allchangedfiles }}'
+          $allFiles='${{ needs.filter.outputs.allchangedfiles }}'
           for line in $(echo "${allFiles}" | jq '.[]'); do \
               if [ ".${line##*.}" == ".md" ]; \
               then \
