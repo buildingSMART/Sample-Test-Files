@@ -183,9 +183,7 @@ jobs:
         run: |
           echo '${{ needs.filter.outputs.allchangedfiles }}' >allFiles.json
           allFiles='${{ needs.filter.outputs.allchangedfiles }}'
-          allFiles=${allFiles/'["'/}
-          allFiles=${allFiles/'"]'/}
-          allFiles=${allFiles/'","'/'-----'}
+          allFiles=${allFiles/','/'-----'}
           total=0
           echo '${allFiles}'
           IFS='-----' read -ra ALL <<< '${allFiles}'
