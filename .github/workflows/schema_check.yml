@@ -175,17 +175,15 @@ jobs:
       - name: Prepare directory
         run: |
           mkdir md_results
-      - name: Set env json
-        run: echo 'ALL_JSON="'"${{ needs.filter.outputs.allchangedfiles }}"'"' >> $GITHUB_ENV
       - name: Check MD files
         id: checking
         shell: bash
         run: |
+          echo "::set-output name=logging::false"              
           echo '${{ needs.filter.outputs.allchangedfiles }}' >allFiles.json
           allFiles='${{ needs.filter.outputs.allchangedfiles }}'
           echo "${allFiles}"
           allFiles="${allFiles//","/"-----"}"
-          echo "${allFiles}"
           total=0
           IFS='"' read -ra ALL <<< "${allFiles}"
           for line in "${ALL[@]}"; do
@@ -193,10 +191,14 @@ jobs:
             then
               echo "Found one: " $line;
               awk -f "${{ github.workspace }}/.github/workflows/md_check.awk" "${{ github.workspace }}/${line}" >"${{ github.workspace }}/md_results/log_${total}.log"
-              ((total++))
+              cat "${{ github.workspace }}/md_results/log_${total}.log"
+              if grep -F "Found discrepancies with the guidelines" "${{ github.workspace }}/md_results/log_${total}.log";
+              then
+                echo "::set-output name=logging::true"              
+              fi
+              ((total=total+1))
             fi
           done
-          echo "::set-output name=logging::true"
           ls -la
           ls -la md_results/
       - name: Upload check results

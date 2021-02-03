@@ -76,6 +76,6 @@ END {
         print "No (known) errors found."
     }
     else {
-        printf "Found %d problems.\n", haserrors
+        printf "Found discrepancies with the guidelines: %d problems.\n", haserrors
     }
 }
