@@ -176,8 +176,8 @@ jobs:
         id: checking
         shell: bash
         run: |
-          arg='${{ needs.filter.outputs.allchangedfiles }}'
-          for line in $(jq --arg m "$arg" '$m | fromjson | .[]'); do \
+          echo '${{ needs.filter.outputs.allchangedfiles }}' > allFiles.json
+          for line in $( jq '.[]' allFiles.json ); do \
             echo $line
             echo ".${line##*.}"
             if [ ".${line##*.}" == ".md" ]; \
@@ -186,6 +186,7 @@ jobs:
             fi \
           done \
             > allmds.txt
+          cat allFiles.json
           cat allmds.txt
           echo "::set-output name=logging::true"
   inform-md:
