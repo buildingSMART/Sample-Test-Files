@@ -1,5 +1,5 @@
 
-# Georeferencing_1
+# Georeferencing-1
 
 ### Intent
 
@@ -12,8 +12,8 @@ It puts the project’s base point at the entrance to the Technical University o
 ### Prerequisites
 
 This scenario builds upon following other scenarios:
-- ProjectSetup_1
-- Tin_1
+- ProjectSetup-1
+- Tin-1
 
 ### Content
 
