@@ -41,9 +41,7 @@ BEGIN {
     
 }
 END {
-    if( haserrors ) {
-        print "true"
-    } else {
+    if( !haserrors ) {
         print "false"
     }
 }

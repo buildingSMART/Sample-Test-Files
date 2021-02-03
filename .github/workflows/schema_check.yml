@@ -184,17 +184,16 @@ jobs:
           echo '${{ needs.filter.outputs.allchangedfiles }}' >allFiles.json
           allFiles='${{ needs.filter.outputs.allchangedfiles }}'
           echo "allFiles = " $allFiles "${allFiles}"
-          let total=0;
-          for line in $( jq -c '.[]' <<< '${allFiles}' ); do \
+          total=0
+          for line in $( jq -c '.[]' <<< '${allFiles}' ); do
             echo $line
             echo ".${line##*.}"
-            if [ ".${line##*.}" == '.md"' ]; \
-            then \
-              echo $line; \
-              var=$(awk -f "${{ github.workspace }}/.github/md_check.awk" "${{ github.workspace }}/$line" >"${{ github.workspace }}/md_results/log${total}.log")
-              echo "return code was " '$var'
-              let total++
-            fi \
+            if [ ".${line##*.}" == '.md"' ];
+            then
+              echo $line;
+              awk -f "${{ github.workspace }}/.github/md_check.awk" "${{ github.workspace }}/$line" >"${{ github.workspace }}/md_results/log${total}.log"
+              total++
+            fi
           done
           cat allFiles.json
           echo "::set-output name=logging::true"
