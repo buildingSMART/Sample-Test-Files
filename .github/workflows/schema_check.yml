@@ -192,7 +192,7 @@ jobs:
             if [ ${line##*.} == 'md' ];
             then
               echo "Found one: " $line;
-              awk -f "${{ github.workspace }}/.github/workflows/md_check.awk" "${{ github.workspace }}/$line" >"${{ github.workspace }}/md_results/log_${total}.log"
+              awk -f "${{ github.workspace }}/.github/workflows/md_check.awk" "${{ github.workspace }}/${line}" >"${{ github.workspace }}/md_results/log_${total}.log"
               ((total++))
             fi
           done
@@ -214,5 +214,5 @@ jobs:
         if: needs.check-md.outputs.errors == 'true'
         with:
           script: |
-            core.setFailed('The MD files have errors. Please consult the md-report.log file provided within "md_check_results" artifact (found at the bottom of summary).')
+            core.setFailed('The MD files have errors. Please consult the log files provided within "md_check_results" artifact (found at the bottom of summary).')
 
