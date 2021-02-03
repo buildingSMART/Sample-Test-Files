@@ -185,15 +185,13 @@ jobs:
           allFiles='${{ needs.filter.outputs.allchangedfiles }}'
           echo "${allFiles}"
           allFiles="${allFiles//","/"-----"}"
-          allFiles="${allFiles//["/}"
-          allFiles="${allFiles//"]/}"
           echo "${allFiles}"
           total=0
           IFS='"-----"' read -ra ALL <<< "${allFiles}"
           for line in "${ALL[@]}"; do
             echo $line
-            echo ".${line##*.}"
-            if [ ".${line##*.}" == '.md' ];
+            echo '.${line##*.}'
+            if [ '.${line##*.}' == '.md' ];
             then
               echo "Found one: " $line;
               awk -f "${{ github.workspace }}/.github/md_check.awk" "${{ github.workspace }}/$line" >"${{ github.workspace }}/md_results/log_${total}.log"
