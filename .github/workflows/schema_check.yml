@@ -179,11 +179,11 @@ jobs:
         shell: bash
         run: |
           echo '${{ needs.filter.outputs.allchangedfiles }}' >allFiles.json
-          foo='${{ needs.filter.outputs.allchangedfiles }}'
-          for line in $( jq '.[]' <<< "$foo" ); do \
+          allFiles='${{ needs.filter.outputs.allchangedfiles }}'
+          for line in $( jq -c '.[]' <<< "${allFiles}" ); do \
             echo $line
             echo ".${line##*.}"
-            if [ ".${line##*.}" == ".md" ]; \
+            if [ ".${line##*.}" == '.md"' ]; \
             then \
               echo $line; \
             fi \
