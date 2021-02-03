@@ -10,10 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       hasifcs: ${{ steps.check_results.outputs.HASIFCS }}
-      modifcs: ${{ steps.check_results.outputs.MODIFCS }}
-      addifcs: ${{ steps.check_results.outputs.ADDEDIFCS }}
-      addjson: ${{ steps.file_changes.outputs.files_added }}
-      modjson: ${{ steps.file_changes.outputs.files_modified }}
+      hasmds: ${{ steps.check_results.outputs.HASMDS }}
+      allchangedfiles: ${{ steps.file_changes.outputs.files }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -39,29 +37,19 @@ jobs:
         run: |
           if [[ $HOME/files.json ]] && cat $HOME/files.json | grep -q .ifc; then 
             echo ::set-output name=HASIFCS::true; 
-            echo ::set-output name=ALL::$HOME/files.json; 
             echo 'IFC changes determined!';
           else 
             echo ::set-output name=HASIFCS::false; 
             echo 'No IFC changes determined!';
           fi
-          if [[ $HOME/files_modified.json ]] && cat $HOME/files_modified.json | grep -q .ifc; then 
-            echo ::set-output name=MODIFCS::true; 
-            echo ::set-output name=MOD::$HOME/files_modified.json; 
-            echo 'IFC modifications determined!';
+          if [[ $HOME/files.json ]] && cat $HOME/files.json | grep -q .md; then 
+            echo ::set-output name=HASMDS::true; 
+            echo 'MD changes determined!';
           else 
-            echo ::set-output name=MODIFCS::false; 
-            echo 'No IFC modifications determined!';
+            echo ::set-output name=HASMDS::false; 
+            echo 'No MD changes determined!';
           fi
-          if [[ $HOME/files_added.json ]] && cat $HOME/files_added.json | grep -q .ifc; then 
-            echo ::set-output name=ADDEDIFCS::true; 
-            echo ::set-output name=ADD::$HOME/files_added.json; 
-            echo 'IFC additions determined!';
-          else 
-            echo ::set-output name=ADDEDIFCS::false; 
-            echo 'No IFC additions determined!';
-          fi
-  check:
+  check-ifc:
     runs-on: windows-latest
     needs: filter
     if: ${{ needs.filter.outputs.hasifcs == 'true' }}
@@ -93,31 +81,12 @@ jobs:
         run: |
           dir checker
       - name: Prepare check results
-        if: needs.filter.outputs.modifcs == 'true' || needs.filter.outputs.addifcs == 'true'
         run: |
           mkdir results
           Copy-Item "${{ github.workspace }}/checker/MVDChecker.xsl" -Destination "${{ github.workspace }}/results/MVDChecker.xsl"
-      - name: Check added files
-        if: needs.filter.outputs.addifcs == 'true'
+      - name: Check IFC files
         run: |
-          $data = '${{ needs.filter.outputs.addjson }}' | ConvertFrom-Json
-          $cmnd = "${{ github.workspace }}\checker\ifcCheckingTool_Lite.exe"
-          foreach( $i in $data ) {
-            $filename = $("$i").Substring($("$i").LastIndexOf("/")+1)
-            if( [IO.Path]::GetExtension($filename) -ne ".ifc" ) {continue}
-            Write-Host "Checking filename:" "$("$filename")" " --> writing to" "$("${{ github.workspace }}\results\$filename.chkxml")"
-            Write-Host "Running:" "${{ github.workspace }}\checker\ifcCheckingTool_Lite.exe" "$("${{ github.workspace }}\$i")" /hidegui /xmlfile="$("${{ github.workspace }}\results\$filename.xml")"
-            $ifcFilePath = $("${{ github.workspace }}\$i")
-            $ifcCopyFilePath = $("${{ github.workspace }}\results\$filename")
-            $xmlFilePath = $("${{ github.workspace }}\results\$filename.chkxml")
-            & $cmnd $ifcFilePath /hidegui /xmlfile=$xmlFilePath | Out-Null
-            Write-Host "Last exit code was:" "$LastExitCode"
-            Copy-Item $ifcFilePath -Destination $ifcCopyFilePath
-          }
-      - name: Check modified files
-        if: needs.filter.outputs.modifcs == 'true'
-        run: |
-          $data = '${{ needs.filter.outputs.modjson }}' | ConvertFrom-Json
+          $data = '${{ needs.filter.outputs.allchangedfiles }}' | ConvertFrom-Json
           $cmnd = "${{ github.workspace }}\checker\ifcCheckingTool_Lite.exe"
           foreach( $i in $data ) {
             $filename = $("$i").Substring($("$i").LastIndexOf("/")+1)
@@ -143,15 +112,15 @@ jobs:
             echo "::set-output name=haslogs::false"        
           }
       - name: Upload check results
-        if: (needs.filter.outputs.modifcs == 'true' || needs.filter.outputs.addifcs == 'true') && steps.results.outputs.haslogs == 'true'
+        if: steps.results.outputs.haslogs == 'true'
         uses: actions/upload-artifact@v2
         with:
           name: checking_results
           path: ${{ github.workspace }}\results
-  validate:
+  validate-ifc:
     runs-on: windows-latest
-    needs: check
-    if: needs.check.outputs.haslogs == 'true'
+    needs: check-ifc
+    if: needs.check-ifc.outputs.haslogs == 'true'
     outputs:
       errors: ${{ steps.counting.outputs.logging }}
     steps:
@@ -182,15 +151,36 @@ jobs:
           } else {
             echo "::set-output name=logging::false"            
           }
-  inform_should_not_fail:
+  inform-ifc:
     runs-on: ubuntu-latest
-    needs: validate
+    needs: validate-ifc
     steps:
       - name: Fail validation
         uses: actions/github-script@v3
-        if: needs.validate.outputs.errors == 'true'
+        if: needs.validate-ifc.outputs.errors == 'true'
         with:
           script: |
             core.setFailed('The IFC files have schema errors. Please consult the reporting .chkxml files provided within "checking_results" artifact (found at the bottom of summary).')
-
+  check-md:
+    runs-on: ubuntu-latest
+    needs: filter
+    if: ${{ needs.filter.outputs.hasmds == 'true' }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Verify the workspace context
+        run: echo 'Workspace directory is ${{ github.workspace }}'
+      - name: Check MD files
+        run: |
+          cat ${{ needs.filter.outputs.allchangedfiles }} | \
+            jq '.[]' | \
+            while (read line || [[ -n $line ]]); \
+            do \
+              if [ ".${line##*.}" == ".md" ]; \
+              then \
+                echo $line; \
+              fi \
+            done \
+            >allmds.txt
+          cat allmds.txt
 
