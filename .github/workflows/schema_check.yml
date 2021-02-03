@@ -179,7 +179,8 @@ jobs:
         shell: bash
         run: |
           echo '${{ needs.filter.outputs.allchangedfiles }}' >allFiles.json
-          for line in $( jq '.[]' <<< "$ALL_JSON" ); do \
+          foo='${{ needs.filter.outputs.allchangedfiles }}'
+          for line in $( jq '.[]' <<< "$foo" ); do \
             echo $line
             echo ".${line##*.}"
             if [ ".${line##*.}" == ".md" ]; \
@@ -187,7 +188,7 @@ jobs:
               echo $line; \
             fi \
           done \
-            > allmds.txt
+            >allmds.txt
           cat allFiles.json
           cat allmds.txt
           echo "::set-output name=logging::true"
