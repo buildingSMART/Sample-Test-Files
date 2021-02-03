@@ -177,7 +177,7 @@ jobs:
         shell: bash
         run: |
           arg='${{ needs.filter.outputs.allchangedfiles }}'
-          for line in $(jq --arg m "$arg" '.[]'); do \
+          for line in $(jq --arg m "$arg" '$m | fromjson | .[]'); do \
             echo $line
             echo ".${line##*.}"
             if [ ".${line##*.}" == ".md" ]; \
