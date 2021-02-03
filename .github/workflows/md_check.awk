@@ -11,6 +11,10 @@ BEGIN {
         printf "Line %d: A heading following one another not allowed.\n", NR
         haserrors=haserrors+1
     }
+    if( $0 ~ "_" ){
+        printf "Line %d: A heading must not contain an underscore.\n", NR
+        haserrors=haserrors+1        
+    }
     inheading=1
     inlist=""
     listdepth=0
@@ -26,6 +30,10 @@ BEGIN {
     if( RLENGTH % 4 != 0 ) {   
         printf "Line %d: List entry must have indentation equal to a multiple of four (0, 4, 8, ...).\n", NR
         haserrors=haserrors+1
+    }
+    if( RLENGTH != 0 && !inlist ) {
+        printf "Line %d: First list entry must have indentation equal to 0.\n", NR
+        haserrors=haserrors+1    
     }
     inheading=""
     inlist=1
