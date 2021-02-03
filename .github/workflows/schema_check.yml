@@ -155,7 +155,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: validate-ifc
     steps:
-      - name: Fail validation
+      - name: Fail IFC validation
         uses: actions/github-script@v3
         if: needs.validate-ifc.outputs.errors == 'true'
         with:
@@ -165,14 +165,17 @@ jobs:
     runs-on: ubuntu-latest
     needs: filter
     if: ${{ needs.filter.outputs.hasmds == 'true' }}
+    outputs:
+      errors: ${{ steps.checking.outputs.logging }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
       - name: Verify the workspace context
         run: echo 'Workspace directory is ${{ github.workspace }}'
       - name: Check MD files
+        id: checking
         run: |
-          cat ${{ needs.filter.outputs.allchangedfiles }} | \
+          '${{ needs.filter.outputs.allchangedfiles }}' | \
             jq '.[]' | \
             while (read line || [[ -n $line ]]); \
             do \
@@ -183,4 +186,15 @@ jobs:
             done \
             >allmds.txt
           cat allmds.txt
+          echo "::set-output name=logging::true"
+  inform-md:
+    runs-on: ubuntu-latest
+    needs: check-md
+    steps:
+      - name: Fail MD validation
+        uses: actions/github-script@v3
+        if: needs.check-md.outputs.errors == 'true'
+        with:
+          script: |
+            core.setFailed('The MD files have errors. Please consult the md-report.log file provided within "md_check_results" artifact (found at the bottom of summary).')
 
