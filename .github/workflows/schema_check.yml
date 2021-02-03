@@ -183,10 +183,12 @@ jobs:
         run: |
           echo '${{ needs.filter.outputs.allchangedfiles }}' >allFiles.json
           allFiles='${{ needs.filter.outputs.allchangedfiles }}'
-          allFiles="${allFiles/','/'-----'}"
+          echo "${allFiles}"
+          allFiles="${allFiles/","/"-----"}"
+          echo "${allFiles}"
           total=0
-          echo '${allFiles}'
-          IFS='-----' read -ra ALL <<< '${allFiles}'
+          echo "${allFiles}"
+          IFS='-----' read -ra ALL <<< "${allFiles}"
           for line in "${ALL[@]}"; do
             echo $line
             echo ".${line##*.}"
