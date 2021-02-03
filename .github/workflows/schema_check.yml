@@ -176,8 +176,8 @@ jobs:
         id: checking
         shell: bash
         run: |
-          echo '${{ needs.filter.outputs.allchangedfiles }}' > allFiles.txt
-          for line in $( cat allFiles.txt | jq '.[]' ); do \
+          echo '${{ needs.filter.outputs.allchangedfiles }}' > allFiles.json
+          for line in $(jq '.[]' allFiles.json); do \
             echo $line
             echo ".${line##*.}"
             if [ ".${line##*.}" == ".md" ]; \
