@@ -21,12 +21,14 @@ The IFC checking procedure consists of these consecutive steps:
   - uploads the artifacts (see [artifacts](#Artifacts))
 1. <a name="last"></a> inform-ifc
   - informs the user about the results
+  - this step fails, if the IFC files do not comply with the schema
 
 The MD checking procedure consists of these steps:
 1. <a name="md"></a> check-md
   - checks the contents of MD files according to the defined rules
-1. <a name="last-md"></a> inform-ifc
+1. <a name="last-md"></a> inform-md
   - informs the user about the results
+  - this step fails, if the MD files do not comply with the guidelines
 
 ### Interpretation of results
 

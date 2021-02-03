@@ -175,10 +175,8 @@ jobs:
       - name: Check MD files
         id: checking
         run: |
-          echo '${{ needs.filter.outputs.allchangedfiles }}' | \
-            jq '.[]' | \
-            while (read line || [[ -n $line ]]); \
-            do \
+          allFiles = '${{ needs.filter.outputs.allchangedfiles }}'
+          for line in $(echo "${allFiles}" | jq '.[]'); do \
               if [ ".${line##*.}" == ".md" ]; \
               then \
                 echo $line; \
