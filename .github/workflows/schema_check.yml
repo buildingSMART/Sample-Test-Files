@@ -193,10 +193,9 @@ jobs:
             then
               echo "Found one: " $line;
               awk -f "${{ github.workspace }}/.github/workflows/md_check.awk" "${{ github.workspace }}/$line" >"${{ github.workspace }}/md_results/log_${total}.log"
-              total++
+              ((total++))
             fi
           done
-          cat allFiles.json
           echo "::set-output name=logging::true"
           ls -la
           ls -la md_results/
