@@ -57,7 +57,7 @@ The checking produces two artifacts:
   - `<filename>.ifc`: the original IFC file (for your reference)
   - `<filename>.ifc.chkxml`: the XML file containing all errors, warnings, and suggestion as produced by the [checker](#check)
 1. a `zip` directory named `MD_check_results` with the following content:
-- `log.txt`: text file with error messages from the checking procedure
+- `log_i.log`: text files with error messages from the checking procedure
 
 To visualize the content of the `chkxml` files, use the provided style sheet and a viewer of your choice.
 For example, you can:
