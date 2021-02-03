@@ -186,7 +186,7 @@ jobs:
             fi \
           done \
             > allmds.txt
-          cat allFiles.txt
+          cat allFiles.json
           cat allmds.txt
           echo "::set-output name=logging::true"
   inform-md:
