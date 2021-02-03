@@ -192,7 +192,7 @@ jobs:
             if [ ${line##*.} == 'md' ];
             then
               echo "Found one: " $line;
-              awk -f "${{ github.workspace }}/.github/md_check.awk" "${{ github.workspace }}/$line" >"${{ github.workspace }}/md_results/log_${total}.log"
+              awk -f "${{ github.workspace }}/.github/workflows/md_check.awk" "${{ github.workspace }}/$line" >"${{ github.workspace }}/md_results/log_${total}.log"
               total++
             fi
           done
@@ -200,6 +200,12 @@ jobs:
           echo "::set-output name=logging::true"
           ls -la
           ls -la md_results/
+      - name: Upload check results
+        if: steps.checking.outputs.logging == 'true'
+        uses: actions/upload-artifact@v2
+        with:
+          name: MD_check_results
+          path: ${{ github.workspace }}/md_results
   inform-md:
     runs-on: ubuntu-latest
     needs: check-md

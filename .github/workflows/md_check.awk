@@ -4,6 +4,7 @@ BEGIN {
     listdepth=0
     emptyline=true
     haserrors=false
+    print FILENAME
 }
 /^#/ {
     if( inheading ) {
