@@ -8,7 +8,7 @@ BEGIN {
 }
 /^#/ {
     if( inheading ) {
-        printf "Line %d: Two headings following one another not allowed.\n", NR
+        printf "Line %d: A heading following one another not allowed.\n", NR
         haserrors=haserrors+1
     }
     inheading=1
@@ -19,12 +19,12 @@ BEGIN {
 }
 /^[ \t]*-/ {
     if( (inheading || !emptyline) && !inlist ) {    
-        printf "Line %d: Lists need to be separated from the paragraph before with an empty line.\n", NR
+        printf "Line %d: Beginning of a list must be separated from the paragraph before with an empty line.\n", NR
         haserrors=haserrors+1
     }
     match($0, /^ */);
     if( RLENGTH % 4 != 0 ) {   
-        printf "Line %d: List entries need to have indentation equal to a multiple of four (0, 4, 8, ...).\n", NR
+        printf "Line %d: List entry must have indentation equal to a multiple of four (0, 4, 8, ...).\n", NR
         haserrors=haserrors+1
     }
     inheading=""
@@ -55,11 +55,11 @@ BEGIN {
 }
 {
     if( inheading ) {
-        printf "Line %d: Headings must be followed by an empty line.\n", NR    
+        printf "Line %d: A heading must be followed by an empty line.\n", NR    
         haserrors=haserrors+1
     }
     if( inlist ) {
-        printf "Line %d: Lists must be followed by an empty line.\n", NR    
+        printf "Line %d: End of a list must be followed by an empty line.\n", NR    
         haserrors=haserrors+1
     }
     inheading=""

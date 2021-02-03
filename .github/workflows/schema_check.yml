@@ -192,11 +192,16 @@ jobs:
               echo "Found one: " $line;
               awk -f "${{ github.workspace }}/.github/workflows/md_check.awk" "${{ github.workspace }}/${line}" >"${{ github.workspace }}/md_results/log_${total}.log"
               cat "${{ github.workspace }}/md_results/log_${total}.log"
-              if grep -F "Found discrepancies with the guidelines" "${{ github.workspace }}/md_results/log_${total}.log";
+              if grep -Fq "Found discrepancies with the guidelines" "${{ github.workspace }}/md_results/log_${total}.log";
               then
                 echo "::set-output name=logging::true"              
               fi
-              ((total=total+1))
+              if grep -Fq "No (known) errors found" "${{ github.workspace }}/md_results/log_${total}.log";
+              then
+                rm "${{ github.workspace }}/md_results/log_${total}.log";
+              else
+                ((total=total+1))
+              fi
             fi
           done
           ls -la
