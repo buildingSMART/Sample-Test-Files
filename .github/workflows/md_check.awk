@@ -31,14 +31,20 @@ BEGIN {
     emptyline=false
     next
 }
-/^[ \t]$/ {
+/^[ \t]*$/ {
     inheading=false
     inlist=false
     emptyline=true
     next
 }
 {
-    
+    if( inheading ) {
+        print "Line %d: Headings must be followed by an empty line.", NR    
+    }
+    if( inlist ) {
+        print "Line %d: Lists must be followed by an empty line.", NR    
+    }
+    emptyline=false
 }
 END {
     if( !haserrors ) {
