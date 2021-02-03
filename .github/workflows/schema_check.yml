@@ -115,7 +115,7 @@ jobs:
         if: steps.results.outputs.haslogs == 'true'
         uses: actions/upload-artifact@v2
         with:
-          name: checking_results
+          name: IFC_check_results
           path: ${{ github.workspace }}\results
   validate-ifc:
     runs-on: windows-latest
@@ -127,7 +127,7 @@ jobs:
       - name: Load log files from check
         uses: actions/download-artifact@v2
         with:
-          name: checking_results
+          name: IFC_check_results
           path: results
       - name: Dir files
         run: |
@@ -160,7 +160,7 @@ jobs:
         if: needs.validate-ifc.outputs.errors == 'true'
         with:
           script: |
-            core.setFailed('The IFC files have schema errors. Please consult the reporting .chkxml files provided within "checking_results" artifact (found at the bottom of summary).')
+            core.setFailed('The IFC files have schema errors. Please consult the reporting .chkxml files provided within "IFC_check_results" artifact (found at the bottom of summary).')
   check-md:
     runs-on: ubuntu-latest
     needs: filter
@@ -175,7 +175,8 @@ jobs:
       - name: Check MD files
         id: checking
         run: |
-          '${{ needs.filter.outputs.allchangedfiles }}' | \
+          '${{ needs.filter.outputs.allchangedfiles }}' >allChanged.txt
+          allChanged.txt | \
             jq '.[]' | \
             while (read line || [[ -n $line ]]); \
             do \
