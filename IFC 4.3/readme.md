@@ -16,7 +16,7 @@ An example is provided [here](Georeferencing_1/readme.md).
 - [Fork](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/working-with-forks) this repository. 
 Make changes. 
 Create a [pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork) to the main repository.
-  - For a brief summary of `git` process, see [here](https://github.com/tumcms/Open-Infra-Platform/blob/development/Documentation/markdown/GitProcess.md). There are also a lot of online tutorials available.
+    - For a brief summary of `git` process, see [here](https://github.com/tumcms/Open-Infra-Platform/blob/development/Documentation/markdown/GitProcess.md). There are also a lot of online tutorials available.
 
 ## FAQ
 

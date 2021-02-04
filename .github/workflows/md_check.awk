@@ -5,7 +5,8 @@ BEGIN {
     listdepth=0
     emptyline=1
     haserrors=0
-    printf "Checking %s:\n\n", ARGV[1]
+    lclpath=gensub(/.*Sample-Test-Files/, "", "g", ARGV[1])
+    printf "Checking %s:\n\n", lclpath
 }
 /^#/ {
     if( inheading ) {
@@ -21,6 +22,10 @@ BEGIN {
     if( containsUnescapedUnderscore($0) ) {
         line = gensub(/\r/,"","g",$0)
         printf "Line %d: Contains unescaped underscores (%s)\n", NR, line
+        haserrors=haserrors+1
+    }
+    if( inlist ) {
+        printf "Line %d: End of a list must be followed by an empty line, not a heading.\n", NR    
         haserrors=haserrors+1
     }
     inheading=1
@@ -75,6 +80,10 @@ BEGIN {
     next
 }
 /^>/ {
+    if( inheading || inlist ) {
+        printf "Line %d: Code line must be following an empty line.\n", NR    
+        haserrors=haserrors+1
+    }
     inheading=""
     inlist=""
     listdepth=0
@@ -86,10 +95,6 @@ BEGIN {
         printf "Line %d: A heading must be followed by an empty line.\n", NR    
         haserrors=haserrors+1
     }
-    if( inlist ) {
-        printf "Line %d: End of a list must be followed by an empty line.\n", NR    
-        haserrors=haserrors+1
-    }
     if( containsUnescapedUnderscore($0) ) {
         line = gensub(/\r/,"","g",$0)
         printf "Line %d: Contains unescaped underscores (%s)\n", NR, line
@@ -98,7 +103,6 @@ BEGIN {
     inheading=""
     recentheading=""
     emptyline=""
-    inlist=""
     listdepth=0
 }
 END {
@@ -122,6 +126,7 @@ function containsUnescapedUnderscore( txt ) {
     if( txt ~ "_" ) {
         lcl = txt
         lcl = gensub(/`.*`/, "", "g", lcl)
+        lcl = gensub(/(!)?\[.*\]\(.*\)/, "", "g", lcl)
         return lcl ~ "_"
     } else {
         return ""
