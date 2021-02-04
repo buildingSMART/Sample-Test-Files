@@ -1,19 +1,27 @@
 BEGIN {
     inheading=""
+    recentheading=""
     inlist=""
     listdepth=0
     emptyline=1
     haserrors=0
-    printf "Checking results for file %s\n", ARGV[1]
+    printf "Checking %s:\n\n", ARGV[1]
 }
 /^#/ {
     if( inheading ) {
-        printf "Line %d: A heading following one another not allowed.\n", NR
+        printf "Line %d-%d: Use '-' for lists and not '#'.\n", NR-1, NR
         haserrors=haserrors+1
     }
-    if( $0 ~ "_" ){
-        printf "Line %d: A heading must not contain an underscore.\n", NR
-        haserrors=haserrors+1        
+    match($0, /^#*/);
+    if( recentheading == RLENGTH ) {
+        printf "Line %d: A heading following another of same level not allowed. There should be at least one paragraph in between.\n", NR
+        haserrors=haserrors+1    
+    }
+    recentheading=RLENGTH
+    if( containsUnescapedUnderscore($0) ) {
+        line = gensub(/\r/,"","g",$0)
+        printf "Line %d: Contains unescaped underscores (%s)\n", NR, line
+        haserrors=haserrors+1
     }
     inheading=1
     inlist=""
@@ -34,6 +42,11 @@ BEGIN {
     if( RLENGTH != 0 && !inlist ) {
         printf "Line %d: First list entry must have indentation equal to 0.\n", NR
         haserrors=haserrors+1    
+    }
+    if( containsUnescapedUnderscore($0) ) {
+        line = gensub(/\r/,"","g",$0)
+        printf "Line %d: Contains unescaped underscores (%s)\n", NR, line
+        haserrors=haserrors+1
     }
     inheading=""
     inlist=1
@@ -70,20 +83,40 @@ BEGIN {
         printf "Line %d: End of a list must be followed by an empty line.\n", NR    
         haserrors=haserrors+1
     }
+    if( containsUnescapedUnderscore($0) ) {
+        line = gensub(/\r/,"","g",$0)
+        printf "Line %d: Contains unescaped underscores (%s)\n", NR, line
+        haserrors=haserrors+1
+    }
     inheading=""
+    recentheading=""
     emptyline=""
     inlist=""
     listdepth=0
 }
 END {
-    if( FILENAME ~ "_" ) {
-        printf "Filepath contains underscores: %s\n", FILENAME
-        haserrors=haserrors+1        
+    if( containsUnescapedUnderscore(FILENAME) ) {
+        printf "Readme's filepath contains underscores (%s)\n", FILENAME
+        haserrors=haserrors+1
+    }
+    if( recentheading ) {
+        printf "File cannot end with a heading.\n"
+        haserrors=haserrors+1
     }
     if( haserrors == 0 ) {
-        print "No (known) errors found."
+        print "\nResult: No (known) errors found.\n"
     }
     else {
-        printf "Found discrepancies with the guidelines: %d problems.\n", haserrors
+        printf "\nResult: Found discrepancies with the guidelines: %d problems.\n", haserrors
+    }
+}
+
+function containsUnescapedUnderscore( txt ) {
+    if( txt ~ "_" ) {
+        lcl = txt
+        lcl = gensub(/`.*`/, "", "g", lcl)
+        return lcl ~ "_"
+    } else {
+        return ""
     }
 }
