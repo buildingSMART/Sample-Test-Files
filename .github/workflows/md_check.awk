@@ -74,6 +74,13 @@ BEGIN {
     emptyline=1
     next
 }
+/^>/ {
+    inheading=""
+    inlist=""
+    listdepth=0
+    emptyline=1
+    next
+}
 {
     if( inheading ) {
         printf "Line %d: A heading must be followed by an empty line.\n", NR    
