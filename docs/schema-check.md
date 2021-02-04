@@ -9,26 +9,30 @@ The procedure checks newly added as well as modified IFC files.
 ### Steps
 
 First, the pull request is filtered according to the data submitted:
+
 1. <a name="filter"></a> filter
-  - filters the pull request for IFC and MD files
+    - filters the pull request for IFC and MD files
+
 The procedure then splits into checking IFCs and MDs separately.
 
 The IFC checking procedure consists of these consecutive steps:
+
 1. <a name="check"></a> check-ifc
-  - runs the checker on filtered IFC files
+    - runs the checker on filtered IFC files
 1. <a name="validate"></a> validate-ifc
-  - collects the results from checking
-  - uploads the artifacts (see [artifacts](#Artifacts))
+    - collects the results from checking
+    - uploads the artifacts (see [artifacts](#Artifacts))
 1. <a name="last"></a> inform-ifc
-  - informs the user about the results
-  - this step fails, if the IFC files do not comply with the schema
+    - informs the user about the results
+    - this step fails, if the IFC files do not comply with the schema
 
 The MD checking procedure consists of these steps:
+
 1. <a name="md"></a> check-md
-  - checks the contents of MD files according to the defined rules
+    - checks the contents of MD files according to the defined rules
 1. <a name="last-md"></a> inform-md
-  - informs the user about the results
-  - this step fails, if the MD files do not comply with the guidelines
+    - informs the user about the results
+    - this step fails, if the MD files do not comply with the guidelines
 
 ### Interpretation of results
 
@@ -56,8 +60,8 @@ The checking produces two artifacts:
 1. a `zip` directory named `IFC_check_results` with the following content:
 - `MVDChecker.xsl`: style sheet for XML results
 - for each IFC file determined in [filter step](#filter):
-  - `<filename>.ifc`: the original IFC file (for your reference)
-  - `<filename>.ifc.chkxml`: the XML file containing all errors, warnings, and suggestion as produced by the [checker](#check)
+    - `<filename>.ifc`: the original IFC file (for your reference)
+    - `<filename>.ifc.chkxml`: the XML file containing all errors, warnings, and suggestion as produced by the [checker](#check)
 1. a `zip` directory named `MD_check_results` with the following content:
 - `log_i.log`: text files with error messages from the checking procedure
 
