@@ -45,12 +45,14 @@ Similarly, if the [last MD checking step](#last-md) fails, the MD files do not c
 The reason(s) are provided in the `MD_check_result` [artifact](#Artifacts).
 
 If all steps pass successfully, there are:
+
 - no (known) schema issues with the provided IFC files
 - no errors in MD files according to the guidelines
 
 ### Artifacts
 
 The checking produces two artifacts:
+
 1. a `zip` directory named `IFC_check_results` with the following content:
 - `MVDChecker.xsl`: style sheet for XML results
 - for each IFC file determined in [filter step](#filter):
@@ -61,6 +63,7 @@ The checking produces two artifacts:
 
 To visualize the content of the `chkxml` files, use the provided style sheet and a viewer of your choice.
 For example, you can:
+
 - use [xsltransform](http://xsltransform.net/), 
 - save the resulting HTML to your machine, and 
 - study the checking results locally.

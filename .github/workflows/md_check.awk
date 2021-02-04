@@ -34,7 +34,7 @@ BEGIN {
     emptyline=""
     next
 }
-/^[ \t]*-/ {
+/^[ \t]*-|[0-9]+/ {
     if( (inheading || !emptyline) && !inlist ) {    
         printf "Line %d: Beginning of a list must be separated from the paragraph before with an empty line.\n", NR
         haserrors=haserrors+1
