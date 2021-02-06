@@ -1,4 +1,4 @@
-name: "IFC schema check"
+name: "IFC schema & MD guidelines"
 
 on:
   pull_request:
