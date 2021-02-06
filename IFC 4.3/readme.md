@@ -41,4 +41,9 @@ Please open an issue here: https://github.com/buildingSMART/IFC/issues.
 
 ### How do I interpret the results from the checking procedure?
 
-Consult [schema check documentation](../docs/schema_check.md).
+Consult [schema check documentation](../docs/schema_check.md). 
+
+**tl;dr**:
+
+- If `inform-ifc` fails, there are schema problems with IFC files. Consult `IFC_check_results` artifact for further information.
+- If `inform-md` fails, the MD files do not comply with the guidelines. Consult `MD_check_results` artifact for further information.
