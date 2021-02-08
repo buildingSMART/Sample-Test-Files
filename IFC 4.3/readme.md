@@ -16,7 +16,7 @@ An example is provided [here](Georeferencing_1/readme.md).
 - [Fork](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/working-with-forks) this repository. 
 Make changes. 
 Create a [pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork) to the main repository.
-  - For a brief summary of `git` process, see [here](https://github.com/tumcms/Open-Infra-Platform/blob/development/Documentation/markdown/GitProcess.md). There are also a lot of online tutorials available.
+    - For a brief summary of `git` process, see [here](https://github.com/tumcms/Open-Infra-Platform/blob/development/Documentation/markdown/GitProcess.md). There are also a lot of online tutorials available.
 
 ## FAQ
 
@@ -38,3 +38,12 @@ Yes, of course. You can include multiple JPEGs if you see fit. Or IFC4 RV files.
 ### I have a question / comment / proposal regarding the documentation (resolved [here](https://github.com/buildingSMART/Sample-Test-Files/issues/92)).
 
 Please open an issue here: https://github.com/buildingSMART/IFC/issues.
+
+### How do I interpret the results from the checking procedure?
+
+Consult [schema check documentation](../docs/schema_check.md). 
+
+**tl;dr**:
+
+- If `inform-ifc` fails, there are schema problems with IFC files. Consult `IFC_check_results` artifact for further information.
+- If `inform-md` fails, the MD files do not comply with the guidelines. Consult `MD_check_results` artifact for further information.

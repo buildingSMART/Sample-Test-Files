@@ -5,9 +5,9 @@ ISO-10303-21;
 /* ------- Stefan Jaud, stefan.jaud@tum.de, 2020.07.27. ---------------------------------------- */
 
 HEADER;
-FILE_DESCRIPTION (('ViewDefinition []'), '2;1');
+FILE_DESCRIPTION (('ViewDefinition [Ifc4X3NotAssigned]'), '2;1');
 FILE_NAME ('UT_GeoRef_1.ifc', '2020-07-27T12:00:00', ('Stefan Jaud'), ('bSI Infra Extension Deployment project'), 'manual text editing', 'SublimeText 3.0', 'GitHub pull request');
-FILE_SCHEMA (('IFC4X3_RC1'));
+FILE_SCHEMA (('IFC4X3_RC2'));
 ENDSEC;
 
 DATA;
@@ -29,7 +29,7 @@ DATA;
 #25 = IFCSIUNIT(*, .MASSUNIT., .KILO., .GRAM.);
 #26 = IFCSIUNIT(*, .TIMEUNIT., $, .SECOND.);
 #27 = IFCMONETARYUNIT('EUR');
-#28 = IFCGEOMETRICREPRESENTATIONCONTEXT($, 'Model', 3, 1.E-6, #29, #3);
+#28 = IFCGEOMETRICREPRESENTATIONCONTEXT($, 'Model', 3, 1.E-6, #29, #54);
 #29 = IFCAXIS2PLACEMENT3D(#5, #4, #2);
 
 /* ------- UT GeoRef_1 ------------------------------------------------------------------------- */
@@ -57,13 +57,16 @@ DATA;
 #43= IFCCARTESIANPOINTLIST3D(((-500.,-500.,0.),(500.,-500.,0.),(500.,500.,0.),(-500.,500.,0.)),$);
 
 /* ------ IfcSolidStratum represents the top most layer of terrain ----------------------------- */
-#50 = IFCSOLIDSTRATUM('27H$neCQf1NwtmczxBInPR', $, $, $, $, #53, #40, $);
+#50 = IFCSOLIDSTRATUM('28H$neCQf1NwtmczxBInPR', $, $, $, $, #53, #40, $);
 /* ------ Spatial inclusion in the project ----------------------------------------------------- */
-#51 = IFCRELCONTAINEDINSPATIALSTRUCTURE('3Hu7f6BmT14B_XS9yS78Jq', $, $, $, #32, (#50));
+#51 = IFCRELCONTAINEDINSPATIALSTRUCTURE('3Hu7f6BmT14B_XS9yS78Jq', $, $, $, (#50), #32);
 /* ------ Placement is relative to that of IfcSite according to the spatial structure ---------- */
 /* ------ The way it is modelled, there is no offset and no rotation. -------------------------- */
 #52 = IFCAXIS2PLACEMENT3D(#5, #4, #2);
-#53 = IFCLOCALPLACEMENT(#29, #52);
+#53 = IFCLOCALPLACEMENT(#33, #52);
+
+/* ------ TrueNorth of the geometric context must be a 2D vector ------------------------------- */
+#54 = IFCDIRECTION((0.,1.));
 
 ENDSEC;
 END-ISO-10303-21;

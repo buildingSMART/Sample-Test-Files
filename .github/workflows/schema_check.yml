@@ -1,0 +1,226 @@
+name: "IFC schema & MD guidelines"
+
+on:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  filter:
+    runs-on: ubuntu-latest
+    outputs:
+      hasifcs: ${{ steps.check_results.outputs.HASIFCS }}
+      hasmds: ${{ steps.check_results.outputs.HASMDS }}
+      allchangedfiles: ${{ steps.file_changes.outputs.files }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Filter only changed files
+        id: file_changes
+        uses: trilom/file-changes-action@v1.2.4
+      - name: Logging
+        run: |
+          echo 'All files:'
+          cat $HOME/files.json ; echo
+          echo 'Modified files:'
+          cat $HOME/files_modified.json ; echo
+          echo 'Added files:'
+          cat $HOME/files_added.json ; echo
+          echo 'Removed files:'
+          cat $HOME/files_removed.json ; echo
+          echo 'Files: ' '${{ steps.file_changes.outputs.files}}'
+          echo 'Modified: ''${{ steps.file_changes.outputs.files_modified}}'
+          echo 'Added: ''${{ steps.file_changes.outputs.files_added}}'
+          echo 'Removed: ''${{ steps.file_changes.outputs.files_removed}}'
+      - name: Check for IFC changes
+        id: check_results
+        run: |
+          if [[ $HOME/files.json ]] && cat $HOME/files.json | grep -q .ifc; then 
+            echo ::set-output name=HASIFCS::true; 
+            echo 'IFC changes determined!';
+          else 
+            echo ::set-output name=HASIFCS::false; 
+            echo 'No IFC changes determined!';
+          fi
+          if [[ $HOME/files.json ]] && cat $HOME/files.json | grep -q .md; then 
+            echo ::set-output name=HASMDS::true; 
+            echo 'MD changes determined!';
+          else 
+            echo ::set-output name=HASMDS::false; 
+            echo 'No MD changes determined!';
+          fi
+  check-ifc:
+    runs-on: windows-latest
+    needs: filter
+    if: ${{ needs.filter.outputs.hasifcs == 'true' }}
+    defaults:
+      run:
+        shell: pwsh
+    outputs:
+      haslogs: ${{ steps.results.outputs.haslogs }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Verify the workspace context
+        run: echo 'Workspace directory is ${{ github.workspace }}'
+      - uses: suisei-cn/actions-download-file@v1
+        id: downloadfile  # Remember to give an ID if you need the output
+        name: Download the file
+        with:
+          url: "https://www.iai.kit.edu/downloads/Informatik%20f%c3%bcr%20die%20Energiesystemanalyse/IfcCheckingTool_Lite_V2.2_Build-91.zip"
+          target: download
+      - name: Logging location
+        run: |
+          dir .
+          dir download/
+      - name: Unzip the checker
+        run: |
+          Rename-Item -Path "${{ github.workspace}}/download/${{ steps.downloadfile.outputs.filename }}" -NewName "${{ steps.downloadfile.outputs.filename }}.zip"
+          Expand-Archive -LiteralPath "${{ github.workspace}}/download/${{ steps.downloadfile.outputs.filename }}.zip" -DestinationPath "${{ github.workspace}}/checker"
+      - name: Logging checker directory
+        run: |
+          dir checker
+      - name: Prepare check results
+        run: |
+          mkdir results
+          Copy-Item "${{ github.workspace }}/checker/MVDChecker.xsl" -Destination "${{ github.workspace }}/results/MVDChecker.xsl"
+      - name: Check IFC files
+        run: |
+          $data = '${{ needs.filter.outputs.allchangedfiles }}' | ConvertFrom-Json
+          $cmnd = "${{ github.workspace }}\checker\ifcCheckingTool_Lite.exe"
+          foreach( $i in $data ) {
+            $filename = $("$i").Substring($("$i").LastIndexOf("/")+1)
+            if( [IO.Path]::GetExtension($filename) -ne ".ifc" ) {continue}
+            if( $i -notlike 'IFC 4.3*' ) {continue}
+            Write-Host "Checking filename:" "$("$filename")" " --> writing to" "$("${{ github.workspace }}\results\$filename.chkxml")"
+            Write-Host "Running:" "${{ github.workspace }}\checker\ifcCheckingTool_Lite.exe" "$("${{ github.workspace }}\$i")" /hidegui /xmlfile="$("${{ github.workspace }}\results\$filename.xml")"
+            $ifcFilePath = $("${{ github.workspace }}\$i")
+            $ifcCopyFilePath = $("${{ github.workspace }}\results\$filename")
+            $xmlFilePath = $("${{ github.workspace }}\results\$filename.chkxml")
+            & $cmnd $ifcFilePath /hidegui /xmlfile=$xmlFilePath | Out-Null
+            Write-Host "Last exit code was:" "$LastExitCode"
+            Copy-Item $ifcFilePath -Destination $ifcCopyFilePath
+          }
+      - name: Analyse results directory
+        id: results
+        if: always()
+        run: |
+          dir results
+          $noOfResults = ( Get-ChildItem results | Measure-Object ).Count;
+          if($noOfResults -ge 2){
+            echo "::set-output name=haslogs::true"
+          } else {
+            echo "::set-output name=haslogs::false"        
+          }
+      - name: Upload check results
+        if: steps.results.outputs.haslogs == 'true'
+        uses: actions/upload-artifact@v2
+        with:
+          name: IFC_check_results
+          path: ${{ github.workspace }}\results
+  validate-ifc:
+    runs-on: windows-latest
+    needs: check-ifc
+    if: needs.check-ifc.outputs.haslogs == 'true'
+    outputs:
+      errors: ${{ steps.counting.outputs.logging }}
+    steps:
+      - name: Load log files from check
+        uses: actions/download-artifact@v2
+        with:
+          name: IFC_check_results
+          path: results
+      - name: Dir files
+        run: |
+          dir .
+          dir results
+      - name: Parse logs for errors
+        id: counting
+        run: |
+          $total = 0
+          $error_elements = "./MVDReport/MVDMessageSet/MVDMessage/MessageType[. = 'ERROR']"
+          Get-ChildItem results -Filter "*.chkxml" | 
+          Foreach-Object {
+            [System.Xml.XmlDocument] $document = New-Object System.Xml.XmlDocument
+            $document.load($_.FullName)
+            $found_elements = $document.selectnodes($error_elements)
+            $total += $found_elements.count
+            Write-Host $found_elements.count.ToString("n0") elements in $_.Name
+          }
+          if( $total -ge 1 ) {
+            echo "::set-output name=logging::true"
+          } else {
+            echo "::set-output name=logging::false"            
+          }
+  inform-ifc:
+    runs-on: ubuntu-latest
+    needs: validate-ifc
+    steps:
+      - name: Fail IFC validation
+        uses: actions/github-script@v3
+        if: needs.validate-ifc.outputs.errors == 'true'
+        with:
+          script: |
+            core.setFailed('The IFC files have schema errors. Please consult the reporting .chkxml files provided within "IFC_check_results" artifact (found at the bottom of summary).')
+  check-md:
+    runs-on: ubuntu-latest
+    needs: filter
+    if: ${{ needs.filter.outputs.hasmds == 'true' }}
+    outputs:
+      errors: ${{ steps.checking.outputs.logging }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Verify the workspace context
+        run: echo 'Workspace directory is ${{ github.workspace }}'
+      - name: Prepare directory
+        run: |
+          mkdir md_results
+      - name: Check MD files
+        id: checking
+        shell: bash
+        run: |
+          echo "::set-output name=logging::false"              
+          echo '${{ needs.filter.outputs.allchangedfiles }}' >allFiles.json
+          allFiles='${{ needs.filter.outputs.allchangedfiles }}'
+          echo "${allFiles}"
+          allFiles="${allFiles//","/"-----"}"
+          total=0
+          IFS='"' read -ra ALL <<< "${allFiles}"
+          for line in "${ALL[@]}"; do
+            if [ ${line##*.} == 'md' ];
+            then
+              echo "Found one: " $line;
+              awk -f "${{ github.workspace }}/.github/workflows/md_check.awk" "${{ github.workspace }}/${line}" >"${{ github.workspace }}/md_results/log_${total}.log"
+              cat "${{ github.workspace }}/md_results/log_${total}.log"
+              if grep -Fq "Found discrepancies with the guidelines" "${{ github.workspace }}/md_results/log_${total}.log";
+              then
+                echo "::set-output name=logging::true"              
+              fi
+              if grep -Fq "No (known) errors found" "${{ github.workspace }}/md_results/log_${total}.log";
+              then
+                rm "${{ github.workspace }}/md_results/log_${total}.log";
+              else
+                ((total=total+1))
+              fi
+            fi
+          done
+          ls -la
+          ls -la md_results/
+      - name: Upload check results
+        if: steps.checking.outputs.logging == 'true'
+        uses: actions/upload-artifact@v2
+        with:
+          name: MD_check_results
+          path: ${{ github.workspace }}/md_results
+  inform-md:
+    runs-on: ubuntu-latest
+    needs: check-md
+    steps:
+      - name: Fail MD validation
+        uses: actions/github-script@v3
+        if: needs.check-md.outputs.errors == 'true'
+        with:
+          script: |
+            core.setFailed('The MD files have errors. Please consult the log files provided within "md_check_results" artifact (found at the bottom of summary).')
+
