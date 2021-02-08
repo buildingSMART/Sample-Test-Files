@@ -1,12 +1,12 @@
 ISO-10303-21;
 HEADER;
-FILE_DESCRIPTION (('ViewDefinition[]'), '2;1');
+FILE_DESCRIPTION (('ViewDefinition[Ifc4x3NotAssigned]'), '2;1');
 FILE_NAME ('UT_Tin_1.ifc', '2020-09-08T16:24:00', ('Lee Gregory'), ('12d Solutions'), 'IFC Engine rev 1198', '12d Model 15.0 Alpha 282 [DEVELOP] 30-09-2020 MKII', '');
 FILE_SCHEMA (('IFC4X3_RC2'));
 ENDSEC;
 DATA;
 #1 = IFCPROJECT('2PSebLOjLD_vQsTwERo3l_', #2, 'Simple tin', 'a simple tin', $, $, $, (#14), #9);
-#2 = IFCOWNERHISTORY(#3, #8, $, .ADDED., $, $, $, 1599546240);
+#2 = IFCOWNERHISTORY(#3, #8, $, .ADDED., 1599546240, $, $, 1599546240);
 #3 = IFCPERSONANDORGANIZATION(#4, #6, $);
 #4 = IFCPERSON($, 'Gregory', 'Lee', $, ('Dr'), $, (#5), $);
 #5 = IFCACTORROLE(.CIVILENGINEER., 'Designer', $);
