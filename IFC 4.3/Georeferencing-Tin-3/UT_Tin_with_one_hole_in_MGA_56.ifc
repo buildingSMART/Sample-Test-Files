@@ -1,7 +1,7 @@
 ISO-10303-21;
 HEADER;
-FILE_DESCRIPTION (('ViewDefinition[]'), '2;1');
-FILE_NAME ('UT_Tin_with_one_hole_in_MGA_56_before_editing.ifc', '2021-02-07T12:37:40', ('ljg'), ('12d Education Internet - Lee Gregory'), 'IFC Engine rev 1257', '12d Model 15.0 Alpha 479 [DEVELOP] Themes are Enabled MK 4', '');
+FILE_DESCRIPTION (('ViewDefinition[Ifc4x3NotAssigned]'), '2;1');
+FILE_NAME ('UT_Tin_with_one_hole_in_MGA_56.ifc', '2021-02-07T12:37:40', ('ljg'), ('12d Education Internet - Lee Gregory'), 'IFC Engine rev 1257', '12d Model 15.0 Alpha 479 [DEVELOP] Themes are Enabled MK 4', '');
 FILE_SCHEMA (('IFC4X3_RC2'));
 ENDSEC;
 DATA;
