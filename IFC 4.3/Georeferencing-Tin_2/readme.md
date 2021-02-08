@@ -1,8 +1,9 @@
 
 # UT Georeferencing_Tin_2
+
 Tin in map scale but coordinates in a local origin and IfcMapConversion to place it in map coordinates 
 
-## Intent
+### Intent
 
 IFC 4x3 RC2
 This scenario has a tin with just one colour for all the triangles. 
@@ -15,22 +16,18 @@ The given EPSG code says that the cordinates are  MGA94 Zone 56 and AHD (Ausrali
 
 The ifc file was written by 12d Model. 
 
-## Prerequisites
+### Prerequisites
 
 This scenario builds upon following other scenarios:
 - Georeferencing_Tin_1
 
-## Content
+### Content
 
 This scenario covers the following concepts and/or IFC entities:
 
 - ifcMapConversion giving a translation in x an y
 
-## KIT Checking Tool
-
-- Only error is missing ViewDefinition but ViewDefinition is not yet defined in the standard
-
-## Supporting files
+### Supporting files
 
 Following files correspond to this scenario:
 
