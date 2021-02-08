@@ -1,5 +1,5 @@
 
-# UT Georeferencing_Tin_2
+# UT Georeferencing-Tin-2
 
 Tin in map scale but coordinates in a local origin and IfcMapConversion to place it in map coordinates 
 
@@ -19,7 +19,7 @@ The ifc file was written by 12d Model.
 ### Prerequisites
 
 This scenario builds upon following other scenarios:
-- Georeferencing_Tin_1
+- Georeferencing-Tin-1
 
 ### Content
 
