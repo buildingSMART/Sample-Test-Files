@@ -1,0 +1,2858 @@
+{
+  "type" : "IfcProject",
+  "globalId" : "b27498a2-95cd-4b7a-aaf7-a3b98a9a5bde",
+  "ownerHistory" : {
+    "type" : "IfcOwnerHistory",
+    "globalId" : "5e7e2b74-e0b2-453a-8434-1ee2b2af43f5",
+    "owningUser" : {
+      "type" : "IfcPersonAndOrganization",
+      "globalId" : "d1f2713d-4774-4331-80c3-73bfafa87441",
+      "thePerson" : {
+        "type" : "IfcPerson",
+        "globalId" : "6e244e20-2558-4810-94ef-b2b5e52aa451",
+        "familyName" : {
+          "type" : "IfcLabel",
+          "value" : "Jon"
+        }
+      },
+      "theOrganization" : {
+        "type" : "IfcOrganization",
+        "globalId" : "42277686-f233-46f0-9bfa-56f9626ef3d3",
+        "name" : {
+          "type" : "IfcLabel",
+          "value" : "UNKNOWN"
+        }
+      }
+    },
+    "owningApplication" : {
+      "applicationDeveloper" : {
+        "type" : "IfcOrganization",
+        "globalId" : "f87fbf63-4c3d-46f3-bacb-51dbb7eaa246",
+        "name" : {
+          "type" : "IfcLabel",
+          "value" : "Geometry Gym Pty Ltd"
+        }
+      },
+      "version" : {
+        "type" : "IfcLabel",
+        "value" : "0.5.35.0"
+      },
+      "applicationFullName" : {
+        "type" : "IfcLabel",
+        "value" : "ssiRhinoIFC - Geometry Gym Plug-in for Rhino3d"
+      },
+      "applicationIdentifier" : {
+        "type" : "IfcIdentifier",
+        "value" : "ssiRhinoIFC"
+      }
+    },
+    "changeAction" : "ADDED",
+    "lastModifiedDate" : {
+      "type" : "IfcTimeStamp",
+      "value" : 1338465163
+    },
+    "creationDate" : {
+      "type" : "IfcTimeStamp",
+      "value" : 1338465163
+    }
+  },
+  "name" : {
+    "type" : "IfcLabel",
+    "value" : "Grasshopper Project"
+  },
+  "isDecomposedBy" : {
+    "type" : "IfcRelAggregates",
+    "globalId" : "8c0568ec-574e-4208-8330-e82da31da658",
+    "ownerHistory" : "5e7e2b74-e0b2-453a-8434-1ee2b2af43f5",
+    "name" : {
+      "type" : "IfcLabel",
+      "value" : "Project Container"
+    },
+    "description" : {
+      "type" : "IfcText",
+      "value" : "Project Container for Buildings"
+    },
+    "relatedObjects" : [ {
+      "type" : "IfcBuilding",
+      "globalId" : "f4f72f0c-67c0-4cde-97c2-0c76efa09ff7",
+      "ownerHistory" : "5e7e2b74-e0b2-453a-8434-1ee2b2af43f5",
+      "name" : {
+        "type" : "IfcLabel",
+        "value" : "Grasshopper Building"
+      },
+      "description" : {
+        "type" : "IfcText",
+        "value" : "GH Building"
+      },
+      "objectPlacement" : {
+        "type" : "IfcLocalPlacement",
+        "globalId" : "4a5af279-b8bb-4846-8a70-61424a23826f",
+        "relativePlacement" : {
+          "type" : "IfcAxis2Placement3D",
+          "location" : {
+            "type" : "IfcCartesianPoint",
+            "coordinates" : [ {
+              "type" : "IfcLengthMeasure",
+              "value" : 0.0
+            }, {
+              "type" : "IfcLengthMeasure",
+              "value" : 0.0
+            }, {
+              "type" : "IfcLengthMeasure",
+              "value" : 0.0
+            } ]
+          },
+          "axis" : {
+            "type" : "IfcDirection",
+            "directionRatios" : [ {
+              "type" : "IfcReal",
+              "value" : 0.0
+            }, {
+              "type" : "IfcReal",
+              "value" : 0.0
+            }, {
+              "type" : "IfcReal",
+              "value" : 1.0
+            } ]
+          },
+          "refDirection" : {
+            "type" : "IfcDirection",
+            "directionRatios" : [ {
+              "type" : "IfcReal",
+              "value" : 1.0
+            }, {
+              "type" : "IfcReal",
+              "value" : 0.0
+            }, {
+              "type" : "IfcReal",
+              "value" : 0.0
+            } ]
+          }
+        }
+      },
+      "containsElements" : [ {
+        "type" : "IfcRelContainedInSpatialStructure",
+        "globalId" : "15baecb3-6625-477c-a5d6-56b8cdb6ebb4",
+        "ownerHistory" : "5e7e2b74-e0b2-453a-8434-1ee2b2af43f5",
+        "name" : {
+          "type" : "IfcLabel",
+          "value" : "Building"
+        },
+        "description" : {
+          "type" : "IfcText",
+          "value" : "Building Container for Elements"
+        },
+        "relatedElements" : [ {
+          "type" : "IfcBuildingElementProxy",
+          "globalId" : "6b58b9d8-ba0b-4782-b302-bb9aa3cc410f",
+          "ownerHistory" : "5e7e2b74-e0b2-453a-8434-1ee2b2af43f5",
+          "name" : {
+            "type" : "IfcLabel",
+            "value" : "BuildingElementProxy"
+          },
+          "objectPlacement" : {
+            "type" : "IfcLocalPlacement",
+            "globalId" : "e85b6e79-eeeb-45dd-901e-477e4859a8ff",
+            "relativePlacement" : {
+              "type" : "IfcAxis2Placement3D",
+              "location" : {
+                "type" : "IfcCartesianPoint",
+                "coordinates" : [ {
+                  "type" : "IfcLengthMeasure",
+                  "value" : 0.0
+                }, {
+                  "type" : "IfcLengthMeasure",
+                  "value" : 0.0
+                }, {
+                  "type" : "IfcLengthMeasure",
+                  "value" : 0.0
+                } ]
+              },
+              "axis" : {
+                "type" : "IfcDirection",
+                "directionRatios" : [ {
+                  "type" : "IfcReal",
+                  "value" : 0.0
+                }, {
+                  "type" : "IfcReal",
+                  "value" : 0.0
+                }, {
+                  "type" : "IfcReal",
+                  "value" : 1.0
+                } ]
+              },
+              "refDirection" : {
+                "type" : "IfcDirection",
+                "directionRatios" : [ {
+                  "type" : "IfcReal",
+                  "value" : 1.0
+                }, {
+                  "type" : "IfcReal",
+                  "value" : 0.0
+                }, {
+                  "type" : "IfcReal",
+                  "value" : 0.0
+                } ]
+              }
+            }
+          },
+          "representation" : {
+            "type" : "IfcProductDefinitionShape",
+            "representations" : [ {
+              "type" : "IfcShapeRepresentation",
+              "contextOfItems" : {
+                "type" : "IfcGeometricRepresentationContext",
+                "globalId" : "ff987b6a-51e4-4d63-8e56-8c1945718f24",
+                "contextIdentifier" : {
+                  "type" : "IfcLabel",
+                  "value" : "Body"
+                },
+                "contextType" : {
+                  "type" : "IfcLabel",
+                  "value" : "Model"
+                },
+                "coordinateSpaceDimension" : {
+                  "type" : "IfcDimensionCount",
+                  "value" : 3
+                },
+                "precision" : {
+                  "type" : "IfcReal",
+                  "value" : 1.0E-5
+                },
+                "worldCoordinateSystem" : {
+                  "type" : "IfcAxis2Placement3D",
+                  "location" : {
+                    "type" : "IfcCartesianPoint",
+                    "coordinates" : [ {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 0.0
+                    }, {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 0.0
+                    }, {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 0.0
+                    } ]
+                  },
+                  "axis" : {
+                    "type" : "IfcDirection",
+                    "directionRatios" : [ {
+                      "type" : "IfcReal",
+                      "value" : 0.0
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 0.0
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 1.0
+                    } ]
+                  },
+                  "refDirection" : {
+                    "type" : "IfcDirection",
+                    "directionRatios" : [ {
+                      "type" : "IfcReal",
+                      "value" : 1.0
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 0.0
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 0.0
+                    } ]
+                  }
+                },
+                "trueNorth" : {
+                  "type" : "IfcDirection",
+                  "directionRatios" : [ {
+                    "type" : "IfcReal",
+                    "value" : 0.0
+                  }, {
+                    "type" : "IfcReal",
+                    "value" : 1.0
+                  } ]
+                }
+              },
+              "representationIdentifier" : {
+                "type" : "IfcLabel",
+                "value" : "Body"
+              },
+              "representationType" : {
+                "type" : "IfcLabel",
+                "value" : "AdvancedBrep"
+              },
+              "items" : [ {
+                "type" : "IfcAdvancedBrep",
+                "outer" : {
+                  "type" : "IfcClosedShell",
+                  "cfsFaces" : [ {
+                    "type" : "IfcAdvancedFace",
+                    "bounds" : [ {
+                      "type" : "IfcFaceOuterBound",
+                      "bound" : {
+                        "type" : "IfcEdgeLoop",
+                        "edgeList" : [ {
+                          "type" : "IfcOrientedEdge",
+                          "edgeElement" : {
+                            "type" : "IfcEdgeCurve",
+                            "edgeStart" : {
+                              "type" : "IfcVertexPoint",
+                              "vertexGeometry" : {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.0
+                                } ]
+                              }
+                            },
+                            "edgeEnd" : {
+                              "type" : "IfcVertexPoint",
+                              "vertexGeometry" : {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.683012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.183012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 1.0
+                                } ]
+                              }
+                            },
+                            "edgeGeometry" : {
+                              "type" : "IfcPolyline",
+                              "points" : [ {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.0
+                                } ]
+                              }, {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.683012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.183012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 1.0
+                                } ]
+                              } ]
+                            },
+                            "sameSense" : {
+                              "type" : "IfcBoolean",
+                              "value" : false
+                            }
+                          },
+                          "orientation" : {
+                            "type" : "IfcBoolean",
+                            "value" : false
+                          }
+                        }, {
+                          "type" : "IfcOrientedEdge",
+                          "edgeElement" : {
+                            "type" : "IfcEdgeCurve",
+                            "edgeStart" : {
+                              "type" : "IfcVertexPoint",
+                              "vertexGeometry" : {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.683012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.183012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 1.0
+                                } ]
+                              }
+                            },
+                            "edgeEnd" : {
+                              "type" : "IfcVertexPoint",
+                              "vertexGeometry" : {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.183012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.683012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 1.0
+                                } ]
+                              }
+                            },
+                            "edgeGeometry" : {
+                              "type" : "IfcPolyline",
+                              "points" : [ {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.683012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.183012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 1.0
+                                } ]
+                              }, {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.183012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.683012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 1.0
+                                } ]
+                              } ]
+                            },
+                            "sameSense" : {
+                              "type" : "IfcBoolean",
+                              "value" : false
+                            }
+                          },
+                          "orientation" : {
+                            "type" : "IfcBoolean",
+                            "value" : false
+                          }
+                        }, {
+                          "type" : "IfcOrientedEdge",
+                          "edgeElement" : {
+                            "type" : "IfcEdgeCurve",
+                            "edgeStart" : {
+                              "type" : "IfcVertexPoint",
+                              "vertexGeometry" : {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.0
+                                } ]
+                              }
+                            },
+                            "edgeEnd" : {
+                              "type" : "IfcVertexPoint",
+                              "vertexGeometry" : {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.183012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.683012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 1.0
+                                } ]
+                              }
+                            },
+                            "edgeGeometry" : {
+                              "type" : "IfcPolyline",
+                              "points" : [ {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.0
+                                } ]
+                              }, {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.183012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.683012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 1.0
+                                } ]
+                              } ]
+                            },
+                            "sameSense" : {
+                              "type" : "IfcBoolean",
+                              "value" : false
+                            }
+                          },
+                          "orientation" : {
+                            "type" : "IfcBoolean",
+                            "value" : false
+                          }
+                        }, {
+                          "type" : "IfcOrientedEdge",
+                          "edgeElement" : {
+                            "type" : "IfcEdgeCurve",
+                            "edgeStart" : {
+                              "type" : "IfcVertexPoint",
+                              "vertexGeometry" : {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.0
+                                } ]
+                              }
+                            },
+                            "edgeEnd" : {
+                              "type" : "IfcVertexPoint",
+                              "vertexGeometry" : {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.0
+                                } ]
+                              }
+                            },
+                            "edgeGeometry" : {
+                              "type" : "IfcPolyline",
+                              "points" : [ {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.5
+                                } ]
+                              }, {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.5
+                                } ]
+                              } ]
+                            },
+                            "sameSense" : {
+                              "type" : "IfcBoolean",
+                              "value" : false
+                            }
+                          },
+                          "orientation" : {
+                            "type" : "IfcBoolean",
+                            "value" : false
+                          }
+                        } ]
+                      },
+                      "orientation" : {
+                        "type" : "IfcBoolean",
+                        "value" : false
+                      }
+                    } ],
+                    "faceSurface" : {
+                      "type" : "IfcBSplineSurfaceWithKnots",
+                      "controlPointsList" : [ [ {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -0.5
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.5
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -0.5
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -0.5
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        } ]
+                      } ], [ {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -0.561004233964073
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.27232909936926
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.333333333333333
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -0.27232909936926
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -0.561004233964073
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.333333333333333
+                        } ]
+                      } ], [ {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -0.622008467928146
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0446581987385206
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.666666666666667
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -0.0446581987385206
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -0.622008467928146
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.666666666666667
+                        } ]
+                      } ], [ {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -0.683012701892219
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -0.183012701892219
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 1.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.183012701892219
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -0.683012701892219
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 1.0
+                        } ]
+                      } ] ],
+                      "surfaceForm" : "UNSPECIFIED",
+                      "selfIntersect" : {
+                        "type" : "IfcLogical",
+                        "value" : false
+                      },
+                      "knotSpec" : "UNSPECIFIED",
+                      "umultiplicities" : [ {
+                        "type" : "IfcInteger",
+                        "value" : 4
+                      }, {
+                        "type" : "IfcInteger",
+                        "value" : 4
+                      } ],
+                      "vmultiplicities" : [ {
+                        "type" : "IfcInteger",
+                        "value" : 2
+                      }, {
+                        "type" : "IfcInteger",
+                        "value" : 2
+                      } ],
+                      "uknots" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 1224.74487139159
+                      } ],
+                      "vknots" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : 3.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 4.0
+                      } ],
+                      "vclosed" : {
+                        "type" : "IfcLogical",
+                        "value" : false
+                      },
+                      "uclosed" : {
+                        "type" : "IfcLogical",
+                        "value" : false
+                      },
+                      "udegree" : {
+                        "type" : "IfcInteger",
+                        "value" : 3
+                      },
+                      "vdegree" : {
+                        "type" : "IfcInteger",
+                        "value" : 1
+                      }
+                    },
+                    "sameSense" : {
+                      "type" : "IfcBoolean",
+                      "value" : false
+                    }
+                  }, {
+                    "type" : "IfcAdvancedFace",
+                    "bounds" : [ {
+                      "type" : "IfcFaceOuterBound",
+                      "bound" : {
+                        "type" : "IfcEdgeLoop",
+                        "edgeList" : [ {
+                          "type" : "IfcOrientedEdge",
+                          "edgeElement" : {
+                            "type" : "IfcEdgeCurve",
+                            "edgeStart" : {
+                              "type" : "IfcVertexPoint",
+                              "vertexGeometry" : {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.0
+                                } ]
+                              }
+                            },
+                            "edgeEnd" : {
+                              "type" : "IfcVertexPoint",
+                              "vertexGeometry" : {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.0
+                                } ]
+                              }
+                            },
+                            "edgeGeometry" : {
+                              "type" : "IfcPolyline",
+                              "points" : [ {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.5
+                                } ]
+                              }, {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.5
+                                } ]
+                              } ]
+                            },
+                            "sameSense" : {
+                              "type" : "IfcBoolean",
+                              "value" : false
+                            }
+                          },
+                          "orientation" : {
+                            "type" : "IfcBoolean",
+                            "value" : false
+                          }
+                        }, {
+                          "type" : "IfcOrientedEdge",
+                          "edgeElement" : {
+                            "type" : "IfcEdgeCurve",
+                            "edgeStart" : {
+                              "type" : "IfcVertexPoint",
+                              "vertexGeometry" : {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.0
+                                } ]
+                              }
+                            },
+                            "edgeEnd" : {
+                              "type" : "IfcVertexPoint",
+                              "vertexGeometry" : {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.183012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.683012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 1.0
+                                } ]
+                              }
+                            },
+                            "edgeGeometry" : {
+                              "type" : "IfcPolyline",
+                              "points" : [ {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.0
+                                } ]
+                              }, {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.183012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.683012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 1.0
+                                } ]
+                              } ]
+                            },
+                            "sameSense" : {
+                              "type" : "IfcBoolean",
+                              "value" : false
+                            }
+                          },
+                          "orientation" : {
+                            "type" : "IfcBoolean",
+                            "value" : false
+                          }
+                        }, {
+                          "type" : "IfcOrientedEdge",
+                          "edgeElement" : {
+                            "type" : "IfcEdgeCurve",
+                            "edgeStart" : {
+                              "type" : "IfcVertexPoint",
+                              "vertexGeometry" : {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.183012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.683012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 1.0
+                                } ]
+                              }
+                            },
+                            "edgeEnd" : {
+                              "type" : "IfcVertexPoint",
+                              "vertexGeometry" : {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.683012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.183012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 1.0
+                                } ]
+                              }
+                            },
+                            "edgeGeometry" : {
+                              "type" : "IfcPolyline",
+                              "points" : [ {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.183012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.683012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 1.0
+                                } ]
+                              }, {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.683012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.183012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 1.0
+                                } ]
+                              } ]
+                            },
+                            "sameSense" : {
+                              "type" : "IfcBoolean",
+                              "value" : false
+                            }
+                          },
+                          "orientation" : {
+                            "type" : "IfcBoolean",
+                            "value" : false
+                          }
+                        }, {
+                          "type" : "IfcOrientedEdge",
+                          "edgeElement" : {
+                            "type" : "IfcEdgeCurve",
+                            "edgeStart" : {
+                              "type" : "IfcVertexPoint",
+                              "vertexGeometry" : {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.0
+                                } ]
+                              }
+                            },
+                            "edgeEnd" : {
+                              "type" : "IfcVertexPoint",
+                              "vertexGeometry" : {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.683012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.183012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 1.0
+                                } ]
+                              }
+                            },
+                            "edgeGeometry" : {
+                              "type" : "IfcPolyline",
+                              "points" : [ {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.0
+                                } ]
+                              }, {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.683012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.183012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 1.0
+                                } ]
+                              } ]
+                            },
+                            "sameSense" : {
+                              "type" : "IfcBoolean",
+                              "value" : false
+                            }
+                          },
+                          "orientation" : {
+                            "type" : "IfcBoolean",
+                            "value" : false
+                          }
+                        } ]
+                      },
+                      "orientation" : {
+                        "type" : "IfcBoolean",
+                        "value" : false
+                      }
+                    } ],
+                    "faceSurface" : {
+                      "type" : "IfcBSplineSurfaceWithKnots",
+                      "controlPointsList" : [ [ {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -0.5
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -0.5
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.5
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -0.5
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        } ]
+                      } ], [ {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -0.27232909936926
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -0.561004233964073
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.333333333333333
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.561004233964073
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -0.27232909936926
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.333333333333333
+                        } ]
+                      } ], [ {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -0.0446581987385206
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -0.622008467928146
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.666666666666667
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.622008467928146
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -0.0446581987385206
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.666666666666667
+                        } ]
+                      } ], [ {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.183012701892219
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -0.683012701892219
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 1.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.683012701892219
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.183012701892219
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 1.0
+                        } ]
+                      } ] ],
+                      "surfaceForm" : "UNSPECIFIED",
+                      "selfIntersect" : {
+                        "type" : "IfcLogical",
+                        "value" : false
+                      },
+                      "knotSpec" : "UNSPECIFIED",
+                      "umultiplicities" : [ {
+                        "type" : "IfcInteger",
+                        "value" : 4
+                      }, {
+                        "type" : "IfcInteger",
+                        "value" : 4
+                      } ],
+                      "vmultiplicities" : [ {
+                        "type" : "IfcInteger",
+                        "value" : 2
+                      }, {
+                        "type" : "IfcInteger",
+                        "value" : 2
+                      } ],
+                      "uknots" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 1224.74487139159
+                      } ],
+                      "vknots" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 1.0
+                      } ],
+                      "vclosed" : {
+                        "type" : "IfcLogical",
+                        "value" : false
+                      },
+                      "uclosed" : {
+                        "type" : "IfcLogical",
+                        "value" : false
+                      },
+                      "udegree" : {
+                        "type" : "IfcInteger",
+                        "value" : 3
+                      },
+                      "vdegree" : {
+                        "type" : "IfcInteger",
+                        "value" : 1
+                      }
+                    },
+                    "sameSense" : {
+                      "type" : "IfcBoolean",
+                      "value" : false
+                    }
+                  }, {
+                    "type" : "IfcAdvancedFace",
+                    "bounds" : [ {
+                      "type" : "IfcFaceOuterBound",
+                      "bound" : {
+                        "type" : "IfcEdgeLoop",
+                        "edgeList" : [ {
+                          "type" : "IfcOrientedEdge",
+                          "edgeElement" : {
+                            "type" : "IfcEdgeCurve",
+                            "edgeStart" : {
+                              "type" : "IfcVertexPoint",
+                              "vertexGeometry" : {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.683012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.183012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 1.0
+                                } ]
+                              }
+                            },
+                            "edgeEnd" : {
+                              "type" : "IfcVertexPoint",
+                              "vertexGeometry" : {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.183012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.683012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 1.0
+                                } ]
+                              }
+                            },
+                            "edgeGeometry" : {
+                              "type" : "IfcPolyline",
+                              "points" : [ {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.683012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.183012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 1.0
+                                } ]
+                              }, {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.183012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.683012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 1.0
+                                } ]
+                              } ]
+                            },
+                            "sameSense" : {
+                              "type" : "IfcBoolean",
+                              "value" : false
+                            }
+                          },
+                          "orientation" : {
+                            "type" : "IfcBoolean",
+                            "value" : false
+                          }
+                        }, {
+                          "type" : "IfcOrientedEdge",
+                          "edgeElement" : {
+                            "type" : "IfcEdgeCurve",
+                            "edgeStart" : {
+                              "type" : "IfcVertexPoint",
+                              "vertexGeometry" : {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.183012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.683012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 1.0
+                                } ]
+                              }
+                            },
+                            "edgeEnd" : {
+                              "type" : "IfcVertexPoint",
+                              "vertexGeometry" : {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.683012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.183012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 1.0
+                                } ]
+                              }
+                            },
+                            "edgeGeometry" : {
+                              "type" : "IfcPolyline",
+                              "points" : [ {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.183012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.683012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 1.0
+                                } ]
+                              }, {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.683012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.183012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 1.0
+                                } ]
+                              } ]
+                            },
+                            "sameSense" : {
+                              "type" : "IfcBoolean",
+                              "value" : false
+                            }
+                          },
+                          "orientation" : {
+                            "type" : "IfcBoolean",
+                            "value" : false
+                          }
+                        }, {
+                          "type" : "IfcOrientedEdge",
+                          "edgeElement" : {
+                            "type" : "IfcEdgeCurve",
+                            "edgeStart" : {
+                              "type" : "IfcVertexPoint",
+                              "vertexGeometry" : {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.683012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.183012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 1.0
+                                } ]
+                              }
+                            },
+                            "edgeEnd" : {
+                              "type" : "IfcVertexPoint",
+                              "vertexGeometry" : {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.183012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.683012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 1.0
+                                } ]
+                              }
+                            },
+                            "edgeGeometry" : {
+                              "type" : "IfcPolyline",
+                              "points" : [ {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.683012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.183012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 1.0
+                                } ]
+                              }, {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.183012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.683012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 1.0
+                                } ]
+                              } ]
+                            },
+                            "sameSense" : {
+                              "type" : "IfcBoolean",
+                              "value" : false
+                            }
+                          },
+                          "orientation" : {
+                            "type" : "IfcBoolean",
+                            "value" : false
+                          }
+                        }, {
+                          "type" : "IfcOrientedEdge",
+                          "edgeElement" : {
+                            "type" : "IfcEdgeCurve",
+                            "edgeStart" : {
+                              "type" : "IfcVertexPoint",
+                              "vertexGeometry" : {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.183012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.683012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 1.0
+                                } ]
+                              }
+                            },
+                            "edgeEnd" : {
+                              "type" : "IfcVertexPoint",
+                              "vertexGeometry" : {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.683012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.183012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 1.0
+                                } ]
+                              }
+                            },
+                            "edgeGeometry" : {
+                              "type" : "IfcPolyline",
+                              "points" : [ {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.183012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.683012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 1.0
+                                } ]
+                              }, {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.683012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.183012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 1.0
+                                } ]
+                              } ]
+                            },
+                            "sameSense" : {
+                              "type" : "IfcBoolean",
+                              "value" : false
+                            }
+                          },
+                          "orientation" : {
+                            "type" : "IfcBoolean",
+                            "value" : false
+                          }
+                        } ]
+                      },
+                      "orientation" : {
+                        "type" : "IfcBoolean",
+                        "value" : false
+                      }
+                    } ],
+                    "faceSurface" : {
+                      "type" : "IfcPlane",
+                      "position" : {
+                        "type" : "IfcAxis2Placement3D",
+                        "location" : {
+                          "type" : "IfcCartesianPoint",
+                          "coordinates" : [ {
+                            "type" : "IfcLengthMeasure",
+                            "value" : -0.683012701892219
+                          }, {
+                            "type" : "IfcLengthMeasure",
+                            "value" : -0.183012701892219
+                          }, {
+                            "type" : "IfcLengthMeasure",
+                            "value" : 1.0
+                          } ]
+                        },
+                        "axis" : {
+                          "type" : "IfcDirection",
+                          "directionRatios" : [ {
+                            "type" : "IfcReal",
+                            "value" : 0.0
+                          }, {
+                            "type" : "IfcReal",
+                            "value" : 0.0
+                          }, {
+                            "type" : "IfcReal",
+                            "value" : 1.0
+                          } ]
+                        },
+                        "refDirection" : {
+                          "type" : "IfcDirection",
+                          "directionRatios" : [ {
+                            "type" : "IfcReal",
+                            "value" : -0.5
+                          }, {
+                            "type" : "IfcReal",
+                            "value" : -0.8660254
+                          }, {
+                            "type" : "IfcReal",
+                            "value" : 0.0
+                          } ]
+                        }
+                      }
+                    },
+                    "sameSense" : {
+                      "type" : "IfcBoolean",
+                      "value" : false
+                    }
+                  }, {
+                    "type" : "IfcAdvancedFace",
+                    "bounds" : [ {
+                      "type" : "IfcFaceOuterBound",
+                      "bound" : {
+                        "type" : "IfcEdgeLoop",
+                        "edgeList" : [ {
+                          "type" : "IfcOrientedEdge",
+                          "edgeElement" : {
+                            "type" : "IfcEdgeCurve",
+                            "edgeStart" : {
+                              "type" : "IfcVertexPoint",
+                              "vertexGeometry" : {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.0
+                                } ]
+                              }
+                            },
+                            "edgeEnd" : {
+                              "type" : "IfcVertexPoint",
+                              "vertexGeometry" : {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.0
+                                } ]
+                              }
+                            },
+                            "edgeGeometry" : {
+                              "type" : "IfcPolyline",
+                              "points" : [ {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.5
+                                } ]
+                              }, {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.5
+                                } ]
+                              } ]
+                            },
+                            "sameSense" : {
+                              "type" : "IfcBoolean",
+                              "value" : false
+                            }
+                          },
+                          "orientation" : {
+                            "type" : "IfcBoolean",
+                            "value" : false
+                          }
+                        }, {
+                          "type" : "IfcOrientedEdge",
+                          "edgeElement" : {
+                            "type" : "IfcEdgeCurve",
+                            "edgeStart" : {
+                              "type" : "IfcVertexPoint",
+                              "vertexGeometry" : {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.0
+                                } ]
+                              }
+                            },
+                            "edgeEnd" : {
+                              "type" : "IfcVertexPoint",
+                              "vertexGeometry" : {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.683012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.183012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 1.0
+                                } ]
+                              }
+                            },
+                            "edgeGeometry" : {
+                              "type" : "IfcPolyline",
+                              "points" : [ {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.0
+                                } ]
+                              }, {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.683012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.183012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 1.0
+                                } ]
+                              } ]
+                            },
+                            "sameSense" : {
+                              "type" : "IfcBoolean",
+                              "value" : false
+                            }
+                          },
+                          "orientation" : {
+                            "type" : "IfcBoolean",
+                            "value" : false
+                          }
+                        }, {
+                          "type" : "IfcOrientedEdge",
+                          "edgeElement" : {
+                            "type" : "IfcEdgeCurve",
+                            "edgeStart" : {
+                              "type" : "IfcVertexPoint",
+                              "vertexGeometry" : {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.683012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.183012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 1.0
+                                } ]
+                              }
+                            },
+                            "edgeEnd" : {
+                              "type" : "IfcVertexPoint",
+                              "vertexGeometry" : {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.183012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.683012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 1.0
+                                } ]
+                              }
+                            },
+                            "edgeGeometry" : {
+                              "type" : "IfcPolyline",
+                              "points" : [ {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.683012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.183012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 1.0
+                                } ]
+                              }, {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.183012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.683012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 1.0
+                                } ]
+                              } ]
+                            },
+                            "sameSense" : {
+                              "type" : "IfcBoolean",
+                              "value" : false
+                            }
+                          },
+                          "orientation" : {
+                            "type" : "IfcBoolean",
+                            "value" : false
+                          }
+                        }, {
+                          "type" : "IfcOrientedEdge",
+                          "edgeElement" : {
+                            "type" : "IfcEdgeCurve",
+                            "edgeStart" : {
+                              "type" : "IfcVertexPoint",
+                              "vertexGeometry" : {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.0
+                                } ]
+                              }
+                            },
+                            "edgeEnd" : {
+                              "type" : "IfcVertexPoint",
+                              "vertexGeometry" : {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.183012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.683012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 1.0
+                                } ]
+                              }
+                            },
+                            "edgeGeometry" : {
+                              "type" : "IfcPolyline",
+                              "points" : [ {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.0
+                                } ]
+                              }, {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.183012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.683012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 1.0
+                                } ]
+                              } ]
+                            },
+                            "sameSense" : {
+                              "type" : "IfcBoolean",
+                              "value" : false
+                            }
+                          },
+                          "orientation" : {
+                            "type" : "IfcBoolean",
+                            "value" : false
+                          }
+                        } ]
+                      },
+                      "orientation" : {
+                        "type" : "IfcBoolean",
+                        "value" : false
+                      }
+                    } ],
+                    "faceSurface" : {
+                      "type" : "IfcBSplineSurfaceWithKnots",
+                      "controlPointsList" : [ [ {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.5
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -0.5
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.5
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.5
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        } ]
+                      } ], [ {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.561004233964073
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -0.27232909936926
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.333333333333333
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.27232909936926
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.561004233964073
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.333333333333333
+                        } ]
+                      } ], [ {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.622008467928146
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -0.0446581987385206
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.666666666666667
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0446581987385206
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.622008467928146
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.666666666666667
+                        } ]
+                      } ], [ {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.683012701892219
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.183012701892219
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 1.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -0.183012701892219
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.683012701892219
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 1.0
+                        } ]
+                      } ] ],
+                      "surfaceForm" : "UNSPECIFIED",
+                      "selfIntersect" : {
+                        "type" : "IfcLogical",
+                        "value" : false
+                      },
+                      "knotSpec" : "UNSPECIFIED",
+                      "umultiplicities" : [ {
+                        "type" : "IfcInteger",
+                        "value" : 4
+                      }, {
+                        "type" : "IfcInteger",
+                        "value" : 4
+                      } ],
+                      "vmultiplicities" : [ {
+                        "type" : "IfcInteger",
+                        "value" : 2
+                      }, {
+                        "type" : "IfcInteger",
+                        "value" : 2
+                      } ],
+                      "uknots" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 1224.74487139159
+                      } ],
+                      "vknots" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : 1.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 2.0
+                      } ],
+                      "vclosed" : {
+                        "type" : "IfcLogical",
+                        "value" : false
+                      },
+                      "uclosed" : {
+                        "type" : "IfcLogical",
+                        "value" : false
+                      },
+                      "udegree" : {
+                        "type" : "IfcInteger",
+                        "value" : 3
+                      },
+                      "vdegree" : {
+                        "type" : "IfcInteger",
+                        "value" : 1
+                      }
+                    },
+                    "sameSense" : {
+                      "type" : "IfcBoolean",
+                      "value" : false
+                    }
+                  }, {
+                    "type" : "IfcAdvancedFace",
+                    "bounds" : [ {
+                      "type" : "IfcFaceOuterBound",
+                      "bound" : {
+                        "type" : "IfcEdgeLoop",
+                        "edgeList" : [ {
+                          "type" : "IfcOrientedEdge",
+                          "edgeElement" : {
+                            "type" : "IfcEdgeCurve",
+                            "edgeStart" : {
+                              "type" : "IfcVertexPoint",
+                              "vertexGeometry" : {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.0
+                                } ]
+                              }
+                            },
+                            "edgeEnd" : {
+                              "type" : "IfcVertexPoint",
+                              "vertexGeometry" : {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.0
+                                } ]
+                              }
+                            },
+                            "edgeGeometry" : {
+                              "type" : "IfcPolyline",
+                              "points" : [ {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.5
+                                } ]
+                              }, {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.5
+                                } ]
+                              } ]
+                            },
+                            "sameSense" : {
+                              "type" : "IfcBoolean",
+                              "value" : false
+                            }
+                          },
+                          "orientation" : {
+                            "type" : "IfcBoolean",
+                            "value" : false
+                          }
+                        }, {
+                          "type" : "IfcOrientedEdge",
+                          "edgeElement" : {
+                            "type" : "IfcEdgeCurve",
+                            "edgeStart" : {
+                              "type" : "IfcVertexPoint",
+                              "vertexGeometry" : {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.0
+                                } ]
+                              }
+                            },
+                            "edgeEnd" : {
+                              "type" : "IfcVertexPoint",
+                              "vertexGeometry" : {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.0
+                                } ]
+                              }
+                            },
+                            "edgeGeometry" : {
+                              "type" : "IfcPolyline",
+                              "points" : [ {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.5
+                                } ]
+                              }, {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.5
+                                } ]
+                              } ]
+                            },
+                            "sameSense" : {
+                              "type" : "IfcBoolean",
+                              "value" : false
+                            }
+                          },
+                          "orientation" : {
+                            "type" : "IfcBoolean",
+                            "value" : false
+                          }
+                        }, {
+                          "type" : "IfcOrientedEdge",
+                          "edgeElement" : {
+                            "type" : "IfcEdgeCurve",
+                            "edgeStart" : {
+                              "type" : "IfcVertexPoint",
+                              "vertexGeometry" : {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.0
+                                } ]
+                              }
+                            },
+                            "edgeEnd" : {
+                              "type" : "IfcVertexPoint",
+                              "vertexGeometry" : {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.0
+                                } ]
+                              }
+                            },
+                            "edgeGeometry" : {
+                              "type" : "IfcPolyline",
+                              "points" : [ {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.5
+                                } ]
+                              }, {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.5
+                                } ]
+                              } ]
+                            },
+                            "sameSense" : {
+                              "type" : "IfcBoolean",
+                              "value" : false
+                            }
+                          },
+                          "orientation" : {
+                            "type" : "IfcBoolean",
+                            "value" : false
+                          }
+                        }, {
+                          "type" : "IfcOrientedEdge",
+                          "edgeElement" : {
+                            "type" : "IfcEdgeCurve",
+                            "edgeStart" : {
+                              "type" : "IfcVertexPoint",
+                              "vertexGeometry" : {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.0
+                                } ]
+                              }
+                            },
+                            "edgeEnd" : {
+                              "type" : "IfcVertexPoint",
+                              "vertexGeometry" : {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.0
+                                } ]
+                              }
+                            },
+                            "edgeGeometry" : {
+                              "type" : "IfcPolyline",
+                              "points" : [ {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.5
+                                } ]
+                              }, {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.5
+                                } ]
+                              } ]
+                            },
+                            "sameSense" : {
+                              "type" : "IfcBoolean",
+                              "value" : false
+                            }
+                          },
+                          "orientation" : {
+                            "type" : "IfcBoolean",
+                            "value" : false
+                          }
+                        } ]
+                      },
+                      "orientation" : {
+                        "type" : "IfcBoolean",
+                        "value" : false
+                      }
+                    } ],
+                    "faceSurface" : {
+                      "type" : "IfcPlane",
+                      "position" : {
+                        "type" : "IfcAxis2Placement3D",
+                        "location" : {
+                          "type" : "IfcCartesianPoint",
+                          "coordinates" : [ {
+                            "type" : "IfcLengthMeasure",
+                            "value" : -0.5
+                          }, {
+                            "type" : "IfcLengthMeasure",
+                            "value" : -0.5
+                          }, {
+                            "type" : "IfcLengthMeasure",
+                            "value" : 0.0
+                          } ]
+                        },
+                        "axis" : {
+                          "type" : "IfcDirection",
+                          "directionRatios" : [ {
+                            "type" : "IfcReal",
+                            "value" : 0.0
+                          }, {
+                            "type" : "IfcReal",
+                            "value" : 0.0
+                          }, {
+                            "type" : "IfcReal",
+                            "value" : -1.0
+                          } ]
+                        },
+                        "refDirection" : {
+                          "type" : "IfcDirection",
+                          "directionRatios" : [ {
+                            "type" : "IfcReal",
+                            "value" : 1.0
+                          }, {
+                            "type" : "IfcReal",
+                            "value" : 0.0
+                          }, {
+                            "type" : "IfcReal",
+                            "value" : 0.0
+                          } ]
+                        }
+                      }
+                    },
+                    "sameSense" : {
+                      "type" : "IfcBoolean",
+                      "value" : false
+                    }
+                  }, {
+                    "type" : "IfcAdvancedFace",
+                    "bounds" : [ {
+                      "type" : "IfcFaceOuterBound",
+                      "bound" : {
+                        "type" : "IfcEdgeLoop",
+                        "edgeList" : [ {
+                          "type" : "IfcOrientedEdge",
+                          "edgeElement" : {
+                            "type" : "IfcEdgeCurve",
+                            "edgeStart" : {
+                              "type" : "IfcVertexPoint",
+                              "vertexGeometry" : {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.0
+                                } ]
+                              }
+                            },
+                            "edgeEnd" : {
+                              "type" : "IfcVertexPoint",
+                              "vertexGeometry" : {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.0
+                                } ]
+                              }
+                            },
+                            "edgeGeometry" : {
+                              "type" : "IfcPolyline",
+                              "points" : [ {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.5
+                                } ]
+                              }, {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.5
+                                } ]
+                              } ]
+                            },
+                            "sameSense" : {
+                              "type" : "IfcBoolean",
+                              "value" : false
+                            }
+                          },
+                          "orientation" : {
+                            "type" : "IfcBoolean",
+                            "value" : false
+                          }
+                        }, {
+                          "type" : "IfcOrientedEdge",
+                          "edgeElement" : {
+                            "type" : "IfcEdgeCurve",
+                            "edgeStart" : {
+                              "type" : "IfcVertexPoint",
+                              "vertexGeometry" : {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.0
+                                } ]
+                              }
+                            },
+                            "edgeEnd" : {
+                              "type" : "IfcVertexPoint",
+                              "vertexGeometry" : {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.183012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.683012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 1.0
+                                } ]
+                              }
+                            },
+                            "edgeGeometry" : {
+                              "type" : "IfcPolyline",
+                              "points" : [ {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.0
+                                } ]
+                              }, {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.183012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.683012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 1.0
+                                } ]
+                              } ]
+                            },
+                            "sameSense" : {
+                              "type" : "IfcBoolean",
+                              "value" : false
+                            }
+                          },
+                          "orientation" : {
+                            "type" : "IfcBoolean",
+                            "value" : false
+                          }
+                        }, {
+                          "type" : "IfcOrientedEdge",
+                          "edgeElement" : {
+                            "type" : "IfcEdgeCurve",
+                            "edgeStart" : {
+                              "type" : "IfcVertexPoint",
+                              "vertexGeometry" : {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.183012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.683012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 1.0
+                                } ]
+                              }
+                            },
+                            "edgeEnd" : {
+                              "type" : "IfcVertexPoint",
+                              "vertexGeometry" : {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.683012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.183012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 1.0
+                                } ]
+                              }
+                            },
+                            "edgeGeometry" : {
+                              "type" : "IfcPolyline",
+                              "points" : [ {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.183012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.683012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 1.0
+                                } ]
+                              }, {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.683012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.183012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 1.0
+                                } ]
+                              } ]
+                            },
+                            "sameSense" : {
+                              "type" : "IfcBoolean",
+                              "value" : false
+                            }
+                          },
+                          "orientation" : {
+                            "type" : "IfcBoolean",
+                            "value" : false
+                          }
+                        }, {
+                          "type" : "IfcOrientedEdge",
+                          "edgeElement" : {
+                            "type" : "IfcEdgeCurve",
+                            "edgeStart" : {
+                              "type" : "IfcVertexPoint",
+                              "vertexGeometry" : {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.0
+                                } ]
+                              }
+                            },
+                            "edgeEnd" : {
+                              "type" : "IfcVertexPoint",
+                              "vertexGeometry" : {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.683012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.183012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 1.0
+                                } ]
+                              }
+                            },
+                            "edgeGeometry" : {
+                              "type" : "IfcPolyline",
+                              "points" : [ {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.5
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 0.0
+                                } ]
+                              }, {
+                                "type" : "IfcCartesianPoint",
+                                "coordinates" : [ {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.683012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : -0.183012701892219
+                                }, {
+                                  "type" : "IfcLengthMeasure",
+                                  "value" : 1.0
+                                } ]
+                              } ]
+                            },
+                            "sameSense" : {
+                              "type" : "IfcBoolean",
+                              "value" : false
+                            }
+                          },
+                          "orientation" : {
+                            "type" : "IfcBoolean",
+                            "value" : false
+                          }
+                        } ]
+                      },
+                      "orientation" : {
+                        "type" : "IfcBoolean",
+                        "value" : false
+                      }
+                    } ],
+                    "faceSurface" : {
+                      "type" : "IfcBSplineSurfaceWithKnots",
+                      "controlPointsList" : [ [ {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.5
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.5
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -0.5
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.5
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        } ]
+                      } ], [ {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.27232909936926
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.561004233964073
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.333333333333333
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -0.561004233964073
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.27232909936926
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.333333333333333
+                        } ]
+                      } ], [ {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0446581987385206
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.622008467928146
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.666666666666667
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -0.622008467928146
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0446581987385206
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.666666666666667
+                        } ]
+                      } ], [ {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -0.183012701892219
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.683012701892219
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 1.0
+                        } ]
+                      }, {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -0.683012701892219
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -0.183012701892219
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 1.0
+                        } ]
+                      } ] ],
+                      "surfaceForm" : "UNSPECIFIED",
+                      "selfIntersect" : {
+                        "type" : "IfcLogical",
+                        "value" : false
+                      },
+                      "knotSpec" : "UNSPECIFIED",
+                      "umultiplicities" : [ {
+                        "type" : "IfcInteger",
+                        "value" : 4
+                      }, {
+                        "type" : "IfcInteger",
+                        "value" : 4
+                      } ],
+                      "vmultiplicities" : [ {
+                        "type" : "IfcInteger",
+                        "value" : 2
+                      }, {
+                        "type" : "IfcInteger",
+                        "value" : 2
+                      } ],
+                      "uknots" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 1224.74487139159
+                      } ],
+                      "vknots" : [ {
+                        "type" : "IfcParameterValue",
+                        "value" : 2.0
+                      }, {
+                        "type" : "IfcParameterValue",
+                        "value" : 3.0
+                      } ],
+                      "vclosed" : {
+                        "type" : "IfcLogical",
+                        "value" : false
+                      },
+                      "uclosed" : {
+                        "type" : "IfcLogical",
+                        "value" : false
+                      },
+                      "udegree" : {
+                        "type" : "IfcInteger",
+                        "value" : 3
+                      },
+                      "vdegree" : {
+                        "type" : "IfcInteger",
+                        "value" : 1
+                      }
+                    },
+                    "sameSense" : {
+                      "type" : "IfcBoolean",
+                      "value" : false
+                    }
+                  } ]
+                }
+              } ]
+            } ]
+          },
+          "predefinedType" : "NOTDEFINED"
+        } ]
+      } ],
+      "compositionType" : "ELEMENT"
+    } ]
+  },
+  "longName" : {
+    "type" : "IfcLabel",
+    "value" : "Grasshopper Project"
+  },
+  "representationContexts" : [ "ff987b6a-51e4-4d63-8e56-8c1945718f24" ],
+  "unitsInContext" : {
+    "units" : [ {
+      "type" : "IfcSIUnit",
+      "globalId" : "7ad96e46-ae12-4426-a8c2-cb33cb0dcedc",
+      "dimensions" : {
+        "lengthExponent" : 1,
+        "massExponent" : 0,
+        "timeExponent" : 0,
+        "electricCurrentExponent" : 0,
+        "thermodynamicTemperatureExponent" : 0,
+        "amountOfSubstanceExponent" : 0,
+        "luminousIntensityExponent" : 0
+      },
+      "unitType" : "LENGTHUNIT",
+      "name" : "METRE"
+    }, {
+      "type" : "IfcSIUnit",
+      "globalId" : "114e3756-bb40-4bf3-a3be-313450185908",
+      "dimensions" : {
+        "lengthExponent" : 2,
+        "massExponent" : 0,
+        "timeExponent" : 0,
+        "electricCurrentExponent" : 0,
+        "thermodynamicTemperatureExponent" : 0,
+        "amountOfSubstanceExponent" : 0,
+        "luminousIntensityExponent" : 0
+      },
+      "unitType" : "AREAUNIT",
+      "name" : "SQUARE_METRE"
+    }, {
+      "type" : "IfcSIUnit",
+      "globalId" : "4e512c87-6a34-4317-9f3b-d9dcc5102274",
+      "dimensions" : {
+        "lengthExponent" : 3,
+        "massExponent" : 0,
+        "timeExponent" : 0,
+        "electricCurrentExponent" : 0,
+        "thermodynamicTemperatureExponent" : 0,
+        "amountOfSubstanceExponent" : 0,
+        "luminousIntensityExponent" : 0
+      },
+      "unitType" : "VOLUMEUNIT",
+      "name" : "CUBIC_METRE"
+    }, {
+      "type" : "IfcSIUnit",
+      "globalId" : "27a76efe-aec2-4edb-b2ed-ebdee1054d7f",
+      "dimensions" : {
+        "lengthExponent" : 0,
+        "massExponent" : 0,
+        "timeExponent" : 0,
+        "electricCurrentExponent" : 0,
+        "thermodynamicTemperatureExponent" : 0,
+        "amountOfSubstanceExponent" : 0,
+        "luminousIntensityExponent" : 0
+      },
+      "unitType" : "PLANEANGLEUNIT",
+      "name" : "RADIAN"
+    } ]
+  }
+}

@@ -1,0 +1,466 @@
+<IfcProject type="IfcProject" globalId="0cecd97b-f4a0-4b12-8568-63a2684ad6bb">
+  <name type="IfcLabel" value="Project"/>
+  <isDecomposedBy type="IfcRelAggregates" globalId="bcfa4959-0040-4020-be52-afc0a0a76470">
+    <relatedObjects>
+      <IfcObjectDefinition type="IfcSite" globalId="16024b97-b89a-43ad-8449-e0293ac37d68" compositionType="ELEMENT">
+        <name type="IfcLabel" value="Site #1"/>
+        <objectPlacement type="IfcLocalPlacement" globalId="19dff021-8990-49b7-92dd-74e65bccbe60">
+          <relativePlacement type="IfcAxis2Placement3D">
+            <location type="IfcCartesianPoint">
+              <coordinates>
+                <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+              </coordinates>
+            </location>
+          </relativePlacement>
+        </objectPlacement>
+        <containsElements>
+          <IfcRelContainedInSpatialStructure type="IfcRelContainedInSpatialStructure" globalId="0f0727b2-4f6d-458f-aed4-2bbb0d05fa33">
+            <relatedElements>
+              <IfcProduct type="IfcColumn" globalId="a079088b-cebd-4fe4-8915-48f4ccc2c4ae" predefinedType="COLUMN">
+                <name type="IfcLabel" value="Column #1"/>
+                <objectPlacement type="IfcLocalPlacement" globalId="b99de2ca-b9b7-456b-92ac-f21e11372b56">
+                  <relativePlacement type="IfcAxis2Placement3D">
+                    <location type="IfcCartesianPoint">
+                      <coordinates>
+                        <IfcLengthMeasure type="IfcLengthMeasure" value="432.0"/>
+                        <IfcLengthMeasure type="IfcLengthMeasure" value="288.0"/>
+                        <IfcLengthMeasure type="IfcLengthMeasure" value="48.0"/>
+                      </coordinates>
+                    </location>
+                    <axis type="IfcDirection">
+                      <directionRatios>
+                        <IfcReal type="IfcReal" value="0.0"/>
+                        <IfcReal type="IfcReal" value="0.0"/>
+                        <IfcReal type="IfcReal" value="1.0"/>
+                      </directionRatios>
+                    </axis>
+                    <refDirection type="IfcDirection">
+                      <directionRatios>
+                        <IfcReal type="IfcReal" value="1.0"/>
+                        <IfcReal type="IfcReal" value="0.0"/>
+                        <IfcReal type="IfcReal" value="0.0"/>
+                      </directionRatios>
+                    </refDirection>
+                  </relativePlacement>
+                  <placementRelTo>19dff021-8990-49b7-92dd-74e65bccbe60</placementRelTo>
+                </objectPlacement>
+                <representation type="IfcProductDefinitionShape">
+                  <representations>
+                    <IfcRepresentation type="IfcShapeRepresentation">
+                      <contextOfItems type="IfcGeometricRepresentationSubContext" globalId="a87c8440-1add-47b2-86fc-9d8892d5de11" targetView="MODEL_VIEW">
+                        <contextIdentifier type="IfcLabel" value="Body"/>
+                        <contextType type="IfcLabel" value="Model"/>
+                      </contextOfItems>
+                      <representationIdentifier type="IfcLabel" value="Body"/>
+                      <representationType type="IfcLabel" value="Tessellation"/>
+                      <items>
+                        <IfcRepresentationItem type="IfcTriangulatedFaceSet">
+                          <coordinates type="IfcCartesianPointList3D" globalId="278ef20f-ba23-47e9-9a14-846d64e11489">
+                            <coordList>
+                              <IfcCartesianPoint type="IfcCartesianPoint">
+                                <coordinates>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-4.0"/>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="4.0"/>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                </coordinates>
+                              </IfcCartesianPoint>
+                              <IfcCartesianPoint type="IfcCartesianPoint">
+                                <coordinates>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-4.0"/>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-4.0"/>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                </coordinates>
+                              </IfcCartesianPoint>
+                              <IfcCartesianPoint type="IfcCartesianPoint">
+                                <coordinates>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="4.0"/>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-4.0"/>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                </coordinates>
+                              </IfcCartesianPoint>
+                              <IfcCartesianPoint type="IfcCartesianPoint">
+                                <coordinates>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="4.0"/>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="4.0"/>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                </coordinates>
+                              </IfcCartesianPoint>
+                              <IfcCartesianPoint type="IfcCartesianPoint">
+                                <coordinates>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-4.0"/>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="4.0"/>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="120.0"/>
+                                </coordinates>
+                              </IfcCartesianPoint>
+                              <IfcCartesianPoint type="IfcCartesianPoint">
+                                <coordinates>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-4.0"/>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-4.0"/>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="120.0"/>
+                                </coordinates>
+                              </IfcCartesianPoint>
+                              <IfcCartesianPoint type="IfcCartesianPoint">
+                                <coordinates>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="4.0"/>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-4.0"/>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="120.0"/>
+                                </coordinates>
+                              </IfcCartesianPoint>
+                              <IfcCartesianPoint type="IfcCartesianPoint">
+                                <coordinates>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="4.0"/>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="4.0"/>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="120.0"/>
+                                </coordinates>
+                              </IfcCartesianPoint>
+                              <IfcCartesianPoint type="IfcCartesianPoint">
+                                <coordinates>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-4.0"/>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="4.0"/>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                </coordinates>
+                              </IfcCartesianPoint>
+                              <IfcCartesianPoint type="IfcCartesianPoint">
+                                <coordinates>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-4.0"/>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-4.0"/>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                </coordinates>
+                              </IfcCartesianPoint>
+                              <IfcCartesianPoint type="IfcCartesianPoint">
+                                <coordinates>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-4.0"/>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-4.0"/>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="120.0"/>
+                                </coordinates>
+                              </IfcCartesianPoint>
+                              <IfcCartesianPoint type="IfcCartesianPoint">
+                                <coordinates>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-4.0"/>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="4.0"/>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="120.0"/>
+                                </coordinates>
+                              </IfcCartesianPoint>
+                              <IfcCartesianPoint type="IfcCartesianPoint">
+                                <coordinates>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-4.0"/>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-4.0"/>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                </coordinates>
+                              </IfcCartesianPoint>
+                              <IfcCartesianPoint type="IfcCartesianPoint">
+                                <coordinates>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="4.0"/>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-4.0"/>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                </coordinates>
+                              </IfcCartesianPoint>
+                              <IfcCartesianPoint type="IfcCartesianPoint">
+                                <coordinates>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="4.0"/>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-4.0"/>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="120.0"/>
+                                </coordinates>
+                              </IfcCartesianPoint>
+                              <IfcCartesianPoint type="IfcCartesianPoint">
+                                <coordinates>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-4.0"/>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-4.0"/>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="120.0"/>
+                                </coordinates>
+                              </IfcCartesianPoint>
+                              <IfcCartesianPoint type="IfcCartesianPoint">
+                                <coordinates>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="4.0"/>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-4.0"/>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                </coordinates>
+                              </IfcCartesianPoint>
+                              <IfcCartesianPoint type="IfcCartesianPoint">
+                                <coordinates>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="4.0"/>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="4.0"/>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                </coordinates>
+                              </IfcCartesianPoint>
+                              <IfcCartesianPoint type="IfcCartesianPoint">
+                                <coordinates>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="4.0"/>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="4.0"/>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="120.0"/>
+                                </coordinates>
+                              </IfcCartesianPoint>
+                              <IfcCartesianPoint type="IfcCartesianPoint">
+                                <coordinates>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="4.0"/>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-4.0"/>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="120.0"/>
+                                </coordinates>
+                              </IfcCartesianPoint>
+                              <IfcCartesianPoint type="IfcCartesianPoint">
+                                <coordinates>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="4.0"/>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="4.0"/>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                </coordinates>
+                              </IfcCartesianPoint>
+                              <IfcCartesianPoint type="IfcCartesianPoint">
+                                <coordinates>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-4.0"/>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="4.0"/>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                </coordinates>
+                              </IfcCartesianPoint>
+                              <IfcCartesianPoint type="IfcCartesianPoint">
+                                <coordinates>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="-4.0"/>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="4.0"/>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="120.0"/>
+                                </coordinates>
+                              </IfcCartesianPoint>
+                              <IfcCartesianPoint type="IfcCartesianPoint">
+                                <coordinates>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="4.0"/>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="4.0"/>
+                                  <IfcLengthMeasure type="IfcLengthMeasure" value="120.0"/>
+                                </coordinates>
+                              </IfcCartesianPoint>
+                            </coordList>
+                          </coordinates>
+                          <normals>
+                            <parameterValues>
+                              <IfcParameterValue type="IfcParameterValue" value="0.0"/>
+                              <IfcParameterValue type="IfcParameterValue" value="0.0"/>
+                              <IfcParameterValue type="IfcParameterValue" value="-1.0"/>
+                            </parameterValues>
+                            <parameterValues>
+                              <IfcParameterValue type="IfcParameterValue" value="0.0"/>
+                              <IfcParameterValue type="IfcParameterValue" value="0.0"/>
+                              <IfcParameterValue type="IfcParameterValue" value="-1.0"/>
+                            </parameterValues>
+                            <parameterValues>
+                              <IfcParameterValue type="IfcParameterValue" value="0.0"/>
+                              <IfcParameterValue type="IfcParameterValue" value="0.0"/>
+                              <IfcParameterValue type="IfcParameterValue" value="-1.0"/>
+                            </parameterValues>
+                            <parameterValues>
+                              <IfcParameterValue type="IfcParameterValue" value="0.0"/>
+                              <IfcParameterValue type="IfcParameterValue" value="0.0"/>
+                              <IfcParameterValue type="IfcParameterValue" value="-1.0"/>
+                            </parameterValues>
+                            <parameterValues>
+                              <IfcParameterValue type="IfcParameterValue" value="0.0"/>
+                              <IfcParameterValue type="IfcParameterValue" value="0.0"/>
+                              <IfcParameterValue type="IfcParameterValue" value="1.0"/>
+                            </parameterValues>
+                            <parameterValues>
+                              <IfcParameterValue type="IfcParameterValue" value="0.0"/>
+                              <IfcParameterValue type="IfcParameterValue" value="0.0"/>
+                              <IfcParameterValue type="IfcParameterValue" value="1.0"/>
+                            </parameterValues>
+                            <parameterValues>
+                              <IfcParameterValue type="IfcParameterValue" value="0.0"/>
+                              <IfcParameterValue type="IfcParameterValue" value="0.0"/>
+                              <IfcParameterValue type="IfcParameterValue" value="1.0"/>
+                            </parameterValues>
+                            <parameterValues>
+                              <IfcParameterValue type="IfcParameterValue" value="0.0"/>
+                              <IfcParameterValue type="IfcParameterValue" value="0.0"/>
+                              <IfcParameterValue type="IfcParameterValue" value="1.0"/>
+                            </parameterValues>
+                            <parameterValues>
+                              <IfcParameterValue type="IfcParameterValue" value="-1.0"/>
+                              <IfcParameterValue type="IfcParameterValue" value="0.0"/>
+                              <IfcParameterValue type="IfcParameterValue" value="0.0"/>
+                            </parameterValues>
+                            <parameterValues>
+                              <IfcParameterValue type="IfcParameterValue" value="-1.0"/>
+                              <IfcParameterValue type="IfcParameterValue" value="0.0"/>
+                              <IfcParameterValue type="IfcParameterValue" value="0.0"/>
+                            </parameterValues>
+                            <parameterValues>
+                              <IfcParameterValue type="IfcParameterValue" value="-1.0"/>
+                              <IfcParameterValue type="IfcParameterValue" value="0.0"/>
+                              <IfcParameterValue type="IfcParameterValue" value="0.0"/>
+                            </parameterValues>
+                            <parameterValues>
+                              <IfcParameterValue type="IfcParameterValue" value="-1.0"/>
+                              <IfcParameterValue type="IfcParameterValue" value="0.0"/>
+                              <IfcParameterValue type="IfcParameterValue" value="0.0"/>
+                            </parameterValues>
+                            <parameterValues>
+                              <IfcParameterValue type="IfcParameterValue" value="0.0"/>
+                              <IfcParameterValue type="IfcParameterValue" value="-1.0"/>
+                              <IfcParameterValue type="IfcParameterValue" value="0.0"/>
+                            </parameterValues>
+                            <parameterValues>
+                              <IfcParameterValue type="IfcParameterValue" value="0.0"/>
+                              <IfcParameterValue type="IfcParameterValue" value="-1.0"/>
+                              <IfcParameterValue type="IfcParameterValue" value="0.0"/>
+                            </parameterValues>
+                            <parameterValues>
+                              <IfcParameterValue type="IfcParameterValue" value="0.0"/>
+                              <IfcParameterValue type="IfcParameterValue" value="-1.0"/>
+                              <IfcParameterValue type="IfcParameterValue" value="0.0"/>
+                            </parameterValues>
+                            <parameterValues>
+                              <IfcParameterValue type="IfcParameterValue" value="0.0"/>
+                              <IfcParameterValue type="IfcParameterValue" value="-1.0"/>
+                              <IfcParameterValue type="IfcParameterValue" value="0.0"/>
+                            </parameterValues>
+                            <parameterValues>
+                              <IfcParameterValue type="IfcParameterValue" value="1.0"/>
+                              <IfcParameterValue type="IfcParameterValue" value="0.0"/>
+                              <IfcParameterValue type="IfcParameterValue" value="0.0"/>
+                            </parameterValues>
+                            <parameterValues>
+                              <IfcParameterValue type="IfcParameterValue" value="1.0"/>
+                              <IfcParameterValue type="IfcParameterValue" value="0.0"/>
+                              <IfcParameterValue type="IfcParameterValue" value="0.0"/>
+                            </parameterValues>
+                            <parameterValues>
+                              <IfcParameterValue type="IfcParameterValue" value="1.0"/>
+                              <IfcParameterValue type="IfcParameterValue" value="0.0"/>
+                              <IfcParameterValue type="IfcParameterValue" value="0.0"/>
+                            </parameterValues>
+                            <parameterValues>
+                              <IfcParameterValue type="IfcParameterValue" value="1.0"/>
+                              <IfcParameterValue type="IfcParameterValue" value="0.0"/>
+                              <IfcParameterValue type="IfcParameterValue" value="0.0"/>
+                            </parameterValues>
+                            <parameterValues>
+                              <IfcParameterValue type="IfcParameterValue" value="0.0"/>
+                              <IfcParameterValue type="IfcParameterValue" value="1.0"/>
+                              <IfcParameterValue type="IfcParameterValue" value="0.0"/>
+                            </parameterValues>
+                            <parameterValues>
+                              <IfcParameterValue type="IfcParameterValue" value="0.0"/>
+                              <IfcParameterValue type="IfcParameterValue" value="1.0"/>
+                              <IfcParameterValue type="IfcParameterValue" value="0.0"/>
+                            </parameterValues>
+                            <parameterValues>
+                              <IfcParameterValue type="IfcParameterValue" value="0.0"/>
+                              <IfcParameterValue type="IfcParameterValue" value="1.0"/>
+                              <IfcParameterValue type="IfcParameterValue" value="0.0"/>
+                            </parameterValues>
+                            <parameterValues>
+                              <IfcParameterValue type="IfcParameterValue" value="0.0"/>
+                              <IfcParameterValue type="IfcParameterValue" value="1.0"/>
+                              <IfcParameterValue type="IfcParameterValue" value="0.0"/>
+                            </parameterValues>
+                          </normals>
+                          <closed type="IfcBoolean" value="false"/>
+                          <coordIndex>
+                            <positiveIntegers>
+                              <IfcPositiveInteger type="IfcPositiveInteger" value="1"/>
+                              <IfcPositiveInteger type="IfcPositiveInteger" value="3"/>
+                              <IfcPositiveInteger type="IfcPositiveInteger" value="2"/>
+                            </positiveIntegers>
+                            <positiveIntegers>
+                              <IfcPositiveInteger type="IfcPositiveInteger" value="1"/>
+                              <IfcPositiveInteger type="IfcPositiveInteger" value="4"/>
+                              <IfcPositiveInteger type="IfcPositiveInteger" value="3"/>
+                            </positiveIntegers>
+                            <positiveIntegers>
+                              <IfcPositiveInteger type="IfcPositiveInteger" value="5"/>
+                              <IfcPositiveInteger type="IfcPositiveInteger" value="6"/>
+                              <IfcPositiveInteger type="IfcPositiveInteger" value="7"/>
+                            </positiveIntegers>
+                            <positiveIntegers>
+                              <IfcPositiveInteger type="IfcPositiveInteger" value="5"/>
+                              <IfcPositiveInteger type="IfcPositiveInteger" value="7"/>
+                              <IfcPositiveInteger type="IfcPositiveInteger" value="8"/>
+                            </positiveIntegers>
+                            <positiveIntegers>
+                              <IfcPositiveInteger type="IfcPositiveInteger" value="9"/>
+                              <IfcPositiveInteger type="IfcPositiveInteger" value="10"/>
+                              <IfcPositiveInteger type="IfcPositiveInteger" value="11"/>
+                            </positiveIntegers>
+                            <positiveIntegers>
+                              <IfcPositiveInteger type="IfcPositiveInteger" value="9"/>
+                              <IfcPositiveInteger type="IfcPositiveInteger" value="11"/>
+                              <IfcPositiveInteger type="IfcPositiveInteger" value="12"/>
+                            </positiveIntegers>
+                            <positiveIntegers>
+                              <IfcPositiveInteger type="IfcPositiveInteger" value="13"/>
+                              <IfcPositiveInteger type="IfcPositiveInteger" value="14"/>
+                              <IfcPositiveInteger type="IfcPositiveInteger" value="15"/>
+                            </positiveIntegers>
+                            <positiveIntegers>
+                              <IfcPositiveInteger type="IfcPositiveInteger" value="13"/>
+                              <IfcPositiveInteger type="IfcPositiveInteger" value="15"/>
+                              <IfcPositiveInteger type="IfcPositiveInteger" value="16"/>
+                            </positiveIntegers>
+                            <positiveIntegers>
+                              <IfcPositiveInteger type="IfcPositiveInteger" value="17"/>
+                              <IfcPositiveInteger type="IfcPositiveInteger" value="18"/>
+                              <IfcPositiveInteger type="IfcPositiveInteger" value="19"/>
+                            </positiveIntegers>
+                            <positiveIntegers>
+                              <IfcPositiveInteger type="IfcPositiveInteger" value="17"/>
+                              <IfcPositiveInteger type="IfcPositiveInteger" value="19"/>
+                              <IfcPositiveInteger type="IfcPositiveInteger" value="20"/>
+                            </positiveIntegers>
+                            <positiveIntegers>
+                              <IfcPositiveInteger type="IfcPositiveInteger" value="21"/>
+                              <IfcPositiveInteger type="IfcPositiveInteger" value="22"/>
+                              <IfcPositiveInteger type="IfcPositiveInteger" value="23"/>
+                            </positiveIntegers>
+                            <positiveIntegers>
+                              <IfcPositiveInteger type="IfcPositiveInteger" value="21"/>
+                              <IfcPositiveInteger type="IfcPositiveInteger" value="23"/>
+                              <IfcPositiveInteger type="IfcPositiveInteger" value="24"/>
+                            </positiveIntegers>
+                          </coordIndex>
+                        </IfcRepresentationItem>
+                      </items>
+                    </IfcRepresentation>
+                  </representations>
+                </representation>
+              </IfcProduct>
+            </relatedElements>
+          </IfcRelContainedInSpatialStructure>
+        </containsElements>
+      </IfcObjectDefinition>
+    </relatedObjects>
+  </isDecomposedBy>
+  <representationContexts>
+    <IfcRepresentationContext type="IfcGeometricRepresentationContext" globalId="8b8fca3b-2812-49c3-a4df-61f6f930d2ba">
+      <worldCoordinateSystem type="IfcAxis2Placement3D">
+        <location type="IfcCartesianPoint">
+          <coordinates>
+            <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+            <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+            <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+          </coordinates>
+        </location>
+      </worldCoordinateSystem>
+      <contextIdentifier type="IfcLabel" value="3D"/>
+      <contextType type="IfcLabel" value="Model"/>
+      <coordinateSpaceDimension type="IfcDimensionCount" value="3"/>
+      <precision type="IfcReal" value="1.0E-5"/>
+      <hasSubContexts>
+        <IfcGeometricRepresentationSubContext>a87c8440-1add-47b2-86fc-9d8892d5de11</IfcGeometricRepresentationSubContext>
+      </hasSubContexts>
+    </IfcRepresentationContext>
+  </representationContexts>
+  <unitsInContext>
+    <units>
+      <IfcUnit type="IfcConversionBasedUnit" globalId="80ed5c19-fec9-4763-b7bf-0ce50c5aa9d6">
+        <dimensions lengthExponent="1" massExponent="0" timeExponent="0" electricCurrentExponent="0" thermodynamicTemperatureExponent="0" amountOfSubstanceExponent="0" luminousIntensityExponent="0"/>
+        <unitType>LENGTHUNIT</unitType>
+        <name>inch</name>
+        <conversionFactor type="IfcMeasureWithUnit">
+          <valueComponent type="IfcLengthMeasure" value="0.0254"/>
+          <unitComponent type="IfcSIUnit" globalId="cefb7cf2-8d77-4a67-a16c-11ab2920f647">
+            <dimensions lengthExponent="1" massExponent="0" timeExponent="0" electricCurrentExponent="0" thermodynamicTemperatureExponent="0" amountOfSubstanceExponent="0" luminousIntensityExponent="0"/>
+            <unitType>LENGTHUNIT</unitType>
+            <name>METRE</name>
+          </unitComponent>
+        </conversionFactor>
+      </IfcUnit>
+    </units>
+  </unitsInContext>
+</IfcProject>
