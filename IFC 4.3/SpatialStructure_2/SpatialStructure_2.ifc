@@ -1,0 +1,51 @@
+ISO-10303-21;
+HEADER;
+FILE_DESCRIPTION(('ViewDefinition [Ifc4X3NotAssigned]'),'2;1');
+FILE_NAME(
+/* name */ 'AM_SpatialBreakdown.ifc',
+/* time_stamp */ '2020-11-10T14:59:41',
+/* author */ ('Sebastian Esser'),
+/* organization */ ('Unknown'),
+/* preprocessor_version */ 'GeometryGymIFC v0.1.3.0 by Geometry Gym Pty Ltd built 2020-11-05T03:11:46',
+/* originating_system */ 'ConsoleCreateSpatialBridgeStructure v1.0.0.0',
+/* authorization */ 'None');
+
+FILE_SCHEMA (('IFC4X3_RC2'));
+ENDSEC;
+
+DATA;
+#1= IFCCARTESIANPOINT((0.0,0.0,0.0));
+#2= IFCAXIS2PLACEMENT3D(#1,$,$);
+#3= IFCLOCALPLACEMENT($,#2);
+#4= IFCSITE('3aVxnycuTFhuaONkykPgUe',#10,'Sk\X2\00E4\X0\rholmen (Delomrade)',$,$,#3,$,$,$,$,$,$,$,$);
+#5= IFCPERSON('Sebastian Esser','Sebastian Esser',$,$,$,$,$,$);
+#6= IFCORGANIZATION($,'Unknown',$,$,$);
+#7= IFCPERSONANDORGANIZATION(#5,#6,$);
+#8= IFCAPPLICATION(#9,'0.1.3.0','ConsoleCreateSpatialBridgeStructure v1.0.0.0','ConsoleCreateSpatialBridgeStructure v1.0.0.0');
+#9= IFCORGANIZATION($,'Geometry Gym Pty Ltd',$,$,$);
+#10= IFCOWNERHISTORY(#7,#8,$,.ADDED.,1605016780,$,$,1605016780);
+#11= IFCPROJECT('04hBSiSzPC5fsYypg9Mn7y',#10,'E4 F\X2\00F6\X0\rbifart Stockholm (Program)',$,$,$,$,$,$);
+#12= IFCRELAGGREGATES('126DVi$Y1CQBQPJbmTLwOO',#10,$,$,#11,(#4));
+#13= IFCBRIDGE('3_8eV586P0muvFD5A3Fzqn',#10,$,$,$,$,$,$,$,$);
+#14= IFCRELAGGREGATES('1eBmiEUmT4AAaH4Sa1qai8',#10,$,$,#4,(#13));
+#23= IFCCARTESIANPOINT((0.0,0.0,0.0));
+#24= IFCAXIS2PLACEMENT3D(#23,$,$);
+#25= IFCLOCALPLACEMENT($,#24);
+#26= IFCFACILITYPART('2r6fGfMerF2OJ6dLEL409U',#10,'\X2\00F6\X0\verbyggnad (31--)',$,$,#25,$,$,$,IFCBRIDGEPARTTYPEENUM(.SUPERSTRUCTURE.),.VERTICAL.);
+#27= IFCRELAGGREGATES('3PW0X8qQvFm9ofrOQAdkBe',#10,$,$,#13,(#26,#31,#35,#39));
+#28= IFCCARTESIANPOINT((0.0,0.0,0.0));
+#29= IFCAXIS2PLACEMENT3D(#28,$,$);
+#30= IFCLOCALPLACEMENT($,#29);
+#31= IFCFACILITYPART('0fTB94WKX2dgrmqTEjB5J6',#10,'underbyggnad (12--)',$,$,#30,$,$,$,IFCBRIDGEPARTTYPEENUM(.SUBSTRUCTURE.),.VERTICAL.);
+#32= IFCCARTESIANPOINT((0.0,0.0,0.0));
+#33= IFCAXIS2PLACEMENT3D(#32,$,$);
+#34= IFCLOCALPLACEMENT($,#33);
+#35= IFCFACILITYPART('0fTB94WKX2dgrmqTEjB5J4',#10,'undergrund (11--)',$,$,#34,$,$,$,IFCBRIDGEPARTTYPEENUM(.FOUNDATION.),.VERTICAL.);
+#36= IFCCARTESIANPOINT((0.0,0.0,0.0));
+#37= IFCAXIS2PLACEMENT3D(#36,$,$);
+#38= IFCLOCALPLACEMENT($,#37);
+#39= IFCFACILITYPART('0i3NlGsbb3XRylMEwXSI1b',#10,'Anl\X2\00E4\X0\ggningskomplettering (..--)',$,$,#38,$,$,$,IFCFACILITYPARTCOMMONTYPEENUM(.BELOWGROUND.),.VERTICAL.);
+ENDSEC;
+
+END-ISO-10303-21;
+

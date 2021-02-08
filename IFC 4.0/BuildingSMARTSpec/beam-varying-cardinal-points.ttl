@@ -1,0 +1,1294 @@
+# baseURI: http://linkedbuildingdata.net/ifc/resources20200624_184152/
+# imports: http://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL
+
+@prefix ifc:  <http://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#> .
+@prefix inst:  <http://linkedbuildingdata.net/ifc/resources20200624_184152/> .
+@prefix list:  <https://w3id.org/list#> .
+@prefix express:  <https://w3id.org/express#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+
+inst:   rdf:type     owl:Ontology ;
+        owl:imports  ifc: .
+
+inst:IfcMaterialProfileSetUsage_256
+        rdf:type  ifc:IfcMaterialProfileSetUsage .
+
+inst:IfcMaterialProfileSet_206
+        rdf:type  ifc:IfcMaterialProfileSet .
+
+inst:IfcMaterialProfileSetUsage_256
+        ifc:forProfileSet_IfcMaterialProfileSetUsage  inst:IfcMaterialProfileSet_206 .
+
+inst:IfcCardinalPointReference_113
+        rdf:type            ifc:IfcCardinalPointReference ;
+        express:hasInteger  1 .
+
+inst:IfcMaterialProfileSetUsage_256
+        ifc:cardinalPoint_IfcMaterialProfileSetUsage  inst:IfcCardinalPointReference_113 .
+
+inst:IfcApplication_1
+        rdf:type  ifc:IfcApplication .
+
+inst:IfcOrganization_2
+        rdf:type  ifc:IfcOrganization .
+
+inst:IfcApplication_1
+        ifc:applicationDeveloper_IfcApplication  inst:IfcOrganization_2 .
+
+inst:IfcLabel_114  rdf:type  ifc:IfcLabel ;
+        express:hasString  "1.0.0.0" .
+
+inst:IfcApplication_1
+        ifc:version_IfcApplication  inst:IfcLabel_114 .
+
+inst:IfcLabel_115  rdf:type  ifc:IfcLabel ;
+        express:hasString  "ggRhinoIFC - Geometry Gym Plug-in for Rhino3d" .
+
+inst:IfcApplication_1
+        ifc:applicationFullName_IfcApplication  inst:IfcLabel_115 .
+
+inst:IfcIdentifier_116
+        rdf:type           ifc:IfcIdentifier ;
+        express:hasString  "ggRhinoIFC" .
+
+inst:IfcApplication_1
+        ifc:applicationIdentifier_IfcApplication  inst:IfcIdentifier_116 .
+
+inst:IfcRelAssociatesMaterial_257
+        rdf:type  ifc:IfcRelAssociatesMaterial .
+
+inst:IfcGloballyUniqueId_117
+        rdf:type           ifc:IfcGloballyUniqueId ;
+        express:hasString  "0L7uiI$4LBd9kW2io0EpWt" .
+
+inst:IfcRelAssociatesMaterial_257
+        ifc:globalId_IfcRoot  inst:IfcGloballyUniqueId_117 .
+
+inst:IfcLabel_118  rdf:type  ifc:IfcLabel ;
+        express:hasString  "MatAssoc" .
+
+inst:IfcRelAssociatesMaterial_257
+        ifc:name_IfcRoot  inst:IfcLabel_118 .
+
+inst:IfcText_119  rdf:type  ifc:IfcText ;
+        express:hasString  "Material Associates" .
+
+inst:IfcRelAssociatesMaterial_257
+        ifc:description_IfcRoot  inst:IfcText_119 .
+
+inst:IfcBeamStandardCase_250
+        rdf:type  ifc:IfcBeamStandardCase .
+
+inst:IfcRelAssociatesMaterial_257
+        ifc:relatedObjects_IfcRelAssociates  inst:IfcBeamStandardCase_250 ;
+        ifc:relatingMaterial_IfcRelAssociatesMaterial  inst:IfcMaterialProfileSetUsage_256 .
+
+inst:IfcLabel_120  rdf:type  ifc:IfcLabel ;
+        express:hasString  "Geometry Gym Pty Ltd" .
+
+inst:IfcOrganization_2
+        ifc:name_IfcOrganization  inst:IfcLabel_120 .
+
+inst:IfcCartesianPoint_258
+        rdf:type  ifc:IfcCartesianPoint .
+
+inst:IfcLengthMeasure_List_121
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcCartesianPoint_258
+        ifc:coordinates_IfcCartesianPoint  inst:IfcLengthMeasure_List_121 .
+
+inst:IfcLengthMeasure_List_122
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_123
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_124
+        rdf:type           ifc:IfcLengthMeasure ;
+        express:hasDouble  "0.0"^^xsd:double .
+
+inst:IfcLengthMeasure_List_121
+        list:hasContents  inst:IfcLengthMeasure_124 ;
+        list:hasNext      inst:IfcLengthMeasure_List_122 .
+
+inst:IfcLengthMeasure_List_122
+        list:hasContents  inst:IfcLengthMeasure_124 ;
+        list:hasNext      inst:IfcLengthMeasure_List_123 .
+
+inst:IfcLengthMeasure_List_123
+        list:hasContents  inst:IfcLengthMeasure_124 .
+
+inst:IfcPersonAndOrganization_3
+        rdf:type  ifc:IfcPersonAndOrganization .
+
+inst:IfcPerson_4  rdf:type  ifc:IfcPerson .
+
+inst:IfcPersonAndOrganization_3
+        ifc:thePerson_IfcPersonAndOrganization  inst:IfcPerson_4 ;
+        ifc:theOrganization_IfcPersonAndOrganization  inst:IfcOrganization_2 .
+
+inst:IfcCartesianPoint_259
+        rdf:type  ifc:IfcCartesianPoint .
+
+inst:IfcLengthMeasure_List_125
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcCartesianPoint_259
+        ifc:coordinates_IfcCartesianPoint  inst:IfcLengthMeasure_List_125 .
+
+inst:IfcLengthMeasure_List_126
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_127
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_125
+        list:hasContents  inst:IfcLengthMeasure_124 ;
+        list:hasNext      inst:IfcLengthMeasure_List_126 .
+
+inst:IfcLengthMeasure_List_126
+        list:hasContents  inst:IfcLengthMeasure_124 ;
+        list:hasNext      inst:IfcLengthMeasure_List_127 .
+
+inst:IfcLengthMeasure_128
+        rdf:type           ifc:IfcLengthMeasure ;
+        express:hasDouble  "1000.0"^^xsd:double .
+
+inst:IfcLengthMeasure_List_127
+        list:hasContents  inst:IfcLengthMeasure_128 .
+
+inst:IfcIdentifier_129
+        rdf:type           ifc:IfcIdentifier ;
+        express:hasString  "Jon" .
+
+inst:IfcPerson_4  ifc:identification_IfcPerson  inst:IfcIdentifier_129 ;
+        ifc:familyName_IfcPerson      inst:IfcIdentifier_129 .
+
+inst:IfcPolyline_260  rdf:type  ifc:IfcPolyline .
+
+inst:IfcCartesianPoint_List_130
+        rdf:type  ifc:IfcCartesianPoint_List .
+
+inst:IfcPolyline_260  ifc:points_IfcPolyline  inst:IfcCartesianPoint_List_130 .
+
+inst:IfcCartesianPoint_List_131
+        rdf:type  ifc:IfcCartesianPoint_List .
+
+inst:IfcCartesianPoint_List_130
+        list:hasContents  inst:IfcCartesianPoint_258 ;
+        list:hasNext      inst:IfcCartesianPoint_List_131 .
+
+inst:IfcCartesianPoint_List_131
+        list:hasContents  inst:IfcCartesianPoint_259 .
+
+inst:IfcShapeRepresentation_261
+        rdf:type  ifc:IfcShapeRepresentation .
+
+inst:IfcGeometricRepresentationSubContext_11
+        rdf:type  ifc:IfcGeometricRepresentationSubContext .
+
+inst:IfcShapeRepresentation_261
+        ifc:contextOfItems_IfcRepresentation  inst:IfcGeometricRepresentationSubContext_11 .
+
+inst:IfcLabel_132  rdf:type  ifc:IfcLabel ;
+        express:hasString  "Axis" .
+
+inst:IfcShapeRepresentation_261
+        ifc:representationIdentifier_IfcRepresentation  inst:IfcLabel_132 .
+
+inst:IfcLabel_133  rdf:type  ifc:IfcLabel ;
+        express:hasString  "Curve3D" .
+
+inst:IfcShapeRepresentation_261
+        ifc:representationType_IfcRepresentation  inst:IfcLabel_133 ;
+        ifc:items_IfcRepresentation  inst:IfcPolyline_260 .
+
+inst:IfcOwnerHistory_6
+        rdf:type                        ifc:IfcOwnerHistory ;
+        ifc:owningUser_IfcOwnerHistory  inst:IfcPersonAndOrganization_3 ;
+        ifc:owningApplication_IfcOwnerHistory  inst:IfcApplication_1 ;
+        ifc:changeAction_IfcOwnerHistory  ifc:ADDED .
+
+inst:IfcTimeStamp_134
+        rdf:type            ifc:IfcTimeStamp ;
+        express:hasInteger  1418084874 .
+
+inst:IfcOwnerHistory_6
+        ifc:lastModifiedDate_IfcOwnerHistory  inst:IfcTimeStamp_134 ;
+        ifc:creationDate_IfcOwnerHistory  inst:IfcTimeStamp_134 .
+
+inst:IfcDirection_262
+        rdf:type  ifc:IfcDirection .
+
+inst:IfcReal_List_135
+        rdf:type  ifc:IfcReal_List .
+
+inst:IfcDirection_262
+        ifc:directionRatios_IfcDirection  inst:IfcReal_List_135 .
+
+inst:IfcReal_List_136
+        rdf:type  ifc:IfcReal_List .
+
+inst:IfcReal_List_137
+        rdf:type  ifc:IfcReal_List .
+
+inst:IfcReal_List_135
+        list:hasContents  inst:IfcLengthMeasure_124 ;
+        list:hasNext      inst:IfcReal_List_136 .
+
+inst:IfcReal_List_136
+        list:hasContents  inst:IfcLengthMeasure_124 ;
+        list:hasNext      inst:IfcReal_List_137 .
+
+inst:IfcReal_138  rdf:type  ifc:IfcReal ;
+        express:hasDouble  "1.0"^^xsd:double .
+
+inst:IfcReal_List_137
+        list:hasContents  inst:IfcReal_138 .
+
+inst:IfcGeometricRepresentationContext_7
+        rdf:type  ifc:IfcGeometricRepresentationContext .
+
+inst:IfcLabel_139  rdf:type  ifc:IfcLabel ;
+        express:hasString  "Model" .
+
+inst:IfcGeometricRepresentationContext_7
+        ifc:contextType_IfcRepresentationContext  inst:IfcLabel_139 .
+
+inst:IfcDimensionCount_140
+        rdf:type            ifc:IfcDimensionCount ;
+        express:hasInteger  3 .
+
+inst:IfcGeometricRepresentationContext_7
+        ifc:coordinateSpaceDimension_IfcGeometricRepresentationContext  inst:IfcDimensionCount_140 .
+
+inst:IfcReal_141  rdf:type  ifc:IfcReal ;
+        express:hasDouble  "0.0001"^^xsd:double .
+
+inst:IfcGeometricRepresentationContext_7
+        ifc:precision_IfcGeometricRepresentationContext  inst:IfcReal_141 .
+
+inst:IfcAxis2Placement3D_8
+        rdf:type  ifc:IfcAxis2Placement3D .
+
+inst:IfcGeometricRepresentationContext_7
+        ifc:worldCoordinateSystem_IfcGeometricRepresentationContext  inst:IfcAxis2Placement3D_8 .
+
+inst:IfcDirection_10  rdf:type  ifc:IfcDirection .
+
+inst:IfcGeometricRepresentationContext_7
+        ifc:trueNorth_IfcGeometricRepresentationContext  inst:IfcDirection_10 .
+
+inst:IfcExtrudedAreaSolid_263
+        rdf:type  ifc:IfcExtrudedAreaSolid .
+
+inst:IfcIShapeProfileDef_203
+        rdf:type  ifc:IfcIShapeProfileDef .
+
+inst:IfcExtrudedAreaSolid_263
+        ifc:sweptArea_IfcSweptAreaSolid  inst:IfcIShapeProfileDef_203 .
+
+inst:IfcAxis2Placement3D_264
+        rdf:type  ifc:IfcAxis2Placement3D .
+
+inst:IfcExtrudedAreaSolid_263
+        ifc:position_IfcSweptAreaSolid  inst:IfcAxis2Placement3D_264 ;
+        ifc:extrudedDirection_IfcExtrudedAreaSolid  inst:IfcDirection_262 ;
+        ifc:depth_IfcExtrudedAreaSolid  inst:IfcLengthMeasure_128 .
+
+inst:IfcAxis2Placement3D_8
+        ifc:location_IfcPlacement  inst:IfcCartesianPoint_258 .
+
+inst:IfcCartesianPoint_265
+        rdf:type  ifc:IfcCartesianPoint .
+
+inst:IfcAxis2Placement3D_264
+        ifc:location_IfcPlacement     inst:IfcCartesianPoint_265 ;
+        ifc:axis_IfcAxis2Placement3D  inst:IfcDirection_262 .
+
+inst:IfcDirection_267
+        rdf:type  ifc:IfcDirection .
+
+inst:IfcAxis2Placement3D_264
+        ifc:refDirection_IfcAxis2Placement3D  inst:IfcDirection_267 .
+
+inst:IfcLengthMeasure_List_142
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcCartesianPoint_265
+        ifc:coordinates_IfcCartesianPoint  inst:IfcLengthMeasure_List_142 .
+
+inst:IfcLengthMeasure_List_143
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_144
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_145
+        rdf:type           ifc:IfcLengthMeasure ;
+        express:hasDouble  "-50.0"^^xsd:double .
+
+inst:IfcLengthMeasure_List_142
+        list:hasContents  inst:IfcLengthMeasure_145 ;
+        list:hasNext      inst:IfcLengthMeasure_List_143 .
+
+inst:IfcLengthMeasure_146
+        rdf:type           ifc:IfcLengthMeasure ;
+        express:hasDouble  "100.0"^^xsd:double .
+
+inst:IfcLengthMeasure_List_143
+        list:hasContents  inst:IfcLengthMeasure_146 ;
+        list:hasNext      inst:IfcLengthMeasure_List_144 .
+
+inst:IfcLengthMeasure_List_144
+        list:hasContents  inst:IfcLengthMeasure_124 .
+
+inst:IfcReal_List_147
+        rdf:type  ifc:IfcReal_List .
+
+inst:IfcDirection_10  ifc:directionRatios_IfcDirection  inst:IfcReal_List_147 .
+
+inst:IfcReal_List_148
+        rdf:type  ifc:IfcReal_List .
+
+inst:IfcReal_List_147
+        list:hasContents  inst:IfcLengthMeasure_124 ;
+        list:hasNext      inst:IfcReal_List_148 .
+
+inst:IfcReal_List_148
+        list:hasContents  inst:IfcReal_138 .
+
+inst:IfcGeometricRepresentationSubContext_11
+        ifc:contextIdentifier_IfcRepresentationContext  inst:IfcLabel_132 ;
+        ifc:contextType_IfcRepresentationContext  inst:IfcLabel_139 ;
+        ifc:parentContext_IfcGeometricRepresentationSubContext  inst:IfcGeometricRepresentationContext_7 ;
+        ifc:targetView_IfcGeometricRepresentationSubContext  ifc:MODEL_VIEW .
+
+inst:IfcReal_List_149
+        rdf:type  ifc:IfcReal_List .
+
+inst:IfcDirection_267
+        ifc:directionRatios_IfcDirection  inst:IfcReal_List_149 .
+
+inst:IfcReal_List_150
+        rdf:type  ifc:IfcReal_List .
+
+inst:IfcReal_List_151
+        rdf:type  ifc:IfcReal_List .
+
+inst:IfcReal_List_149
+        list:hasContents  inst:IfcReal_138 ;
+        list:hasNext      inst:IfcReal_List_150 .
+
+inst:IfcReal_List_150
+        list:hasContents  inst:IfcLengthMeasure_124 ;
+        list:hasNext      inst:IfcReal_List_151 .
+
+inst:IfcReal_List_151
+        list:hasContents  inst:IfcLengthMeasure_124 .
+
+inst:IfcGeometricRepresentationSubContext_12
+        rdf:type  ifc:IfcGeometricRepresentationSubContext .
+
+inst:IfcLabel_152  rdf:type  ifc:IfcLabel ;
+        express:hasString  "Body" .
+
+inst:IfcGeometricRepresentationSubContext_12
+        ifc:contextIdentifier_IfcRepresentationContext  inst:IfcLabel_152 ;
+        ifc:contextType_IfcRepresentationContext  inst:IfcLabel_139 ;
+        ifc:parentContext_IfcGeometricRepresentationSubContext  inst:IfcGeometricRepresentationContext_7 ;
+        ifc:targetView_IfcGeometricRepresentationSubContext  ifc:MODEL_VIEW .
+
+inst:IfcShapeRepresentation_268
+        rdf:type  ifc:IfcShapeRepresentation ;
+        ifc:contextOfItems_IfcRepresentation  inst:IfcGeometricRepresentationSubContext_12 ;
+        ifc:representationIdentifier_IfcRepresentation  inst:IfcLabel_152 .
+
+inst:IfcLabel_153  rdf:type  ifc:IfcLabel ;
+        express:hasString  "SweptSolid" .
+
+inst:IfcShapeRepresentation_268
+        ifc:representationType_IfcRepresentation  inst:IfcLabel_153 ;
+        ifc:items_IfcRepresentation  inst:IfcExtrudedAreaSolid_263 .
+
+inst:IfcGeometricRepresentationContext_13
+        rdf:type  ifc:IfcGeometricRepresentationContext ;
+        ifc:contextType_IfcRepresentationContext  inst:IfcLabel_139 ;
+        ifc:coordinateSpaceDimension_IfcGeometricRepresentationContext  inst:IfcDimensionCount_140 ;
+        ifc:precision_IfcGeometricRepresentationContext  inst:IfcReal_141 ;
+        ifc:worldCoordinateSystem_IfcGeometricRepresentationContext  inst:IfcAxis2Placement3D_8 ;
+        ifc:trueNorth_IfcGeometricRepresentationContext  inst:IfcDirection_10 .
+
+inst:IfcProductDefinitionShape_269
+        rdf:type  ifc:IfcProductDefinitionShape .
+
+inst:IfcRepresentation_List_154
+        rdf:type  ifc:IfcRepresentation_List .
+
+inst:IfcProductDefinitionShape_269
+        ifc:representations_IfcProductRepresentation  inst:IfcRepresentation_List_154 .
+
+inst:IfcRepresentation_List_155
+        rdf:type  ifc:IfcRepresentation_List .
+
+inst:IfcRepresentation_List_154
+        list:hasContents  inst:IfcShapeRepresentation_261 ;
+        list:hasNext      inst:IfcRepresentation_List_155 .
+
+inst:IfcRepresentation_List_155
+        list:hasContents  inst:IfcShapeRepresentation_268 .
+
+inst:IfcBeamStandardCase_270
+        rdf:type  ifc:IfcBeamStandardCase .
+
+inst:IfcGloballyUniqueId_156
+        rdf:type           ifc:IfcGloballyUniqueId ;
+        express:hasString  "3QKYtgM_1EtekuZgGn_XdM" .
+
+inst:IfcBeamStandardCase_270
+        ifc:globalId_IfcRoot  inst:IfcGloballyUniqueId_156 .
+
+inst:IfcLabel_157  rdf:type  ifc:IfcLabel ;
+        express:hasString  "TopRight" .
+
+inst:IfcBeamStandardCase_270
+        ifc:name_IfcRoot  inst:IfcLabel_157 .
+
+inst:IfcLocalPlacement_271
+        rdf:type  ifc:IfcLocalPlacement .
+
+inst:IfcBeamStandardCase_270
+        ifc:objectPlacement_IfcProduct  inst:IfcLocalPlacement_271 .
+
+inst:IfcProductDefinitionShape_289
+        rdf:type  ifc:IfcProductDefinitionShape .
+
+inst:IfcBeamStandardCase_270
+        ifc:representation_IfcProduct  inst:IfcProductDefinitionShape_289 .
+
+inst:IfcAxis2Placement3D_272
+        rdf:type  ifc:IfcAxis2Placement3D .
+
+inst:IfcLocalPlacement_271
+        ifc:relativePlacement_IfcLocalPlacement  inst:IfcAxis2Placement3D_272 .
+
+inst:IfcCartesianPoint_273
+        rdf:type  ifc:IfcCartesianPoint .
+
+inst:IfcAxis2Placement3D_272
+        ifc:location_IfcPlacement  inst:IfcCartesianPoint_273 .
+
+inst:IfcDirection_274
+        rdf:type  ifc:IfcDirection .
+
+inst:IfcAxis2Placement3D_272
+        ifc:axis_IfcAxis2Placement3D  inst:IfcDirection_274 .
+
+inst:IfcDirection_275
+        rdf:type  ifc:IfcDirection .
+
+inst:IfcAxis2Placement3D_272
+        ifc:refDirection_IfcAxis2Placement3D  inst:IfcDirection_275 .
+
+inst:IfcLengthMeasure_List_158
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcCartesianPoint_273
+        ifc:coordinates_IfcCartesianPoint  inst:IfcLengthMeasure_List_158 .
+
+inst:IfcLengthMeasure_List_159
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_160
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_161
+        rdf:type           ifc:IfcLengthMeasure ;
+        express:hasDouble  "500.0"^^xsd:double .
+
+inst:IfcLengthMeasure_List_158
+        list:hasContents  inst:IfcLengthMeasure_161 ;
+        list:hasNext      inst:IfcLengthMeasure_List_159 .
+
+inst:IfcLengthMeasure_List_159
+        list:hasContents  inst:IfcLengthMeasure_124 ;
+        list:hasNext      inst:IfcLengthMeasure_List_160 .
+
+inst:IfcLengthMeasure_List_160
+        list:hasContents  inst:IfcLengthMeasure_124 .
+
+inst:IfcReal_List_162
+        rdf:type  ifc:IfcReal_List .
+
+inst:IfcDirection_274
+        ifc:directionRatios_IfcDirection  inst:IfcReal_List_162 .
+
+inst:IfcReal_List_163
+        rdf:type  ifc:IfcReal_List .
+
+inst:IfcReal_List_164
+        rdf:type  ifc:IfcReal_List .
+
+inst:IfcReal_List_162
+        list:hasContents  inst:IfcLengthMeasure_124 ;
+        list:hasNext      inst:IfcReal_List_163 .
+
+inst:IfcReal_List_163
+        list:hasContents  inst:IfcReal_138 ;
+        list:hasNext      inst:IfcReal_List_164 .
+
+inst:IfcReal_List_164
+        list:hasContents  inst:IfcLengthMeasure_124 .
+
+inst:IfcReal_List_165
+        rdf:type  ifc:IfcReal_List .
+
+inst:IfcDirection_275
+        ifc:directionRatios_IfcDirection  inst:IfcReal_List_165 .
+
+inst:IfcReal_List_166
+        rdf:type  ifc:IfcReal_List .
+
+inst:IfcReal_List_167
+        rdf:type  ifc:IfcReal_List .
+
+inst:IfcReal_168  rdf:type  ifc:IfcReal ;
+        express:hasDouble  "-1.0"^^xsd:double .
+
+inst:IfcReal_List_165
+        list:hasContents  inst:IfcReal_168 ;
+        list:hasNext      inst:IfcReal_List_166 .
+
+inst:IfcReal_List_166
+        list:hasContents  inst:IfcLengthMeasure_124 ;
+        list:hasNext      inst:IfcReal_List_167 .
+
+inst:IfcReal_List_167
+        list:hasContents  inst:IfcLengthMeasure_124 .
+
+inst:IfcMaterialProfileSetUsage_276
+        rdf:type  ifc:IfcMaterialProfileSetUsage ;
+        ifc:forProfileSet_IfcMaterialProfileSetUsage  inst:IfcMaterialProfileSet_206 .
+
+inst:IfcCardinalPointReference_169
+        rdf:type            ifc:IfcCardinalPointReference ;
+        express:hasInteger  9 .
+
+inst:IfcMaterialProfileSetUsage_276
+        ifc:cardinalPoint_IfcMaterialProfileSetUsage  inst:IfcCardinalPointReference_169 .
+
+inst:IfcRelAssociatesMaterial_277
+        rdf:type  ifc:IfcRelAssociatesMaterial .
+
+inst:IfcGloballyUniqueId_170
+        rdf:type           ifc:IfcGloballyUniqueId ;
+        express:hasString  "3g$0sYwCT7XOlrNjVbpWgs" .
+
+inst:IfcRelAssociatesMaterial_277
+        ifc:globalId_IfcRoot     inst:IfcGloballyUniqueId_170 ;
+        ifc:name_IfcRoot         inst:IfcLabel_118 ;
+        ifc:description_IfcRoot  inst:IfcText_119 ;
+        ifc:relatedObjects_IfcRelAssociates  inst:IfcBeamStandardCase_270 ;
+        ifc:relatingMaterial_IfcRelAssociatesMaterial  inst:IfcMaterialProfileSetUsage_276 .
+
+inst:IfcPolyline_280  rdf:type  ifc:IfcPolyline .
+
+inst:IfcCartesianPoint_List_171
+        rdf:type  ifc:IfcCartesianPoint_List .
+
+inst:IfcPolyline_280  ifc:points_IfcPolyline  inst:IfcCartesianPoint_List_171 .
+
+inst:IfcCartesianPoint_List_172
+        rdf:type  ifc:IfcCartesianPoint_List .
+
+inst:IfcCartesianPoint_List_171
+        list:hasContents  inst:IfcCartesianPoint_258 ;
+        list:hasNext      inst:IfcCartesianPoint_List_172 .
+
+inst:IfcCartesianPoint_List_172
+        list:hasContents  inst:IfcCartesianPoint_259 .
+
+inst:IfcShapeRepresentation_281
+        rdf:type                     ifc:IfcShapeRepresentation ;
+        ifc:contextOfItems_IfcRepresentation  inst:IfcGeometricRepresentationSubContext_11 ;
+        ifc:representationIdentifier_IfcRepresentation  inst:IfcLabel_132 ;
+        ifc:representationType_IfcRepresentation  inst:IfcLabel_133 ;
+        ifc:items_IfcRepresentation  inst:IfcPolyline_280 .
+
+inst:IfcExtrudedAreaSolid_283
+        rdf:type  ifc:IfcExtrudedAreaSolid ;
+        ifc:sweptArea_IfcSweptAreaSolid  inst:IfcIShapeProfileDef_203 .
+
+inst:IfcAxis2Placement3D_284
+        rdf:type  ifc:IfcAxis2Placement3D .
+
+inst:IfcExtrudedAreaSolid_283
+        ifc:position_IfcSweptAreaSolid  inst:IfcAxis2Placement3D_284 ;
+        ifc:extrudedDirection_IfcExtrudedAreaSolid  inst:IfcDirection_262 ;
+        ifc:depth_IfcExtrudedAreaSolid  inst:IfcLengthMeasure_128 .
+
+inst:IfcCartesianPoint_285
+        rdf:type  ifc:IfcCartesianPoint .
+
+inst:IfcAxis2Placement3D_284
+        ifc:location_IfcPlacement     inst:IfcCartesianPoint_285 ;
+        ifc:axis_IfcAxis2Placement3D  inst:IfcDirection_262 ;
+        ifc:refDirection_IfcAxis2Placement3D  inst:IfcDirection_267 .
+
+inst:IfcLengthMeasure_List_173
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcCartesianPoint_285
+        ifc:coordinates_IfcCartesianPoint  inst:IfcLengthMeasure_List_173 .
+
+inst:IfcLengthMeasure_List_174
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_175
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_176
+        rdf:type           ifc:IfcLengthMeasure ;
+        express:hasDouble  "50.0"^^xsd:double .
+
+inst:IfcLengthMeasure_List_173
+        list:hasContents  inst:IfcLengthMeasure_176 ;
+        list:hasNext      inst:IfcLengthMeasure_List_174 .
+
+inst:IfcLengthMeasure_177
+        rdf:type           ifc:IfcLengthMeasure ;
+        express:hasDouble  "-100.0"^^xsd:double .
+
+inst:IfcLengthMeasure_List_174
+        list:hasContents  inst:IfcLengthMeasure_177 ;
+        list:hasNext      inst:IfcLengthMeasure_List_175 .
+
+inst:IfcLengthMeasure_List_175
+        list:hasContents  inst:IfcLengthMeasure_124 .
+
+inst:IfcShapeRepresentation_288
+        rdf:type                     ifc:IfcShapeRepresentation ;
+        ifc:contextOfItems_IfcRepresentation  inst:IfcGeometricRepresentationSubContext_12 ;
+        ifc:representationIdentifier_IfcRepresentation  inst:IfcLabel_152 ;
+        ifc:representationType_IfcRepresentation  inst:IfcLabel_153 ;
+        ifc:items_IfcRepresentation  inst:IfcExtrudedAreaSolid_283 .
+
+inst:IfcRepresentation_List_178
+        rdf:type  ifc:IfcRepresentation_List .
+
+inst:IfcProductDefinitionShape_289
+        ifc:representations_IfcProductRepresentation  inst:IfcRepresentation_List_178 .
+
+inst:IfcRepresentation_List_179
+        rdf:type  ifc:IfcRepresentation_List .
+
+inst:IfcRepresentation_List_178
+        list:hasContents  inst:IfcShapeRepresentation_281 ;
+        list:hasNext      inst:IfcRepresentation_List_179 .
+
+inst:IfcRepresentation_List_179
+        list:hasContents  inst:IfcShapeRepresentation_288 .
+
+inst:IfcBuilding_50  rdf:type  ifc:IfcBuilding .
+
+inst:IfcGloballyUniqueId_180
+        rdf:type           ifc:IfcGloballyUniqueId ;
+        express:hasString  "0x9l_UUnnDiwi3RBxSvXhq" .
+
+inst:IfcBuilding_50  ifc:globalId_IfcRoot  inst:IfcGloballyUniqueId_180 .
+
+inst:IfcLabel_181  rdf:type  ifc:IfcLabel ;
+        express:hasString  "IfcBuilding" .
+
+inst:IfcBuilding_50  ifc:name_IfcRoot  inst:IfcLabel_181 .
+
+inst:IfcLocalPlacement_51
+        rdf:type  ifc:IfcLocalPlacement .
+
+inst:IfcBuilding_50  ifc:objectPlacement_IfcProduct  inst:IfcLocalPlacement_51 ;
+        ifc:compositionType_IfcSpatialStructureElement  ifc:ELEMENT .
+
+inst:IfcPostalAddress_57
+        rdf:type  ifc:IfcPostalAddress .
+
+inst:IfcBuilding_50  ifc:buildingAddress_IfcBuilding  inst:IfcPostalAddress_57 .
+
+inst:IfcAxis2Placement3D_52
+        rdf:type  ifc:IfcAxis2Placement3D .
+
+inst:IfcLocalPlacement_51
+        ifc:relativePlacement_IfcLocalPlacement  inst:IfcAxis2Placement3D_52 .
+
+inst:IfcAxis2Placement3D_52
+        ifc:location_IfcPlacement  inst:IfcCartesianPoint_258 .
+
+inst:IfcRelContainedInSpatialStructure_54
+        rdf:type  ifc:IfcRelContainedInSpatialStructure .
+
+inst:IfcGloballyUniqueId_182
+        rdf:type           ifc:IfcGloballyUniqueId ;
+        express:hasString  "2TNzCy3Wb2mPn9JP_Wlh0z" .
+
+inst:IfcRelContainedInSpatialStructure_54
+        ifc:globalId_IfcRoot  inst:IfcGloballyUniqueId_182 .
+
+inst:IfcLabel_183  rdf:type  ifc:IfcLabel ;
+        express:hasString  "Building" .
+
+inst:IfcRelContainedInSpatialStructure_54
+        ifc:name_IfcRoot  inst:IfcLabel_183 .
+
+inst:IfcText_184  rdf:type  ifc:IfcText ;
+        express:hasString  "Building Container for Elements" .
+
+inst:IfcRelContainedInSpatialStructure_54
+        ifc:description_IfcRoot  inst:IfcText_184 .
+
+inst:IfcBeamStandardCase_210
+        rdf:type  ifc:IfcBeamStandardCase .
+
+inst:IfcRelContainedInSpatialStructure_54
+        ifc:relatedElements_IfcRelContainedInSpatialStructure  inst:IfcBeamStandardCase_210 .
+
+inst:IfcBeamStandardCase_230
+        rdf:type  ifc:IfcBeamStandardCase .
+
+inst:IfcRelContainedInSpatialStructure_54
+        ifc:relatedElements_IfcRelContainedInSpatialStructure  inst:IfcBeamStandardCase_230 ;
+        ifc:relatedElements_IfcRelContainedInSpatialStructure  inst:IfcBeamStandardCase_250 ;
+        ifc:relatedElements_IfcRelContainedInSpatialStructure  inst:IfcBeamStandardCase_270 ;
+        ifc:relatingStructure_IfcRelContainedInSpatialStructure  inst:IfcBuilding_50 .
+
+inst:IfcLabel_185  rdf:type  ifc:IfcLabel ;
+        express:hasString  "Unknown" .
+
+inst:IfcPostalAddress_57
+        ifc:region_IfcPostalAddress  inst:IfcLabel_185 .
+
+inst:IfcProject_100  rdf:type  ifc:IfcProject .
+
+inst:IfcGloballyUniqueId_186
+        rdf:type           ifc:IfcGloballyUniqueId ;
+        express:hasString  "01S2tl1M58lxKZa_6Xi$RG" .
+
+inst:IfcProject_100  ifc:globalId_IfcRoot  inst:IfcGloballyUniqueId_186 ;
+        ifc:ownerHistory_IfcRoot  inst:IfcOwnerHistory_6 .
+
+inst:IfcLabel_187  rdf:type  ifc:IfcLabel ;
+        express:hasString  "IfcProject" .
+
+inst:IfcProject_100  ifc:name_IfcRoot  inst:IfcLabel_187 ;
+        ifc:longName_IfcContext  inst:IfcLabel_187 .
+
+inst:IfcLabel_188  rdf:type  ifc:IfcLabel ;
+        express:hasString  "" .
+
+inst:IfcProject_100  ifc:phase_IfcContext  inst:IfcLabel_188 ;
+        ifc:representationContexts_IfcContext  inst:IfcGeometricRepresentationContext_13 .
+
+inst:IfcUnitAssignment_101
+        rdf:type  ifc:IfcUnitAssignment .
+
+inst:IfcProject_100  ifc:unitsInContext_IfcContext  inst:IfcUnitAssignment_101 .
+
+inst:IfcSIUnit_102  rdf:type  ifc:IfcSIUnit .
+
+inst:IfcUnitAssignment_101
+        ifc:units_IfcUnitAssignment  inst:IfcSIUnit_102 .
+
+inst:IfcSIUnit_103  rdf:type  ifc:IfcSIUnit .
+
+inst:IfcUnitAssignment_101
+        ifc:units_IfcUnitAssignment  inst:IfcSIUnit_103 .
+
+inst:IfcSIUnit_104  rdf:type  ifc:IfcSIUnit .
+
+inst:IfcUnitAssignment_101
+        ifc:units_IfcUnitAssignment  inst:IfcSIUnit_104 .
+
+inst:IfcSIUnit_102  ifc:unitType_IfcNamedUnit  ifc:LENGTHUNIT ;
+        ifc:prefix_IfcSIUnit       ifc:MILLI ;
+        ifc:name_IfcSIUnit         ifc:METRE .
+
+inst:IfcSIUnit_103  ifc:unitType_IfcNamedUnit  ifc:PLANEANGLEUNIT ;
+        ifc:name_IfcSIUnit         ifc:RADIAN .
+
+inst:IfcSIUnit_104  ifc:unitType_IfcNamedUnit  ifc:TIMEUNIT ;
+        ifc:name_IfcSIUnit         ifc:SECOND .
+
+inst:IfcRelAggregates_105
+        rdf:type  ifc:IfcRelAggregates .
+
+inst:IfcGloballyUniqueId_189
+        rdf:type           ifc:IfcGloballyUniqueId ;
+        express:hasString  "0JxzMHjzjElv1Rcedc$qQy" .
+
+inst:IfcRelAggregates_105
+        ifc:globalId_IfcRoot  inst:IfcGloballyUniqueId_189 .
+
+inst:IfcLabel_190  rdf:type  ifc:IfcLabel ;
+        express:hasString  "Project Container" .
+
+inst:IfcRelAggregates_105
+        ifc:name_IfcRoot  inst:IfcLabel_190 .
+
+inst:IfcText_191  rdf:type  ifc:IfcText ;
+        express:hasString  "Project Container for Buildings" .
+
+inst:IfcRelAggregates_105
+        ifc:description_IfcRoot  inst:IfcText_191 ;
+        ifc:relatingObject_IfcRelAggregates  inst:IfcProject_100 ;
+        ifc:relatedObjects_IfcRelAggregates  inst:IfcBuilding_50 .
+
+inst:IfcMaterial_200  rdf:type  ifc:IfcMaterial .
+
+inst:IfcLabel_192  rdf:type  ifc:IfcLabel ;
+        express:hasString  "S355JR" .
+
+inst:IfcMaterial_200  ifc:name_IfcMaterial  inst:IfcLabel_192 .
+
+inst:IfcLabel_193  rdf:type  ifc:IfcLabel ;
+        express:hasString  "Steel" .
+
+inst:IfcMaterial_200  ifc:category_IfcMaterial  inst:IfcLabel_193 .
+
+inst:IfcIShapeProfileDef_203
+        ifc:profileType_IfcProfileDef  ifc:AREA .
+
+inst:IfcLabel_194  rdf:type  ifc:IfcLabel ;
+        express:hasString  "IPE200" .
+
+inst:IfcIShapeProfileDef_203
+        ifc:profileName_IfcProfileDef  inst:IfcLabel_194 ;
+        ifc:overallWidth_IfcIShapeProfileDef  inst:IfcLengthMeasure_146 .
+
+inst:IfcPositiveLengthMeasure_195
+        rdf:type           ifc:IfcPositiveLengthMeasure ;
+        express:hasDouble  "200.0"^^xsd:double .
+
+inst:IfcIShapeProfileDef_203
+        ifc:overallDepth_IfcIShapeProfileDef  inst:IfcPositiveLengthMeasure_195 .
+
+inst:IfcPositiveLengthMeasure_196
+        rdf:type           ifc:IfcPositiveLengthMeasure ;
+        express:hasDouble  "5.6"^^xsd:double .
+
+inst:IfcIShapeProfileDef_203
+        ifc:webThickness_IfcIShapeProfileDef  inst:IfcPositiveLengthMeasure_196 .
+
+inst:IfcPositiveLengthMeasure_197
+        rdf:type           ifc:IfcPositiveLengthMeasure ;
+        express:hasDouble  "8.5"^^xsd:double .
+
+inst:IfcIShapeProfileDef_203
+        ifc:flangeThickness_IfcIShapeProfileDef  inst:IfcPositiveLengthMeasure_197 .
+
+inst:IfcNonNegativeLengthMeasure_198
+        rdf:type           ifc:IfcNonNegativeLengthMeasure ;
+        express:hasDouble  "12.0"^^xsd:double .
+
+inst:IfcIShapeProfileDef_203
+        ifc:filletRadius_IfcIShapeProfileDef  inst:IfcNonNegativeLengthMeasure_198 .
+
+inst:IfcMaterialProfile_204
+        rdf:type                        ifc:IfcMaterialProfile ;
+        ifc:name_IfcMaterialProfile     inst:IfcLabel_194 ;
+        ifc:material_IfcMaterialProfile  inst:IfcMaterial_200 ;
+        ifc:profile_IfcMaterialProfile  inst:IfcIShapeProfileDef_203 .
+
+inst:IfcNormalisedRatioMeasure_199
+        rdf:type           ifc:IfcNormalisedRatioMeasure ;
+        express:hasDouble  "0"^^xsd:double .
+
+inst:IfcMaterialProfile_204
+        ifc:priority_IfcMaterialProfile  inst:IfcNormalisedRatioMeasure_199 .
+
+inst:IfcMaterialProfileSet_206
+        ifc:name_IfcMaterialProfileSet  inst:IfcLabel_194 .
+
+inst:IfcMaterialProfile_List_200
+        rdf:type  ifc:IfcMaterialProfile_List .
+
+inst:IfcMaterialProfileSet_206
+        ifc:materialProfiles_IfcMaterialProfileSet  inst:IfcMaterialProfile_List_200 .
+
+inst:IfcMaterialProfile_List_200
+        list:hasContents  inst:IfcMaterialProfile_204 .
+
+inst:IfcRelAssociatesMaterial_207
+        rdf:type  ifc:IfcRelAssociatesMaterial .
+
+inst:IfcGloballyUniqueId_201
+        rdf:type           ifc:IfcGloballyUniqueId ;
+        express:hasString  "3tuOfWWPXCowjxj5EzL5yC" .
+
+inst:IfcRelAssociatesMaterial_207
+        ifc:globalId_IfcRoot     inst:IfcGloballyUniqueId_201 ;
+        ifc:name_IfcRoot         inst:IfcLabel_118 ;
+        ifc:description_IfcRoot  inst:IfcText_119 .
+
+inst:IfcBeamType_208  rdf:type  ifc:IfcBeamType .
+
+inst:IfcRelAssociatesMaterial_207
+        ifc:relatedObjects_IfcRelAssociates  inst:IfcBeamType_208 ;
+        ifc:relatingMaterial_IfcRelAssociatesMaterial  inst:IfcMaterialProfileSet_206 .
+
+inst:IfcGloballyUniqueId_202
+        rdf:type           ifc:IfcGloballyUniqueId ;
+        express:hasString  "0CIULE5oD6pubBJ1yIg7CJ" .
+
+inst:IfcBeamType_208  ifc:globalId_IfcRoot  inst:IfcGloballyUniqueId_202 ;
+        ifc:name_IfcRoot                inst:IfcLabel_194 ;
+        ifc:predefinedType_IfcBeamType  ifc:JOIST .
+
+inst:IfcRelDefinesByType_209
+        rdf:type  ifc:IfcRelDefinesByType .
+
+inst:IfcGloballyUniqueId_203
+        rdf:type           ifc:IfcGloballyUniqueId ;
+        express:hasString  "08Z_7XC_5CNR$ILx3RG0wV" .
+
+inst:IfcRelDefinesByType_209
+        ifc:globalId_IfcRoot  inst:IfcGloballyUniqueId_203 ;
+        ifc:name_IfcRoot      inst:IfcLabel_194 ;
+        ifc:relatedObjects_IfcRelDefinesByType  inst:IfcBeamStandardCase_210 ;
+        ifc:relatedObjects_IfcRelDefinesByType  inst:IfcBeamStandardCase_230 ;
+        ifc:relatedObjects_IfcRelDefinesByType  inst:IfcBeamStandardCase_250 ;
+        ifc:relatedObjects_IfcRelDefinesByType  inst:IfcBeamStandardCase_270 ;
+        ifc:relatingType_IfcRelDefinesByType  inst:IfcBeamType_208 .
+
+inst:IfcGloballyUniqueId_204
+        rdf:type           ifc:IfcGloballyUniqueId ;
+        express:hasString  "06uVDzM0j8rugiazVexGkx" .
+
+inst:IfcBeamStandardCase_210
+        ifc:globalId_IfcRoot  inst:IfcGloballyUniqueId_204 .
+
+inst:IfcLabel_205  rdf:type  ifc:IfcLabel ;
+        express:hasString  "TopMid" .
+
+inst:IfcBeamStandardCase_210
+        ifc:name_IfcRoot  inst:IfcLabel_205 .
+
+inst:IfcLocalPlacement_211
+        rdf:type  ifc:IfcLocalPlacement .
+
+inst:IfcBeamStandardCase_210
+        ifc:objectPlacement_IfcProduct  inst:IfcLocalPlacement_211 .
+
+inst:IfcProductDefinitionShape_229
+        rdf:type  ifc:IfcProductDefinitionShape .
+
+inst:IfcBeamStandardCase_210
+        ifc:representation_IfcProduct  inst:IfcProductDefinitionShape_229 .
+
+inst:IfcAxis2Placement3D_212
+        rdf:type  ifc:IfcAxis2Placement3D .
+
+inst:IfcLocalPlacement_211
+        ifc:relativePlacement_IfcLocalPlacement  inst:IfcAxis2Placement3D_212 .
+
+inst:IfcAxis2Placement3D_212
+        ifc:location_IfcPlacement     inst:IfcCartesianPoint_258 ;
+        ifc:axis_IfcAxis2Placement3D  inst:IfcDirection_274 ;
+        ifc:refDirection_IfcAxis2Placement3D  inst:IfcDirection_275 .
+
+inst:IfcMaterialProfileSetUsage_216
+        rdf:type  ifc:IfcMaterialProfileSetUsage ;
+        ifc:forProfileSet_IfcMaterialProfileSetUsage  inst:IfcMaterialProfileSet_206 .
+
+inst:IfcCardinalPointReference_206
+        rdf:type            ifc:IfcCardinalPointReference ;
+        express:hasInteger  8 .
+
+inst:IfcMaterialProfileSetUsage_216
+        ifc:cardinalPoint_IfcMaterialProfileSetUsage  inst:IfcCardinalPointReference_206 .
+
+inst:IfcRelAssociatesMaterial_217
+        rdf:type  ifc:IfcRelAssociatesMaterial .
+
+inst:IfcGloballyUniqueId_207
+        rdf:type           ifc:IfcGloballyUniqueId ;
+        express:hasString  "2B1DG40M5EQ8GNtf0Kj3CU" .
+
+inst:IfcRelAssociatesMaterial_217
+        ifc:globalId_IfcRoot     inst:IfcGloballyUniqueId_207 ;
+        ifc:name_IfcRoot         inst:IfcLabel_118 ;
+        ifc:description_IfcRoot  inst:IfcText_119 ;
+        ifc:relatedObjects_IfcRelAssociates  inst:IfcBeamStandardCase_210 ;
+        ifc:relatingMaterial_IfcRelAssociatesMaterial  inst:IfcMaterialProfileSetUsage_216 .
+
+inst:IfcPolyline_220  rdf:type  ifc:IfcPolyline .
+
+inst:IfcCartesianPoint_List_208
+        rdf:type  ifc:IfcCartesianPoint_List .
+
+inst:IfcPolyline_220  ifc:points_IfcPolyline  inst:IfcCartesianPoint_List_208 .
+
+inst:IfcCartesianPoint_List_209
+        rdf:type  ifc:IfcCartesianPoint_List .
+
+inst:IfcCartesianPoint_List_208
+        list:hasContents  inst:IfcCartesianPoint_258 ;
+        list:hasNext      inst:IfcCartesianPoint_List_209 .
+
+inst:IfcCartesianPoint_List_209
+        list:hasContents  inst:IfcCartesianPoint_259 .
+
+inst:IfcShapeRepresentation_221
+        rdf:type                     ifc:IfcShapeRepresentation ;
+        ifc:contextOfItems_IfcRepresentation  inst:IfcGeometricRepresentationSubContext_11 ;
+        ifc:representationIdentifier_IfcRepresentation  inst:IfcLabel_132 ;
+        ifc:representationType_IfcRepresentation  inst:IfcLabel_133 ;
+        ifc:items_IfcRepresentation  inst:IfcPolyline_220 .
+
+inst:IfcExtrudedAreaSolid_223
+        rdf:type  ifc:IfcExtrudedAreaSolid ;
+        ifc:sweptArea_IfcSweptAreaSolid  inst:IfcIShapeProfileDef_203 .
+
+inst:IfcAxis2Placement3D_224
+        rdf:type  ifc:IfcAxis2Placement3D .
+
+inst:IfcExtrudedAreaSolid_223
+        ifc:position_IfcSweptAreaSolid  inst:IfcAxis2Placement3D_224 ;
+        ifc:extrudedDirection_IfcExtrudedAreaSolid  inst:IfcDirection_262 ;
+        ifc:depth_IfcExtrudedAreaSolid  inst:IfcLengthMeasure_128 .
+
+inst:IfcCartesianPoint_225
+        rdf:type  ifc:IfcCartesianPoint .
+
+inst:IfcAxis2Placement3D_224
+        ifc:location_IfcPlacement     inst:IfcCartesianPoint_225 ;
+        ifc:axis_IfcAxis2Placement3D  inst:IfcDirection_262 ;
+        ifc:refDirection_IfcAxis2Placement3D  inst:IfcDirection_267 .
+
+inst:IfcLengthMeasure_List_210
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcCartesianPoint_225
+        ifc:coordinates_IfcCartesianPoint  inst:IfcLengthMeasure_List_210 .
+
+inst:IfcLengthMeasure_List_211
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_212
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_210
+        list:hasContents  inst:IfcLengthMeasure_124 ;
+        list:hasNext      inst:IfcLengthMeasure_List_211 .
+
+inst:IfcLengthMeasure_List_211
+        list:hasContents  inst:IfcLengthMeasure_177 ;
+        list:hasNext      inst:IfcLengthMeasure_List_212 .
+
+inst:IfcLengthMeasure_List_212
+        list:hasContents  inst:IfcLengthMeasure_124 .
+
+inst:IfcShapeRepresentation_228
+        rdf:type                     ifc:IfcShapeRepresentation ;
+        ifc:contextOfItems_IfcRepresentation  inst:IfcGeometricRepresentationSubContext_12 ;
+        ifc:representationIdentifier_IfcRepresentation  inst:IfcLabel_152 ;
+        ifc:representationType_IfcRepresentation  inst:IfcLabel_153 ;
+        ifc:items_IfcRepresentation  inst:IfcExtrudedAreaSolid_223 .
+
+inst:IfcRepresentation_List_213
+        rdf:type  ifc:IfcRepresentation_List .
+
+inst:IfcProductDefinitionShape_229
+        ifc:representations_IfcProductRepresentation  inst:IfcRepresentation_List_213 .
+
+inst:IfcRepresentation_List_214
+        rdf:type  ifc:IfcRepresentation_List .
+
+inst:IfcRepresentation_List_213
+        list:hasContents  inst:IfcShapeRepresentation_221 ;
+        list:hasNext      inst:IfcRepresentation_List_214 .
+
+inst:IfcRepresentation_List_214
+        list:hasContents  inst:IfcShapeRepresentation_228 .
+
+inst:IfcGloballyUniqueId_215
+        rdf:type           ifc:IfcGloballyUniqueId ;
+        express:hasString  "3Cyaczln1DyfCVyfoF1Fyl" .
+
+inst:IfcBeamStandardCase_230
+        ifc:globalId_IfcRoot  inst:IfcGloballyUniqueId_215 .
+
+inst:IfcLabel_216  rdf:type  ifc:IfcLabel ;
+        express:hasString  "BotMid" .
+
+inst:IfcBeamStandardCase_230
+        ifc:name_IfcRoot  inst:IfcLabel_216 .
+
+inst:IfcLocalPlacement_231
+        rdf:type  ifc:IfcLocalPlacement .
+
+inst:IfcBeamStandardCase_230
+        ifc:objectPlacement_IfcProduct  inst:IfcLocalPlacement_231 .
+
+inst:IfcProductDefinitionShape_249
+        rdf:type  ifc:IfcProductDefinitionShape .
+
+inst:IfcBeamStandardCase_230
+        ifc:representation_IfcProduct  inst:IfcProductDefinitionShape_249 .
+
+inst:IfcAxis2Placement3D_232
+        rdf:type  ifc:IfcAxis2Placement3D .
+
+inst:IfcLocalPlacement_231
+        ifc:relativePlacement_IfcLocalPlacement  inst:IfcAxis2Placement3D_232 .
+
+inst:IfcAxis2Placement3D_232
+        ifc:location_IfcPlacement     inst:IfcCartesianPoint_258 ;
+        ifc:axis_IfcAxis2Placement3D  inst:IfcDirection_274 ;
+        ifc:refDirection_IfcAxis2Placement3D  inst:IfcDirection_275 .
+
+inst:IfcMaterialProfileSetUsage_236
+        rdf:type  ifc:IfcMaterialProfileSetUsage ;
+        ifc:forProfileSet_IfcMaterialProfileSetUsage  inst:IfcMaterialProfileSet_206 .
+
+inst:IfcCardinalPointReference_217
+        rdf:type            ifc:IfcCardinalPointReference ;
+        express:hasInteger  2 .
+
+inst:IfcMaterialProfileSetUsage_236
+        ifc:cardinalPoint_IfcMaterialProfileSetUsage  inst:IfcCardinalPointReference_217 .
+
+inst:IfcRelAssociatesMaterial_237
+        rdf:type  ifc:IfcRelAssociatesMaterial .
+
+inst:IfcGloballyUniqueId_218
+        rdf:type           ifc:IfcGloballyUniqueId ;
+        express:hasString  "1x_9tO_r59EfAtzZhnrMq1" .
+
+inst:IfcRelAssociatesMaterial_237
+        ifc:globalId_IfcRoot     inst:IfcGloballyUniqueId_218 ;
+        ifc:name_IfcRoot         inst:IfcLabel_118 ;
+        ifc:description_IfcRoot  inst:IfcText_119 ;
+        ifc:relatedObjects_IfcRelAssociates  inst:IfcBeamStandardCase_230 ;
+        ifc:relatingMaterial_IfcRelAssociatesMaterial  inst:IfcMaterialProfileSetUsage_236 .
+
+inst:IfcPolyline_240  rdf:type  ifc:IfcPolyline .
+
+inst:IfcCartesianPoint_List_219
+        rdf:type  ifc:IfcCartesianPoint_List .
+
+inst:IfcPolyline_240  ifc:points_IfcPolyline  inst:IfcCartesianPoint_List_219 .
+
+inst:IfcCartesianPoint_List_220
+        rdf:type  ifc:IfcCartesianPoint_List .
+
+inst:IfcCartesianPoint_List_219
+        list:hasContents  inst:IfcCartesianPoint_258 ;
+        list:hasNext      inst:IfcCartesianPoint_List_220 .
+
+inst:IfcCartesianPoint_List_220
+        list:hasContents  inst:IfcCartesianPoint_259 .
+
+inst:IfcShapeRepresentation_241
+        rdf:type                     ifc:IfcShapeRepresentation ;
+        ifc:contextOfItems_IfcRepresentation  inst:IfcGeometricRepresentationSubContext_11 ;
+        ifc:representationIdentifier_IfcRepresentation  inst:IfcLabel_132 ;
+        ifc:representationType_IfcRepresentation  inst:IfcLabel_133 ;
+        ifc:items_IfcRepresentation  inst:IfcPolyline_240 .
+
+inst:IfcExtrudedAreaSolid_243
+        rdf:type  ifc:IfcExtrudedAreaSolid ;
+        ifc:sweptArea_IfcSweptAreaSolid  inst:IfcIShapeProfileDef_203 .
+
+inst:IfcAxis2Placement3D_244
+        rdf:type  ifc:IfcAxis2Placement3D .
+
+inst:IfcExtrudedAreaSolid_243
+        ifc:position_IfcSweptAreaSolid  inst:IfcAxis2Placement3D_244 ;
+        ifc:extrudedDirection_IfcExtrudedAreaSolid  inst:IfcDirection_262 ;
+        ifc:depth_IfcExtrudedAreaSolid  inst:IfcLengthMeasure_128 .
+
+inst:IfcCartesianPoint_245
+        rdf:type  ifc:IfcCartesianPoint .
+
+inst:IfcAxis2Placement3D_244
+        ifc:location_IfcPlacement     inst:IfcCartesianPoint_245 ;
+        ifc:axis_IfcAxis2Placement3D  inst:IfcDirection_262 ;
+        ifc:refDirection_IfcAxis2Placement3D  inst:IfcDirection_267 .
+
+inst:IfcLengthMeasure_List_221
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcCartesianPoint_245
+        ifc:coordinates_IfcCartesianPoint  inst:IfcLengthMeasure_List_221 .
+
+inst:IfcLengthMeasure_List_222
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_223
+        rdf:type  ifc:IfcLengthMeasure_List .
+
+inst:IfcLengthMeasure_List_221
+        list:hasContents  inst:IfcLengthMeasure_124 ;
+        list:hasNext      inst:IfcLengthMeasure_List_222 .
+
+inst:IfcLengthMeasure_List_222
+        list:hasContents  inst:IfcLengthMeasure_146 ;
+        list:hasNext      inst:IfcLengthMeasure_List_223 .
+
+inst:IfcLengthMeasure_List_223
+        list:hasContents  inst:IfcLengthMeasure_124 .
+
+inst:IfcShapeRepresentation_248
+        rdf:type                     ifc:IfcShapeRepresentation ;
+        ifc:contextOfItems_IfcRepresentation  inst:IfcGeometricRepresentationSubContext_12 ;
+        ifc:representationIdentifier_IfcRepresentation  inst:IfcLabel_152 ;
+        ifc:representationType_IfcRepresentation  inst:IfcLabel_153 ;
+        ifc:items_IfcRepresentation  inst:IfcExtrudedAreaSolid_243 .
+
+inst:IfcRepresentation_List_224
+        rdf:type  ifc:IfcRepresentation_List .
+
+inst:IfcProductDefinitionShape_249
+        ifc:representations_IfcProductRepresentation  inst:IfcRepresentation_List_224 .
+
+inst:IfcRepresentation_List_225
+        rdf:type  ifc:IfcRepresentation_List .
+
+inst:IfcRepresentation_List_224
+        list:hasContents  inst:IfcShapeRepresentation_241 ;
+        list:hasNext      inst:IfcRepresentation_List_225 .
+
+inst:IfcRepresentation_List_225
+        list:hasContents  inst:IfcShapeRepresentation_248 .
+
+inst:IfcGloballyUniqueId_226
+        rdf:type           ifc:IfcGloballyUniqueId ;
+        express:hasString  "3_uWum$4vBjQ8_adQlTox1" .
+
+inst:IfcBeamStandardCase_250
+        ifc:globalId_IfcRoot  inst:IfcGloballyUniqueId_226 .
+
+inst:IfcLabel_227  rdf:type  ifc:IfcLabel ;
+        express:hasString  "BotLeft" .
+
+inst:IfcBeamStandardCase_250
+        ifc:name_IfcRoot  inst:IfcLabel_227 .
+
+inst:IfcLocalPlacement_251
+        rdf:type  ifc:IfcLocalPlacement .
+
+inst:IfcBeamStandardCase_250
+        ifc:objectPlacement_IfcProduct  inst:IfcLocalPlacement_251 ;
+        ifc:representation_IfcProduct   inst:IfcProductDefinitionShape_269 .
+
+inst:IfcAxis2Placement3D_252
+        rdf:type  ifc:IfcAxis2Placement3D .
+
+inst:IfcLocalPlacement_251
+        ifc:relativePlacement_IfcLocalPlacement  inst:IfcAxis2Placement3D_252 .
+
+inst:IfcAxis2Placement3D_252
+        ifc:location_IfcPlacement     inst:IfcCartesianPoint_273 ;
+        ifc:axis_IfcAxis2Placement3D  inst:IfcDirection_274 ;
+        ifc:refDirection_IfcAxis2Placement3D  inst:IfcDirection_275 .

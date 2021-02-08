@@ -3,6 +3,10 @@ The NURBS Editor allows to load / edit / save (Rational) Bezier curves / surface
 The compiled package can be downloaded from here:
   http://rdf.bg/downloads/NURBSEditor-20200317.zip
   
+The most recent IFC Viewer with NURBS visualization capabilities:
+  http://rdf.bg/ifcviewer/ifcviewer.zip
+  http://rdf.bg/ifcviewer/ifcviewerpackage.zip (with source code)
+  
 To create any geometry based on an IFC file open the IFC Editor, select the EXPRESS ID in the right pane
 and push right click to create and export the .rdf / .bin files.
 
