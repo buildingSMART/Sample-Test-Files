@@ -1,8 +1,9 @@
 
-# UT Georeferencing_Tin_1 
+# UT Georeferencing-Tin-1 
+
 Tin in map coordinates
 
-## Intent
+### Intent
 
 IFC 4x3 RC2
 This scenario has a tin (only 1.5K triangles) with just one colour for all the triangles. 
@@ -11,23 +12,19 @@ The Horizontal and Vertical datums are specified in IfcProjectedCRS.
 
 The ifc file was written by 12d Model. 
 
-## Prerequisites
+### Prerequisites
 
 This scenario builds upon following other scenarios:
-- Georeferencing_1
+- Georeferencing-1
 
-## Content
+### Content
 
 This scenario covers the following concepts and/or IFC entities:
 
 - ifcTriangulatedIrregularNetwork
 - ifcSolidStratum
 
-## KIT Checking Tool
-
-- Only error is missing ViewDefinition but ViewDefinition is not yet defined in the standard
-
-## Supporting files
+### Supporting files
 
 Following files correspond to this scenario:
 
