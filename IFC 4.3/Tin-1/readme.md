@@ -1,5 +1,5 @@
 
-# UT: Tin_1
+# Tin 1
 
 ### Intent
 
@@ -10,27 +10,28 @@ The IFC file was written by 12d Model.
 ### Prerequisites
 
 This scenario builds upon following other scenarios:
-- ProjectSetup_1
+
+- ProjectSetup-1
 
 ### Content
 
 This scenario covers the following concepts and/or IFC entities:
 
 - construction site context 
-  - start of the project structure
-  - `IfcSite`
-  - `IfcRelAggregates`
+    - start of the project structure
+    - `IfcSite`
+    - `IfcRelAggregates`
 - placement
-  - `IfcLocalPlacement`
+    - `IfcLocalPlacement`
 - product
-  - `IfcSolidStratum`
+    - `IfcSolidStratum`
 - product representation
-  - `IfcProductDefinitionShape`
-  - `IfcShapeRepresentation`
+    - `IfcProductDefinitionShape`
+    - `IfcShapeRepresentation`
 - representation
-  - `IfcTriangulatedIrregularNetwork`
-    - triangles have flags -2 / -1 / 7
-  - `IfcCartesianPointList3D`
+    - `IfcTriangulatedIrregularNetwork`
+        - triangles have flags -2 / -1 / 7
+    - `IfcCartesianPointList3D`
 
 ### Supporting files
 
