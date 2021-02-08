@@ -1,7 +1,7 @@
 ISO-10303-21;
 HEADER;
 FILE_DESCRIPTION (('ViewDefinition[Ifc4x3NotAssigned]'), '2;1');
-FILE_NAME ('UT_Tin_ifcMapConversion_to_place_in_MGA_56_RC1.ifc', '2021-02-07T11:40:17', ('Lee Gregory'), ('12d Solutions'), 'IFC Engine rev 1257', '12d Model 15.0 Alpha 478 [DEVELOP] INT Build 06-02-2021', '');
+FILE_NAME ('UT_Tin_ifcMapConversion_to_place_in_MGA_56.ifc', '2021-02-07T11:40:17', ('Lee Gregory'), ('12d Solutions'), 'IFC Engine rev 1257', '12d Model 15.0 Alpha 478 [DEVELOP] INT Build 06-02-2021', '');
 FILE_SCHEMA (('IFC4X3_RC2'));
 ENDSEC;
 DATA;
