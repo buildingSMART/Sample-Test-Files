@@ -1,0 +1,4060 @@
+{
+  "type" : "IfcProject",
+  "globalId" : "c2353ad2-a46a-364a-8298-4af34487a0b0",
+  "ownerHistory" : {
+    "type" : "IfcOwnerHistory",
+    "globalId" : "f9e2e222-c495-4ef7-b737-f291a127a409",
+    "owningUser" : {
+      "type" : "IfcPersonAndOrganization",
+      "globalId" : "e4ab3a3a-714f-4fb1-b44c-b4567e3aef14",
+      "thePerson" : {
+        "type" : "IfcPerson",
+        "globalId" : "4b626b3e-d16c-4c57-8ace-64784400157f",
+        "familyName" : {
+          "type" : "IfcLabel",
+          "value" : "Liebich"
+        }
+      },
+      "theOrganization" : {
+        "type" : "IfcOrganization",
+        "globalId" : "acc22fcb-103e-4de8-a301-49201e234951",
+        "name" : {
+          "type" : "IfcLabel",
+          "value" : "AEC3"
+        }
+      }
+    },
+    "owningApplication" : {
+      "applicationDeveloper" : "acc22fcb-103e-4de8-a301-49201e234951",
+      "version" : {
+        "type" : "IfcLabel",
+        "value" : "Unknown"
+      },
+      "applicationFullName" : {
+        "type" : "IfcLabel",
+        "value" : "SDS/2 Version 6.300 on NT"
+      },
+      "applicationIdentifier" : {
+        "type" : "IfcIdentifier",
+        "value" : "Unknown"
+      }
+    },
+    "changeAction" : "NOTDEFINED",
+    "creationDate" : {
+      "type" : "IfcTimeStamp",
+      "value" : 1320688800
+    }
+  },
+  "name" : {
+    "type" : "IfcLabel",
+    "value" : "Test model for beam cardinal points"
+  },
+  "isDecomposedBy" : {
+    "type" : "IfcRelAggregates",
+    "globalId" : "239f7c93-5bf7-f644-bd0d-fa9a1ba7b2aa",
+    "relatedObjects" : [ {
+      "type" : "IfcSite",
+      "globalId" : "4099da29-b4f6-b24e-8ecb-6b57343e6823",
+      "name" : {
+        "type" : "IfcLabel",
+        "value" : "Site"
+      },
+      "isDecomposedBy" : {
+        "type" : "IfcRelAggregates",
+        "globalId" : "4f79d324-f144-e549-ad0d-5f18fd878007",
+        "relatedObjects" : [ {
+          "type" : "IfcBuilding",
+          "globalId" : "21eb8cc0-10a5-0240-85b7-0205e37fcfa3",
+          "name" : {
+            "type" : "IfcLabel",
+            "value" : "Building"
+          },
+          "objectPlacement" : {
+            "type" : "IfcLocalPlacement",
+            "globalId" : "77f421a0-f9d7-425e-b339-ccf0b3fd39f8",
+            "placementRelTo" : {
+              "type" : "IfcLocalPlacement",
+              "globalId" : "6ff7823a-83a0-44f4-9f3a-8549b8a2bd88",
+              "relativePlacement" : {
+                "type" : "IfcAxis2Placement3D",
+                "location" : {
+                  "type" : "IfcCartesianPoint",
+                  "coordinates" : [ {
+                    "type" : "IfcLengthMeasure",
+                    "value" : 0.0
+                  }, {
+                    "type" : "IfcLengthMeasure",
+                    "value" : 0.0
+                  }, {
+                    "type" : "IfcLengthMeasure",
+                    "value" : 0.0
+                  } ]
+                },
+                "axis" : {
+                  "type" : "IfcDirection",
+                  "directionRatios" : [ {
+                    "type" : "IfcReal",
+                    "value" : 0.0
+                  }, {
+                    "type" : "IfcReal",
+                    "value" : 0.0
+                  }, {
+                    "type" : "IfcReal",
+                    "value" : 1.0
+                  } ]
+                },
+                "refDirection" : {
+                  "type" : "IfcDirection",
+                  "directionRatios" : [ {
+                    "type" : "IfcReal",
+                    "value" : 1.0
+                  }, {
+                    "type" : "IfcReal",
+                    "value" : 0.0
+                  }, {
+                    "type" : "IfcReal",
+                    "value" : 0.0
+                  } ]
+                }
+              }
+            },
+            "relativePlacement" : {
+              "type" : "IfcAxis2Placement3D",
+              "location" : {
+                "type" : "IfcCartesianPoint",
+                "coordinates" : [ {
+                  "type" : "IfcLengthMeasure",
+                  "value" : 0.0
+                }, {
+                  "type" : "IfcLengthMeasure",
+                  "value" : 0.0
+                }, {
+                  "type" : "IfcLengthMeasure",
+                  "value" : 0.0
+                } ]
+              },
+              "axis" : {
+                "type" : "IfcDirection",
+                "directionRatios" : [ {
+                  "type" : "IfcReal",
+                  "value" : 0.0
+                }, {
+                  "type" : "IfcReal",
+                  "value" : 0.0
+                }, {
+                  "type" : "IfcReal",
+                  "value" : 1.0
+                } ]
+              },
+              "refDirection" : {
+                "type" : "IfcDirection",
+                "directionRatios" : [ {
+                  "type" : "IfcReal",
+                  "value" : 1.0
+                }, {
+                  "type" : "IfcReal",
+                  "value" : 0.0
+                }, {
+                  "type" : "IfcReal",
+                  "value" : 0.0
+                } ]
+              }
+            }
+          },
+          "containsElements" : [ {
+            "type" : "IfcRelContainedInSpatialStructure",
+            "globalId" : "a4d3f335-9b6f-bb4f-9dea-26f9700a5596",
+            "name" : {
+              "type" : "IfcLabel",
+              "value" : "Physical model"
+            },
+            "relatedElements" : [ {
+              "type" : "IfcBeamStandardCase",
+              "globalId" : "2de29134-f2aa-9c48-8d7b-28201aeb1dad",
+              "name" : {
+                "type" : "IfcLabel",
+                "value" : "A-1"
+              },
+              "description" : {
+                "type" : "IfcText",
+                "value" : "IPE220"
+              },
+              "hasAssociations" : [ {
+                "type" : "IfcRelAssociatesMaterial",
+                "globalId" : "2de29134-f2aa-9cdb-7d7b-28201aa63dad",
+                "relatingMaterial" : {
+                  "type" : "IfcMaterialProfileSetUsage",
+                  "forProfileSet" : {
+                    "type" : "IfcMaterialProfileSet",
+                    "globalId" : "272364c3-f843-49a1-ad58-61b83e65c4c3",
+                    "materialProfiles" : [ {
+                      "type" : "IfcMaterialProfile",
+                      "globalId" : "3bbe4241-622d-474e-bb82-89668d3ea4fb",
+                      "name" : {
+                        "type" : "IfcLabel",
+                        "value" : "IPE220"
+                      },
+                      "material" : {
+                        "type" : "IfcMaterial",
+                        "globalId" : "b568e745-3f3d-422f-bead-0de34a2b9adc",
+                        "name" : {
+                          "type" : "IfcLabel",
+                          "value" : "S275J2"
+                        },
+                        "category" : {
+                          "type" : "IfcLabel",
+                          "value" : "Steel"
+                        }
+                      },
+                      "profile" : {
+                        "type" : "IfcIShapeProfileDef",
+                        "profileType" : "AREA",
+                        "profileName" : {
+                          "type" : "IfcLabel",
+                          "value" : "IPE220"
+                        },
+                        "overallWidth" : {
+                          "type" : "IfcPositiveLengthMeasure",
+                          "value" : 110.0
+                        },
+                        "overallDepth" : {
+                          "type" : "IfcPositiveLengthMeasure",
+                          "value" : 220.0
+                        },
+                        "webThickness" : {
+                          "type" : "IfcPositiveLengthMeasure",
+                          "value" : 5.9
+                        },
+                        "flangeThickness" : {
+                          "type" : "IfcPositiveLengthMeasure",
+                          "value" : 9.2
+                        },
+                        "filletRadius" : {
+                          "type" : "IfcNonNegativeLengthMeasure",
+                          "value" : 12.0
+                        }
+                      }
+                    } ]
+                  },
+                  "cardinalPoint" : {
+                    "type" : "IfcCardinalPointReference",
+                    "value" : 1
+                  }
+                }
+              } ],
+              "objectType" : {
+                "type" : "IfcLabel",
+                "value" : "Beam"
+              },
+              "isTypedBy" : [ {
+                "type" : "IfcRelDefinesByType",
+                "globalId" : "a4d3f335-9b6f-bb4f-99c6-26f9700a5596",
+                "name" : {
+                  "type" : "IfcLabel",
+                  "value" : "beam typing"
+                },
+                "relatingType" : {
+                  "type" : "IfcBeamType",
+                  "globalId" : "2de29134-f2aa-9cdb-7d7b-28201aeb1dad",
+                  "name" : {
+                    "type" : "IfcLabel",
+                    "value" : "IPE220"
+                  },
+                  "description" : {
+                    "type" : "IfcText",
+                    "value" : "Beam type"
+                  },
+                  "hasContext" : [ {
+                    "type" : "IfcRelDeclares",
+                    "globalId" : "d90fd540-522e-4430-9349-ac3621fe7a3c",
+                    "relatedDefinitions" : [ "2de29134-f2aa-9cdb-7d7b-28201aeb1dad", {
+                      "type" : "IfcBeamType",
+                      "globalId" : "2de29134-f2aa-9cdb-7d7b-28201a9ecdad",
+                      "name" : {
+                        "type" : "IfcLabel",
+                        "value" : "1/2IPE300"
+                      },
+                      "description" : {
+                        "type" : "IfcText",
+                        "value" : "Beam type"
+                      },
+                      "hasContext" : [ "d90fd540-522e-4430-9349-ac3621fe7a3c" ],
+                      "hasAssociations" : [ {
+                        "type" : "IfcRelAssociatesMaterial",
+                        "globalId" : "2de29134-f2aa-9cdb-7d7b-28201a0a9dad",
+                        "relatingMaterial" : {
+                          "type" : "IfcMaterialProfileSet",
+                          "globalId" : "491ea434-35f8-4c22-82a7-a76b1d70b6e4",
+                          "materialProfiles" : [ {
+                            "type" : "IfcMaterialProfile",
+                            "globalId" : "8dec8164-3a61-441a-a302-20eb16f34944",
+                            "name" : {
+                              "type" : "IfcLabel",
+                              "value" : "1/2IPE300"
+                            },
+                            "material" : {
+                              "type" : "IfcMaterial",
+                              "globalId" : "d3d8fb5a-647a-4320-9951-62fa752f4e8d",
+                              "name" : {
+                                "type" : "IfcLabel",
+                                "value" : "S275J2"
+                              },
+                              "category" : {
+                                "type" : "IfcLabel",
+                                "value" : "Steel"
+                              }
+                            },
+                            "profile" : {
+                              "type" : "IfcTShapeProfileDef",
+                              "profileType" : "AREA",
+                              "profileName" : {
+                                "type" : "IfcLabel",
+                                "value" : "1/2IPE300"
+                              },
+                              "depth" : {
+                                "type" : "IfcPositiveLengthMeasure",
+                                "value" : 150.0
+                              },
+                              "flangeWidth" : {
+                                "type" : "IfcPositiveLengthMeasure",
+                                "value" : 150.0
+                              },
+                              "webThickness" : {
+                                "type" : "IfcPositiveLengthMeasure",
+                                "value" : 7.1
+                              },
+                              "flangeThickness" : {
+                                "type" : "IfcPositiveLengthMeasure",
+                                "value" : 10.7
+                              },
+                              "filletRadius" : {
+                                "type" : "IfcNonNegativeLengthMeasure",
+                                "value" : 15.0
+                              }
+                            }
+                          } ]
+                        }
+                      } ],
+                      "predefinedType" : "BEAM"
+                    } ]
+                  } ],
+                  "hasAssociations" : [ {
+                    "type" : "IfcRelAssociatesMaterial",
+                    "globalId" : "2de29134-f2aa-9cdb-7d7b-28201a109dad",
+                    "relatingMaterial" : "272364c3-f843-49a1-ad58-61b83e65c4c3"
+                  } ],
+                  "predefinedType" : "BEAM"
+                }
+              } ],
+              "objectPlacement" : {
+                "type" : "IfcLocalPlacement",
+                "globalId" : "6a6f185a-f1f9-4939-8698-b9e069205f41",
+                "placementRelTo" : "77f421a0-f9d7-425e-b339-ccf0b3fd39f8",
+                "relativePlacement" : {
+                  "type" : "IfcAxis2Placement3D",
+                  "location" : {
+                    "type" : "IfcCartesianPoint",
+                    "coordinates" : [ {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 0.0
+                    }, {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 0.0
+                    }, {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 0.0
+                    } ]
+                  },
+                  "axis" : {
+                    "type" : "IfcDirection",
+                    "directionRatios" : [ {
+                      "type" : "IfcReal",
+                      "value" : 1.0
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 0.0
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 0.0
+                    } ]
+                  },
+                  "refDirection" : {
+                    "type" : "IfcDirection",
+                    "directionRatios" : [ {
+                      "type" : "IfcReal",
+                      "value" : 0.0
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 1.0
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 0.0
+                    } ]
+                  }
+                }
+              },
+              "representation" : {
+                "type" : "IfcProductDefinitionShape",
+                "representations" : [ {
+                  "type" : "IfcShapeRepresentation",
+                  "contextOfItems" : {
+                    "type" : "IfcGeometricRepresentationContext",
+                    "globalId" : "a27328b3-4590-439d-9431-936127f24325",
+                    "contextType" : {
+                      "type" : "IfcLabel",
+                      "value" : "Model"
+                    },
+                    "coordinateSpaceDimension" : {
+                      "type" : "IfcDimensionCount",
+                      "value" : 3
+                    },
+                    "precision" : {
+                      "type" : "IfcReal",
+                      "value" : 1.0E-5
+                    },
+                    "worldCoordinateSystem" : {
+                      "type" : "IfcAxis2Placement3D",
+                      "location" : {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        } ]
+                      },
+                      "axis" : {
+                        "type" : "IfcDirection",
+                        "directionRatios" : [ {
+                          "type" : "IfcReal",
+                          "value" : 0.0
+                        }, {
+                          "type" : "IfcReal",
+                          "value" : 0.0
+                        }, {
+                          "type" : "IfcReal",
+                          "value" : 1.0
+                        } ]
+                      },
+                      "refDirection" : {
+                        "type" : "IfcDirection",
+                        "directionRatios" : [ {
+                          "type" : "IfcReal",
+                          "value" : 1.0
+                        }, {
+                          "type" : "IfcReal",
+                          "value" : 0.0
+                        }, {
+                          "type" : "IfcReal",
+                          "value" : 0.0
+                        } ]
+                      }
+                    }
+                  },
+                  "representationIdentifier" : {
+                    "type" : "IfcLabel",
+                    "value" : "Axis"
+                  },
+                  "representationType" : {
+                    "type" : "IfcLabel",
+                    "value" : "Curve3D"
+                  },
+                  "items" : [ {
+                    "type" : "IfcPolyline",
+                    "points" : [ {
+                      "type" : "IfcCartesianPoint",
+                      "coordinates" : [ {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      } ]
+                    }, {
+                      "type" : "IfcCartesianPoint",
+                      "coordinates" : [ {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 2000.0
+                      } ]
+                    } ]
+                  } ]
+                }, {
+                  "type" : "IfcShapeRepresentation",
+                  "contextOfItems" : "a27328b3-4590-439d-9431-936127f24325",
+                  "representationIdentifier" : {
+                    "type" : "IfcLabel",
+                    "value" : "Body"
+                  },
+                  "representationType" : {
+                    "type" : "IfcLabel",
+                    "value" : "SweptSolid"
+                  },
+                  "items" : [ {
+                    "type" : "IfcExtrudedAreaSolid",
+                    "sweptArea" : {
+                      "type" : "IfcIShapeProfileDef",
+                      "profileType" : "AREA",
+                      "profileName" : {
+                        "type" : "IfcLabel",
+                        "value" : "IPE220"
+                      },
+                      "overallWidth" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 110.0
+                      },
+                      "overallDepth" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 220.0
+                      },
+                      "webThickness" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 5.9
+                      },
+                      "flangeThickness" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 9.2
+                      },
+                      "filletRadius" : {
+                        "type" : "IfcNonNegativeLengthMeasure",
+                        "value" : 12.0
+                      }
+                    },
+                    "position" : {
+                      "type" : "IfcAxis2Placement3D",
+                      "location" : {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -55.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 110.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        } ]
+                      }
+                    },
+                    "extrudedDirection" : {
+                      "type" : "IfcDirection",
+                      "directionRatios" : [ {
+                        "type" : "IfcReal",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcReal",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcReal",
+                        "value" : 1.0
+                      } ]
+                    },
+                    "depth" : {
+                      "type" : "IfcPositiveLengthMeasure",
+                      "value" : 2000.0
+                    }
+                  } ]
+                } ]
+              },
+              "tag" : {
+                "type" : "IfcIdentifier",
+                "value" : "A-1"
+              }
+            }, {
+              "type" : "IfcBeamStandardCase",
+              "globalId" : "2de29134-f2aa-9c48-8d7b-28201aeb10f6",
+              "name" : {
+                "type" : "IfcLabel",
+                "value" : "A-7"
+              },
+              "description" : {
+                "type" : "IfcText",
+                "value" : "IPE220"
+              },
+              "hasAssociations" : [ {
+                "type" : "IfcRelAssociatesMaterial",
+                "globalId" : "2de29134-f2aa-9cdb-7d7b-28201aac4dad",
+                "relatingMaterial" : {
+                  "type" : "IfcMaterialProfileSetUsage",
+                  "forProfileSet" : "272364c3-f843-49a1-ad58-61b83e65c4c3",
+                  "cardinalPoint" : {
+                    "type" : "IfcCardinalPointReference",
+                    "value" : 7
+                  }
+                }
+              } ],
+              "objectType" : {
+                "type" : "IfcLabel",
+                "value" : "Beam"
+              },
+              "isTypedBy" : [ "a4d3f335-9b6f-bb4f-99c6-26f9700a5596" ],
+              "objectPlacement" : {
+                "type" : "IfcLocalPlacement",
+                "globalId" : "f23518db-3e9f-469a-865b-b8ad6fc2aeed",
+                "placementRelTo" : "77f421a0-f9d7-425e-b339-ccf0b3fd39f8",
+                "relativePlacement" : {
+                  "type" : "IfcAxis2Placement3D",
+                  "location" : {
+                    "type" : "IfcCartesianPoint",
+                    "coordinates" : [ {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 0.0
+                    }, {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 9000.0
+                    }, {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 0.0
+                    } ]
+                  },
+                  "axis" : {
+                    "type" : "IfcDirection",
+                    "directionRatios" : [ {
+                      "type" : "IfcReal",
+                      "value" : 1.0
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 0.0
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 0.0
+                    } ]
+                  },
+                  "refDirection" : {
+                    "type" : "IfcDirection",
+                    "directionRatios" : [ {
+                      "type" : "IfcReal",
+                      "value" : 0.0
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 1.0
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 0.0
+                    } ]
+                  }
+                }
+              },
+              "representation" : {
+                "type" : "IfcProductDefinitionShape",
+                "representations" : [ {
+                  "type" : "IfcShapeRepresentation",
+                  "contextOfItems" : "a27328b3-4590-439d-9431-936127f24325",
+                  "representationIdentifier" : {
+                    "type" : "IfcLabel",
+                    "value" : "Axis"
+                  },
+                  "representationType" : {
+                    "type" : "IfcLabel",
+                    "value" : "Curve3D"
+                  },
+                  "items" : [ {
+                    "type" : "IfcPolyline",
+                    "points" : [ {
+                      "type" : "IfcCartesianPoint",
+                      "coordinates" : [ {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      } ]
+                    }, {
+                      "type" : "IfcCartesianPoint",
+                      "coordinates" : [ {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 2000.0
+                      } ]
+                    } ]
+                  } ]
+                }, {
+                  "type" : "IfcShapeRepresentation",
+                  "contextOfItems" : "a27328b3-4590-439d-9431-936127f24325",
+                  "representationIdentifier" : {
+                    "type" : "IfcLabel",
+                    "value" : "Body"
+                  },
+                  "representationType" : {
+                    "type" : "IfcLabel",
+                    "value" : "SweptSolid"
+                  },
+                  "items" : [ {
+                    "type" : "IfcExtrudedAreaSolid",
+                    "sweptArea" : {
+                      "type" : "IfcIShapeProfileDef",
+                      "profileType" : "AREA",
+                      "profileName" : {
+                        "type" : "IfcLabel",
+                        "value" : "IPE220"
+                      },
+                      "overallWidth" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 110.0
+                      },
+                      "overallDepth" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 220.0
+                      },
+                      "webThickness" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 5.9
+                      },
+                      "flangeThickness" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 9.2
+                      },
+                      "filletRadius" : {
+                        "type" : "IfcNonNegativeLengthMeasure",
+                        "value" : 12.0
+                      }
+                    },
+                    "position" : {
+                      "type" : "IfcAxis2Placement3D",
+                      "location" : {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -55.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -110.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        } ]
+                      }
+                    },
+                    "extrudedDirection" : {
+                      "type" : "IfcDirection",
+                      "directionRatios" : [ {
+                        "type" : "IfcReal",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcReal",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcReal",
+                        "value" : 1.0
+                      } ]
+                    },
+                    "depth" : {
+                      "type" : "IfcPositiveLengthMeasure",
+                      "value" : 2000.0
+                    }
+                  } ]
+                } ]
+              },
+              "tag" : {
+                "type" : "IfcIdentifier",
+                "value" : "A-7"
+              }
+            }, {
+              "type" : "IfcBeamStandardCase",
+              "globalId" : "2de29134-f2aa-9c48-8d7b-28201aeb1925",
+              "name" : {
+                "type" : "IfcLabel",
+                "value" : "A-5"
+              },
+              "description" : {
+                "type" : "IfcText",
+                "value" : "IPE220"
+              },
+              "hasAssociations" : [ {
+                "type" : "IfcRelAssociatesMaterial",
+                "globalId" : "2de29134-f2aa-9cdb-7d7b-28201a6d5dad",
+                "relatingMaterial" : {
+                  "type" : "IfcMaterialProfileSetUsage",
+                  "forProfileSet" : "272364c3-f843-49a1-ad58-61b83e65c4c3",
+                  "cardinalPoint" : {
+                    "type" : "IfcCardinalPointReference",
+                    "value" : 5
+                  }
+                }
+              } ],
+              "objectType" : {
+                "type" : "IfcLabel",
+                "value" : "Beam"
+              },
+              "isTypedBy" : [ "a4d3f335-9b6f-bb4f-99c6-26f9700a5596" ],
+              "objectPlacement" : {
+                "type" : "IfcLocalPlacement",
+                "globalId" : "9aa49dd2-d5bb-43d0-b4d6-b037a1e5b85f",
+                "placementRelTo" : "77f421a0-f9d7-425e-b339-ccf0b3fd39f8",
+                "relativePlacement" : {
+                  "type" : "IfcAxis2Placement3D",
+                  "location" : {
+                    "type" : "IfcCartesianPoint",
+                    "coordinates" : [ {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 0.0
+                    }, {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 6000.0
+                    }, {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 0.0
+                    } ]
+                  },
+                  "axis" : {
+                    "type" : "IfcDirection",
+                    "directionRatios" : [ {
+                      "type" : "IfcReal",
+                      "value" : 1.0
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 0.0
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 0.0
+                    } ]
+                  },
+                  "refDirection" : {
+                    "type" : "IfcDirection",
+                    "directionRatios" : [ {
+                      "type" : "IfcReal",
+                      "value" : 0.0
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 1.0
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 0.0
+                    } ]
+                  }
+                }
+              },
+              "representation" : {
+                "type" : "IfcProductDefinitionShape",
+                "representations" : [ {
+                  "type" : "IfcShapeRepresentation",
+                  "contextOfItems" : "a27328b3-4590-439d-9431-936127f24325",
+                  "representationIdentifier" : {
+                    "type" : "IfcLabel",
+                    "value" : "Axis"
+                  },
+                  "representationType" : {
+                    "type" : "IfcLabel",
+                    "value" : "Curve3D"
+                  },
+                  "items" : [ {
+                    "type" : "IfcPolyline",
+                    "points" : [ {
+                      "type" : "IfcCartesianPoint",
+                      "coordinates" : [ {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      } ]
+                    }, {
+                      "type" : "IfcCartesianPoint",
+                      "coordinates" : [ {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 2000.0
+                      } ]
+                    } ]
+                  } ]
+                }, {
+                  "type" : "IfcShapeRepresentation",
+                  "contextOfItems" : "a27328b3-4590-439d-9431-936127f24325",
+                  "representationIdentifier" : {
+                    "type" : "IfcLabel",
+                    "value" : "Body"
+                  },
+                  "representationType" : {
+                    "type" : "IfcLabel",
+                    "value" : "SweptSolid"
+                  },
+                  "items" : [ {
+                    "type" : "IfcExtrudedAreaSolid",
+                    "sweptArea" : {
+                      "type" : "IfcIShapeProfileDef",
+                      "profileType" : "AREA",
+                      "profileName" : {
+                        "type" : "IfcLabel",
+                        "value" : "IPE220"
+                      },
+                      "overallWidth" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 110.0
+                      },
+                      "overallDepth" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 220.0
+                      },
+                      "webThickness" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 5.9
+                      },
+                      "flangeThickness" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 9.2
+                      },
+                      "filletRadius" : {
+                        "type" : "IfcNonNegativeLengthMeasure",
+                        "value" : 12.0
+                      }
+                    },
+                    "position" : {
+                      "type" : "IfcAxis2Placement3D",
+                      "location" : {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        } ]
+                      }
+                    },
+                    "extrudedDirection" : {
+                      "type" : "IfcDirection",
+                      "directionRatios" : [ {
+                        "type" : "IfcReal",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcReal",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcReal",
+                        "value" : 1.0
+                      } ]
+                    },
+                    "depth" : {
+                      "type" : "IfcPositiveLengthMeasure",
+                      "value" : 2000.0
+                    }
+                  } ]
+                } ]
+              },
+              "tag" : {
+                "type" : "IfcIdentifier",
+                "value" : "A-5"
+              }
+            }, {
+              "type" : "IfcBeamStandardCase",
+              "globalId" : "2de29134-f2aa-9c48-8d7b-282036f71dad",
+              "name" : {
+                "type" : "IfcLabel",
+                "value" : "A-2"
+              },
+              "description" : {
+                "type" : "IfcText",
+                "value" : "IPE220"
+              },
+              "hasAssociations" : [ {
+                "type" : "IfcRelAssociatesMaterial",
+                "globalId" : "2de29134-f2aa-9cdb-7d7b-28201aa8adad",
+                "relatingMaterial" : {
+                  "type" : "IfcMaterialProfileSetUsage",
+                  "forProfileSet" : "272364c3-f843-49a1-ad58-61b83e65c4c3",
+                  "cardinalPoint" : {
+                    "type" : "IfcCardinalPointReference",
+                    "value" : 2
+                  }
+                }
+              } ],
+              "objectType" : {
+                "type" : "IfcLabel",
+                "value" : "Beam"
+              },
+              "isTypedBy" : [ "a4d3f335-9b6f-bb4f-99c6-26f9700a5596" ],
+              "objectPlacement" : {
+                "type" : "IfcLocalPlacement",
+                "globalId" : "db539402-e89b-40d3-ba22-50fd339ccb91",
+                "placementRelTo" : "77f421a0-f9d7-425e-b339-ccf0b3fd39f8",
+                "relativePlacement" : {
+                  "type" : "IfcAxis2Placement3D",
+                  "location" : {
+                    "type" : "IfcCartesianPoint",
+                    "coordinates" : [ {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 0.0
+                    }, {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 1500.0
+                    }, {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 0.0
+                    } ]
+                  },
+                  "axis" : {
+                    "type" : "IfcDirection",
+                    "directionRatios" : [ {
+                      "type" : "IfcReal",
+                      "value" : 1.0
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 0.0
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 0.0
+                    } ]
+                  },
+                  "refDirection" : {
+                    "type" : "IfcDirection",
+                    "directionRatios" : [ {
+                      "type" : "IfcReal",
+                      "value" : 0.0
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 1.0
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 0.0
+                    } ]
+                  }
+                }
+              },
+              "representation" : {
+                "type" : "IfcProductDefinitionShape",
+                "representations" : [ {
+                  "type" : "IfcShapeRepresentation",
+                  "contextOfItems" : "a27328b3-4590-439d-9431-936127f24325",
+                  "representationIdentifier" : {
+                    "type" : "IfcLabel",
+                    "value" : "Axis"
+                  },
+                  "representationType" : {
+                    "type" : "IfcLabel",
+                    "value" : "Curve3D"
+                  },
+                  "items" : [ {
+                    "type" : "IfcPolyline",
+                    "points" : [ {
+                      "type" : "IfcCartesianPoint",
+                      "coordinates" : [ {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      } ]
+                    }, {
+                      "type" : "IfcCartesianPoint",
+                      "coordinates" : [ {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 2000.0
+                      } ]
+                    } ]
+                  } ]
+                }, {
+                  "type" : "IfcShapeRepresentation",
+                  "contextOfItems" : "a27328b3-4590-439d-9431-936127f24325",
+                  "representationIdentifier" : {
+                    "type" : "IfcLabel",
+                    "value" : "Body"
+                  },
+                  "representationType" : {
+                    "type" : "IfcLabel",
+                    "value" : "SweptSolid"
+                  },
+                  "items" : [ {
+                    "type" : "IfcExtrudedAreaSolid",
+                    "sweptArea" : {
+                      "type" : "IfcIShapeProfileDef",
+                      "profileType" : "AREA",
+                      "profileName" : {
+                        "type" : "IfcLabel",
+                        "value" : "IPE220"
+                      },
+                      "overallWidth" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 110.0
+                      },
+                      "overallDepth" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 220.0
+                      },
+                      "webThickness" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 5.9
+                      },
+                      "flangeThickness" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 9.2
+                      },
+                      "filletRadius" : {
+                        "type" : "IfcNonNegativeLengthMeasure",
+                        "value" : 12.0
+                      }
+                    },
+                    "position" : {
+                      "type" : "IfcAxis2Placement3D",
+                      "location" : {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 110.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        } ]
+                      }
+                    },
+                    "extrudedDirection" : {
+                      "type" : "IfcDirection",
+                      "directionRatios" : [ {
+                        "type" : "IfcReal",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcReal",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcReal",
+                        "value" : 1.0
+                      } ]
+                    },
+                    "depth" : {
+                      "type" : "IfcPositiveLengthMeasure",
+                      "value" : 2000.0
+                    }
+                  } ]
+                } ]
+              },
+              "tag" : {
+                "type" : "IfcIdentifier",
+                "value" : "A-2"
+              }
+            }, {
+              "type" : "IfcBeamStandardCase",
+              "globalId" : "2de29134-f2aa-9c48-8d84-282036f71dad",
+              "name" : {
+                "type" : "IfcLabel",
+                "value" : "A-3"
+              },
+              "description" : {
+                "type" : "IfcText",
+                "value" : "IPE220"
+              },
+              "hasAssociations" : [ {
+                "type" : "IfcRelAssociatesMaterial",
+                "globalId" : "fb02a3dc-64ad-45cf-8685-812082ee2630",
+                "relatingMaterial" : {
+                  "type" : "IfcMaterialProfileSetUsage",
+                  "forProfileSet" : "272364c3-f843-49a1-ad58-61b83e65c4c3",
+                  "cardinalPoint" : {
+                    "type" : "IfcCardinalPointReference",
+                    "value" : 3
+                  }
+                }
+              } ],
+              "objectType" : {
+                "type" : "IfcLabel",
+                "value" : "Beam"
+              },
+              "isTypedBy" : [ "a4d3f335-9b6f-bb4f-99c6-26f9700a5596" ],
+              "objectPlacement" : {
+                "type" : "IfcLocalPlacement",
+                "globalId" : "7a5c858e-f849-451c-8091-6c46bffd4f65",
+                "placementRelTo" : "77f421a0-f9d7-425e-b339-ccf0b3fd39f8",
+                "relativePlacement" : {
+                  "type" : "IfcAxis2Placement3D",
+                  "location" : {
+                    "type" : "IfcCartesianPoint",
+                    "coordinates" : [ {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 0.0
+                    }, {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 3000.0
+                    }, {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 0.0
+                    } ]
+                  },
+                  "axis" : {
+                    "type" : "IfcDirection",
+                    "directionRatios" : [ {
+                      "type" : "IfcReal",
+                      "value" : 1.0
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 0.0
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 0.0
+                    } ]
+                  },
+                  "refDirection" : {
+                    "type" : "IfcDirection",
+                    "directionRatios" : [ {
+                      "type" : "IfcReal",
+                      "value" : 0.0
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 1.0
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 0.0
+                    } ]
+                  }
+                }
+              },
+              "representation" : {
+                "type" : "IfcProductDefinitionShape",
+                "representations" : [ {
+                  "type" : "IfcShapeRepresentation",
+                  "contextOfItems" : "a27328b3-4590-439d-9431-936127f24325",
+                  "representationIdentifier" : {
+                    "type" : "IfcLabel",
+                    "value" : "Axis"
+                  },
+                  "representationType" : {
+                    "type" : "IfcLabel",
+                    "value" : "Curve3D"
+                  },
+                  "items" : [ {
+                    "type" : "IfcPolyline",
+                    "points" : [ {
+                      "type" : "IfcCartesianPoint",
+                      "coordinates" : [ {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      } ]
+                    }, {
+                      "type" : "IfcCartesianPoint",
+                      "coordinates" : [ {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 2000.0
+                      } ]
+                    } ]
+                  } ]
+                }, {
+                  "type" : "IfcShapeRepresentation",
+                  "contextOfItems" : "a27328b3-4590-439d-9431-936127f24325",
+                  "representationIdentifier" : {
+                    "type" : "IfcLabel",
+                    "value" : "Body"
+                  },
+                  "representationType" : {
+                    "type" : "IfcLabel",
+                    "value" : "SweptSolid"
+                  },
+                  "items" : [ {
+                    "type" : "IfcExtrudedAreaSolid",
+                    "sweptArea" : {
+                      "type" : "IfcIShapeProfileDef",
+                      "profileType" : "AREA",
+                      "profileName" : {
+                        "type" : "IfcLabel",
+                        "value" : "IPE220"
+                      },
+                      "overallWidth" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 110.0
+                      },
+                      "overallDepth" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 220.0
+                      },
+                      "webThickness" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 5.9
+                      },
+                      "flangeThickness" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 9.2
+                      },
+                      "filletRadius" : {
+                        "type" : "IfcNonNegativeLengthMeasure",
+                        "value" : 12.0
+                      }
+                    },
+                    "position" : {
+                      "type" : "IfcAxis2Placement3D",
+                      "location" : {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 55.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 110.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        } ]
+                      }
+                    },
+                    "extrudedDirection" : {
+                      "type" : "IfcDirection",
+                      "directionRatios" : [ {
+                        "type" : "IfcReal",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcReal",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcReal",
+                        "value" : 1.0
+                      } ]
+                    },
+                    "depth" : {
+                      "type" : "IfcPositiveLengthMeasure",
+                      "value" : 2000.0
+                    }
+                  } ]
+                } ]
+              },
+              "tag" : {
+                "type" : "IfcIdentifier",
+                "value" : "A-3"
+              }
+            }, {
+              "type" : "IfcBeamStandardCase",
+              "globalId" : "2de29134-f2aa-9c48-8d7b-28201aeb1bf4",
+              "name" : {
+                "type" : "IfcLabel",
+                "value" : "A-8"
+              },
+              "description" : {
+                "type" : "IfcText",
+                "value" : "IPE220"
+              },
+              "hasAssociations" : [ {
+                "type" : "IfcRelAssociatesMaterial",
+                "globalId" : "2de29134-f2aa-9cdb-7d7b-28201ae94dad",
+                "relatingMaterial" : {
+                  "type" : "IfcMaterialProfileSetUsage",
+                  "forProfileSet" : "272364c3-f843-49a1-ad58-61b83e65c4c3",
+                  "cardinalPoint" : {
+                    "type" : "IfcCardinalPointReference",
+                    "value" : 8
+                  }
+                }
+              } ],
+              "objectType" : {
+                "type" : "IfcLabel",
+                "value" : "Beam"
+              },
+              "isTypedBy" : [ "a4d3f335-9b6f-bb4f-99c6-26f9700a5596" ],
+              "objectPlacement" : {
+                "type" : "IfcLocalPlacement",
+                "globalId" : "54e684c0-b6f4-479b-b9e6-c236d26eb686",
+                "placementRelTo" : "77f421a0-f9d7-425e-b339-ccf0b3fd39f8",
+                "relativePlacement" : {
+                  "type" : "IfcAxis2Placement3D",
+                  "location" : {
+                    "type" : "IfcCartesianPoint",
+                    "coordinates" : [ {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 0.0
+                    }, {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 10500.0
+                    }, {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 0.0
+                    } ]
+                  },
+                  "axis" : {
+                    "type" : "IfcDirection",
+                    "directionRatios" : [ {
+                      "type" : "IfcReal",
+                      "value" : 1.0
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 0.0
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 0.0
+                    } ]
+                  },
+                  "refDirection" : {
+                    "type" : "IfcDirection",
+                    "directionRatios" : [ {
+                      "type" : "IfcReal",
+                      "value" : 0.0
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 1.0
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 0.0
+                    } ]
+                  }
+                }
+              },
+              "representation" : {
+                "type" : "IfcProductDefinitionShape",
+                "representations" : [ {
+                  "type" : "IfcShapeRepresentation",
+                  "contextOfItems" : "a27328b3-4590-439d-9431-936127f24325",
+                  "representationIdentifier" : {
+                    "type" : "IfcLabel",
+                    "value" : "Axis"
+                  },
+                  "representationType" : {
+                    "type" : "IfcLabel",
+                    "value" : "Curve3D"
+                  },
+                  "items" : [ {
+                    "type" : "IfcPolyline",
+                    "points" : [ {
+                      "type" : "IfcCartesianPoint",
+                      "coordinates" : [ {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      } ]
+                    }, {
+                      "type" : "IfcCartesianPoint",
+                      "coordinates" : [ {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 2000.0
+                      } ]
+                    } ]
+                  } ]
+                }, {
+                  "type" : "IfcShapeRepresentation",
+                  "contextOfItems" : "a27328b3-4590-439d-9431-936127f24325",
+                  "representationIdentifier" : {
+                    "type" : "IfcLabel",
+                    "value" : "Body"
+                  },
+                  "representationType" : {
+                    "type" : "IfcLabel",
+                    "value" : "SweptSolid"
+                  },
+                  "items" : [ {
+                    "type" : "IfcExtrudedAreaSolid",
+                    "sweptArea" : {
+                      "type" : "IfcIShapeProfileDef",
+                      "profileType" : "AREA",
+                      "profileName" : {
+                        "type" : "IfcLabel",
+                        "value" : "IPE220"
+                      },
+                      "overallWidth" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 110.0
+                      },
+                      "overallDepth" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 220.0
+                      },
+                      "webThickness" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 5.9
+                      },
+                      "flangeThickness" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 9.2
+                      },
+                      "filletRadius" : {
+                        "type" : "IfcNonNegativeLengthMeasure",
+                        "value" : 12.0
+                      }
+                    },
+                    "position" : {
+                      "type" : "IfcAxis2Placement3D",
+                      "location" : {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -110.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        } ]
+                      }
+                    },
+                    "extrudedDirection" : {
+                      "type" : "IfcDirection",
+                      "directionRatios" : [ {
+                        "type" : "IfcReal",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcReal",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcReal",
+                        "value" : 1.0
+                      } ]
+                    },
+                    "depth" : {
+                      "type" : "IfcPositiveLengthMeasure",
+                      "value" : 2000.0
+                    }
+                  } ]
+                } ]
+              },
+              "tag" : {
+                "type" : "IfcIdentifier",
+                "value" : "A-8"
+              }
+            }, {
+              "type" : "IfcBeamStandardCase",
+              "globalId" : "2de29134-f2aa-9c48-8d84-282036f71e86",
+              "name" : {
+                "type" : "IfcLabel",
+                "value" : "A-4"
+              },
+              "description" : {
+                "type" : "IfcText",
+                "value" : "IPE220"
+              },
+              "hasAssociations" : [ {
+                "type" : "IfcRelAssociatesMaterial",
+                "globalId" : "2de29134-f2aa-9cdb-7d7b-28201a611dad",
+                "relatingMaterial" : {
+                  "type" : "IfcMaterialProfileSetUsage",
+                  "forProfileSet" : "272364c3-f843-49a1-ad58-61b83e65c4c3",
+                  "cardinalPoint" : {
+                    "type" : "IfcCardinalPointReference",
+                    "value" : 4
+                  }
+                }
+              } ],
+              "objectType" : {
+                "type" : "IfcLabel",
+                "value" : "Beam"
+              },
+              "isTypedBy" : [ "a4d3f335-9b6f-bb4f-99c6-26f9700a5596" ],
+              "objectPlacement" : {
+                "type" : "IfcLocalPlacement",
+                "globalId" : "a84261de-426a-4a5a-9649-53e244df2830",
+                "placementRelTo" : "77f421a0-f9d7-425e-b339-ccf0b3fd39f8",
+                "relativePlacement" : {
+                  "type" : "IfcAxis2Placement3D",
+                  "location" : {
+                    "type" : "IfcCartesianPoint",
+                    "coordinates" : [ {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 0.0
+                    }, {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 4500.0
+                    }, {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 0.0
+                    } ]
+                  },
+                  "axis" : {
+                    "type" : "IfcDirection",
+                    "directionRatios" : [ {
+                      "type" : "IfcReal",
+                      "value" : 1.0
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 0.0
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 0.0
+                    } ]
+                  },
+                  "refDirection" : {
+                    "type" : "IfcDirection",
+                    "directionRatios" : [ {
+                      "type" : "IfcReal",
+                      "value" : 0.0
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 1.0
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 0.0
+                    } ]
+                  }
+                }
+              },
+              "representation" : {
+                "type" : "IfcProductDefinitionShape",
+                "representations" : [ {
+                  "type" : "IfcShapeRepresentation",
+                  "contextOfItems" : "a27328b3-4590-439d-9431-936127f24325",
+                  "representationIdentifier" : {
+                    "type" : "IfcLabel",
+                    "value" : "Axis"
+                  },
+                  "representationType" : {
+                    "type" : "IfcLabel",
+                    "value" : "Curve3D"
+                  },
+                  "items" : [ {
+                    "type" : "IfcPolyline",
+                    "points" : [ {
+                      "type" : "IfcCartesianPoint",
+                      "coordinates" : [ {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      } ]
+                    }, {
+                      "type" : "IfcCartesianPoint",
+                      "coordinates" : [ {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 2000.0
+                      } ]
+                    } ]
+                  } ]
+                }, {
+                  "type" : "IfcShapeRepresentation",
+                  "contextOfItems" : "a27328b3-4590-439d-9431-936127f24325",
+                  "representationIdentifier" : {
+                    "type" : "IfcLabel",
+                    "value" : "Body"
+                  },
+                  "representationType" : {
+                    "type" : "IfcLabel",
+                    "value" : "SweptSolid"
+                  },
+                  "items" : [ {
+                    "type" : "IfcExtrudedAreaSolid",
+                    "sweptArea" : {
+                      "type" : "IfcIShapeProfileDef",
+                      "profileType" : "AREA",
+                      "profileName" : {
+                        "type" : "IfcLabel",
+                        "value" : "IPE220"
+                      },
+                      "overallWidth" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 110.0
+                      },
+                      "overallDepth" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 220.0
+                      },
+                      "webThickness" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 5.9
+                      },
+                      "flangeThickness" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 9.2
+                      },
+                      "filletRadius" : {
+                        "type" : "IfcNonNegativeLengthMeasure",
+                        "value" : 12.0
+                      }
+                    },
+                    "position" : {
+                      "type" : "IfcAxis2Placement3D",
+                      "location" : {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -55.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        } ]
+                      }
+                    },
+                    "extrudedDirection" : {
+                      "type" : "IfcDirection",
+                      "directionRatios" : [ {
+                        "type" : "IfcReal",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcReal",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcReal",
+                        "value" : 1.0
+                      } ]
+                    },
+                    "depth" : {
+                      "type" : "IfcPositiveLengthMeasure",
+                      "value" : 2000.0
+                    }
+                  } ]
+                } ]
+              },
+              "tag" : {
+                "type" : "IfcIdentifier",
+                "value" : "A-4"
+              }
+            }, {
+              "type" : "IfcBeamStandardCase",
+              "globalId" : "2de29134-f2aa-9c48-8d7b-28201aeb1a81",
+              "name" : {
+                "type" : "IfcLabel",
+                "value" : "A-6"
+              },
+              "description" : {
+                "type" : "IfcText",
+                "value" : "IPE220"
+              },
+              "hasAssociations" : [ {
+                "type" : "IfcRelAssociatesMaterial",
+                "globalId" : "2de29134-f2aa-9cdb-7d7b-28201a5b0dad",
+                "relatingMaterial" : {
+                  "type" : "IfcMaterialProfileSetUsage",
+                  "forProfileSet" : "272364c3-f843-49a1-ad58-61b83e65c4c3",
+                  "cardinalPoint" : {
+                    "type" : "IfcCardinalPointReference",
+                    "value" : 6
+                  }
+                }
+              } ],
+              "objectType" : {
+                "type" : "IfcLabel",
+                "value" : "Beam"
+              },
+              "isTypedBy" : [ "a4d3f335-9b6f-bb4f-99c6-26f9700a5596" ],
+              "objectPlacement" : {
+                "type" : "IfcLocalPlacement",
+                "globalId" : "9d2f1fe5-8399-4213-9fff-0c2e123298a7",
+                "placementRelTo" : "77f421a0-f9d7-425e-b339-ccf0b3fd39f8",
+                "relativePlacement" : {
+                  "type" : "IfcAxis2Placement3D",
+                  "location" : {
+                    "type" : "IfcCartesianPoint",
+                    "coordinates" : [ {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 0.0
+                    }, {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 7500.0
+                    }, {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 0.0
+                    } ]
+                  },
+                  "axis" : {
+                    "type" : "IfcDirection",
+                    "directionRatios" : [ {
+                      "type" : "IfcReal",
+                      "value" : 1.0
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 0.0
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 0.0
+                    } ]
+                  },
+                  "refDirection" : {
+                    "type" : "IfcDirection",
+                    "directionRatios" : [ {
+                      "type" : "IfcReal",
+                      "value" : 0.0
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 1.0
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 0.0
+                    } ]
+                  }
+                }
+              },
+              "representation" : {
+                "type" : "IfcProductDefinitionShape",
+                "representations" : [ {
+                  "type" : "IfcShapeRepresentation",
+                  "contextOfItems" : "a27328b3-4590-439d-9431-936127f24325",
+                  "representationIdentifier" : {
+                    "type" : "IfcLabel",
+                    "value" : "Axis"
+                  },
+                  "representationType" : {
+                    "type" : "IfcLabel",
+                    "value" : "Curve3D"
+                  },
+                  "items" : [ {
+                    "type" : "IfcPolyline",
+                    "points" : [ {
+                      "type" : "IfcCartesianPoint",
+                      "coordinates" : [ {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      } ]
+                    }, {
+                      "type" : "IfcCartesianPoint",
+                      "coordinates" : [ {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 2000.0
+                      } ]
+                    } ]
+                  } ]
+                }, {
+                  "type" : "IfcShapeRepresentation",
+                  "contextOfItems" : "a27328b3-4590-439d-9431-936127f24325",
+                  "representationIdentifier" : {
+                    "type" : "IfcLabel",
+                    "value" : "Body"
+                  },
+                  "representationType" : {
+                    "type" : "IfcLabel",
+                    "value" : "SweptSolid"
+                  },
+                  "items" : [ {
+                    "type" : "IfcExtrudedAreaSolid",
+                    "sweptArea" : {
+                      "type" : "IfcIShapeProfileDef",
+                      "profileType" : "AREA",
+                      "profileName" : {
+                        "type" : "IfcLabel",
+                        "value" : "IPE220"
+                      },
+                      "overallWidth" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 110.0
+                      },
+                      "overallDepth" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 220.0
+                      },
+                      "webThickness" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 5.9
+                      },
+                      "flangeThickness" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 9.2
+                      },
+                      "filletRadius" : {
+                        "type" : "IfcNonNegativeLengthMeasure",
+                        "value" : 12.0
+                      }
+                    },
+                    "position" : {
+                      "type" : "IfcAxis2Placement3D",
+                      "location" : {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 55.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        } ]
+                      }
+                    },
+                    "extrudedDirection" : {
+                      "type" : "IfcDirection",
+                      "directionRatios" : [ {
+                        "type" : "IfcReal",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcReal",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcReal",
+                        "value" : 1.0
+                      } ]
+                    },
+                    "depth" : {
+                      "type" : "IfcPositiveLengthMeasure",
+                      "value" : 2000.0
+                    }
+                  } ]
+                } ]
+              },
+              "tag" : {
+                "type" : "IfcIdentifier",
+                "value" : "A-6"
+              }
+            }, {
+              "type" : "IfcBeamStandardCase",
+              "globalId" : "2de29134-f2aa-9c48-8d84-282036f71d77",
+              "name" : {
+                "type" : "IfcLabel",
+                "value" : "A-9"
+              },
+              "description" : {
+                "type" : "IfcText",
+                "value" : "IPE220"
+              },
+              "hasAssociations" : [ {
+                "type" : "IfcRelAssociatesMaterial",
+                "globalId" : "2de29134-f2aa-9cdb-7d7b-28201a4eedad",
+                "relatingMaterial" : {
+                  "type" : "IfcMaterialProfileSetUsage",
+                  "forProfileSet" : "272364c3-f843-49a1-ad58-61b83e65c4c3",
+                  "cardinalPoint" : {
+                    "type" : "IfcCardinalPointReference",
+                    "value" : 9
+                  }
+                }
+              } ],
+              "objectType" : {
+                "type" : "IfcLabel",
+                "value" : "Beam"
+              },
+              "isTypedBy" : [ "a4d3f335-9b6f-bb4f-99c6-26f9700a5596" ],
+              "objectPlacement" : {
+                "type" : "IfcLocalPlacement",
+                "globalId" : "b5001201-562b-496b-89c0-52012099c0a3",
+                "placementRelTo" : "77f421a0-f9d7-425e-b339-ccf0b3fd39f8",
+                "relativePlacement" : {
+                  "type" : "IfcAxis2Placement3D",
+                  "location" : {
+                    "type" : "IfcCartesianPoint",
+                    "coordinates" : [ {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 0.0
+                    }, {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 12000.0
+                    }, {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 0.0
+                    } ]
+                  },
+                  "axis" : {
+                    "type" : "IfcDirection",
+                    "directionRatios" : [ {
+                      "type" : "IfcReal",
+                      "value" : 1.0
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 0.0
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 0.0
+                    } ]
+                  },
+                  "refDirection" : {
+                    "type" : "IfcDirection",
+                    "directionRatios" : [ {
+                      "type" : "IfcReal",
+                      "value" : 0.0
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 1.0
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 0.0
+                    } ]
+                  }
+                }
+              },
+              "representation" : {
+                "type" : "IfcProductDefinitionShape",
+                "representations" : [ {
+                  "type" : "IfcShapeRepresentation",
+                  "contextOfItems" : "a27328b3-4590-439d-9431-936127f24325",
+                  "representationIdentifier" : {
+                    "type" : "IfcLabel",
+                    "value" : "Axis"
+                  },
+                  "representationType" : {
+                    "type" : "IfcLabel",
+                    "value" : "Curve3D"
+                  },
+                  "items" : [ {
+                    "type" : "IfcPolyline",
+                    "points" : [ {
+                      "type" : "IfcCartesianPoint",
+                      "coordinates" : [ {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      } ]
+                    }, {
+                      "type" : "IfcCartesianPoint",
+                      "coordinates" : [ {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 2000.0
+                      } ]
+                    } ]
+                  } ]
+                }, {
+                  "type" : "IfcShapeRepresentation",
+                  "contextOfItems" : "a27328b3-4590-439d-9431-936127f24325",
+                  "representationIdentifier" : {
+                    "type" : "IfcLabel",
+                    "value" : "Body"
+                  },
+                  "representationType" : {
+                    "type" : "IfcLabel",
+                    "value" : "SweptSolid"
+                  },
+                  "items" : [ {
+                    "type" : "IfcExtrudedAreaSolid",
+                    "sweptArea" : {
+                      "type" : "IfcIShapeProfileDef",
+                      "profileType" : "AREA",
+                      "profileName" : {
+                        "type" : "IfcLabel",
+                        "value" : "IPE220"
+                      },
+                      "overallWidth" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 110.0
+                      },
+                      "overallDepth" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 220.0
+                      },
+                      "webThickness" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 5.9
+                      },
+                      "flangeThickness" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 9.2
+                      },
+                      "filletRadius" : {
+                        "type" : "IfcNonNegativeLengthMeasure",
+                        "value" : 12.0
+                      }
+                    },
+                    "position" : {
+                      "type" : "IfcAxis2Placement3D",
+                      "location" : {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 55.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -110.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        } ]
+                      }
+                    },
+                    "extrudedDirection" : {
+                      "type" : "IfcDirection",
+                      "directionRatios" : [ {
+                        "type" : "IfcReal",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcReal",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcReal",
+                        "value" : 1.0
+                      } ]
+                    },
+                    "depth" : {
+                      "type" : "IfcPositiveLengthMeasure",
+                      "value" : 2000.0
+                    }
+                  } ]
+                } ]
+              },
+              "tag" : {
+                "type" : "IfcIdentifier",
+                "value" : "A-9"
+              }
+            }, {
+              "type" : "IfcBeamStandardCase",
+              "globalId" : "da9662b6-8b22-c747-9eff-11f47db2d8ac",
+              "name" : {
+                "type" : "IfcLabel",
+                "value" : "B-1"
+              },
+              "description" : {
+                "type" : "IfcText",
+                "value" : "1/2IPE300"
+              },
+              "hasAssociations" : [ {
+                "type" : "IfcRelAssociatesMaterial",
+                "globalId" : "2de29134-f2aa-9cdb-7d7b-28201a94fdad",
+                "relatingMaterial" : {
+                  "type" : "IfcMaterialProfileSetUsage",
+                  "forProfileSet" : "491ea434-35f8-4c22-82a7-a76b1d70b6e4",
+                  "cardinalPoint" : {
+                    "type" : "IfcCardinalPointReference",
+                    "value" : 1
+                  }
+                }
+              } ],
+              "objectType" : {
+                "type" : "IfcLabel",
+                "value" : "Beam"
+              },
+              "isTypedBy" : [ {
+                "type" : "IfcRelDefinesByType",
+                "globalId" : "a4d3f335-9b6f-bb4f-95c6-26f9700a5596",
+                "name" : {
+                  "type" : "IfcLabel",
+                  "value" : "beam typing"
+                },
+                "relatingType" : "2de29134-f2aa-9cdb-7d7b-28201a9ecdad"
+              } ],
+              "objectPlacement" : {
+                "type" : "IfcLocalPlacement",
+                "globalId" : "90554734-8736-454b-a690-d3360c025fde",
+                "placementRelTo" : "77f421a0-f9d7-425e-b339-ccf0b3fd39f8",
+                "relativePlacement" : {
+                  "type" : "IfcAxis2Placement3D",
+                  "location" : {
+                    "type" : "IfcCartesianPoint",
+                    "coordinates" : [ {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 0.0
+                    }, {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 0.0
+                    }, {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 1500.0
+                    } ]
+                  },
+                  "axis" : {
+                    "type" : "IfcDirection",
+                    "directionRatios" : [ {
+                      "type" : "IfcReal",
+                      "value" : 0.98
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 0.081
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 0.182
+                    } ]
+                  },
+                  "refDirection" : {
+                    "type" : "IfcDirection",
+                    "directionRatios" : [ {
+                      "type" : "IfcReal",
+                      "value" : -1.0E-4
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 0.9138
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : -0.40616
+                    } ]
+                  }
+                }
+              },
+              "representation" : {
+                "type" : "IfcProductDefinitionShape",
+                "representations" : [ {
+                  "type" : "IfcShapeRepresentation",
+                  "contextOfItems" : "a27328b3-4590-439d-9431-936127f24325",
+                  "representationIdentifier" : {
+                    "type" : "IfcLabel",
+                    "value" : "Axis"
+                  },
+                  "representationType" : {
+                    "type" : "IfcLabel",
+                    "value" : "Curve3D"
+                  },
+                  "items" : [ {
+                    "type" : "IfcPolyline",
+                    "points" : [ {
+                      "type" : "IfcCartesianPoint",
+                      "coordinates" : [ {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      } ]
+                    }, {
+                      "type" : "IfcCartesianPoint",
+                      "coordinates" : [ {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 3000.0
+                      } ]
+                    } ]
+                  } ]
+                }, {
+                  "type" : "IfcShapeRepresentation",
+                  "contextOfItems" : "a27328b3-4590-439d-9431-936127f24325",
+                  "representationIdentifier" : {
+                    "type" : "IfcLabel",
+                    "value" : "Body"
+                  },
+                  "representationType" : {
+                    "type" : "IfcLabel",
+                    "value" : "SweptSolid"
+                  },
+                  "items" : [ {
+                    "type" : "IfcExtrudedAreaSolid",
+                    "sweptArea" : {
+                      "type" : "IfcTShapeProfileDef",
+                      "profileType" : "AREA",
+                      "profileName" : {
+                        "type" : "IfcLabel",
+                        "value" : "1/2IPE300"
+                      },
+                      "depth" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 150.0
+                      },
+                      "flangeWidth" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 150.0
+                      },
+                      "webThickness" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 7.1
+                      },
+                      "flangeThickness" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 10.7
+                      },
+                      "filletRadius" : {
+                        "type" : "IfcNonNegativeLengthMeasure",
+                        "value" : 15.0
+                      }
+                    },
+                    "position" : {
+                      "type" : "IfcAxis2Placement3D",
+                      "location" : {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -75.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 75.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        } ]
+                      }
+                    },
+                    "extrudedDirection" : {
+                      "type" : "IfcDirection",
+                      "directionRatios" : [ {
+                        "type" : "IfcReal",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcReal",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcReal",
+                        "value" : 1.0
+                      } ]
+                    },
+                    "depth" : {
+                      "type" : "IfcPositiveLengthMeasure",
+                      "value" : 3000.0
+                    }
+                  } ]
+                } ]
+              },
+              "tag" : {
+                "type" : "IfcIdentifier",
+                "value" : "B-1"
+              }
+            }, {
+              "type" : "IfcBeamStandardCase",
+              "globalId" : "da9662b6-8b6a-8747-9eff-11f47db2d9cf",
+              "name" : {
+                "type" : "IfcLabel",
+                "value" : "B-5"
+              },
+              "description" : {
+                "type" : "IfcText",
+                "value" : "1/2IPE300"
+              },
+              "hasAssociations" : [ {
+                "type" : "IfcRelAssociatesMaterial",
+                "globalId" : "2de29134-f2aa-9cdb-7d7b-28201a101dad",
+                "relatingMaterial" : {
+                  "type" : "IfcMaterialProfileSetUsage",
+                  "forProfileSet" : "491ea434-35f8-4c22-82a7-a76b1d70b6e4",
+                  "cardinalPoint" : {
+                    "type" : "IfcCardinalPointReference",
+                    "value" : 5
+                  }
+                }
+              } ],
+              "objectType" : {
+                "type" : "IfcLabel",
+                "value" : "Beam"
+              },
+              "isTypedBy" : [ "a4d3f335-9b6f-bb4f-95c6-26f9700a5596" ],
+              "objectPlacement" : {
+                "type" : "IfcLocalPlacement",
+                "globalId" : "8c3dcc6d-d953-4354-8254-e80f9cd97e82",
+                "placementRelTo" : "77f421a0-f9d7-425e-b339-ccf0b3fd39f8",
+                "relativePlacement" : {
+                  "type" : "IfcAxis2Placement3D",
+                  "location" : {
+                    "type" : "IfcCartesianPoint",
+                    "coordinates" : [ {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 0.0
+                    }, {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 6000.0
+                    }, {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 1500.0
+                    } ]
+                  },
+                  "axis" : {
+                    "type" : "IfcDirection",
+                    "directionRatios" : [ {
+                      "type" : "IfcReal",
+                      "value" : 0.98
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 0.081
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 0.182
+                    } ]
+                  },
+                  "refDirection" : {
+                    "type" : "IfcDirection",
+                    "directionRatios" : [ {
+                      "type" : "IfcReal",
+                      "value" : -1.0E-4
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 0.9138
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : -0.40616
+                    } ]
+                  }
+                }
+              },
+              "representation" : {
+                "type" : "IfcProductDefinitionShape",
+                "representations" : [ {
+                  "type" : "IfcShapeRepresentation",
+                  "contextOfItems" : "a27328b3-4590-439d-9431-936127f24325",
+                  "representationIdentifier" : {
+                    "type" : "IfcLabel",
+                    "value" : "Axis"
+                  },
+                  "representationType" : {
+                    "type" : "IfcLabel",
+                    "value" : "Curve3D"
+                  },
+                  "items" : [ {
+                    "type" : "IfcPolyline",
+                    "points" : [ {
+                      "type" : "IfcCartesianPoint",
+                      "coordinates" : [ {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      } ]
+                    }, {
+                      "type" : "IfcCartesianPoint",
+                      "coordinates" : [ {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 3000.0
+                      } ]
+                    } ]
+                  } ]
+                }, {
+                  "type" : "IfcShapeRepresentation",
+                  "contextOfItems" : "a27328b3-4590-439d-9431-936127f24325",
+                  "representationIdentifier" : {
+                    "type" : "IfcLabel",
+                    "value" : "Body"
+                  },
+                  "representationType" : {
+                    "type" : "IfcLabel",
+                    "value" : "SweptSolid"
+                  },
+                  "items" : [ {
+                    "type" : "IfcExtrudedAreaSolid",
+                    "sweptArea" : {
+                      "type" : "IfcTShapeProfileDef",
+                      "profileType" : "AREA",
+                      "profileName" : {
+                        "type" : "IfcLabel",
+                        "value" : "1/2IPE300"
+                      },
+                      "depth" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 150.0
+                      },
+                      "flangeWidth" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 150.0
+                      },
+                      "webThickness" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 7.1
+                      },
+                      "flangeThickness" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 10.7
+                      },
+                      "filletRadius" : {
+                        "type" : "IfcNonNegativeLengthMeasure",
+                        "value" : 15.0
+                      }
+                    },
+                    "position" : {
+                      "type" : "IfcAxis2Placement3D",
+                      "location" : {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        } ]
+                      }
+                    },
+                    "extrudedDirection" : {
+                      "type" : "IfcDirection",
+                      "directionRatios" : [ {
+                        "type" : "IfcReal",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcReal",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcReal",
+                        "value" : 1.0
+                      } ]
+                    },
+                    "depth" : {
+                      "type" : "IfcPositiveLengthMeasure",
+                      "value" : 3000.0
+                    }
+                  } ]
+                } ]
+              },
+              "tag" : {
+                "type" : "IfcIdentifier",
+                "value" : "B-5"
+              }
+            }, {
+              "type" : "IfcBeamStandardCase",
+              "globalId" : "da9662b6-8b6a-8747-9eff-11f47db2d41d",
+              "name" : {
+                "type" : "IfcLabel",
+                "value" : "B-4"
+              },
+              "description" : {
+                "type" : "IfcText",
+                "value" : "1/2IPE300"
+              },
+              "hasAssociations" : [ {
+                "type" : "IfcRelAssociatesMaterial",
+                "globalId" : "2de29134-f2aa-9cdb-7d7b-28201a131dad",
+                "relatingMaterial" : {
+                  "type" : "IfcMaterialProfileSetUsage",
+                  "forProfileSet" : "491ea434-35f8-4c22-82a7-a76b1d70b6e4",
+                  "cardinalPoint" : {
+                    "type" : "IfcCardinalPointReference",
+                    "value" : 4
+                  }
+                }
+              } ],
+              "objectType" : {
+                "type" : "IfcLabel",
+                "value" : "Beam"
+              },
+              "isTypedBy" : [ "a4d3f335-9b6f-bb4f-95c6-26f9700a5596" ],
+              "objectPlacement" : {
+                "type" : "IfcLocalPlacement",
+                "globalId" : "bcda97a4-7c65-41d3-b4e4-991fdbaeb9a0",
+                "placementRelTo" : "77f421a0-f9d7-425e-b339-ccf0b3fd39f8",
+                "relativePlacement" : {
+                  "type" : "IfcAxis2Placement3D",
+                  "location" : {
+                    "type" : "IfcCartesianPoint",
+                    "coordinates" : [ {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 0.0
+                    }, {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 4500.0
+                    }, {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 1500.0
+                    } ]
+                  },
+                  "axis" : {
+                    "type" : "IfcDirection",
+                    "directionRatios" : [ {
+                      "type" : "IfcReal",
+                      "value" : 0.98
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 0.081
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 0.182
+                    } ]
+                  },
+                  "refDirection" : {
+                    "type" : "IfcDirection",
+                    "directionRatios" : [ {
+                      "type" : "IfcReal",
+                      "value" : -1.0E-4
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 0.9138
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : -0.40616
+                    } ]
+                  }
+                }
+              },
+              "representation" : {
+                "type" : "IfcProductDefinitionShape",
+                "representations" : [ {
+                  "type" : "IfcShapeRepresentation",
+                  "contextOfItems" : "a27328b3-4590-439d-9431-936127f24325",
+                  "representationIdentifier" : {
+                    "type" : "IfcLabel",
+                    "value" : "Axis"
+                  },
+                  "representationType" : {
+                    "type" : "IfcLabel",
+                    "value" : "Curve3D"
+                  },
+                  "items" : [ {
+                    "type" : "IfcPolyline",
+                    "points" : [ {
+                      "type" : "IfcCartesianPoint",
+                      "coordinates" : [ {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      } ]
+                    }, {
+                      "type" : "IfcCartesianPoint",
+                      "coordinates" : [ {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 3000.0
+                      } ]
+                    } ]
+                  } ]
+                }, {
+                  "type" : "IfcShapeRepresentation",
+                  "contextOfItems" : "a27328b3-4590-439d-9431-936127f24325",
+                  "representationIdentifier" : {
+                    "type" : "IfcLabel",
+                    "value" : "Body"
+                  },
+                  "representationType" : {
+                    "type" : "IfcLabel",
+                    "value" : "SweptSolid"
+                  },
+                  "items" : [ {
+                    "type" : "IfcExtrudedAreaSolid",
+                    "sweptArea" : {
+                      "type" : "IfcTShapeProfileDef",
+                      "profileType" : "AREA",
+                      "profileName" : {
+                        "type" : "IfcLabel",
+                        "value" : "1/2IPE300"
+                      },
+                      "depth" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 150.0
+                      },
+                      "flangeWidth" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 150.0
+                      },
+                      "webThickness" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 7.1
+                      },
+                      "flangeThickness" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 10.7
+                      },
+                      "filletRadius" : {
+                        "type" : "IfcNonNegativeLengthMeasure",
+                        "value" : 15.0
+                      }
+                    },
+                    "position" : {
+                      "type" : "IfcAxis2Placement3D",
+                      "location" : {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -75.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        } ]
+                      }
+                    },
+                    "extrudedDirection" : {
+                      "type" : "IfcDirection",
+                      "directionRatios" : [ {
+                        "type" : "IfcReal",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcReal",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcReal",
+                        "value" : 1.0
+                      } ]
+                    },
+                    "depth" : {
+                      "type" : "IfcPositiveLengthMeasure",
+                      "value" : 3000.0
+                    }
+                  } ]
+                } ]
+              },
+              "tag" : {
+                "type" : "IfcIdentifier",
+                "value" : "B-4"
+              }
+            }, {
+              "type" : "IfcBeamStandardCase",
+              "globalId" : "da9662b6-8b6a-8747-9eff-11f47db2de65",
+              "name" : {
+                "type" : "IfcLabel",
+                "value" : "B-8"
+              },
+              "description" : {
+                "type" : "IfcText",
+                "value" : "1/2IPE300"
+              },
+              "hasAssociations" : [ {
+                "type" : "IfcRelAssociatesMaterial",
+                "globalId" : "2de29134-f2aa-9cdb-7d7b-28201a626dad",
+                "relatingMaterial" : {
+                  "type" : "IfcMaterialProfileSetUsage",
+                  "forProfileSet" : "491ea434-35f8-4c22-82a7-a76b1d70b6e4",
+                  "cardinalPoint" : {
+                    "type" : "IfcCardinalPointReference",
+                    "value" : 8
+                  }
+                }
+              } ],
+              "objectType" : {
+                "type" : "IfcLabel",
+                "value" : "Beam"
+              },
+              "isTypedBy" : [ "a4d3f335-9b6f-bb4f-95c6-26f9700a5596" ],
+              "objectPlacement" : {
+                "type" : "IfcLocalPlacement",
+                "globalId" : "c99c05fd-eb29-4191-8512-9e44d517df1b",
+                "placementRelTo" : "77f421a0-f9d7-425e-b339-ccf0b3fd39f8",
+                "relativePlacement" : {
+                  "type" : "IfcAxis2Placement3D",
+                  "location" : {
+                    "type" : "IfcCartesianPoint",
+                    "coordinates" : [ {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 0.0
+                    }, {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 10500.0
+                    }, {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 1500.0
+                    } ]
+                  },
+                  "axis" : {
+                    "type" : "IfcDirection",
+                    "directionRatios" : [ {
+                      "type" : "IfcReal",
+                      "value" : 0.98
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 0.081
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 0.182
+                    } ]
+                  },
+                  "refDirection" : {
+                    "type" : "IfcDirection",
+                    "directionRatios" : [ {
+                      "type" : "IfcReal",
+                      "value" : -1.0E-4
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 0.9138
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : -0.40616
+                    } ]
+                  }
+                }
+              },
+              "representation" : {
+                "type" : "IfcProductDefinitionShape",
+                "representations" : [ {
+                  "type" : "IfcShapeRepresentation",
+                  "contextOfItems" : "a27328b3-4590-439d-9431-936127f24325",
+                  "representationIdentifier" : {
+                    "type" : "IfcLabel",
+                    "value" : "Axis"
+                  },
+                  "representationType" : {
+                    "type" : "IfcLabel",
+                    "value" : "Curve3D"
+                  },
+                  "items" : [ {
+                    "type" : "IfcPolyline",
+                    "points" : [ {
+                      "type" : "IfcCartesianPoint",
+                      "coordinates" : [ {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      } ]
+                    }, {
+                      "type" : "IfcCartesianPoint",
+                      "coordinates" : [ {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 3000.0
+                      } ]
+                    } ]
+                  } ]
+                }, {
+                  "type" : "IfcShapeRepresentation",
+                  "contextOfItems" : "a27328b3-4590-439d-9431-936127f24325",
+                  "representationIdentifier" : {
+                    "type" : "IfcLabel",
+                    "value" : "Body"
+                  },
+                  "representationType" : {
+                    "type" : "IfcLabel",
+                    "value" : "SweptSolid"
+                  },
+                  "items" : [ {
+                    "type" : "IfcExtrudedAreaSolid",
+                    "sweptArea" : {
+                      "type" : "IfcTShapeProfileDef",
+                      "profileType" : "AREA",
+                      "profileName" : {
+                        "type" : "IfcLabel",
+                        "value" : "1/2IPE300"
+                      },
+                      "depth" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 150.0
+                      },
+                      "flangeWidth" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 150.0
+                      },
+                      "webThickness" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 7.1
+                      },
+                      "flangeThickness" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 10.7
+                      },
+                      "filletRadius" : {
+                        "type" : "IfcNonNegativeLengthMeasure",
+                        "value" : 15.0
+                      }
+                    },
+                    "position" : {
+                      "type" : "IfcAxis2Placement3D",
+                      "location" : {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -75.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        } ]
+                      }
+                    },
+                    "extrudedDirection" : {
+                      "type" : "IfcDirection",
+                      "directionRatios" : [ {
+                        "type" : "IfcReal",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcReal",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcReal",
+                        "value" : 1.0
+                      } ]
+                    },
+                    "depth" : {
+                      "type" : "IfcPositiveLengthMeasure",
+                      "value" : 3000.0
+                    }
+                  } ]
+                } ]
+              },
+              "tag" : {
+                "type" : "IfcIdentifier",
+                "value" : "B-8"
+              }
+            }, {
+              "type" : "IfcBeamStandardCase",
+              "globalId" : "da9662b6-8b6a-8747-9eff-11f47db2d1c1",
+              "name" : {
+                "type" : "IfcLabel",
+                "value" : "B-7"
+              },
+              "description" : {
+                "type" : "IfcText",
+                "value" : "1/2IPE300"
+              },
+              "hasAssociations" : [ {
+                "type" : "IfcRelAssociatesMaterial",
+                "globalId" : "2de29134-f2aa-9cdb-7d7b-28201ae89dad",
+                "relatingMaterial" : {
+                  "type" : "IfcMaterialProfileSetUsage",
+                  "forProfileSet" : "491ea434-35f8-4c22-82a7-a76b1d70b6e4",
+                  "cardinalPoint" : {
+                    "type" : "IfcCardinalPointReference",
+                    "value" : 7
+                  }
+                }
+              } ],
+              "objectType" : {
+                "type" : "IfcLabel",
+                "value" : "Beam"
+              },
+              "isTypedBy" : [ "a4d3f335-9b6f-bb4f-95c6-26f9700a5596" ],
+              "objectPlacement" : {
+                "type" : "IfcLocalPlacement",
+                "globalId" : "03b61624-e5a6-45dc-b72d-1fdbd363952f",
+                "placementRelTo" : "77f421a0-f9d7-425e-b339-ccf0b3fd39f8",
+                "relativePlacement" : {
+                  "type" : "IfcAxis2Placement3D",
+                  "location" : {
+                    "type" : "IfcCartesianPoint",
+                    "coordinates" : [ {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 0.0
+                    }, {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 9000.0
+                    }, {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 1500.0
+                    } ]
+                  },
+                  "axis" : {
+                    "type" : "IfcDirection",
+                    "directionRatios" : [ {
+                      "type" : "IfcReal",
+                      "value" : 0.98
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 0.081
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 0.182
+                    } ]
+                  },
+                  "refDirection" : {
+                    "type" : "IfcDirection",
+                    "directionRatios" : [ {
+                      "type" : "IfcReal",
+                      "value" : -1.0E-4
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 0.9138
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : -0.40616
+                    } ]
+                  }
+                }
+              },
+              "representation" : {
+                "type" : "IfcProductDefinitionShape",
+                "representations" : [ {
+                  "type" : "IfcShapeRepresentation",
+                  "contextOfItems" : "a27328b3-4590-439d-9431-936127f24325",
+                  "representationIdentifier" : {
+                    "type" : "IfcLabel",
+                    "value" : "Axis"
+                  },
+                  "representationType" : {
+                    "type" : "IfcLabel",
+                    "value" : "Curve3D"
+                  },
+                  "items" : [ {
+                    "type" : "IfcPolyline",
+                    "points" : [ {
+                      "type" : "IfcCartesianPoint",
+                      "coordinates" : [ {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      } ]
+                    }, {
+                      "type" : "IfcCartesianPoint",
+                      "coordinates" : [ {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 3000.0
+                      } ]
+                    } ]
+                  } ]
+                }, {
+                  "type" : "IfcShapeRepresentation",
+                  "contextOfItems" : "a27328b3-4590-439d-9431-936127f24325",
+                  "representationIdentifier" : {
+                    "type" : "IfcLabel",
+                    "value" : "Body"
+                  },
+                  "representationType" : {
+                    "type" : "IfcLabel",
+                    "value" : "SweptSolid"
+                  },
+                  "items" : [ {
+                    "type" : "IfcExtrudedAreaSolid",
+                    "sweptArea" : {
+                      "type" : "IfcTShapeProfileDef",
+                      "profileType" : "AREA",
+                      "profileName" : {
+                        "type" : "IfcLabel",
+                        "value" : "1/2IPE300"
+                      },
+                      "depth" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 150.0
+                      },
+                      "flangeWidth" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 150.0
+                      },
+                      "webThickness" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 7.1
+                      },
+                      "flangeThickness" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 10.7
+                      },
+                      "filletRadius" : {
+                        "type" : "IfcNonNegativeLengthMeasure",
+                        "value" : 15.0
+                      }
+                    },
+                    "position" : {
+                      "type" : "IfcAxis2Placement3D",
+                      "location" : {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -75.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -75.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        } ]
+                      }
+                    },
+                    "extrudedDirection" : {
+                      "type" : "IfcDirection",
+                      "directionRatios" : [ {
+                        "type" : "IfcReal",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcReal",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcReal",
+                        "value" : 1.0
+                      } ]
+                    },
+                    "depth" : {
+                      "type" : "IfcPositiveLengthMeasure",
+                      "value" : 3000.0
+                    }
+                  } ]
+                } ]
+              },
+              "tag" : {
+                "type" : "IfcIdentifier",
+                "value" : "B-7"
+              }
+            }, {
+              "type" : "IfcBeamStandardCase",
+              "globalId" : "da9662b6-8b6a-8747-9eff-11f47db2dcc1",
+              "name" : {
+                "type" : "IfcLabel",
+                "value" : "B-9"
+              },
+              "description" : {
+                "type" : "IfcText",
+                "value" : "1/2IPE300"
+              },
+              "hasAssociations" : [ {
+                "type" : "IfcRelAssociatesMaterial",
+                "globalId" : "2de29134-f2aa-9cdb-7d7b-28201ae86dad",
+                "relatingMaterial" : {
+                  "type" : "IfcMaterialProfileSetUsage",
+                  "forProfileSet" : "491ea434-35f8-4c22-82a7-a76b1d70b6e4",
+                  "cardinalPoint" : {
+                    "type" : "IfcCardinalPointReference",
+                    "value" : 9
+                  }
+                }
+              } ],
+              "objectType" : {
+                "type" : "IfcLabel",
+                "value" : "Beam"
+              },
+              "isTypedBy" : [ "a4d3f335-9b6f-bb4f-95c6-26f9700a5596" ],
+              "objectPlacement" : {
+                "type" : "IfcLocalPlacement",
+                "globalId" : "871d875c-9c2a-48d4-a983-ca835a547f83",
+                "placementRelTo" : "77f421a0-f9d7-425e-b339-ccf0b3fd39f8",
+                "relativePlacement" : {
+                  "type" : "IfcAxis2Placement3D",
+                  "location" : {
+                    "type" : "IfcCartesianPoint",
+                    "coordinates" : [ {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 0.0
+                    }, {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 12000.0
+                    }, {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 1500.0
+                    } ]
+                  },
+                  "axis" : {
+                    "type" : "IfcDirection",
+                    "directionRatios" : [ {
+                      "type" : "IfcReal",
+                      "value" : 0.98
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 0.081
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 0.182
+                    } ]
+                  },
+                  "refDirection" : {
+                    "type" : "IfcDirection",
+                    "directionRatios" : [ {
+                      "type" : "IfcReal",
+                      "value" : -1.0E-4
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 0.9138
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : -0.40616
+                    } ]
+                  }
+                }
+              },
+              "representation" : {
+                "type" : "IfcProductDefinitionShape",
+                "representations" : [ {
+                  "type" : "IfcShapeRepresentation",
+                  "contextOfItems" : "a27328b3-4590-439d-9431-936127f24325",
+                  "representationIdentifier" : {
+                    "type" : "IfcLabel",
+                    "value" : "Axis"
+                  },
+                  "representationType" : {
+                    "type" : "IfcLabel",
+                    "value" : "Curve3D"
+                  },
+                  "items" : [ {
+                    "type" : "IfcPolyline",
+                    "points" : [ {
+                      "type" : "IfcCartesianPoint",
+                      "coordinates" : [ {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      } ]
+                    }, {
+                      "type" : "IfcCartesianPoint",
+                      "coordinates" : [ {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 3000.0
+                      } ]
+                    } ]
+                  } ]
+                }, {
+                  "type" : "IfcShapeRepresentation",
+                  "contextOfItems" : "a27328b3-4590-439d-9431-936127f24325",
+                  "representationIdentifier" : {
+                    "type" : "IfcLabel",
+                    "value" : "Body"
+                  },
+                  "representationType" : {
+                    "type" : "IfcLabel",
+                    "value" : "SweptSolid"
+                  },
+                  "items" : [ {
+                    "type" : "IfcExtrudedAreaSolid",
+                    "sweptArea" : {
+                      "type" : "IfcTShapeProfileDef",
+                      "profileType" : "AREA",
+                      "profileName" : {
+                        "type" : "IfcLabel",
+                        "value" : "1/2IPE300"
+                      },
+                      "depth" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 150.0
+                      },
+                      "flangeWidth" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 150.0
+                      },
+                      "webThickness" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 7.1
+                      },
+                      "flangeThickness" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 10.7
+                      },
+                      "filletRadius" : {
+                        "type" : "IfcNonNegativeLengthMeasure",
+                        "value" : 15.0
+                      }
+                    },
+                    "position" : {
+                      "type" : "IfcAxis2Placement3D",
+                      "location" : {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 75.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : -75.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        } ]
+                      }
+                    },
+                    "extrudedDirection" : {
+                      "type" : "IfcDirection",
+                      "directionRatios" : [ {
+                        "type" : "IfcReal",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcReal",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcReal",
+                        "value" : 1.0
+                      } ]
+                    },
+                    "depth" : {
+                      "type" : "IfcPositiveLengthMeasure",
+                      "value" : 3000.0
+                    }
+                  } ]
+                } ]
+              },
+              "tag" : {
+                "type" : "IfcIdentifier",
+                "value" : "B-9"
+              }
+            }, {
+              "type" : "IfcBeamStandardCase",
+              "globalId" : "da9662b6-8b6a-8747-9eff-11f47db2d0df",
+              "name" : {
+                "type" : "IfcLabel",
+                "value" : "B-6"
+              },
+              "description" : {
+                "type" : "IfcText",
+                "value" : "1/2IPE300"
+              },
+              "hasAssociations" : [ {
+                "type" : "IfcRelAssociatesMaterial",
+                "globalId" : "2de29134-f2aa-9cdb-7d7b-28201a79bdad",
+                "relatingMaterial" : {
+                  "type" : "IfcMaterialProfileSetUsage",
+                  "forProfileSet" : "491ea434-35f8-4c22-82a7-a76b1d70b6e4",
+                  "cardinalPoint" : {
+                    "type" : "IfcCardinalPointReference",
+                    "value" : 6
+                  }
+                }
+              } ],
+              "objectType" : {
+                "type" : "IfcLabel",
+                "value" : "Beam"
+              },
+              "isTypedBy" : [ "a4d3f335-9b6f-bb4f-95c6-26f9700a5596" ],
+              "objectPlacement" : {
+                "type" : "IfcLocalPlacement",
+                "globalId" : "d3f6615f-3e8a-47b1-811d-fb26545be9d0",
+                "placementRelTo" : "77f421a0-f9d7-425e-b339-ccf0b3fd39f8",
+                "relativePlacement" : {
+                  "type" : "IfcAxis2Placement3D",
+                  "location" : {
+                    "type" : "IfcCartesianPoint",
+                    "coordinates" : [ {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 0.0
+                    }, {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 7500.0
+                    }, {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 1500.0
+                    } ]
+                  },
+                  "axis" : {
+                    "type" : "IfcDirection",
+                    "directionRatios" : [ {
+                      "type" : "IfcReal",
+                      "value" : 0.98
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 0.081
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 0.182
+                    } ]
+                  },
+                  "refDirection" : {
+                    "type" : "IfcDirection",
+                    "directionRatios" : [ {
+                      "type" : "IfcReal",
+                      "value" : -1.0E-4
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 0.9138
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : -0.40616
+                    } ]
+                  }
+                }
+              },
+              "representation" : {
+                "type" : "IfcProductDefinitionShape",
+                "representations" : [ {
+                  "type" : "IfcShapeRepresentation",
+                  "contextOfItems" : "a27328b3-4590-439d-9431-936127f24325",
+                  "representationIdentifier" : {
+                    "type" : "IfcLabel",
+                    "value" : "Axis"
+                  },
+                  "representationType" : {
+                    "type" : "IfcLabel",
+                    "value" : "Curve3D"
+                  },
+                  "items" : [ {
+                    "type" : "IfcPolyline",
+                    "points" : [ {
+                      "type" : "IfcCartesianPoint",
+                      "coordinates" : [ {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      } ]
+                    }, {
+                      "type" : "IfcCartesianPoint",
+                      "coordinates" : [ {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 3000.0
+                      } ]
+                    } ]
+                  } ]
+                }, {
+                  "type" : "IfcShapeRepresentation",
+                  "contextOfItems" : "a27328b3-4590-439d-9431-936127f24325",
+                  "representationIdentifier" : {
+                    "type" : "IfcLabel",
+                    "value" : "Body"
+                  },
+                  "representationType" : {
+                    "type" : "IfcLabel",
+                    "value" : "SweptSolid"
+                  },
+                  "items" : [ {
+                    "type" : "IfcExtrudedAreaSolid",
+                    "sweptArea" : {
+                      "type" : "IfcTShapeProfileDef",
+                      "profileType" : "AREA",
+                      "profileName" : {
+                        "type" : "IfcLabel",
+                        "value" : "1/2IPE300"
+                      },
+                      "depth" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 150.0
+                      },
+                      "flangeWidth" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 150.0
+                      },
+                      "webThickness" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 7.1
+                      },
+                      "flangeThickness" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 10.7
+                      },
+                      "filletRadius" : {
+                        "type" : "IfcNonNegativeLengthMeasure",
+                        "value" : 15.0
+                      }
+                    },
+                    "position" : {
+                      "type" : "IfcAxis2Placement3D",
+                      "location" : {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 75.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        } ]
+                      }
+                    },
+                    "extrudedDirection" : {
+                      "type" : "IfcDirection",
+                      "directionRatios" : [ {
+                        "type" : "IfcReal",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcReal",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcReal",
+                        "value" : 1.0
+                      } ]
+                    },
+                    "depth" : {
+                      "type" : "IfcPositiveLengthMeasure",
+                      "value" : 3000.0
+                    }
+                  } ]
+                } ]
+              },
+              "tag" : {
+                "type" : "IfcIdentifier",
+                "value" : "B-6"
+              }
+            }, {
+              "type" : "IfcBeamStandardCase",
+              "globalId" : "da945ab6-8b22-c747-9eff-11f47db2d8ac",
+              "name" : {
+                "type" : "IfcLabel",
+                "value" : "B-2"
+              },
+              "description" : {
+                "type" : "IfcText",
+                "value" : "1/2IPE300"
+              },
+              "hasAssociations" : [ {
+                "type" : "IfcRelAssociatesMaterial",
+                "globalId" : "2de29134-f2aa-9cdb-7d7b-28201ad2fdad",
+                "relatingMaterial" : {
+                  "type" : "IfcMaterialProfileSetUsage",
+                  "forProfileSet" : "491ea434-35f8-4c22-82a7-a76b1d70b6e4",
+                  "cardinalPoint" : {
+                    "type" : "IfcCardinalPointReference",
+                    "value" : 2
+                  }
+                }
+              } ],
+              "objectType" : {
+                "type" : "IfcLabel",
+                "value" : "Beam"
+              },
+              "isTypedBy" : [ "a4d3f335-9b6f-bb4f-95c6-26f9700a5596" ],
+              "objectPlacement" : {
+                "type" : "IfcLocalPlacement",
+                "globalId" : "9d1ce814-a776-4916-b319-282040e334b9",
+                "placementRelTo" : "77f421a0-f9d7-425e-b339-ccf0b3fd39f8",
+                "relativePlacement" : {
+                  "type" : "IfcAxis2Placement3D",
+                  "location" : {
+                    "type" : "IfcCartesianPoint",
+                    "coordinates" : [ {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 0.0
+                    }, {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 1500.0
+                    }, {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 1500.0
+                    } ]
+                  },
+                  "axis" : {
+                    "type" : "IfcDirection",
+                    "directionRatios" : [ {
+                      "type" : "IfcReal",
+                      "value" : 0.98
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 0.081
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 0.182
+                    } ]
+                  },
+                  "refDirection" : {
+                    "type" : "IfcDirection",
+                    "directionRatios" : [ {
+                      "type" : "IfcReal",
+                      "value" : -1.0E-4
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 0.9138
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : -0.40616
+                    } ]
+                  }
+                }
+              },
+              "representation" : {
+                "type" : "IfcProductDefinitionShape",
+                "representations" : [ {
+                  "type" : "IfcShapeRepresentation",
+                  "contextOfItems" : "a27328b3-4590-439d-9431-936127f24325",
+                  "representationIdentifier" : {
+                    "type" : "IfcLabel",
+                    "value" : "Axis"
+                  },
+                  "representationType" : {
+                    "type" : "IfcLabel",
+                    "value" : "Curve3D"
+                  },
+                  "items" : [ {
+                    "type" : "IfcPolyline",
+                    "points" : [ {
+                      "type" : "IfcCartesianPoint",
+                      "coordinates" : [ {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      } ]
+                    }, {
+                      "type" : "IfcCartesianPoint",
+                      "coordinates" : [ {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 3000.0
+                      } ]
+                    } ]
+                  } ]
+                }, {
+                  "type" : "IfcShapeRepresentation",
+                  "contextOfItems" : "a27328b3-4590-439d-9431-936127f24325",
+                  "representationIdentifier" : {
+                    "type" : "IfcLabel",
+                    "value" : "Body"
+                  },
+                  "representationType" : {
+                    "type" : "IfcLabel",
+                    "value" : "SweptSolid"
+                  },
+                  "items" : [ {
+                    "type" : "IfcExtrudedAreaSolid",
+                    "sweptArea" : {
+                      "type" : "IfcTShapeProfileDef",
+                      "profileType" : "AREA",
+                      "profileName" : {
+                        "type" : "IfcLabel",
+                        "value" : "1/2IPE300"
+                      },
+                      "depth" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 150.0
+                      },
+                      "flangeWidth" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 150.0
+                      },
+                      "webThickness" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 7.1
+                      },
+                      "flangeThickness" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 10.7
+                      },
+                      "filletRadius" : {
+                        "type" : "IfcNonNegativeLengthMeasure",
+                        "value" : 15.0
+                      }
+                    },
+                    "position" : {
+                      "type" : "IfcAxis2Placement3D",
+                      "location" : {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 75.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        } ]
+                      }
+                    },
+                    "extrudedDirection" : {
+                      "type" : "IfcDirection",
+                      "directionRatios" : [ {
+                        "type" : "IfcReal",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcReal",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcReal",
+                        "value" : 1.0
+                      } ]
+                    },
+                    "depth" : {
+                      "type" : "IfcPositiveLengthMeasure",
+                      "value" : 3000.0
+                    }
+                  } ]
+                } ]
+              },
+              "tag" : {
+                "type" : "IfcIdentifier",
+                "value" : "B-2"
+              }
+            }, {
+              "type" : "IfcBeamStandardCase",
+              "globalId" : "da9662b6-8b6a-8747-9eff-11f47db2d8ac",
+              "name" : {
+                "type" : "IfcLabel",
+                "value" : "B-3"
+              },
+              "description" : {
+                "type" : "IfcText",
+                "value" : "1/2IPE300"
+              },
+              "hasAssociations" : [ {
+                "type" : "IfcRelAssociatesMaterial",
+                "globalId" : "2de29134-f2aa-9cdb-7d7b-28201a1ecdad",
+                "relatingMaterial" : {
+                  "type" : "IfcMaterialProfileSetUsage",
+                  "forProfileSet" : "491ea434-35f8-4c22-82a7-a76b1d70b6e4",
+                  "cardinalPoint" : {
+                    "type" : "IfcCardinalPointReference",
+                    "value" : 3
+                  }
+                }
+              } ],
+              "objectType" : {
+                "type" : "IfcLabel",
+                "value" : "Beam"
+              },
+              "isTypedBy" : [ "a4d3f335-9b6f-bb4f-95c6-26f9700a5596" ],
+              "objectPlacement" : {
+                "type" : "IfcLocalPlacement",
+                "globalId" : "638f7d86-b3ac-4594-83f9-80f132577b80",
+                "placementRelTo" : "77f421a0-f9d7-425e-b339-ccf0b3fd39f8",
+                "relativePlacement" : {
+                  "type" : "IfcAxis2Placement3D",
+                  "location" : {
+                    "type" : "IfcCartesianPoint",
+                    "coordinates" : [ {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 0.0
+                    }, {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 3000.0
+                    }, {
+                      "type" : "IfcLengthMeasure",
+                      "value" : 1500.0
+                    } ]
+                  },
+                  "axis" : {
+                    "type" : "IfcDirection",
+                    "directionRatios" : [ {
+                      "type" : "IfcReal",
+                      "value" : 0.98
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 0.081
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 0.182
+                    } ]
+                  },
+                  "refDirection" : {
+                    "type" : "IfcDirection",
+                    "directionRatios" : [ {
+                      "type" : "IfcReal",
+                      "value" : -1.0E-4
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : 0.9138
+                    }, {
+                      "type" : "IfcReal",
+                      "value" : -0.40616
+                    } ]
+                  }
+                }
+              },
+              "representation" : {
+                "type" : "IfcProductDefinitionShape",
+                "representations" : [ {
+                  "type" : "IfcShapeRepresentation",
+                  "contextOfItems" : "a27328b3-4590-439d-9431-936127f24325",
+                  "representationIdentifier" : {
+                    "type" : "IfcLabel",
+                    "value" : "Axis"
+                  },
+                  "representationType" : {
+                    "type" : "IfcLabel",
+                    "value" : "Curve3D"
+                  },
+                  "items" : [ {
+                    "type" : "IfcPolyline",
+                    "points" : [ {
+                      "type" : "IfcCartesianPoint",
+                      "coordinates" : [ {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      } ]
+                    }, {
+                      "type" : "IfcCartesianPoint",
+                      "coordinates" : [ {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcLengthMeasure",
+                        "value" : 3000.0
+                      } ]
+                    } ]
+                  } ]
+                }, {
+                  "type" : "IfcShapeRepresentation",
+                  "contextOfItems" : "a27328b3-4590-439d-9431-936127f24325",
+                  "representationIdentifier" : {
+                    "type" : "IfcLabel",
+                    "value" : "Body"
+                  },
+                  "representationType" : {
+                    "type" : "IfcLabel",
+                    "value" : "SweptSolid"
+                  },
+                  "items" : [ {
+                    "type" : "IfcExtrudedAreaSolid",
+                    "sweptArea" : {
+                      "type" : "IfcTShapeProfileDef",
+                      "profileType" : "AREA",
+                      "profileName" : {
+                        "type" : "IfcLabel",
+                        "value" : "1/2IPE300"
+                      },
+                      "depth" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 150.0
+                      },
+                      "flangeWidth" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 150.0
+                      },
+                      "webThickness" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 7.1
+                      },
+                      "flangeThickness" : {
+                        "type" : "IfcPositiveLengthMeasure",
+                        "value" : 10.7
+                      },
+                      "filletRadius" : {
+                        "type" : "IfcNonNegativeLengthMeasure",
+                        "value" : 15.0
+                      }
+                    },
+                    "position" : {
+                      "type" : "IfcAxis2Placement3D",
+                      "location" : {
+                        "type" : "IfcCartesianPoint",
+                        "coordinates" : [ {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 75.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 75.0
+                        }, {
+                          "type" : "IfcLengthMeasure",
+                          "value" : 0.0
+                        } ]
+                      }
+                    },
+                    "extrudedDirection" : {
+                      "type" : "IfcDirection",
+                      "directionRatios" : [ {
+                        "type" : "IfcReal",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcReal",
+                        "value" : 0.0
+                      }, {
+                        "type" : "IfcReal",
+                        "value" : 1.0
+                      } ]
+                    },
+                    "depth" : {
+                      "type" : "IfcPositiveLengthMeasure",
+                      "value" : 3000.0
+                    }
+                  } ]
+                } ]
+              },
+              "tag" : {
+                "type" : "IfcIdentifier",
+                "value" : "B-3"
+              }
+            } ]
+          } ],
+          "compositionType" : "ELEMENT"
+        } ]
+      },
+      "objectPlacement" : "6ff7823a-83a0-44f4-9f3a-8549b8a2bd88",
+      "compositionType" : "ELEMENT"
+    } ]
+  },
+  "representationContexts" : [ "a27328b3-4590-439d-9431-936127f24325" ],
+  "unitsInContext" : {
+    "units" : [ {
+      "type" : "IfcSIUnit",
+      "globalId" : "828fa433-2f9e-4240-9d09-a1e593962e0c",
+      "dimensions" : {
+        "lengthExponent" : 0,
+        "massExponent" : 0,
+        "timeExponent" : 0,
+        "electricCurrentExponent" : 0,
+        "thermodynamicTemperatureExponent" : 0,
+        "amountOfSubstanceExponent" : 0,
+        "luminousIntensityExponent" : 0
+      },
+      "unitType" : "PLANEANGLEUNIT",
+      "name" : "RADIAN"
+    }, {
+      "type" : "IfcSIUnit",
+      "globalId" : "9adcfea4-6c1a-4e50-82a6-0aba6d62bc8c",
+      "dimensions" : {
+        "lengthExponent" : 0,
+        "massExponent" : 1,
+        "timeExponent" : 0,
+        "electricCurrentExponent" : 0,
+        "thermodynamicTemperatureExponent" : 0,
+        "amountOfSubstanceExponent" : 0,
+        "luminousIntensityExponent" : 0
+      },
+      "unitType" : "MASSUNIT",
+      "prefix" : "KILO",
+      "name" : "GRAM"
+    }, {
+      "type" : "IfcSIUnit",
+      "globalId" : "ec6c49cf-d420-46fb-b6b9-935e48612720",
+      "dimensions" : {
+        "lengthExponent" : -1,
+        "massExponent" : 1,
+        "timeExponent" : -2,
+        "electricCurrentExponent" : 0,
+        "thermodynamicTemperatureExponent" : 0,
+        "amountOfSubstanceExponent" : 0,
+        "luminousIntensityExponent" : 0
+      },
+      "unitType" : "PRESSUREUNIT",
+      "name" : "PASCAL"
+    }, {
+      "type" : "IfcSIUnit",
+      "globalId" : "22923bbc-6bc1-48c0-a6e4-978cc8332486",
+      "dimensions" : {
+        "lengthExponent" : 0,
+        "massExponent" : 0,
+        "timeExponent" : 1,
+        "electricCurrentExponent" : 0,
+        "thermodynamicTemperatureExponent" : 0,
+        "amountOfSubstanceExponent" : 0,
+        "luminousIntensityExponent" : 0
+      },
+      "unitType" : "TIMEUNIT",
+      "name" : "SECOND"
+    }, {
+      "type" : "IfcSIUnit",
+      "globalId" : "fdc563ad-d255-47a0-9321-2158daf53a44",
+      "dimensions" : {
+        "lengthExponent" : 2,
+        "massExponent" : 0,
+        "timeExponent" : 0,
+        "electricCurrentExponent" : 0,
+        "thermodynamicTemperatureExponent" : 0,
+        "amountOfSubstanceExponent" : 0,
+        "luminousIntensityExponent" : 0
+      },
+      "unitType" : "AREAUNIT",
+      "name" : "SQUARE_METRE"
+    }, {
+      "type" : "IfcSIUnit",
+      "globalId" : "54a18f7e-ba2a-436e-90a8-ec8d3bf4fbe0",
+      "dimensions" : {
+        "lengthExponent" : 0,
+        "massExponent" : 0,
+        "timeExponent" : 0,
+        "electricCurrentExponent" : 0,
+        "thermodynamicTemperatureExponent" : 1,
+        "amountOfSubstanceExponent" : 0,
+        "luminousIntensityExponent" : 0
+      },
+      "unitType" : "THERMODYNAMICTEMPERATUREUNIT",
+      "name" : "DEGREE_CELSIUS"
+    }, {
+      "type" : "IfcSIUnit",
+      "globalId" : "d70e2137-3bdb-4762-922d-aff7e8654d84",
+      "dimensions" : {
+        "lengthExponent" : 1,
+        "massExponent" : 0,
+        "timeExponent" : 0,
+        "electricCurrentExponent" : 0,
+        "thermodynamicTemperatureExponent" : 0,
+        "amountOfSubstanceExponent" : 0,
+        "luminousIntensityExponent" : 0
+      },
+      "unitType" : "LENGTHUNIT",
+      "prefix" : "MILLI",
+      "name" : "METRE"
+    }, {
+      "type" : "IfcSIUnit",
+      "globalId" : "5fcb2682-e12b-42b1-b1e5-2a7e73d65848",
+      "dimensions" : {
+        "lengthExponent" : 1,
+        "massExponent" : 1,
+        "timeExponent" : -2,
+        "electricCurrentExponent" : 0,
+        "thermodynamicTemperatureExponent" : 0,
+        "amountOfSubstanceExponent" : 0,
+        "luminousIntensityExponent" : 0
+      },
+      "unitType" : "FORCEUNIT",
+      "name" : "NEWTON"
+    } ]
+  },
+  "declares" : [ "d90fd540-522e-4430-9349-ac3621fe7a3c" ]
+}
