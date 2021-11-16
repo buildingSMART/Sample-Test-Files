@@ -2,7 +2,7 @@
 *.zip filter=lfs diff=lfs merge=lfs -text
 *.pla filter=lfs diff=lfs merge=lfs -text
 *.txt filter=lfs diff=lfs merge=lfs -text
-"IFC 2x3/*.ifc" filter=lfs diff=lfs merge=lfs -text
-"IFC 4.0/*.ifc" filter=lfs diff=lfs merge=lfs -text
+*.ifc filter=lfs diff=lfs merge=lfs -text
+*.ifcxml filter=lfs diff=lfs merge=lfs -text
 *.las filter=lfs diff=lfs merge=lfs -text
 *.ttl filter=lfs diff=lfs merge=lfs -text
