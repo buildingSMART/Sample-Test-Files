@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<LandXML xmlns="http://www.inframodel.fi/inframodel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.inframodel.fi/inframodel https://buildingsmart.fi/infra/schema/4.0.3/inframodel.xsd"  date="2021-01-22" time="16:06:11" version="1.2" language="Finnish" readOnly="false">
+	<FeatureDictionary name="inframodel" version="4.0.3">
+		<DocFileRef name="Finnish Inframodel application documentation for LandXML v1.2" location="https://buildingsmart.fi/infra/inframodel/"/>
+	</FeatureDictionary>
+	<Units>
+		<Metric areaUnit="squareMeter" linearUnit="meter" volumeUnit="cubicMeter" temperatureUnit="celsius" pressureUnit="mmHG" velocityUnit="metersPerSecond" angularUnit="radians" directionUnit="radians" diameterUnit="meter" widthUnit="meter" heightUnit="meter" elevationUnit="meter"/>
+	</Units>
+	<CoordinateSystem epsgCode="3878" verticalCoordinateSystemName="3900" rotationAngle="0"/>
+	<Application name="Novapoint" manufacturer="Trimble" version="21.354.0.0" manufacturerURL="www.novapoint.com" timeStamp="2021-01-22T16:06:11">
+		<Author createdBy="Eemeli.Erkkila" createdByEmail="eemeli.erkkila@sitowise.com" company="Sitowise Oy" companyURL="www.sitowise.com"/>
+	</Application>
+	<Project name="WS_rumpu2" desc="WS_rumpu2">
+		<Feature code="IM_codings" source="inframodel">
+			<Property label="terrainCoding" value="Tielaitos"/>
+			<Property label="surfaceCoding" value="Tielaitos"/>
+			<Property label="infraCoding" value="InfraBIM"/>
+			<Property label="proprietaryInfraCoding" value="Novapoint - FINLAND STANDARD"/>
+		</Feature>
+	</Project>
+	<PipeNetworks name="WS_rumpu2">
+		<PipeNetwork name="Drainage-2" pipeNetType="storm" state="proposed">
+			<Structs>
+				<Struct name="10" desc="Culvert - Ditch" state="proposed" elevSump="125.29" elevRim="125.59">
+					<Center>6876901.203748 24525636.220971</Center>
+					<Connection />
+					<Invert elev="125.29" flowDir="in" refPipe="8"/>
+					<Invert elev="125.29" flowDir="out" refPipe="120"/>
+					<Invert elev="125.29" flowDir="in" refPipe="116"/>
+					<Feature code="IM_struct" source="inframodel">
+						<Property label="structLabel" value="H1"/>
+						<Property label="rimType" value="umpi"/>
+						<Property label="heightDeposit" value="0.000"/>
+					</Feature>
+					<Feature code="IM_coding" source="inframodel">
+						<Property label="infraCoding" value="143900"/>
+						<Property label="infraCodingDesc" value="Muut kuivatusrakenteet "/>
+					</Feature>
+				</Struct>
+				<Struct name="40" desc="Ditch - External" state="proposed" elevSump="125.338" elevRim="125.638">
+					<Center>6876882.966134 24525628.673445</Center>
+					<Connection/>
+					<Invert elev="125.338" flowDir="out" refPipe="8"/>
+					<Feature code="IM_struct" source="inframodel">
+						<Property label="structLabel" value="H2"/>
+						<Property label="rimType" value="siivilä"/>
+						<Property label="heightDeposit" value="0.000"/>
+					</Feature>
+					<Feature code="IM_coding" source="inframodel">
+						<Property label="infraCoding" value="143900"/>
+						<Property label="infraCodingDesc" value="Muut kuivatusrakenteet "/>
+					</Feature>
+				</Struct>
+				<Struct name="52" desc="Ditch - External" state="proposed" elevSump="125.344" elevRim="125.644">
+					<Center>6876911.918000 24525621.728000</Center>
+					<Connection/>
+					<Invert elev="125.344" flowDir="out" refPipe="50"/>
+					<Feature code="IM_struct" source="inframodel">
+						<Property label="structLabel" value="H4"/>
+						<Property label="rimType" value="umpi"/>
+						<Property label="heightDeposit" value="0.000"/>
+					</Feature>
+					<Feature code="IM_coding" source="inframodel">
+						<Property label="infraCoding" value="143900"/>
+						<Property label="infraCodingDesc" value="Muut kuivatusrakenteet "/>
+					</Feature>
+				</Struct>
+				<Struct name="101" desc="Ditch bend" state="proposed" elevSump="125.296" elevRim="125.596">
+					<Center>6876908.838299 24525632.689767</Center>
+					<Connection />
+					<Invert elev="125.296049" flowDir="out" refPipe="104"/>
+					<Invert elev="125.296049" flowDir="in" refPipe="50"/>
+					<Feature code="IM_struct" source="inframodel">
+						<Property label="structLabel" value="H5"/>
+						<Property label="rimType" value="umpi"/>
+						<Property label="heightDeposit" value="0.000"/>
+					</Feature>
+					<Feature code="IM_coding" source="inframodel">
+						<Property label="infraCoding" value="143900"/>
+						<Property label="infraCodingDesc" value="Muut kuivatusrakenteet "/>
+					</Feature>
+				</Struct>
+				<Struct name="106" desc="Ditch bend" state="proposed" elevSump="125.293" elevRim="125.593">
+					<Center>6876906.963313 24525635.293510</Center>
+					<Connection />
+					<Invert elev="125.292797" flowDir="out" refPipe="110"/>
+					<Invert elev="125.292797" flowDir="in" refPipe="104"/>
+					<Feature code="IM_struct" source="inframodel">
+						<Property label="structLabel" value="H6"/>
+						<Property label="rimType" value="umpi"/>
+						<Property label="heightDeposit" value="0.000"/>
+					</Feature>
+					<Feature code="IM_coding" source="inframodel">
+						<Property label="infraCoding" value="143900"/>
+						<Property label="infraCodingDesc" value="Muut kuivatusrakenteet "/>
+					</Feature>
+				</Struct>
+				<Struct name="112" desc="Ditch bend" state="proposed" elevSump="125.29" elevRim="125.59">
+					<Center>6876904.396316 24525636.504487</Center>
+					<Connection />
+					<Invert elev="125.290195" flowDir="out" refPipe="116"/>
+					<Invert elev="125.290195" flowDir="in" refPipe="110"/>
+					<Feature code="IM_struct" source="inframodel">
+						<Property label="structLabel" value="H7"/>
+						<Property label="rimType" value="umpi"/>
+						<Property label="heightDeposit" value="0.000"/>
+					</Feature>
+					<Feature code="IM_coding" source="inframodel">
+						<Property label="infraCoding" value="143900"/>
+						<Property label="infraCodingDesc" value="Muut kuivatusrakenteet "/>
+					</Feature>
+				</Struct>
+				<Struct name="122" desc="Culvert - Ditch" state="proposed" elevSump="125.19" elevRim="125.49">
+					<Center>6876897.051856 24525644.720565</Center>
+					<Connection />
+					<Invert elev="125.19" flowDir="out" refPipe="206"/>
+					<Invert elev="125.19" flowDir="in" refPipe="120"/>
+					<Invert elev="125.19" flowDir="in" refPipe="204"/>
+					<Feature code="IM_struct" source="inframodel">
+						<Property label="structLabel" value="H8"/>
+						<Property label="rimType" value="umpi"/>
+						<Property label="heightDeposit" value="0.000"/>
+					</Feature>
+					<Feature code="IM_coding" source="inframodel">
+						<Property label="infraCoding" value="143900"/>
+						<Property label="infraCodingDesc" value="Muut kuivatusrakenteet "/>
+					</Feature>
+				</Struct>
+				<Struct name="201" desc="Ditch - External" state="proposed" elevSump="125.397424" elevRim="125.697424">
+					<Center>6876880.063634 24525634.835639</Center>
+					<Connection/>
+					<Invert elev="125.397424" flowDir="out" refPipe="204"/>
+					<Feature code="IM_struct" source="inframodel">
+						<Property label="structLabel" value="H10"/>
+						<Property label="rimType" value="umpi"/>
+						<Property label="heightDeposit" value="0.000"/>
+					</Feature>
+					<Feature code="IM_coding" source="inframodel">
+						<Property label="infraCoding" value="143900"/>
+						<Property label="infraCodingDesc" value="Muut kuivatusrakenteet "/>
+					</Feature>
+				</Struct>
+				<Struct name="208" desc="Ditch bende" state="proposed" elevSump="125.164074" elevRim="125.464074">
+					<Center>6876899.174280 24525648.088225</Center>
+					<Connection />
+					<Invert elev="125.164074" flowDir="out" refPipe="213"/>
+					<Invert elev="125.164074" flowDir="in" refPipe="206"/>
+					<Feature code="IM_struct" source="inframodel">
+						<Property label="structLabel" value="H11"/>
+						<Property label="rimType" value="umpi"/>
+						<Property label="heightDeposit" value="0.000"/>
+					</Feature>
+					<Feature code="IM_coding" source="inframodel">
+						<Property label="infraCoding" value="143900"/>
+						<Property label="infraCodingDesc" value="Muut kuivatusrakenteet "/>
+					</Feature>
+				</Struct>
+				<Struct name="215" desc="Ditch bend" state="proposed" elevSump="125.161481" elevRim="125.461481">
+					<Center>6876898.739082 24525652.177015</Center>
+					<Connection />
+					<Invert elev="125.161481" flowDir="out" refPipe="219"/>
+					<Invert elev="125.161481" flowDir="in" refPipe="213"/>
+					<Feature code="IM_struct" source="inframodel">
+						<Property label="structLabel" value="H12"/>
+						<Property label="rimType" value="umpi"/>
+						<Property label="heightDeposit" value="0.000"/>
+					</Feature>
+					<Feature code="IM_coding" source="inframodel">
+						<Property label="infraCoding" value="143900"/>
+						<Property label="infraCodingDesc" value="Muut kuivatusrakenteet "/>
+					</Feature>
+				</Struct>
+				<Struct name="221" desc="Ditch - External" state="proposed" elevSump="125.123" elevRim="125.423">
+					<Center>6876887.432000 24525666.725000</Center>
+					<Connection/>
+					<Invert elev="125.123" flowDir="in" refPipe="219"/>
+					<Feature code="IM_struct" source="inframodel">
+						<Property label="structLabel" value="H13"/>
+						<Property label="rimType" value="umpi"/>
+						<Property label="heightDeposit" value="0.000"/>
+					</Feature>
+					<Feature code="IM_coding" source="inframodel">
+						<Property label="infraCoding" value="143900"/>
+						<Property label="infraCodingDesc" value="Muut kuivatusrakenteet "/>
+					</Feature>
+				</Struct>
+			</Structs>
+			<Pipes>
+				<Pipe name="8" state="proposed" refStart="40" refEnd="10" slope="0.2431897690">
+					<Channel height="300.0" widthTop="600.0" widthBottom="0.0" desc="avo-oja" material="other" thickness="NaN" />
+					<Feature code="IM_pipe" source="inframodel">
+						<Property label="elevType" value="invert level"/>
+						<Property label="pipeStart" value="6876882.966134 24525628.673445 125.338000"/>
+						<Property label="pipeEnd" value="6876901.203748 24525636.220971 125.290000"/>
+					</Feature>
+					<Feature code="IM_coding" source="inframodel">
+						<Property label="infraCoding" value="143400"/>
+						<Property label="infraCodingDesc" value="Avo-ojat ja -uomat"/>
+					</Feature>
+				</Pipe>
+				<Pipe name="50" state="proposed" refStart="52" refEnd="101" slope="0.4211336653">
+					<Channel height="300.0" widthTop="600.0" widthBottom="0.0" desc="avo-oja" material="other" thickness="NaN" />
+					<Feature code="IM_pipe" source="inframodel">
+						<Property label="elevType" value="invert level"/>
+						<Property label="pipeStart" value="6876911.918000 24525621.728000 125.344000"/>
+						<Property label="pipeEnd" value="6876908.838299 24525632.689767 125.296049"/>
+					</Feature>
+					<Feature code="IM_coding" source="inframodel">
+						<Property label="infraCoding" value="143400"/>
+						<Property label="infraCodingDesc" value="Avo-ojat ja -uomat"/>
+					</Feature>
+				</Pipe>
+				<Pipe name="104" state="proposed" refStart="101" refEnd="106" slope="0.1013529291">
+					<Channel height="300.0" widthTop="600.0" widthBottom="0.0" desc="avo-oja" material="other" thickness="NaN" />
+					<Feature code="IM_pipe" source="inframodel">
+						<Property label="elevType" value="invert level"/>
+						<Property label="pipeStart" value="6876908.838299 24525632.689767 125.296049"/>
+						<Property label="pipeEnd" value="6876906.963313 24525635.293510 125.292797"/>
+					</Feature>
+					<Feature code="IM_coding" source="inframodel">
+						<Property label="infraCoding" value="143400"/>
+						<Property label="infraCodingDesc" value="Avo-ojat ja -uomat"/>
+					</Feature>
+				</Pipe>
+				<Pipe name="110" state="proposed" refStart="106" refEnd="112" slope="0.0916746395">
+					<Channel height="300.0" widthTop="600.0" widthBottom="0.0" desc="avo-oja" material="other" thickness="NaN" />
+					<Feature code="IM_pipe" source="inframodel">
+						<Property label="elevType" value="invert level"/>
+						<Property label="pipeStart" value="6876906.963313 24525635.293510 125.292797"/>
+						<Property label="pipeEnd" value="6876904.396316 24525636.504487 125.290195"/>
+					</Feature>
+					<Feature code="IM_coding" source="inframodel">
+						<Property label="infraCoding" value="143400"/>
+						<Property label="infraCodingDesc" value="Avo-ojat ja -uomat"/>
+					</Feature>
+				</Pipe>
+				<Pipe name="116" state="proposed" refStart="112" refEnd="10" slope="0.0060839926">
+					<Channel height="300.0" widthTop="600.0" widthBottom="0.0" desc="avo-oja" material="other" thickness="NaN" />
+					<Feature code="IM_pipe" source="inframodel">
+						<Property label="elevType" value="invert level"/>
+						<Property label="pipeStart" value="6876904.396316 24525636.504487 125.290195"/>
+						<Property label="pipeEnd" value="6876901.203748 24525636.220971 125.290000"/>
+					</Feature>
+					<Feature code="IM_coding" source="inframodel">
+						<Property label="infraCoding" value="143400"/>
+						<Property label="infraCodingDesc" value="Avo-ojat ja -uomat"/>
+					</Feature>
+				</Pipe>
+				<Pipe name="204" state="proposed" refStart="201" refEnd="122" slope="1.0553346933">
+					<Channel height="300.0" widthTop="600.0" widthBottom="0.0" desc="avo-oja" material="other" thickness="NaN" />
+					<Feature code="IM_pipe" source="inframodel">
+						<Property label="elevType" value="invert level"/>
+						<Property label="pipeStart" value="6876880.063634 24525634.835639 125.397424"/>
+						<Property label="pipeEnd" value="6876897.051856 24525644.720565 125.190000"/>
+					</Feature>
+					<Feature code="IM_coding" source="inframodel">
+						<Property label="infraCoding" value="143400"/>
+						<Property label="infraCodingDesc" value="Avo-ojat ja -uomat"/>
+					</Feature>
+				</Pipe>
+				<Pipe name="206" state="proposed" refStart="122" refEnd="208" slope="0.6512956711">
+					<Channel height="300.0" widthTop="600.0" widthBottom="0.0" desc="avo-oja" material="other" thickness="NaN" />
+					<Feature code="IM_pipe" source="inframodel">
+						<Property label="elevType" value="invert level"/>
+						<Property label="pipeStart" value="6876897.051856 24525644.720565 125.190000"/>
+						<Property label="pipeEnd" value="6876899.174280 24525648.088225 125.164074"/>
+					</Feature>
+					<Feature code="IM_coding" source="inframodel">
+						<Property label="infraCoding" value="143400"/>
+						<Property label="infraCodingDesc" value="Avo-ojat ja -uomat"/>
+					</Feature>
+				</Pipe>
+				<Pipe name="213" state="proposed" refStart="208" refEnd="215" slope="0.0630610971">
+					<Channel height="300.0" widthTop="600.0" widthBottom="0.0" desc="avo-oja" material="other" thickness="NaN" />
+					<Feature code="IM_pipe" source="inframodel">
+						<Property label="elevType" value="invert level"/>
+						<Property label="pipeStart" value="6876899.174280 24525648.088225 125.164074"/>
+						<Property label="pipeEnd" value="6876898.739082 24525652.177015 125.161481"/>
+					</Feature>
+					<Feature code="IM_coding" source="inframodel">
+						<Property label="infraCoding" value="143400"/>
+						<Property label="infraCodingDesc" value="Avo-ojat ja -uomat"/>
+					</Feature>
+				</Pipe>
+				<Pipe name="219" state="proposed" refStart="215" refEnd="221" slope="0.2088479979">
+					<Channel height="300.0" widthTop="600.0" widthBottom="0.0" desc="avo-oja" material="other" thickness="NaN" />
+					<Feature code="IM_pipe" source="inframodel">
+						<Property label="elevType" value="invert level"/>
+						<Property label="pipeStart" value="6876898.739082 24525652.177015 125.161481"/>
+						<Property label="pipeEnd" value="6876887.432000 24525666.725000 125.123000"/>
+					</Feature>
+					<Feature code="IM_coding" source="inframodel">
+						<Property label="infraCoding" value="143400"/>
+						<Property label="infraCodingDesc" value="Avo-ojat ja -uomat"/>
+					</Feature>
+				</Pipe>
+				<Pipe name="120" state="proposed" refStart="10" refEnd="122" slope="1.0571432584">
+					<CircPipe diameter="0.239" desc="Rumpu2 Johto 1 - 8 Hulevesiviemäri" material="PVC" thickness="0.0055"/>
+					<Feature code="IM_pipe" source="inframodel">
+						<Property label="pressureClass" value="PN6"/>
+						<Property label="elevType" value="invert level"/>
+						<Property label="pipeStart" value="6876901.203748 24525636.220971 125.290000"/>
+						<Property label="pipeEnd" value="6876897.051856 24525644.720565 125.190000"/>
+					</Feature>
+					<Feature code="IM_coding" source="inframodel">
+						<Property label="infraCoding" value="312112"/>
+						<Property label="infraCodingDesc" value="Hulevesiviemärit (viettoviemäri) muovista"/>
+					</Feature>
+				</Pipe>
+			</Pipes>
+		</PipeNetwork>
+	</PipeNetworks>
+</LandXML>

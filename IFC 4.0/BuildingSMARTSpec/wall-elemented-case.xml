@@ -1,0 +1,2369 @@
+<IfcProject type="IfcProject" globalId="ed5544e8-170c-4db8-9e7e-13da2b790865">
+  <name type="IfcLabel" value="Project"/>
+  <declares>
+    <IfcRelDeclares type="IfcRelDeclares" globalId="e3e3f2c5-050e-47af-987e-481e4656c672">
+      <relatedDefinitions>
+        <IfcDefinitionSelect type="IfcMemberType" globalId="29579314-1711-40c7-b573-8ee43f4dee12" predefinedType="PLATE">
+          <name type="IfcLabel" value="Wood Track"/>
+          <hasContext>
+            <IfcRelDeclares>e3e3f2c5-050e-47af-987e-481e4656c672</IfcRelDeclares>
+          </hasContext>
+          <hasAssociations>
+            <IfcRelAssociates type="IfcRelAssociatesMaterial" globalId="ed52a9c0-9ff8-48c7-8c18-f70d7f661112">
+              <relatingMaterial type="IfcMaterialProfileSet" globalId="0e1dbdc7-e37d-42f6-9e84-c125b56046b8">
+                <name type="IfcLabel" value="2x4 Lumber"/>
+                <materialProfiles>
+                  <IfcMaterialProfile type="IfcMaterialProfile" globalId="5711a11b-af3f-4125-9b63-86ca46f8e389">
+                    <material type="IfcMaterial" globalId="42ad51b8-7602-45dd-b500-6d795ce3fd66">
+                      <name type="IfcLabel" value="Southern Pine"/>
+                      <category type="IfcLabel" value="Wood"/>
+                    </material>
+                    <profile type="IfcRectangleProfileDef" profileType="AREA">
+                      <xDim type="IfcPositiveLengthMeasure" value="1.5"/>
+                      <yDim type="IfcPositiveLengthMeasure" value="3.5"/>
+                    </profile>
+                  </IfcMaterialProfile>
+                </materialProfiles>
+              </relatingMaterial>
+            </IfcRelAssociates>
+          </hasAssociations>
+          <representationMaps>
+            <IfcRepresentationMap type="IfcRepresentationMap" globalId="ca4dd7b2-26ae-45ae-99fd-8a5cd8a7b7b4">
+              <mappingOrigin type="IfcAxis2Placement3D">
+                <location type="IfcCartesianPoint">
+                  <coordinates>
+                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                  </coordinates>
+                </location>
+              </mappingOrigin>
+              <mappedRepresentation type="IfcShapeRepresentation" globalId="947f051b-3072-4a35-9652-bb6c0e2bb4c8">
+                <contextOfItems type="IfcGeometricRepresentationContext" globalId="db87fde9-7608-4b78-a869-b06b875a048f">
+                  <worldCoordinateSystem type="IfcAxis2Placement3D">
+                    <location type="IfcCartesianPoint">
+                      <coordinates>
+                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                        <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                      </coordinates>
+                    </location>
+                  </worldCoordinateSystem>
+                  <contextIdentifier type="IfcLabel" value="3D"/>
+                  <contextType type="IfcLabel" value="Model"/>
+                  <coordinateSpaceDimension type="IfcDimensionCount" value="3"/>
+                  <precision type="IfcReal" value="1.0E-5"/>
+                </contextOfItems>
+                <representationIdentifier type="IfcLabel" value="Body"/>
+                <representationType type="IfcLabel" value="SweptSolid"/>
+                <items>
+                  <IfcRepresentationItem type="IfcExtrudedAreaSolid">
+                    <sweptArea type="IfcRectangleProfileDef" profileType="AREA">
+                      <xDim type="IfcPositiveLengthMeasure" value="1.5"/>
+                      <yDim type="IfcPositiveLengthMeasure" value="3.5"/>
+                    </sweptArea>
+                    <position type="IfcAxis2Placement3D">
+                      <location type="IfcCartesianPoint">
+                        <coordinates>
+                          <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                          <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                          <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                        </coordinates>
+                      </location>
+                      <axis type="IfcDirection">
+                        <directionRatios>
+                          <IfcReal type="IfcReal" value="1.0"/>
+                          <IfcReal type="IfcReal" value="0.0"/>
+                          <IfcReal type="IfcReal" value="0.0"/>
+                        </directionRatios>
+                      </axis>
+                      <refDirection type="IfcDirection">
+                        <directionRatios>
+                          <IfcReal type="IfcReal" value="0.0"/>
+                          <IfcReal type="IfcReal" value="1.0"/>
+                          <IfcReal type="IfcReal" value="0.0"/>
+                        </directionRatios>
+                      </refDirection>
+                    </position>
+                    <extrudedDirection type="IfcDirection">
+                      <directionRatios>
+                        <IfcReal type="IfcReal" value="0.0"/>
+                        <IfcReal type="IfcReal" value="0.0"/>
+                        <IfcReal type="IfcReal" value="1.0"/>
+                      </directionRatios>
+                    </extrudedDirection>
+                    <depth type="IfcPositiveLengthMeasure" value="96.0"/>
+                  </IfcRepresentationItem>
+                </items>
+              </mappedRepresentation>
+            </IfcRepresentationMap>
+          </representationMaps>
+          <tag type="IfcLabel" value="2x4"/>
+        </IfcDefinitionSelect>
+        <IfcDefinitionSelect type="IfcElementAssemblyType" globalId="d58208da-d30c-446d-80d9-e6b0bc5f6383" predefinedType="NOTDEFINED">
+          <name type="IfcLabel" value="Wood Stud Frame"/>
+          <hasContext>
+            <IfcRelDeclares>e3e3f2c5-050e-47af-987e-481e4656c672</IfcRelDeclares>
+          </hasContext>
+          <isDecomposedBy type="IfcRelAggregates" globalId="bef8a7d3-0d64-4963-9751-9c209df36891">
+            <relatedObjects>
+              <IfcObjectDefinition type="IfcMember" globalId="24f84c0e-4714-4cc1-abfa-d65ea6acc831" predefinedType="PLATE">
+                <name type="IfcLabel" value="Track"/>
+                <hasAssociations>
+                  <IfcRelAssociates type="IfcRelAssociatesMaterial" globalId="f9666532-8b67-41ca-9bcd-92db8c19cf7b">
+                    <relatingMaterial type="IfcMaterialProfileSetUsage">
+                      <forProfileSet type="IfcMaterialProfileSet" globalId="764e8980-8a17-49c0-9e48-cea98f5298a5">
+                        <materialProfiles>
+                          <IfcMaterialProfile type="IfcMaterialProfile" globalId="ac3b4d90-2372-4269-9300-360d00527751">
+                            <material type="IfcMaterial" globalId="1b8546ff-449a-489f-9dc3-4496454a6a85">
+                              <name type="IfcLabel" value="Southern Pine"/>
+                              <hasRepresentation>
+                                <IfcMaterialDefinitionRepresentation type="IfcMaterialDefinitionRepresentation" globalId="e0257a99-ee17-4af2-bdc6-7412d1b7a7cc">
+                                  <representations>
+                                    <IfcRepresentation type="IfcStyledRepresentation" globalId="1a2f029b-e1f5-40be-adc3-6d21b7339f5e">
+                                      <contextOfItems type="IfcGeometricRepresentationContext" globalId="348bb8e9-50c9-47f5-825c-e07ea06e10ed">
+                                        <worldCoordinateSystem type="IfcAxis2Placement3D">
+                                          <location type="IfcCartesianPoint">
+                                            <coordinates>
+                                              <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                              <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                              <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                            </coordinates>
+                                          </location>
+                                        </worldCoordinateSystem>
+                                        <contextIdentifier type="IfcLabel" value="2D"/>
+                                        <contextType type="IfcLabel" value="Plan"/>
+                                        <coordinateSpaceDimension type="IfcDimensionCount" value="2"/>
+                                        <precision type="IfcReal" value="1.0E-5"/>
+                                      </contextOfItems>
+                                      <representationIdentifier type="IfcLabel" value="Undefined"/>
+                                      <representationType type="IfcLabel" value="Undefined"/>
+                                      <items>
+                                        <IfcRepresentationItem type="IfcStyledItem">
+                                          <styles>
+                                            <IfcStyleAssignmentSelect type="IfcSurfaceStyle" side="POSITIVE">
+                                              <styles>
+                                                <IfcSurfaceStyleElementSelect type="IfcSurfaceStyleShading">
+                                                  <surfaceColour type="IfcColourRgb">
+                                                    <red type="IfcNormalisedRatioMeasure" value="1.0"/>
+                                                    <green type="IfcNormalisedRatioMeasure" value="0.501960784313725"/>
+                                                    <blue type="IfcNormalisedRatioMeasure" value="0.250980392156863"/>
+                                                  </surfaceColour>
+                                                </IfcSurfaceStyleElementSelect>
+                                              </styles>
+                                            </IfcStyleAssignmentSelect>
+                                          </styles>
+                                        </IfcRepresentationItem>
+                                      </items>
+                                    </IfcRepresentation>
+                                  </representations>
+                                </IfcMaterialDefinitionRepresentation>
+                              </hasRepresentation>
+                            </material>
+                            <profile type="IfcRectangleProfileDef" profileType="AREA">
+                              <profileName type="IfcLabel" value="2x10"/>
+                              <xDim type="IfcPositiveLengthMeasure" value="1.5"/>
+                              <yDim type="IfcPositiveLengthMeasure" value="9.25"/>
+                            </profile>
+                          </IfcMaterialProfile>
+                        </materialProfiles>
+                      </forProfileSet>
+                      <cardinalPoint type="IfcCardinalPointReference" value="2"/>
+                    </relatingMaterial>
+                  </IfcRelAssociates>
+                </hasAssociations>
+                <isTypedBy>
+                  <IfcRelDefinesByType type="IfcRelDefinesByType" globalId="1bd8347e-1837-4ae9-a1c1-e551a15babb0">
+                    <relatingType>29579314-1711-40c7-b573-8ee43f4dee12</relatingType>
+                  </IfcRelDefinesByType>
+                </isTypedBy>
+              </IfcObjectDefinition>
+              <IfcObjectDefinition type="IfcMember" globalId="0e972ab1-35c0-48db-9e09-4837db44002e" predefinedType="STUD">
+                <name type="IfcLabel" value="Studs"/>
+                <hasAssociations>
+                  <IfcRelAssociates type="IfcRelAssociatesMaterial" globalId="f0b6ed8f-5912-49ae-8263-bb8958c2c4f4">
+                    <relatingMaterial type="IfcMaterialProfileSetUsage">
+                      <forProfileSet>0e1dbdc7-e37d-42f6-9e84-c125b56046b8</forProfileSet>
+                      <cardinalPoint type="IfcCardinalPointReference" value="5"/>
+                    </relatingMaterial>
+                  </IfcRelAssociates>
+                </hasAssociations>
+                <isTypedBy>
+                  <IfcRelDefinesByType type="IfcRelDefinesByType" globalId="834fbefb-3246-4134-9fa2-ba8062d14f84">
+                    <relatingType type="IfcMemberType" globalId="232b47bb-7c06-43ad-a3f6-f4dbd008c8dd" predefinedType="STUD">
+                      <name type="IfcLabel" value="Wood Stud"/>
+                      <hasContext>
+                        <IfcRelDeclares>e3e3f2c5-050e-47af-987e-481e4656c672</IfcRelDeclares>
+                      </hasContext>
+                      <hasAssociations>
+                        <IfcRelAssociates>ed52a9c0-9ff8-48c7-8c18-f70d7f661112</IfcRelAssociates>
+                      </hasAssociations>
+                      <representationMaps>
+                        <IfcRepresentationMap type="IfcRepresentationMap" globalId="72566e51-945b-4b6d-8e96-8640b271a5f5">
+                          <mappingOrigin type="IfcAxis2Placement3D">
+                            <location type="IfcCartesianPoint">
+                              <coordinates>
+                                <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                              </coordinates>
+                            </location>
+                          </mappingOrigin>
+                          <mappedRepresentation type="IfcShapeRepresentation" globalId="0a69e8c1-fc68-4fc6-828b-7756a2517ad5">
+                            <contextOfItems>db87fde9-7608-4b78-a869-b06b875a048f</contextOfItems>
+                            <representationIdentifier type="IfcLabel" value="Body"/>
+                            <representationType type="IfcLabel" value="SweptSolid"/>
+                            <items>
+                              <IfcRepresentationItem type="IfcExtrudedAreaSolid">
+                                <sweptArea type="IfcRectangleProfileDef" profileType="AREA">
+                                  <xDim type="IfcPositiveLengthMeasure" value="1.5"/>
+                                  <yDim type="IfcPositiveLengthMeasure" value="3.5"/>
+                                </sweptArea>
+                                <position type="IfcAxis2Placement3D">
+                                  <location type="IfcCartesianPoint">
+                                    <coordinates>
+                                      <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                      <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                      <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                    </coordinates>
+                                  </location>
+                                  <axis type="IfcDirection">
+                                    <directionRatios>
+                                      <IfcReal type="IfcReal" value="1.0"/>
+                                      <IfcReal type="IfcReal" value="0.0"/>
+                                      <IfcReal type="IfcReal" value="0.0"/>
+                                    </directionRatios>
+                                  </axis>
+                                  <refDirection type="IfcDirection">
+                                    <directionRatios>
+                                      <IfcReal type="IfcReal" value="0.0"/>
+                                      <IfcReal type="IfcReal" value="1.0"/>
+                                      <IfcReal type="IfcReal" value="0.0"/>
+                                    </directionRatios>
+                                  </refDirection>
+                                </position>
+                                <extrudedDirection type="IfcDirection">
+                                  <directionRatios>
+                                    <IfcReal type="IfcReal" value="0.0"/>
+                                    <IfcReal type="IfcReal" value="0.0"/>
+                                    <IfcReal type="IfcReal" value="1.0"/>
+                                  </directionRatios>
+                                </extrudedDirection>
+                                <depth type="IfcPositiveLengthMeasure" value="92.5"/>
+                              </IfcRepresentationItem>
+                            </items>
+                          </mappedRepresentation>
+                        </IfcRepresentationMap>
+                      </representationMaps>
+                      <tag type="IfcLabel" value="2x4"/>
+                    </relatingType>
+                  </IfcRelDefinesByType>
+                </isTypedBy>
+              </IfcObjectDefinition>
+            </relatedObjects>
+          </isDecomposedBy>
+        </IfcDefinitionSelect>
+        <IfcDefinitionSelect type="IfcBuildingElementPartType" globalId="df33df38-1854-40e0-bdfa-3dd8bc5bfb68" predefinedType="PRECASTPANEL">
+          <name type="IfcLabel" value="Drywall"/>
+          <hasContext>
+            <IfcRelDeclares>e3e3f2c5-050e-47af-987e-481e4656c672</IfcRelDeclares>
+          </hasContext>
+          <hasAssociations>
+            <IfcRelAssociates type="IfcRelAssociatesMaterial" globalId="48a5d5ad-32f8-4592-9e75-6a21f2e504df">
+              <relatingMaterial type="IfcMaterialLayerSet" globalId="25f67887-858c-4657-985a-895fd9b0a186">
+                <materialLayers>
+                  <IfcMaterialLayer type="IfcMaterialLayerWithOffsets" globalId="a3c54e81-859a-4e47-b7af-6e76906d8844" offsetDirection="AXIS3">
+                    <material type="IfcMaterial" globalId="56a14a97-d4e3-42a0-b354-140a682a0df4">
+                      <name type="IfcLabel" value="X"/>
+                      <category type="IfcLabel" value="Gypsum"/>
+                      <hasRepresentation>
+                        <IfcMaterialDefinitionRepresentation type="IfcMaterialDefinitionRepresentation" globalId="e888a676-6a44-4fce-be82-e7b2deb8f51a">
+                          <representations>
+                            <IfcRepresentation type="IfcStyledRepresentation" globalId="d3924c3a-a607-4e6f-afa6-8c34357ca427">
+                              <contextOfItems>348bb8e9-50c9-47f5-825c-e07ea06e10ed</contextOfItems>
+                              <representationIdentifier type="IfcLabel" value="Undefined"/>
+                              <representationType type="IfcLabel" value="Undefined"/>
+                              <items>
+                                <IfcRepresentationItem type="IfcStyledItem">
+                                  <styles>
+                                    <IfcStyleAssignmentSelect type="IfcSurfaceStyle" side="POSITIVE">
+                                      <styles>
+                                        <IfcSurfaceStyleElementSelect type="IfcSurfaceStyleShading">
+                                          <surfaceColour type="IfcColourRgb">
+                                            <red type="IfcNormalisedRatioMeasure" value="0.752941176470588"/>
+                                            <green type="IfcNormalisedRatioMeasure" value="0.752941176470588"/>
+                                            <blue type="IfcNormalisedRatioMeasure" value="0.752941176470588"/>
+                                          </surfaceColour>
+                                        </IfcSurfaceStyleElementSelect>
+                                      </styles>
+                                    </IfcStyleAssignmentSelect>
+                                  </styles>
+                                </IfcRepresentationItem>
+                              </items>
+                            </IfcRepresentation>
+                          </representations>
+                        </IfcMaterialDefinitionRepresentation>
+                      </hasRepresentation>
+                    </material>
+                    <layerThickness type="IfcNonNegativeLengthMeasure" value="0.5"/>
+                    <offsetValues>
+                      <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                      <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                    </offsetValues>
+                  </IfcMaterialLayer>
+                </materialLayers>
+              </relatingMaterial>
+            </IfcRelAssociates>
+          </hasAssociations>
+          <representationMaps>
+            <IfcRepresentationMap type="IfcRepresentationMap" globalId="4eda6e58-f7cc-474b-b9e7-ee3ee22166b7">
+              <mappingOrigin type="IfcAxis2Placement3D">
+                <location type="IfcCartesianPoint">
+                  <coordinates>
+                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                  </coordinates>
+                </location>
+              </mappingOrigin>
+              <mappedRepresentation type="IfcShapeRepresentation" globalId="978c722b-b8f1-4d21-b4e4-3b98064f7e20">
+                <contextOfItems>db87fde9-7608-4b78-a869-b06b875a048f</contextOfItems>
+                <representationIdentifier type="IfcLabel" value="Body"/>
+                <representationType type="IfcLabel" value="SweptSolid"/>
+                <items>
+                  <IfcRepresentationItem type="IfcExtrudedAreaSolid">
+                    <sweptArea type="IfcRectangleProfileDef" profileType="AREA">
+                      <xDim type="IfcPositiveLengthMeasure" value="96.0"/>
+                      <yDim type="IfcPositiveLengthMeasure" value="48.0"/>
+                    </sweptArea>
+                    <position type="IfcAxis2Placement3D">
+                      <location type="IfcCartesianPoint">
+                        <coordinates>
+                          <IfcLengthMeasure type="IfcLengthMeasure" value="48.0"/>
+                          <IfcLengthMeasure type="IfcLengthMeasure" value="24.0"/>
+                          <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                        </coordinates>
+                      </location>
+                      <axis type="IfcDirection">
+                        <directionRatios>
+                          <IfcReal type="IfcReal" value="0.0"/>
+                          <IfcReal type="IfcReal" value="0.0"/>
+                          <IfcReal type="IfcReal" value="1.0"/>
+                        </directionRatios>
+                      </axis>
+                      <refDirection type="IfcDirection">
+                        <directionRatios>
+                          <IfcReal type="IfcReal" value="1.0"/>
+                          <IfcReal type="IfcReal" value="0.0"/>
+                          <IfcReal type="IfcReal" value="0.0"/>
+                        </directionRatios>
+                      </refDirection>
+                    </position>
+                    <extrudedDirection type="IfcDirection">
+                      <directionRatios>
+                        <IfcReal type="IfcReal" value="0.0"/>
+                        <IfcReal type="IfcReal" value="0.0"/>
+                        <IfcReal type="IfcReal" value="1.0"/>
+                      </directionRatios>
+                    </extrudedDirection>
+                    <depth type="IfcPositiveLengthMeasure" value="0.5"/>
+                  </IfcRepresentationItem>
+                </items>
+              </mappedRepresentation>
+            </IfcRepresentationMap>
+          </representationMaps>
+          <tag type="IfcLabel" value="X"/>
+        </IfcDefinitionSelect>
+        <IfcDefinitionSelect type="IfcWallType" globalId="489fc49d-43bd-48e7-92fd-824d91612acb" predefinedType="NOTDEFINED">
+          <name type="IfcLabel" value="Wood Framed Wall"/>
+          <hasContext>
+            <IfcRelDeclares>e3e3f2c5-050e-47af-987e-481e4656c672</IfcRelDeclares>
+          </hasContext>
+          <isDecomposedBy type="IfcRelAggregates" globalId="ce193b2d-cb6c-4a63-ae22-331b103b9cf4">
+            <relatedObjects>
+              <IfcObjectDefinition type="IfcBuildingElementPart" globalId="19a26af3-933a-434a-af49-8554b9405b81" predefinedType="PRECASTPANEL">
+                <name type="IfcLabel" value="Panel Forward"/>
+                <isTypedBy>
+                  <IfcRelDefinesByType type="IfcRelDefinesByType" globalId="d159a22d-73b4-44a1-91d7-3122c02a9694">
+                    <relatingType>df33df38-1854-40e0-bdfa-3dd8bc5bfb68</relatingType>
+                  </IfcRelDefinesByType>
+                </isTypedBy>
+              </IfcObjectDefinition>
+              <IfcObjectDefinition type="IfcBuildingElementPart" globalId="0f17c97b-3c04-4a35-aadf-5cdf21301b26" predefinedType="PRECASTPANEL">
+                <name type="IfcLabel" value="Panel Reverse"/>
+                <isTypedBy>
+                  <IfcRelDefinesByType>d159a22d-73b4-44a1-91d7-3122c02a9694</IfcRelDefinesByType>
+                </isTypedBy>
+              </IfcObjectDefinition>
+              <IfcObjectDefinition type="IfcElementAssembly" globalId="451275fc-9267-4c25-834b-b0a77b5174c5" predefinedType="BRACED_FRAME">
+                <name type="IfcLabel" value="Frame"/>
+                <isDecomposedBy type="IfcRelAggregates" globalId="ae0f98ac-55d0-4521-a21c-626d56da14db">
+                  <relatedObjects>
+                    <IfcObjectDefinition type="IfcMember" globalId="90eac980-606a-4359-a3c1-1d1170c79d92" predefinedType="STUD">
+                      <name type="IfcLabel" value="Studs"/>
+                      <hasAssociations>
+                        <IfcRelAssociates type="IfcRelAssociatesMaterial" globalId="8e72824e-fc08-47ae-8009-6a1e252eb690">
+                          <relatingMaterial type="IfcMaterialProfileSetUsage">
+                            <forProfileSet type="IfcMaterialProfileSet" globalId="0f6258f0-b72c-4b79-92dd-e68636da0b9e">
+                              <materialProfiles>
+                                <IfcMaterialProfile type="IfcMaterialProfile" globalId="891c70b8-c72f-4580-ab1d-cc3be2b0719f">
+                                  <material type="IfcMaterial" globalId="dd0660af-22e8-4536-940f-0b9dc31e3dcc">
+                                    <name type="IfcLabel" value="Southern Pine"/>
+                                  </material>
+                                  <profile type="IfcRectangleProfileDef" profileType="AREA">
+                                    <xDim type="IfcPositiveLengthMeasure" value="1.5"/>
+                                    <yDim type="IfcPositiveLengthMeasure" value="3.5"/>
+                                  </profile>
+                                </IfcMaterialProfile>
+                              </materialProfiles>
+                            </forProfileSet>
+                          </relatingMaterial>
+                        </IfcRelAssociates>
+                      </hasAssociations>
+                      <isTypedBy>
+                        <IfcRelDefinesByType>834fbefb-3246-4134-9fa2-ba8062d14f84</IfcRelDefinesByType>
+                      </isTypedBy>
+                    </IfcObjectDefinition>
+                    <IfcObjectDefinition type="IfcMember" globalId="c0bf319e-4fce-4453-ab63-fdf7c5f1cb8a" predefinedType="PLATE">
+                      <name type="IfcLabel" value="Track"/>
+                      <hasAssociations>
+                        <IfcRelAssociates type="IfcRelAssociatesMaterial" globalId="04ef13ee-7231-4622-92c3-c65a077a7368">
+                          <relatingMaterial type="IfcMaterialProfileSetUsage">
+                            <forProfileSet type="IfcMaterialProfileSet" globalId="c18ccd2f-0641-441d-8dfe-11862170776b">
+                              <materialProfiles>
+                                <IfcMaterialProfile type="IfcMaterialProfile" globalId="b448330b-982b-4c69-962f-f17d6fd4cee2">
+                                  <material type="IfcMaterial" globalId="c13cba5b-e2d6-48e8-9d44-a1d557fd933a">
+                                    <name type="IfcLabel" value="Southern Pine"/>
+                                    <hasRepresentation>
+                                      <IfcMaterialDefinitionRepresentation type="IfcMaterialDefinitionRepresentation" globalId="6b76b9c5-0272-4f1f-8bad-938b31e92b66">
+                                        <representations>
+                                          <IfcRepresentation type="IfcStyledRepresentation" globalId="1e511ea4-4e40-4b1e-854f-07bd493dafc7">
+                                            <contextOfItems type="IfcGeometricRepresentationContext" globalId="58e37fb3-f878-43ef-89a9-6e99e3e18712">
+                                              <worldCoordinateSystem type="IfcAxis2Placement3D">
+                                                <location type="IfcCartesianPoint">
+                                                  <coordinates>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                                  </coordinates>
+                                                </location>
+                                              </worldCoordinateSystem>
+                                              <contextIdentifier type="IfcLabel" value="2D"/>
+                                              <contextType type="IfcLabel" value="Plan"/>
+                                              <coordinateSpaceDimension type="IfcDimensionCount" value="2"/>
+                                              <precision type="IfcReal" value="1.0E-5"/>
+                                            </contextOfItems>
+                                            <representationIdentifier type="IfcLabel" value="Undefined"/>
+                                            <representationType type="IfcLabel" value="Undefined"/>
+                                            <items>
+                                              <IfcRepresentationItem type="IfcStyledItem">
+                                                <styles>
+                                                  <IfcStyleAssignmentSelect type="IfcSurfaceStyle" side="POSITIVE">
+                                                    <styles>
+                                                      <IfcSurfaceStyleElementSelect type="IfcSurfaceStyleShading">
+                                                        <surfaceColour type="IfcColourRgb">
+                                                          <red type="IfcNormalisedRatioMeasure" value="1.0"/>
+                                                          <green type="IfcNormalisedRatioMeasure" value="0.501960784313725"/>
+                                                          <blue type="IfcNormalisedRatioMeasure" value="0.250980392156863"/>
+                                                        </surfaceColour>
+                                                      </IfcSurfaceStyleElementSelect>
+                                                    </styles>
+                                                  </IfcStyleAssignmentSelect>
+                                                </styles>
+                                              </IfcRepresentationItem>
+                                            </items>
+                                          </IfcRepresentation>
+                                        </representations>
+                                      </IfcMaterialDefinitionRepresentation>
+                                    </hasRepresentation>
+                                  </material>
+                                  <profile type="IfcRectangleProfileDef" profileType="AREA">
+                                    <xDim type="IfcPositiveLengthMeasure" value="3.5"/>
+                                    <yDim type="IfcPositiveLengthMeasure" value="1.5"/>
+                                  </profile>
+                                </IfcMaterialProfile>
+                              </materialProfiles>
+                            </forProfileSet>
+                          </relatingMaterial>
+                        </IfcRelAssociates>
+                      </hasAssociations>
+                      <isTypedBy>
+                        <IfcRelDefinesByType>1bd8347e-1837-4ae9-a1c1-e551a15babb0</IfcRelDefinesByType>
+                      </isTypedBy>
+                    </IfcObjectDefinition>
+                  </relatedObjects>
+                </isDecomposedBy>
+                <isTypedBy>
+                  <IfcRelDefinesByType type="IfcRelDefinesByType" globalId="7ad696a3-ab8c-410d-b00a-e3c4905cd385">
+                    <relatingType>d58208da-d30c-446d-80d9-e6b0bc5f6383</relatingType>
+                  </IfcRelDefinesByType>
+                </isTypedBy>
+              </IfcObjectDefinition>
+            </relatedObjects>
+          </isDecomposedBy>
+          <hasAssociations>
+            <IfcRelAssociates type="IfcRelAssociatesMaterial" globalId="bbae1d4f-4919-4e65-8f32-b28feb638e82">
+              <relatingMaterial type="IfcMaterialLayerSet" globalId="d29f501c-3787-42f7-a7f3-526f58be26ef">
+                <materialLayers>
+                  <IfcMaterialLayer type="IfcMaterialLayerWithOffsets" globalId="1eedb4ca-138c-4578-8cf8-41a75d945d9d" offsetDirection="AXIS3">
+                    <layerThickness type="IfcNonNegativeLengthMeasure" value="0.5"/>
+                    <name type="IfcLabel" value="Panel Forward"/>
+                    <offsetValues>
+                      <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                      <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                    </offsetValues>
+                  </IfcMaterialLayer>
+                  <IfcMaterialLayer type="IfcMaterialLayerWithOffsets" globalId="4dd16bff-77aa-4633-95b3-71d7f7fda375" offsetDirection="AXIS1">
+                    <layerThickness type="IfcNonNegativeLengthMeasure" value="3.5"/>
+                    <name type="IfcLabel" value="Frame"/>
+                    <offsetValues>
+                      <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                      <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                    </offsetValues>
+                  </IfcMaterialLayer>
+                  <IfcMaterialLayer type="IfcMaterialLayerWithOffsets" globalId="a0b4f2bc-1ba6-4a15-b79c-dea88d732822" offsetDirection="AXIS1">
+                    <layerThickness type="IfcNonNegativeLengthMeasure" value="0.5"/>
+                    <name type="IfcLabel" value="Panel Reverse"/>
+                    <offsetValues>
+                      <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                      <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                    </offsetValues>
+                  </IfcMaterialLayer>
+                </materialLayers>
+                <layerSetName type="IfcLabel" value="Wall"/>
+              </relatingMaterial>
+            </IfcRelAssociates>
+          </hasAssociations>
+        </IfcDefinitionSelect>
+        <IfcDefinitionSelect>232b47bb-7c06-43ad-a3f6-f4dbd008c8dd</IfcDefinitionSelect>
+      </relatedDefinitions>
+    </IfcRelDeclares>
+  </declares>
+  <isDecomposedBy type="IfcRelAggregates" globalId="15cd8fae-8b5d-496f-980b-8238c1fd327c">
+    <relatedObjects>
+      <IfcObjectDefinition type="IfcSite" globalId="3f096eed-2ff6-4af7-a6d9-3b4c2154ef09" compositionType="ELEMENT">
+        <name type="IfcLabel" value="Site #1"/>
+        <objectPlacement type="IfcLocalPlacement" globalId="3e359945-a18e-4e20-a956-1d9d221d2e71">
+          <relativePlacement type="IfcAxis2Placement3D">
+            <location type="IfcCartesianPoint">
+              <coordinates>
+                <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+              </coordinates>
+            </location>
+          </relativePlacement>
+        </objectPlacement>
+        <representation type="IfcProductDefinitionShape" globalId="8f8b61e3-a984-4087-9772-40381b5fc8b4">
+          <representations>
+            <IfcRepresentation type="IfcShapeRepresentation" globalId="27dfdeed-0228-4987-b57a-fa4abdc8cac3">
+              <contextOfItems>db87fde9-7608-4b78-a869-b06b875a048f</contextOfItems>
+              <representationIdentifier type="IfcLabel" value="FootPrint"/>
+              <representationType type="IfcLabel" value="GeometricCurveSet"/>
+              <items>
+                <IfcRepresentationItem type="IfcGeometricCurveSet">
+                  <elements>
+                    <IfcGeometricSetSelect type="IfcPolyline">
+                      <points>
+                        <IfcCartesianPoint type="IfcCartesianPoint">
+                          <coordinates>
+                            <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                            <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                          </coordinates>
+                        </IfcCartesianPoint>
+                        <IfcCartesianPoint type="IfcCartesianPoint">
+                          <coordinates>
+                            <IfcLengthMeasure type="IfcLengthMeasure" value="1536.0"/>
+                            <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                          </coordinates>
+                        </IfcCartesianPoint>
+                        <IfcCartesianPoint type="IfcCartesianPoint">
+                          <coordinates>
+                            <IfcLengthMeasure type="IfcLengthMeasure" value="1536.0"/>
+                            <IfcLengthMeasure type="IfcLengthMeasure" value="768.0"/>
+                          </coordinates>
+                        </IfcCartesianPoint>
+                        <IfcCartesianPoint type="IfcCartesianPoint">
+                          <coordinates>
+                            <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                            <IfcLengthMeasure type="IfcLengthMeasure" value="768.0"/>
+                          </coordinates>
+                        </IfcCartesianPoint>
+                        <IfcCartesianPoint type="IfcCartesianPoint">
+                          <coordinates>
+                            <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                            <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                          </coordinates>
+                        </IfcCartesianPoint>
+                      </points>
+                    </IfcGeometricSetSelect>
+                  </elements>
+                </IfcRepresentationItem>
+              </items>
+            </IfcRepresentation>
+          </representations>
+        </representation>
+        <containsElements>
+          <IfcRelContainedInSpatialStructure type="IfcRelContainedInSpatialStructure" globalId="d0b9d88d-3800-41a1-8385-599da2ab9c18">
+            <relatedElements>
+              <IfcProduct type="IfcWallElementedCase" globalId="b89a36d5-2d06-44e3-b8e0-fc9b017ca8c8" predefinedType="MOVABLE">
+                <name type="IfcLabel" value="Wall #1"/>
+                <isDecomposedBy type="IfcRelAggregates" globalId="69f55e5d-3210-448d-958f-302303eff8f0">
+                  <relatedObjects>
+                    <IfcObjectDefinition type="IfcBuildingElementPart" globalId="e79a4fd9-2937-4184-a1a5-0069da8021aa" predefinedType="PRECASTPANEL">
+                      <name type="IfcLabel" value="Panel Reverse"/>
+                      <isTypedBy>
+                        <IfcRelDefinesByType>d159a22d-73b4-44a1-91d7-3122c02a9694</IfcRelDefinesByType>
+                      </isTypedBy>
+                      <objectPlacement type="IfcLocalPlacement" globalId="76e4f013-dab5-4884-b342-844c35a0d21e">
+                        <relativePlacement type="IfcAxis2Placement3D">
+                          <location type="IfcCartesianPoint">
+                            <coordinates>
+                              <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                              <IfcLengthMeasure type="IfcLengthMeasure" value="4.0"/>
+                              <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                            </coordinates>
+                          </location>
+                          <axis type="IfcDirection">
+                            <directionRatios>
+                              <IfcReal type="IfcReal" value="0.0"/>
+                              <IfcReal type="IfcReal" value="-1.0"/>
+                              <IfcReal type="IfcReal" value="0.0"/>
+                            </directionRatios>
+                          </axis>
+                          <refDirection type="IfcDirection">
+                            <directionRatios>
+                              <IfcReal type="IfcReal" value="1.0"/>
+                              <IfcReal type="IfcReal" value="0.0"/>
+                              <IfcReal type="IfcReal" value="0.0"/>
+                            </directionRatios>
+                          </refDirection>
+                        </relativePlacement>
+                        <placementRelTo type="IfcLocalPlacement" globalId="97604475-9d73-4141-a19d-516de00207fb">
+                          <relativePlacement type="IfcAxis2Placement3D">
+                            <location type="IfcCartesianPoint">
+                              <coordinates>
+                                <IfcLengthMeasure type="IfcLengthMeasure" value="48.0"/>
+                                <IfcLengthMeasure type="IfcLengthMeasure" value="48.0"/>
+                                <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                              </coordinates>
+                            </location>
+                            <axis type="IfcDirection">
+                              <directionRatios>
+                                <IfcReal type="IfcReal" value="0.0"/>
+                                <IfcReal type="IfcReal" value="0.0"/>
+                                <IfcReal type="IfcReal" value="1.0"/>
+                              </directionRatios>
+                            </axis>
+                            <refDirection type="IfcDirection">
+                              <directionRatios>
+                                <IfcReal type="IfcReal" value="1.0"/>
+                                <IfcReal type="IfcReal" value="0.0"/>
+                                <IfcReal type="IfcReal" value="0.0"/>
+                              </directionRatios>
+                            </refDirection>
+                          </relativePlacement>
+                          <placementRelTo>3e359945-a18e-4e20-a956-1d9d221d2e71</placementRelTo>
+                        </placementRelTo>
+                      </objectPlacement>
+                      <representation type="IfcProductDefinitionShape" globalId="b38f7b02-2b80-45bc-926a-b08311937b7c">
+                        <representations>
+                          <IfcRepresentation type="IfcShapeRepresentation" globalId="13efdd90-7679-493c-bc15-e518cfe18845">
+                            <contextOfItems>db87fde9-7608-4b78-a869-b06b875a048f</contextOfItems>
+                            <representationIdentifier type="IfcLabel" value="Body"/>
+                            <representationType type="IfcLabel" value="MappedRepresentation"/>
+                            <items>
+                              <IfcRepresentationItem type="IfcMappedItem">
+                                <mappingSource>4eda6e58-f7cc-474b-b9e7-ee3ee22166b7</mappingSource>
+                                <mappingTarget type="IfcCartesianTransformationOperator3DnonUniform">
+                                  <scl3 type="IfcReal" value="1.0"/>
+                                  <scl2 type="IfcReal" value="0.833333333333333"/>
+                                  <localOrigin type="IfcCartesianPoint">
+                                    <coordinates>
+                                      <IfcLengthMeasure type="IfcLengthMeasure" value="84.0"/>
+                                      <IfcLengthMeasure type="IfcLengthMeasure" value="80.0"/>
+                                      <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                    </coordinates>
+                                  </localOrigin>
+                                  <scale type="IfcReal" value="0.375"/>
+                                  <scale2 type="IfcReal" value="0.833333333333333"/>
+                                  <scale3 type="IfcReal" value="1.0"/>
+                                </mappingTarget>
+                              </IfcRepresentationItem>
+                              <IfcRepresentationItem type="IfcMappedItem">
+                                <mappingSource>4eda6e58-f7cc-474b-b9e7-ee3ee22166b7</mappingSource>
+                                <mappingTarget type="IfcCartesianTransformationOperator3DnonUniform">
+                                  <scl3 type="IfcReal" value="1.0"/>
+                                  <scl2 type="IfcReal" value="0.666666666666667"/>
+                                  <localOrigin type="IfcCartesianPoint">
+                                    <coordinates>
+                                      <IfcLengthMeasure type="IfcLengthMeasure" value="84.0"/>
+                                      <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                      <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                    </coordinates>
+                                  </localOrigin>
+                                  <scale type="IfcReal" value="0.375"/>
+                                  <scale2 type="IfcReal" value="0.666666666666667"/>
+                                  <scale3 type="IfcReal" value="1.0"/>
+                                </mappingTarget>
+                              </IfcRepresentationItem>
+                              <IfcRepresentationItem type="IfcMappedItem">
+                                <mappingSource>4eda6e58-f7cc-474b-b9e7-ee3ee22166b7</mappingSource>
+                                <mappingTarget type="IfcCartesianTransformationOperator3DnonUniform">
+                                  <scl3 type="IfcReal" value="1.0"/>
+                                  <scl2 type="IfcReal" value="0.833333333333333"/>
+                                  <localOrigin type="IfcCartesianPoint">
+                                    <coordinates>
+                                      <IfcLengthMeasure type="IfcLengthMeasure" value="24.0"/>
+                                      <IfcLengthMeasure type="IfcLengthMeasure" value="80.0"/>
+                                      <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                    </coordinates>
+                                  </localOrigin>
+                                  <scale type="IfcReal" value="0.333333333333333"/>
+                                  <scale2 type="IfcReal" value="0.833333333333333"/>
+                                  <scale3 type="IfcReal" value="1.0"/>
+                                </mappingTarget>
+                              </IfcRepresentationItem>
+                              <IfcRepresentationItem type="IfcMappedItem">
+                                <mappingSource>4eda6e58-f7cc-474b-b9e7-ee3ee22166b7</mappingSource>
+                                <mappingTarget type="IfcCartesianTransformationOperator3DnonUniform">
+                                  <scl3 type="IfcReal" value="1.0"/>
+                                  <scl2 type="IfcReal" value="2.5"/>
+                                  <localOrigin type="IfcCartesianPoint">
+                                    <coordinates>
+                                      <IfcLengthMeasure type="IfcLengthMeasure" value="120.0"/>
+                                      <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                      <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                    </coordinates>
+                                  </localOrigin>
+                                  <scale type="IfcReal" value="0.25"/>
+                                  <scale2 type="IfcReal" value="2.5"/>
+                                  <scale3 type="IfcReal" value="1.0"/>
+                                </mappingTarget>
+                              </IfcRepresentationItem>
+                              <IfcRepresentationItem type="IfcMappedItem">
+                                <mappingSource>4eda6e58-f7cc-474b-b9e7-ee3ee22166b7</mappingSource>
+                                <mappingTarget type="IfcCartesianTransformationOperator3DnonUniform">
+                                  <scl3 type="IfcReal" value="1.0"/>
+                                  <scl2 type="IfcReal" value="2.5"/>
+                                  <localOrigin type="IfcCartesianPoint">
+                                    <coordinates>
+                                      <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                      <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                      <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                    </coordinates>
+                                  </localOrigin>
+                                  <scale type="IfcReal" value="0.25"/>
+                                  <scale2 type="IfcReal" value="2.5"/>
+                                  <scale3 type="IfcReal" value="1.0"/>
+                                </mappingTarget>
+                              </IfcRepresentationItem>
+                              <IfcRepresentationItem type="IfcMappedItem">
+                                <mappingSource>4eda6e58-f7cc-474b-b9e7-ee3ee22166b7</mappingSource>
+                                <mappingTarget type="IfcCartesianTransformationOperator3DnonUniform">
+                                  <scl3 type="IfcReal" value="1.0"/>
+                                  <scl2 type="IfcReal" value="2.5"/>
+                                  <localOrigin type="IfcCartesianPoint">
+                                    <coordinates>
+                                      <IfcLengthMeasure type="IfcLengthMeasure" value="56.0"/>
+                                      <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                      <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                    </coordinates>
+                                  </localOrigin>
+                                  <scale type="IfcReal" value="0.291666666666667"/>
+                                  <scale2 type="IfcReal" value="2.5"/>
+                                  <scale3 type="IfcReal" value="1.0"/>
+                                </mappingTarget>
+                              </IfcRepresentationItem>
+                            </items>
+                          </IfcRepresentation>
+                        </representations>
+                      </representation>
+                    </IfcObjectDefinition>
+                    <IfcObjectDefinition type="IfcElementAssembly" globalId="376b7fbd-cac9-4f1a-a9f2-a2657b2f945d" predefinedType="BRACED_FRAME">
+                      <name type="IfcLabel" value="Frame"/>
+                      <isDecomposedBy type="IfcRelAggregates" globalId="0b5715bd-6267-4841-8c27-2cbec75c4ac2">
+                        <relatedObjects>
+                          <IfcObjectDefinition type="IfcMember" globalId="ce12cabb-f0d0-4f17-a139-b4355d29b3bd" predefinedType="PLATE">
+                            <name type="IfcLabel" value="Track"/>
+                            <hasAssociations>
+                              <IfcRelAssociates type="IfcRelAssociatesMaterial" globalId="04591a5f-1d18-4c12-aa07-218e948e4176">
+                                <relatingMaterial type="IfcMaterialProfileSetUsage">
+                                  <forProfileSet type="IfcMaterialProfileSet" globalId="c63b723d-41b2-4ff5-b0ca-9901fab34036">
+                                    <materialProfiles>
+                                      <IfcMaterialProfile type="IfcMaterialProfile" globalId="facc1524-d569-4ea3-96c0-40016affb2ab">
+                                        <material type="IfcMaterial" globalId="4ca41487-c77d-4e67-a173-f162ca9a90f5">
+                                          <name type="IfcLabel" value="Southern Pine"/>
+                                          <hasRepresentation>
+                                            <IfcMaterialDefinitionRepresentation type="IfcMaterialDefinitionRepresentation" globalId="f085c2e1-527c-4603-8370-1e824e9546a7">
+                                              <representations>
+                                                <IfcRepresentation type="IfcStyledRepresentation" globalId="f2386792-7d7f-4e03-b68a-95e2cbdd3deb">
+                                                  <contextOfItems type="IfcGeometricRepresentationContext" globalId="a7ca963e-0914-4f94-8530-44fde6aa2651">
+                                                    <worldCoordinateSystem type="IfcAxis2Placement3D">
+                                                      <location type="IfcCartesianPoint">
+                                                        <coordinates>
+                                                          <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                                          <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                                          <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                                        </coordinates>
+                                                      </location>
+                                                    </worldCoordinateSystem>
+                                                    <contextIdentifier type="IfcLabel" value="2D"/>
+                                                    <contextType type="IfcLabel" value="Plan"/>
+                                                    <coordinateSpaceDimension type="IfcDimensionCount" value="2"/>
+                                                    <precision type="IfcReal" value="1.0E-5"/>
+                                                  </contextOfItems>
+                                                  <representationIdentifier type="IfcLabel" value="Undefined"/>
+                                                  <representationType type="IfcLabel" value="Undefined"/>
+                                                  <items>
+                                                    <IfcRepresentationItem type="IfcStyledItem">
+                                                      <styles>
+                                                        <IfcStyleAssignmentSelect type="IfcSurfaceStyle" side="POSITIVE">
+                                                          <styles>
+                                                            <IfcSurfaceStyleElementSelect type="IfcSurfaceStyleShading">
+                                                              <surfaceColour type="IfcColourRgb">
+                                                                <red type="IfcNormalisedRatioMeasure" value="1.0"/>
+                                                                <green type="IfcNormalisedRatioMeasure" value="0.501960784313725"/>
+                                                                <blue type="IfcNormalisedRatioMeasure" value="0.250980392156863"/>
+                                                              </surfaceColour>
+                                                            </IfcSurfaceStyleElementSelect>
+                                                          </styles>
+                                                        </IfcStyleAssignmentSelect>
+                                                      </styles>
+                                                    </IfcRepresentationItem>
+                                                  </items>
+                                                </IfcRepresentation>
+                                              </representations>
+                                            </IfcMaterialDefinitionRepresentation>
+                                          </hasRepresentation>
+                                        </material>
+                                        <profile type="IfcRectangleProfileDef" profileType="AREA">
+                                          <xDim type="IfcPositiveLengthMeasure" value="3.5"/>
+                                          <yDim type="IfcPositiveLengthMeasure" value="1.5"/>
+                                        </profile>
+                                      </IfcMaterialProfile>
+                                    </materialProfiles>
+                                  </forProfileSet>
+                                </relatingMaterial>
+                              </IfcRelAssociates>
+                            </hasAssociations>
+                            <isTypedBy>
+                              <IfcRelDefinesByType>1bd8347e-1837-4ae9-a1c1-e551a15babb0</IfcRelDefinesByType>
+                            </isTypedBy>
+                            <objectPlacement type="IfcLocalPlacement" globalId="dc0c2c75-17d1-42b8-a497-cdf53fa01937">
+                              <relativePlacement type="IfcAxis2Placement3D">
+                                <location type="IfcCartesianPoint">
+                                  <coordinates>
+                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                  </coordinates>
+                                </location>
+                              </relativePlacement>
+                              <placementRelTo type="IfcLocalPlacement" globalId="ea98bfe6-debb-4fe1-a812-5bf4c9898188">
+                                <relativePlacement type="IfcAxis2Placement3D">
+                                  <location type="IfcCartesianPoint">
+                                    <coordinates>
+                                      <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                      <IfcLengthMeasure type="IfcLengthMeasure" value="0.5"/>
+                                      <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                    </coordinates>
+                                  </location>
+                                  <axis type="IfcDirection">
+                                    <directionRatios>
+                                      <IfcReal type="IfcReal" value="0.0"/>
+                                      <IfcReal type="IfcReal" value="-1.0"/>
+                                      <IfcReal type="IfcReal" value="0.0"/>
+                                    </directionRatios>
+                                  </axis>
+                                  <refDirection type="IfcDirection">
+                                    <directionRatios>
+                                      <IfcReal type="IfcReal" value="1.0"/>
+                                      <IfcReal type="IfcReal" value="0.0"/>
+                                      <IfcReal type="IfcReal" value="0.0"/>
+                                    </directionRatios>
+                                  </refDirection>
+                                </relativePlacement>
+                                <placementRelTo>97604475-9d73-4141-a19d-516de00207fb</placementRelTo>
+                              </placementRelTo>
+                            </objectPlacement>
+                            <representation type="IfcProductDefinitionShape" globalId="2090277f-378b-412e-ae73-b291b674bf70">
+                              <representations>
+                                <IfcRepresentation type="IfcShapeRepresentation" globalId="f2a857b4-046f-451a-bedf-625e715bc29c">
+                                  <contextOfItems>db87fde9-7608-4b78-a869-b06b875a048f</contextOfItems>
+                                  <representationIdentifier type="IfcLabel" value="Body"/>
+                                  <representationType type="IfcLabel" value="MappedRepresentation"/>
+                                  <items>
+                                    <IfcRepresentationItem type="IfcMappedItem">
+                                      <mappingSource>ca4dd7b2-26ae-45ae-99fd-8a5cd8a7b7b4</mappingSource>
+                                      <mappingTarget type="IfcCartesianTransformationOperator3DnonUniform">
+                                        <scl3 type="IfcReal" value="1.0"/>
+                                        <scl2 type="IfcReal" value="1.0"/>
+                                        <localOrigin type="IfcCartesianPoint">
+                                          <coordinates>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="56.0"/>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="119.25"/>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="-1.75"/>
+                                          </coordinates>
+                                        </localOrigin>
+                                        <scale type="IfcReal" value="0.291666666666667"/>
+                                        <scale2 type="IfcReal" value="1.0"/>
+                                        <scale3 type="IfcReal" value="1.0"/>
+                                      </mappingTarget>
+                                    </IfcRepresentationItem>
+                                    <IfcRepresentationItem type="IfcMappedItem">
+                                      <mappingSource>ca4dd7b2-26ae-45ae-99fd-8a5cd8a7b7b4</mappingSource>
+                                      <mappingTarget type="IfcCartesianTransformationOperator3DnonUniform">
+                                        <scl3 type="IfcReal" value="1.0"/>
+                                        <scl2 type="IfcReal" value="1.0"/>
+                                        <localOrigin type="IfcCartesianPoint">
+                                          <coordinates>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="84.0"/>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="0.75"/>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="-1.75"/>
+                                          </coordinates>
+                                        </localOrigin>
+                                        <scale type="IfcReal" value="0.375"/>
+                                        <scale2 type="IfcReal" value="1.0"/>
+                                        <scale3 type="IfcReal" value="1.0"/>
+                                      </mappingTarget>
+                                    </IfcRepresentationItem>
+                                    <IfcRepresentationItem type="IfcMappedItem">
+                                      <mappingSource>ca4dd7b2-26ae-45ae-99fd-8a5cd8a7b7b4</mappingSource>
+                                      <mappingTarget type="IfcCartesianTransformationOperator3DnonUniform">
+                                        <scl3 type="IfcReal" value="1.0"/>
+                                        <scl2 type="IfcReal" value="1.0"/>
+                                        <localOrigin type="IfcCartesianPoint">
+                                          <coordinates>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="24.0"/>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="119.25"/>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="-1.75"/>
+                                          </coordinates>
+                                        </localOrigin>
+                                        <scale type="IfcReal" value="0.333333333333333"/>
+                                        <scale2 type="IfcReal" value="1.0"/>
+                                        <scale3 type="IfcReal" value="1.0"/>
+                                      </mappingTarget>
+                                    </IfcRepresentationItem>
+                                    <IfcRepresentationItem type="IfcMappedItem">
+                                      <mappingSource>ca4dd7b2-26ae-45ae-99fd-8a5cd8a7b7b4</mappingSource>
+                                      <mappingTarget type="IfcCartesianTransformationOperator3DnonUniform">
+                                        <scl3 type="IfcReal" value="1.0"/>
+                                        <scl2 type="IfcReal" value="1.0"/>
+                                        <localOrigin type="IfcCartesianPoint">
+                                          <coordinates>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="24.0"/>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="80.75"/>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="-1.75"/>
+                                          </coordinates>
+                                        </localOrigin>
+                                        <scale type="IfcReal" value="0.333333333333333"/>
+                                        <scale2 type="IfcReal" value="1.0"/>
+                                        <scale3 type="IfcReal" value="1.0"/>
+                                      </mappingTarget>
+                                    </IfcRepresentationItem>
+                                    <IfcRepresentationItem type="IfcMappedItem">
+                                      <mappingSource>ca4dd7b2-26ae-45ae-99fd-8a5cd8a7b7b4</mappingSource>
+                                      <mappingTarget type="IfcCartesianTransformationOperator3DnonUniform">
+                                        <scl3 type="IfcReal" value="1.0"/>
+                                        <scl2 type="IfcReal" value="1.0"/>
+                                        <localOrigin type="IfcCartesianPoint">
+                                          <coordinates>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="119.25"/>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="-1.75"/>
+                                          </coordinates>
+                                        </localOrigin>
+                                        <scale type="IfcReal" value="0.25"/>
+                                        <scale2 type="IfcReal" value="1.0"/>
+                                        <scale3 type="IfcReal" value="1.0"/>
+                                      </mappingTarget>
+                                    </IfcRepresentationItem>
+                                    <IfcRepresentationItem type="IfcMappedItem">
+                                      <mappingSource>ca4dd7b2-26ae-45ae-99fd-8a5cd8a7b7b4</mappingSource>
+                                      <mappingTarget type="IfcCartesianTransformationOperator3DnonUniform">
+                                        <scl3 type="IfcReal" value="1.0"/>
+                                        <scl2 type="IfcReal" value="1.0"/>
+                                        <localOrigin type="IfcCartesianPoint">
+                                          <coordinates>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="56.0"/>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="0.75"/>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="-1.75"/>
+                                          </coordinates>
+                                        </localOrigin>
+                                        <scale type="IfcReal" value="0.291666666666667"/>
+                                        <scale2 type="IfcReal" value="1.0"/>
+                                        <scale3 type="IfcReal" value="1.0"/>
+                                      </mappingTarget>
+                                    </IfcRepresentationItem>
+                                    <IfcRepresentationItem type="IfcMappedItem">
+                                      <mappingSource>ca4dd7b2-26ae-45ae-99fd-8a5cd8a7b7b4</mappingSource>
+                                      <mappingTarget type="IfcCartesianTransformationOperator3DnonUniform">
+                                        <scl3 type="IfcReal" value="1.0"/>
+                                        <scl2 type="IfcReal" value="1.0"/>
+                                        <localOrigin type="IfcCartesianPoint">
+                                          <coordinates>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="120.0"/>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="119.25"/>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="-1.75"/>
+                                          </coordinates>
+                                        </localOrigin>
+                                        <scale type="IfcReal" value="0.25"/>
+                                        <scale2 type="IfcReal" value="1.0"/>
+                                        <scale3 type="IfcReal" value="1.0"/>
+                                      </mappingTarget>
+                                    </IfcRepresentationItem>
+                                    <IfcRepresentationItem type="IfcMappedItem">
+                                      <mappingSource>ca4dd7b2-26ae-45ae-99fd-8a5cd8a7b7b4</mappingSource>
+                                      <mappingTarget type="IfcCartesianTransformationOperator3DnonUniform">
+                                        <scl3 type="IfcReal" value="1.0"/>
+                                        <scl2 type="IfcReal" value="1.0"/>
+                                        <localOrigin type="IfcCartesianPoint">
+                                          <coordinates>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="120.0"/>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="0.75"/>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="-1.75"/>
+                                          </coordinates>
+                                        </localOrigin>
+                                        <scale type="IfcReal" value="0.25"/>
+                                        <scale2 type="IfcReal" value="1.0"/>
+                                        <scale3 type="IfcReal" value="1.0"/>
+                                      </mappingTarget>
+                                    </IfcRepresentationItem>
+                                    <IfcRepresentationItem type="IfcMappedItem">
+                                      <mappingSource>ca4dd7b2-26ae-45ae-99fd-8a5cd8a7b7b4</mappingSource>
+                                      <mappingTarget type="IfcCartesianTransformationOperator3DnonUniform">
+                                        <scl3 type="IfcReal" value="1.0"/>
+                                        <scl2 type="IfcReal" value="1.0"/>
+                                        <localOrigin type="IfcCartesianPoint">
+                                          <coordinates>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="84.0"/>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="31.25"/>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="-1.75"/>
+                                          </coordinates>
+                                        </localOrigin>
+                                        <scale type="IfcReal" value="0.375"/>
+                                        <scale2 type="IfcReal" value="1.0"/>
+                                        <scale3 type="IfcReal" value="1.0"/>
+                                      </mappingTarget>
+                                    </IfcRepresentationItem>
+                                    <IfcRepresentationItem type="IfcMappedItem">
+                                      <mappingSource>ca4dd7b2-26ae-45ae-99fd-8a5cd8a7b7b4</mappingSource>
+                                      <mappingTarget type="IfcCartesianTransformationOperator3DnonUniform">
+                                        <scl3 type="IfcReal" value="1.0"/>
+                                        <scl2 type="IfcReal" value="1.0"/>
+                                        <localOrigin type="IfcCartesianPoint">
+                                          <coordinates>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="0.75"/>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="-1.75"/>
+                                          </coordinates>
+                                        </localOrigin>
+                                        <scale type="IfcReal" value="0.25"/>
+                                        <scale2 type="IfcReal" value="1.0"/>
+                                        <scale3 type="IfcReal" value="1.0"/>
+                                      </mappingTarget>
+                                    </IfcRepresentationItem>
+                                    <IfcRepresentationItem type="IfcMappedItem">
+                                      <mappingSource>ca4dd7b2-26ae-45ae-99fd-8a5cd8a7b7b4</mappingSource>
+                                      <mappingTarget type="IfcCartesianTransformationOperator3DnonUniform">
+                                        <scl3 type="IfcReal" value="1.0"/>
+                                        <scl2 type="IfcReal" value="1.0"/>
+                                        <localOrigin type="IfcCartesianPoint">
+                                          <coordinates>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="84.0"/>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="119.25"/>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="-1.75"/>
+                                          </coordinates>
+                                        </localOrigin>
+                                        <scale type="IfcReal" value="0.375"/>
+                                        <scale2 type="IfcReal" value="1.0"/>
+                                        <scale3 type="IfcReal" value="1.0"/>
+                                      </mappingTarget>
+                                    </IfcRepresentationItem>
+                                    <IfcRepresentationItem type="IfcMappedItem">
+                                      <mappingSource>ca4dd7b2-26ae-45ae-99fd-8a5cd8a7b7b4</mappingSource>
+                                      <mappingTarget type="IfcCartesianTransformationOperator3DnonUniform">
+                                        <scl3 type="IfcReal" value="1.0"/>
+                                        <scl2 type="IfcReal" value="1.0"/>
+                                        <localOrigin type="IfcCartesianPoint">
+                                          <coordinates>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="84.0"/>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="80.75"/>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="-1.75"/>
+                                          </coordinates>
+                                        </localOrigin>
+                                        <scale type="IfcReal" value="0.375"/>
+                                        <scale2 type="IfcReal" value="1.0"/>
+                                        <scale3 type="IfcReal" value="1.0"/>
+                                      </mappingTarget>
+                                    </IfcRepresentationItem>
+                                  </items>
+                                </IfcRepresentation>
+                              </representations>
+                            </representation>
+                          </IfcObjectDefinition>
+                          <IfcObjectDefinition type="IfcMember" globalId="3c201745-61a2-4205-9528-a78a97bbd0bd" predefinedType="STUD">
+                            <name type="IfcLabel" value="Studs"/>
+                            <hasAssociations>
+                              <IfcRelAssociates type="IfcRelAssociatesMaterial" globalId="d48e7afc-2c34-4127-ab03-bdacaea1189e">
+                                <relatingMaterial type="IfcMaterialProfileSetUsage">
+                                  <forProfileSet type="IfcMaterialProfileSet" globalId="48661d58-614a-408a-84a5-0e080dce248c">
+                                    <materialProfiles>
+                                      <IfcMaterialProfile type="IfcMaterialProfile" globalId="0b413d7a-c8db-428d-ab5c-59c3aa049119">
+                                        <material type="IfcMaterial" globalId="5c3e935b-c5a3-4a23-8779-2be018eec397">
+                                          <name type="IfcLabel" value="Southern Pine"/>
+                                        </material>
+                                        <profile type="IfcRectangleProfileDef" profileType="AREA">
+                                          <xDim type="IfcPositiveLengthMeasure" value="1.5"/>
+                                          <yDim type="IfcPositiveLengthMeasure" value="3.5"/>
+                                        </profile>
+                                      </IfcMaterialProfile>
+                                    </materialProfiles>
+                                  </forProfileSet>
+                                </relatingMaterial>
+                              </IfcRelAssociates>
+                            </hasAssociations>
+                            <isTypedBy>
+                              <IfcRelDefinesByType>834fbefb-3246-4134-9fa2-ba8062d14f84</IfcRelDefinesByType>
+                            </isTypedBy>
+                            <objectPlacement type="IfcLocalPlacement" globalId="c641afde-8db4-411a-99b3-9d2055a2990c">
+                              <relativePlacement type="IfcAxis2Placement3D">
+                                <location type="IfcCartesianPoint">
+                                  <coordinates>
+                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                    <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                  </coordinates>
+                                </location>
+                              </relativePlacement>
+                              <placementRelTo>ea98bfe6-debb-4fe1-a812-5bf4c9898188</placementRelTo>
+                            </objectPlacement>
+                            <representation type="IfcProductDefinitionShape" globalId="60401012-9558-4da8-8861-7e86d930223f">
+                              <representations>
+                                <IfcRepresentation type="IfcShapeRepresentation" globalId="499ab979-c970-4ac0-9416-64d564f2b55d">
+                                  <contextOfItems>db87fde9-7608-4b78-a869-b06b875a048f</contextOfItems>
+                                  <representationIdentifier type="IfcLabel" value="Body"/>
+                                  <representationType type="IfcLabel" value="MappedRepresentation"/>
+                                  <items>
+                                    <IfcRepresentationItem type="IfcMappedItem">
+                                      <mappingSource>72566e51-945b-4b6d-8e96-8640b271a5f5</mappingSource>
+                                      <mappingTarget type="IfcCartesianTransformationOperator3DnonUniform">
+                                        <scl3 type="IfcReal" value="1.0"/>
+                                        <scl2 type="IfcReal" value="1.0"/>
+                                        <axis1 type="IfcDirection">
+                                          <directionRatios>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="1.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                          </directionRatios>
+                                        </axis1>
+                                        <axis2 type="IfcDirection">
+                                          <directionRatios>
+                                            <IfcReal type="IfcReal" value="1.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                          </directionRatios>
+                                        </axis2>
+                                        <localOrigin type="IfcCartesianPoint">
+                                          <coordinates>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="55.25"/>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="81.5"/>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="-1.75"/>
+                                          </coordinates>
+                                        </localOrigin>
+                                        <scale type="IfcReal" value="0.4"/>
+                                        <axis3 type="IfcDirection">
+                                          <directionRatios>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="1.0"/>
+                                          </directionRatios>
+                                        </axis3>
+                                        <scale2 type="IfcReal" value="1.0"/>
+                                        <scale3 type="IfcReal" value="1.0"/>
+                                      </mappingTarget>
+                                    </IfcRepresentationItem>
+                                    <IfcRepresentationItem type="IfcMappedItem">
+                                      <mappingSource>72566e51-945b-4b6d-8e96-8640b271a5f5</mappingSource>
+                                      <mappingTarget type="IfcCartesianTransformationOperator3DnonUniform">
+                                        <scl3 type="IfcReal" value="1.0"/>
+                                        <scl2 type="IfcReal" value="1.0"/>
+                                        <axis1 type="IfcDirection">
+                                          <directionRatios>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="1.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                          </directionRatios>
+                                        </axis1>
+                                        <axis2 type="IfcDirection">
+                                          <directionRatios>
+                                            <IfcReal type="IfcReal" value="1.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                          </directionRatios>
+                                        </axis2>
+                                        <localOrigin type="IfcCartesianPoint">
+                                          <coordinates>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="72.75"/>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="1.5"/>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="-1.75"/>
+                                          </coordinates>
+                                        </localOrigin>
+                                        <scale type="IfcReal" value="1.26486486486486"/>
+                                        <axis3 type="IfcDirection">
+                                          <directionRatios>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="1.0"/>
+                                          </directionRatios>
+                                        </axis3>
+                                        <scale2 type="IfcReal" value="1.0"/>
+                                        <scale3 type="IfcReal" value="1.0"/>
+                                      </mappingTarget>
+                                    </IfcRepresentationItem>
+                                    <IfcRepresentationItem type="IfcMappedItem">
+                                      <mappingSource>72566e51-945b-4b6d-8e96-8640b271a5f5</mappingSource>
+                                      <mappingTarget type="IfcCartesianTransformationOperator3DnonUniform">
+                                        <scl3 type="IfcReal" value="1.0"/>
+                                        <scl2 type="IfcReal" value="1.0"/>
+                                        <axis1 type="IfcDirection">
+                                          <directionRatios>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="1.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                          </directionRatios>
+                                        </axis1>
+                                        <axis2 type="IfcDirection">
+                                          <directionRatios>
+                                            <IfcReal type="IfcReal" value="1.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                          </directionRatios>
+                                        </axis2>
+                                        <localOrigin type="IfcCartesianPoint">
+                                          <coordinates>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="0.75"/>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="1.5"/>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="-1.75"/>
+                                          </coordinates>
+                                        </localOrigin>
+                                        <scale type="IfcReal" value="1.26486486486486"/>
+                                        <axis3 type="IfcDirection">
+                                          <directionRatios>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="1.0"/>
+                                          </directionRatios>
+                                        </axis3>
+                                        <scale2 type="IfcReal" value="1.0"/>
+                                        <scale3 type="IfcReal" value="1.0"/>
+                                      </mappingTarget>
+                                    </IfcRepresentationItem>
+                                    <IfcRepresentationItem type="IfcMappedItem">
+                                      <mappingSource>72566e51-945b-4b6d-8e96-8640b271a5f5</mappingSource>
+                                      <mappingTarget type="IfcCartesianTransformationOperator3DnonUniform">
+                                        <scl3 type="IfcReal" value="1.0"/>
+                                        <scl2 type="IfcReal" value="1.0"/>
+                                        <axis1 type="IfcDirection">
+                                          <directionRatios>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="1.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                          </directionRatios>
+                                        </axis1>
+                                        <axis2 type="IfcDirection">
+                                          <directionRatios>
+                                            <IfcReal type="IfcReal" value="1.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                          </directionRatios>
+                                        </axis2>
+                                        <localOrigin type="IfcCartesianPoint">
+                                          <coordinates>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="119.25"/>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="81.5"/>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="-1.75"/>
+                                          </coordinates>
+                                        </localOrigin>
+                                        <scale type="IfcReal" value="0.4"/>
+                                        <axis3 type="IfcDirection">
+                                          <directionRatios>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="1.0"/>
+                                          </directionRatios>
+                                        </axis3>
+                                        <scale2 type="IfcReal" value="1.0"/>
+                                        <scale3 type="IfcReal" value="1.0"/>
+                                      </mappingTarget>
+                                    </IfcRepresentationItem>
+                                    <IfcRepresentationItem type="IfcMappedItem">
+                                      <mappingSource>72566e51-945b-4b6d-8e96-8640b271a5f5</mappingSource>
+                                      <mappingTarget type="IfcCartesianTransformationOperator3DnonUniform">
+                                        <scl3 type="IfcReal" value="1.0"/>
+                                        <scl2 type="IfcReal" value="1.0"/>
+                                        <axis1 type="IfcDirection">
+                                          <directionRatios>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="1.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                          </directionRatios>
+                                        </axis1>
+                                        <axis2 type="IfcDirection">
+                                          <directionRatios>
+                                            <IfcReal type="IfcReal" value="1.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                          </directionRatios>
+                                        </axis2>
+                                        <localOrigin type="IfcCartesianPoint">
+                                          <coordinates>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="143.25"/>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="1.5"/>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="-1.75"/>
+                                          </coordinates>
+                                        </localOrigin>
+                                        <scale type="IfcReal" value="1.26486486486486"/>
+                                        <axis3 type="IfcDirection">
+                                          <directionRatios>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="1.0"/>
+                                          </directionRatios>
+                                        </axis3>
+                                        <scale2 type="IfcReal" value="1.0"/>
+                                        <scale3 type="IfcReal" value="1.0"/>
+                                      </mappingTarget>
+                                    </IfcRepresentationItem>
+                                    <IfcRepresentationItem type="IfcMappedItem">
+                                      <mappingSource>72566e51-945b-4b6d-8e96-8640b271a5f5</mappingSource>
+                                      <mappingTarget type="IfcCartesianTransformationOperator3DnonUniform">
+                                        <scl3 type="IfcReal" value="1.0"/>
+                                        <scl2 type="IfcReal" value="1.0"/>
+                                        <axis1 type="IfcDirection">
+                                          <directionRatios>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="1.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                          </directionRatios>
+                                        </axis1>
+                                        <axis2 type="IfcDirection">
+                                          <directionRatios>
+                                            <IfcReal type="IfcReal" value="1.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                          </directionRatios>
+                                        </axis2>
+                                        <localOrigin type="IfcCartesianPoint">
+                                          <coordinates>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="119.25"/>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="1.5"/>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="-1.75"/>
+                                          </coordinates>
+                                        </localOrigin>
+                                        <scale type="IfcReal" value="0.313513513513514"/>
+                                        <axis3 type="IfcDirection">
+                                          <directionRatios>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="1.0"/>
+                                          </directionRatios>
+                                        </axis3>
+                                        <scale2 type="IfcReal" value="1.0"/>
+                                        <scale3 type="IfcReal" value="1.0"/>
+                                      </mappingTarget>
+                                    </IfcRepresentationItem>
+                                    <IfcRepresentationItem type="IfcMappedItem">
+                                      <mappingSource>72566e51-945b-4b6d-8e96-8640b271a5f5</mappingSource>
+                                      <mappingTarget type="IfcCartesianTransformationOperator3DnonUniform">
+                                        <scl3 type="IfcReal" value="1.0"/>
+                                        <scl2 type="IfcReal" value="1.0"/>
+                                        <axis1 type="IfcDirection">
+                                          <directionRatios>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="1.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                          </directionRatios>
+                                        </axis1>
+                                        <axis2 type="IfcDirection">
+                                          <directionRatios>
+                                            <IfcReal type="IfcReal" value="1.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                          </directionRatios>
+                                        </axis2>
+                                        <localOrigin type="IfcCartesianPoint">
+                                          <coordinates>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="136.75"/>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="1.5"/>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="-1.75"/>
+                                          </coordinates>
+                                        </localOrigin>
+                                        <scale type="IfcReal" value="1.26486486486486"/>
+                                        <axis3 type="IfcDirection">
+                                          <directionRatios>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="1.0"/>
+                                          </directionRatios>
+                                        </axis3>
+                                        <scale2 type="IfcReal" value="1.0"/>
+                                        <scale3 type="IfcReal" value="1.0"/>
+                                      </mappingTarget>
+                                    </IfcRepresentationItem>
+                                    <IfcRepresentationItem type="IfcMappedItem">
+                                      <mappingSource>72566e51-945b-4b6d-8e96-8640b271a5f5</mappingSource>
+                                      <mappingTarget type="IfcCartesianTransformationOperator3DnonUniform">
+                                        <scl3 type="IfcReal" value="1.0"/>
+                                        <scl2 type="IfcReal" value="1.0"/>
+                                        <axis1 type="IfcDirection">
+                                          <directionRatios>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="1.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                          </directionRatios>
+                                        </axis1>
+                                        <axis2 type="IfcDirection">
+                                          <directionRatios>
+                                            <IfcReal type="IfcReal" value="1.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                          </directionRatios>
+                                        </axis2>
+                                        <localOrigin type="IfcCartesianPoint">
+                                          <coordinates>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="23.25"/>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="1.5"/>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="-1.75"/>
+                                          </coordinates>
+                                        </localOrigin>
+                                        <scale type="IfcReal" value="1.26486486486486"/>
+                                        <axis3 type="IfcDirection">
+                                          <directionRatios>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="1.0"/>
+                                          </directionRatios>
+                                        </axis3>
+                                        <scale2 type="IfcReal" value="1.0"/>
+                                        <scale3 type="IfcReal" value="1.0"/>
+                                      </mappingTarget>
+                                    </IfcRepresentationItem>
+                                    <IfcRepresentationItem type="IfcMappedItem">
+                                      <mappingSource>72566e51-945b-4b6d-8e96-8640b271a5f5</mappingSource>
+                                      <mappingTarget type="IfcCartesianTransformationOperator3DnonUniform">
+                                        <scl3 type="IfcReal" value="1.0"/>
+                                        <scl2 type="IfcReal" value="1.0"/>
+                                        <axis1 type="IfcDirection">
+                                          <directionRatios>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="1.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                          </directionRatios>
+                                        </axis1>
+                                        <axis2 type="IfcDirection">
+                                          <directionRatios>
+                                            <IfcReal type="IfcReal" value="1.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                          </directionRatios>
+                                        </axis2>
+                                        <localOrigin type="IfcCartesianPoint">
+                                          <coordinates>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="24.75"/>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="81.5"/>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="-1.75"/>
+                                          </coordinates>
+                                        </localOrigin>
+                                        <scale type="IfcReal" value="0.4"/>
+                                        <axis3 type="IfcDirection">
+                                          <directionRatios>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="1.0"/>
+                                          </directionRatios>
+                                        </axis3>
+                                        <scale2 type="IfcReal" value="1.0"/>
+                                        <scale3 type="IfcReal" value="1.0"/>
+                                      </mappingTarget>
+                                    </IfcRepresentationItem>
+                                    <IfcRepresentationItem type="IfcMappedItem">
+                                      <mappingSource>72566e51-945b-4b6d-8e96-8640b271a5f5</mappingSource>
+                                      <mappingTarget type="IfcCartesianTransformationOperator3DnonUniform">
+                                        <scl3 type="IfcReal" value="1.0"/>
+                                        <scl2 type="IfcReal" value="1.0"/>
+                                        <axis1 type="IfcDirection">
+                                          <directionRatios>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="1.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                          </directionRatios>
+                                        </axis1>
+                                        <axis2 type="IfcDirection">
+                                          <directionRatios>
+                                            <IfcReal type="IfcReal" value="1.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                          </directionRatios>
+                                        </axis2>
+                                        <localOrigin type="IfcCartesianPoint">
+                                          <coordinates>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="84.75"/>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="81.5"/>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="-1.75"/>
+                                          </coordinates>
+                                        </localOrigin>
+                                        <scale type="IfcReal" value="0.4"/>
+                                        <axis3 type="IfcDirection">
+                                          <directionRatios>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="1.0"/>
+                                          </directionRatios>
+                                        </axis3>
+                                        <scale2 type="IfcReal" value="1.0"/>
+                                        <scale3 type="IfcReal" value="1.0"/>
+                                      </mappingTarget>
+                                    </IfcRepresentationItem>
+                                    <IfcRepresentationItem type="IfcMappedItem">
+                                      <mappingSource>72566e51-945b-4b6d-8e96-8640b271a5f5</mappingSource>
+                                      <mappingTarget type="IfcCartesianTransformationOperator3DnonUniform">
+                                        <scl3 type="IfcReal" value="1.0"/>
+                                        <scl2 type="IfcReal" value="1.0"/>
+                                        <axis1 type="IfcDirection">
+                                          <directionRatios>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="1.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                          </directionRatios>
+                                        </axis1>
+                                        <axis2 type="IfcDirection">
+                                          <directionRatios>
+                                            <IfcReal type="IfcReal" value="1.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                          </directionRatios>
+                                        </axis2>
+                                        <localOrigin type="IfcCartesianPoint">
+                                          <coordinates>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="16.75"/>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="1.5"/>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="-1.75"/>
+                                          </coordinates>
+                                        </localOrigin>
+                                        <scale type="IfcReal" value="1.26486486486486"/>
+                                        <axis3 type="IfcDirection">
+                                          <directionRatios>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="1.0"/>
+                                          </directionRatios>
+                                        </axis3>
+                                        <scale2 type="IfcReal" value="1.0"/>
+                                        <scale3 type="IfcReal" value="1.0"/>
+                                      </mappingTarget>
+                                    </IfcRepresentationItem>
+                                    <IfcRepresentationItem type="IfcMappedItem">
+                                      <mappingSource>72566e51-945b-4b6d-8e96-8640b271a5f5</mappingSource>
+                                      <mappingTarget type="IfcCartesianTransformationOperator3DnonUniform">
+                                        <scl3 type="IfcReal" value="1.0"/>
+                                        <scl2 type="IfcReal" value="1.0"/>
+                                        <axis1 type="IfcDirection">
+                                          <directionRatios>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="1.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                          </directionRatios>
+                                        </axis1>
+                                        <axis2 type="IfcDirection">
+                                          <directionRatios>
+                                            <IfcReal type="IfcReal" value="1.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                          </directionRatios>
+                                        </axis2>
+                                        <localOrigin type="IfcCartesianPoint">
+                                          <coordinates>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="40.75"/>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="81.5"/>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="-1.75"/>
+                                          </coordinates>
+                                        </localOrigin>
+                                        <scale type="IfcReal" value="0.4"/>
+                                        <axis3 type="IfcDirection">
+                                          <directionRatios>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="1.0"/>
+                                          </directionRatios>
+                                        </axis3>
+                                        <scale2 type="IfcReal" value="1.0"/>
+                                        <scale3 type="IfcReal" value="1.0"/>
+                                      </mappingTarget>
+                                    </IfcRepresentationItem>
+                                    <IfcRepresentationItem type="IfcMappedItem">
+                                      <mappingSource>72566e51-945b-4b6d-8e96-8640b271a5f5</mappingSource>
+                                      <mappingTarget type="IfcCartesianTransformationOperator3DnonUniform">
+                                        <scl3 type="IfcReal" value="1.0"/>
+                                        <scl2 type="IfcReal" value="1.0"/>
+                                        <axis1 type="IfcDirection">
+                                          <directionRatios>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="1.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                          </directionRatios>
+                                        </axis1>
+                                        <axis2 type="IfcDirection">
+                                          <directionRatios>
+                                            <IfcReal type="IfcReal" value="1.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                          </directionRatios>
+                                        </axis2>
+                                        <localOrigin type="IfcCartesianPoint">
+                                          <coordinates>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="83.25"/>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="1.5"/>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="-1.75"/>
+                                          </coordinates>
+                                        </localOrigin>
+                                        <scale type="IfcReal" value="1.26486486486486"/>
+                                        <axis3 type="IfcDirection">
+                                          <directionRatios>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="1.0"/>
+                                          </directionRatios>
+                                        </axis3>
+                                        <scale2 type="IfcReal" value="1.0"/>
+                                        <scale3 type="IfcReal" value="1.0"/>
+                                      </mappingTarget>
+                                    </IfcRepresentationItem>
+                                    <IfcRepresentationItem type="IfcMappedItem">
+                                      <mappingSource>72566e51-945b-4b6d-8e96-8640b271a5f5</mappingSource>
+                                      <mappingTarget type="IfcCartesianTransformationOperator3DnonUniform">
+                                        <scl3 type="IfcReal" value="1.0"/>
+                                        <scl2 type="IfcReal" value="1.0"/>
+                                        <axis1 type="IfcDirection">
+                                          <directionRatios>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="1.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                          </directionRatios>
+                                        </axis1>
+                                        <axis2 type="IfcDirection">
+                                          <directionRatios>
+                                            <IfcReal type="IfcReal" value="1.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                          </directionRatios>
+                                        </axis2>
+                                        <localOrigin type="IfcCartesianPoint">
+                                          <coordinates>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="120.75"/>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="1.5"/>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="-1.75"/>
+                                          </coordinates>
+                                        </localOrigin>
+                                        <scale type="IfcReal" value="1.26486486486486"/>
+                                        <axis3 type="IfcDirection">
+                                          <directionRatios>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="1.0"/>
+                                          </directionRatios>
+                                        </axis3>
+                                        <scale2 type="IfcReal" value="1.0"/>
+                                        <scale3 type="IfcReal" value="1.0"/>
+                                      </mappingTarget>
+                                    </IfcRepresentationItem>
+                                    <IfcRepresentationItem type="IfcMappedItem">
+                                      <mappingSource>72566e51-945b-4b6d-8e96-8640b271a5f5</mappingSource>
+                                      <mappingTarget type="IfcCartesianTransformationOperator3DnonUniform">
+                                        <scl3 type="IfcReal" value="1.0"/>
+                                        <scl2 type="IfcReal" value="1.0"/>
+                                        <axis1 type="IfcDirection">
+                                          <directionRatios>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="1.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                          </directionRatios>
+                                        </axis1>
+                                        <axis2 type="IfcDirection">
+                                          <directionRatios>
+                                            <IfcReal type="IfcReal" value="1.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                          </directionRatios>
+                                        </axis2>
+                                        <localOrigin type="IfcCartesianPoint">
+                                          <coordinates>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="116.75"/>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="81.5"/>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="-1.75"/>
+                                          </coordinates>
+                                        </localOrigin>
+                                        <scale type="IfcReal" value="0.4"/>
+                                        <axis3 type="IfcDirection">
+                                          <directionRatios>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="1.0"/>
+                                          </directionRatios>
+                                        </axis3>
+                                        <scale2 type="IfcReal" value="1.0"/>
+                                        <scale3 type="IfcReal" value="1.0"/>
+                                      </mappingTarget>
+                                    </IfcRepresentationItem>
+                                    <IfcRepresentationItem type="IfcMappedItem">
+                                      <mappingSource>72566e51-945b-4b6d-8e96-8640b271a5f5</mappingSource>
+                                      <mappingTarget type="IfcCartesianTransformationOperator3DnonUniform">
+                                        <scl3 type="IfcReal" value="1.0"/>
+                                        <scl2 type="IfcReal" value="1.0"/>
+                                        <axis1 type="IfcDirection">
+                                          <directionRatios>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="1.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                          </directionRatios>
+                                        </axis1>
+                                        <axis2 type="IfcDirection">
+                                          <directionRatios>
+                                            <IfcReal type="IfcReal" value="1.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                          </directionRatios>
+                                        </axis2>
+                                        <localOrigin type="IfcCartesianPoint">
+                                          <coordinates>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="84.75"/>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="1.5"/>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="-1.75"/>
+                                          </coordinates>
+                                        </localOrigin>
+                                        <scale type="IfcReal" value="0.313513513513514"/>
+                                        <axis3 type="IfcDirection">
+                                          <directionRatios>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="1.0"/>
+                                          </directionRatios>
+                                        </axis3>
+                                        <scale2 type="IfcReal" value="1.0"/>
+                                        <scale3 type="IfcReal" value="1.0"/>
+                                      </mappingTarget>
+                                    </IfcRepresentationItem>
+                                    <IfcRepresentationItem type="IfcMappedItem">
+                                      <mappingSource>72566e51-945b-4b6d-8e96-8640b271a5f5</mappingSource>
+                                      <mappingTarget type="IfcCartesianTransformationOperator3DnonUniform">
+                                        <scl3 type="IfcReal" value="1.0"/>
+                                        <scl2 type="IfcReal" value="1.0"/>
+                                        <axis1 type="IfcDirection">
+                                          <directionRatios>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="1.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                          </directionRatios>
+                                        </axis1>
+                                        <axis2 type="IfcDirection">
+                                          <directionRatios>
+                                            <IfcReal type="IfcReal" value="1.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                          </directionRatios>
+                                        </axis2>
+                                        <localOrigin type="IfcCartesianPoint">
+                                          <coordinates>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="100.75"/>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="1.5"/>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="-1.75"/>
+                                          </coordinates>
+                                        </localOrigin>
+                                        <scale type="IfcReal" value="0.313513513513514"/>
+                                        <axis3 type="IfcDirection">
+                                          <directionRatios>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="1.0"/>
+                                          </directionRatios>
+                                        </axis3>
+                                        <scale2 type="IfcReal" value="1.0"/>
+                                        <scale3 type="IfcReal" value="1.0"/>
+                                      </mappingTarget>
+                                    </IfcRepresentationItem>
+                                    <IfcRepresentationItem type="IfcMappedItem">
+                                      <mappingSource>72566e51-945b-4b6d-8e96-8640b271a5f5</mappingSource>
+                                      <mappingTarget type="IfcCartesianTransformationOperator3DnonUniform">
+                                        <scl3 type="IfcReal" value="1.0"/>
+                                        <scl2 type="IfcReal" value="1.0"/>
+                                        <axis1 type="IfcDirection">
+                                          <directionRatios>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="1.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                          </directionRatios>
+                                        </axis1>
+                                        <axis2 type="IfcDirection">
+                                          <directionRatios>
+                                            <IfcReal type="IfcReal" value="1.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                          </directionRatios>
+                                        </axis2>
+                                        <localOrigin type="IfcCartesianPoint">
+                                          <coordinates>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="116.75"/>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="1.5"/>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="-1.75"/>
+                                          </coordinates>
+                                        </localOrigin>
+                                        <scale type="IfcReal" value="0.313513513513514"/>
+                                        <axis3 type="IfcDirection">
+                                          <directionRatios>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="1.0"/>
+                                          </directionRatios>
+                                        </axis3>
+                                        <scale2 type="IfcReal" value="1.0"/>
+                                        <scale3 type="IfcReal" value="1.0"/>
+                                      </mappingTarget>
+                                    </IfcRepresentationItem>
+                                    <IfcRepresentationItem type="IfcMappedItem">
+                                      <mappingSource>72566e51-945b-4b6d-8e96-8640b271a5f5</mappingSource>
+                                      <mappingTarget type="IfcCartesianTransformationOperator3DnonUniform">
+                                        <scl3 type="IfcReal" value="1.0"/>
+                                        <scl2 type="IfcReal" value="1.0"/>
+                                        <axis1 type="IfcDirection">
+                                          <directionRatios>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="1.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                          </directionRatios>
+                                        </axis1>
+                                        <axis2 type="IfcDirection">
+                                          <directionRatios>
+                                            <IfcReal type="IfcReal" value="1.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                          </directionRatios>
+                                        </axis2>
+                                        <localOrigin type="IfcCartesianPoint">
+                                          <coordinates>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="56.75"/>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="1.5"/>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="-1.75"/>
+                                          </coordinates>
+                                        </localOrigin>
+                                        <scale type="IfcReal" value="1.26486486486486"/>
+                                        <axis3 type="IfcDirection">
+                                          <directionRatios>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="1.0"/>
+                                          </directionRatios>
+                                        </axis3>
+                                        <scale2 type="IfcReal" value="1.0"/>
+                                        <scale3 type="IfcReal" value="1.0"/>
+                                      </mappingTarget>
+                                    </IfcRepresentationItem>
+                                    <IfcRepresentationItem type="IfcMappedItem">
+                                      <mappingSource>72566e51-945b-4b6d-8e96-8640b271a5f5</mappingSource>
+                                      <mappingTarget type="IfcCartesianTransformationOperator3DnonUniform">
+                                        <scl3 type="IfcReal" value="1.0"/>
+                                        <scl2 type="IfcReal" value="1.0"/>
+                                        <axis1 type="IfcDirection">
+                                          <directionRatios>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="1.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                          </directionRatios>
+                                        </axis1>
+                                        <axis2 type="IfcDirection">
+                                          <directionRatios>
+                                            <IfcReal type="IfcReal" value="1.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                          </directionRatios>
+                                        </axis2>
+                                        <localOrigin type="IfcCartesianPoint">
+                                          <coordinates>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="100.75"/>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="81.5"/>
+                                            <IfcLengthMeasure type="IfcLengthMeasure" value="-1.75"/>
+                                          </coordinates>
+                                        </localOrigin>
+                                        <scale type="IfcReal" value="0.4"/>
+                                        <axis3 type="IfcDirection">
+                                          <directionRatios>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="0.0"/>
+                                            <IfcReal type="IfcReal" value="1.0"/>
+                                          </directionRatios>
+                                        </axis3>
+                                        <scale2 type="IfcReal" value="1.0"/>
+                                        <scale3 type="IfcReal" value="1.0"/>
+                                      </mappingTarget>
+                                    </IfcRepresentationItem>
+                                  </items>
+                                </IfcRepresentation>
+                              </representations>
+                            </representation>
+                          </IfcObjectDefinition>
+                        </relatedObjects>
+                      </isDecomposedBy>
+                      <isTypedBy>
+                        <IfcRelDefinesByType>7ad696a3-ab8c-410d-b00a-e3c4905cd385</IfcRelDefinesByType>
+                      </isTypedBy>
+                      <objectPlacement>ea98bfe6-debb-4fe1-a812-5bf4c9898188</objectPlacement>
+                    </IfcObjectDefinition>
+                    <IfcObjectDefinition type="IfcBuildingElementPart" globalId="67af4d22-6c5e-4939-9f76-1ddd819d83a1" predefinedType="PRECASTPANEL">
+                      <name type="IfcLabel" value="Panel Forward"/>
+                      <isTypedBy>
+                        <IfcRelDefinesByType>d159a22d-73b4-44a1-91d7-3122c02a9694</IfcRelDefinesByType>
+                      </isTypedBy>
+                      <objectPlacement type="IfcLocalPlacement" globalId="534a5b1c-7256-4376-9273-44ba1a374d74">
+                        <relativePlacement type="IfcAxis2Placement3D">
+                          <location type="IfcCartesianPoint">
+                            <coordinates>
+                              <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                              <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                              <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                            </coordinates>
+                          </location>
+                          <axis type="IfcDirection">
+                            <directionRatios>
+                              <IfcReal type="IfcReal" value="0.0"/>
+                              <IfcReal type="IfcReal" value="-1.0"/>
+                              <IfcReal type="IfcReal" value="0.0"/>
+                            </directionRatios>
+                          </axis>
+                          <refDirection type="IfcDirection">
+                            <directionRatios>
+                              <IfcReal type="IfcReal" value="1.0"/>
+                              <IfcReal type="IfcReal" value="0.0"/>
+                              <IfcReal type="IfcReal" value="0.0"/>
+                            </directionRatios>
+                          </refDirection>
+                        </relativePlacement>
+                        <placementRelTo>97604475-9d73-4141-a19d-516de00207fb</placementRelTo>
+                      </objectPlacement>
+                      <representation type="IfcProductDefinitionShape" globalId="d8de1440-fd78-464c-b34e-459915af942f">
+                        <representations>
+                          <IfcRepresentation type="IfcShapeRepresentation" globalId="ea300ffa-95ac-4c21-ad04-4d8882c6dc7e">
+                            <contextOfItems>db87fde9-7608-4b78-a869-b06b875a048f</contextOfItems>
+                            <representationIdentifier type="IfcLabel" value="Body"/>
+                            <representationType type="IfcLabel" value="MappedRepresentation"/>
+                            <items>
+                              <IfcRepresentationItem type="IfcMappedItem">
+                                <mappingSource>4eda6e58-f7cc-474b-b9e7-ee3ee22166b7</mappingSource>
+                                <mappingTarget type="IfcCartesianTransformationOperator3DnonUniform">
+                                  <scl3 type="IfcReal" value="1.0"/>
+                                  <scl2 type="IfcReal" value="0.833333333333333"/>
+                                  <localOrigin type="IfcCartesianPoint">
+                                    <coordinates>
+                                      <IfcLengthMeasure type="IfcLengthMeasure" value="24.0"/>
+                                      <IfcLengthMeasure type="IfcLengthMeasure" value="80.0"/>
+                                      <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                    </coordinates>
+                                  </localOrigin>
+                                  <scale type="IfcReal" value="0.333333333333333"/>
+                                  <scale2 type="IfcReal" value="0.833333333333333"/>
+                                  <scale3 type="IfcReal" value="1.0"/>
+                                </mappingTarget>
+                              </IfcRepresentationItem>
+                              <IfcRepresentationItem type="IfcMappedItem">
+                                <mappingSource>4eda6e58-f7cc-474b-b9e7-ee3ee22166b7</mappingSource>
+                                <mappingTarget type="IfcCartesianTransformationOperator3DnonUniform">
+                                  <scl3 type="IfcReal" value="1.0"/>
+                                  <scl2 type="IfcReal" value="0.666666666666667"/>
+                                  <localOrigin type="IfcCartesianPoint">
+                                    <coordinates>
+                                      <IfcLengthMeasure type="IfcLengthMeasure" value="84.0"/>
+                                      <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                      <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                    </coordinates>
+                                  </localOrigin>
+                                  <scale type="IfcReal" value="0.375"/>
+                                  <scale2 type="IfcReal" value="0.666666666666667"/>
+                                  <scale3 type="IfcReal" value="1.0"/>
+                                </mappingTarget>
+                              </IfcRepresentationItem>
+                              <IfcRepresentationItem type="IfcMappedItem">
+                                <mappingSource>4eda6e58-f7cc-474b-b9e7-ee3ee22166b7</mappingSource>
+                                <mappingTarget type="IfcCartesianTransformationOperator3DnonUniform">
+                                  <scl3 type="IfcReal" value="1.0"/>
+                                  <scl2 type="IfcReal" value="0.833333333333333"/>
+                                  <localOrigin type="IfcCartesianPoint">
+                                    <coordinates>
+                                      <IfcLengthMeasure type="IfcLengthMeasure" value="84.0"/>
+                                      <IfcLengthMeasure type="IfcLengthMeasure" value="80.0"/>
+                                      <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                    </coordinates>
+                                  </localOrigin>
+                                  <scale type="IfcReal" value="0.375"/>
+                                  <scale2 type="IfcReal" value="0.833333333333333"/>
+                                  <scale3 type="IfcReal" value="1.0"/>
+                                </mappingTarget>
+                              </IfcRepresentationItem>
+                              <IfcRepresentationItem type="IfcMappedItem">
+                                <mappingSource>4eda6e58-f7cc-474b-b9e7-ee3ee22166b7</mappingSource>
+                                <mappingTarget type="IfcCartesianTransformationOperator3DnonUniform">
+                                  <scl3 type="IfcReal" value="1.0"/>
+                                  <scl2 type="IfcReal" value="2.5"/>
+                                  <localOrigin type="IfcCartesianPoint">
+                                    <coordinates>
+                                      <IfcLengthMeasure type="IfcLengthMeasure" value="56.0"/>
+                                      <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                      <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                    </coordinates>
+                                  </localOrigin>
+                                  <scale type="IfcReal" value="0.291666666666667"/>
+                                  <scale2 type="IfcReal" value="2.5"/>
+                                  <scale3 type="IfcReal" value="1.0"/>
+                                </mappingTarget>
+                              </IfcRepresentationItem>
+                              <IfcRepresentationItem type="IfcMappedItem">
+                                <mappingSource>4eda6e58-f7cc-474b-b9e7-ee3ee22166b7</mappingSource>
+                                <mappingTarget type="IfcCartesianTransformationOperator3DnonUniform">
+                                  <scl3 type="IfcReal" value="1.0"/>
+                                  <scl2 type="IfcReal" value="2.5"/>
+                                  <localOrigin type="IfcCartesianPoint">
+                                    <coordinates>
+                                      <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                      <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                      <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                    </coordinates>
+                                  </localOrigin>
+                                  <scale type="IfcReal" value="0.25"/>
+                                  <scale2 type="IfcReal" value="2.5"/>
+                                  <scale3 type="IfcReal" value="1.0"/>
+                                </mappingTarget>
+                              </IfcRepresentationItem>
+                              <IfcRepresentationItem type="IfcMappedItem">
+                                <mappingSource>4eda6e58-f7cc-474b-b9e7-ee3ee22166b7</mappingSource>
+                                <mappingTarget type="IfcCartesianTransformationOperator3DnonUniform">
+                                  <scl3 type="IfcReal" value="1.0"/>
+                                  <scl2 type="IfcReal" value="2.5"/>
+                                  <localOrigin type="IfcCartesianPoint">
+                                    <coordinates>
+                                      <IfcLengthMeasure type="IfcLengthMeasure" value="120.0"/>
+                                      <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                      <IfcLengthMeasure type="IfcLengthMeasure" value="-0.5"/>
+                                    </coordinates>
+                                  </localOrigin>
+                                  <scale type="IfcReal" value="0.25"/>
+                                  <scale2 type="IfcReal" value="2.5"/>
+                                  <scale3 type="IfcReal" value="1.0"/>
+                                </mappingTarget>
+                              </IfcRepresentationItem>
+                            </items>
+                          </IfcRepresentation>
+                        </representations>
+                      </representation>
+                    </IfcObjectDefinition>
+                  </relatedObjects>
+                </isDecomposedBy>
+                <hasAssociations>
+                  <IfcRelAssociates type="IfcRelAssociatesMaterial" globalId="120e8f85-8a25-408f-b7fd-e3b72ba8dcde">
+                    <relatingMaterial type="IfcMaterialLayerSetUsage" layerSetDirection="AXIS2" directionSense="POSITIVE">
+                      <offsetFromReferenceLine type="IfcLengthMeasure" value="0.0"/>
+                      <forLayerSet>d29f501c-3787-42f7-a7f3-526f58be26ef</forLayerSet>
+                    </relatingMaterial>
+                  </IfcRelAssociates>
+                </hasAssociations>
+                <isTypedBy>
+                  <IfcRelDefinesByType type="IfcRelDefinesByType" globalId="251fa2d4-3972-48c7-9dea-790939b9f378">
+                    <relatingType>489fc49d-43bd-48e7-92fd-824d91612acb</relatingType>
+                  </IfcRelDefinesByType>
+                </isTypedBy>
+                <objectPlacement>97604475-9d73-4141-a19d-516de00207fb</objectPlacement>
+                <representation type="IfcProductDefinitionShape" globalId="21a6c9c3-9f23-4fd9-9f49-4b2f5da62289">
+                  <representations>
+                    <IfcRepresentation type="IfcShapeRepresentation" globalId="581c55a8-fdfd-4022-acc0-bd5d540a0a96">
+                      <contextOfItems>db87fde9-7608-4b78-a869-b06b875a048f</contextOfItems>
+                      <representationIdentifier type="IfcLabel" value="Axis"/>
+                      <representationType type="IfcLabel" value="Curve2D"/>
+                      <items>
+                        <IfcRepresentationItem type="IfcPolyline">
+                          <points>
+                            <IfcCartesianPoint type="IfcCartesianPoint">
+                              <coordinates>
+                                <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                              </coordinates>
+                            </IfcCartesianPoint>
+                            <IfcCartesianPoint type="IfcCartesianPoint">
+                              <coordinates>
+                                <IfcLengthMeasure type="IfcLengthMeasure" value="144.0"/>
+                                <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                              </coordinates>
+                            </IfcCartesianPoint>
+                          </points>
+                        </IfcRepresentationItem>
+                      </items>
+                    </IfcRepresentation>
+                  </representations>
+                </representation>
+                <hasOpenings>
+                  <IfcRelVoidsElement type="IfcRelVoidsElement" globalId="1964cc80-faa6-4a1f-ad78-d327136f45cb">
+                    <relatedOpeningElement type="IfcOpeningElement" globalId="04765ce3-99b0-49ab-9a03-2919a9697c17">
+                      <objectPlacement type="IfcLocalPlacement" globalId="5b2d1496-bac5-449e-97ff-63c233a6006e">
+                        <relativePlacement type="IfcAxis2Placement3D">
+                          <location type="IfcCartesianPoint">
+                            <coordinates>
+                              <IfcLengthMeasure type="IfcLengthMeasure" value="24.0"/>
+                              <IfcLengthMeasure type="IfcLengthMeasure" value="-2.25"/>
+                              <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                            </coordinates>
+                          </location>
+                        </relativePlacement>
+                        <placementRelTo>97604475-9d73-4141-a19d-516de00207fb</placementRelTo>
+                      </objectPlacement>
+                      <representation type="IfcProductDefinitionShape" globalId="38d3c2bd-5ca2-488d-96a7-f46a8dfe1637">
+                        <representations>
+                          <IfcRepresentation type="IfcShapeRepresentation" globalId="dccfc7de-97d0-492f-9d04-825aea503422">
+                            <contextOfItems>db87fde9-7608-4b78-a869-b06b875a048f</contextOfItems>
+                            <representationIdentifier type="IfcLabel" value="Body"/>
+                            <representationType type="IfcLabel" value="SweptSolid"/>
+                            <items>
+                              <IfcRepresentationItem type="IfcExtrudedAreaSolid">
+                                <sweptArea type="IfcRectangleProfileDef" profileType="AREA">
+                                  <position type="IfcAxis2Placement2D">
+                                    <location type="IfcCartesianPoint">
+                                      <coordinates>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="-16.0"/>
+                                        <IfcLengthMeasure type="IfcLengthMeasure" value="40.0"/>
+                                      </coordinates>
+                                    </location>
+                                  </position>
+                                  <xDim type="IfcPositiveLengthMeasure" value="32.0"/>
+                                  <yDim type="IfcPositiveLengthMeasure" value="80.0"/>
+                                </sweptArea>
+                                <position type="IfcAxis2Placement3D">
+                                  <location type="IfcCartesianPoint">
+                                    <coordinates>
+                                      <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                      <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                      <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                                    </coordinates>
+                                  </location>
+                                  <axis type="IfcDirection">
+                                    <directionRatios>
+                                      <IfcReal type="IfcReal" value="0.0"/>
+                                      <IfcReal type="IfcReal" value="1.0"/>
+                                      <IfcReal type="IfcReal" value="0.0"/>
+                                    </directionRatios>
+                                  </axis>
+                                  <refDirection type="IfcDirection">
+                                    <directionRatios>
+                                      <IfcReal type="IfcReal" value="-1.0"/>
+                                      <IfcReal type="IfcReal" value="0.0"/>
+                                      <IfcReal type="IfcReal" value="0.0"/>
+                                    </directionRatios>
+                                  </refDirection>
+                                </position>
+                                <extrudedDirection type="IfcDirection">
+                                  <directionRatios>
+                                    <IfcReal type="IfcReal" value="0.0"/>
+                                    <IfcReal type="IfcReal" value="0.0"/>
+                                    <IfcReal type="IfcReal" value="1.0"/>
+                                  </directionRatios>
+                                </extrudedDirection>
+                                <depth type="IfcPositiveLengthMeasure" value="1.5"/>
+                              </IfcRepresentationItem>
+                            </items>
+                          </IfcRepresentation>
+                        </representations>
+                      </representation>
+                    </relatedOpeningElement>
+                  </IfcRelVoidsElement>
+                  <IfcRelVoidsElement type="IfcRelVoidsElement" globalId="d68f03b5-9b5c-4cce-b51a-95d2cd31cae2">
+                    <relatedOpeningElement type="IfcOpeningElement" globalId="01353b1c-a304-461d-86a1-fd16f394acf6" predefinedType="OPENING">
+                      <objectPlacement type="IfcLocalPlacement" globalId="c42bc45d-c244-4351-9647-6ca74f8235e5">
+                        <relativePlacement type="IfcAxis2Placement3D">
+                          <location type="IfcCartesianPoint">
+                            <coordinates>
+                              <IfcLengthMeasure type="IfcLengthMeasure" value="84.0"/>
+                              <IfcLengthMeasure type="IfcLengthMeasure" value="0.0"/>
+                              <IfcLengthMeasure type="IfcLengthMeasure" value="32.0"/>
+                            </coordinates>
+                          </location>
+                          <axis type="IfcDirection">
+                            <directionRatios>
+                              <IfcReal type="IfcReal" value="0.0"/>
+                              <IfcReal type="IfcReal" value="-1.0"/>
+                              <IfcReal type="IfcReal" value="0.0"/>
+                            </directionRatios>
+                          </axis>
+                          <refDirection type="IfcDirection">
+                            <directionRatios>
+                              <IfcReal type="IfcReal" value="1.0"/>
+                              <IfcReal type="IfcReal" value="0.0"/>
+                              <IfcReal type="IfcReal" value="0.0"/>
+                            </directionRatios>
+                          </refDirection>
+                        </relativePlacement>
+                        <placementRelTo>97604475-9d73-4141-a19d-516de00207fb</placementRelTo>
+                      </objectPlacement>
+                      <representation type="IfcProductDefinitionShape" globalId="b89dc2f5-31ec-4093-a6ad-81d34b458092">
+                        <representations>
+                          <IfcRepresentation type="IfcShapeRepresentation" globalId="814862ba-fd91-469b-8065-e243cb83b51a">
+                            <contextOfItems>db87fde9-7608-4b78-a869-b06b875a048f</contextOfItems>
+                            <representationIdentifier type="IfcLabel" value="Body"/>
+                            <representationType type="IfcLabel" value="SweptSolid"/>
+                            <items>
+                              <IfcRepresentationItem type="IfcExtrudedAreaSolid">
+                                <sweptArea type="IfcRectangleProfileDef" profileType="AREA">
+                                  <xDim type="IfcPositiveLengthMeasure" value="36.0"/>
+                                  <yDim type="IfcPositiveLengthMeasure" value="48.0"/>
+                                </sweptArea>
+                                <position type="IfcAxis2Placement3D">
+                                  <location type="IfcCartesianPoint">
+                                    <coordinates>
+                                      <IfcLengthMeasure type="IfcLengthMeasure" value="18.0"/>
+                                      <IfcLengthMeasure type="IfcLengthMeasure" value="24.0"/>
+                                      <IfcLengthMeasure type="IfcLengthMeasure" value="-1.5"/>
+                                    </coordinates>
+                                  </location>
+                                </position>
+                                <extrudedDirection type="IfcDirection">
+                                  <directionRatios>
+                                    <IfcReal type="IfcReal" value="0.0"/>
+                                    <IfcReal type="IfcReal" value="0.0"/>
+                                    <IfcReal type="IfcReal" value="1.0"/>
+                                  </directionRatios>
+                                </extrudedDirection>
+                                <depth type="IfcPositiveLengthMeasure" value="1.5"/>
+                              </IfcRepresentationItem>
+                            </items>
+                          </IfcRepresentation>
+                        </representations>
+                      </representation>
+                    </relatedOpeningElement>
+                  </IfcRelVoidsElement>
+                </hasOpenings>
+              </IfcProduct>
+            </relatedElements>
+          </IfcRelContainedInSpatialStructure>
+        </containsElements>
+      </IfcObjectDefinition>
+    </relatedObjects>
+  </isDecomposedBy>
+  <representationContexts>
+    <IfcRepresentationContext>db87fde9-7608-4b78-a869-b06b875a048f</IfcRepresentationContext>
+    <IfcRepresentationContext>348bb8e9-50c9-47f5-825c-e07ea06e10ed</IfcRepresentationContext>
+  </representationContexts>
+  <unitsInContext>
+    <units>
+      <IfcUnit type="IfcConversionBasedUnit" globalId="81ef9132-2299-4c2c-b746-b651909f0ad0">
+        <dimensions lengthExponent="2" massExponent="0" timeExponent="0" electricCurrentExponent="0" thermodynamicTemperatureExponent="0" amountOfSubstanceExponent="0" luminousIntensityExponent="0"/>
+        <unitType>AREAUNIT</unitType>
+        <name>square inch</name>
+        <conversionFactor type="IfcMeasureWithUnit">
+          <valueComponent type="IfcAreaMeasure" value="6.452E-4"/>
+          <unitComponent type="IfcSIUnit" globalId="eb994dd6-0fc3-4767-9ae0-af254a1d23a6">
+            <dimensions lengthExponent="2" massExponent="0" timeExponent="0" electricCurrentExponent="0" thermodynamicTemperatureExponent="0" amountOfSubstanceExponent="0" luminousIntensityExponent="0"/>
+            <unitType>AREAUNIT</unitType>
+            <name>SQUARE_METRE</name>
+          </unitComponent>
+        </conversionFactor>
+      </IfcUnit>
+      <IfcUnit type="IfcMonetaryUnit" currency="USD"/>
+      <IfcUnit type="IfcConversionBasedUnit" globalId="f968579d-48e5-4185-820e-22ede0879260">
+        <dimensions lengthExponent="-1" massExponent="1" timeExponent="-2" electricCurrentExponent="0" thermodynamicTemperatureExponent="0" amountOfSubstanceExponent="0" luminousIntensityExponent="0"/>
+        <unitType>PRESSUREUNIT</unitType>
+        <name>pound-force per square inch</name>
+        <conversionFactor type="IfcMeasureWithUnit">
+          <valueComponent type="IfcPressureMeasure" value="6894.7572932"/>
+          <unitComponent type="IfcSIUnit" globalId="c40fcad7-a746-40e0-a4af-468f2689f21f">
+            <dimensions lengthExponent="-1" massExponent="1" timeExponent="-2" electricCurrentExponent="0" thermodynamicTemperatureExponent="0" amountOfSubstanceExponent="0" luminousIntensityExponent="0"/>
+            <unitType>PRESSUREUNIT</unitType>
+            <name>PASCAL</name>
+          </unitComponent>
+        </conversionFactor>
+      </IfcUnit>
+      <IfcUnit type="IfcConversionBasedUnit" globalId="9e9ae428-b964-4109-8861-a3917cf44293">
+        <dimensions lengthExponent="1" massExponent="0" timeExponent="0" electricCurrentExponent="0" thermodynamicTemperatureExponent="0" amountOfSubstanceExponent="0" luminousIntensityExponent="0"/>
+        <unitType>LENGTHUNIT</unitType>
+        <name>inch</name>
+        <conversionFactor type="IfcMeasureWithUnit">
+          <valueComponent type="IfcLengthMeasure" value="0.0254"/>
+          <unitComponent type="IfcSIUnit" globalId="a5b12332-2545-4ff7-8518-e684d98a164b">
+            <dimensions lengthExponent="1" massExponent="0" timeExponent="0" electricCurrentExponent="0" thermodynamicTemperatureExponent="0" amountOfSubstanceExponent="0" luminousIntensityExponent="0"/>
+            <unitType>LENGTHUNIT</unitType>
+            <name>METRE</name>
+          </unitComponent>
+        </conversionFactor>
+      </IfcUnit>
+      <IfcUnit type="IfcConversionBasedUnit" globalId="49d3d7e5-d3b2-4faa-86bb-bfb05495d4f4">
+        <dimensions lengthExponent="1" massExponent="1" timeExponent="-2" electricCurrentExponent="0" thermodynamicTemperatureExponent="0" amountOfSubstanceExponent="0" luminousIntensityExponent="0"/>
+        <unitType>FORCEUNIT</unitType>
+        <name>pound-force</name>
+        <conversionFactor type="IfcMeasureWithUnit">
+          <valueComponent type="IfcMassMeasure" value="0.0"/>
+          <unitComponent type="IfcSIUnit" globalId="9774c714-845f-493f-a1a3-ab018931030d">
+            <dimensions lengthExponent="1" massExponent="1" timeExponent="-2" electricCurrentExponent="0" thermodynamicTemperatureExponent="0" amountOfSubstanceExponent="0" luminousIntensityExponent="0"/>
+            <unitType>FORCEUNIT</unitType>
+            <name>NEWTON</name>
+          </unitComponent>
+        </conversionFactor>
+      </IfcUnit>
+      <IfcUnit type="IfcConversionBasedUnit" globalId="d6b838df-38b5-46cc-a888-587aa4e918c8">
+        <dimensions lengthExponent="0" massExponent="1" timeExponent="0" electricCurrentExponent="0" thermodynamicTemperatureExponent="0" amountOfSubstanceExponent="0" luminousIntensityExponent="0"/>
+        <unitType>MASSUNIT</unitType>
+        <name>pound</name>
+        <conversionFactor type="IfcMeasureWithUnit">
+          <valueComponent type="IfcMassMeasure" value="0.0"/>
+          <unitComponent type="IfcSIUnit" globalId="1facc0a4-3504-439a-8a50-a410579ba738">
+            <dimensions lengthExponent="0" massExponent="1" timeExponent="0" electricCurrentExponent="0" thermodynamicTemperatureExponent="0" amountOfSubstanceExponent="0" luminousIntensityExponent="0"/>
+            <unitType>MASSUNIT</unitType>
+            <prefix>KILO</prefix>
+            <name>GRAM</name>
+          </unitComponent>
+        </conversionFactor>
+      </IfcUnit>
+      <IfcUnit type="IfcConversionBasedUnitWithOffset" globalId="141c9316-e6a0-4223-953a-22920653d0d3">
+        <dimensions lengthExponent="0" massExponent="0" timeExponent="0" electricCurrentExponent="0" thermodynamicTemperatureExponent="1" amountOfSubstanceExponent="0" luminousIntensityExponent="0"/>
+        <unitType>THERMODYNAMICTEMPERATUREUNIT</unitType>
+        <name>Fahrenheit</name>
+        <conversionOffset>-459.67</conversionOffset>
+        <conversionFactor type="IfcMeasureWithUnit">
+          <valueComponent type="IfcThermodynamicTemperatureMeasure" value="1.8"/>
+          <unitComponent type="IfcSIUnit" globalId="04c79ff8-6d7b-445a-b301-1e590a1b0ee8">
+            <dimensions lengthExponent="0" massExponent="0" timeExponent="0" electricCurrentExponent="0" thermodynamicTemperatureExponent="1" amountOfSubstanceExponent="0" luminousIntensityExponent="0"/>
+            <unitType>THERMODYNAMICTEMPERATUREUNIT</unitType>
+            <name>KELVIN</name>
+          </unitComponent>
+        </conversionFactor>
+      </IfcUnit>
+      <IfcUnit type="IfcConversionBasedUnit" globalId="9c5818ac-0310-485a-8683-2822c802a58f">
+        <dimensions lengthExponent="0" massExponent="0" timeExponent="0" electricCurrentExponent="0" thermodynamicTemperatureExponent="0" amountOfSubstanceExponent="0" luminousIntensityExponent="0"/>
+        <unitType>PLANEANGLEUNIT</unitType>
+        <name>degree</name>
+        <conversionFactor type="IfcMeasureWithUnit">
+          <valueComponent type="IfcPlaneAngleMeasure" value="0.0174532925199433"/>
+          <unitComponent type="IfcSIUnit" globalId="51c6da93-503a-44c0-aac6-53673e9eb090">
+            <dimensions lengthExponent="0" massExponent="0" timeExponent="0" electricCurrentExponent="0" thermodynamicTemperatureExponent="0" amountOfSubstanceExponent="0" luminousIntensityExponent="0"/>
+            <unitType>PLANEANGLEUNIT</unitType>
+            <name>RADIAN</name>
+          </unitComponent>
+        </conversionFactor>
+      </IfcUnit>
+      <IfcUnit type="IfcConversionBasedUnit" globalId="010bfd7d-1c39-47ae-99f6-c38f0eb6290a">
+        <dimensions lengthExponent="3" massExponent="0" timeExponent="0" electricCurrentExponent="0" thermodynamicTemperatureExponent="0" amountOfSubstanceExponent="0" luminousIntensityExponent="0"/>
+        <unitType>VOLUMEUNIT</unitType>
+        <name>cubic inch</name>
+        <conversionFactor type="IfcMeasureWithUnit">
+          <valueComponent type="IfcVolumeMeasure" value="1.639E-5"/>
+          <unitComponent type="IfcSIUnit" globalId="7779eed6-b3c0-49fe-96fa-d70903ebf604">
+            <dimensions lengthExponent="3" massExponent="0" timeExponent="0" electricCurrentExponent="0" thermodynamicTemperatureExponent="0" amountOfSubstanceExponent="0" luminousIntensityExponent="0"/>
+            <unitType>VOLUMEUNIT</unitType>
+            <name>CUBIC_METRE</name>
+          </unitComponent>
+        </conversionFactor>
+      </IfcUnit>
+    </units>
+  </unitsInContext>
+</IfcProject>

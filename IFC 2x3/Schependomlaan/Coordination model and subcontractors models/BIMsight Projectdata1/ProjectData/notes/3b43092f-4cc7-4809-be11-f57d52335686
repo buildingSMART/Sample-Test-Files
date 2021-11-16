@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Note xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" SchemaVersion="6">
+  <Identifier>project://notes/3b43092f-4cc7-4809-be11-f57d52335686</Identifier>
+  <Owner>01ce8b42-aae1-4aab-bcca-cd612c2cd72d</Owner>
+  <Tags>STAAL</Tags>
+  <Timestamp>2015-02-26T09:03:15.0052437Z</Timestamp>
+  <Status>Default</Status>
+  <Text>#03 GROEN= spantbenen graag gaten rond 6mm hoh 500mm meenemen.</Text>
+  <Created>2015-02-26T09:01:44.0141455Z</Created>
+  <Topic />
+  <Type>Opmerking</Type>
+  <IsPrivate>true</IsPrivate>
+</Note>

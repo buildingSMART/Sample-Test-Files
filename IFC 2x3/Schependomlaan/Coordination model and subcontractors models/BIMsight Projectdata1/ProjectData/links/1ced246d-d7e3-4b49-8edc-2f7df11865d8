@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Link xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" SchemaVersion="6">
+  <Identifier>project://links/1ced246d-d7e3-4b49-8edc-2f7df11865d8</Identifier>
+  <Owner>01ce8b42-aae1-4aab-bcca-cd612c2cd72d</Owner>
+  <Tags />
+  <Timestamp>2015-02-26T09:03:16.6464078Z</Timestamp>
+  <Status>Default</Status>
+  <TypeName>snapshots</TypeName>
+  <From>project://notes/3b43092f-4cc7-4809-be11-f57d52335686</From>
+  <To>
+    <string>project://snapshots/dc24652a-49c3-4bbe-a8eb-b9d3644a1d2c</string>
+  </To>
+</Link>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Note xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" SchemaVersion="6">
+  <Identifier>project://notes/4e01535e-ae5a-4a40-b1c6-a6b477745d66</Identifier>
+  <Owner>01ce8b42-aae1-4aab-bcca-cd612c2cd72d</Owner>
+  <Tags>STAAL</Tags>
+  <Timestamp>2015-02-26T09:02:36.7294165Z</Timestamp>
+  <Status>Default</Status>
+  <Text>#02 In het omcirkelde stuk &gt; 2x gaten rond 15mm hoh 500mm</Text>
+  <Created>2015-02-26T08:59:07.4594916Z</Created>
+  <Topic />
+  <Type>Opmerking</Type>
+  <IsPrivate>true</IsPrivate>
+</Note>

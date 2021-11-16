@@ -1,0 +1,54 @@
+ISO-10303-21;
+
+/* ------- This file was produced manually for IFC Infra Extension Deployment project. --------- */
+/* ------- The file should come with a README.md with supplementing info. ---------------------- */
+/* ------- Stefan Jaud, stefan.jaud@tum.de, 2020.07.15. ---------------------------------------- */
+
+HEADER;
+FILE_DESCRIPTION (('ViewDefinition []'), '2;1');
+FILE_NAME ('UT_ProjectSetup_2.ifc', '2020-07-15T20:00:00', ('Stefan Jaud'), ('bSI Infra Extension Deployment project'), 'manual text editing', 'SublimeText 3.0', 'GitHub pull request');
+FILE_SCHEMA (('IFC4X3_RC1'));
+ENDSEC;
+
+DATA;
+
+/* ------- UT ProjectSetup_1 ------------------------------------------------------------------- */
+#1 = IFCDIMENSIONALEXPONENTS(0, 0, 0, 0, 0, 0, 0);
+#2 = IFCDIRECTION((1., 0., 0.));
+#3 = IFCDIRECTION((0., 1., 0.));
+#4 = IFCDIRECTION((0., 0., 1.));
+#5 = IFCCARTESIANPOINT((0., 0., 0.));
+/* ------ Added a reference to owner history to the IfcProject --------------------------------- */
+#16 = IFCPROJECT('2DAvEupIz0HQr73cMaawtY', #6, 'BoilerPlate', 'The bare minimum of an IFC file exchange with no content, only boilerplate code.', $, $, $, (#28), #17);
+#17 = IFCUNITASSIGNMENT((#18, #19, #20, #24, #25, #26, #27));
+#18 = IFCSIUNIT(*, .LENGTHUNIT., $, .METRE.);
+#19 = IFCSIUNIT(*, .AREAUNIT., $, .SQUARE_METRE.);
+#20 = IFCSIUNIT(*, .VOLUMEUNIT., $, .CUBIC_METRE.);
+#22 = IFCSIUNIT(*, .PLANEANGLEUNIT., $, .RADIAN.);
+#23 = IFCMEASUREWITHUNIT(IFCPLANEANGLEMEASURE(0.017453292519943295), #22);
+#24 = IFCCONVERSIONBASEDUNIT(#1, .PLANEANGLEUNIT., 'degree', #23);
+#25 = IFCSIUNIT(*, .MASSUNIT., .KILO., .GRAM.);
+#26 = IFCSIUNIT(*, .TIMEUNIT., $, .SECOND.);
+#27 = IFCMONETARYUNIT('EUR');
+#28 = IFCGEOMETRICREPRESENTATIONCONTEXT($, 'Model', 3, 1.E-6, #29, #3);
+#29 = IFCAXIS2PLACEMENT3D(#5, #4, #2);
+
+/* ------- UT ProjectSetup_2 ------------------------------------------------------------------- */
+/* ------- IfcOwnerHistory contain information about the person and organization --------------- */
+/* ------- that produced this file ------------------------------------------------------------- */
+#6 = IFCOWNERHISTORY(#11, #15, .READONLY., .ADDED., 1594836000, #11, #15, 1594836000);
+#7 = IFCACTORROLE(.CIVILENGINEER., $, $);
+/* ------- Testing some special characters: LaTeX code: {\ss} and \"{u} ------------------------ */
+#8 = IFCPOSTALADDRESS(.OFFICE., $, $, $, ('Arcisstra\X2\00DF\X0\e 21'), $, 'M\X2\00FC\X0\nchen', 'Bayern', '80333', 'Deutschland');
+/* ------- Testing some special characters: LaTeX code: \v{S} ---------------------------------- */
+#9 = IFCPERSON($, 'Jaud', '\X2\0160\X0\tefan', $, $, $, (#7), (#8));
+#10 = IFCORGANIZATION($, 'bSI', $, (#7), (#8));
+#11 = IFCPERSONANDORGANIZATION(#9, #10, (#7));
+#12 = IFCACTORROLE(.USERDEFINED., 'Validation lead', $);
+/* ------- Testing some special characters: LaTeX code: {\ss} and \"{u} ------------------------ */
+#13 = IFCPOSTALADDRESS(.OFFICE., 'Main office', $, 'MUC/IT', ('Arcisstra\X2\00DF\X0\e 21'), $, 'M\X2\00FC\X0\nchen', 'Bayern', '80333', 'Germany');
+#14 = IFCORGANIZATION($, 'buildingSMART International', 'www.buildingsmart.org', (#12), (#13));
+#15 = IFCAPPLICATION(#14, '3.0', 'Sublime Text', 'ST');
+
+ENDSEC;
+END-ISO-10303-21;
