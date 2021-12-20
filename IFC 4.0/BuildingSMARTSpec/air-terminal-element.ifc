@@ -188,7 +188,7 @@ DATA;
 #422= IFCDISTRIBUTIONPORT('1RvoZEC65EtPHnpFD43nne',#209,'Out','The end of the duct segment at the flow outlet.',$,#501,$,.SOURCE.,.DUCT.,.AIRCONDITIONING.);
 #423= IFCRELNESTS('2nTJ1FhXn7tf_UMjKfoJ9h',#209,$,$,#381,(#402,#422));
 
-/* The duct segment has a circular hollow profile of 6 inches in diameter and 1/8 inch thickness. */
+/* The duct segment has a circular hollow profile of 6 inches in radius and 1/8 inch thickness. */
 #440= IFCCIRCLEHOLLOWPROFILEDEF(.AREA.,$,$,6.,0.125);
 
 /* The duct segment has aluminum material. */
