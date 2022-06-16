@@ -2,7 +2,6 @@
 
 Sample files of various formats and schema versions for testing implementations.
 
-**NOTE**: for IFC Infrastructure Extensions Deployment project, go to https://github.com/bSI-InfraRoom/IFC-infra-unit-test.
 
 ## Usage
 
