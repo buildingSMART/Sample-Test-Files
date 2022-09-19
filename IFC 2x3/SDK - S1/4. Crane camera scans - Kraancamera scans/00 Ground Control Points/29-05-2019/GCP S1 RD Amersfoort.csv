@@ -1,0 +1,15 @@
+9500_,GCP,160091.706,384196.631,44.109
+9501_,GCP,160076.788,384184.226,44.103
+9502_,GCP,160134.353,384207.540,24.703
+9503_,GCP,160113.450,384125.990,20.313
+
+,,,,
+,,,,
+,,,,
+********Description**********************,,,,
+,,,,
+First column   (required)    : Name of GCP,,,,
+Second column  (not required): Type (either GCP or CHECKPOINT),,,,
+Third column   (required)    : X coordinate,,,,
+Fourth column  (required)    : Y coordinate,,,,
+Fifth column   (required)    : Z coordinate,,,,
