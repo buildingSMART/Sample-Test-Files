@@ -1,4 +1,5 @@
 # BuildingSMART Spec examples
+
 ---
 
 ### Intent
@@ -10,11 +11,13 @@ Original files are attributed to Jon Mirtschin (geometryGym) and Tim Chipman (Co
 ### Prerequisites
 
 This scenario builds upon following other scenarios:
+
 - none
 
 ### Content
 
 All key concepts and difficult exceptions in EXPRESS are included in this test set. So there is not an exhaustive list of included concepts in this test set. By way of an overview, the following concepts are the starting points for file contents:
+
 - Basic unit declaration
 - CSG primitive
 - Extruded solid
@@ -62,47 +65,108 @@ All key concepts and difficult exceptions in EXPRESS are included in this test s
 
 Following files correspond to this scenario:
 
-| Filename                     									      | Description                                                       |
-|---------------------------------------------------------------------|-------------------------------------------------------------------|
-| air-terminal-element.ifc / .ttl / .json / .xml                      | Air terminal element              							      |
-| air-terminal-library-object.ifc / .ttl / .json / .xml               | Air terminal library object					         		      |
-| basin-advanced-brep.ifc / .ttl / .json / .xml                       | Basin advanced BREP					   						      |
-| basin-faceted-brep.ifc / .ttl / .json / .xml                        | Basin faceted BREP					   						      |
-| basin-tessellation.ifc / .ttl / .json / .xml                        | Basin tessellated					    					      |
-| bath-csg-solid.ifc / .ttl / .json / .xml                            | Bath as CSG solid											      |
-| beam-curved-i-shape-tessellated.ifc / .ttl / .json / .xml           | Curved I-Beam tessellated					   				      |
-| beam-extruded-solid.ifc / .ttl / .json / .xml                       | Beam as extruded solid					  					      |
-| beam-revolved-solid.ifc / .ttl / .json / .xml                       | Beam as revolved solid					      					  |
-| beam-standard-case.ifc / .ttl / .json / .xml                        | Beam standard case					   						      |
-| beam-straight-i-shape-tessellated.ifc / .ttl / .json / .xml         | Straight I-Beam tessellated					     				  |
-| beam-varying-cardinal-points.ifc / .ttl / .json / .xml              | Beam with varying cardinal points					      		  |
-| beam-varying-extrusion-paths.ifc / .ttl / .json / .xml              | Beam with varying extrusion paths					    		  |
-| beam-varying-profiles.ifc / .ttl / .json / .xml     	              | Beam with varying profiles					     				  |
-| brep-model.ifc / .ttl / .json / .xml               				  | BREP model					     								  |
-| column-extruded-solid.ifc / .ttl / .json / .xml                     | Column as extruded solid					   				      |
-| column-straight-rectangle-tessellation.ifc / .ttl / .json / .xml    | Straight rectangular column tessellated					   	      |
-| construction-scheduling-task.ifc / .ttl / .json / .xml              | Construction scheduling task					   			      |
-| csg-primitive.ifc / .ttl / .json / .xml                             | CSG primitive					    							  |
-| cube-advanced-brep.ifc / .ttl / .json / .xml                        | Cube advanced BREP					     						  |
-| extruded-solid.ifc / .ttl / .json / .xml                            | Extruded solid					   							      |
-| geographic-referencing.ifc / .ttl / .json / .xml                    | Geographic referencing of project					     		  |
-| grid-placement.ifc / .ttl / .json / .xml                            | Grid placement					   							      |
-| mapped-shape-with-multiple-items.ifc / .ttl / .json / .xml          | Mapped shape with multiple items					    		  |
-| mapped-shape-without-transformation.ifc / .ttl / .json / .xml       | Mapped shape without transformation					     		  |
-| mapped-shape-with-transformation.ifc / .ttl / .json / .xml          | Mapped shape with transformation					     		  |
-| reinforcing-assembly.ifc / .ttl / .json / .xml                      | Reinforcing assembly					     					  |
-| reinforcing-stirrup.ifc / .ttl / .json / .xml                       | Reinforcing stirrup					     						  |
-| slab-openings.ifc / .ttl / .json / .xml                             | Slab openings					     							  |
-| slab-standard-case.ifc / .ttl / .json / .xml                        | Slab standard case					      						  |
-| slab-tessellated-unique-vertices.ifc / .ttl / .json / .xml          | Slab tessellated with unique vertices					          |
-| structural-curve-member.ifc / .ttl / .json / .xml                   | Structural curve member					     					  |
-| surface-model.ifc / .ttl / .json / .xml                             | Surface model					     							  |
-| tessellated-item.ifc / .ttl / .json / .xml                          | Tessellated item					     						  |
-| tessellation-with-blob-texture.ifc / .ttl / .json / .xml            | Tessellated item with blob texture					     		  |
-| tessellation-with-image-texture.ifc / .ttl / .json / .xml           | Tessellated item with image texture					      		  |
-| tessellation-with-individual-colors.ifc / .ttl / .json / .xml       | Tessellated item with individual colors					     	  |
-| tessellation-with-pixel-texture.ifc / .ttl / .json / .xml           | Tessellated item with pixel texture					      		  |
-| wall-elemented-case.ifc / .ttl / .json / .xml                       | Wall elemented case					      						  |
-| wall-standard-case.ifc / .ttl / .json / .xml                        | Wall standard case					     						  |
-| wall-with-opening-and-window.ifc / .ttl / .json / .xml              | Wall with opening and window					      			  |
+| Filename                                                         | Description                             |
+| ---------------------------------------------------------------- | --------------------------------------- |
+| air-terminal-element.ifc / .ttl / .json / .xml                   | Air terminal element                    |
+| air-terminal-library-object.ifc / .ttl / .json / .xml            | Air terminal library object             |
+| basin-advanced-brep.ifc / .ttl / .json / .xml                    | Basin advanced BREP                     |
+| basin-faceted-brep.ifc / .ttl / .json / .xml                     | Basin faceted BREP                      |
+| basin-tessellation.ifc / .ttl / .json / .xml                     | Basin tessellated                       |
+| bath-csg-solid.ifc / .ttl / .json / .xml                         | Bath as CSG solid                       |
+| beam-curved-i-shape-tessellated.ifc / .ttl / .json / .xml        | Curved I-Beam tessellated               |
+| beam-extruded-solid.ifc / .ttl / .json / .xml                    | Beam as extruded solid                  |
+| beam-revolved-solid.ifc / .ttl / .json / .xml                    | Beam as revolved solid                  |
+| beam-standard-case.ifc / .ttl / .json / .xml                     | Beam standard case                      |
+| beam-straight-i-shape-tessellated.ifc / .ttl / .json / .xml      | Straight I-Beam tessellated             |
+| beam-varying-cardinal-points.ifc / .ttl / .json / .xml           | Beam with varying cardinal points       |
+| beam-varying-extrusion-paths.ifc / .ttl / .json / .xml           | Beam with varying extrusion paths       |
+| beam-varying-profiles.ifc / .ttl / .json / .xml                  | Beam with varying profiles              |
+| brep-model.ifc / .ttl / .json / .xml                             | BREP model                              |
+| column-extruded-solid.ifc / .ttl / .json / .xml                  | Column as extruded solid                |
+| column-straight-rectangle-tessellation.ifc / .ttl / .json / .xml | Straight rectangular column tessellated |
+| construction-scheduling-task.ifc / .ttl / .json / .xml           | Construction scheduling task            |
+| csg-primitive.ifc / .ttl / .json / .xml                          | CSG primitive                           |
+| cube-advanced-brep.ifc / .ttl / .json / .xml                     | Cube advanced BREP                      |
+| extruded-solid.ifc / .ttl / .json / .xml                         | Extruded solid                          |
+| geographic-referencing.ifc / .ttl / .json / .xml                 | Geographic referencing of project       |
+| grid-placement.ifc / .ttl / .json / .xml                         | Grid placement                          |
+| mapped-shape-with-multiple-items.ifc / .ttl / .json / .xml       | Mapped shape with multiple items        |
+| mapped-shape-without-transformation.ifc / .ttl / .json / .xml    | Mapped shape without transformation     |
+| mapped-shape-with-transformation.ifc / .ttl / .json / .xml       | Mapped shape with transformation        |
+| reinforcing-assembly.ifc / .ttl / .json / .xml                   | Reinforcing assembly                    |
+| reinforcing-stirrup.ifc / .ttl / .json / .xml                    | Reinforcing stirrup                     |
+| slab-openings.ifc / .ttl / .json / .xml                          | Slab openings                           |
+| slab-standard-case.ifc / .ttl / .json / .xml                     | Slab standard case                      |
+| slab-tessellated-unique-vertices.ifc / .ttl / .json / .xml       | Slab tessellated with unique vertices   |
+| structural-curve-member.ifc / .ttl / .json / .xml                | Structural curve member                 |
+| surface-model.ifc / .ttl / .json / .xml                          | Surface model                           |
+| tessellated-item.ifc / .ttl / .json / .xml                       | Tessellated item                        |
+| tessellation-with-blob-texture.ifc / .ttl / .json / .xml         | Tessellated item with blob texture      |
+| tessellation-with-image-texture.ifc / .ttl / .json / .xml        | Tessellated item with image texture     |
+| tessellation-with-individual-colors.ifc / .ttl / .json / .xml    | Tessellated item with individual colors |
+| tessellation-with-pixel-texture.ifc / .ttl / .json / .xml        | Tessellated item with pixel texture     |
+| wall-elemented-case.ifc / .ttl / .json / .xml                    | Wall elemented case                     |
+| wall-standard-case.ifc / .ttl / .json / .xml                     | Wall standard case                      |
+| wall-with-opening-and-window.ifc / .ttl / .json / .xml           | Wall with opening and window            |
 
+## Results of a comparison between applications
+
+| file                                       | source            | entity                      | type        | added version | current status | xBIM Xplorer (4.0.2002.10344) | Trimble Connect Web (22-2-2023) | Solibri (9.13.0.23) | Revit (2022.1.3) |
+| ------------------------------------------ | ----------------- | --------------------------- | ----------- | ------------- | -------------- | ----------------------------- | ------------------------------- | ------------------- | ---------------- |
+| air-terminal-element.ifc                   | Sample-Test-Files | IfcExtrudedAreaSolidTapered | geometry    | IFC4          |                | -                             | ++                              | --                  | --               |
+| air-terminal-element.ifc                   | Sample-Test-Files | IfcAirTerminal              | entity      | IFC4          |                | ++                            | ++                              | ++                  | ++               |
+| air-terminal-library-object.ifc            | Sample-Test-Files | IfcProjectLibrary           | library     | IFC4          |                | +                             | -                               | -                   | --               |
+| basin-advanced-brep.ifc                    | Sample-Test-Files | IfcAdvancedBrep             | geometry    | IFC4          |                | ++                            | -                               | --                  | --               |
+| basin-faceted-brep.ifc                     | Sample-Test-Files | IfcSanitaryTerminal         | entity      | IFC4          |                | ++                            | ++                              | ++                  | ++               |
+| basin-tessellation.ifc                     | Sample-Test-Files | IfcTriangulatedFaceSet      | geometry    | IFC4          |                | ++                            | ++                              | ++                  | ++               |
+| bath-csg-solid.ifc                         | Sample-Test-Files | IfcSanitaryTerminal         | entity      | IFC4          |                | ++                            | ++                              | ++                  | ++               |
+| bath-csg-solid.ifc                         | Sample-Test-Files | IfcBooleanResult            | geometry    | IFC1.5.1      |                | ++                            | ++                              | ++                  | ++               |
+| beam-curved-i-shape-tessellated.ifc        | Sample-Test-Files | IfcTriangulatedFaceSet      | geometry    | IFC4          |                | ++                            | ++                              | ++                  | ++               |
+| beam-extruded-solid.ifc                    | Sample-Test-Files | IfcBeamStandardCase         | entity      | IFC4          |                | ++                            | ++                              | ++                  | ++               |
+| beam-revolved-solid.ifc                    | Sample-Test-Files | IfcRevolvedAreaSolid        | geometry    | IFC4          |                | --                            | ++                              | ++                  | ++               |
+| beam-standard-case.ifc                     | Sample-Test-Files | IfcBeamStandardCase         | entity      | IFC4          | deprecated     | ++                            | ++                              | ++                  | ++               |
+| beam-straight-i-shape-tessellated.ifc      | Sample-Test-Files | IfcTriangulatedFaceSet      | geometry    | IFC4          |                | ++                            | ++                              | ++                  | ++               |
+| beam-varying-cardinal-points.ifc           | Sample-Test-Files | IfcBeamStandardCase         | entity      | IFC4          |                | ++                            | ++                              | ++                  | ++               |
+| beam-varying-extrusion-paths.ifc           | Sample-Test-Files | IfcRevolvedAreaSolid        | geometry    | IFC4          |                | ++                            | ++                              | ++                  | ++               |
+| beam-varying-profiles.ifc                  | Sample-Test-Files | IfcBeamStandardCase         | entity      | IFC4          |                | ++                            | ++                              | ++                  | ++               |
+| brep-model.ifc                             | Sample-Test-Files | IfcFacetedBrep              | entity      | IFC1.0        |                | ++                            | ++                              | ++                  | ++               |
+| column-extruded-solid.ifc                  | Sample-Test-Files | IfcColumnStandardCase       | entity      | IFC4          | deprecated     | ++                            | ++                              | ++                  | ++               |
+| column-straight-rectangle-tessellation.ifc | Sample-Test-Files | IfcTriangulatedFaceSet      | geometry    | IFC4          |                | --                            | ++                              | ++                  | --               |
+| construction-scheduling-task.ifc           | Sample-Test-Files | IfcTask                     | entity      | IFC1.0        |                | --                            | --                              | --                  | --               |
+| csg-primitive.ifc                          | Sample-Test-Files | IfcCsgSolid                 | geometry    | IFC1.5.1      |                | ++                            | ++                              | ++                  | --               |
+| cube-advanced-brep.ifc                     | Sample-Test-Files | IfcAdvancedBrep             | geometry    | IFC4          |                | ++                            | -                               | -                   | -                |
+| extruded-solid.ifc                         | Sample-Test-Files | IfcExtrudedAreaSolid        | geometry    | IFC1.5        |                | ++                            | ++                              | ++                  | ++               |
+| geographic-referencing.ifc                 | Sample-Test-Files | IfcProjectedCRS             | geolocatie  | IFC4          |                | --                            | --                              | --                  | --               |
+| geographic-referencing.ifc                 | Sample-Test-Files | IfcRightCircularCylinder    | geometry    | IFC2x3        |                | ++                            | -                               | --                  | --               |
+| geographic-referencing.ifc                 | Sample-Test-Files | IfcRightCircularCone        | geometry    | IFC2x3        |                | ++                            | -                               | --                  | --               |
+| grid-placement.ifc                         | Sample-Test-Files | IfcGridPlacement            | geometry    | IFC2x3        |                | ++                            | ++                              | ++                  | --               |
+| mapped-shape-with-multiple-items.ifc       | Sample-Test-Files | IfcMappedItem               | geometry    | IFC2x         |                | ++                            | ++                              | ++                  | ++               |
+| mapped-shape-with-transformation.ifc       | Sample-Test-Files | IfcMappedItem               | geometry    | IFC2x         |                | ++                            | ++                              | ++                  | ++               |
+| mapped-shape-without-transformation.ifc    | Sample-Test-Files | IfcMappedItem               | geometry    | IFC2x         |                | ++                            | ++                              | ++                  | ++               |
+| reinforcing-assembly.ifc                   | Sample-Test-Files | IfcReinforcingBar           | entity      | IFC2x2        |                | --                            | ++                              | ++                  | ++               |
+| reinforcing-assembly.ifc                   | Sample-Test-Files | IfcElementAssembly          | geometry    | IFC2x2        |                | --                            | ++                              | ++                  | ++               |
+| reinforcing-assembly.ifc                   | Sample-Test-Files | IfcSweptDiskSolid           | geometry    | IFC2x2        |                | --                            | ++                              | ++                  | ++               |
+| reinforcing-stirrup.ifc                    | Sample-Test-Files | IfcSweptDiskSolid           | geometry    | IFC2x2        |                | --                            | +                               | ++                  | ++               |
+| slab-openings.ifc                          | Sample-Test-Files | IfcOpeningStandardCase      | geometry    | IFC4          | deprecated     | ++                            | ++                              | ++                  | +                |
+| slab-standard-case.ifc                     | Sample-Test-Files | IfcSlabStandardCase         | geometry    | IFC4          | deprecated     | ++                            | ++                              | ++                  | ++               |
+| slab-tessellated-unique-vertices.ifc       | Sample-Test-Files | IfcTriangulatedFaceSet      | geometry    | IFC4          |                | ++                            | ++                              | ++                  | ++               |
+| structural-curve-member.ifc                | Sample-Test-Files | IfcStructuralCurveMember    | belastingen | IFC2x2        |                | --                            | --                              | --                  | --               |
+| surface-model.ifc                          | Sample-Test-Files | IfcFaceBasedSurfaceModel    | geometry    | IFC2x         |                | ++                            | ++                              | ++                  | ++               |
+| tessellated-item.ifc                       | Sample-Test-Files | IfcTriangulatedFaceSet      | geometry    | IFC4          |                | ++                            | ++                              | ++                  | ++               |
+| tessellation-with-blob-texture.ifc         | Sample-Test-Files | IfcBlobTexture              | textures    | IFC2x3        |                | --                            | --                              | -                   | -                |
+| tessellation-with-image-texture.ifc        | Sample-Test-Files | IfcImageTexture             | textures    | IFC2x2        |                | --                            | -                               | -                   | -                |
+| tessellation-with-individual-colors.ifc    | Sample-Test-Files | IfcIndexedColourMap         | geometry    | IFC4          |                | -                             | -                               | -                   | -                |
+| tessellation-with-pixel-texture.ifc        | Sample-Test-Files | IfcPixelTexture             | textures    | IFC2x2        |                | --                            | --                              | -                   | -                |
+| wall-elemented-case.ifc                    | Sample-Test-Files | IfcWallElementedCase        | entity      | IFC4          | deprecated     | -                             | ++                              | ++                  | --               |
+| wall-standard-case.ifc                     | Sample-Test-Files | IfcWallStandardCase         | entity      | IFC 2x        | deprecated     | ++                            | ++                              | ++                  | ++               |
+| wall-with-opening-and-window.ifc           | Sample-Test-Files | IfcOpeningElement           | geometry    | IFC 1.0       |                | ++                            | ++                              | ++                  | -                |
+
+### Ratings
+
+`++:` Looks great!
+
+`+ :` Shows everyting: only minor visual errors
+
+`- :` Shows something: major visual errors / only bounding box
+
+`--:` Does not open or has missing objects
