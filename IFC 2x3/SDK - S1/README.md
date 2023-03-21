@@ -27,9 +27,6 @@ b.     Structural engineer ([download](https://app21.connect.trimble.com/tc
 
 c.     MEP HVAC ([download](https://app21.connect.trimble.com/tc/api/2.0/s/o04jx93za5otnwU7NkRTynzIg4sYTw0xOTQioRfeVPlVn-c_F6Mek1cE9qX-6sdb/download))
 
-d.     Engineering structured based on STABU
-
-                                                   _i.    Download files via github_
 
 3.     BIM agreements ([download](https://app21.connect.trimble.com/tc/api/2.0/s/mASAYbqdwDLtV6erjJcCY2uXCdVhcBoPI_PEkHamzVRXPSvQDRTy8jaei-bG_2Aj/download))
 
