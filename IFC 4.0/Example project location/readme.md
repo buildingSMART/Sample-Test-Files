@@ -13,4 +13,8 @@ For a corrected version, the WGS84 coordinates of the south-west point of the [O
 Further, issues with units from the original IFC Exporter version have been corrected manually.
 
 
+![Gymzaal Amersfoort location in OpenStreetMap](gymzaal-amersfoort.png)
+
+Image source: [© OpenStreetMap contributors](https://www.openstreetmap.org/copyright), [Project LevelOut](https://bauinformatik.github.io/levelout/)
+
 
