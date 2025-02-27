@@ -1,9 +1,6 @@
 *.ply filter=lfs diff=lfs merge=lfs -text
 *.zip filter=lfs diff=lfs merge=lfs -text
 *.pla filter=lfs diff=lfs merge=lfs -text
-*.txt filter=lfs diff=lfs merge=lfs -text
-*.ifc filter=lfs diff=lfs merge=lfs -text
-*.ifcxml filter=lfs diff=lfs merge=lfs -text
 *.las filter=lfs diff=lfs merge=lfs -text
 *.ttl filter=lfs diff=lfs merge=lfs -text
 *.sp filter=lfs diff=lfs merge=lfs -text
