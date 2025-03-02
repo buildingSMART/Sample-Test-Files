@@ -2,7 +2,7 @@ ISO-10303-21;
 HEADER;
 /* NOTE a valid model view name has to be asserted, replacing 'notYetAssigned' ----------------- */
 FILE_DESCRIPTION(
-    ( 'ViewDefinition [notYetAssigned]'
+    ( 'ViewDefinition [ReferenceView_V1.2]'
      ,'Comment [manual creation of example file]'
 	)
 	,'2;1');
@@ -13,13 +13,13 @@ FILE_NAME(
 	('Thomas Liebich'),
 	('buildingSMART International'),
 	'IFC text editor',
-	'IFC text editor',
+	'buildingSMART International - IFC text editor - 1.0.0',
 	'reference file created for the IFC4 specification');
 /* NOTE schema name to be replaced with 'IFC4' after the final release  ------------------------ */
 FILE_SCHEMA(('IFC4'));
 ENDSEC;
 
-DATA;
+DATA;	
 /* --------------------------------------------------------------------------------------------- */
 /* general entities required for all IFC data sets, defining the context for the exchange ------ */
 #100= IFCPROJECT('0xScRe4drECQ4DMSqUjd6d',#110,'proxy with tessellation',$,$,$,$,(#201),#301);
@@ -60,12 +60,6 @@ DATA;
 
 /* shared coordinates - it is permissable to share common instances to reduce file size -------- */
 #901= IFCCARTESIANPOINT((0.,0.,0.));
-#902= IFCDIRECTION((1.,0.,0.));
-#903= IFCDIRECTION((0.,1.,0.));
-#904= IFCDIRECTION((0.,0.,1.)); 
-#905= IFCDIRECTION((-1.,0.,0.));
-#906= IFCDIRECTION((0.,-1.,0.));
-#907= IFCDIRECTION((0.,0.,-1.));
 
 /* --------------------------------------------------------------------------------------------- */
 /* proxy element with tessellated shape representation, assigned to the building --------------- */

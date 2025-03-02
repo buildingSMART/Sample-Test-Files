@@ -1,13 +1,13 @@
 ISO-10303-21;
 HEADER;
-FILE_DESCRIPTION(('ViewDefinition [notYetAssigned]'),'2;1');
+FILE_DESCRIPTION(('ViewDefinition [ReferenceView_V1.2]'),'2;1');
 FILE_NAME(
 /* name */ '',
 /* time_stamp */ '2014-12-09T00:27:55',
 /* author */ ('Jon'),
 /* organization */ ('Unknown'),
 /* preprocessor_version */ 'ggIFC - Exporter by Geometry Gym Pty Ltd',
-/* originating_system */ 'ggIFC - Exporter by Geometry Gym Pty Ltd',
+/* originating_system */ 'Geometry Gym Pty Ltd - ggIFC - 1.0.0.0',
 /* authorization */ 'None');
 
 FILE_SCHEMA (('IFC4'));
@@ -26,8 +26,6 @@ DATA;
 #10= IFCDIRECTION((0.0,1.0));
 #11= IFCGEOMETRICREPRESENTATIONSUBCONTEXT('Axis','Model',*,*,*,*,#7,$,.MODEL_VIEW.,$);
 #12= IFCGEOMETRICREPRESENTATIONSUBCONTEXT('Body','Model',*,*,*,*,#7,$,.MODEL_VIEW.,$);
-#13= IFCGEOMETRICREPRESENTATIONCONTEXT($,'Model',3,0.0001,#8,#14);
-#14= IFCDIRECTION((0.0,1.0));
 #50= IFCBUILDING('0MRYiPpfn0RRBz4hjR$d0R',$,'IfcBuilding',$,$,#51,$,$,.ELEMENT.,$,$,#57);
 #51= IFCLOCALPLACEMENT($,#52);
 #52= IFCAXIS2PLACEMENT3D(#53,$,$);
@@ -35,7 +33,7 @@ DATA;
 #54= IFCRELCONTAINEDINSPATIALSTRUCTURE('2YVMFu6$54ggBelxInCL1O',$,'Building','Building Container for Elements',(#217),#50);
 #55= IFCLOCALPLACEMENT(#51,#52);
 #57= IFCPOSTALADDRESS($,$,$,$,$,$,$,'Unknown',$,$);
-#100= IFCPROJECT('3SXUMunn9EXfAFTjVxyt84',#6,'IfcProject',$,$,'IfcProject','',(#13),#101);
+#100= IFCPROJECT('3SXUMunn9EXfAFTjVxyt84',#6,'IfcProject',$,$,'IfcProject','',(#7),#101);
 #101= IFCUNITASSIGNMENT((#102,#103,#104));
 #102= IFCSIUNIT(*,.LENGTHUNIT.,.MILLI.,.METRE.);
 #103= IFCSIUNIT(*,.PLANEANGLEUNIT.,$,.RADIAN.);
@@ -57,7 +55,7 @@ DATA;
 #214= IFCCARTESIANTRANSFORMATIONOPERATOR3D(#211,#212,#213,1.0,#215);
 #215= IFCDIRECTION((0.0,0.0,1.0));
 #216= IFCMAPPEDITEM(#202,#214);
-#217= IFCSANITARYTERMINAL('0Zk2_ch2P32wrl1QuECi58',$,$,$,$,#55,#218,$,.NOTDEFINED.);
+#217= IFCSANITARYTERMINAL('0Zk2_ch2P32wrl1QuECi58',$,$,$,$,#55,#218,$,$);
 #218= IFCPRODUCTDEFINITIONSHAPE($,$,(#219));
 #219= IFCSHAPEREPRESENTATION(#12,'Body','MappedRepresentation',(#216));
 ENDSEC;

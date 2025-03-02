@@ -3,8 +3,8 @@ HEADER;
 
 /* use the correct model view definition for the IFC4 reference view                              */
 /* ---------------------------------------------------------------------------------------------- */
-FILE_DESCRIPTION(('ViewDefinition [ReferenceView_V1.0]'),'2;1');
-FILE_NAME('column_rectangle_straight_tessellated_reference-view.ifc','2014-07-08T19:20:14',('Tim Chipman'),(''),'Constructivity 0.9.8.1','Constructivity 0.9.8.1','');
+FILE_DESCRIPTION(('ViewDefinition [ReferenceView_V1.2]'),'2;1');
+FILE_NAME('column_rectangle_straight_tessellated_reference-view.ifc','2014-07-08T19:20:14',('Tim Chipman'),(''),'Constructivity 0.9.8.1','Constructivity - Constructivity - 0.9.8.1','');
 FILE_SCHEMA(('IFC4'));
 ENDSEC;
 
