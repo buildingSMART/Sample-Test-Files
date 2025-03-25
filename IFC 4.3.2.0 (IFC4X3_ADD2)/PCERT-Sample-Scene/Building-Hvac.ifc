@@ -36,7 +36,7 @@ DATA;
 #29=IFCDIRECTION((1.,0.,0.));
 #30=IFCBUILDING('0c$N1CTon2BB2Sp89385G8',#1,'Single-family house','The main building structure, providing shelter and space.',$,#35,$,$,.ELEMENT.,0.,0.,$);
 #31=IFCCLASSIFICATION('Molio','1.0','2023-01-23','CCI Construction',$,$,$);
-#32=IFCCLASSIFICATIONREFERENCE('https://identifier.buildingsmart.org/uri/molio/cciconstruction-1.0/class/E-AAA','E-AAA','Single-family house',#31,$,$);
+#32=IFCCLASSIFICATIONREFERENCE('https://identifier.buildingsmart.org/uri/molio/cciconstruction/1.0/class/E-AAA','E-AAA','Single-family house',#31,$,$);
 #33=IFCRELASSOCIATESCLASSIFICATION('0fj8MiD7bFRwX8TaUKeycv',#1,'CCI Construction Classification',$,(#30),#32);
 #34=IFCRELAGGREGATES('1KCOGjbzf0FwCVwIvSAldO',#1,'house - site container',$,#23,(#30));
 #35=IFCLOCALPLACEMENT(#25,#36);

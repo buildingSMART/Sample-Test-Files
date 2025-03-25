@@ -55,7 +55,7 @@ DATA;
 #48=IFCDIRECTION((1.0547118733938987E-15,-1.,0.));
 #49=IFCRAILWAYPART('0vMmNglnHCxwAXN15KG$Y3',#1,'Rail track','Durable rail tracks, guiding trains safely along their path.','track',#54,$,$,.ELEMENT.,.LONGITUDINAL.,.TRACK.);
 #50=IFCCLASSIFICATION('Molio','1.0','2023-01-23','CCI Construction',$,$,$);
-#51=IFCCLASSIFICATIONREFERENCE('https://identifier.buildingsmart.org/uri/molio/cciconstruction-1.0/class/A-FDA','A-FDA','Rail track',#50,$,$);
+#51=IFCCLASSIFICATIONREFERENCE('https://identifier.buildingsmart.org/uri/molio/cciconstruction/1.0/class/A-FDA','A-FDA','Rail track',#50,$,$);
 #52=IFCRELASSOCIATESCLASSIFICATION('25ee3jfR1AwfzAbOivsVfS',#1,'CCI Construction Classification',$,(#49,#394),#51);
 #53=IFCRELAGGREGATES('0bKpt1tOn2UPd7SeHYdfNn',#1,'Rail track container',$,#42,(#49));
 #54=IFCLOCALPLACEMENT(#44,#55);

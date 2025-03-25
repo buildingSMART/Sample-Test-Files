@@ -119,7 +119,7 @@ DATA;
 #112=IFCRELDEFINESBYTYPE('0u1uYHv7L0vwgaCVKD2CrK',#1,$,$,(#113),#111);
 #113=IFCGEOGRAPHICELEMENT('2zxheXkSbCUgmJF8PPqK6F',#1,'tree','A fruitful apple tree, providing delicious apples, nature\X\27s candy store.','vegetation',#121,#133,'454425.1027891.2037904.2037903',$);
 #114=IFCCLASSIFICATION('Molio','1.0','2023-01-23','CCI Construction',$,$,$);
-#115=IFCCLASSIFICATIONREFERENCE('https://identifier.buildingsmart.org/uri/molio/cciconstruction-1.0/class/L-TRA','L-TRA','Tree',#114,$,$);
+#115=IFCCLASSIFICATIONREFERENCE('https://identifier.buildingsmart.org/uri/molio/cciconstruction/1.0/class/L-TRA','L-TRA','Tree',#114,$,$);
 #116=IFCRELASSOCIATESCLASSIFICATION('3Gmy5PhC11B8c7KZkyTXOX',#1,'CCI Construction Classification',$,(#113),#115);
 #117=IFCSURFACESTYLERENDERING(#118,0.,$,$,$,$,$,$,.NOTDEFINED.);
 #118=IFCCOLOURRGB($,0.27450980392156865,0.5529411764705883,0.1843137254901961);

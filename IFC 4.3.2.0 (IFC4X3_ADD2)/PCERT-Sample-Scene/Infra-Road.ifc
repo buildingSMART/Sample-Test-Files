@@ -36,7 +36,7 @@ DATA;
 #29=IFCDIRECTION((-0.5000000000000002,0.8660254037844387,0.));
 #30=IFCROAD('2MBfH6RyP3luv6spdwrCIJ',#1,'road parking - road','A well-constructed road, connecting various parts of the infrastructure.',$,#35,$,$,.ELEMENT.,.NOTDEFINED.);
 #31=IFCCLASSIFICATION('Molio','1.0','2023-01-23','CCI Construction',$,$,$);
-#32=IFCCLASSIFICATIONREFERENCE('https://identifier.buildingsmart.org/uri/molio/cciconstruction-1.0/class/E-CAE','E-CAE','Road',#31,$,$);
+#32=IFCCLASSIFICATIONREFERENCE('https://identifier.buildingsmart.org/uri/molio/cciconstruction/1.0/class/E-CAE','E-CAE','Road',#31,$,$);
 #33=IFCRELASSOCIATESCLASSIFICATION('2Qx0DA2of1jw$D_84Iz_ml',#1,'CCI Construction Classification',$,(#30,#397,#489,#603,#756),#32);
 #34=IFCRELAGGREGATES('3cralsm351oPnlM8SnIVje',#1,'road parking - site container',$,#23,(#30));
 #35=IFCLOCALPLACEMENT(#25,#36);
