@@ -28,7 +28,7 @@ This set is part of buildingSMART’s commitment to open, transparent, and repea
    Validate that IfcGroup and IfcSystem relationships are preserved and correctly imported.
 
 8. **Correct spatial breakdown**  
-   Confirm the correct hierarchy for spatial containers (Project > Site > Building > Storey).
+   Confirm the correct hierarchy for spatial containers (for example in the PCERT example data: Project > Site > Building > Storey).
 
 9. **Material assignment**  
    Ensure that materials assigned in the IFC file are correctly associated with elements upon import.
