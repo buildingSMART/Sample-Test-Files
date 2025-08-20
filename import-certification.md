@@ -21,8 +21,8 @@ This set is part of buildingSMART’s commitment to open, transparent, and repea
 5. **Presence of spaces**  
    Ensure spatial elements like IfcSpace are imported and correctly placed in the model structure.
 
-6. **Inheritance of type-level attributes on instance level**  
-   Check if attributes defined at the type level (e.g., IfcWallType) are present on their instances (e.g., IfcWall).
+6. **Accessibility of type-level information on instance level**  
+   Check if attributes and properties defined at the type level (e.g., IfcWallType) are available on their instances (e.g., IfcWall).
 
 7. **Groups and systems**  
    Validate that IfcGroup and IfcSystem relationships are preserved and correctly imported.
