@@ -6,14 +6,11 @@ This set is part of buildingSMART’s commitment to open, transparent, and repea
 
 ## ✅ Minimum Import Test Criteria
 
-1. **Software version number visibility**  
+1. **Software version number**  
    Ensure that the software version number is visible to end-users and matches that declared in certfication request.
 
 1. **General visual geometry check**  
    Ensure that the imported model geometry visually matches the source model.
-
-1. **Spatial breakdown**  
-   Confirm the correct hierarchy for spatial containers (for example, in the PCERT example data: Project > Site > Building > Storey).
 
 1. **Geographic positioning**  
    Validate that the model is correctly geolocated based on IFC positioning data.
@@ -21,6 +18,9 @@ This set is part of buildingSMART’s commitment to open, transparent, and repea
 1. **Georeferencing information (CRS)**  
    Confirm that the projected Coordinate Reference System (CRS) is interpreted and imported accurately.
 
+1. **Spatial breakdown**  
+   Confirm the correct hierarchy for spatial containers (for example, in the PCERT example data: Project > Site > Building > Storey).
+   
 1. **Assemblies**  
    Verify that assemblies (e.g., aggregated elements) are imported with correct hierarchy and metadata.
 
