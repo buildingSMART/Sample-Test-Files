@@ -27,8 +27,15 @@ This set is part of buildingSMART’s commitment to open, transparent, and repea
 1. **Spaces**  
    Ensure spatial elements like IfcSpace are imported and correctly placed in the model structure.
 
-1. **Object typing**  
-   Check if attributes and properties defined at the type level (e.g., IfcWallType) are available on their instances (e.g., IfcWall).
+1. **Object type, occurrence and their properties**  
+   Check if attributes and properties are correctly displayed on the occurrence level (e.g., IfcWall), also when defined at the type level (e.g., IfcWallType). Software should group properties in property sets.
+   Check that each object retains its original unique identifier (GUID) from the IFC source file.
+    
+1. **Quantities and quantity sets**  
+    Validate the import of IfcQuantity data (e.g., area, volume, length).
+
+1. **Classification references**  
+    Ensure that IfcClassificationReference data is present and that URIs are correctly imported.
 
 1. **Groups and systems**  
    Validate that IfcGroup and IfcSystem relationships are preserved and correctly imported.
@@ -38,18 +45,6 @@ This set is part of buildingSMART’s commitment to open, transparent, and repea
 
 1. **Colours**  
     Confirm that colour information (e.g., for visual representation) is imported correctly.
-
-1. **Object GlobalId (GUID)**  
-    Check that each object retains its original unique identifier (GUID) from the IFC source file.
-   
-1. **Properties and property sets**  
-    Check that all property sets (Psets) and individual properties are imported accurately.
-
-1. **Quantities and quantity sets**  
-    Validate the import of IfcQuantity data (e.g., area, volume, length).
-
-1. **Classification references**  
-    Ensure that IfcClassificationReference data is present and that URIs are correctly imported.
 
 1. **Road surface and markings (IFC 4.3 only)**  
     *(Applicable to IFC 4.3)*: Verify the relationship between road surfaces and road markings is correctly imported.
