@@ -20,13 +20,13 @@ This set is part of buildingSMART’s commitment to open, transparent, and repea
 
 1. **Spatial breakdown**  
    Confirm the correct hierarchy for spatial containers (for example, in the PCERT example data: Project > Site > Building > Storey).
+
+1. **Material assignment**  
+   Ensure that materials assigned in the IFC file are correctly associated with elements upon import.
+
+1. **Colours**  
+    Confirm that colour information (e.g., for visual representation) is imported correctly.
    
-1. **Assemblies**  
-   Verify that assemblies (e.g., aggregated elements) are imported with correct hierarchy and metadata.
-
-1. **Spaces**  
-   Ensure spatial elements like IfcSpace are imported and correctly placed in the model structure.
-
 1. **Object type, occurrence and their properties**  
    Check if attributes and properties are correctly displayed on the occurrence level (e.g., IfcWall), also when defined at the type level (e.g., IfcWallType). Software should group properties in property sets.
    Check that each object retains its original unique identifier (GUID) from the IFC source file.
@@ -37,14 +37,14 @@ This set is part of buildingSMART’s commitment to open, transparent, and repea
 1. **Classification references**  
     Ensure that IfcClassificationReference data is present and that URIs are correctly imported.
 
+1. **Assemblies**  
+   Verify that assemblies (e.g., aggregated elements) are imported with correct hierarchy and metadata.
+
 1. **Groups and systems**  
    Validate that IfcGroup and IfcSystem relationships are preserved and correctly imported.
 
-1. **Material assignment**  
-   Ensure that materials assigned in the IFC file are correctly associated with elements upon import.
-
-1. **Colours**  
-    Confirm that colour information (e.g., for visual representation) is imported correctly.
+1. **Spaces**  
+   Ensure spatial elements like IfcSpace are imported and correctly placed in the model structure.
 
 1. **Road surface and markings (IFC 4.3 only)**  
     *(Applicable to IFC 4.3)*: Verify the relationship between road surfaces and road markings is correctly imported.
