@@ -6,7 +6,10 @@ This set is part of buildingSMART’s commitment to open, transparent, and repea
 
 ## ✅ Minimum Import Test Criteria
 
-1. **Software version number**  
+0. **Models import**   
+   Ensure all 9 IFC models can be opened and visualised together in one viewer.
+
+2. **Software version number**  
    Ensure that the software version number is visible to end-users and matches that declared in certfication request.
 
 1. **General visual geometry check**  
