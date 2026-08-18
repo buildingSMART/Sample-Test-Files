@@ -9,7 +9,7 @@ This set is part of buildingSMART’s commitment to open, transparent, and repea
 0. **Models import**   
    Ensure all 9 IFC models can be opened and visualised together in one viewer.
 
-2. **Software version number**  
+1. **Software version number**  
    Ensure that the software version number is visible to end-users and matches that declared in certfication request.
 
 1. **General visual geometry check**  
@@ -51,3 +51,7 @@ This set is part of buildingSMART’s commitment to open, transparent, and repea
 
 1. **Road surface and markings (IFC 4.3 only)**  
     *(Applicable to IFC 4.3)*: Verify the relationship between road surfaces and road markings is correctly imported.
+
+## ⚖️ Certification Eligibility Requirements
+All criteria set out above must receive a result of **Pass** or **Partial Pass** for the certificate to be issued; any criterion receiving a **Fail** result shall preclude certification. Any **Partial Pass** is expressly identified in the certification report accompanying the certificate, together with notes explaining the basis for that result.
+
