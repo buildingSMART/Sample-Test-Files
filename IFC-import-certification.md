@@ -10,7 +10,7 @@ This set is part of buildingSMART’s commitment to open, transparent, and repea
    Ensure all 9 IFC models can be opened and visualised together in one viewer.
 
 1. **Software version number**  
-   Ensure that the software version number is visible to end-users and matches that declared in certfication request.
+   Ensure that the software version number is visible to end-users and matches that declared in the certification request.
 
 1. **General visual geometry check**  
    Ensure that the imported model geometry visually matches the source model.
